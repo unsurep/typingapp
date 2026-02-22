@@ -84,6 +84,11 @@ export default function TypingArea({ text, disabled = false, onComplete, onProgr
             return;
         }
 
+        // Prevent backspacing or deleting characters
+        if (value.length < userInput.length) {
+            return;
+        }
+
         let currentStartTime = startTime;
 
         // Start timer on first character typed
