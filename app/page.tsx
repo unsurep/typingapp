@@ -1,65 +1,125 @@
-import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <div className="flex flex-col min-h-screen w-full">
+      {/* 1. Hero Section */}
+      <section className="flex-1 flex flex-col items-center justify-center text-center px-4 pt-20 pb-16 md:pt-32 md:pb-24">
+        <h1 className="text-5xl lg:text-7xl font-extrabold tracking-tight text-gray-900 dark:text-white max-w-4xl mx-auto leading-tight">
+          Professional Typing Tests for Job Applications
+        </h1>
+        <p className="mt-6 text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
+          Practice, test, and earn a verifiable typing certificate.
+        </p>
+
+        <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <Link
+            href="/test"
+            className="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-white bg-black dark:bg-white dark:text-black rounded-full hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors shadow-lg hover:shadow-xl"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            Start 60s Test
+          </Link>
+          <Link
+            href="/practice"
+            className="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-black bg-white border-2 border-gray-200 rounded-full hover:border-black dark:bg-black dark:text-white dark:border-zinc-700 dark:hover:border-zinc-400 transition-all font-semibold"
           >
-            Documentation
-          </a>
+            Practice Free
+          </Link>
         </div>
-      </main>
+
+        <div className="mt-12 flex flex-wrap justify-center gap-4 sm:gap-8">
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-gray-50 dark:bg-zinc-800/50 text-sm font-medium text-gray-600 dark:text-gray-300 border border-gray-100 dark:border-zinc-800">
+            <svg className="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+            </svg>
+            30s / 60s / 120s Tests
+          </div>
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-gray-50 dark:bg-zinc-800/50 text-sm font-medium text-gray-600 dark:text-gray-300 border border-gray-100 dark:border-zinc-800">
+            <svg className="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+            </svg>
+            Real-time Accuracy
+          </div>
+          <div className="inline-flex items-center px-4 py-2 rounded-full bg-gray-50 dark:bg-zinc-800/50 text-sm font-medium text-gray-600 dark:text-gray-300 border border-gray-100 dark:border-zinc-800">
+            <svg className="w-4 h-4 mr-2 text-green-500" fill="currentColor" viewBox="0 0 20 20">
+              <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
+            </svg>
+            Employer Verification
+          </div>
+        </div>
+      </section>
+
+      {/* 2. How It Works Section */}
+      <section className="py-20 bg-gray-50 dark:bg-zinc-900 border-y border-gray-100 dark:border-zinc-800">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold tracking-tight text-gray-900 dark:text-white text-center">
+            How It Works
+          </h2>
+          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="flex flex-col items-center p-8 bg-white dark:bg-black rounded-2xl shadow-sm border border-gray-100 dark:border-zinc-800 text-center hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 bg-gray-100 dark:bg-zinc-800 rounded-full flex items-center justify-center mb-6">
+                <span className="text-xl font-bold text-gray-900 dark:text-white">1</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Practice</h3>
+              <p className="text-gray-600 dark:text-gray-400">
+                Build your speed and accuracy with our structured lessons and practice texts.
+              </p>
+            </div>
+            <div className="flex flex-col items-center p-8 bg-white dark:bg-black rounded-2xl shadow-sm border border-gray-100 dark:border-zinc-800 text-center hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 bg-black dark:bg-white rounded-full flex items-center justify-center mb-6">
+                <span className="text-xl font-bold text-white dark:text-black">2</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Take Timed Test</h3>
+              <p className="text-gray-600 dark:text-gray-400">
+                Challenge yourself with 30s, 60s, or 120s typing tests under pressure.
+              </p>
+            </div>
+            <div className="flex flex-col items-center p-8 bg-white dark:bg-black rounded-2xl shadow-sm border border-gray-100 dark:border-zinc-800 text-center hover:shadow-md transition-shadow">
+              <div className="w-12 h-12 bg-gray-100 dark:bg-zinc-800 rounded-full flex items-center justify-center mb-6">
+                <span className="text-xl font-bold text-gray-900 dark:text-white">3</span>
+              </div>
+              <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Get Certificate</h3>
+              <p className="text-gray-600 dark:text-gray-400">
+                Earn a verifiable typing certificate to prove your skills to prospective employers.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 3. Test Duration Section */}
+      <section className="py-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+          Choose Your Test Duration
+        </h2>
+        <div className="mt-8 flex flex-wrap justify-center gap-4">
+          <Link
+            href="/test?duration=30"
+            className="px-6 py-3 rounded-full border border-gray-200 dark:border-zinc-700 bg-white dark:bg-black font-medium text-gray-700 dark:text-gray-300 hover:border-black dark:hover:border-white hover:text-black dark:hover:text-white transition-all shadow-sm"
+          >
+            30 Second Test
+          </Link>
+          <Link
+            href="/test?duration=60"
+            className="px-6 py-3 rounded-full border-2 border-black dark:border-white bg-white dark:bg-black font-semibold text-black dark:text-white hover:bg-gray-50 dark:hover:bg-zinc-900 transition-all shadow-sm"
+          >
+            1 Minute Test
+          </Link>
+          <Link
+            href="/test?duration=120"
+            className="px-6 py-3 rounded-full border border-gray-200 dark:border-zinc-700 bg-white dark:bg-black font-medium text-gray-700 dark:text-gray-300 hover:border-black dark:hover:border-white hover:text-black dark:hover:text-white transition-all shadow-sm"
+          >
+            2 Minute Test
+          </Link>
+        </div>
+      </section>
+
+      {/* 4. SEO Content Section */}
+      <section className="pb-20 pt-10 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <p className="text-sm leading-relaxed text-gray-500 dark:text-gray-400">
+          Whether you're preparing for an interview or just looking to improve, our <strong>typing test for jobs</strong> provides the accurate assessment you need. Our most popular <strong>1 minute typing test</strong> gives you a rapid evaluation of your WPM (Words Per Minute) and accuracy. If you need proof for your resume, you can earn a <strong>typing certificate online</strong> upon passing. Stand out from the crowd with a verified <strong>typing test with certificate</strong> that employers trust.
+        </p>
+      </section>
     </div>
   );
 }
