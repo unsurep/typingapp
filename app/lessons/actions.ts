@@ -1,9 +1,11 @@
 'use server';
 
+import { revalidatePath } from 'next/cache';
 import { createClient } from '@/utils/supabase/server';
 import { TypingResult } from '@/components/TypingArea';
 
 export async function saveLessonProgress(lessonId: number, metrics: TypingResult) {
+    console.log(`\n\n[DEBUG] saveLessonProgress invoked for lessonId: ${lessonId}`, metrics);
     try {
         const supabase = await createClient();
 
@@ -15,9 +17,11 @@ export async function saveLessonProgress(lessonId: number, metrics: TypingResult
 
         // 2. Fast paths
         if (authError || !user) {
+            console.log('[DEBUG] Auth Error or No User:', authError);
             // Unauthenticated guest test, ignore DB hit gracefully.
             return { success: false, reason: 'guest' };
         }
+        console.log(`[DEBUG] User Authenticated: ${user.id}`);
 
         // 3. Prevent incomplete garbage data
         if (metrics.accuracy < 90) {
@@ -29,16 +33,18 @@ export async function saveLessonProgress(lessonId: number, metrics: TypingResult
             .from('lesson_progress')
             .select('id, best_wpm, best_accuracy')
             .eq('user_id', user.id)
-            .eq('lesson_id', lessonId);
+            .eq('lesson_id', lessonId.toString());
 
         if (fetchError) {
-            console.error('Failed to fetch existing lesson progress:', fetchError);
+            console.error('[DEBUG] Failed to fetch existing lesson progress fetchError:', fetchError);
             return { success: false, reason: 'db_error' };
         }
 
         const existingRecord = existingRecords?.[0];
+        console.log('[DEBUG] existingRecords fetched:', existingRecords);
 
         if (existingRecord) {
+            console.log('[DEBUG] UPDATE Branch active - existingRecord:', existingRecord);
             // UPDATE Branch: Only overwrite if they beat their high score WPM
             if (metrics.netWpm > existingRecord.best_wpm || (metrics.netWpm === existingRecord.best_wpm && metrics.accuracy > existingRecord.best_accuracy)) {
                 const { error: updateError } = await supabase
@@ -46,6 +52,7 @@ export async function saveLessonProgress(lessonId: number, metrics: TypingResult
                     .update({
                         best_wpm: metrics.netWpm,
                         best_accuracy: metrics.accuracy,
+                        completed: true,
                     })
                     .eq('id', existingRecord.id);
 
@@ -57,21 +64,26 @@ export async function saveLessonProgress(lessonId: number, metrics: TypingResult
             // Even if they didn't beat their score, the run was technically strictly a success since it was >= 90 accuracy
             return { success: true, newHighScore: metrics.netWpm > existingRecord.best_wpm };
         } else {
+            console.log('[DEBUG] INSERT Branch active - no existing record found');
             // INSERT Branch: First time passing this exact lesson
-            const { error: insertError } = await supabase.from('lesson_progress').insert({
+            const payload = {
                 user_id: user.id,
-                lesson_id: lessonId,
+                lesson_id: lessonId.toString(),
                 completed: true,
                 best_wpm: metrics.netWpm,
                 best_accuracy: metrics.accuracy,
-            });
+            };
+            console.log('[DEBUG] Insert payload:', payload);
+            const { error: insertError } = await supabase.from('lesson_progress').insert(payload);
 
             if (insertError) {
-                console.error('Failed to insert new lesson progress:', insertError);
+                console.error('[DEBUG] Failed to insert new lesson progress insertError:', insertError);
                 return { success: false, reason: 'db_error' };
             }
         }
 
+        console.log('[DEBUG] Revalidating cache and returning success');
+        revalidatePath('/', 'layout');
         return { success: true, newHighScore: true };
     } catch (err) {
         console.error('Unexpected error while saving lesson progress:', err);
@@ -96,7 +108,7 @@ export async function getLessonProgress(lessonId: number) {
             .from('lesson_progress')
             .select('completed')
             .eq('user_id', user.id)
-            .eq('lesson_id', lessonId);
+            .eq('lesson_id', lessonId.toString());
 
         if (fetchError || !records || records.length === 0) {
             return { success: true, passed: false };

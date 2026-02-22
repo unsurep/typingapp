@@ -18,7 +18,7 @@ export default async function LessonsPage() {
             .eq('completed', true);
 
         if (progressList) {
-            progressList.forEach(p => completedLessonIds.add(p.lesson_id));
+            progressList.forEach(p => completedLessonIds.add(Number(p.lesson_id)));
         }
     }
 
