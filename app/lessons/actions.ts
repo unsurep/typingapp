@@ -78,3 +78,33 @@ export async function saveLessonProgress(lessonId: number, metrics: TypingResult
         return { success: false, reason: 'server_error' };
     }
 }
+
+export async function getLessonProgress(lessonId: number) {
+    try {
+        const supabase = await createClient();
+
+        const {
+            data: { user },
+            error: authError,
+        } = await supabase.auth.getUser();
+
+        if (authError || !user) {
+            return { success: false, passed: false };
+        }
+
+        const { data: records, error: fetchError } = await supabase
+            .from('lesson_progress')
+            .select('completed')
+            .eq('user_id', user.id)
+            .eq('lesson_id', lessonId);
+
+        if (fetchError || !records || records.length === 0) {
+            return { success: true, passed: false };
+        }
+
+        return { success: true, passed: records[0].completed };
+    } catch (err) {
+        console.error('Unexpected error fetching lesson progress:', err);
+        return { success: false, passed: false };
+    }
+}

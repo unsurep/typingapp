@@ -20,6 +20,7 @@ const PRACTICE_TEXTS = [
 export default function PracticePage() {
     const [textIndex, setTextIndex] = useState(0);
     const [resetKey, setResetKey] = useState(0);
+    const [isComplete, setIsComplete] = useState(false);
 
     // Metrics state
     const [wpm, setWpm] = useState(0);
@@ -39,6 +40,7 @@ export default function PracticePage() {
         setAccuracy(result.accuracy);
         setErrors(result.errors);
         setTimeElapsed(result.duration);
+        setIsComplete(true);
     }, []);
 
     const resetMetrics = () => {
@@ -46,6 +48,7 @@ export default function PracticePage() {
         setAccuracy(100);
         setErrors(0);
         setTimeElapsed(null);
+        setIsComplete(false);
     };
 
     const handleRestart = () => {
@@ -123,6 +126,16 @@ export default function PracticePage() {
                     className="px-8 py-3 bg-white dark:bg-black text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-zinc-700 rounded-full font-medium hover:border-black dark:hover:border-white hover:text-black dark:hover:text-white transition-all shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 dark:focus:ring-white"
                 >
                     Change Text
+                </button>
+                <button
+                    onClick={handleChangeText}
+                    disabled={!isComplete}
+                    className={`px-8 py-3 rounded-full font-medium transition-all shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-600 dark:focus:ring-blue-400 ${isComplete
+                            ? "bg-blue-600 hover:bg-blue-700 text-white"
+                            : "bg-gray-200 dark:bg-zinc-800 text-gray-400 dark:text-zinc-600 cursor-not-allowed opacity-60"
+                        }`}
+                >
+                    Next Test
                 </button>
             </div>
 

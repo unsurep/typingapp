@@ -3,10 +3,11 @@ interface ResultCardProps {
     accuracy?: number;
     errors?: number;
     duration?: number;
+    timeLeft?: number;
     onRetry?: () => void;
 }
 
-export default function ResultCard({ wpm = 0, accuracy = 100, errors = 0, duration = 60, onRetry }: ResultCardProps) {
+export default function ResultCard({ wpm = 0, accuracy = 100, errors = 0, duration = 60, timeLeft, onRetry }: ResultCardProps) {
     return (
         <div className="w-full max-w-2xl mx-auto bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 rounded-3xl shadow-xl overflow-hidden animate-in fade-in zoom-in duration-300">
 
@@ -20,7 +21,7 @@ export default function ResultCard({ wpm = 0, accuracy = 100, errors = 0, durati
             </div>
 
             {/* Grid Stats Area */}
-            <div className="grid grid-cols-3 divide-x divide-gray-200 dark:divide-zinc-800 bg-white dark:bg-zinc-900">
+            <div className={`grid ${timeLeft !== undefined ? 'grid-cols-2 md:grid-cols-4' : 'grid-cols-3'} divide-x divide-y md:divide-y-0 divide-gray-200 dark:divide-zinc-800 bg-white dark:bg-zinc-900 border-b border-gray-200 dark:border-zinc-800`}>
                 <div className="p-6 text-center flex flex-col justify-center">
                     <span className="text-xs uppercase tracking-wider text-gray-500 font-semibold mb-1">Accuracy</span>
                     <span className="text-2xl font-bold text-gray-900 dark:text-white">{accuracy}%</span>
@@ -29,7 +30,13 @@ export default function ResultCard({ wpm = 0, accuracy = 100, errors = 0, durati
                     <span className="text-xs uppercase tracking-wider text-gray-500 font-semibold mb-1">Errors</span>
                     <span className="text-2xl font-bold text-red-500">{errors}</span>
                 </div>
-                <div className="p-6 text-center flex flex-col justify-center">
+                {timeLeft !== undefined && (
+                    <div className="p-6 text-center flex flex-col justify-center border-t md:border-t-0 border-gray-200 dark:border-zinc-800">
+                        <span className="text-xs uppercase tracking-wider text-gray-500 font-semibold mb-1">Time Left</span>
+                        <span className="text-2xl font-bold text-blue-600 dark:text-blue-400">{timeLeft}s</span>
+                    </div>
+                )}
+                <div className="p-6 text-center flex flex-col justify-center border-t md:border-t-0 border-gray-200 dark:border-zinc-800">
                     <span className="text-xs uppercase tracking-wider text-gray-500 font-semibold mb-1">Duration</span>
                     <span className="text-2xl font-bold text-gray-900 dark:text-white">{duration}s</span>
                 </div>

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import LessonCard from "@/components/LessonCard";
 import { createClient } from "@/utils/supabase/server";
+import { lessons } from "@/lib/lessons";
 
 export default async function LessonsPage() {
     const supabase = await createClient();
@@ -20,43 +21,6 @@ export default async function LessonsPage() {
             progressList.forEach(p => completedLessonIds.add(p.lesson_id));
         }
     }
-    const lessons = [
-        {
-            id: 1,
-            title: "Lesson 1: Home Row",
-            focus: "Keys: ASDF JKL;",
-            shortDesc: "Master the foundational resting position for touch typing.",
-            progress: 0,
-        },
-        {
-            id: 2,
-            title: "Lesson 2: Top Row",
-            focus: "Keys: QWERTY UIOP",
-            shortDesc: "Learn to reach efficiently to the upper letters without looking.",
-            progress: 0,
-        },
-        {
-            id: 3,
-            title: "Lesson 3: Bottom Row",
-            focus: "Keys: ZXCVB NM,./",
-            shortDesc: "Tackle the trickier downward reaches and basic punctuation.",
-            progress: 0,
-        },
-        {
-            id: 4,
-            title: "Lesson 4: Numbers",
-            focus: "Keys: 12345 67890",
-            shortDesc: "Gain confidence stretching to the top number row accurately.",
-            progress: 0,
-        },
-        {
-            id: 5,
-            title: "Lesson 5: Common Job Words",
-            focus: "Focus: applicant, resume, salary...",
-            shortDesc: "Practice typing vocabulary frequently used in modern office environments.",
-            progress: 0,
-        }
-    ];
 
     const lessonsWithProgress = lessons.map(lesson => ({
         ...lesson,
