@@ -2,8 +2,9 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import { logout } from "@/app/login/actions";
 
-export default function Navbar() {
+export default function Navbar({ isLoggedIn = false }: { isLoggedIn?: boolean }) {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
     return (
@@ -28,24 +29,45 @@ export default function Navbar() {
                         >
                             Tests
                         </Link>
-                        <Link
-                            href="/lessons"
-                            className="text-sm font-medium text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors"
-                        >
-                            Lessons
-                        </Link>
-                        <Link
-                            href="/certificate"
-                            className="text-sm font-medium text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors"
-                        >
-                            Certificate
-                        </Link>
-                        <Link
-                            href="/login"
-                            className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-black dark:bg-white dark:text-black rounded-md hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors"
-                        >
-                            Login
-                        </Link>
+                        {isLoggedIn && (
+                            <>
+                                <Link
+                                    href="/lessons"
+                                    className="text-sm font-medium text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors"
+                                >
+                                    Lessons
+                                </Link>
+                                <Link
+                                    href="/certificate"
+                                    className="text-sm font-medium text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors"
+                                >
+                                    Certificate
+                                </Link>
+                            </>
+                        )}
+                        {isLoggedIn ? (
+                            <div className="flex items-center space-x-6">
+                                <Link
+                                    href="/dashboard"
+                                    className="text-sm font-medium text-gray-600 hover:text-gray-900 dark:text-gray-300 dark:hover:text-white transition-colors"
+                                >
+                                    Dashboard
+                                </Link>
+                                <button
+                                    onClick={() => logout()}
+                                    className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-black dark:bg-white dark:text-black rounded-md hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors"
+                                >
+                                    Logout
+                                </button>
+                            </div>
+                        ) : (
+                            <Link
+                                href="/login"
+                                className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-white bg-black dark:bg-white dark:text-black rounded-md hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors"
+                            >
+                                Login
+                            </Link>
+                        )}
                     </nav>
                     {/* Mobile menu button */}
                     <div className="flex items-center md:hidden">
@@ -85,27 +107,52 @@ export default function Navbar() {
                     >
                         Tests
                     </Link>
-                    <Link
-                        href="/lessons"
-                        className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 dark:text-gray-300 dark:hover:text-white dark:hover:bg-zinc-800 transition-colors"
-                        onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                        Lessons
-                    </Link>
-                    <Link
-                        href="/certificate"
-                        className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 dark:text-gray-300 dark:hover:text-white dark:hover:bg-zinc-800 transition-colors"
-                        onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                        Certificate
-                    </Link>
-                    <Link
-                        href="/login"
-                        className="block w-full text-center mt-4 px-4 py-2 rounded-md text-base font-medium text-white bg-black dark:bg-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors"
-                        onClick={() => setIsMobileMenuOpen(false)}
-                    >
-                        Login
-                    </Link>
+                    {isLoggedIn && (
+                        <>
+                            <Link
+                                href="/lessons"
+                                className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 dark:text-gray-300 dark:hover:text-white dark:hover:bg-zinc-800 transition-colors"
+                                onClick={() => setIsMobileMenuOpen(false)}
+                            >
+                                Lessons
+                            </Link>
+                            <Link
+                                href="/certificate"
+                                className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 dark:text-gray-300 dark:hover:text-white dark:hover:bg-zinc-800 transition-colors"
+                                onClick={() => setIsMobileMenuOpen(false)}
+                            >
+                                Certificate
+                            </Link>
+                        </>
+                    )}
+                    {isLoggedIn ? (
+                        <>
+                            <Link
+                                href="/dashboard"
+                                className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50 dark:text-gray-300 dark:hover:text-white dark:hover:bg-zinc-800 transition-colors"
+                                onClick={() => setIsMobileMenuOpen(false)}
+                            >
+                                Dashboard
+                            </Link>
+                            <button
+                                onClick={() => {
+                                    setIsMobileMenuOpen(false);
+                                    logout();
+                                }}
+                                className="block w-full text-center mt-4 px-4 py-2 rounded-md text-base font-medium text-white bg-black dark:bg-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors"
+                            >
+                                Logout
+                            </button>
+                        </>
+                    ) : (
+                        <Link
+                            href="/login"
+                            className="block w-full text-center mt-4 px-4 py-2 rounded-md text-base font-medium text-white bg-black dark:bg-white dark:text-black hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors"
+                            onClick={() => setIsMobileMenuOpen(false)}
+                        >
+                            Login
+                        </Link>
+                    )}
                 </div>
             </div>
         </header>
