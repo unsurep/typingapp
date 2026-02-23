@@ -41,5 +41,40 @@ export const lessons: Lesson[] = [
         focus: "Focus: applicant, resume, salary...",
         shortDesc: "Practice typing vocabulary frequently used in modern office environments.",
         text: "Let us put it all together with words you might use at work: applicant, resume, interview, salary, promotion, manager, schedule. Typing these fluently will make you look professional and save you valuable time."
+    },
+    {
+        id: 6,
+        title: "Lesson 6: Capitalization",
+        focus: "Keys: Left & Right Shift",
+        shortDesc: "Master using the shift keys to capitalize letters fluidly.",
+        text: "Capital letters rely on the Shift key. Use the left pinky to hold Shift when typing right-hand letters, and the right pinky for left-hand letters. Practice: Apple, Banana, Cherry. John went to Paris. Do not pause too long."
+    },
+    {
+        id: 7,
+        title: "Lesson 7: Advanced Punctuation",
+        focus: "Keys: ! ? ' \" - ( )",
+        shortDesc: "Incorporate common symbols and punctuation into your typing flow.",
+        text: "How are you? I am fine, thanks! She said, \"It's a beautiful day.\" The project (which lasted two weeks) is finally done-what a relief! Mastering these symbols will dramatically improve your real-world typing speed."
+    },
+    {
+        id: 8,
+        title: "Lesson 8: Speed Bursts",
+        focus: "Focus: short, common words",
+        shortDesc: "Build raw speed by repeating short, extremely common English words.",
+        text: "the of and a to in is you that it he was for on are as with his they I at be this have from or one had by word but not what all were we when your can said there use an each which she do how their if will up other about out many"
+    },
+    {
+        id: 9,
+        title: "Lesson 9: Tech & Code",
+        focus: "Focus: html, css, logic",
+        shortDesc: "Type specialized vocabulary used in modern technology roles.",
+        text: "function return const let variable database server array string boolean boolean boolean const class public static main void argument parameter syntax compiler integer exception undefined null object async await promise"
+    },
+    {
+        id: 10,
+        title: "Lesson 10: The Final Challenge",
+        focus: "Focus: Full Keyboard Mastery",
+        shortDesc: "Put everything together in a complex, multi-sentence paragraph.",
+        text: "This is your final test. An effective typist doesn't rely on sight, but entirely on muscle memory and rhythm. If you can maintain over 90% accuracy while navigating capital letters, punctuation! (like so), and numbers like 1, 2, 3... you are ready for certification."
     }
 ];

@@ -9,6 +9,7 @@ import { toast } from 'sonner';
 import { saveTestResult } from './actions';
 import { createClient } from '@/utils/supabase/client';
 import Link from 'next/link';
+import { TYPING_TEXTS } from '@/lib/texts';
 
 function TestContent() {
     const searchParams = useSearchParams();
@@ -27,6 +28,12 @@ function TestContent() {
         duration: 0
     });
     const [isGuest, setIsGuest] = useState(false);
+    const [textIndex, setTextIndex] = useState(0);
+
+    // Pick a random text on initial mount
+    useEffect(() => {
+        setTextIndex(Math.floor(Math.random() * TYPING_TEXTS.length));
+    }, []);
 
     useEffect(() => {
         async function checkAuth() {
@@ -126,6 +133,14 @@ function TestContent() {
             errors: 0,
             duration: 0
         });
+
+        // Pick a different random text
+        let nextIndex;
+        do {
+            nextIndex = Math.floor(Math.random() * TYPING_TEXTS.length);
+        } while (nextIndex === textIndex && TYPING_TEXTS.length > 1);
+        setTextIndex(nextIndex);
+
         setResetKey(prev => prev + 1);
     };
 
@@ -170,7 +185,7 @@ function TestContent() {
                     {/* Main Typing Interface & Stats */}
                     <TypingArea
                         key={resetKey}
-                        text="The quick brown fox jumps over the lazy dog. Programming is the process of creating a set of instructions that tell a computer how to perform a task. Typing fast and accurately is an essential skill for modern jobs."
+                        text={TYPING_TEXTS[textIndex]}
                         disabled={isComplete}
                         onStart={handleStart}
                         onProgress={handleProgress}

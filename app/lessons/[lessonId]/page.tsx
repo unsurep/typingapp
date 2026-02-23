@@ -22,6 +22,7 @@ export default function LessonPage({ params }: { params: Promise<{ lessonId: str
     }
 
     const [isPassed, setIsPassed] = useState(false);
+    const [attemptId, setAttemptId] = useState(0);
     const [isLoadingInit, setIsLoadingInit] = useState(true);
     const [isGuest, setIsGuest] = useState(false);
     const [metrics, setMetrics] = useState<TypingResult>({
@@ -75,6 +76,7 @@ export default function LessonPage({ params }: { params: Promise<{ lessonId: str
 
     const handleRestart = () => {
         setIsPassed(false);
+        setAttemptId(prev => prev + 1);
         setMetrics({
             grossWpm: 0,
             netWpm: 0,
@@ -168,7 +170,7 @@ export default function LessonPage({ params }: { params: Promise<{ lessonId: str
                     <span className="text-gray-500 dark:text-gray-400 font-medium">Loading lesson state...</span>
                 </div>
             ) : (
-                <div key={isPassed ? 'clean' : 'dirty'}>
+                <div key={attemptId}>
                     <TypingArea
                         text={lesson.text}
                         disabled={isPassed}
