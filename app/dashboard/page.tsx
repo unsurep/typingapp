@@ -61,12 +61,12 @@ export default async function DashboardPage() {
         .select('certificate_code')
         .eq('user_id', user.id);
 
-    const hasCertificate = existingCerts && existingCerts.length > 0;
+    // 6. Fetch Eligibility
+    const eligibility = await checkCertificateEligibility(user.id);
+
+    const hasCertificate = existingCerts && existingCerts.length > 0 && eligibility.eligible;
     const certificateCount = existingCerts?.length || 0;
     const certificateCode = hasCertificate ? existingCerts[0].certificate_code : null;
-
-    // 6. Fetch Eligibility if they don't have one
-    const eligibility = hasCertificate ? { eligible: false } : await checkCertificateEligibility(user.id);
 
     // Server action button wrapper
     const handleIssueCertificate = async () => {

@@ -30,6 +30,7 @@ CREATE TABLE lesson_progress (
     best_wpm INTEGER,
     best_accuracy NUMERIC,
     completed BOOLEAN DEFAULT false,
+    completed_tasks INTEGER[] DEFAULT '{}'::INTEGER[],
     completed_at TIMESTAMP WITH TIME ZONE,
     -- Prevent duplicate rows for the same user and lesson
     UNIQUE(user_id, lesson_id)

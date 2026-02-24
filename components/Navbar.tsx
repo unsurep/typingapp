@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import { logout } from "@/app/login/actions";
+import { ModeToggle } from "@/components/ModeToggle";
 
 export default function Navbar({ isLoggedIn = false }: { isLoggedIn?: boolean }) {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -68,9 +69,13 @@ export default function Navbar({ isLoggedIn = false }: { isLoggedIn?: boolean })
                                 Login
                             </Link>
                         )}
+                        <div className="pl-2 border-l border-gray-200 dark:border-zinc-800">
+                            <ModeToggle />
+                        </div>
                     </nav>
                     {/* Mobile menu button */}
-                    <div className="flex items-center md:hidden">
+                    <div className="flex items-center space-x-2 md:hidden">
+                        <ModeToggle />
                         <button
                             type="button"
                             className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 dark:hover:bg-zinc-800 dark:hover:text-gray-300 transition-colors"

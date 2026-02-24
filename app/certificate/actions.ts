@@ -84,11 +84,6 @@ export async function issueCertificate() {
         return { success: false, reason: 'unauthenticated' };
     }
 
-    const { eligible, bestScore } = await checkCertificateEligibility(user.id);
-    if (!eligible || !bestScore) {
-        return { success: false, reason: 'not_eligible' };
-    }
-
     // Check if one already exists
     const { data: existing } = await supabase
         .from('certificates')
@@ -98,6 +93,11 @@ export async function issueCertificate() {
 
     if (existing && existing.length > 0) {
         return { success: true, certificateId: existing[0].certificate_code };
+    }
+
+    const { eligible, bestScore } = await checkCertificateEligibility(user.id);
+    if (!eligible || !bestScore) {
+        return { success: false, reason: 'not_eligible' };
     }
 
     // Produce a clean ID like "TTJ-A1B2C3"

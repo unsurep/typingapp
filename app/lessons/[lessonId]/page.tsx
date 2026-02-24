@@ -21,7 +21,12 @@ export default function LessonPage({ params }: { params: Promise<{ lessonId: str
         notFound();
     }
 
-    const [isPassed, setIsPassed] = useState(false);
+    const totalTasks = lesson.tasks.length;
+    const [activeTaskIndex, setActiveTaskIndex] = useState(0);
+    const [completedTasks, setCompletedTasks] = useState<number[]>([]);
+
+    const [isLessonPassed, setIsLessonPassed] = useState(false);
+    const [isTaskPassed, setIsTaskPassed] = useState(false);
     const [attemptId, setAttemptId] = useState(0);
     const [isLoadingInit, setIsLoadingInit] = useState(true);
     const [isGuest, setIsGuest] = useState(false);
@@ -43,8 +48,21 @@ export default function LessonPage({ params }: { params: Promise<{ lessonId: str
                 }
 
                 const res = await getLessonProgress(parsedId);
-                if (res.success && res.passed) {
-                    setIsPassed(true);
+                if (res.success) {
+                    const fetchedCompletedTasks = res.completedTasks || [];
+                    setCompletedTasks(fetchedCompletedTasks);
+
+                    if (res.passed) {
+                        setIsLessonPassed(true);
+                        setIsTaskPassed(true);
+                        setActiveTaskIndex(0);
+                    } else {
+                        // Find first incomplete task
+                        const nextIter = lesson?.tasks.findIndex((_, i) => !fetchedCompletedTasks.includes(i));
+                        if (nextIter !== undefined && nextIter !== -1) {
+                            setActiveTaskIndex(nextIter);
+                        }
+                    }
                 }
             } catch (err) {
                 console.error("Failed to fetch initial progress", err);
@@ -53,7 +71,7 @@ export default function LessonPage({ params }: { params: Promise<{ lessonId: str
             }
         }
         fetchInitialProgress();
-    }, [parsedId]);
+    }, [parsedId, lesson]);
 
     const handleProgress = (result: TypingResult) => {
         setMetrics(result);
@@ -63,19 +81,64 @@ export default function LessonPage({ params }: { params: Promise<{ lessonId: str
         setMetrics(finalMetrics);
 
         if (finalMetrics.accuracy < 90) {
-            toast.error(`Accuracy too low (${finalMetrics.accuracy}%). You need 90% to pass!`);
+            toast.error(`Accuracy too low (${finalMetrics.accuracy}%). You need 90% to pass this task!`);
             return;
         }
 
-        toast.success("Lesson Passed!");
-        setIsPassed(true);
+        toast.success(`Task ${activeTaskIndex + 1} Passed!`);
+        setIsTaskPassed(true);
 
-        // Lazily synchronize DB via Server Action
-        await saveLessonProgress(parsedId, finalMetrics);
+        const updatedCompletedTasks = [...completedTasks];
+        if (!updatedCompletedTasks.includes(activeTaskIndex)) {
+            updatedCompletedTasks.push(activeTaskIndex);
+            setCompletedTasks(updatedCompletedTasks);
+        }
+
+        if (updatedCompletedTasks.length >= totalTasks) {
+            toast.success("Lesson Fully Completed!");
+            setIsLessonPassed(true);
+        }
+
+        // Try scaling DB
+        const saveRes = await saveLessonProgress(parsedId, activeTaskIndex, totalTasks, finalMetrics);
+
+        if (!saveRes.success && saveRes.reason !== 'guest') {
+            toast.error("Warning: Could not save your progress to the database. Have you updated your Supabase Schema?");
+            console.error("Save failed:", saveRes.reason);
+        }
     };
 
-    const handleRestart = () => {
-        setIsPassed(false);
+    const handleRestartTask = () => {
+        setIsTaskPassed(completedTasks.includes(activeTaskIndex));
+        setAttemptId(prev => prev + 1);
+        setMetrics({
+            grossWpm: 0,
+            netWpm: 0,
+            accuracy: 100,
+            errors: 0,
+            duration: 0
+        });
+    }
+
+    const handleNextTask = () => {
+        if (activeTaskIndex < totalTasks - 1) {
+            const nextIndex = activeTaskIndex + 1;
+            setActiveTaskIndex(nextIndex);
+            setIsTaskPassed(completedTasks.includes(nextIndex));
+            setAttemptId(prev => prev + 1);
+            setMetrics({
+                grossWpm: 0,
+                netWpm: 0,
+                accuracy: 100,
+                errors: 0,
+                duration: 0
+            });
+        }
+    }
+
+    const selectTask = (index: number) => {
+        setActiveTaskIndex(index);
+        setIsTaskPassed(completedTasks.includes(index) || isLessonPassed);
         setAttemptId(prev => prev + 1);
         setMetrics({
             grossWpm: 0,
@@ -118,7 +181,7 @@ export default function LessonPage({ params }: { params: Promise<{ lessonId: str
             )}
 
             {/* Main Lesson Header with Locked Badge */}
-            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-8 gap-4">
+            <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
                 <div>
                     <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
                         {lesson.title}
@@ -137,30 +200,53 @@ export default function LessonPage({ params }: { params: Promise<{ lessonId: str
                         </svg>
                         <span className="text-sm font-semibold">Checking...</span>
                     </div>
-                ) : isPassed ? (
+                ) : isLessonPassed ? (
                     <div className="flex items-center gap-2 px-4 py-2 bg-green-50 dark:bg-green-950/30 border border-green-200 dark:border-green-900 text-green-600 dark:text-green-400 rounded-lg shadow-sm shrink-0">
                         <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                         </svg>
-                        <span className="text-sm font-semibold">Completed</span>
+                        <span className="text-sm font-semibold">Lesson Completed</span>
                     </div>
                 ) : (
                     <div className="flex items-center gap-2 px-4 py-2 bg-gray-50 dark:bg-zinc-800/50 border border-gray-200 dark:border-zinc-700 text-gray-500 dark:text-gray-400 rounded-lg shadow-sm shrink-0">
                         <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
                             <path strokeLinecap="round" strokeLinejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                         </svg>
-                        <span className="text-sm font-semibold">Locked</span>
+                        <span className="text-sm font-semibold">Lesson Incomplete</span>
                     </div>
                 )}
             </div>
 
+            {/* Task Tabs */}
+            <div className="w-full flex flex-wrap gap-2 mb-6">
+                {lesson.tasks.map((_, i) => (
+                    <button
+                        key={i}
+                        onClick={() => selectTask(i)}
+                        className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors border ${activeTaskIndex === i
+                            ? 'bg-black text-white dark:bg-white dark:text-black border-transparent'
+                            : completedTasks.includes(i) || isLessonPassed
+                                ? 'bg-green-50 text-green-700 border-green-200 dark:bg-green-900/20 dark:text-green-400 dark:border-green-800 hover:bg-green-100 dark:hover:bg-green-900/40'
+                                : 'bg-white text-gray-600 border-gray-200 hover:bg-gray-50 dark:bg-zinc-900 dark:text-gray-400 dark:border-zinc-800 dark:hover:bg-zinc-800'
+                            }`}
+                    >
+                        Task {i + 1}
+                        {(completedTasks.includes(i) || isLessonPassed) && (
+                            <svg className="w-4 h-4 inline-block ml-1.5 -mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3">
+                                <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
+                            </svg>
+                        )}
+                    </button>
+                ))}
+            </div>
+
             {/* Pass Criteria Info Box */}
-            <div className="w-full mb-8 p-4 bg-blue-50 dark:bg-blue-900/20 border border-blue-100 dark:border-blue-800 rounded-xl flex items-start gap-3 shadow-sm">
+            <div className="w-full mb-6 p-4 bg-blue-50 dark:bg-blue-900/20 border border-blue-100 dark:border-blue-800 rounded-xl flex items-start gap-3 shadow-sm">
                 <svg className="w-5 h-5 text-blue-500 dark:text-blue-400 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20">
                     <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
                 </svg>
                 <p className="text-sm font-medium text-blue-800 dark:text-blue-300 leading-relaxed">
-                    You must reach <span className="font-bold">90% accuracy</span> and complete the text to pass this lesson.
+                    You must reach <span className="font-bold">90% accuracy</span> and complete the task context to pass this task.
                 </p>
             </div>
 
@@ -172,8 +258,8 @@ export default function LessonPage({ params }: { params: Promise<{ lessonId: str
             ) : (
                 <div key={attemptId}>
                     <TypingArea
-                        text={lesson.text}
-                        disabled={isPassed}
+                        text={lesson.tasks[activeTaskIndex]}
+                        disabled={isTaskPassed}
                         onProgress={handleProgress}
                         onComplete={handleComplete}
                     />
@@ -206,11 +292,19 @@ export default function LessonPage({ params }: { params: Promise<{ lessonId: str
             {/* Bottom Buttons */}
             <div className="mt-10 flex flex-wrap justify-center items-center gap-4">
                 <button
-                    onClick={handleRestart}
+                    onClick={handleRestartTask}
                     className="px-8 py-3 bg-white dark:bg-black text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-zinc-700 rounded-full font-medium hover:bg-gray-50 dark:hover:bg-zinc-800 transition-colors shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 dark:focus:ring-white">
-                    Restart
+                    Restart Task
                 </button>
-                {isPassed && (
+                {isTaskPassed && activeTaskIndex < totalTasks - 1 && (
+                    <button
+                        onClick={handleNextTask}
+                        className="px-8 py-3 bg-black dark:bg-white text-white dark:text-black rounded-full font-medium hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 dark:focus:ring-white"
+                    >
+                        Next Task
+                    </button>
+                )}
+                {isLessonPassed && activeTaskIndex === totalTasks - 1 && (
                     <Link
                         href="/lessons"
                         className="px-8 py-3 bg-black dark:bg-white text-white dark:text-black rounded-full font-medium hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 dark:focus:ring-white"

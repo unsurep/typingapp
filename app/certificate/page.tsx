@@ -1,4 +1,5 @@
 import CertificatePreview from "@/components/CertificatePreview";
+import CheckEligibilityButton from "@/components/CheckEligibilityButton";
 
 export default function CertificatePage() {
     return (
@@ -29,9 +30,7 @@ export default function CertificatePage() {
                     <p className="text-sm md:text-base text-amber-800 dark:text-amber-200/80 mb-6 leading-relaxed">
                         Complete all lessons and pass a 60 second test with <span className="font-bold">35+ WPM</span> and <span className="font-bold">95% accuracy</span> to unlock your certificate.
                     </p>
-                    <button className="inline-flex justify-center items-center px-6 py-2.5 bg-amber-600 hover:bg-amber-700 text-white text-sm font-semibold rounded-lg shadow-sm transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-amber-600 dark:focus:ring-offset-zinc-900">
-                        Check Eligibility
-                    </button>
+                    <CheckEligibilityButton />
                 </div>
             </div>
 

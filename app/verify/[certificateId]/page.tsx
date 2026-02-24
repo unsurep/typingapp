@@ -1,16 +1,18 @@
 import Link from "next/link";
+import { createClient } from "@/utils/supabase/server";
 
 async function fetchCertificate(certificateId: string) {
-    const baseUrl = process.env.NEXT_PUBLIC_APP_URL || 'http://localhost:3000';
     try {
-        const res = await fetch(`${baseUrl}/api/verify/${certificateId}`, {
-            cache: 'no-store' // Always fetch fresh validation data
-        });
+        const supabase = await createClient();
+        const { data: certificate, error } = await supabase
+            .from('certificates')
+            .select('*')
+            .eq('certificate_code', certificateId)
+            .single();
 
-        if (!res.ok) return null;
+        if (error || !certificate) return null;
 
-        const data = await res.json();
-        return data.certificate;
+        return certificate;
     } catch (error) {
         console.error("Failed to fetch certificate:", error);
         return null;

@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { signup } from '@/app/login/actions';
+import PasswordInput from '@/components/PasswordInput';
 
 export default async function SignupPage({
     searchParams,
@@ -59,23 +60,11 @@ export default async function SignupPage({
                         />
                     </div>
 
-                    <div>
-                        <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2" htmlFor="password">
-                            Password
-                        </label>
-                        <input
-                            id="password"
-                            name="password"
-                            type="password"
-                            required
-                            className="block w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-zinc-700 bg-white dark:bg-black text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-900 dark:focus:ring-white transition-shadow"
-                            placeholder="••••••••"
-                        />
-                    </div>
+                    <PasswordInput />
 
                     <button
                         type="submit"
-                        className="w-full py-3.5 bg-black dark:bg-white text-white dark:text-black rounded-full font-bold text-lg hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 dark:focus:ring-white mt-4"
+                        className="w-full py-3.5 bg-black dark:bg-white text-white dark:text-black rounded-full font-bold text-lg hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 cursor-pointer focus:ring-gray-900 dark:focus:ring-white mt-4"
                     >
                         Sign Up
                     </button>

@@ -46,7 +46,7 @@ export async function signup(formData: FormData) {
 
     if (!signUpData.session) {
         // Supabase requires email verification by default, tell them to check their inbox.
-        redirect(`/login?message=${encodeURIComponent('Sign up successful! Please check your email inbox to verify your account before logging in. (Or disable Email Confirmations in Supabase settings)')}`)
+        redirect(`/login?message=${encodeURIComponent('Sign up successful! Please check your email inbox to verify your account before logging in.')}`)
     }
 
     // Next.js redirect doesn't implicitly wait, it throws an error to escape execution

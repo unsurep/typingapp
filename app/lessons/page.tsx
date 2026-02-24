@@ -8,24 +8,30 @@ export default async function LessonsPage() {
     const { data: { user } } = await supabase.auth.getUser();
 
     // Fetch progress if authenticated
-    let completedLessonIds = new Set<number>();
+    let progressMap = new Map<number, number>();
 
     if (user) {
         const { data: progressList } = await supabase
             .from('lesson_progress')
-            .select('lesson_id')
-            .eq('user_id', user.id)
-            .eq('completed', true);
+            .select('lesson_id, completed_tasks')
+            .eq('user_id', user.id);
 
         if (progressList) {
-            progressList.forEach(p => completedLessonIds.add(Number(p.lesson_id)));
+            progressList.forEach(p => {
+                const completedCount = p.completed_tasks ? p.completed_tasks.length : 0;
+                progressMap.set(Number(p.lesson_id), completedCount);
+            });
         }
     }
 
-    const lessonsWithProgress = lessons.map(lesson => ({
-        ...lesson,
-        progress: completedLessonIds.has(lesson.id) ? 100 : 0
-    }));
+    const lessonsWithProgress = lessons.map(lesson => {
+        const completedCount = progressMap.get(lesson.id) || 0;
+        const progressPercentage = Math.round((completedCount / lesson.tasks.length) * 100);
+        return {
+            ...lesson,
+            progress: progressPercentage
+        };
+    });
 
     return (
         <div className="flex flex-col flex-1 w-full max-w-6xl mx-auto py-12 px-4 sm:px-6 lg:px-8">

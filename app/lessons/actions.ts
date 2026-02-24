@@ -4,7 +4,7 @@ import { revalidatePath } from 'next/cache';
 import { createClient } from '@/utils/supabase/server';
 import { TypingResult } from '@/components/TypingArea';
 
-export async function saveLessonProgress(lessonId: number, metrics: TypingResult) {
+export async function saveLessonProgress(lessonId: number, taskIndex: number, totalTasks: number, metrics: TypingResult) {
     try {
         const supabase = await createClient();
 
@@ -28,7 +28,7 @@ export async function saveLessonProgress(lessonId: number, metrics: TypingResult
         // 4. Upsert Logic: Check for an existing row
         const { data: existingRecords, error: fetchError } = await supabase
             .from('lesson_progress')
-            .select('id, best_wpm, best_accuracy')
+            .select('id, best_wpm, best_accuracy, completed_tasks, completed')
             .eq('user_id', user.id)
             .eq('lesson_id', lessonId.toString());
 
@@ -40,30 +40,50 @@ export async function saveLessonProgress(lessonId: number, metrics: TypingResult
         const existingRecord = existingRecords?.[0];
 
         if (existingRecord) {
-            // UPDATE Branch: Only overwrite if they beat their high score WPM
-            if (metrics.netWpm > existingRecord.best_wpm || (metrics.netWpm === existingRecord.best_wpm && metrics.accuracy > existingRecord.best_accuracy)) {
-                const { error: updateError } = await supabase
-                    .from('lesson_progress')
-                    .update({
-                        best_wpm: metrics.netWpm,
-                        best_accuracy: metrics.accuracy,
-                        completed: true,
-                    })
-                    .eq('id', existingRecord.id);
-
-                if (updateError) {
-                    console.error('Failed to update lesson high score:', updateError);
-                    return { success: false, reason: 'db_error' };
-                }
+            // Update completed tasks array
+            let completedTasks: number[] = existingRecord.completed_tasks || [];
+            if (!completedTasks.includes(taskIndex)) {
+                completedTasks = [...completedTasks, taskIndex];
             }
-            // Even if they didn't beat their score, the run was technically strictly a success since it was >= 90 accuracy
-            return { success: true, newHighScore: metrics.netWpm > existingRecord.best_wpm };
+
+            const isFullyCompleted = completedTasks.length >= totalTasks;
+
+            // Check if this is a new high score across all tasks in this lesson
+            const isNewHighScore = metrics.netWpm > (existingRecord.best_wpm || 0) ||
+                (metrics.netWpm === (existingRecord.best_wpm || 0) && metrics.accuracy > (existingRecord.best_accuracy || 0));
+
+            const updatePayload: any = {
+                completed_tasks: completedTasks,
+                completed: isFullyCompleted || existingRecord.completed, // never un-complete
+            };
+
+            if (isNewHighScore) {
+                updatePayload.best_wpm = metrics.netWpm;
+                updatePayload.best_accuracy = metrics.accuracy;
+            }
+
+            const { error: updateError } = await supabase
+                .from('lesson_progress')
+                .update(updatePayload)
+                .eq('id', existingRecord.id);
+
+            if (updateError) {
+                console.error('Failed to update lesson high score:', updateError);
+                return { success: false, reason: 'db_error' };
+            }
+
+            revalidatePath('/', 'layout');
+            return { success: true, newHighScore: isNewHighScore, completedTasks, fullyCompleted: updatePayload.completed };
         } else {
-            // INSERT Branch: First time passing this exact lesson
+            // INSERT Branch: First time passing a task in this exact lesson
+            const completedTasks = [taskIndex];
+            const isFullyCompleted = completedTasks.length >= totalTasks;
+
             const payload = {
                 user_id: user.id,
                 lesson_id: lessonId.toString(),
-                completed: true,
+                completed_tasks: completedTasks,
+                completed: isFullyCompleted,
                 best_wpm: metrics.netWpm,
                 best_accuracy: metrics.accuracy,
             };
@@ -73,10 +93,11 @@ export async function saveLessonProgress(lessonId: number, metrics: TypingResult
                 console.error('Failed to insert new lesson progress:', insertError);
                 return { success: false, reason: 'db_error' };
             }
+
+            revalidatePath('/', 'layout');
+            return { success: true, newHighScore: true, completedTasks, fullyCompleted: isFullyCompleted };
         }
 
-        revalidatePath('/', 'layout');
-        return { success: true, newHighScore: true };
     } catch (err) {
         console.error('Unexpected error while saving lesson progress:', err);
         return { success: false, reason: 'server_error' };
@@ -93,22 +114,26 @@ export async function getLessonProgress(lessonId: number) {
         } = await supabase.auth.getUser();
 
         if (authError || !user) {
-            return { success: false, passed: false };
+            return { success: false, passed: false, completedTasks: [] };
         }
 
         const { data: records, error: fetchError } = await supabase
             .from('lesson_progress')
-            .select('completed')
+            .select('completed, completed_tasks')
             .eq('user_id', user.id)
             .eq('lesson_id', lessonId.toString());
 
         if (fetchError || !records || records.length === 0) {
-            return { success: true, passed: false };
+            return { success: true, passed: false, completedTasks: [] };
         }
 
-        return { success: true, passed: records[0].completed };
+        return {
+            success: true,
+            passed: records[0].completed,
+            completedTasks: records[0].completed_tasks || []
+        };
     } catch (err) {
         console.error('Unexpected error fetching lesson progress:', err);
-        return { success: false, passed: false };
+        return { success: false, passed: false, completedTasks: [] };
     }
 }
