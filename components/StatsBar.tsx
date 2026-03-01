@@ -7,7 +7,7 @@ interface StatsBarProps {
 
 export default function StatsBar({ wpm = 0, accuracy = 100, errors = 0, time = "00:00" }: StatsBarProps = {}) {
     return (
-        <div className="w-full mt-6 bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 rounded-xl p-4 sm:p-6 shadow-sm flex flex-wrap items-center justify-between lg:justify-around gap-4 sm:gap-6">
+        <div className="w-full mt-6 bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 rounded-xl p-4 sm:p-6 shadow-sm flex flex-wrap items-center justify-between lg:justify-around gap-4 sm:gap-6 hover:border-brand/30 hover:shadow-brand/20 transition-all duration-300">
 
             {/* WPM Stat */}
             <div className="flex flex-col items-center flex-1 min-w-[80px]">

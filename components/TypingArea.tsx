@@ -15,18 +15,20 @@ export interface TypingResult {
     accuracy: number;
     errors: number;
     duration: number; // in seconds
+    userInput?: string; // Optional typed text history for saving
 }
 
 interface TypingAreaProps {
     text: string;
     disabled?: boolean;
+    initialUserInput?: string;
     onComplete?: (result: TypingResult) => void;
     onProgress?: (result: TypingResult) => void;
     onStart?: () => void;
 }
 
-export default function TypingArea({ text, disabled = false, onComplete, onProgress, onStart }: TypingAreaProps) {
-    const [userInput, setUserInput] = useState('');
+export default function TypingArea({ text, disabled = false, initialUserInput = '', onComplete, onProgress, onStart }: TypingAreaProps) {
+    const [userInput, setUserInput] = useState(initialUserInput);
     const [startTime, setStartTime] = useState<number | null>(null);
     const [endTime, setEndTime] = useState<number | null>(null);
     const [isFocused, setIsFocused] = useState(false);
@@ -80,7 +82,8 @@ export default function TypingArea({ text, disabled = false, onComplete, onProgr
             netWpm,
             accuracy,
             errors,
-            duration: elapsedSeconds
+            duration: elapsedSeconds,
+            userInput: input
         };
     };
 
@@ -141,12 +144,17 @@ export default function TypingArea({ text, disabled = false, onComplete, onProgr
         e.preventDefault();
     };
 
+    // Keep input synchronized with initial prop updates (e.g. tab switching)
+    useEffect(() => {
+        setUserInput(initialUserInput);
+    }, [initialUserInput]);
+
     // Auto-focus on mount
     useEffect(() => {
         if (inputRef.current) {
             inputRef.current.focus();
         }
-    }, []);
+    }, [initialUserInput]); // Auto focus when a new lesson test initializes
 
     // Global keydown listener to refocus when typing starts anywhere on the page
     useEffect(() => {
@@ -215,7 +223,7 @@ export default function TypingArea({ text, disabled = false, onComplete, onProgr
 
     return (
         <div
-            className="w-full relative rounded-2xl overflow-hidden flex flex-col cursor-text group"
+            className="w-full relative rounded-2xl overflow-hidden flex flex-col cursor-text group border-2 border-yellow-400 dark:border-yellow-500"
             onClick={handleContainerClick}
         >
             {/* Display Area without blur effect */}
@@ -223,9 +231,9 @@ export default function TypingArea({ text, disabled = false, onComplete, onProgr
                 "p-6 md:p-8 transition-all duration-300 ease-in-out relative",
                 "bg-transparent"
             )}>
-                <p className="text-xl md:text-3xl font-mono leading-relaxed select-none wrap-break-word whitespace-pre-wrap tracking-wide">
+                <div className="text-xl md:text-3xl font-mono leading-relaxed select-none wrap-break-word whitespace-pre-wrap tracking-wide">
                     {renderCharacters()}
-                </p>
+                </div>
             </div>
 
             {/* Hidden Input Area */}

@@ -1,4 +1,5 @@
 import { motion, Variants } from "framer-motion";
+import { getPerformanceLevel } from "@/utils/performance";
 
 interface ResultCardProps {
     wpm?: number;
@@ -28,6 +29,8 @@ const itemVariants: Variants = {
 };
 
 export default function ResultCard({ wpm = 0, accuracy = 100, errors = 0, duration = 60, timeLeft, onRetry }: ResultCardProps) {
+    const performance = getPerformanceLevel(wpm);
+
     return (
         <motion.div
             variants={containerVariants}
@@ -39,9 +42,18 @@ export default function ResultCard({ wpm = 0, accuracy = 100, errors = 0, durati
             {/* Top Banner Area */}
             <div className="bg-muted/10 px-8 py-10 text-center border-b border-border/50">
                 <motion.h2 variants={itemVariants} className="text-xl font-bold text-muted uppercase tracking-widest mb-2">Test Complete</motion.h2>
-                <motion.div variants={itemVariants} className="flex flex-col items-center justify-center">
+                <motion.div variants={itemVariants} className="flex flex-col items-center justify-center mb-6">
                     <span className="text-7xl md:text-8xl font-black text-brand tracking-tighter drop-shadow-[0_0_15px_rgba(226,183,20,0.4)] dark:drop-shadow-[0_0_15px_rgba(226,183,20,0.6)]">{wpm}</span>
-                    <span className="text-lg font-semibold text-muted font-mono mt-1">Net WPM</span>
+                    <span className="text-lg font-semibold text-muted font-mono mt-1 mb-6">Net WPM</span>
+
+                    {/* Performance Level Badge */}
+                    <motion.div
+                        className={`mt-4 px-6 py-2 rounded-full border border-solid flex items-center gap-2 font-bold tracking-wide backdrop-blur-sm ${performance.colorClass}`}
+                        whileHover={{ scale: 1.05 }}
+                    >
+                        <span className="text-lg leading-none">{performance.icon}</span>
+                        Performance Level: {performance.label}
+                    </motion.div>
                 </motion.div>
             </div>
 

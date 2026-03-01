@@ -4,12 +4,14 @@ import React, { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import TypingArea, { TypingResult } from "@/components/TypingArea";
 import StatsBar from "@/components/StatsBar";
+import KeyboardHandGuide from "@/components/KeyboardHandGuide";
 import ResultCard from "@/components/ResultCard";
 import { toast } from 'sonner';
 import { saveTestResult } from './actions';
 import { createClient } from '@/utils/supabase/client';
 import Link from 'next/link';
 import { TYPING_TEXTS } from '@/lib/texts';
+import { motion, AnimatePresence } from "framer-motion";
 
 function TestContent() {
     const searchParams = useSearchParams();
@@ -185,14 +187,24 @@ function TestContent() {
                     </div>
 
                     {/* Main Typing Interface & Stats */}
-                    <TypingArea
-                        key={resetKey}
-                        text={TYPING_TEXTS[textIndex]}
-                        disabled={isComplete}
-                        onStart={handleStart}
-                        onProgress={handleProgress}
-                        onComplete={handleComplete}
-                    />
+                    <div className="relative">
+                        <TypingArea
+                            key={resetKey}
+                            text={TYPING_TEXTS[textIndex]}
+                            disabled={isComplete}
+                            onStart={handleStart}
+                            onProgress={handleProgress}
+                            onComplete={handleComplete}
+                        />
+                    </div>
+
+                    {/* Hand Placement Guide overlay */}
+                    <AnimatePresence>
+                        {!hasStarted && (
+                            <KeyboardHandGuide />
+                        )}
+                    </AnimatePresence>
+
                     <StatsBar
                         wpm={metrics.netWpm}
                         accuracy={metrics.accuracy}
@@ -203,7 +215,7 @@ function TestContent() {
                     <div className="mt-10 flex flex-wrap justify-center items-center gap-4">
                         <button
                             onClick={handleReset}
-                            className="px-8 py-3 bg-white dark:bg-zinc-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-zinc-700 rounded-full font-medium hover:border-brand/50 hover:text-brand dark:hover:text-brand transition-all shadow-sm focus:outline-none"
+                            className="px-8 py-3 bg-white dark:bg-zinc-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-zinc-700 rounded-full font-medium hover:border-brand/50 hover:text-brand dark:hover:text-brand transition-all shadow-sm focus:outline-none cursor-pointer"
                         >
                             Restart
                         </button>

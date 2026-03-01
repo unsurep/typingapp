@@ -26,7 +26,7 @@ export const lessons: Lesson[] = [
         tasks: [
             "Now try reaching for the top row keys. Stretch your fingers up to Q W E R T Y U I O P without moving your hands away from the home row. Practice these smooth upward extensions to build muscle memory safely.",
             "Return to the home row immediately after striking a top row key. Q A W S E D R F T G Y H U J I K O L P ;. Notice how some reaches feel longer than others. Keep your eyes locked to the screen at all times.",
-            "Let's combine the rows. The quick brown fox jumps right over the top row. Words like 'typewriter' and 'property' use a lot of top row letters. Ensure your fingers naturally find their way back to A S D F and J K L ;."
+            "Let's combine the rows. A swift panther leaps gracefully across the upper canopy. Words like 'typewriter' and 'property' use a lot of top row letters. Ensure your fingers naturally find their way back to A S D F and J K L ;."
         ]
     },
     {
@@ -37,7 +37,7 @@ export const lessons: Lesson[] = [
         tasks: [
             "The bottom row requires your fingers to curl downward. Practice typing Z X C V B N M , . / carefully. It might feel a bit cramped at first. Keep your palms relaxed and don't rest them to ensure flexibility.",
             "With practice, curling your fingers downward will become completely natural. Z A X S C D V F B G N H M J , K . L / ;. This row introduces the comma and the period, which are essential for sentences.",
-            "Now try combining all three alphabet rows. The quick brown fox jumps over the lazy dog. The five boxing wizards jump quickly. Pack my box with five dozen liquor jugs. Try to maintain a constant, steady rhythm across all keys."
+            "Now try combining all three alphabet rows. A brave monkey vaulted across the wide zoo enclosure. Quiet zebras grazed peacefully near the extra large pond. Just keep practicing to maintain a constant, steady rhythm across all keys."
         ]
     },
     {

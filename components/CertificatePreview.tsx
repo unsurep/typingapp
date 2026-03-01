@@ -30,14 +30,14 @@ export default function CertificatePreview({
             initial="hidden"
             animate="visible"
             whileHover={{ y: -5 }}
-            className="w-full max-w-4xl mx-auto bg-[#fafafa] dark:bg-[#e8e8e8] border-[12px] border-white dark:border-zinc-200 rounded-lg shadow-xl p-8 sm:p-12 md:p-20 relative overflow-hidden text-black mx-4 hover:shadow-brand/20 transition-all duration-300 group hover:border-brand/50"
+            className="w-full max-w-4xl mx-4 bg-[#fafafa] dark:bg-[#e8e8e8] border-12px border-white dark:border-zinc-200 rounded-lg shadow-xl p-8 sm:p-12 md:p-20 relative overflow-hidden text-black  hover:shadow-brand/20 transition-all duration-300 group hover:border-brand/50"
         >
 
             {/* Subtle glow effect on hover */}
             <div className="absolute inset-0 bg-linear-to-br from-brand/0 to-brand/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
 
             {/* Subtle background pattern or watermark effect */}
-            <div className="absolute inset-0 opacity-[0.03] bg-[radial-gradient(#000_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none"></div>
+            <div className="absolute inset-0 opacity-[0.03] bg-[radial-gradient(#000_1px,transparent_1px)] background-size:[16px_16px] pointer-events-none"></div>
 
             {/* Certificate Content */}
             <div className="relative z-10 flex flex-col items-center border-[3px] border-gray-300/60 p-8 sm:p-12 h-full">

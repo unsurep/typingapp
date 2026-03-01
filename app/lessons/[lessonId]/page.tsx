@@ -9,7 +9,8 @@ import { toast } from "sonner";
 import { saveLessonProgress, getLessonProgress } from "../actions";
 import { lessons } from "@/lib/lessons";
 import { createClient } from '@/utils/supabase/client';
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+import { getPerformanceLevel } from "@/utils/performance";
 
 // In Next.js 15, dynamic route parameters must be awaited or unwrapped via `use()`
 export default function LessonPage({ params }: { params: Promise<{ lessonId: string }> }) {
@@ -25,6 +26,7 @@ export default function LessonPage({ params }: { params: Promise<{ lessonId: str
     const totalTasks = lesson.tasks.length;
     const [activeTaskIndex, setActiveTaskIndex] = useState(0);
     const [completedTasks, setCompletedTasks] = useState<number[]>([]);
+    const [taskScores, setTaskScores] = useState<Record<number, { wpm: number, accuracy: number, userInput?: string }>>({});
 
     const [isLessonPassed, setIsLessonPassed] = useState(false);
     const [isTaskPassed, setIsTaskPassed] = useState(false);
@@ -36,7 +38,8 @@ export default function LessonPage({ params }: { params: Promise<{ lessonId: str
         netWpm: 0,
         accuracy: 100,
         errors: 0,
-        duration: 0
+        duration: 0,
+        userInput: ''
     });
 
     useEffect(() => {
@@ -53,15 +56,45 @@ export default function LessonPage({ params }: { params: Promise<{ lessonId: str
                     const fetchedCompletedTasks = res.completedTasks || [];
                     setCompletedTasks(fetchedCompletedTasks);
 
+                    if (res.taskScores) {
+                        setTaskScores(res.taskScores);
+                    }
+
                     if (res.passed) {
                         setIsLessonPassed(true);
                         setIsTaskPassed(true);
                         setActiveTaskIndex(0);
+
+                        // Set metrics for the first task if they exist
+                        if (res.taskScores && res.taskScores[0]) {
+                            setMetrics({
+                                grossWpm: res.taskScores[0].wpm,
+                                netWpm: res.taskScores[0].wpm,
+                                accuracy: res.taskScores[0].accuracy,
+                                errors: 0,
+                                duration: 0,
+                                userInput: res.taskScores[0].userInput || ''
+                            });
+                        }
                     } else {
                         // Find first incomplete task
                         const nextIter = lesson?.tasks.findIndex((_, i) => !fetchedCompletedTasks.includes(i));
+                        let startingIndex = 0;
                         if (nextIter !== undefined && nextIter !== -1) {
-                            setActiveTaskIndex(nextIter);
+                            startingIndex = nextIter;
+                        }
+                        setActiveTaskIndex(startingIndex);
+
+                        // Set metrics for the starting task if they exist
+                        if (res.taskScores && res.taskScores[startingIndex]) {
+                            setMetrics({
+                                grossWpm: res.taskScores[startingIndex].wpm,
+                                netWpm: res.taskScores[startingIndex].wpm,
+                                accuracy: res.taskScores[startingIndex].accuracy,
+                                errors: 0,
+                                duration: 0,
+                                userInput: res.taskScores[startingIndex].userInput || ''
+                            });
                         }
                     }
                 }
@@ -106,6 +139,9 @@ export default function LessonPage({ params }: { params: Promise<{ lessonId: str
         if (!saveRes.success && saveRes.reason !== 'guest') {
             toast.error("Warning: Could not save your progress to the database. Have you updated your Supabase Schema?");
             console.error("Save failed:", saveRes.reason);
+        } else if (saveRes.success && saveRes.taskScores) {
+            // Update local state with the new task scores returned from the server
+            setTaskScores(saveRes.taskScores);
         }
     };
 
@@ -117,7 +153,8 @@ export default function LessonPage({ params }: { params: Promise<{ lessonId: str
             netWpm: 0,
             accuracy: 100,
             errors: 0,
-            duration: 0
+            duration: 0,
+            userInput: ''
         });
     }
 
@@ -127,13 +164,26 @@ export default function LessonPage({ params }: { params: Promise<{ lessonId: str
             setActiveTaskIndex(nextIndex);
             setIsTaskPassed(completedTasks.includes(nextIndex));
             setAttemptId(prev => prev + 1);
-            setMetrics({
-                grossWpm: 0,
-                netWpm: 0,
-                accuracy: 100,
-                errors: 0,
-                duration: 0
-            });
+
+            if (taskScores[nextIndex]) {
+                setMetrics({
+                    grossWpm: taskScores[nextIndex].wpm,
+                    netWpm: taskScores[nextIndex].wpm,
+                    accuracy: taskScores[nextIndex].accuracy,
+                    errors: 0,
+                    duration: 0,
+                    userInput: taskScores[nextIndex].userInput || ''
+                });
+            } else {
+                setMetrics({
+                    grossWpm: 0,
+                    netWpm: 0,
+                    accuracy: 100,
+                    errors: 0,
+                    duration: 0,
+                    userInput: ''
+                });
+            }
         }
     }
 
@@ -141,13 +191,26 @@ export default function LessonPage({ params }: { params: Promise<{ lessonId: str
         setActiveTaskIndex(index);
         setIsTaskPassed(completedTasks.includes(index) || isLessonPassed);
         setAttemptId(prev => prev + 1);
-        setMetrics({
-            grossWpm: 0,
-            netWpm: 0,
-            accuracy: 100,
-            errors: 0,
-            duration: 0
-        });
+
+        if (taskScores[index]) {
+            setMetrics({
+                grossWpm: taskScores[index].wpm,
+                netWpm: taskScores[index].wpm,
+                accuracy: taskScores[index].accuracy,
+                errors: 0,
+                duration: 0,
+                userInput: taskScores[index].userInput || ''
+            });
+        } else {
+            setMetrics({
+                grossWpm: 0,
+                netWpm: 0,
+                accuracy: 100,
+                errors: 0,
+                duration: 0,
+                userInput: ''
+            });
+        }
     }
 
     const formatTime = (seconds: number) => {
@@ -266,6 +329,7 @@ export default function LessonPage({ params }: { params: Promise<{ lessonId: str
                 <div key={attemptId}>
                     <TypingArea
                         text={lesson.tasks[activeTaskIndex]}
+                        initialUserInput={metrics.userInput}
                         disabled={isTaskPassed}
                         onProgress={handleProgress}
                         onComplete={handleComplete}
@@ -273,26 +337,44 @@ export default function LessonPage({ params }: { params: Promise<{ lessonId: str
                 </div>
             )}
 
-            {/* Stats Bar */}
-            <div className="w-full mt-6 bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 rounded-xl p-4 shadow-sm flex flex-wrap items-center justify-between lg:justify-around gap-4 hover:border-brand/30 hover:shadow-brand/20 transition-all duration-300">
-                <div className="flex flex-col items-center flex-1 min-w-[80px]">
-                    <span className="text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400 font-semibold mb-1">WPM</span>
-                    <span className="text-3xl font-bold text-gray-900 dark:text-white">{metrics.netWpm}</span>
-                </div>
-                <div className="hidden sm:block w-px h-10 bg-gray-200 dark:bg-zinc-800"></div>
-                <div className="flex flex-col items-center flex-1 min-w-[80px]">
-                    <span className="text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400 font-semibold mb-1">Accuracy</span>
-                    <span className={`text-3xl font-bold ${metrics.accuracy < 90 && metrics.accuracy > 0 ? 'text-red-500' : 'text-gray-900 dark:text-white'}`}>{metrics.accuracy}%</span>
-                </div>
-                <div className="hidden sm:block w-px h-10 bg-gray-200 dark:bg-zinc-800"></div>
-                <div className="flex flex-col items-center flex-1 min-w-[80px]">
-                    <span className="text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400 font-semibold mb-1">Errors</span>
-                    <span className={`text-3xl font-bold ${metrics.errors > 0 ? 'text-red-500' : 'text-gray-900 dark:text-white'}`}>{metrics.errors}</span>
-                </div>
-                <div className="hidden sm:block w-px h-10 bg-gray-200 dark:bg-zinc-800"></div>
-                <div className="flex flex-col items-center flex-1 min-w-[80px]">
-                    <span className="text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400 font-semibold mb-1">Time</span>
-                    <span className="text-lg md:text-3xl font-bold text-gray-900 dark:text-white pt-1">{formatTime(metrics.duration)}</span>
+            {/* Performance Badge & Stats Bar Area */}
+            <div className="w-full mt-6">
+                <AnimatePresence>
+                    {isTaskPassed && (
+                        <motion.div
+                            initial={{ opacity: 0, y: 10, height: 0 }}
+                            animate={{ opacity: 1, y: 0, height: 'auto', marginBottom: 16 }}
+                            exit={{ opacity: 0, y: -10, height: 0, marginBottom: 0 }}
+                            className="flex justify-center w-full overflow-hidden"
+                        >
+                            <div className={`px-6 py-2 rounded-full border border-solid flex items-center gap-2 font-bold tracking-wide backdrop-blur-sm ${getPerformanceLevel(metrics.netWpm).colorClass}`}>
+                                <span className="text-lg leading-none">{getPerformanceLevel(metrics.netWpm).icon}</span>
+                                Performance Level: {getPerformanceLevel(metrics.netWpm).label}
+                            </div>
+                        </motion.div>
+                    )}
+                </AnimatePresence>
+
+                <div className="w-full bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 rounded-xl p-4 shadow-sm flex flex-wrap items-center justify-between lg:justify-around gap-4 hover:border-brand/30 hover:shadow-brand/20 transition-all duration-300">
+                    <div className="flex flex-col items-center flex-1 min-w-[80px]">
+                        <span className="text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400 font-semibold mb-1">WPM</span>
+                        <span className="text-3xl font-bold text-gray-900 dark:text-white">{metrics.netWpm}</span>
+                    </div>
+                    <div className="hidden sm:block w-px h-10 bg-gray-200 dark:bg-zinc-800"></div>
+                    <div className="flex flex-col items-center flex-1 min-w-[80px]">
+                        <span className="text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400 font-semibold mb-1">Accuracy</span>
+                        <span className={`text-3xl font-bold ${metrics.accuracy < 90 && metrics.accuracy > 0 ? 'text-red-500' : 'text-gray-900 dark:text-white'}`}>{metrics.accuracy}%</span>
+                    </div>
+                    <div className="hidden sm:block w-px h-10 bg-gray-200 dark:bg-zinc-800"></div>
+                    <div className="flex flex-col items-center flex-1 min-w-[80px]">
+                        <span className="text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400 font-semibold mb-1">Errors</span>
+                        <span className={`text-3xl font-bold ${metrics.errors > 0 ? 'text-red-500' : 'text-gray-900 dark:text-white'}`}>{metrics.errors}</span>
+                    </div>
+                    <div className="hidden sm:block w-px h-10 bg-gray-200 dark:bg-zinc-800"></div>
+                    <div className="flex flex-col items-center flex-1 min-w-[80px]">
+                        <span className="text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400 font-semibold mb-1">Time</span>
+                        <span className="text-lg md:text-3xl font-bold text-gray-900 dark:text-white pt-1">{formatTime(metrics.duration)}</span>
+                    </div>
                 </div>
             </div>
 

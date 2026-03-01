@@ -28,7 +28,7 @@ export async function saveLessonProgress(lessonId: number, taskIndex: number, to
         // 4. Upsert Logic: Check for an existing row
         const { data: existingRecords, error: fetchError } = await supabase
             .from('lesson_progress')
-            .select('id, best_wpm, best_accuracy, completed_tasks, completed')
+            .select('id, best_wpm, best_accuracy, completed_tasks, completed, task_scores')
             .eq('user_id', user.id)
             .eq('lesson_id', lessonId.toString());
 
@@ -52,9 +52,27 @@ export async function saveLessonProgress(lessonId: number, taskIndex: number, to
             const isNewHighScore = metrics.netWpm > (existingRecord.best_wpm || 0) ||
                 (metrics.netWpm === (existingRecord.best_wpm || 0) && metrics.accuracy > (existingRecord.best_accuracy || 0));
 
+            // Merge new task score into existing task scores map
+            const existingTaskScores = existingRecord.task_scores || {};
+            const previousTaskScore = existingTaskScores[taskIndex] || { wpm: 0, accuracy: 0 };
+
+            // Only update task score if they got a better WPM or (same WPM but better accuracy) on THIS specific task
+            const isBetterTaskScore = metrics.netWpm > previousTaskScore.wpm ||
+                (metrics.netWpm === previousTaskScore.wpm && metrics.accuracy > previousTaskScore.accuracy);
+
+            const newTaskScores = { ...existingTaskScores };
+            if (isBetterTaskScore || !existingTaskScores[taskIndex]) {
+                newTaskScores[taskIndex] = {
+                    wpm: metrics.netWpm,
+                    accuracy: metrics.accuracy,
+                    userInput: metrics.userInput
+                };
+            }
+
             const updatePayload: any = {
                 completed_tasks: completedTasks,
                 completed: isFullyCompleted || existingRecord.completed, // never un-complete
+                task_scores: newTaskScores
             };
 
             if (isNewHighScore) {
@@ -73,11 +91,25 @@ export async function saveLessonProgress(lessonId: number, taskIndex: number, to
             }
 
             revalidatePath('/', 'layout');
-            return { success: true, newHighScore: isNewHighScore, completedTasks, fullyCompleted: updatePayload.completed };
+            return {
+                success: true,
+                newHighScore: isNewHighScore,
+                completedTasks,
+                taskScores: newTaskScores,
+                fullyCompleted: updatePayload.completed
+            };
         } else {
             // INSERT Branch: First time passing a task in this exact lesson
             const completedTasks = [taskIndex];
             const isFullyCompleted = completedTasks.length >= totalTasks;
+
+            const initialTaskScores = {
+                [taskIndex]: {
+                    wpm: metrics.netWpm,
+                    accuracy: metrics.accuracy,
+                    userInput: metrics.userInput
+                }
+            };
 
             const payload = {
                 user_id: user.id,
@@ -86,6 +118,7 @@ export async function saveLessonProgress(lessonId: number, taskIndex: number, to
                 completed: isFullyCompleted,
                 best_wpm: metrics.netWpm,
                 best_accuracy: metrics.accuracy,
+                task_scores: initialTaskScores
             };
             const { error: insertError } = await supabase.from('lesson_progress').insert(payload);
 
@@ -95,7 +128,7 @@ export async function saveLessonProgress(lessonId: number, taskIndex: number, to
             }
 
             revalidatePath('/', 'layout');
-            return { success: true, newHighScore: true, completedTasks, fullyCompleted: isFullyCompleted };
+            return { success: true, newHighScore: true, completedTasks, taskScores: initialTaskScores, fullyCompleted: isFullyCompleted };
         }
 
     } catch (err) {
@@ -119,18 +152,19 @@ export async function getLessonProgress(lessonId: number) {
 
         const { data: records, error: fetchError } = await supabase
             .from('lesson_progress')
-            .select('completed, completed_tasks')
+            .select('completed, completed_tasks, task_scores')
             .eq('user_id', user.id)
             .eq('lesson_id', lessonId.toString());
 
         if (fetchError || !records || records.length === 0) {
-            return { success: true, passed: false, completedTasks: [] };
+            return { success: true, passed: false, completedTasks: [], taskScores: {} };
         }
 
         return {
             success: true,
             passed: records[0].completed,
-            completedTasks: records[0].completed_tasks || []
+            completedTasks: records[0].completed_tasks || [],
+            taskScores: records[0].task_scores || {}
         };
     } catch (err) {
         console.error('Unexpected error fetching lesson progress:', err);

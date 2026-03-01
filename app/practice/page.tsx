@@ -3,13 +3,15 @@
 import React, { useState, useCallback } from "react";
 import TypingArea, { TypingResult } from "@/components/TypingArea";
 import StatsBar from "@/components/StatsBar";
+import KeyboardHandGuide from "@/components/KeyboardHandGuide";
 import { TYPING_TEXTS } from "@/lib/texts";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 export default function PracticePage() {
     const [textIndex, setTextIndex] = useState(0);
     const [resetKey, setResetKey] = useState(0);
     const [isComplete, setIsComplete] = useState(false);
+    const [hasStarted, setHasStarted] = useState(false);
 
     // Metrics state
     const [wpm, setWpm] = useState(0);
@@ -38,6 +40,7 @@ export default function PracticePage() {
         setErrors(0);
         setTimeElapsed(null);
         setIsComplete(false);
+        setHasStarted(false);
     };
 
     const handleRestart = () => {
@@ -74,12 +77,22 @@ export default function PracticePage() {
             </div>
 
             {/* Main Typing Container */}
-            <TypingArea
-                key={resetKey}
-                text={TYPING_TEXTS[textIndex]}
-                onProgress={handleProgress}
-                onComplete={handleComplete}
-            />
+            <div className="relative">
+                <TypingArea
+                    key={resetKey}
+                    text={TYPING_TEXTS[textIndex]}
+                    onStart={() => setHasStarted(true)}
+                    onProgress={handleProgress}
+                    onComplete={handleComplete}
+                />
+            </div>
+
+            {/* Hand Placement Guide overlay */}
+            <AnimatePresence>
+                {!hasStarted && (
+                    <KeyboardHandGuide />
+                )}
+            </AnimatePresence>
 
             {/* Stats Bar */}
             <div className="w-full mt-6 bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 rounded-xl p-4 shadow-sm flex flex-wrap items-center justify-between lg:justify-around gap-4 hover:border-brand/30 hover:shadow-brand/20 transition-all duration-300">
@@ -108,20 +121,20 @@ export default function PracticePage() {
             <div className="mt-10 flex flex-wrap justify-center items-center gap-4">
                 <button
                     onClick={handleRestart}
-                    className="px-8 py-3 bg-white dark:bg-zinc-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-zinc-700 rounded-full font-medium hover:border-brand/50 hover:text-brand dark:hover:text-brand transition-all shadow-sm focus:outline-none"
+                    className="px-8 py-3 bg-white dark:bg-zinc-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-zinc-700 rounded-full font-medium hover:border-brand/50 hover:text-brand dark:hover:text-brand cursor-pointer transition-all shadow-sm focus:outline-none"
                 >
                     Restart
                 </button>
                 <button
                     onClick={handleChangeText}
-                    className="px-8 py-3 bg-white dark:bg-zinc-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-zinc-700 rounded-full font-medium hover:border-brand/50 hover:text-brand dark:hover:text-brand transition-all shadow-sm focus:outline-none"
+                    className="px-8 py-3 bg-white dark:bg-zinc-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-zinc-700 rounded-full font-medium hover:border-brand/50 hover:text-brand dark:hover:text-brand cursor-pointer transition-all shadow-sm focus:outline-none"
                 >
                     Change Text
                 </button>
                 <button
                     onClick={handleChangeText}
                     disabled={!isComplete}
-                    className={`relative px-8 py-3 rounded-full font-medium overflow-hidden transition-all shadow-sm focus:outline-none select-none group/btn ${isComplete
+                    className={`relative px-8 py-3 rounded-full font-medium overflow-hidden transition-all shadow-sm cursor-pointer focus:outline-none select-none group/btn ${isComplete
                         ? "bg-brand text-background hover:shadow-brand/30"
                         : "bg-gray-200 dark:bg-zinc-800 text-gray-400 dark:text-zinc-600 cursor-not-allowed opacity-60"
                         }`}
