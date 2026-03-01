@@ -145,7 +145,9 @@ function TestContent() {
     };
 
     return (
-        <div className="flex flex-col flex-1 w-full max-w-4xl mx-auto py-12 px-4 sm:px-6">
+        <div className="flex flex-col flex-1 w-full max-w-4xl mx-auto py-12 px-4 sm:px-6 relative">
+            {/* Background gradient orb effect */}
+            <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[500px] bg-brand/5 dark:bg-brand/10 blur-[120px] rounded-full pointer-events-none -z-10" />
 
             {isGuest && (
                 <div className="mb-8 bg-yellow-50 dark:bg-zinc-900/40 border-l-4 border-yellow-400 dark:border-yellow-500 rounded-r-xl p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between text-yellow-800 dark:text-yellow-200 text-sm shadow-sm gap-4">
@@ -164,7 +166,7 @@ function TestContent() {
             {/* Header Info */}
             <div className="flex flex-col sm:flex-row justify-between items-center mb-10 gap-4">
                 <h1 className="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
-                    Typing Test
+                    Typing <span className="text-brand">Test</span>
                 </h1>
                 <div className="px-4 py-1.5 bg-gray-100 dark:bg-zinc-800 text-sm font-semibold text-gray-700 dark:text-gray-300 rounded-full border border-gray-200 dark:border-zinc-700 shadow-sm">
                     {initialDuration} Seconds
@@ -198,12 +200,11 @@ function TestContent() {
                         time={formatTime(metrics.duration)}
                     />
 
-                    {/* Bottom Buttons */}
                     <div className="mt-10 flex flex-wrap justify-center items-center gap-4">
-                        <button className="px-10 py-4 bg-black dark:bg-white text-white dark:text-black rounded-full text-lg font-bold hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors shadow-lg focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 dark:focus:ring-white">
-                            Start Test
-                        </button>
-                        <button onClick={handleReset} className="px-8 py-3 bg-white dark:bg-black text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-zinc-700 rounded-full font-medium hover:border-black dark:hover:border-white hover:text-black dark:hover:text-white transition-all shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 dark:focus:ring-white">
+                        <button
+                            onClick={handleReset}
+                            className="px-8 py-3 bg-white dark:bg-zinc-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-zinc-700 rounded-full font-medium hover:border-brand/50 hover:text-brand dark:hover:text-brand transition-all shadow-sm focus:outline-none"
+                        >
                             Restart
                         </button>
                     </div>

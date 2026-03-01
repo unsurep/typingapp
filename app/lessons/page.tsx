@@ -34,14 +34,16 @@ export default async function LessonsPage() {
     });
 
     return (
-        <div className="flex flex-col flex-1 w-full max-w-6xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+        <div className="flex flex-col flex-1 w-full max-w-6xl mx-auto py-12 px-4 sm:px-6 lg:px-8 relative">
+            {/* Background gradient orb effect */}
+            <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[500px] bg-brand/5 dark:bg-brand/10 blur-[120px] rounded-full pointer-events-none -z-10" />
 
             {/* Header Info */}
             <div className="text-center mb-12 max-w-3xl mx-auto">
                 <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
-                    Typing Lessons
+                    Typing <span className="text-brand">Lessons</span>
                 </h1>
-                <p className="mt-4 text-lg text-gray-600 dark:text-gray-400">
+                <p className="mt-4 text-lg text-gray-600 dark:text-gray-400 font-mono">
                     Master your keyboard skills step-by-step. Go from standard home row techniques to typing complex professional vocabulary without looking.
                 </p>
             </div>

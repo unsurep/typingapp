@@ -1,3 +1,7 @@
+"use client";
+
+import { motion, Variants } from "framer-motion";
+
 interface CertificatePreviewProps {
     name?: string;
     netSpeed?: number | string;
@@ -6,6 +10,11 @@ interface CertificatePreviewProps {
     certificateId?: string;
     issuedDate?: string;
 }
+
+const itemVariants: Variants = {
+    hidden: { opacity: 0, y: 30 },
+    visible: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 300, damping: 24 } }
+};
 
 export default function CertificatePreview({
     name = "John Doe",
@@ -16,7 +25,16 @@ export default function CertificatePreview({
     issuedDate = "Oct 2026"
 }: CertificatePreviewProps) {
     return (
-        <div className="w-full max-w-4xl mx-auto bg-[#fafafa] dark:bg-[#e8e8e8] border-[12px] border-white dark:border-zinc-200 rounded-lg shadow-xl p-8 sm:p-12 md:p-20 relative overflow-hidden text-black mx-4">
+        <motion.div
+            variants={itemVariants}
+            initial="hidden"
+            animate="visible"
+            whileHover={{ y: -5 }}
+            className="w-full max-w-4xl mx-auto bg-[#fafafa] dark:bg-[#e8e8e8] border-[12px] border-white dark:border-zinc-200 rounded-lg shadow-xl p-8 sm:p-12 md:p-20 relative overflow-hidden text-black mx-4 hover:shadow-brand/20 transition-all duration-300 group hover:border-brand/50"
+        >
+
+            {/* Subtle glow effect on hover */}
+            <div className="absolute inset-0 bg-linear-to-br from-brand/0 to-brand/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 pointer-events-none" />
 
             {/* Subtle background pattern or watermark effect */}
             <div className="absolute inset-0 opacity-[0.03] bg-[radial-gradient(#000_1px,transparent_1px)] [background-size:16px_16px] pointer-events-none"></div>
@@ -75,6 +93,6 @@ export default function CertificatePreview({
                 </div>
 
             </div>
-        </div>
+        </motion.div>
     );
 }

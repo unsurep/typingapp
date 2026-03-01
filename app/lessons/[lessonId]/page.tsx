@@ -1,7 +1,7 @@
 'use client';
 
+import React, { use, useState, useEffect } from "react";
 import Link from "next/link";
-import { use, useState, useEffect } from "react";
 import { notFound } from "next/navigation";
 import TypingArea, { TypingResult } from "@/components/TypingArea";
 import StatsBar from "@/components/StatsBar";
@@ -9,6 +9,7 @@ import { toast } from "sonner";
 import { saveLessonProgress, getLessonProgress } from "../actions";
 import { lessons } from "@/lib/lessons";
 import { createClient } from '@/utils/supabase/client';
+import { motion } from "framer-motion";
 
 // In Next.js 15, dynamic route parameters must be awaited or unwrapped via `use()`
 export default function LessonPage({ params }: { params: Promise<{ lessonId: string }> }) {
@@ -156,7 +157,9 @@ export default function LessonPage({ params }: { params: Promise<{ lessonId: str
     };
 
     return (
-        <div className="flex flex-col flex-1 w-full max-w-4xl mx-auto py-12 px-4 sm:px-6">
+        <div className="flex flex-col flex-1 w-full max-w-4xl mx-auto py-12 px-4 sm:px-6 relative">
+            {/* Background gradient orb effect */}
+            <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[500px] bg-brand/5 dark:bg-brand/10 blur-[120px] rounded-full pointer-events-none -z-10" />
 
             {/* Top Header Navigation */}
             <Link href="/lessons" className="text-gray-500 hover:text-gray-900 dark:hover:text-gray-300 font-medium mb-8 flex items-center transition-colors w-fit">
@@ -184,7 +187,11 @@ export default function LessonPage({ params }: { params: Promise<{ lessonId: str
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
                 <div>
                     <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
-                        {lesson.title}
+                        {lesson.title.split(':').map((part, index, array) => (
+                            <React.Fragment key={index}>
+                                {index === array.length - 1 ? <span className="text-brand">{part}</span> : part + ':'}
+                            </React.Fragment>
+                        ))}
                     </h1>
                     <span className="inline-block mt-3 px-3 py-1 bg-gray-100 dark:bg-zinc-800 text-sm font-semibold text-gray-700 dark:text-gray-300 rounded-md border border-gray-200 dark:border-zinc-700">
                         {lesson.focus}
@@ -224,10 +231,10 @@ export default function LessonPage({ params }: { params: Promise<{ lessonId: str
                         key={i}
                         onClick={() => selectTask(i)}
                         className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors border ${activeTaskIndex === i
-                            ? 'bg-black text-white dark:bg-white dark:text-black border-transparent'
+                            ? 'bg-brand text-background border-transparent shadow-md shadow-brand/20'
                             : completedTasks.includes(i) || isLessonPassed
                                 ? 'bg-green-50 text-green-700 border-green-200 dark:bg-green-900/20 dark:text-green-400 dark:border-green-800 hover:bg-green-100 dark:hover:bg-green-900/40'
-                                : 'bg-white text-gray-600 border-gray-200 hover:bg-gray-50 dark:bg-zinc-900 dark:text-gray-400 dark:border-zinc-800 dark:hover:bg-zinc-800'
+                                : 'bg-white text-gray-600 border-gray-200 hover:bg-gray-50 dark:bg-zinc-900 dark:text-gray-400 dark:border-zinc-800 dark:hover:border-brand/30 transition-all'
                             }`}
                     >
                         Task {i + 1}
@@ -267,7 +274,7 @@ export default function LessonPage({ params }: { params: Promise<{ lessonId: str
             )}
 
             {/* Stats Bar */}
-            <div className="w-full mt-6 bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 rounded-xl p-4 shadow-sm flex flex-wrap items-center justify-between lg:justify-around gap-4">
+            <div className="w-full mt-6 bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 rounded-xl p-4 shadow-sm flex flex-wrap items-center justify-between lg:justify-around gap-4 hover:border-brand/30 hover:shadow-brand/20 transition-all duration-300">
                 <div className="flex flex-col items-center flex-1 min-w-[80px]">
                     <span className="text-xs uppercase tracking-wider text-gray-500 dark:text-gray-400 font-semibold mb-1">WPM</span>
                     <span className="text-3xl font-bold text-gray-900 dark:text-white">{metrics.netWpm}</span>
@@ -293,23 +300,40 @@ export default function LessonPage({ params }: { params: Promise<{ lessonId: str
             <div className="mt-10 flex flex-wrap justify-center items-center gap-4">
                 <button
                     onClick={handleRestartTask}
-                    className="px-8 py-3 bg-white dark:bg-black text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-zinc-700 rounded-full font-medium hover:bg-gray-50 dark:hover:bg-zinc-800 transition-colors shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 dark:focus:ring-white">
+                    className="px-8 py-3 bg-white dark:bg-zinc-900 text-gray-700 dark:text-gray-300 border border-gray-300 dark:border-zinc-700 rounded-full font-medium hover:border-brand/50 hover:text-brand dark:hover:text-brand transition-all shadow-sm focus:outline-none"
+                >
                     Restart Task
                 </button>
                 {isTaskPassed && activeTaskIndex < totalTasks - 1 && (
                     <button
                         onClick={handleNextTask}
-                        className="px-8 py-3 bg-black dark:bg-white text-white dark:text-black rounded-full font-medium hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 dark:focus:ring-white"
+                        className="relative px-8 py-3 bg-brand text-background rounded-full font-medium overflow-hidden transition-all shadow-sm focus:outline-none select-none group/btn hover:shadow-brand/30"
                     >
-                        Next Task
+                        <motion.span
+                            className="absolute inset-0 bg-white/20"
+                            initial={{ x: "-100%" }}
+                            whileHover={{ x: "100%" }}
+                            transition={{ duration: 0.5, ease: "easeInOut" }}
+                        />
+                        <span className="relative z-10 flex items-center justify-center">
+                            Next Task <span className="ml-2 transition-transform group-hover/btn:translate-x-1">→</span>
+                        </span>
                     </button>
                 )}
                 {isLessonPassed && activeTaskIndex === totalTasks - 1 && (
                     <Link
                         href="/lessons"
-                        className="px-8 py-3 bg-black dark:bg-white text-white dark:text-black rounded-full font-medium hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors shadow-sm focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 dark:focus:ring-white"
+                        className="relative inline-flex px-8 py-3 bg-brand text-background rounded-full font-medium overflow-hidden transition-all shadow-sm focus:outline-none select-none group/btn hover:shadow-brand/30"
                     >
-                        Next Lesson
+                        <motion.span
+                            className="absolute inset-0 bg-white/20"
+                            initial={{ x: "-100%" }}
+                            whileHover={{ x: "100%" }}
+                            transition={{ duration: 0.5, ease: "easeInOut" }}
+                        />
+                        <span className="relative z-10 flex items-center justify-center">
+                            Next Lesson <span className="ml-2 transition-transform group-hover/btn:translate-x-1">→</span>
+                        </span>
                     </Link>
                 )}
             </div>

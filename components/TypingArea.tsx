@@ -1,6 +1,13 @@
 'use client';
 
 import React, { useState, useEffect, useRef } from 'react';
+import { motion, AnimatePresence } from 'framer-motion';
+import { clsx, type ClassValue } from 'clsx';
+import { twMerge } from 'tailwind-merge';
+
+function cn(...inputs: ClassValue[]) {
+    return twMerge(clsx(inputs));
+}
 
 export interface TypingResult {
     grossWpm: number;
@@ -22,6 +29,7 @@ export default function TypingArea({ text, disabled = false, onComplete, onProgr
     const [userInput, setUserInput] = useState('');
     const [startTime, setStartTime] = useState<number | null>(null);
     const [endTime, setEndTime] = useState<number | null>(null);
+    const [isFocused, setIsFocused] = useState(false);
     const inputRef = useRef<HTMLTextAreaElement>(null);
 
     // Focus the hidden text area when clicking anywhere in the container
@@ -140,24 +148,66 @@ export default function TypingArea({ text, disabled = false, onComplete, onProgr
         }
     }, []);
 
+    // Global keydown listener to refocus when typing starts anywhere on the page
+    useEffect(() => {
+        const handleGlobalKeyDown = (e: KeyboardEvent) => {
+            // Ignore if we are already focused or if disabled
+            if (isFocused || disabled) return;
+
+            // Only capture single character keys (letters, numbers, space)
+            // Avoid capturing Escape, Enter, Tab, meta keys, etc.
+            if (e.key.length === 1 && !e.ctrlKey && !e.metaKey && !e.altKey) {
+                if (inputRef.current) {
+                    inputRef.current.focus();
+                }
+            }
+        };
+
+        window.addEventListener('keydown', handleGlobalKeyDown);
+        return () => window.removeEventListener('keydown', handleGlobalKeyDown);
+    }, [isFocused, disabled]);
+
     // Render characters with styling
     const renderCharacters = () => {
         return text.split('').map((char, index) => {
-            let stateClass = 'text-gray-500 dark:text-gray-400'; // Default un-typed
+            const isCurrent = index === userInput.length;
+            let stateClass = 'text-muted/60 dark:text-muted/40'; // Default un-typed
 
             if (index < userInput.length) {
                 const isCorrect = userInput[index] === char;
                 stateClass = isCorrect
-                    ? 'text-green-500 dark:text-green-400'
-                    : 'text-red-500 dark:text-red-400 bg-red-100 dark:bg-red-900/30';
-            } else if (index === userInput.length) {
-                // Current character cursor indicator
-                stateClass = 'text-gray-900 dark:text-white underline decoration-2 underline-offset-4';
+                    ? 'text-green-600 font-semibold dark:text-green-400'
+                    : 'text-red-600 font-semibold dark:text-red-400';
             }
 
             return (
-                <span key={index} className={stateClass}>
-                    {char}
+                <span key={index} className={cn("relative", stateClass)}>
+                    {/* The character itself */}
+                    <span
+                        className={cn(
+                            "opacity-100 transition-colors duration-200",
+                            index < userInput.length && userInput[index] !== char && "text-red-600 border-b-2 border-red-600 border-opacity-50 dark:text-red-400 dark:border-red-400"
+                        )}
+                    >
+                        {char}
+                    </span>
+
+                    {/* The smooth Caret */}
+                    {isCurrent && (
+                        <motion.div
+                            layoutId="caret"
+                            className={cn(
+                                "absolute bg-brand w-[2px] md:w-[3px] rounded-full",
+                                !isFocused && "opacity-50" // Dim the caret slightly when unfocused
+                            )}
+                            style={{
+                                left: "-1px",
+                                top: "10%",
+                                height: "80%",
+                            }}
+                            transition={{ type: "spring", stiffness: 500, damping: 30 }}
+                        />
+                    )}
                 </span>
             );
         });
@@ -165,12 +215,15 @@ export default function TypingArea({ text, disabled = false, onComplete, onProgr
 
     return (
         <div
-            className="w-full bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 rounded-2xl shadow-sm overflow-hidden flex flex-col cursor-text relative"
+            className="w-full relative rounded-2xl overflow-hidden flex flex-col cursor-text group"
             onClick={handleContainerClick}
         >
-            {/* Display Area */}
-            <div className="bg-gray-50 dark:bg-black p-6 md:p-8">
-                <p className="text-xl md:text-2xl font-mono leading-relaxed select-none wrap-break-word whitespace-pre-wrap">
+            {/* Display Area without blur effect */}
+            <div className={cn(
+                "p-6 md:p-8 transition-all duration-300 ease-in-out relative",
+                "bg-transparent"
+            )}>
+                <p className="text-xl md:text-3xl font-mono leading-relaxed select-none wrap-break-word whitespace-pre-wrap tracking-wide">
                     {renderCharacters()}
                 </p>
             </div>
@@ -181,6 +234,8 @@ export default function TypingArea({ text, disabled = false, onComplete, onProgr
                 value={userInput}
                 onChange={handleChange}
                 onPaste={handlePaste}
+                onFocus={() => setIsFocused(true)}
+                onBlur={() => setIsFocused(false)}
                 disabled={disabled}
                 className="opacity-0 absolute inset-0 w-full h-full resize-none pointer-events-none"
                 spellCheck={false}

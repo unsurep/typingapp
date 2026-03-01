@@ -1,3 +1,5 @@
+import { motion, Variants } from "framer-motion";
+
 interface ResultCardProps {
     wpm?: number;
     accuracy?: number;
@@ -7,50 +9,88 @@ interface ResultCardProps {
     onRetry?: () => void;
 }
 
+const containerVariants: Variants = {
+    hidden: { opacity: 0, scale: 0.95 },
+    visible: {
+        opacity: 1,
+        scale: 1,
+        transition: {
+            duration: 0.5,
+            staggerChildren: 0.1,
+            delayChildren: 0.2
+        }
+    }
+};
+
+const itemVariants: Variants = {
+    hidden: { opacity: 0, y: 20 },
+    visible: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 300, damping: 24 } }
+};
+
 export default function ResultCard({ wpm = 0, accuracy = 100, errors = 0, duration = 60, timeLeft, onRetry }: ResultCardProps) {
     return (
-        <div className="w-full max-w-2xl mx-auto bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 rounded-3xl shadow-xl overflow-hidden animate-in fade-in zoom-in duration-300">
+        <motion.div
+            variants={containerVariants}
+            initial="hidden"
+            animate="visible"
+            className="w-full max-w-2xl mx-auto bg-background/80 backdrop-blur-xl border border-border/50 rounded-3xl shadow-2xl overflow-hidden"
+        >
 
             {/* Top Banner Area */}
-            <div className="bg-gray-50 dark:bg-black px-8 py-10 text-center border-b border-gray-200 dark:border-zinc-800">
-                <h2 className="text-xl font-bold text-gray-500 dark:text-gray-400 uppercase tracking-widest mb-2">Test Complete</h2>
-                <div className="flex flex-col items-center justify-center">
-                    <span className="text-7xl font-black text-gray-900 dark:text-white tracking-tighter shadow-sm">{wpm}</span>
-                    <span className="text-lg font-semibold text-gray-600 dark:text-gray-300 mt-1">Net WPM</span>
-                </div>
+            <div className="bg-muted/10 px-8 py-10 text-center border-b border-border/50">
+                <motion.h2 variants={itemVariants} className="text-xl font-bold text-muted uppercase tracking-widest mb-2">Test Complete</motion.h2>
+                <motion.div variants={itemVariants} className="flex flex-col items-center justify-center">
+                    <span className="text-7xl md:text-8xl font-black text-brand tracking-tighter drop-shadow-[0_0_15px_rgba(226,183,20,0.4)] dark:drop-shadow-[0_0_15px_rgba(226,183,20,0.6)]">{wpm}</span>
+                    <span className="text-lg font-semibold text-muted font-mono mt-1">Net WPM</span>
+                </motion.div>
             </div>
 
             {/* Grid Stats Area */}
-            <div className={`grid ${timeLeft !== undefined ? 'grid-cols-2 md:grid-cols-4' : 'grid-cols-3'} divide-x divide-y md:divide-y-0 divide-gray-200 dark:divide-zinc-800 bg-white dark:bg-zinc-900 border-b border-gray-200 dark:border-zinc-800`}>
-                <div className="p-6 text-center flex flex-col justify-center">
-                    <span className="text-xs uppercase tracking-wider text-gray-500 font-semibold mb-1">Accuracy</span>
-                    <span className="text-2xl font-bold text-gray-900 dark:text-white">{accuracy}%</span>
-                </div>
-                <div className="p-6 text-center flex flex-col justify-center">
-                    <span className="text-xs uppercase tracking-wider text-gray-500 font-semibold mb-1">Errors</span>
-                    <span className="text-2xl font-bold text-red-500">{errors}</span>
-                </div>
+            <div className={`grid ${timeLeft !== undefined ? 'grid-cols-2 md:grid-cols-4' : 'grid-cols-3'} divide-x divide-y md:divide-y-0 divide-border/50 bg-background/50 border-b border-border/50`}>
+                <motion.div variants={itemVariants} className="p-6 text-center flex flex-col justify-center">
+                    <span className="text-xs uppercase tracking-wider text-muted font-semibold mb-1">Accuracy</span>
+                    <span className="text-3xl font-bold text-foreground">{accuracy}%</span>
+                </motion.div>
+                <motion.div variants={itemVariants} className="p-6 text-center flex flex-col justify-center">
+                    <span className="text-xs uppercase tracking-wider text-muted font-semibold mb-1">Errors</span>
+                    <span className="text-3xl font-bold text-error">{errors}</span>
+                </motion.div>
                 {timeLeft !== undefined && (
-                    <div className="p-6 text-center flex flex-col justify-center border-t md:border-t-0 border-gray-200 dark:border-zinc-800">
-                        <span className="text-xs uppercase tracking-wider text-gray-500 font-semibold mb-1">Time Left</span>
-                        <span className="text-2xl font-bold text-blue-600 dark:text-blue-400">{timeLeft}s</span>
-                    </div>
+                    <motion.div variants={itemVariants} className="p-6 text-center flex flex-col justify-center border-t md:border-t-0 border-border/50">
+                        <span className="text-xs uppercase tracking-wider text-muted font-semibold mb-1">Time Left</span>
+                        <span className="text-3xl font-bold text-foreground">{timeLeft}s</span>
+                    </motion.div>
                 )}
-                <div className="p-6 text-center flex flex-col justify-center border-t md:border-t-0 border-gray-200 dark:border-zinc-800">
-                    <span className="text-xs uppercase tracking-wider text-gray-500 font-semibold mb-1">Duration</span>
-                    <span className="text-2xl font-bold text-gray-900 dark:text-white">{duration}s</span>
-                </div>
+                <motion.div variants={itemVariants} className="p-6 text-center flex flex-col justify-center border-t md:border-t-0 border-border/50">
+                    <span className="text-xs uppercase tracking-wider text-muted font-semibold mb-1">Duration</span>
+                    <span className="text-3xl font-bold text-foreground">{duration}s</span>
+                </motion.div>
             </div>
 
             {/* Action Footer */}
-            <div className="bg-gray-50 dark:bg-black px-8 py-6 flex justify-center border-t border-gray-200 dark:border-zinc-800">
-                <button
+            <div className="bg-muted/10 px-8 py-6 flex justify-center border-t border-border/50">
+                <motion.button
+                    variants={itemVariants}
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
                     onClick={onRetry}
-                    className="w-full sm:w-auto px-10 py-3.5 bg-black dark:bg-white text-white dark:text-black rounded-full font-bold hover:bg-gray-800 dark:hover:bg-gray-200 transition-colors shadow-md focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900 dark:focus:ring-white">
-                    Try Again
-                </button>
+                    className="relative w-full md:w-auto px-12 py-4 bg-brand text-background rounded-full font-bold overflow-hidden transition-all shadow-lg hover:shadow-brand/30 focus:outline-none group/btn"
+                >
+                    <motion.span
+                        className="absolute inset-0 bg-white/20"
+                        initial={{ x: "-100%" }}
+                        whileHover={{ x: "100%" }}
+                        transition={{ duration: 0.5, ease: "easeInOut" }}
+                    />
+                    <span className="relative z-10 flex items-center justify-center gap-2">
+                        <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                        </svg>
+                        Try Again
+                    </span>
+                </motion.button>
             </div>
 
-        </div>
+        </motion.div>
     );
 }
