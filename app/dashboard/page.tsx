@@ -152,6 +152,50 @@ export default async function DashboardPage() {
 
                 {/* Right Column: Certification & WPM Reference */}
                 <div className="flex flex-col gap-8">
+                    {/* WPM Reference Panel */}
+                    <div className="flex flex-col">
+                        <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">WPM Reference</h2>
+                        <div className="bg-white dark:bg-zinc-900 rounded-2xl border border-gray-200 dark:border-zinc-800 shadow-sm p-6">
+                            <ul className="space-y-3">
+                                <li className="flex items-center justify-between p-3 rounded-xl bg-red-50 dark:bg-red-500/10 border border-red-100 dark:border-red-500/20">
+                                    <div className="flex items-center gap-3">
+                                        <span className="text-xl" role="img" aria-label="Beginner">🔴</span>
+                                        <span className="font-bold text-red-700 dark:text-red-500">Beginner</span>
+                                    </div>
+                                    <span className="text-sm font-bold text-red-600 dark:text-red-400">0–30 WPM</span>
+                                </li>
+                                <li className="flex items-center justify-between p-3 rounded-xl bg-yellow-50 dark:bg-yellow-500/10 border border-yellow-100 dark:border-yellow-500/20">
+                                    <div className="flex items-center gap-3">
+                                        <span className="text-xl" role="img" aria-label="Average">🟡</span>
+                                        <span className="font-bold text-yellow-700 dark:text-yellow-500">Average</span>
+                                    </div>
+                                    <span className="text-sm font-bold text-yellow-600 dark:text-yellow-400">31–50 WPM</span>
+                                </li>
+                                <li className="flex items-center justify-between p-3 rounded-xl bg-green-50 dark:bg-green-500/10 border border-green-100 dark:border-green-500/20">
+                                    <div className="flex items-center gap-3">
+                                        <span className="text-xl" role="img" aria-label="Good">🟢</span>
+                                        <span className="font-bold text-green-700 dark:text-green-500">Good</span>
+                                    </div>
+                                    <span className="text-sm font-bold text-green-600 dark:text-green-400">51–70 WPM</span>
+                                </li>
+                                <li className="flex items-center justify-between p-3 rounded-xl bg-blue-50 dark:bg-blue-500/10 border border-blue-100 dark:border-blue-500/20">
+                                    <div className="flex items-center gap-3">
+                                        <span className="text-xl" role="img" aria-label="Pro">🔵</span>
+                                        <span className="font-bold text-blue-700 dark:text-blue-500">Pro</span>
+                                    </div>
+                                    <span className="text-sm font-bold text-blue-600 dark:text-blue-400">71–100 WPM</span>
+                                </li>
+                                <li className="flex items-center justify-between p-3 rounded-xl bg-purple-50 dark:bg-purple-500/10 border border-purple-100 dark:border-purple-500/20">
+                                    <div className="flex items-center gap-3">
+                                        <span className="text-xl" role="img" aria-label="Elite">🟣</span>
+                                        <span className="font-bold text-purple-700 dark:text-purple-500">Elite</span>
+                                    </div>
+                                    <span className="text-sm font-bold text-purple-600 dark:text-purple-400">100+ WPM</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
                     {/* Certification Status Panel */}
                     <div className="flex flex-col">
                         <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Certification</h2>
@@ -212,50 +256,6 @@ export default async function DashboardPage() {
                                     </button>
                                 </>
                             )}
-                        </div>
-                    </div>
-
-                    {/* WPM Reference Panel */}
-                    <div className="flex flex-col">
-                        <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">WPM Reference</h2>
-                        <div className="bg-white dark:bg-zinc-900 rounded-2xl border border-gray-200 dark:border-zinc-800 shadow-sm p-6">
-                            <ul className="space-y-3">
-                                <li className="flex items-center justify-between p-3 rounded-xl bg-red-50 dark:bg-red-500/10 border border-red-100 dark:border-red-500/20">
-                                    <div className="flex items-center gap-3">
-                                        <span className="text-xl" role="img" aria-label="Beginner">🔴</span>
-                                        <span className="font-bold text-red-700 dark:text-red-500">Beginner</span>
-                                    </div>
-                                    <span className="text-sm font-bold text-red-600 dark:text-red-400">0–30 WPM</span>
-                                </li>
-                                <li className="flex items-center justify-between p-3 rounded-xl bg-yellow-50 dark:bg-yellow-500/10 border border-yellow-100 dark:border-yellow-500/20">
-                                    <div className="flex items-center gap-3">
-                                        <span className="text-xl" role="img" aria-label="Average">🟡</span>
-                                        <span className="font-bold text-yellow-700 dark:text-yellow-500">Average</span>
-                                    </div>
-                                    <span className="text-sm font-bold text-yellow-600 dark:text-yellow-400">31–50 WPM</span>
-                                </li>
-                                <li className="flex items-center justify-between p-3 rounded-xl bg-green-50 dark:bg-green-500/10 border border-green-100 dark:border-green-500/20">
-                                    <div className="flex items-center gap-3">
-                                        <span className="text-xl" role="img" aria-label="Good">🟢</span>
-                                        <span className="font-bold text-green-700 dark:text-green-500">Good</span>
-                                    </div>
-                                    <span className="text-sm font-bold text-green-600 dark:text-green-400">51–70 WPM</span>
-                                </li>
-                                <li className="flex items-center justify-between p-3 rounded-xl bg-blue-50 dark:bg-blue-500/10 border border-blue-100 dark:border-blue-500/20">
-                                    <div className="flex items-center gap-3">
-                                        <span className="text-xl" role="img" aria-label="Pro">🔵</span>
-                                        <span className="font-bold text-blue-700 dark:text-blue-500">Pro</span>
-                                    </div>
-                                    <span className="text-sm font-bold text-blue-600 dark:text-blue-400">71–100 WPM</span>
-                                </li>
-                                <li className="flex items-center justify-between p-3 rounded-xl bg-purple-50 dark:bg-purple-500/10 border border-purple-100 dark:border-purple-500/20">
-                                    <div className="flex items-center gap-3">
-                                        <span className="text-xl" role="img" aria-label="Elite">🟣</span>
-                                        <span className="font-bold text-purple-700 dark:text-purple-500">Elite</span>
-                                    </div>
-                                    <span className="text-sm font-bold text-purple-600 dark:text-purple-400">100+ WPM</span>
-                                </li>
-                            </ul>
                         </div>
                     </div>
                 </div>
