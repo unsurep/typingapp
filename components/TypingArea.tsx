@@ -179,7 +179,7 @@ export default function TypingArea({ text, disabled = false, initialUserInput = 
     const renderCharacters = () => {
         return text.split('').map((char, index) => {
             const isCurrent = index === userInput.length;
-            let stateClass = 'text-muted/60 dark:text-muted/40'; // Default un-typed
+            let stateClass = 'text-foreground dark:text-white'; // Default un-typed
 
             if (index < userInput.length) {
                 const isCorrect = userInput[index] === char;
@@ -188,13 +188,18 @@ export default function TypingArea({ text, disabled = false, initialUserInput = 
                     : 'text-red-600 font-semibold dark:text-red-400';
             }
 
+            const isSpace = char === ' ';
+
             return (
                 <span key={index} className={cn("relative", stateClass)}>
                     {/* The character itself */}
                     <span
                         className={cn(
-                            "opacity-100 transition-colors duration-200",
-                            index < userInput.length && userInput[index] !== char && "text-red-600 border-b-2 border-red-600 border-opacity-50 dark:text-red-400 dark:border-red-400"
+                            "opacity-100 transition-colors duration-200 border-b-2",
+                            isSpace ? "border-transparent" :
+                                index >= userInput.length ? "border-transparent" :
+                                    (userInput[index] !== char) ? "text-red-600 border-red-600 dark:text-red-400 dark:border-red-400" :
+                                        "border-transparent"
                         )}
                     >
                         {char}

@@ -12,8 +12,10 @@ export default async function SignupPage({
     const error = resolvedParams?.error as string | undefined;
 
     return (
-        <div className="flex flex-col flex-1 w-full max-w-md mx-auto py-12 px-4 sm:px-6 animate-in fade-in slide-in-from-bottom-8 duration-500">
-            <div className="bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 rounded-3xl shadow-xl overflow-hidden p-8 sm:p-10">
+        <div className="flex flex-col flex-1 w-full max-w-md mx-auto py-12 px-4 sm:px-6 animate-in fade-in slide-in-from-bottom-8 duration-500 relative">
+            {/* Background gradient orb effect */}
+            <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand/10 dark:bg-brand/15 blur-[120px] rounded-full pointer-events-none -z-10" />
+            <div className="bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 rounded-3xl shadow-xl overflow-hidden p-8 sm:p-10 relative z-10">
                 {/* Header */}
                 <div className="text-center mb-10">
                     <h1 className="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white mb-2">

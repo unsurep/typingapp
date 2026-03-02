@@ -6,6 +6,7 @@ import { useRouter } from "next/navigation";
 import { toast } from "sonner";
 import { createClient } from "@/utils/supabase/client";
 import { motion, Variants } from "framer-motion";
+import { useTypewriter, Cursor } from 'react-simple-typewriter'
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -21,6 +22,15 @@ const itemVariants: Variants = {
 };
 
 export default function Home() {
+  // React simple typewriter
+  // const [text] = useTypewriter({
+  //   words: ['g', 'g', 'g', 'g'],
+  //   loop: 0,
+  //   typeSpeed: 100,
+  //   deleteSpeed: 50,
+  //   delaySpeed: 2000
+  // })
+
   const router = useRouter();
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
@@ -86,7 +96,7 @@ export default function Home() {
           variants={itemVariants}
           className="text-5xl lg:text-7xl font-extrabold tracking-tight text-foreground max-w-4xl mx-auto leading-tight"
         >
-          Elevate your <span className="text-brand">typing</span> experience
+          Elevate your <span className="text-brand animate-pulse">Typing</span> experience
         </motion.h1>
 
         <motion.p
