@@ -45,15 +45,17 @@ export default function CertificatePage() {
                 <div className="h-px bg-gray-200 dark:bg-zinc-800 w-full max-w-sm"></div>
             </div>
 
-            {/* Mock Certificate Container (A4 Portrait/Landscape stylized) */}
-            <CertificatePreview
-                name="John Doe"
-                netSpeed="42"
-                accuracy="97"
-                duration="60"
-                certificateId="TTJ-12345"
-                issuedDate="Oct 2026"
-            />
+            {/* Mock Certificate Container (A4-style preview) */}
+            <div className="flex justify-center">
+                <CertificatePreview
+                    name="John Doe"
+                    netSpeed="42"
+                    accuracy="97"
+                    duration="60"
+                    certificateId="TTJ-12345"
+                    issuedDate="Oct 2026"
+                />
+            </div>
 
             {/* Action Buttons Below Certificate */}
             <div className="mt-12 flex justify-center pb-20">

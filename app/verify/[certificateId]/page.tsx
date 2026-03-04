@@ -1,5 +1,7 @@
 import Link from "next/link";
 import { createClient } from "@/utils/supabase/server";
+import CertificatePreview from "@/components/CertificatePreview";
+import PrintCertificateButton from "@/components/PrintCertificateButton";
 
 async function fetchCertificate(certificateId: string) {
     try {
@@ -28,54 +30,32 @@ export default async function VerificationPage({ params }: { params: Promise<{ c
 
     return (
         <div className="flex flex-col min-h-[85vh] items-center justify-center p-4 sm:p-8 w-full max-w-6xl mx-auto">
-
-            {isValid ? (
-                /* Valid Certificate State */
-                <div className="w-full max-w-lg bg-white dark:bg-zinc-900 border-t-8 border-t-green-500 border-x border-b border-gray-200 dark:border-zinc-800 rounded-2xl shadow-xl p-8 sm:p-12 animate-in fade-in zoom-in duration-300">
-
-                    <div className="flex flex-col items-center">
-                        {/* Success Icon */}
-                        <div className="w-20 h-20 bg-green-100 dark:bg-green-900/30 text-green-600 dark:text-green-500 rounded-full flex items-center justify-center mb-6 shadow-sm">
-                            <svg className="w-10 h-10" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                            </svg>
-                        </div>
-
-                        <h1 className="text-3xl font-extrabold text-gray-900 dark:text-white mb-2 text-center">
+            {isValid && certificate ? (
+                <div className="w-full flex flex-col items-center gap-8">
+                    <div className="text-center">
+                        <h1 className="text-2xl sm:text-3xl font-extrabold text-gray-900 dark:text-white mb-2">
                             Verified Certificate
                         </h1>
-                        <p className="text-gray-500 dark:text-gray-400 text-center mb-8">
+                        <p className="text-gray-500 dark:text-gray-400 text-sm sm:text-base">
                             This certificate is officially recognized and issued by TypingTestForJobs.
                         </p>
                     </div>
 
-                    {/* Details Block */}
-                    <div className="bg-gray-50 dark:bg-black rounded-xl p-6 border border-gray-100 dark:border-zinc-800 flex flex-col gap-5">
-                        <div className="flex justify-between items-center border-b border-gray-200 dark:border-zinc-800 pb-4">
-                            <span className="text-sm font-medium text-gray-500 dark:text-gray-400">Recipient ID</span>
-                            <span className="text-base font-bold text-gray-900 dark:text-white font-mono">{certificate.user_id.split('-')[0].toUpperCase()}</span>
-                        </div>
-                        <div className="flex justify-between items-center border-b border-gray-200 dark:border-zinc-800 pb-4">
-                            <span className="text-sm font-medium text-gray-500 dark:text-gray-400">Net WPM</span>
-                            <span className="text-base font-bold text-gray-900 dark:text-white">{certificate.net_wpm} WPM</span>
-                        </div>
-                        <div className="flex justify-between items-center border-b border-gray-200 dark:border-zinc-800 pb-4">
-                            <span className="text-sm font-medium text-gray-500 dark:text-gray-400">Accuracy</span>
-                            <span className="text-base font-bold text-gray-900 dark:text-white">{certificate.accuracy}%</span>
-                        </div>
-                        <div className="flex justify-between items-center">
-                            <span className="text-sm font-medium text-gray-500 dark:text-gray-400">Date Issued</span>
-                            <span className="text-base font-bold text-gray-900 dark:text-white">
-                                {new Date(certificate.issued_at).toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })}
-                            </span>
-                        </div>
-                    </div>
+                    <CertificatePreview
+                        name="Certified Candidate"
+                        netSpeed={certificate.net_wpm}
+                        accuracy={certificate.accuracy}
+                        duration={certificate.duration_seconds}
+                        certificateId={certificate.certificate_code}
+                        issuedDate={new Date(certificate.issued_at).toLocaleDateString("en-US", {
+                            month: "short",
+                            year: "numeric",
+                        })}
+                    />
 
-                    <div className="mt-10 flex flex-col items-center">
-                        <span className="text-xs text-gray-400 uppercase tracking-widest mb-1">Certificate ID</span>
-                        <span className="font-mono text-gray-900 dark:text-gray-300 font-bold">{certificateId.toUpperCase()}</span>
+                    <div className="mt-4">
+                        <PrintCertificateButton />
                     </div>
-
                 </div>
             ) : (
                 /* Invalid Certificate State */
