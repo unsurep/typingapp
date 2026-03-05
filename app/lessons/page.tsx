@@ -2,26 +2,30 @@ import Link from "next/link";
 import LessonCard from "@/components/LessonCard";
 import { createClient } from "@/utils/supabase/server";
 import { lessons } from "@/lib/lessons";
+import { redirect } from "next/navigation";
 
 export default async function LessonsPage() {
     const supabase = await createClient();
     const { data: { user } } = await supabase.auth.getUser();
 
-    // Fetch progress if authenticated
+    // Protect route: only authenticated users can access lessons
+    if (!user) {
+        redirect("/login");
+    }
+
+    // Fetch progress for authenticated user
     let progressMap = new Map<number, number>();
 
-    if (user) {
-        const { data: progressList } = await supabase
-            .from('lesson_progress')
-            .select('lesson_id, completed_tasks')
-            .eq('user_id', user.id);
+    const { data: progressList } = await supabase
+        .from('lesson_progress')
+        .select('lesson_id, completed_tasks')
+        .eq('user_id', user.id);
 
-        if (progressList) {
-            progressList.forEach(p => {
-                const completedCount = p.completed_tasks ? p.completed_tasks.length : 0;
-                progressMap.set(Number(p.lesson_id), completedCount);
-            });
-        }
+    if (progressList) {
+        progressList.forEach(p => {
+            const completedCount = p.completed_tasks ? p.completed_tasks.length : 0;
+            progressMap.set(Number(p.lesson_id), completedCount);
+        });
     }
 
     const lessonsWithProgress = lessons.map(lesson => {

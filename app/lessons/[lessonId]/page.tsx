@@ -2,7 +2,7 @@
 
 import React, { use, useState, useEffect } from "react";
 import Link from "next/link";
-import { notFound } from "next/navigation";
+import { notFound, useRouter } from "next/navigation";
 import TypingArea, { TypingResult } from "@/components/TypingArea";
 import StatsBar from "@/components/StatsBar";
 import { toast } from "sonner";
@@ -16,6 +16,7 @@ import { getPerformanceLevel } from "@/utils/performance";
 export default function LessonPage({ params }: { params: Promise<{ lessonId: string }> }) {
     const { lessonId } = use(params);
     const parsedId = parseInt(lessonId, 10);
+    const router = useRouter();
 
     // Find the lesson. If invalid ID, redirect to 404 page
     const lesson = lessons.find(l => l.id === parsedId);
@@ -32,7 +33,6 @@ export default function LessonPage({ params }: { params: Promise<{ lessonId: str
     const [isTaskPassed, setIsTaskPassed] = useState(false);
     const [attemptId, setAttemptId] = useState(0);
     const [isLoadingInit, setIsLoadingInit] = useState(true);
-    const [isGuest, setIsGuest] = useState(false);
     const [metrics, setMetrics] = useState<TypingResult>({
         grossWpm: 0,
         netWpm: 0,
@@ -47,8 +47,11 @@ export default function LessonPage({ params }: { params: Promise<{ lessonId: str
             try {
                 const supabase = createClient();
                 const { data: { user } } = await supabase.auth.getUser();
+
+                // Protect route: only authenticated users can access lessons
                 if (!user) {
-                    setIsGuest(true);
+                    router.replace("/login");
+                    return;
                 }
 
                 const res = await getLessonProgress(parsedId);
@@ -105,7 +108,7 @@ export default function LessonPage({ params }: { params: Promise<{ lessonId: str
             }
         }
         fetchInitialProgress();
-    }, [parsedId, lesson]);
+    }, [parsedId, lesson, router]);
 
     const handleProgress = (result: TypingResult) => {
         setMetrics(result);
@@ -231,20 +234,6 @@ export default function LessonPage({ params }: { params: Promise<{ lessonId: str
                 </svg>
                 Back to Lessons
             </Link>
-
-            {isGuest && (
-                <div className="mb-8 bg-yellow-50 dark:bg-zinc-900/40 border-l-4 border-yellow-400 dark:border-yellow-500 rounded-r-xl p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between text-yellow-800 dark:text-yellow-200 text-sm shadow-sm gap-4">
-                    <div className="flex items-center">
-                        <svg className="w-5 h-5 mr-3 shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                            <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd"></path>
-                        </svg>
-                        <span>You are practicing as a guest. <strong>Your lesson progress will not be saved.</strong></span>
-                    </div>
-                    <Link href="/login" className="px-4 py-2 bg-yellow-100 dark:bg-yellow-900/40 hover:bg-yellow-200 dark:hover:bg-yellow-900/60 rounded-lg transition-colors whitespace-nowrap font-semibold border border-yellow-200 dark:border-yellow-800">
-                        Sign In to Save
-                    </Link>
-                </div>
-            )}
 
             {/* Main Lesson Header with Locked Badge */}
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">

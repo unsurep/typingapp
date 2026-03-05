@@ -84,6 +84,11 @@ export async function issueCertificate() {
         return { success: false, reason: 'unauthenticated' };
     }
 
+    const fullName =
+        (user.user_metadata as { full_name?: string } | null)?.full_name ||
+        user.email ||
+        null;
+
     // Check if one already exists
     const { data: existing } = await supabase
         .from('certificates')
@@ -112,6 +117,8 @@ export async function issueCertificate() {
             net_wpm: bestScore.net_wpm,
             accuracy: bestScore.accuracy,
             duration_seconds: REQUIRED_TEST_DURATION,
+            // Store the name used at signup so certificates always show the original owner
+            full_name: fullName,
         });
 
     if (insertError) {

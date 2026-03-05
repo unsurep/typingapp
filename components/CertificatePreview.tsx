@@ -3,12 +3,12 @@
 import { motion, Variants } from "framer-motion";
 
 interface CertificatePreviewProps {
-    name?: string;
-    netSpeed?: number | string;
-    accuracy?: number | string;
-    duration?: number | string;
-    certificateId?: string;
-    issuedDate?: string;
+    name: string;
+    netSpeed: number | string;
+    accuracy: number | string;
+    duration: number | string;
+    certificateId: string;
+    issuedDate: string;
 }
 
 const itemVariants: Variants = {
@@ -17,12 +17,12 @@ const itemVariants: Variants = {
 };
 
 export default function CertificatePreview({
-    name = "John Doe",
-    netSpeed = "42",
-    accuracy = "97",
-    duration = "60",
-    certificateId = "TTJ-12345",
-    issuedDate = "Oct 2026"
+    name,
+    netSpeed,
+    accuracy,
+    duration,
+    certificateId,
+    issuedDate
 }: CertificatePreviewProps) {
     return (
         <motion.div
@@ -116,9 +116,9 @@ export default function CertificatePreview({
                     {/* Footer with signature and badge */}
                     <div className="mt-auto pt-10 flex items-end justify-between gap-6">
                         <div>
-                            <div className="h-10 mb-2 flex items-center">
-                                <span className="inline-block h-[1px] w-32 bg-[#c79a65]" />
-                            </div>
+                            {/* <div className="h-10 mb-2 flex items-center">
+                                <span className="inline-block h-px w-32 bg-[#c79a65]" />
+                            </div> */}
                             <div className="text-sm font-semibold text-[#5b2e33]">
                                 Umukoro Tumini
                             </div>

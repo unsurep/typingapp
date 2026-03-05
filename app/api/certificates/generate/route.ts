@@ -41,12 +41,19 @@ export async function POST() {
         const randomPart = crypto.randomUUID().substring(0, 6).toUpperCase();
         const certificateCode = `TTJ-${randomPart}`;
 
+        const fullName =
+            (user.user_metadata as { full_name?: string } | null)?.full_name ||
+            user.email ||
+            null;
+
         const newCertificate = {
             user_id: user.id,
             certificate_code: certificateCode,
             net_wpm: bestScore.net_wpm,
             accuracy: bestScore.accuracy,
             duration_seconds: 60, // Constant from actions.ts REQUIRED_TEST_DURATION
+            // Store the name used at signup so certificates always show the original owner
+            full_name: fullName,
         };
 
         // Insert into certificates table

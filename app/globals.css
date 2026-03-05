@@ -43,3 +43,39 @@ body {
   font-family: var(--font-sans);
   transition: background-color 0.3s ease, color 0.3s ease;
 }
+
+@media print {
+  @page {
+    size: A4 landscape;
+    margin: 12mm;
+  }
+
+  body {
+    background: #ffffff !important;
+    color: #000000 !important;
+  }
+
+  nav,
+  header,
+  footer,
+  .print-hide {
+    display: none !important;
+  }
+
+  .print-certificate-page {
+    padding: 0 !important;
+    max-width: none !important;
+  }
+
+  .print-certificate-wrapper {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .print-certificate-wrapper > * {
+    box-shadow: none !important;
+    border-color: #e0e0e0 !important;
+  }
+}

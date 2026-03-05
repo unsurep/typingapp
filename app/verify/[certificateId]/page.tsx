@@ -2,6 +2,7 @@ import Link from "next/link";
 import { createClient } from "@/utils/supabase/server";
 import CertificatePreview from "@/components/CertificatePreview";
 import PrintCertificateButton from "@/components/PrintCertificateButton";
+import { redirect } from "next/navigation";
 
 async function fetchCertificate(certificateId: string) {
     try {
@@ -24,37 +25,46 @@ async function fetchCertificate(certificateId: string) {
 export default async function VerificationPage({ params }: { params: Promise<{ certificateId: string }> }) {
     const { certificateId } = await params;
 
-    // Fetch certificate data from the API
+    const supabase = await createClient();
+    const { data: { user } } = await supabase.auth.getUser();
+
+    // Protect route: only authenticated users can view certificates
+    if (!user) {
+        redirect("/login");
+    }
+
+    // Fetch certificate data from the database
     const certificate = await fetchCertificate(certificateId);
     const isValid = certificate !== null;
 
     return (
-        <div className="flex flex-col min-h-[85vh] items-center justify-center p-4 sm:p-8 w-full max-w-6xl mx-auto">
+        <div className="flex flex-col min-h-[85vh] items-center justify-center p-4 sm:p-8 w-full max-w-6xl mx-auto print-certificate-page">
             {isValid && certificate ? (
                 <div className="w-full flex flex-col items-center gap-8">
-                    <div className="text-center">
+                    <div className="text-center print-hide">
                         <h1 className="text-2xl sm:text-3xl font-extrabold text-gray-900 dark:text-white mb-2">
                             Verified Certificate
                         </h1>
                         <p className="text-gray-500 dark:text-gray-400 text-sm sm:text-base">
                             This certificate is officially recognized and issued by TypingTestForJobs.
                         </p>
+                        <div className="mt-4">
+                            <PrintCertificateButton />
+                        </div>
                     </div>
 
-                    <CertificatePreview
-                        name="Certified Candidate"
-                        netSpeed={certificate.net_wpm}
-                        accuracy={certificate.accuracy}
-                        duration={certificate.duration_seconds}
-                        certificateId={certificate.certificate_code}
-                        issuedDate={new Date(certificate.issued_at).toLocaleDateString("en-US", {
-                            month: "short",
-                            year: "numeric",
-                        })}
-                    />
-
-                    <div className="mt-4">
-                        <PrintCertificateButton />
+                    <div id="certificate-root" className="print-certificate-wrapper w-full flex justify-center">
+                        <CertificatePreview
+                            name={certificate.full_name || "Certified Candidate"}
+                            netSpeed={certificate.net_wpm}
+                            accuracy={certificate.accuracy}
+                            duration={certificate.duration_seconds}
+                            certificateId={certificate.certificate_code}
+                            issuedDate={new Date(certificate.issued_at).toLocaleDateString("en-US", {
+                                month: "short",
+                                year: "numeric",
+                            })}
+                        />
                     </div>
                 </div>
             ) : (

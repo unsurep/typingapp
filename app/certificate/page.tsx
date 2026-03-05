@@ -1,8 +1,33 @@
 import CertificatePreview from "@/components/CertificatePreview";
 import CheckEligibilityButton from "@/components/CheckEligibilityButton";
-import { motion } from "framer-motion";
+import { createClient } from "@/utils/supabase/server";
+import { redirect } from "next/navigation";
 
-export default function CertificatePage() {
+export default async function CertificatePage() {
+    const supabase = await createClient();
+    const { data: { user } } = await supabase.auth.getUser();
+
+    // Protect route: only authenticated users can access certificate page
+    if (!user) {
+        redirect("/login");
+    }
+
+    // Attempt to load an existing certificate for the current user
+    const { data: certificate, error: certError } = await supabase
+        .from('certificates')
+        .select('*')
+        .eq('user_id', user.id)
+        .single();
+
+    const hasCertificate = !!certificate;
+
+    const displayName =
+        // prefer the name that was saved with the certificate, if any
+        (certificate?.full_name as string) ||
+        (user.user_metadata as { full_name?: string } | null)?.full_name ||
+        user.email ||
+        "Certified Candidate";
+
     return (
         <div className="flex flex-col flex-1 w-full max-w-6xl mx-auto py-12 px-4 sm:px-6 lg:px-8 relative">
             {/* Background gradient orb effect */}
@@ -19,23 +44,25 @@ export default function CertificatePage() {
             </div>
 
             {/* Locked State Alert Box */}
-            <div className="max-w-3xl mx-auto w-full mb-16 bg-amber-50 dark:bg-amber-900/10 border border-amber-200 dark:border-amber-800 rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center sm:items-start gap-6 shadow-sm">
-                <div className="shrink-0 bg-amber-100 dark:bg-amber-900/30 p-3 rounded-full">
-                    {/* Lock Icon */}
-                    <svg className="w-8 h-8 text-amber-600 dark:text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                    </svg>
+            {!hasCertificate && (
+                <div className="max-w-3xl mx-auto w-full mb-16 bg-amber-50 dark:bg-amber-900/10 border border-amber-200 dark:border-amber-800 rounded-2xl p-6 sm:p-8 flex flex-col sm:flex-row items-center sm:items-start gap-6 shadow-sm">
+                    <div className="shrink-0 bg-amber-100 dark:bg-amber-900/30 p-3 rounded-full">
+                        {/* Lock Icon */}
+                        <svg className="w-8 h-8 text-amber-600 dark:text-amber-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                        </svg>
+                    </div>
+                    <div className="flex-1 text-center sm:text-left">
+                        <h3 className="text-lg font-bold text-amber-900 dark:text-amber-300 mb-2">
+                            Certificate Locked
+                        </h3>
+                        <p className="text-sm md:text-base text-amber-800 dark:text-amber-200/80 mb-6 leading-relaxed">
+                            Complete all lessons and pass a 60 second test with <span className="font-bold">35+ WPM</span> and <span className="font-bold">95% accuracy</span> to unlock your certificate.
+                        </p>
+                        <CheckEligibilityButton />
+                    </div>
                 </div>
-                <div className="flex-1 text-center sm:text-left">
-                    <h3 className="text-lg font-bold text-amber-900 dark:text-amber-300 mb-2">
-                        Certificate Locked
-                    </h3>
-                    <p className="text-sm md:text-base text-amber-800 dark:text-amber-200/80 mb-6 leading-relaxed">
-                        Complete all lessons and pass a 60 second test with <span className="font-bold">35+ WPM</span> and <span className="font-bold">95% accuracy</span> to unlock your certificate.
-                    </p>
-                    <CheckEligibilityButton />
-                </div>
-            </div>
+            )}
 
             <div className="w-full flex items-center justify-center mb-8">
                 <div className="h-px bg-gray-200 dark:bg-zinc-800 w-full max-w-sm"></div>
@@ -45,22 +72,31 @@ export default function CertificatePage() {
                 <div className="h-px bg-gray-200 dark:bg-zinc-800 w-full max-w-sm"></div>
             </div>
 
-            {/* Mock Certificate Container (A4-style preview) */}
+            {/* Certificate Preview */}
             <div className="flex justify-center">
-                <CertificatePreview
-                    name="John Doe"
-                    netSpeed="42"
-                    accuracy="97"
-                    duration="60"
-                    certificateId="TTJ-12345"
-                    issuedDate="Oct 2026"
-                />
+                {hasCertificate ? (
+                    <CertificatePreview
+                        name={displayName}
+                        netSpeed={certificate.net_wpm}
+                        accuracy={certificate.accuracy}
+                        duration={certificate.duration_seconds}
+                        certificateId={certificate.certificate_code}
+                        issuedDate={new Date(certificate.issued_at).toLocaleDateString("en-US", {
+                            month: "short",
+                            year: "numeric",
+                        })}
+                    />
+                ) : (
+                    <div className="text-center text-gray-500 dark:text-gray-400">
+                        <p className="italic">Your certificate preview will appear here once you unlock it.</p>
+                    </div>
+                )}
             </div>
 
             {/* Action Buttons Below Certificate */}
             <div className="mt-12 flex justify-center pb-20">
                 <button
-                    disabled={true}
+                    disabled={!hasCertificate}
                     className="relative px-8 py-3.5 bg-gray-200 dark:bg-zinc-800 text-gray-400 dark:text-gray-500 rounded-full font-bold cursor-not-allowed flex items-center shadow-inner transition-colors overflow-hidden group/btn"
                 >
                     <svg className="w-5 h-5 mr-2 opacity-50 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">

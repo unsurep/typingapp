@@ -33,13 +33,13 @@ export default function Navbar({ isLoggedIn = false }: { isLoggedIn?: boolean })
                     <nav className="hidden md:flex items-center space-x-8">
                         <Link
                             href="/practice"
-                            className="text-sm font-medium text-muted hover:text-foreground transition-colors"
+                            className="text-sm text-white hover:text-[#f4bf3c] font-medium   transition-colors"
                         >
                             Practice
                         </Link>
                         <Link
                             href="/test"
-                            className="text-sm font-medium text-muted hover:text-foreground transition-colors"
+                            className="text-sm font-medium text-white hover:text-[#f4bf3c]  transition-colors"
                         >
                             Tests
                         </Link>
@@ -47,13 +47,13 @@ export default function Navbar({ isLoggedIn = false }: { isLoggedIn?: boolean })
                             <>
                                 <Link
                                     href="/lessons"
-                                    className="text-sm font-medium text-muted hover:text-foreground transition-colors"
+                                    className="text-sm font-medium text-white hover:text-[#f4bf3c]  transition-colors"
                                 >
                                     Lessons
                                 </Link>
                                 <Link
                                     href="/certificate"
-                                    className="text-sm font-medium text-muted hover:text-foreground transition-colors"
+                                    className="text-sm font-medium text-white hover:text-[#f4bf3c]  transition-colors"
                                 >
                                     Certificate
                                 </Link>
@@ -63,13 +63,13 @@ export default function Navbar({ isLoggedIn = false }: { isLoggedIn?: boolean })
                             <div className="flex items-center space-x-6">
                                 <Link
                                     href="/dashboard"
-                                    className="text-sm font-medium text-muted hover:text-foreground transition-colors"
+                                    className="text-sm font-medium text-white hover:text-[#f4bf3c]  transition-colors"
                                 >
                                     Dashboard
                                 </Link>
                                 <button
                                     onClick={() => logout()}
-                                    className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-background bg-foreground rounded-md hover:bg-foreground/90 transition-colors"
+                                    className="inline-flex items-center justify-center cursor-pointer px-4 py-2 text-sm font-medium text-background bg-foreground rounded-md hover:bg-[#f4bf3c] transition-colors"
                                 >
                                     Logout
                                 </button>
@@ -118,10 +118,10 @@ export default function Navbar({ isLoggedIn = false }: { isLoggedIn?: boolean })
                         className="md:hidden overflow-hidden"
                         id="mobile-menu"
                     >
-                        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white/95 dark:bg-[#111111]/95 backdrop-blur-xl border-t border-gray-100 dark:border-white/10 shadow-lg">
+                        <div className="px-2 pt-2 pb-3 space-y-1  sm:px-3 bg-white/95 dark:bg-[#111111]/95 backdrop-blur-xl border-t border-gray-100 dark:border-white/10 shadow-lg">
                             <Link
                                 href="/practice"
-                                className="block px-3 py-2 rounded-md text-base font-medium text-muted hover:text-foreground hover:bg-black/5 dark:hover:bg-white/5 transition-colors"
+                                className="block px-3 py-2  rounded-md text-base font-medium text-muted hover:text-foreground hover:bg-black/5 dark:hover:bg-white/5 transition-colors"
                                 onClick={() => setIsMobileMenuOpen(false)}
                             >
                                 Practice
