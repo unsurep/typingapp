@@ -130,7 +130,7 @@ export default function Home() {
 
         <motion.div variants={itemVariants} className="mt-16 flex flex-wrap justify-center gap-4 sm:gap-8">
           {[
-            { label: '30s / 60s / 120s Tests', icon: 'M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z' },
+            { label: '60s / 120s Tests', icon: 'M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z' },
             { label: 'Real-time Accuracy', icon: 'M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z' },
             { label: 'Premium Stats', icon: 'M13 7h8m0 0v8m0-8l-8 8-4-4-6 6' }
           ].map((feature, i) => (

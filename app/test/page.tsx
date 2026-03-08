@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect, Suspense } from 'react';
-import { useSearchParams } from 'next/navigation';
+import { useRouter, useSearchParams } from 'next/navigation';
 import TypingArea, { TypingResult } from "@/components/TypingArea";
 import StatsBar from "@/components/StatsBar";
 import KeyboardHandGuide from "@/components/KeyboardHandGuide";
@@ -13,24 +13,29 @@ import Link from 'next/link';
 import { TYPING_TEXTS } from '@/lib/texts';
 import { motion, AnimatePresence } from "framer-motion";
 
+const INITIAL_METRICS: TypingResult = {
+    grossWpm: 0,
+    netWpm: 0,
+    accuracy: 100,
+    errors: 0,
+    duration: 0
+};
+
 function TestContent() {
+    const router = useRouter();
     const searchParams = useSearchParams();
     const durationParam = searchParams.get('duration');
     const initialDuration = durationParam ? parseInt(durationParam, 10) : 60;
 
+    const [duration, setDuration] = useState(initialDuration);
     const [timeLeft, setTimeLeft] = useState(initialDuration);
     const [hasStarted, setHasStarted] = useState(false);
     const [isComplete, setIsComplete] = useState(false);
     const [resetKey, setResetKey] = useState(0);
-    const [metrics, setMetrics] = useState<TypingResult>({
-        grossWpm: 0,
-        netWpm: 0,
-        accuracy: 100,
-        errors: 0,
-        duration: 0
-    });
+    const [metrics, setMetrics] = useState<TypingResult>(INITIAL_METRICS);
     const [isGuest, setIsGuest] = useState(false);
     const [textIndex, setTextIndex] = useState(0);
+    const [isDurationMenuOpen, setIsDurationMenuOpen] = useState(false);
 
     // Pick a random text on initial mount
     useEffect(() => {
@@ -63,7 +68,7 @@ function TestContent() {
 
                 // Fire API tracking implicitly
                 saveTestResult({
-                    duration_seconds: initialDuration,
+                    duration_seconds: duration,
                     gross_wpm: metrics.grossWpm,
                     net_wpm: metrics.netWpm,
                     accuracy: metrics.accuracy,
@@ -85,7 +90,7 @@ function TestContent() {
         return () => {
             if (intervalId) clearInterval(intervalId);
         };
-    }, [hasStarted, isComplete, timeLeft]);
+    }, [hasStarted, isComplete, timeLeft, duration, metrics]);
 
     const handleStart = () => {
         if (!hasStarted) {
@@ -102,7 +107,7 @@ function TestContent() {
         setIsComplete(true);
 
         saveTestResult({
-            duration_seconds: initialDuration,
+            duration_seconds: duration,
             gross_wpm: result.grossWpm,
             net_wpm: result.netWpm,
             accuracy: result.accuracy,
@@ -127,23 +132,50 @@ function TestContent() {
     const handleReset = () => {
         setHasStarted(false);
         setIsComplete(false);
-        setTimeLeft(initialDuration);
-        setMetrics({
-            grossWpm: 0,
-            netWpm: 0,
-            accuracy: 100,
-            errors: 0,
-            duration: 0
-        });
+        setTimeLeft(duration);
+        setMetrics(INITIAL_METRICS);
 
         // Pick a different random text
-        let nextIndex;
-        do {
-            nextIndex = Math.floor(Math.random() * TYPING_TEXTS.length);
-        } while (nextIndex === textIndex && TYPING_TEXTS.length > 1);
-        setTextIndex(nextIndex);
+        setTextIndex(prevIndex => {
+            if (TYPING_TEXTS.length <= 1) return prevIndex;
+            let nextIndex;
+            do {
+                nextIndex = Math.floor(Math.random() * TYPING_TEXTS.length);
+            } while (nextIndex === prevIndex);
+            return nextIndex;
+        });
 
         setResetKey(prev => prev + 1);
+    };
+
+    const handleDurationChange = (newDuration: number) => {
+        // Prevent mid-test duration changes to avoid confusion
+        if (hasStarted && !isComplete) return;
+        if (newDuration === duration) return;
+
+        setDuration(newDuration);
+        setHasStarted(false);
+        setIsComplete(false);
+        setTimeLeft(newDuration);
+        setMetrics(INITIAL_METRICS);
+
+        // Pick a different random text when switching durations
+        setTextIndex(prevIndex => {
+            if (TYPING_TEXTS.length <= 1) return prevIndex;
+            let nextIndex;
+            do {
+                nextIndex = Math.floor(Math.random() * TYPING_TEXTS.length);
+            } while (nextIndex === prevIndex);
+            return nextIndex;
+        });
+
+        setResetKey(prev => prev + 1);
+
+        // Sync chosen duration into the URL for shareability/persistence
+        const params = new URLSearchParams(searchParams.toString());
+        params.set('duration', String(newDuration));
+        router.replace(`?${params.toString()}`, { scroll: false });
+        setIsDurationMenuOpen(false);
     };
 
     return (
@@ -170,8 +202,46 @@ function TestContent() {
                 <h1 className="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white">
                     Typing <span className="text-brand">Test</span>
                 </h1>
-                <div className="px-4 py-1.5 bg-gray-100 dark:bg-zinc-800 text-sm font-semibold text-gray-700 dark:text-gray-300 rounded-full border border-gray-200 dark:border-zinc-700 shadow-sm">
-                    {initialDuration} Seconds
+                <div className="relative flex items-center sm:items-end">
+                    <button
+                        type="button"
+                        onClick={() => setIsDurationMenuOpen(prev => !prev)}
+                        className="inline-flex items-center gap-2 px-4 py-1.5 bg-gray-100 dark:bg-zinc-800 text-sm font-semibold text-gray-700 dark:text-gray-300 rounded-full border border-gray-200 dark:border-zinc-700 shadow-sm hover:bg-gray-200 dark:hover:bg-zinc-700 transition-colors"
+                    >
+                        <span>{duration} Seconds</span>
+                        <svg
+                            className={`w-4 h-4 transition-transform ${isDurationMenuOpen ? 'rotate-180' : ''}`}
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                        >
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
+                        </svg>
+                    </button>
+                    {isDurationMenuOpen && (
+                        <div className="absolute right-0 mt-2 w-40 bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-700 rounded-xl shadow-lg py-1 text-sm z-10">
+                            <button
+                                type="button"
+                                onClick={() => handleDurationChange(60)}
+                                className={`w-full text-left px-3 py-1.5 rounded-t-xl transition-colors ${duration === 60
+                                    ? 'bg-brand/10 text-brand'
+                                    : 'text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-zinc-800'
+                                    }`}
+                            >
+                                60 seconds
+                            </button>
+                            <button
+                                type="button"
+                                onClick={() => handleDurationChange(120)}
+                                className={`w-full text-left px-3 py-1.5 rounded-b-xl transition-colors ${duration === 120
+                                    ? 'bg-brand/10 text-brand'
+                                    : 'text-gray-700 dark:text-gray-200 hover:bg-gray-100 dark:hover:bg-zinc-800'
+                                    }`}
+                            >
+                                120 seconds
+                            </button>
+                        </div>
+                    )}
                 </div>
             </div>
 
@@ -223,7 +293,7 @@ function TestContent() {
                 </>
             ) : (
                 <div className="mt-8 xl:mt-12">
-                    <ResultCard wpm={metrics.netWpm} accuracy={metrics.accuracy} errors={metrics.errors} duration={initialDuration} timeLeft={timeLeft} onRetry={handleReset} />
+                    <ResultCard wpm={metrics.netWpm} accuracy={metrics.accuracy} errors={metrics.errors} duration={duration} timeLeft={timeLeft} onRetry={handleReset} />
                 </div>
             )}
 

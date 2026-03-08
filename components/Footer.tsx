@@ -24,6 +24,12 @@ export default function Footer() {
                         >
                             Contact
                         </Link>
+                        <Link
+                            href="/pricing"
+                            className="text-sm text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
+                        >
+                            Pricing
+                        </Link>
                     </nav>
                     <p className="text-sm text-gray-500 dark:text-gray-400">
                         &copy; 2026 TypingTestForJobs. All rights reserved.

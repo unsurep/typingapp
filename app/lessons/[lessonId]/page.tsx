@@ -122,19 +122,22 @@ export default function LessonPage({ params }: { params: Promise<{ lessonId: str
             return;
         }
 
-        toast.success(`Task ${activeTaskIndex + 1} Passed!`);
-        setIsTaskPassed(true);
-
         const updatedCompletedTasks = [...completedTasks];
         if (!updatedCompletedTasks.includes(activeTaskIndex)) {
             updatedCompletedTasks.push(activeTaskIndex);
             setCompletedTasks(updatedCompletedTasks);
         }
 
-        if (updatedCompletedTasks.length >= totalTasks) {
+        const isLessonNowCompleted = updatedCompletedTasks.length >= totalTasks;
+
+        if (isLessonNowCompleted) {
             toast.success("Lesson Fully Completed!");
             setIsLessonPassed(true);
+        } else {
+            toast.success(`Task ${activeTaskIndex + 1} Passed!`);
         }
+
+        setIsTaskPassed(true);
 
         // Try scaling DB
         const saveRes = await saveLessonProgress(parsedId, activeTaskIndex, totalTasks, finalMetrics);
