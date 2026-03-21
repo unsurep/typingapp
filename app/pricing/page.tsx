@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { createClient } from '@/utils/supabase/server'
 
 export default async function PricingPage({
     searchParams,
@@ -6,6 +7,19 @@ export default async function PricingPage({
     searchParams: Promise<{ cancelled?: string }>
 }) {
     const { cancelled } = await searchParams
+
+    const supabase = await createClient()
+    const { data: { user } } = await supabase.auth.getUser()
+
+    let isPremium = false
+    if (user) {
+        const { data: profile } = await supabase
+            .from('profiles')
+            .select('is_premium')
+            .eq('id', user.id)
+            .single()
+        isPremium = profile?.is_premium ?? false
+    }
 
     return (
         <div className="flex flex-col flex-1 w-full max-w-5xl mx-auto py-12 px-4 sm:px-6 lg:px-8 relative">
@@ -82,9 +96,21 @@ export default async function PricingPage({
                 </div>
 
                 {/* Premium plan */}
-                <div className="relative bg-gradient-to-b from-brand/10 via-white/80 to-white dark:from-brand/20 dark:via-zinc-900 dark:to-zinc-900 border border-brand/60 dark:border-brand/70 rounded-2xl p-6 sm:p-8 shadow-lg shadow-brand/20 flex flex-col">
-                    <div className="absolute -top-3 right-4 px-3 py-1 rounded-full bg-brand text-black text-xs font-semibold tracking-wide shadow-sm">
-                        Best for serious learners
+                <div
+                    className={`relative bg-gradient-to-b from-brand/10 via-white/80 to-white dark:from-brand/20 dark:via-zinc-900 dark:to-zinc-900 border rounded-2xl p-6 sm:p-8 shadow-lg flex flex-col ${
+                        isPremium
+                            ? 'border-emerald-500/70 dark:border-emerald-400/60 ring-2 ring-emerald-500/30 dark:ring-emerald-400/25 shadow-emerald-500/10'
+                            : 'border-brand/60 dark:border-brand/70 shadow-brand/20'
+                    }`}
+                >
+                    <div
+                        className={`absolute -top-3 right-4 px-3 py-1 rounded-full text-xs font-semibold tracking-wide shadow-sm ${
+                            isPremium
+                                ? 'bg-emerald-600 dark:bg-emerald-500 text-white'
+                                : 'bg-brand text-black'
+                        }`}
+                    >
+                        {isPremium ? 'Current plan' : 'Best for serious learners'}
                     </div>
 
                     <div className="mb-4">
@@ -122,12 +148,25 @@ export default async function PricingPage({
                         </li>
                     </ul>
 
-                    <Link
-                        href="/checkout"
-                        className="mt-auto inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-brand text-black font-semibold text-sm shadow-sm hover:bg-amber-400 transition-colors"
-                    >
-                        Upgrade to Premium
-                    </Link>
+                    {isPremium ? (
+                        <button
+                            type="button"
+                            disabled
+                            aria-disabled="true"
+                            aria-label="You already have the Premium plan"
+                            className="mt-auto inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full bg-zinc-200 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300 font-semibold text-sm cursor-not-allowed border border-zinc-300 dark:border-zinc-600"
+                        >
+                            <span aria-hidden className="text-emerald-600 dark:text-emerald-400">✓</span>
+                            You&apos;re on Premium
+                        </button>
+                    ) : (
+                        <Link
+                            href="/checkout"
+                            className="mt-auto inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-brand text-black font-semibold text-sm shadow-sm hover:bg-amber-400 transition-colors"
+                        >
+                            Upgrade to Premium
+                        </Link>
+                    )}
                 </div>
             </div>
         </div>

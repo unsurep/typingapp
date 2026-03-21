@@ -92,8 +92,14 @@ export default async function DashboardPage() {
                     Typing <span className="text-brand">Dashboard</span>
                 </h1>
                 <p className="text-lg text-gray-500 dark:text-gray-400 font-mono">
-                    Hello, <span className="font-semibold text-gray-900 dark:text-gray-200">{displayName}</span>! Here's a summary of your typing journey.
+                    Hello, <span className="font-semibold text-gray-900 dark:text-gray-200">{displayName}</span>! Here&apos;s a summary of your typing journey.
                 </p>
+                {user.email && (
+                    <p className="mt-3 text-sm text-gray-500 dark:text-gray-400">
+                        Signed in as{' '}
+                        <span className="font-mono text-gray-700 dark:text-gray-300">{user.email}</span>
+                    </p>
+                )}
             </div>
 
             {/* Metrics Grid */}
