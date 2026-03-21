@@ -3,7 +3,7 @@ import { NextRequest, NextResponse } from 'next/server'
 import Stripe from 'stripe'
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: '2024-04-10',
+  apiVersion: '2026-02-25.clover',
 })
 
 // Use service role key here — this runs server-side only, never exposed to client
