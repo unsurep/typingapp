@@ -13,14 +13,15 @@ export default async function LessonsPage() {
         redirect("/login");
     }
 
-    // Fetch progress for authenticated user
-    let progressMap = new Map<number, number>();
+    // Fetch premium status and progress in parallel
+    const [{ data: profile }, { data: progressList }] = await Promise.all([
+        supabase.from('profiles').select('is_premium').eq('id', user.id).single(),
+        supabase.from('lesson_progress').select('lesson_id, completed_tasks').eq('user_id', user.id),
+    ]);
 
-    const { data: progressList } = await supabase
-        .from('lesson_progress')
-        .select('lesson_id, completed_tasks')
-        .eq('user_id', user.id);
+    const isPremium = profile?.is_premium ?? false;
 
+    const progressMap = new Map<number, number>();
     if (progressList) {
         progressList.forEach(p => {
             const completedCount = p.completed_tasks ? p.completed_tasks.length : 0;
@@ -33,7 +34,8 @@ export default async function LessonsPage() {
         const progressPercentage = Math.round((completedCount / lesson.tasks.length) * 100);
         return {
             ...lesson,
-            progress: progressPercentage
+            progress: progressPercentage,
+            locked: !isPremium && lesson.id > 2,
         };
     });
 

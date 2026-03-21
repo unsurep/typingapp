@@ -120,7 +120,7 @@ export default function CertificatePreview({
                                 <span className="inline-block h-px w-32 bg-[#c79a65]" />
                             </div> */}
                             <div className="text-sm font-semibold text-[#5b2e33]">
-                                Umukoro Tumini
+                                Louis U
                             </div>
                             <div className="text-xs uppercase tracking-[0.25em] text-[#b27e4f]">
                                 Director

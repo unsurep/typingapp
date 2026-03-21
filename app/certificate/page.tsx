@@ -12,6 +12,17 @@ export default async function CertificatePage() {
         redirect("/login");
     }
 
+    // Only premium users can access the certificate
+    const { data: profile } = await supabase
+        .from('profiles')
+        .select('is_premium')
+        .eq('id', user.id)
+        .single();
+
+    if (!profile?.is_premium) {
+        redirect("/checkout");
+    }
+
     // Attempt to load an existing certificate for the current user
     const { data: certificate, error: certError } = await supabase
         .from('certificates')

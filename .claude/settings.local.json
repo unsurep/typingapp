@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(winget install:*)",
+      "Bash(where.exe stripe)",
+      "Read(//c/Users/Louis/AppData/Local/**)",
+      "Bash(xargs grep:*)"
+    ]
+  }
+}

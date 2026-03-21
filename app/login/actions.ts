@@ -7,8 +7,6 @@ import { createClient } from '@/utils/supabase/server'
 export async function login(formData: FormData) {
     const supabase = await createClient()
 
-    // type-casting here for convenience
-    // in practice, you should validate your inputs with Zod
     const data = {
         email: formData.get('email') as string,
         password: formData.get('password') as string,
@@ -17,12 +15,14 @@ export async function login(formData: FormData) {
     const { error } = await supabase.auth.signInWithPassword(data)
 
     if (error) {
-        // You can redirect with an error message to display in the UI
         redirect(`/login?error=${encodeURIComponent(error.message)}`)
     }
 
     revalidatePath('/', 'layout')
-    redirect('/dashboard')
+
+    const redirectTo = formData.get('redirectTo') as string | null
+    const isSafeRedirect = redirectTo && redirectTo.startsWith('/') && !redirectTo.startsWith('//')
+    redirect(isSafeRedirect ? redirectTo : '/dashboard')
 }
 
 export async function signup(formData: FormData) {

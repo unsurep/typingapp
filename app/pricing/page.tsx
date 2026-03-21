@@ -1,8 +1,23 @@
-export default function PricingPage() {
+import Link from 'next/link'
+
+export default async function PricingPage({
+    searchParams,
+}: {
+    searchParams: Promise<{ cancelled?: string }>
+}) {
+    const { cancelled } = await searchParams
+
     return (
         <div className="flex flex-col flex-1 w-full max-w-5xl mx-auto py-12 px-4 sm:px-6 lg:px-8 relative">
             {/* Background gradient orb effect */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[500px] bg-brand/5 dark:bg-brand/10 blur-[140px] rounded-full pointer-events-none -z-10" />
+
+            {/* Cancelled payment notice */}
+            {cancelled && (
+                <div className="mb-8 max-w-xl mx-auto w-full px-4 py-3 rounded-xl bg-yellow-50 dark:bg-yellow-900/20 border border-yellow-200 dark:border-yellow-800 text-sm text-yellow-800 dark:text-yellow-300 text-center">
+                    Payment was cancelled — no charge was made. You can upgrade whenever you&apos;re ready.
+                </div>
+            )}
 
             {/* Header */}
             <div className="mb-10 text-center">
@@ -58,12 +73,12 @@ export default function PricingPage() {
                         </li>
                     </ul>
 
-                    <button
-                        type="button"
+                    <Link
+                        href="/dashboard"
                         className="mt-auto inline-flex items-center justify-center px-6 py-2.5 rounded-full border border-gray-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-sm font-semibold text-gray-800 dark:text-gray-100 hover:border-brand/70 hover:text-brand dark:hover:text-brand transition-colors"
                     >
                         Continue with Freemium
-                    </button>
+                    </Link>
                 </div>
 
                 {/* Premium plan */}
@@ -107,15 +122,14 @@ export default function PricingPage() {
                         </li>
                     </ul>
 
-                    <button
-                        type="button"
+                    <Link
+                        href="/checkout"
                         className="mt-auto inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-brand text-black font-semibold text-sm shadow-sm hover:bg-amber-400 transition-colors"
                     >
                         Upgrade to Premium
-                    </button>
+                    </Link>
                 </div>
             </div>
         </div>
     );
 }
-

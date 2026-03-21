@@ -3,8 +3,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import { logout } from "@/app/login/actions";
-import { ModeToggle } from "@/components/ModeToggle";
 import { motion, AnimatePresence } from "framer-motion";
+import Image from "next/image";
 
 export default function Navbar({ isLoggedIn = false }: { isLoggedIn?: boolean }) {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -83,12 +83,14 @@ export default function Navbar({ isLoggedIn = false }: { isLoggedIn?: boolean })
                             </Link>
                         )}
                         <div className="pl-2 border-l border-border/50">
-                            <ModeToggle />
+                            <div>
+                                <Image src="/typing.svg" alt="Logo" width={50} height={50} />
+                            </div>
                         </div>
                     </nav>
                     {/* Mobile menu button */}
                     <div className="flex items-center space-x-2 md:hidden">
-                        <ModeToggle />
+                        <Image src="/typing.svg" alt="Logo" width={40} height={40} />
                         <button
                             type="button"
                             className="inline-flex items-center justify-center p-2 rounded-md text-muted hover:bg-black/5 dark:hover:bg-white/5 transition-colors"

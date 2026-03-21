@@ -20,8 +20,15 @@ export async function saveLessonProgress(lessonId: number, taskIndex: number, to
             return { success: false, reason: 'guest' };
         }
 
-        // 3. Prevent incomplete garbage data
-        if (metrics.accuracy < 90) {
+        // 3. Prevent incomplete garbage data and validate bounds
+        if (
+            metrics.accuracy < 90 ||
+            metrics.netWpm < 0 || metrics.netWpm > 300 ||
+            metrics.grossWpm < 0 || metrics.grossWpm > 300 ||
+            metrics.accuracy > 100 ||
+            !Number.isFinite(metrics.netWpm) ||
+            !Number.isFinite(metrics.accuracy)
+        ) {
             return { success: false, reason: 'failed_criteria' }
         }
 

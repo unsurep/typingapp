@@ -10,6 +10,7 @@ export default async function LoginPage({
     const resolvedParams = await searchParams;
     const error = resolvedParams?.error as string | undefined;
     const message = resolvedParams?.message as string | undefined;
+    const redirectTo = resolvedParams?.redirect as string | undefined;
 
     return (
         <div className="flex flex-col flex-1 w-full max-w-md mx-auto py-12 px-4 sm:px-6 animate-in fade-in slide-in-from-bottom-8 duration-500 relative">
@@ -39,6 +40,9 @@ export default async function LoginPage({
 
                 {/* Form */}
                 <form action={login} className="space-y-6">
+                    {redirectTo && (
+                        <input type="hidden" name="redirectTo" value={redirectTo} />
+                    )}
                     <div>
                         <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2" htmlFor="email">
                             Email address

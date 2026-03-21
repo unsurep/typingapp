@@ -22,11 +22,25 @@ export async function saveTestResult(metrics: TestResultInput) {
 
         // 2. Fast paths
         if (authError || !user) {
-            // Unauthenticated guest test, ignore DB hit gracefully.
             return { success: false, reason: 'guest' };
         }
 
-        // 3. Persist
+        // 3. Validate metrics are within physically possible bounds
+        const validDurations = [60, 120]
+        if (
+            !validDurations.includes(metrics.duration_seconds) ||
+            metrics.gross_wpm < 0 || metrics.gross_wpm > 300 ||
+            metrics.net_wpm < 0 || metrics.net_wpm > 300 ||
+            metrics.accuracy < 0 || metrics.accuracy > 100 ||
+            metrics.errors < 0 ||
+            !Number.isFinite(metrics.gross_wpm) ||
+            !Number.isFinite(metrics.net_wpm) ||
+            !Number.isFinite(metrics.accuracy)
+        ) {
+            return { success: false, reason: 'invalid_metrics' };
+        }
+
+        // 4. Persist
         const { error: insertError } = await supabase.from('test_results').insert({
             user_id: user.id,
             duration_seconds: metrics.duration_seconds,

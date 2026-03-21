@@ -1,5 +1,31 @@
 -- Supabase Schema for TypeApp
 
+-- 0. profiles table (tracks premium status)
+CREATE TABLE profiles (
+    id UUID PRIMARY KEY REFERENCES auth.users(id) ON DELETE CASCADE,
+    is_premium BOOLEAN DEFAULT false NOT NULL,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT timezone('utc'::text, now()) NOT NULL
+);
+
+ALTER TABLE profiles ENABLE ROW LEVEL SECURITY;
+
+CREATE POLICY "Users can view their own profile"
+    ON profiles FOR SELECT
+    USING (auth.uid() = id);
+
+-- Auto-create a profile row when a new user signs up
+CREATE OR REPLACE FUNCTION handle_new_user()
+RETURNS TRIGGER AS $$
+BEGIN
+    INSERT INTO profiles (id) VALUES (NEW.id);
+    RETURN NEW;
+END;
+$$ LANGUAGE plpgsql SECURITY DEFINER;
+
+CREATE TRIGGER on_auth_user_created
+    AFTER INSERT ON auth.users
+    FOR EACH ROW EXECUTE FUNCTION handle_new_user();
+
 -- 1. test_results table
 CREATE TABLE test_results (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
@@ -56,6 +82,7 @@ CREATE TABLE certificates (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
     user_id UUID REFERENCES auth.users(id) NOT NULL,
     certificate_code TEXT UNIQUE NOT NULL,
+    full_name TEXT,
     net_wpm INTEGER NOT NULL,
     accuracy NUMERIC NOT NULL,
     duration_seconds INTEGER NOT NULL,
@@ -71,3 +98,20 @@ CREATE POLICY "Users can insert their own certificates"
 CREATE POLICY "Users can view their own certificates"
     ON certificates FOR SELECT
     USING (auth.uid() = user_id);
+
+-- 4. contact_messages table
+CREATE TABLE contact_messages (
+    id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
+    name TEXT NOT NULL,
+    email TEXT NOT NULL,
+    subject TEXT NOT NULL,
+    message TEXT NOT NULL,
+    created_at TIMESTAMP WITH TIME ZONE DEFAULT timezone('utc'::text, now()) NOT NULL
+);
+
+ALTER TABLE contact_messages ENABLE ROW LEVEL SECURITY;
+
+CREATE POLICY "Anyone can insert contact messages"
+    ON contact_messages FOR INSERT
+    WITH CHECK (true);
+-- No SELECT policy — only admins via service role can read messages

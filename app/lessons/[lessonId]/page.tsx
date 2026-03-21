@@ -8,7 +8,6 @@ import StatsBar from "@/components/StatsBar";
 import { toast } from "sonner";
 import { saveLessonProgress, getLessonProgress } from "../actions";
 import { lessons } from "@/lib/lessons";
-import { createClient } from '@/utils/supabase/client';
 import { motion, AnimatePresence } from "framer-motion";
 import { getPerformanceLevel } from "@/utils/performance";
 
@@ -45,12 +44,18 @@ export default function LessonPage({ params }: { params: Promise<{ lessonId: str
     useEffect(() => {
         async function fetchInitialProgress() {
             try {
-                const supabase = createClient();
-                const { data: { user } } = await supabase.auth.getUser();
+                const authRes = await fetch('/api/auth/me');
+                const authData = await authRes.json();
 
                 // Protect route: only authenticated users can access lessons
-                if (!user) {
+                if (!authData.authenticated) {
                     router.replace("/login");
+                    return;
+                }
+
+                // Lessons 3+ require premium
+                if (parsedId > 2 && !authData.isPremium) {
+                    router.replace("/checkout");
                     return;
                 }
 

@@ -8,7 +8,6 @@ import KeyboardHandGuide from "@/components/KeyboardHandGuide";
 import ResultCard from "@/components/ResultCard";
 import { toast } from 'sonner';
 import { saveTestResult } from './actions';
-import { createClient } from '@/utils/supabase/client';
 import Link from 'next/link';
 import { TYPING_TEXTS } from '@/lib/texts';
 import { motion, AnimatePresence } from "framer-motion";
@@ -44,9 +43,9 @@ function TestContent() {
 
     useEffect(() => {
         async function checkAuth() {
-            const supabase = createClient();
-            const { data: { user } } = await supabase.auth.getUser();
-            if (!user) {
+            const res = await fetch('/api/auth/me');
+            const data = await res.json();
+            if (!data.authenticated) {
                 setIsGuest(true);
             }
         }

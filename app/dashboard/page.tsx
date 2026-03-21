@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { redirect } from 'next/navigation';
 import { createClient } from '@/utils/supabase/server';
 import { logout } from '@/app/login/actions';
 import { checkCertificateEligibility, issueCertificate } from '@/app/certificate/actions';
 import Link from 'next/link';
+import ConfettiCelebration from '@/components/ConfettiCelebration';
 
 export default async function DashboardPage() {
     const supabase = await createClient();
@@ -79,6 +80,10 @@ export default async function DashboardPage() {
 
     return (
         <div className="flex flex-col flex-1 w-full max-w-5xl mx-auto py-12 px-4 sm:px-6 relative animate-in fade-in slide-in-from-bottom-8 duration-500">
+            <Suspense fallback={null}>
+                <ConfettiCelebration />
+            </Suspense>
+
             {/* Background gradient orb effect */}
             <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[500px] bg-brand/5 dark:bg-brand/10 blur-[120px] rounded-full pointer-events-none -z-10" />
 
