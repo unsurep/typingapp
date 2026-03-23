@@ -2,6 +2,7 @@ import CertificatePreview from "@/components/CertificatePreview";
 import CheckEligibilityButton from "@/components/CheckEligibilityButton";
 import { createClient } from "@/utils/supabase/server";
 import { redirect } from "next/navigation";
+import { premiumFreeWindowActive } from "@/lib/server/premiumFree";
 
 export default async function CertificatePage() {
     const supabase = await createClient();
@@ -20,7 +21,10 @@ export default async function CertificatePage() {
         .single();
 
     if (!profile?.is_premium) {
-        redirect("/checkout");
+        // Allow certificate access during the free-mium window.
+        if (!premiumFreeWindowActive()) {
+            redirect("/checkout");
+        }
     }
 
     // Attempt to load an existing certificate for the current user

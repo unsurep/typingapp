@@ -1,10 +1,7 @@
 import { redirect } from 'next/navigation'
 import { createClient } from '@supabase/supabase-js'
 import Stripe from 'stripe'
-
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-    apiVersion: '2026-02-25.clover',
-})
+import { isStripeCheckoutEnabled, premiumFreeWindowActive } from '@/lib/server/premiumFree'
 
 const supabaseAdmin = createClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
@@ -21,6 +18,16 @@ export default async function SuccessPage({
     if (!session_id) {
         redirect('/pricing')
     }
+
+    // Safety: during the free-mium window or when checkout is disabled, ignore
+    // Stripe success callbacks.
+    if (!isStripeCheckoutEnabled() || premiumFreeWindowActive()) {
+        redirect('/pricing?trial=true')
+    }
+
+    const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
+        apiVersion: '2026-02-25.clover',
+    })
 
     // Verify the payment directly with Stripe
     const session = await stripe.checkout.sessions.retrieve(session_id)

@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server';
 import { createClient } from '@/utils/supabase/server';
+import { premiumFreeWindowActive } from '@/lib/server/premiumFree';
 
 export async function GET() {
     const supabase = await createClient();
@@ -18,6 +19,7 @@ export async function GET() {
     return NextResponse.json({
         authenticated: true,
         userId: user.id,
-        isPremium: profile?.is_premium ?? false,
+        // Effective premium includes the global free-mium window.
+        isPremium: (profile?.is_premium ?? false) || premiumFreeWindowActive(),
     }, { status: 200 });
 }

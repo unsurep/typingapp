@@ -3,6 +3,7 @@ import LessonCard from "@/components/LessonCard";
 import { createClient } from "@/utils/supabase/server";
 import { lessons } from "@/lib/lessons";
 import { redirect } from "next/navigation";
+import { premiumFreeWindowActive } from "@/lib/server/premiumFree";
 
 export default async function LessonsPage() {
     const supabase = await createClient();
@@ -19,7 +20,7 @@ export default async function LessonsPage() {
         supabase.from('lesson_progress').select('lesson_id, completed_tasks').eq('user_id', user.id),
     ]);
 
-    const isPremium = profile?.is_premium ?? false;
+    const isPremium = (profile?.is_premium ?? false) || premiumFreeWindowActive();
 
     const progressMap = new Map<number, number>();
     if (progressList) {

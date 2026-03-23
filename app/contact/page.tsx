@@ -45,7 +45,7 @@ export default function ContactPage() {
                 </h1>
                 <p className="mt-4 text-base sm:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
                     Have a question, spotted an issue, or want to share feedback about Typingverified?
-                    Use the contact details below or send us a quick message through the form.
+                    Use the form below to share your concerns or reviews—we’ll respond as soon as possible.
                 </p>
             </div>
 
@@ -56,10 +56,10 @@ export default function ContactPage() {
                     <h2 className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white">
                         Contact details
                     </h2>
-                    <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400">
-                        You can reach us using the email and phone placeholders below. These are examples you
+                    {/* <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400">
+                        You can reach us using the email placeholder below. These are examples you
                         can replace with your real support details when you are ready.
-                    </p>
+                    </p> */}
                     <div className="space-y-2 text-sm sm:text-base text-gray-600 dark:text-gray-400">
                         <div>
                             <span className="font-semibold">Email:</span>{" "}
@@ -69,10 +69,6 @@ export default function ContactPage() {
                             >
                                 support@typingverified.com
                             </a>
-                        </div>
-                        <div>
-                            <span className="font-semibold">Phone:</span>{" "}
-                            <span>+1 (555) 123‑4567</span>
                         </div>
                     </div>
                     <p className="text-xs sm:text-sm text-gray-500 dark:text-gray-500">
@@ -90,6 +86,10 @@ export default function ContactPage() {
                         <h2 className="text-lg sm:text-xl font-semibold text-gray-900 dark:text-white mb-4">
                             Send us a message
                         </h2>
+                        <p className="text-sm text-gray-600 dark:text-gray-400 mb-6">
+                            Use this form for your concerns or reviews. We&apos;ll get back to you
+                            as soon as possible.
+                        </p>
 
                         {status === "success" ? (
                             <div className="rounded-lg bg-green-50 dark:bg-green-900/20 border border-green-200 dark:border-green-800 p-4 text-sm text-green-700 dark:text-green-400">
@@ -165,7 +165,7 @@ export default function ContactPage() {
                                 <button
                                     type="submit"
                                     disabled={status === "loading"}
-                                    className="inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-brand text-black font-semibold text-sm shadow-sm hover:bg-amber-400 transition-colors focus:outline-none disabled:opacity-60 disabled:cursor-not-allowed"
+                                    className="inline-flex cursor-pointer items-center justify-center px-6 py-2.5 rounded-full bg-brand text-black font-semibold text-sm shadow-sm hover:bg-amber-400 transition-colors focus:outline-none disabled:opacity-60 disabled:cursor-not-allowed"
                                 >
                                     {status === "loading" ? "Sending..." : "Send message"}
                                 </button>

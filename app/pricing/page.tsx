@@ -1,5 +1,10 @@
 import Link from 'next/link'
 import { createClient } from '@/utils/supabase/server'
+import {
+    getPremiumFreeDaysRemaining,
+    isStripeCheckoutEnabled,
+    premiumFreeWindowActive,
+} from '@/lib/server/premiumFree'
 
 export default async function PricingPage({
     searchParams,
@@ -8,18 +13,25 @@ export default async function PricingPage({
 }) {
     const { cancelled } = await searchParams
 
+    const trialActive = premiumFreeWindowActive()
+    const daysRemaining = getPremiumFreeDaysRemaining()
+    const stripeCheckoutEnabled = isStripeCheckoutEnabled()
+
     const supabase = await createClient()
     const { data: { user } } = await supabase.auth.getUser()
 
-    let isPremium = false
+    let isPremiumDb = false
     if (user) {
         const { data: profile } = await supabase
             .from('profiles')
             .select('is_premium')
             .eq('id', user.id)
             .single()
-        isPremium = profile?.is_premium ?? false
+        isPremiumDb = profile?.is_premium ?? false
     }
+
+    const premiumCtaAvailable = !trialActive && stripeCheckoutEnabled
+    const premiumCardIsActive = !trialActive && isPremiumDb
 
     return (
         <div className="flex flex-col flex-1 w-full max-w-5xl mx-auto py-12 px-4 sm:px-6 lg:px-8 relative">
@@ -44,16 +56,24 @@ export default async function PricingPage({
                 </p>
             </div>
 
+            {trialActive && (
+                <div className="mb-10 max-w-xl mx-auto w-full px-4 py-3 rounded-xl bg-brand/10 border border-brand/20 text-sm text-brand text-center">
+                    Premium access is free for {daysRemaining} day{daysRemaining === 1 ? '' : 's'}. It ends soon.
+                </div>
+            )}
+
             {/* Plans */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
                 {/* Freemium plan */}
                 <div className="relative bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 rounded-2xl p-6 sm:p-8 shadow-sm flex flex-col">
                     <div className="mb-4">
                         <h2 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">
-                            Freemium
+                            {trialActive ? 'Free-mium' : 'Freemium'}
                         </h2>
                         <p className="mt-1 text-sm sm:text-base text-gray-600 dark:text-gray-400">
-                            Get started with core typing tools at no cost.
+                            {trialActive
+                                ? 'Full lessons + certificate access for free for 30 days.'
+                                : 'Get started with core typing tools at no cost.'}
                         </p>
                     </div>
 
@@ -61,17 +81,31 @@ export default async function PricingPage({
                         <span className="text-3xl font-extrabold text-gray-900 dark:text-white">
                             $0
                         </span>
-                        <span className="ml-1 text-sm text-gray-500 dark:text-gray-400">/ forever</span>
+                        <span className="ml-1 text-sm text-gray-500 dark:text-gray-400">
+                            {trialActive ? '/ 30 days' : '/ forever'}
+                        </span>
                     </div>
 
                     <ul className="space-y-2 text-sm sm:text-base text-gray-700 dark:text-gray-300 mb-6">
                         <li className="flex items-start gap-2">
                             <span className="mt-1 h-1.5 w-1.5 rounded-full bg-yellow-400" />
-                            <span>Ad‑supported experience while you practice and test.</span>
+                            <span>
+                                {trialActive
+                                    ? 'Full course access during the free-mium period.'
+                                    : 'Ad‑supported experience while you practice and test.'}
+                            </span>
                         </li>
                         <li className="flex items-start gap-2">
                             <span className="mt-1 h-1.5 w-1.5 rounded-full bg-yellow-400" />
-                            <span>Access to the first <strong>2 lessons</strong> to learn the basics.</span>
+                            <span>
+                                {trialActive ? (
+                                    <>All lessons and tasks unlocked (no premium lockouts).</>
+                                ) : (
+                                    <>
+                                        Access to the first <strong>2 lessons</strong> to learn the basics.
+                                    </>
+                                )}
+                            </span>
                         </li>
                         <li className="flex items-start gap-2">
                             <span className="mt-1 h-1.5 w-1.5 rounded-full bg-yellow-400" />
@@ -83,12 +117,22 @@ export default async function PricingPage({
                         </li>
                         <li className="flex items-start gap-2">
                             <span className="mt-1 h-1.5 w-1.5 rounded-full bg-yellow-400" />
-                            <span><strong>No certificate</strong> unlock on the Freemium plan.</span>
+                            <span>
+                                {trialActive ? (
+                                    <>
+                                        <strong>Certificate included</strong> — complete lessons + pass the test.
+                                    </>
+                                ) : (
+                                    <>
+                                        <strong>No certificate</strong> on the Freemium plan.
+                                    </>
+                                )}
+                            </span>
                         </li>
                     </ul>
 
                     <Link
-                        href="/dashboard"
+                        href="/dashboard?upgraded=true"
                         className="mt-auto inline-flex items-center justify-center px-6 py-2.5 rounded-full border border-gray-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-sm font-semibold text-gray-800 dark:text-gray-100 hover:border-brand/70 hover:text-brand dark:hover:text-brand transition-colors"
                     >
                         Continue with Freemium
@@ -97,20 +141,20 @@ export default async function PricingPage({
 
                 {/* Premium plan */}
                 <div
-                    className={`relative bg-gradient-to-b from-brand/10 via-white/80 to-white dark:from-brand/20 dark:via-zinc-900 dark:to-zinc-900 border rounded-2xl p-6 sm:p-8 shadow-lg flex flex-col ${
-                        isPremium
+                    className={`relative bg-linear-to-b from-brand/10 via-white/80 to-white dark:from-brand/20 dark:via-zinc-900 dark:to-zinc-900 border rounded-2xl p-6 sm:p-8 shadow-lg flex flex-col ${
+                        premiumCardIsActive
                             ? 'border-emerald-500/70 dark:border-emerald-400/60 ring-2 ring-emerald-500/30 dark:ring-emerald-400/25 shadow-emerald-500/10'
                             : 'border-brand/60 dark:border-brand/70 shadow-brand/20'
                     }`}
                 >
                     <div
                         className={`absolute -top-3 right-4 px-3 py-1 rounded-full text-xs font-semibold tracking-wide shadow-sm ${
-                            isPremium
+                            premiumCardIsActive
                                 ? 'bg-emerald-600 dark:bg-emerald-500 text-white'
                                 : 'bg-brand text-black'
                         }`}
                     >
-                        {isPremium ? 'Current plan' : 'Best for serious learners'}
+                        {premiumCardIsActive ? 'Current plan' : trialActive ? 'Coming soon' : 'Best for serious learners'}
                     </div>
 
                     <div className="mb-4">
@@ -148,24 +192,36 @@ export default async function PricingPage({
                         </li>
                     </ul>
 
-                    {isPremium ? (
+                    {premiumCtaAvailable ? (
+                        isPremiumDb ? (
+                            <button
+                                type="button"
+                                disabled
+                                aria-disabled="true"
+                                aria-label="You already have the Premium plan"
+                                className="mt-auto inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full bg-zinc-200 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300 font-semibold text-sm cursor-not-allowed border border-zinc-300 dark:border-zinc-600"
+                            >
+                                <span aria-hidden className="text-emerald-600 dark:text-emerald-400">✓</span>
+                                You&apos;re on Premium
+                            </button>
+                        ) : (
+                            <Link
+                                href="/checkout"
+                                className="mt-auto inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-brand text-black font-semibold text-sm shadow-sm hover:bg-amber-400 transition-colors"
+                            >
+                                Upgrade to Premium
+                            </Link>
+                        )
+                    ) : (
                         <button
                             type="button"
                             disabled
                             aria-disabled="true"
-                            aria-label="You already have the Premium plan"
+                            aria-label="Premium checkout is coming soon"
                             className="mt-auto inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full bg-zinc-200 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300 font-semibold text-sm cursor-not-allowed border border-zinc-300 dark:border-zinc-600"
                         >
-                            <span aria-hidden className="text-emerald-600 dark:text-emerald-400">✓</span>
-                            You&apos;re on Premium
+                            Premium coming soon
                         </button>
-                    ) : (
-                        <Link
-                            href="/checkout"
-                            className="mt-auto inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-brand text-black font-semibold text-sm shadow-sm hover:bg-amber-400 transition-colors"
-                        >
-                            Upgrade to Premium
-                        </Link>
                     )}
                 </div>
             </div>

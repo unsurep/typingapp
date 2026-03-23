@@ -1,6 +1,7 @@
 import { createClient } from '@supabase/supabase-js'
 import { NextRequest, NextResponse } from 'next/server'
 import Stripe from 'stripe'
+import { isStripeCheckoutEnabled, premiumFreeWindowActive } from '@/lib/server/premiumFree'
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
   apiVersion: '2026-02-25.clover',
@@ -23,6 +24,12 @@ export async function POST(req: NextRequest) {
   } catch (err) {
     console.error('Webhook signature verification failed:', err)
     return NextResponse.json({ error: 'Invalid signature' }, { status: 400 })
+  }
+
+  // Safety: during the free-mium window or when checkout is disabled, ignore
+  // Stripe checkout success events so Stripe cannot toggle premium.
+  if (!isStripeCheckoutEnabled() || premiumFreeWindowActive()) {
+    return NextResponse.json({ received: true })
   }
 
   if (event.type === 'checkout.session.completed') {

@@ -1,18 +1,24 @@
 import { createClient } from '@/utils/supabase/server'
 import { redirect } from 'next/navigation'
 import Stripe from 'stripe'
-
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: '2026-02-25.clover',
-})
+import { isStripeCheckoutEnabled, premiumFreeWindowActive } from '@/lib/server/premiumFree'
 
 export default async function CheckoutPage() {
   const supabase = await createClient()
   const { data: { user } } = await supabase.auth.getUser()
 
+  // Block checkout during the global free-mium window and whenever checkout is disabled.
+  if (premiumFreeWindowActive() || !isStripeCheckoutEnabled()) {
+    redirect('/pricing?trial=true')
+  }
+
   if (!user) {
     redirect('/login?redirect=/checkout')
   }
+
+  const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
+    apiVersion: '2026-02-25.clover',
+  })
 
   const session = await stripe.checkout.sessions.create({
     payment_method_types: ['card'],

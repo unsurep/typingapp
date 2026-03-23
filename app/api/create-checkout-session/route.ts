@@ -1,19 +1,28 @@
 import { createClient } from '@/utils/supabase/server'
 import { NextResponse } from 'next/server'
 import Stripe from 'stripe'
-
-const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-  apiVersion: '2026-02-25.clover',
-})
+import { isStripeCheckoutEnabled, premiumFreeWindowActive } from '@/lib/server/premiumFree'
 
 export async function POST() {
   try {
+    // Block checkout during the global free-mium window and whenever checkout is disabled.
+    if (premiumFreeWindowActive() || !isStripeCheckoutEnabled()) {
+      return NextResponse.json(
+        { error: 'Checkout disabled during free-mium window' },
+        { status: 503 }
+      )
+    }
+
     const supabase = await createClient()
     const { data: { user }, error: authError } = await supabase.auth.getUser()
 
     if (authError || !user) {
       return NextResponse.json({ error: 'Not authenticated' }, { status: 401 })
     }
+
+    const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
+      apiVersion: '2026-02-25.clover',
+    })
 
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ['card'],
