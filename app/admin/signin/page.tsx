@@ -2,6 +2,11 @@ import React from "react";
 import Link from "next/link";
 import PasswordInput from "@/components/PasswordInput";
 import SignInLoadingButton from "@/components/SignInLoadingButton";
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    robots: { index: false, follow: false },
+};
 
 export default async function AdminSignInPage({
     searchParams,

@@ -34,20 +34,6 @@ export default function Home() {
   const router = useRouter();
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  useEffect(() => {
-    async function checkAuth() {
-      const supabase = createClient();
-      const { data: { user } } = await supabase.auth.getUser();
-      const loggedIn = !!user;
-      setIsLoggedIn(loggedIn);
-
-      if (!loggedIn) {
-        showWarningToast();
-      }
-    }
-    checkAuth();
-  }, []);
-
   const showWarningToast = () => {
     toast.custom((t) => (
       <div className="w-[356px] sm:w-[500px] bg-yellow-50 dark:bg-zinc-900/95 border-l-4 border-yellow-400 dark:border-yellow-500 rounded-lg p-4 flex flex-col sm:flex-row items-start sm:items-center justify-between text-yellow-800 dark:text-yellow-200 text-sm shadow-xl gap-4 pointer-events-auto">
@@ -72,6 +58,20 @@ export default function Home() {
       id: 'auth-warning-toast' // prevent duplicate toasts
     });
   };
+
+  useEffect(() => {
+    async function checkAuth() {
+      const supabase = createClient();
+      const { data: { user } } = await supabase.auth.getUser();
+      const loggedIn = !!user;
+      setIsLoggedIn(loggedIn);
+
+      if (!loggedIn) {
+        showWarningToast();
+      }
+    }
+    checkAuth();
+  }, []);
 
   const handleTestClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     if (!isLoggedIn) {

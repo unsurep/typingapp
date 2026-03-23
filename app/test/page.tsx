@@ -47,13 +47,11 @@ function TestContent() {
     const [resetKey, setResetKey] = useState(0);
     const [metrics, setMetrics] = useState<TypingResult>(INITIAL_METRICS);
     const [isGuest, setIsGuest] = useState(false);
-    const [textIndex, setTextIndex] = useState(0);
+    // Seed initial text randomly without a mount-time state update.
+    const [textIndex, setTextIndex] = useState(() =>
+        Math.floor(Math.random() * TYPING_TEXTS.length)
+    );
     const [isDurationMenuOpen, setIsDurationMenuOpen] = useState(false);
-
-    // Pick a random text on initial mount
-    useEffect(() => {
-        setTextIndex(Math.floor(Math.random() * TYPING_TEXTS.length));
-    }, []);
 
     useEffect(() => {
         async function checkAuth() {

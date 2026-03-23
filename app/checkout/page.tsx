@@ -2,6 +2,11 @@ import { createClient } from '@/utils/supabase/server'
 import { redirect } from 'next/navigation'
 import Stripe from 'stripe'
 import { isStripeCheckoutEnabled, premiumFreeWindowActive } from '@/lib/server/premiumFree'
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  robots: { index: false, follow: false },
+}
 
 export default async function CheckoutPage() {
   const supabase = await createClient()

@@ -3,8 +3,13 @@ import { redirect } from "next/navigation";
 import { isAdminSessionValid } from "@/lib/admin-session";
 import { createClient } from "@supabase/supabase-js";
 import AdminContactMessages from "@/components/AdminContactMessages";
+import type { Metadata } from 'next'
 
 export const dynamic = "force-dynamic";
+
+export const metadata: Metadata = {
+    robots: { index: false, follow: false },
+};
 
 type ContactMessage = {
     id: string;

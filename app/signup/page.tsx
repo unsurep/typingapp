@@ -1,6 +1,11 @@
 import React from 'react';
 import Link from 'next/link';
 import PasswordInput from '@/components/PasswordInput';
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    robots: { index: false, follow: false },
+};
 
 export default async function SignupPage({
     searchParams,

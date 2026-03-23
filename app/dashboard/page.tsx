@@ -4,6 +4,11 @@ import { createClient } from '@/utils/supabase/server';
 import { checkCertificateEligibility } from '@/lib/server/certificate';
 import Link from 'next/link';
 import ConfettiCelebration from '@/components/ConfettiCelebration';
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    robots: { index: false, follow: false },
+};
 
 export default async function DashboardPage() {
     const supabase = await createClient();
@@ -143,7 +148,7 @@ export default async function DashboardPage() {
                         </div>
                     ) : (
                         <div className="p-8 bg-white dark:bg-zinc-900 rounded-2xl border border-gray-200 dark:border-zinc-800 shadow-sm text-center">
-                            <p className="text-gray-500 dark:text-gray-400">You haven't taken any tests yet.</p>
+                            <p className="text-gray-500 dark:text-gray-400">You haven&apos;t taken any tests yet.</p>
                             <Link href="/test" className="mt-4 inline-block text-blue-600 dark:text-blue-400 font-semibold hover:underline">
                                 Take a test now &rarr;
                             </Link>

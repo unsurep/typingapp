@@ -5,6 +5,7 @@ import {
     isStripeCheckoutEnabled,
     premiumFreeWindowActive,
 } from '@/lib/server/premiumFree'
+import PremiumWaitlistForm from '@/components/PremiumWaitlistForm'
 
 export default async function PricingPage({
     searchParams,
@@ -213,15 +214,19 @@ export default async function PricingPage({
                             </Link>
                         )
                     ) : (
-                        <button
-                            type="button"
-                            disabled
-                            aria-disabled="true"
-                            aria-label="Premium checkout is coming soon"
-                            className="mt-auto inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full bg-zinc-200 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300 font-semibold text-sm cursor-not-allowed border border-zinc-300 dark:border-zinc-600"
-                        >
-                            Premium coming soon
-                        </button>
+                        <div className="mt-auto">
+                            <button
+                                type="button"
+                                disabled
+                                aria-disabled="true"
+                                aria-label="Premium checkout is coming soon"
+                                className="w-full inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full bg-zinc-200 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300 font-semibold text-sm cursor-not-allowed border border-zinc-300 dark:border-zinc-600"
+                            >
+                                Premium coming soon
+                            </button>
+
+                            {/* <PremiumWaitlistForm /> */}
+                        </div>
                     )}
                 </div>
             </div>

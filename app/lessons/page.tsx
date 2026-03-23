@@ -4,6 +4,11 @@ import { createClient } from "@/utils/supabase/server";
 import { lessons } from "@/lib/lessons";
 import { redirect } from "next/navigation";
 import { premiumFreeWindowActive } from "@/lib/server/premiumFree";
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+    robots: { index: false, follow: false },
+};
 
 export default async function LessonsPage() {
     const supabase = await createClient();
