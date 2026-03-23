@@ -1,30 +1,26 @@
-import React from 'react';
-import Link from 'next/link';
-import PasswordInput from '@/components/PasswordInput';
-import SignInLoadingButton from '@/components/SignInLoadingButton';
+import React from "react";
+import Link from "next/link";
+import PasswordInput from "@/components/PasswordInput";
+import SignInLoadingButton from "@/components/SignInLoadingButton";
 
-export default async function LoginPage({
+export default async function AdminSignInPage({
     searchParams,
 }: {
     searchParams: Promise<{ [key: string]: string | string[] | undefined }>;
 }) {
     const resolvedParams = await searchParams;
     const error = resolvedParams?.error as string | undefined;
-    const message = resolvedParams?.message as string | undefined;
-    const redirectTo = resolvedParams?.redirect as string | undefined;
 
     return (
         <div className="flex flex-col flex-1 w-full max-w-md mx-auto py-12 px-4 sm:px-6 animate-in fade-in slide-in-from-bottom-8 duration-500 relative">
-            {/* Background gradient orb effect */}
             <div className="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand/10 dark:bg-brand/15 blur-[120px] rounded-full pointer-events-none -z-10" />
             <div className="bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 rounded-3xl shadow-xl overflow-hidden p-8 sm:p-10 relative z-10">
-                {/* Header */}
                 <div className="text-center mb-10">
                     <h1 className="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white mb-2">
-                        Welcome Back
+                        Admin Sign In
                     </h1>
                     <p className="text-sm font-medium text-gray-500 dark:text-gray-400">
-                        Enter your details to sign in.
+                        Sign in with your administrator account.
                     </p>
                 </div>
 
@@ -33,28 +29,23 @@ export default async function LoginPage({
                         <p className="text-sm text-red-600 dark:text-red-400">{error}</p>
                     </div>
                 )}
-                {message && (
-                    <div className="mb-6 p-4 bg-blue-50 dark:bg-blue-900/30 border border-blue-200 dark:border-blue-800 rounded-xl">
-                        <p className="text-sm text-blue-600 dark:text-blue-400">{message}</p>
-                    </div>
-                )}
 
-                {/* Form */}
-                <form action="/api/auth/login" method="POST" className="space-y-6">
-                    {redirectTo && (
-                        <input type="hidden" name="redirectTo" value={redirectTo} />
-                    )}
+                <form action="/api/admin/login" method="POST" className="space-y-6">
                     <div>
-                        <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2" htmlFor="email">
-                            Email address
+                        <label
+                            className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2"
+                            htmlFor="username"
+                        >
+                            Username
                         </label>
                         <input
-                            id="email"
-                            name="email"
-                            type="email"
+                            id="username"
+                            name="username"
+                            type="text"
+                            autoComplete="username"
                             required
                             className="block w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-zinc-700 bg-white dark:bg-black text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-900 dark:focus:ring-white transition-shadow"
-                            placeholder="you@example.com"
+                            placeholder="admin@example.com"
                         />
                     </div>
 
@@ -67,13 +58,12 @@ export default async function LoginPage({
                     />
                 </form>
 
-                {/* Footer Toggle */}
                 <div className="mt-8 text-center">
                     <Link
-                        href="/signup"
+                        href="/"
                         className="text-sm font-semibold text-gray-600 dark:text-gray-400 hover:text-black dark:hover:text-white transition-colors focus:outline-none"
                     >
-                        Don&apos;t have an account? Sign Up
+                        Back to home
                     </Link>
                 </div>
             </div>

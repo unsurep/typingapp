@@ -1,6 +1,5 @@
 import React from 'react';
 import Link from 'next/link';
-import { signup } from '@/app/login/actions';
 import PasswordInput from '@/components/PasswordInput';
 
 export default async function SignupPage({
@@ -33,7 +32,7 @@ export default async function SignupPage({
                 )}
 
                 {/* Form */}
-                <form action={signup} className="space-y-6">
+                <form action="/api/auth/signup" method="POST" className="space-y-6">
                     <div>
                         <label className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2" htmlFor="name">
                             Full Name

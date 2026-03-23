@@ -39,7 +39,7 @@ export default async function PricingPage({
                     Simple <span className="text-brand">Pricing</span>
                 </h1>
                 <p className="mt-4 text-base sm:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                    Start practicing for free, then upgrade when you are ready to unlock the full TypingTestForJobs
+                    Start practicing for free, then upgrade when you are ready to unlock the full Typingverified
                     experience.
                 </p>
             </div>

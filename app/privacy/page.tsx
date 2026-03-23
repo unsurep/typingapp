@@ -9,7 +9,7 @@ export default function PrivacyPage() {
             {/* Header */}
             <div className="mb-10 text-center">
                 <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
-                    Privacy at <span className="text-brand">TypingTestForJobs</span>
+                    Privacy at <span className="text-brand">Typingverified</span>
                 </h1>
                 <p className="mt-4 text-base sm:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
                     We keep things simple. This page explains, in plain language, what we collect, why we collect it,
@@ -23,7 +23,7 @@ export default function PrivacyPage() {
                     What we collect
                 </h2>
                 <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-3">
-                    When you use TypingTestForJobs, we only collect what we need to run the app and save your progress:
+                    When you use Typingverified, we only collect what we need to run the app and save your progress:
                 </p>
                 <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-600 dark:text-gray-400">
                     <li>

@@ -44,7 +44,7 @@ export default function ContactPage() {
                     Get in <span className="text-brand">Touch</span>
                 </h1>
                 <p className="mt-4 text-base sm:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                    Have a question, spotted an issue, or want to share feedback about TypingTestForJobs?
+                    Have a question, spotted an issue, or want to share feedback about Typingverified?
                     Use the contact details below or send us a quick message through the form.
                 </p>
             </div>
@@ -64,10 +64,10 @@ export default function ContactPage() {
                         <div>
                             <span className="font-semibold">Email:</span>{" "}
                             <a
-                                href="mailto:support@typingtestforjobs.com"
+                                href="mailto:support@typingverified.com"
                                 className="underline underline-offset-2"
                             >
-                                support@typingtestforjobs.com
+                                support@typingverified.com
                             </a>
                         </div>
                         <div>

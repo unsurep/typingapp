@@ -46,7 +46,7 @@ export default async function VerificationPage({ params }: { params: Promise<{ c
                             Verified Certificate
                         </h1>
                         <p className="text-gray-500 dark:text-gray-400 text-sm sm:text-base">
-                            This certificate is officially recognized and issued by TypingTestForJobs.
+                            This certificate is officially recognized and issued by Typingverified.
                         </p>
                         <div className="mt-4">
                             <PrintCertificateButton />

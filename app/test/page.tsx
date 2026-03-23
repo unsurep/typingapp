@@ -7,7 +7,6 @@ import StatsBar from "@/components/StatsBar";
 import KeyboardHandGuide from "@/components/KeyboardHandGuide";
 import ResultCard from "@/components/ResultCard";
 import { toast } from 'sonner';
-import { saveTestResult } from './actions';
 import Link from 'next/link';
 import { TYPING_TEXTS } from '@/lib/texts';
 import { motion, AnimatePresence } from "framer-motion";
@@ -19,6 +18,21 @@ const INITIAL_METRICS: TypingResult = {
     errors: 0,
     duration: 0
 };
+
+async function postTestResult(payload: {
+    duration_seconds: number;
+    gross_wpm: number;
+    net_wpm: number;
+    accuracy: number;
+    errors: number;
+}) {
+    const res = await fetch("/api/test/results", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(payload),
+    });
+    return res.json();
+}
 
 function TestContent() {
     const router = useRouter();
@@ -66,7 +80,7 @@ function TestContent() {
                 setIsComplete(true);
 
                 // Fire API tracking implicitly
-                saveTestResult({
+                postTestResult({
                     duration_seconds: duration,
                     gross_wpm: metrics.grossWpm,
                     net_wpm: metrics.netWpm,
@@ -105,7 +119,7 @@ function TestContent() {
         setMetrics(result);
         setIsComplete(true);
 
-        saveTestResult({
+        postTestResult({
             duration_seconds: duration,
             gross_wpm: result.grossWpm,
             net_wpm: result.netWpm,

@@ -9,10 +9,10 @@ export default function AboutPage() {
             {/* Header */}
             <div className="mb-10 text-center">
                 <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
-                    About <span className="text-brand">TypingTestForJobs</span>
+                    About <span className="text-brand">Typingverified</span>
                 </h1>
                 <p className="mt-4 text-base sm:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                    TypingTestForJobs is a clean, focused typing app designed to help you build real typing speed
+                    Typingverified is a clean, focused typing app designed to help you build real typing speed
                     and accuracy for modern work. You can practice freely, follow step-by-step lessons, and take
                     timed tests to prove your skills.
                 </p>

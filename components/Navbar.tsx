@@ -2,7 +2,6 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { logout } from "@/app/login/actions";
 import { motion, AnimatePresence } from "framer-motion";
 import Image from "next/image";
 
@@ -26,7 +25,7 @@ export default function Navbar({ isLoggedIn = false }: { isLoggedIn?: boolean })
                     >
                         <Link href="/" className="text-xl font-bold tracking-tight text-foreground flex items-center gap-2">
                             <span className="text-brand">{"{ "}</span>
-                            TypingTest
+                            TypingVerified
                             <span className="text-brand">{" }"}</span>
                         </Link>
                     </motion.div>
@@ -67,12 +66,14 @@ export default function Navbar({ isLoggedIn = false }: { isLoggedIn?: boolean })
                                 >
                                     Dashboard
                                 </Link>
-                                <button
-                                    onClick={() => logout()}
-                                    className="inline-flex items-center justify-center cursor-pointer px-4 py-2 text-sm font-medium text-background bg-foreground rounded-md hover:bg-[#f4bf3c] transition-colors"
-                                >
-                                    Logout
-                                </button>
+                                <form action="/api/auth/logout" method="POST" className="inline">
+                                    <button
+                                        type="submit"
+                                        className="inline-flex items-center justify-center cursor-pointer px-4 py-2 text-sm font-medium text-background bg-foreground rounded-md hover:bg-[#f4bf3c] transition-colors"
+                                    >
+                                        Logout
+                                    </button>
+                                </form>
                             </div>
                         ) : (
                             <Link
@@ -162,15 +163,15 @@ export default function Navbar({ isLoggedIn = false }: { isLoggedIn?: boolean })
                                     >
                                         Dashboard
                                     </Link>
-                                    <button
-                                        onClick={() => {
-                                            setIsMobileMenuOpen(false);
-                                            logout();
-                                        }}
-                                        className="block w-full text-center mt-4 px-4 py-2 rounded-md text-base font-medium text-background bg-foreground hover:bg-foreground/90 transition-colors cursor-pointer"
-                                    >
-                                        Logout
-                                    </button>
+                                    <form action="/api/auth/logout" method="POST" className="w-full mt-4">
+                                        <button
+                                            type="submit"
+                                            onClick={() => setIsMobileMenuOpen(false)}
+                                            className="block w-full text-center px-4 py-2 rounded-md text-base font-medium text-background bg-foreground hover:bg-foreground/90 transition-colors cursor-pointer"
+                                        >
+                                            Logout
+                                        </button>
+                                    </form>
                                 </>
                             ) : (
                                 <Link

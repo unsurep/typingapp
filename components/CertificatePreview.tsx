@@ -1,6 +1,7 @@
 "use client";
 
 import { motion, Variants } from "framer-motion";
+import { getPerformanceLevel } from "@/utils/performance";
 
 interface CertificatePreviewProps {
     name: string;
@@ -24,6 +25,28 @@ export default function CertificatePreview({
     certificateId,
     issuedDate
 }: CertificatePreviewProps) {
+    const speed =
+        typeof netSpeed === "string" ? Number(netSpeed) : (netSpeed ?? 0);
+    const safeSpeed = Number.isFinite(speed) ? speed : 0;
+    const performance = getPerformanceLevel(safeSpeed);
+
+    const gradeLetter =
+        performance.label === "Beginner"
+            ? "C"
+            : performance.label === "Average" || performance.label === "Good"
+              ? "B"
+              : "A";
+
+    const badgeBgClass =
+        gradeLetter === "A"
+            ? "bg-[#1857b6]"
+            : gradeLetter === "B"
+              ? "bg-[#f4bf3c]"
+              : "bg-[#f35454]";
+
+    const badgeTextClass =
+        gradeLetter === "B" ? "text-[#5b2e33]" : "text-white";
+
     return (
         <motion.div
             variants={itemVariants}
@@ -53,7 +76,7 @@ export default function CertificatePreview({
                     {/* Header */}
                     <div className="text-center mb-6 sm:mb-8">
                         <div className="inline-block px-4 py-1 text-xs tracking-[0.35em] uppercase text-[#c26a39]">
-                            TypingTestForJobs
+                            Typingverified
                         </div>
 
                         <h1 className="mt-4 text-3xl sm:text-4xl md:text-5xl font-black tracking-[0.18em] text-[#1857b6] drop-shadow-[3px_4px_0px_rgba(0,0,0,0.22)] uppercase">
@@ -142,8 +165,12 @@ export default function CertificatePreview({
                                 </div>
 
                                 {/* Badge */}
-                                <div className="w-14 h-14 sm:w-16 sm:h-16 rounded-full bg-[#f35454] text-white flex flex-col items-center justify-center shadow-md">
-                                    <span className="text-lg sm:text-xl font-black">A</span>
+                                <div
+                                    className={`w-14 h-14 sm:w-16 sm:h-16 rounded-full flex flex-col items-center justify-center shadow-md ${badgeBgClass} ${badgeTextClass}`}
+                                >
+                                    <span className="text-lg sm:text-xl font-black">
+                                        {gradeLetter}
+                                    </span>
                                     <span className="text-[0.55rem] uppercase tracking-[0.18em]">
                                         Grade
                                     </span>

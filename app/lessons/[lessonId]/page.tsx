@@ -6,7 +6,6 @@ import { notFound, useRouter } from "next/navigation";
 import TypingArea, { TypingResult } from "@/components/TypingArea";
 import StatsBar from "@/components/StatsBar";
 import { toast } from "sonner";
-import { saveLessonProgress, getLessonProgress } from "../actions";
 import { lessons } from "@/lib/lessons";
 import { motion, AnimatePresence } from "framer-motion";
 import { getPerformanceLevel } from "@/utils/performance";
@@ -59,7 +58,10 @@ export default function LessonPage({ params }: { params: Promise<{ lessonId: str
                     return;
                 }
 
-                const res = await getLessonProgress(parsedId);
+                const progressRes = await fetch(
+                    `/api/lessons/progress?lessonId=${parsedId}`
+                );
+                const res = await progressRes.json();
                 if (res.success) {
                     const fetchedCompletedTasks = res.completedTasks || [];
                     setCompletedTasks(fetchedCompletedTasks);
@@ -145,7 +147,17 @@ export default function LessonPage({ params }: { params: Promise<{ lessonId: str
         setIsTaskPassed(true);
 
         // Try scaling DB
-        const saveRes = await saveLessonProgress(parsedId, activeTaskIndex, totalTasks, finalMetrics);
+        const saveResponse = await fetch("/api/lessons/progress", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                lessonId: parsedId,
+                taskIndex: activeTaskIndex,
+                totalTasks,
+                metrics: finalMetrics,
+            }),
+        });
+        const saveRes = await saveResponse.json();
 
         if (!saveRes.success && saveRes.reason !== 'guest') {
             toast.error("Warning: Could not save your progress to the database. Have you updated your Supabase Schema?");

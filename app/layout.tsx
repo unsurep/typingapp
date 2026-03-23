@@ -18,12 +18,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://www.typingverified.com"),
   title: {
-    default: "TypeApp | Typing Speed Test & Lessons",
-    template: "%s | TypeApp",
+    default: "Typingverified | Typing Speed Test & Lessons",
+    template: "%s | Typingverified",
   },
   description:
-    "Test your typing speed, take engaging lessons, track your WPM, and earn certificates with TypeApp.",
+    "Test your typing speed, take engaging lessons, track your WPM, and earn certificates with Typingverified.",
   keywords: [
     "typing test",
     "typing speed",
@@ -33,21 +34,21 @@ export const metadata: Metadata = {
     "typing practice",
     "typing certificate",
   ],
-  authors: [{ name: "TypeApp" }],
+  authors: [{ name: "Typingverified" }],
   openGraph: {
-    title: "TypeApp | Typing Speed Test & Lessons",
+    title: "Typingverified | Typing Speed Test & Lessons",
     description:
-      "Test your typing speed, take engaging lessons, track your WPM, and earn certificates with TypeApp.",
-    url: "https://typeapp.example.com",
-    siteName: "TypeApp",
+      "Test your typing speed, take engaging lessons, track your WPM, and earn certificates with Typingverified.",
+    url: "https://www.typingverified.com",
+    siteName: "Typingverified",
     locale: "en_US",
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "TypeApp | Typing Speed Test & Lessons",
+    title: "Typingverified | Typing Speed Test & Lessons",
     description:
-      "Test your typing speed, take engaging lessons, track your WPM, and earn certificates with TypeApp.",
+      "Test your typing speed, take engaging lessons, track your WPM, and earn certificates with Typingverified.",
   },
   robots: {
     index: true,

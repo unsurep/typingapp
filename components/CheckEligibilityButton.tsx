@@ -3,7 +3,6 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import { toast } from 'sonner';
-import { issueCertificate } from '@/app/certificate/actions';
 
 export default function CheckEligibilityButton() {
     const [isPending, setIsPending] = useState(false);
@@ -12,20 +11,21 @@ export default function CheckEligibilityButton() {
     const handleCheck = async () => {
         setIsPending(true);
         try {
-            const res = await issueCertificate();
+            const res = await fetch('/api/certificates/generate', { method: 'POST' });
+            const data = await res.json();
 
-            if (res.success && res.certificateId) {
+            if (res.ok && data.success && data.certificateId) {
                 toast.success('Congratulations! Your certificate is unlocked.');
-                router.push(`/verify/${res.certificateId}`);
-            } else if (res.reason === 'not_eligible') {
+                router.push(`/verify/${data.certificateId}`);
+            } else if (data.reason === 'not_eligible') {
                 toast.error('Not eligible yet. Keep practicing to meet the requirements!');
-            } else if (res.reason === 'unauthenticated') {
+            } else if (data.reason === 'unauthenticated') {
                 toast.error('Please log in to check eligibility.');
                 router.push('/login');
             } else {
                 toast.error('An error occurred. Please try again.');
             }
-        } catch (error) {
+        } catch {
             toast.error('An unexpected error occurred.');
         } finally {
             setIsPending(false);

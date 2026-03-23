@@ -1,8 +1,7 @@
 import React, { Suspense } from 'react';
 import { redirect } from 'next/navigation';
 import { createClient } from '@/utils/supabase/server';
-import { logout } from '@/app/login/actions';
-import { checkCertificateEligibility, issueCertificate } from '@/app/certificate/actions';
+import { checkCertificateEligibility } from '@/lib/server/certificate';
 import Link from 'next/link';
 import ConfettiCelebration from '@/components/ConfettiCelebration';
 
@@ -68,15 +67,6 @@ export default async function DashboardPage() {
     const hasCertificate = existingCerts && existingCerts.length > 0 && eligibility.eligible;
     const certificateCount = existingCerts?.length || 0;
     const certificateCode = hasCertificate ? existingCerts[0].certificate_code : null;
-
-    // Server action button wrapper
-    const handleIssueCertificate = async () => {
-        'use server';
-        const res = await issueCertificate();
-        if (res.success && res.certificateId) {
-            redirect(`/verify/${res.certificateId}`);
-        }
-    };
 
     return (
         <div className="flex flex-col flex-1 w-full max-w-5xl mx-auto py-12 px-4 sm:px-6 relative animate-in fade-in slide-in-from-bottom-8 duration-500">
@@ -239,7 +229,7 @@ export default async function DashboardPage() {
                                     </div>
                                     <h3 className="text-xl font-bold text-gray-900 dark:text-white mb-2">Eligible for Certificate!</h3>
                                     <p className="text-sm text-gray-500 dark:text-gray-400 mb-6">You meet all requirements to receive your official certificate.</p>
-                                    <form action={handleIssueCertificate} className="w-full">
+                                    <form action="/api/certificates/issue" method="POST" className="w-full">
                                         <button
                                             type="submit"
                                             className="w-full justify-center py-3 px-4 bg-blue-600 text-white rounded-xl font-bold hover:bg-blue-700 transition-colors shadow-sm"
@@ -273,7 +263,7 @@ export default async function DashboardPage() {
             </div>
 
             <div className="flex justify-center border-t border-gray-200 dark:border-zinc-800 pt-8 mt-4">
-                <form action={logout}>
+                <form action="/api/auth/logout" method="POST">
                     <button
                         type="submit"
                         className="px-8 py-3 bg-white dark:bg-zinc-900 text-red-600 dark:text-red-400 rounded-full font-bold hover:bg-red-50 dark:hover:bg-red-950/30 border border-gray-200 dark:border-zinc-800 shadow-sm transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 hover:border-red-200 dark:hover:border-red-900"

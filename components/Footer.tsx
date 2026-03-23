@@ -32,7 +32,14 @@ export default function Footer() {
                         </Link>
                     </nav>
                     <p className="text-sm text-gray-500 dark:text-gray-400">
-                        &copy; 2026 TypingTestForJobs. All rights reserved.
+                        &copy;{" "}
+                        <Link
+                            href="/admin/signin"
+                            className="text-inherit underline-offset-4 hover:underline focus:outline-none focus:ring-2 focus:ring-brand/50 rounded-sm"
+                        >
+                            2026
+                        </Link>{" "}
+                        Typingverified. All rights reserved.
                     </p>
                 </div>
             </div>
