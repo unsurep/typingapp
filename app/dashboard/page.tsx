@@ -80,7 +80,7 @@ export default async function DashboardPage() {
             </Suspense>
 
             {/* Background gradient orb effect */}
-            <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[500px] bg-brand/5 dark:bg-brand/10 blur-[120px] rounded-full pointer-events-none -z-10" />
+            <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[80vw] max-w-[600px] h-[60vw] max-h-[500px] bg-brand/5 dark:bg-brand/10 blur-[120px] rounded-full pointer-events-none -z-10" />
 
             <div className="text-center mb-10">
                 <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white mb-4">
