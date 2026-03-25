@@ -56,7 +56,7 @@ export const metadata: Metadata = {
     follow: true,
   },
   other: {
-    "google-adsense-account": "ca-pub-4831291383870012",
+    "google-adsense-account": "ca-pub-3325996870387748",
   },
 };
 
@@ -91,7 +91,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         `}
       </Script>
       <Script
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-4831291383870012"
+        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3325996870387748"
         strategy="afterInteractive"
         crossOrigin="anonymous"
       />
