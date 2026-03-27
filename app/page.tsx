@@ -6,7 +6,7 @@ import { useRouter } from "next/navigation";
 import { toast } from "sonner";
 import { createClient } from "@/utils/supabase/client";
 import { motion, Variants } from "framer-motion";
-import { useTypewriter, Cursor } from 'react-simple-typewriter'
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -20,6 +20,39 @@ const itemVariants: Variants = {
   hidden: { opacity: 0, y: 30 },
   visible: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 300, damping: 24 } }
 };
+
+const faqItems = [
+  {
+    question: "What is a good WPM for a job?",
+    answer:
+      "For most office and customer support roles, 40-50 WPM with high accuracy is considered solid. Data entry roles often target 55-70 WPM, while transcription-heavy jobs may expect 70+ WPM. Employers usually value accurate net WPM more than raw speed.",
+  },
+  {
+    question: "How long does it take to improve typing speed?",
+    answer:
+      "Most learners see measurable progress in 2-4 weeks with consistent daily practice. A focused 15-20 minute routine that emphasizes accuracy, finger placement, and timed tests is often enough to increase both speed and confidence.",
+  },
+  {
+    question: "Is a typing certificate worth it?",
+    answer:
+      "Yes, especially for job applications in admin, support, data entry, and remote assistant roles. A certificate provides proof of your typing speed and accuracy, helping employers quickly verify your skills instead of relying on self-reported claims.",
+  },
+  {
+    question: "Should I focus on speed or accuracy first?",
+    answer:
+      "Start with accuracy. Speed built on errors usually collapses under pressure and lowers your net WPM. Once you can consistently type with high accuracy, your speed naturally improves and becomes easier to maintain during real work.",
+  },
+  {
+    question: "Can I practice typing for free on Typingverified?",
+    answer:
+      "Yes. You can practice for free and run typing tests without paying. If you create an account, you can also save progress, complete lessons, and work toward a shareable typing certificate.",
+  },
+  {
+    question: "How do I unlock the Typingverified certificate?",
+    answer:
+      "Complete all structured lessons, then pass the final 60-second test while logged in with at least 35 net WPM and 95% accuracy in one run. Once you meet both requirements, you can generate and download your certificate.",
+  },
+];
 
 export default function Home() {
   // React simple typewriter
@@ -231,6 +264,23 @@ export default function Home() {
                 professional credential you can include in job applications.
               </p>
             </div>
+          </div>
+        </div>
+
+        <div className="rounded-2xl border border-border bg-muted/5 p-6 sm:p-8 transition-all duration-300 hover:-translate-y-1 hover:border-brand/40 hover:shadow-xl hover:shadow-brand/10">
+          <h2 className="text-2xl sm:text-3xl font-bold text-foreground">Typing FAQ</h2>
+          <p className="mt-4 max-w-3xl text-gray-700 dark:text-gray-300 leading-relaxed">
+            Common questions about typing speed, typing tests, and earning a typing certificate.
+          </p>
+          <div className="mt-6 rounded-xl border border-border bg-background/60 px-5">
+            <Accordion type="single" collapsible>
+              {faqItems.map((item, index) => (
+                <AccordionItem key={item.question} value={`faq-item-${index}`}>
+                  <AccordionTrigger>{item.question}</AccordionTrigger>
+                  <AccordionContent>{item.answer}</AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
           </div>
         </div>
 

@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import { Metadata } from "next";
 import { createClient } from '@/utils/supabase/server'
 import {
     getPremiumFreeDaysRemaining,
@@ -6,6 +7,12 @@ import {
     premiumFreeWindowActive,
 } from '@/lib/server/premiumFree'
 import PremiumWaitlistForm from '@/components/PremiumWaitlistForm'
+
+export const metadata: Metadata = {
+    title: "Pricing",
+    description:
+        "See Typingverified pricing for free and premium plans, including ad-supported access, lesson limits, and certificate availability.",
+};
 
 export default async function PricingPage({
     searchParams,

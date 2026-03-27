@@ -1,4 +1,4 @@
-import { blogPosts } from "@/lib/blog-data";
+import { blogPosts, getReadingTimeMinutes } from "@/lib/blog-data";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
@@ -38,6 +38,7 @@ export default async function BlogPostPage({ params }: Props) {
 
   // Simple markdown-to-JSX-like layout for the content
   const contentSections = post.content.split("\n\n").filter(Boolean);
+  const readingTime = getReadingTimeMinutes(post.content);
 
   return (
     <article className="relative flex flex-col flex-1 w-full max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
@@ -61,7 +62,7 @@ export default async function BlogPostPage({ params }: Props) {
             <span className="mx-2 text-border">•</span>
             <span className="flex items-center gap-1.5">
               <Clock className="h-4 w-4" />
-              5 min read
+              {readingTime} min read
             </span>
           </div>
 

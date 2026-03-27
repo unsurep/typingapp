@@ -1,3 +1,11 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Privacy Policy",
+    description:
+        "Review how Typingverified collects and uses data, handles cookies, Google AdSense advertising, and your privacy rights and choices.",
+};
+
 export default function PrivacyPage() {
     return (
         <div className="flex flex-col flex-1 w-full max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8 relative">

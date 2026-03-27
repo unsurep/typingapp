@@ -4,9 +4,11 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
-import { BlogPost } from "@/lib/blog-data";
+import { BlogPost, getReadingTimeMinutes } from "@/lib/blog-data";
 
 export default function BlogCard({ post, index }: { post: BlogPost; index: number }) {
+  const readingTime = getReadingTimeMinutes(post.content);
+
   return (
     <motion.div
       initial={{ opacity: 0, y: 20 }}
@@ -32,7 +34,7 @@ export default function BlogCard({ post, index }: { post: BlogPost; index: numbe
           </span>
           <span className="flex items-center gap-1">
             <Clock className="h-3 w-3" />
-            5 min read
+            {readingTime} min read
           </span>
         </div>
 

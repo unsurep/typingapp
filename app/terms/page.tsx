@@ -1,3 +1,11 @@
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "Terms of Service",
+    description:
+        "Read Typingverified Terms of Service, including usage rules, certificates, ads, payments, and your responsibilities on the platform.",
+};
+
 export default function TermsPage() {
     return (
         <div className="flex flex-col flex-1 w-full max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8 relative">

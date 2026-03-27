@@ -1,4 +1,11 @@
 import Link from "next/link";
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
+    title: "About",
+    description:
+        "Learn what Typingverified is, how our typing lessons and timed tests work, and how to unlock a verified typing certificate.",
+};
 
 export default function AboutPage() {
     return (
