@@ -59,8 +59,8 @@ export default function CookieConsentBanner() {
 
       {showBanner ? (
         <div className="fixed bottom-0 left-0 right-0 z-9999 border-t border-border bg-zinc-900 text-zinc-100 shadow-2xl dark:bg-zinc-950">
-          <div className="mx-auto flex w-full max-w-6xl flex-wrap items-center justify-between gap-4 px-4 py-4 sm:px-6 lg:px-8">
-            <p className="m-0 min-w-[260px] flex-1 text-sm leading-relaxed">
+          <div className="mx-auto flex w-full max-w-6xl flex-col gap-3 px-4 py-4 sm:flex-row sm:items-start sm:justify-between sm:gap-4 sm:px-6 lg:items-center lg:px-8">
+            <p className="m-0 w-full text-sm leading-relaxed sm:min-w-0 sm:flex-1">
               <span className="mr-2">🍪</span>
               {bannerMessage} By continuing, you agree to our{" "}
               <Link href="/privacy" className="underline underline-offset-2 text-brand hover:text-brand/80">
@@ -68,18 +68,18 @@ export default function CookieConsentBanner() {
               </Link>
               .
             </p>
-            <div className="flex shrink-0 gap-2">
+            <div className="flex w-full flex-col gap-2 sm:w-auto sm:shrink-0 sm:flex-row">
               <button
                 type="button"
                 onClick={handleAccept}
-                className="rounded-md bg-brand px-5 py-2 text-sm font-semibold text-white transition-colors hover:bg-brand/90"
+                className="w-full rounded-md bg-brand px-5 py-2.5 text-sm font-semibold text-white transition-colors hover:bg-brand/90 sm:w-auto sm:py-2"
               >
                 Accept
               </button>
               <button
                 type="button"
                 onClick={handleDecline}
-                className="rounded-md border border-zinc-600 px-4 py-2 text-sm text-zinc-300 transition-colors hover:bg-zinc-800"
+                className="w-full rounded-md border border-zinc-600 px-4 py-2.5 text-sm text-zinc-300 transition-colors hover:bg-zinc-800 sm:w-auto sm:py-2"
               >
                 Decline
               </button>
