@@ -19,6 +19,12 @@ export default function Footer() {
                             Privacy
                         </Link>
                         <Link
+                            href="/terms"
+                            className="text-sm text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
+                        >
+                            Terms
+                        </Link>
+                        <Link
                             href="/contact"
                             className="text-sm text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
                         >
