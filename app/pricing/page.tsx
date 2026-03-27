@@ -91,30 +91,28 @@ export default async function PricingPage({
                         <li className="flex items-start gap-2">
                             <span className="mt-1 h-1.5 w-1.5 rounded-full bg-yellow-400" />
                             <span>
-                                {trialActive
-                                    ? 'Full course access during the free-mium period.'
-                                    : 'Ad‑supported experience while you practice and test.'}
+                                Ad-supported — the free tier displays relevant ads to keep the service free. Upgrade
+                                to Premium for an ad-free experience.
                             </span>
                         </li>
                         <li className="flex items-start gap-2">
                             <span className="mt-1 h-1.5 w-1.5 rounded-full bg-yellow-400" />
                             <span>
-                                {trialActive ? (
-                                    <>All lessons and tasks unlocked (no premium lockouts).</>
-                                ) : (
-                                    <>
-                                        Access to the first <strong>2 lessons</strong> to learn the basics.
-                                    </>
-                                )}
+                                {trialActive
+                                    ? 'Full course access during the free-mium period.'
+                                    : 'Access to the first 2 lessons to learn the basics.'}
+                            </span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                            <span className="mt-1 h-1.5 w-1.5 rounded-full bg-yellow-400" />
+                            <span>
+                                {trialActive ? <>All lessons and tasks unlocked (no premium lockouts).</> : <>Run
+                                    60s / 120s typing tests to check your speed.</>}
                             </span>
                         </li>
                         <li className="flex items-start gap-2">
                             <span className="mt-1 h-1.5 w-1.5 rounded-full bg-yellow-400" />
                             <span>Full access to the <strong>Practice</strong> page.</span>
-                        </li>
-                        <li className="flex items-start gap-2">
-                            <span className="mt-1 h-1.5 w-1.5 rounded-full bg-yellow-400" />
-                            <span>Run 60s / 120s typing tests to check your speed.</span>
                         </li>
                         <li className="flex items-start gap-2">
                             <span className="mt-1 h-1.5 w-1.5 rounded-full bg-yellow-400" />

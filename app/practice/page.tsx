@@ -2,6 +2,7 @@
 
 import React, { useState, useCallback } from "react";
 import TypingArea, { TypingResult } from "@/components/TypingArea";
+import AdSlot from "@/components/AdSlot";
 import StatsBar from "@/components/StatsBar";
 import KeyboardHandGuide from "@/components/KeyboardHandGuide";
 import { TYPING_TEXTS } from "@/lib/texts";
@@ -152,6 +153,11 @@ export default function PracticePage() {
                     </span>
                 </button>
             </div>
+
+            <AdSlot
+                slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_PRACTICE}
+                className="mt-10 w-full rounded-xl border border-gray-200 dark:border-zinc-800 bg-white/70 dark:bg-zinc-900/70 p-3"
+            />
 
         </div>
     );

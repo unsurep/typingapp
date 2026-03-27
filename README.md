@@ -20,6 +20,18 @@ You can start editing the page by modifying `app/page.tsx`. The page auto-update
 
 This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
+## AdSense Slot Environment Variables
+
+To render ad units on approved pages, define these public environment variables:
+
+```bash
+NEXT_PUBLIC_ADSENSE_SLOT_RESULTS=your_results_slot_id
+NEXT_PUBLIC_ADSENSE_SLOT_PRACTICE=your_practice_slot_id
+NEXT_PUBLIC_ADSENSE_SLOT_BLOG=your_blog_slot_id
+```
+
+If a slot value is missing, that ad block is skipped safely.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:

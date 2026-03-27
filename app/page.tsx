@@ -81,7 +81,7 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col min-h-[calc(100vh-8rem)] w-full items-center justify-center relative">
+    <div className="flex flex-col min-h-[calc(100vh-8rem)] w-full items-center relative">
       {/* Background gradient orb effect */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand/10 dark:bg-brand/15 blur-[120px] rounded-full pointer-events-none -z-10" />
 
@@ -122,7 +122,7 @@ export default function Home() {
           </Link>
           <Link
             href="/practice"
-            className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-foreground bg-transparent border-2 border-border rounded-full hover:border-foreground transition-all"
+            className="inline-flex items-center justify-center px-8 py-4 text-base font-bold text-foreground bg-transparent border-2 border-border rounded-full hover:border-brand/60 hover:bg-brand/10 dark:hover:bg-brand/20 transition-all duration-300"
           >
             Practice Free
           </Link>
@@ -134,7 +134,7 @@ export default function Home() {
             { label: 'Real-time Accuracy', icon: 'M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z' },
             { label: 'Premium Stats', icon: 'M13 7h8m0 0v8m0-8l-8 8-4-4-6 6' }
           ].map((feature, i) => (
-            <div key={i} className="inline-flex items-center px-4 py-2 rounded-full bg-muted/10 text-sm font-medium text-muted border border-border">
+            <div key={i} className="inline-flex items-center px-4 py-2 rounded-full bg-muted/10 text-sm font-medium text-muted border border-border transition-all duration-300 hover:-translate-y-0.5 hover:border-brand/40 hover:shadow-md hover:shadow-brand/10">
               <svg className="w-4 h-4 mr-2 text-brand" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d={feature.icon} />
               </svg>
@@ -144,17 +144,119 @@ export default function Home() {
         </motion.div>
       </motion.section>
 
-      {/* 4. SEO Content Section */}
-      <motion.section
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 1, duration: 1 }}
-        className="pb-10 pt-10 max-w-4xl mx-auto px-4 text-center opacity-60 hover:opacity-100 transition-opacity"
-      >
-        <p className="text-xs leading-relaxed text-muted">
-          Our modern <strong>typing test</strong> provides accurate assessments of your WPM. Stand out with a verified <strong>typing certificate</strong> today.
-        </p>
-      </motion.section>
+      {/* 2. Homepage Content Additions */}
+      <section className="w-full max-w-5xl mx-auto px-4 pb-16 space-y-12">
+        <div className="rounded-2xl border border-border bg-muted/5 p-6 sm:p-8 transition-all duration-300 hover:-translate-y-1 hover:border-brand/40 hover:shadow-xl hover:shadow-brand/10">
+          <h2 className="text-2xl sm:text-3xl font-bold text-foreground">What Is Typingverified?</h2>
+          <div className="mt-4 space-y-4 text-gray-700 dark:text-gray-300 leading-relaxed">
+            <p>
+              Typingverified is a free typing speed test and lesson platform designed to help you build real,
+              measurable typing skills. Whether you&apos;re a beginner who wants to stop hunting and pecking, or a
+              professional who needs to prove their WPM to an employer, Typingverified gives you the tools to
+              practice, improve, and get certified.
+            </p>
+            <p>
+              Unlike basic online typing tests, Typingverified combines structured lessons, real-time feedback, and a
+              verifiable certificate - all in a clean, distraction-free interface built for serious learners.
+            </p>
+          </div>
+        </div>
+
+        <div className="rounded-2xl border border-border bg-muted/5 p-6 sm:p-8 transition-all duration-300 hover:-translate-y-1 hover:border-brand/40 hover:shadow-xl hover:shadow-brand/10">
+          <h2 className="text-2xl sm:text-3xl font-bold text-foreground">How It Works</h2>
+          <div className="mt-6 grid gap-4 md:grid-cols-3">
+            <div className="rounded-xl border border-border bg-background/60 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-brand/35 hover:shadow-lg hover:shadow-brand/10">
+              <p className="text-sm font-semibold text-brand">Step 1 - Practice</p>
+              <p className="mt-2 text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+                Warm up with unlimited free-form typing practice. No pressure, no timer - just you and the keyboard,
+                building muscle memory at your own pace.
+              </p>
+            </div>
+            <div className="rounded-xl border border-border bg-background/60 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-brand/35 hover:shadow-lg hover:shadow-brand/10">
+              <p className="text-sm font-semibold text-brand">Step 2 - Complete the Lessons</p>
+              <p className="mt-2 text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+                Work through 10 structured lessons, each with multiple tasks designed to progressively improve your
+                speed and accuracy. Every task requires at least 90% accuracy and a minimum speed to pass.
+              </p>
+            </div>
+            <div className="rounded-xl border border-border bg-background/60 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-brand/35 hover:shadow-lg hover:shadow-brand/10">
+              <p className="text-sm font-semibold text-brand">Step 3 - Get Certified</p>
+              <p className="mt-2 text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+                Once you&apos;ve completed all lessons and passed the final 60-second typing test (35 WPM / 95%
+                accuracy), download your official Typingverified certificate - ready to attach to your resume or share
+                with employers.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="rounded-2xl border border-border bg-muted/5 p-6 sm:p-8 transition-all duration-300 hover:-translate-y-1 hover:border-brand/40 hover:shadow-xl hover:shadow-brand/10">
+          <h2 className="text-2xl sm:text-3xl font-bold text-foreground">Who Is This For?</h2>
+          <ul className="mt-4 space-y-3 list-disc list-inside text-gray-700 dark:text-gray-300 leading-relaxed">
+            <li>Job seekers who need to prove their typing speed during the hiring process</li>
+            <li>Students looking to build a professional skill before entering the workforce</li>
+            <li>Remote workers who want to boost productivity by typing faster and with fewer errors</li>
+            <li>Anyone who spends time at a keyboard and wants to get better at it</li>
+          </ul>
+        </div>
+
+        <div className="rounded-2xl border border-border bg-muted/5 p-6 sm:p-8 transition-all duration-300 hover:-translate-y-1 hover:border-brand/40 hover:shadow-xl hover:shadow-brand/10">
+          <h2 className="text-2xl sm:text-3xl font-bold text-foreground">Why Typingverified?</h2>
+          <div className="mt-6 grid gap-4 md:grid-cols-2">
+            <div className="rounded-xl border border-border bg-background/60 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-brand/35 hover:shadow-lg hover:shadow-brand/10">
+              <p className="text-base font-semibold text-foreground">Accurate WPM Measurement</p>
+              <p className="mt-2 text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+                We calculate net WPM - subtracting errors from your gross speed - so your result reflects your
+                real-world productivity, not just how fast you mash keys.
+              </p>
+            </div>
+            <div className="rounded-xl border border-border bg-background/60 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-brand/35 hover:shadow-lg hover:shadow-brand/10">
+              <p className="text-base font-semibold text-foreground">Real-time Feedback</p>
+              <p className="mt-2 text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+                Watch your speed and accuracy update live as you type. Instant feedback helps you learn which habits
+                to correct.
+              </p>
+            </div>
+            <div className="rounded-xl border border-border bg-background/60 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-brand/35 hover:shadow-lg hover:shadow-brand/10">
+              <p className="text-base font-semibold text-foreground">Structured Lessons That Work</p>
+              <p className="mt-2 text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+                Our 10-lesson curriculum is built to take you from beginner habits to professional-grade speed, one
+                step at a time.
+              </p>
+            </div>
+            <div className="rounded-xl border border-border bg-background/60 p-5 transition-all duration-300 hover:-translate-y-1 hover:border-brand/35 hover:shadow-lg hover:shadow-brand/10">
+              <p className="text-base font-semibold text-foreground">A Certificate Worth Sharing</p>
+              <p className="mt-2 text-sm text-gray-700 dark:text-gray-300 leading-relaxed">
+                Your Typingverified certificate includes your name, WPM, accuracy, and issue date. It&apos;s a clean,
+                professional credential you can include in job applications.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="rounded-2xl border border-border bg-muted/5 p-6 sm:p-8 text-center transition-all duration-300 hover:-translate-y-1 hover:border-brand/40 hover:shadow-xl hover:shadow-brand/10">
+          <h2 className="text-2xl sm:text-3xl font-bold text-foreground">Start Free Today</h2>
+          <p className="mt-4 text-gray-700 dark:text-gray-300 leading-relaxed max-w-3xl mx-auto">
+            No credit card required. Practice as a guest or create a free account to save your progress, track your
+            improvement, and work toward your typing certificate.
+          </p>
+          <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <Link
+              href="/test"
+              onClick={handleTestClick}
+              className="inline-flex items-center justify-center px-7 py-3 text-sm font-bold text-background bg-brand rounded-full hover:bg-brand/90 transition-all shadow-md"
+            >
+              Start Your Free Typing Test <span className="ml-2">→</span>
+            </Link>
+            <Link
+              href="/lessons"
+              className="inline-flex items-center justify-center px-7 py-3 text-sm font-bold text-foreground bg-transparent border-2 border-border rounded-full hover:border-brand/60 hover:bg-brand/10 dark:hover:bg-brand/20 transition-all duration-300"
+            >
+              Begin Lessons <span className="ml-2">→</span>
+            </Link>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }

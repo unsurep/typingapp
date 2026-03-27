@@ -55,6 +55,15 @@ export default function PrivacyPage() {
                     cookies (including the DoubleClick cookie) to serve ads based on your prior visits to this and
                     other websites. These cookies allow Google to show you personalized ads across the web.
                 </p>
+                <h3 className="text-base sm:text-lg font-semibold text-gray-900 dark:text-white mb-2">
+                    Cookie Consent Controls
+                </h3>
+                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-3">
+                    When you visit our site, we display a cookie consent banner that allows you to accept or decline
+                    advertising cookies. We load Google AdSense only after you click &quot;Accept.&quot; If you decline,
+                    advertising cookies are not activated during that session. You may see the consent banner again on
+                    future visits so you can update your choice.
+                </p>
                 <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-600 dark:text-gray-400">
                     <li>
                         You can opt out of personalized advertising by visiting{" "}

@@ -3,6 +3,7 @@ import Script from "next/script";
 import { Geist, Geist_Mono } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import CookieConsentBanner from "@/components/CookieConsentBanner";
 import { Toaster } from "sonner";
 import { createClient } from "@/utils/supabase/server";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -90,11 +91,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           gtag('config', 'G-1TYMJZK2S3');
         `}
       </Script>
-      <Script
-        src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3325996870387748"
-        strategy="afterInteractive"
-        crossOrigin="anonymous"
-      />
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col overflow-x-hidden`}
       >
@@ -117,7 +113,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             {children}
           </main>
           <Footer />
-          <Toaster position="bottom-right" richColors />
+          <Toaster position="bottom-right" richColors offset={{ bottom: 120, right: 16 }} />
+          <CookieConsentBanner />
         </ThemeProvider>
       </body>
     </html>

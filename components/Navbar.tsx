@@ -42,6 +42,12 @@ export default function Navbar({ isLoggedIn = false }: { isLoggedIn?: boolean })
                         >
                             Tests
                         </Link>
+                        <Link
+                            href="/blog"
+                            className="text-sm font-medium text-white hover:text-[#f4bf3c]  transition-colors"
+                        >
+                            Blog
+                        </Link>
                         {isLoggedIn && (
                             <>
                                 <Link
@@ -135,6 +141,13 @@ export default function Navbar({ isLoggedIn = false }: { isLoggedIn?: boolean })
                                 onClick={() => setIsMobileMenuOpen(false)}
                             >
                                 Tests
+                            </Link>
+                            <Link
+                                href="/blog"
+                                className="block px-3 py-2 rounded-md text-base font-medium text-muted hover:text-foreground hover:bg-black/5 dark:hover:bg-white/5 transition-colors"
+                                onClick={() => setIsMobileMenuOpen(false)}
+                            >
+                                Blog
                             </Link>
                             {isLoggedIn && (
                                 <>

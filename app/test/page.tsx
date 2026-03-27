@@ -6,6 +6,7 @@ import TypingArea, { TypingResult } from "@/components/TypingArea";
 import StatsBar from "@/components/StatsBar";
 import KeyboardHandGuide from "@/components/KeyboardHandGuide";
 import ResultCard from "@/components/ResultCard";
+import AdSlot from "@/components/AdSlot";
 import { toast } from 'sonner';
 import Link from 'next/link';
 import { TYPING_TEXTS } from '@/lib/texts';
@@ -305,6 +306,10 @@ function TestContent() {
             ) : (
                 <div className="mt-8 xl:mt-12">
                     <ResultCard wpm={metrics.netWpm} accuracy={metrics.accuracy} errors={metrics.errors} duration={duration} timeLeft={timeLeft} onRetry={handleReset} />
+                    <AdSlot
+                        slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_RESULTS}
+                        className="mt-8 w-full rounded-xl border border-gray-200 dark:border-zinc-800 bg-white/70 dark:bg-zinc-900/70 p-3"
+                    />
                 </div>
             )}
 
