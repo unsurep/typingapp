@@ -127,7 +127,7 @@ If you want measurable progress, use structured lessons, test regularly, and tra
     title: "How to Earn a Typing Certificate (And Why It's Worth It)",
     slug: "how-to-earn-typing-certificate",
     metaDescription: "A typing certificate can strengthen your resume and prove your skills to employers. Here's how to earn one and where it helps most.",
-    publishDate: "March 27, 2026",
+    publishDate: "March 20, 2026",
     image: "/blog/how-to-earn-typing-certificate.png",
     content: `
 A typing certificate is a practical proof-of-skill document. It shows employers, clients, or training programs that you can type at a verified speed with a verified level of accuracy. In a competitive market, that simple proof can help your application stand out faster than a generic "fast typer" claim on a resume.
@@ -231,7 +231,7 @@ If you are ready to earn yours, start with structured practice and complete the 
     title: "Touch Typing vs. Hunt-and-Peck — Which Is Better?",
     slug: "touch-typing-vs-hunt-and-peck",
     metaDescription: "Should you learn touch typing or stick with hunt-and-peck? Here's an honest comparison and why the answer is almost always touch typing.",
-    publishDate: "March 27, 2026",
+    publishDate: "March 13, 2026",
     image: "/blog/touch-typing-vs-hunt-and-peck.png",
     content: `
 If you are not using all ten fingers, you are probably using some form of hunt-and-peck: searching visually for keys and pressing them with one to three fingers. Many people become surprisingly fast with this method over time, so it can feel "good enough." But when speed, consistency, and long-session comfort matter, the differences between hunt-and-peck and touch typing become hard to ignore.
@@ -332,7 +332,7 @@ Start with home row discipline, practice every day, and trust the process. [Begi
     title: "5 Typing Habits That Are Slowing You Down",
     slug: "typing-habits-slowing-you-down",
     metaDescription: "Bad typing habits can cap your WPM and cause fatigue. Here are 5 common mistakes and how to fix them.",
-    publishDate: "March 27, 2026",
+    publishDate: "March 6, 2026",
     image: "/blog/typing-habits-slowing-you-down.png",
     content: `
 Many typists believe they are limited by talent, keyboard quality, or lack of time. In reality, progress is often blocked by habits that feel normal but quietly reduce speed and accuracy. The good news: habits can be changed faster than most people expect.
@@ -475,7 +475,7 @@ If you want structured drills for these exact problems, [practice with Typingver
     title: "How to Prepare for a Typing Test at a Job Interview",
     slug: "prepare-for-typing-test-job-interview",
     metaDescription: "Many employers require a typing test during hiring. Here's how to prepare, what to expect, and how to stay calm on the day.",
-    publishDate: "March 27, 2026",
+    publishDate: "February 27, 2026",
     image: "/blog/prepare-for-typing-test-job-interview.png",
     content: `
 If you are applying for data entry, admin support, customer service, legal assistant, or transcription roles, a typing test can be part of the interview process. For many candidates, this step feels stressful because performance is measured live. The good news is that typing tests are highly trainable when you prepare with the right structure.
