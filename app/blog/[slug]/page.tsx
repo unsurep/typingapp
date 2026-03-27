@@ -40,8 +40,10 @@ export default async function BlogPostPage({ params }: Props) {
   const contentSections = post.content.split("\n\n").filter(Boolean);
 
   return (
-    <article className="py-12">
-      <div className="mx-auto max-w-3xl">
+    <article className="relative flex flex-col flex-1 w-full max-w-5xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[500px] bg-brand/5 dark:bg-brand/10 blur-[140px] rounded-full pointer-events-none -z-10" />
+
+      <div className="mx-auto max-w-3xl w-full">
         <Link
           href="/blog"
           className="mb-8 inline-flex items-center gap-2 text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
@@ -78,7 +80,7 @@ export default async function BlogPostPage({ params }: Props) {
           </div>
         </header>
 
-        <div className="prose prose-invert max-w-none prose-headings:text-foreground prose-p:text-muted-foreground prose-a:text-primary prose-strong:text-foreground">
+        <div className="prose dark:prose-invert max-w-none prose-headings:text-foreground prose-p:text-muted-foreground prose-a:text-primary prose-strong:text-foreground">
           {contentSections.map((section, idx) => {
             if (section.startsWith("## ")) {
               return (

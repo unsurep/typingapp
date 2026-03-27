@@ -22,7 +22,7 @@ export default async function AdminSignInPage({
             <div className="bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 rounded-3xl shadow-xl overflow-hidden p-8 sm:p-10 relative z-10">
                 <div className="text-center mb-10">
                     <h1 className="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white mb-2">
-                        Admin Sign In
+                        Admin <span className="text-brand">Sign In</span>
                     </h1>
                     <p className="text-sm font-medium text-gray-500 dark:text-gray-400">
                         Sign in with your administrator account.

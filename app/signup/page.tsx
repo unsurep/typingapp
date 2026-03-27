@@ -23,7 +23,7 @@ export default async function SignupPage({
                 {/* Header */}
                 <div className="text-center mb-10">
                     <h1 className="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white mb-2">
-                        Create an Account
+                        Create an <span className="text-brand">Account</span>
                     </h1>
                     <p className="text-sm font-medium text-gray-500 dark:text-gray-400">
                         Sign up to start tracking your typing progress.

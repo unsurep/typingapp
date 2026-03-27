@@ -26,7 +26,7 @@ export default async function LoginPage({
                 {/* Header */}
                 <div className="text-center mb-10">
                     <h1 className="text-3xl font-extrabold tracking-tight text-gray-900 dark:text-white mb-2">
-                        Welcome Back
+                        Welcome <span className="text-brand">Back</span>
                     </h1>
                     <p className="text-sm font-medium text-gray-500 dark:text-gray-400">
                         Enter your details to sign in.

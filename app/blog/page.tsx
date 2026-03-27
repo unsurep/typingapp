@@ -10,7 +10,9 @@ export const metadata: Metadata = {
 
 export default function BlogPage() {
   return (
-    <div className="py-12">
+    <div className="relative flex flex-col flex-1 w-full max-w-5xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[700px] h-[500px] bg-brand/5 dark:bg-brand/10 blur-[140px] rounded-full pointer-events-none -z-10" />
+
       <div className="mb-12 text-center">
         <h1 className="mb-4 text-4xl font-extrabold tracking-tight sm:text-5xl">
           Typingverified <span className="text-primary">Blog</span>

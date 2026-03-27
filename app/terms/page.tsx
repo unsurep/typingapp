@@ -7,7 +7,7 @@ export default function TermsPage() {
             {/* Header */}
             <div className="mb-10 text-center">
                 <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
-                    Terms of Service
+                    Terms of <span className="text-brand">Service</span>
                 </h1>
                 <p className="mt-4 text-base sm:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
                     Last updated: March 26, 2026
