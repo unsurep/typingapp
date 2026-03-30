@@ -1,8 +1,5 @@
-import {
-  DEFAULT_BLOG_AUTHOR,
-  getPostBySlug,
-  getReadingTimeMinutes,
-} from "@/lib/blog-data";
+import { DEFAULT_BLOG_AUTHOR, getReadingTimeMinutes } from "@/lib/blog-data";
+import { getPostBySlugWithLocaleUi } from "@/lib/blog-i18n";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import { Link } from "@/i18n/navigation";
@@ -11,7 +8,8 @@ import type { Metadata } from "next";
 import ShareButton from "@/components/ShareButton";
 import AdSlot from "@/components/AdSlot";
 import { getTranslations } from "next-intl/server";
-import type { AppLocale } from "@/i18n/routing";
+import { formatBlogPublishDate } from "@/lib/blog-date";
+import { routing, type AppLocale } from "@/i18n/routing";
 
 interface Props {
   params: Promise<{ locale: AppLocale; slug: string }>;
@@ -19,7 +17,7 @@ interface Props {
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const { slug, locale } = await params;
-  const post = getPostBySlug(locale, slug);
+  const post = getPostBySlugWithLocaleUi(locale, slug);
   const t = await getTranslations({ locale, namespace: "BlogPost" });
 
   if (!post) return { title: t("notFoundTitle") };
@@ -38,7 +36,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 export default async function BlogPostPage({ params }: Props) {
   const { slug, locale } = await params;
   const t = await getTranslations({ locale, namespace: "BlogPost" });
-  const post = getPostBySlug(locale, slug);
+  const post = getPostBySlugWithLocaleUi(locale, slug);
 
   if (!post) {
     notFound();
@@ -62,11 +60,17 @@ export default async function BlogPostPage({ params }: Props) {
           {t("backToBlog")}
         </Link>
 
+        {locale !== routing.defaultLocale && (
+          <p className="mb-8 text-sm text-muted-foreground rounded-lg border border-border bg-muted/30 px-4 py-3">
+            {t("articleBodyLocaleNote")}
+          </p>
+        )}
+
         <header className="mb-12">
           <div className="mb-6 flex flex-wrap items-center gap-x-4 gap-y-2 text-sm text-muted-foreground">
             <span className="flex items-center gap-1.5">
               <Calendar className="h-4 w-4 shrink-0" />
-              {post.publishDate}
+              {formatBlogPublishDate(post.publishDate, locale)}
             </span>
             <span className="text-border">•</span>
             <span className="flex items-center gap-1.5">

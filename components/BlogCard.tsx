@@ -6,11 +6,14 @@ import { motion } from "framer-motion";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
 import type { BlogPost } from "@/lib/blog-types";
 import { getReadingTimeMinutes } from "@/lib/blog-data";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import { formatBlogPublishDate } from "@/lib/blog-date";
 
 export default function BlogCard({ post, index }: { post: BlogPost; index: number }) {
   const readingTime = getReadingTimeMinutes(post.content);
   const t = useTranslations("BlogCard");
+  const locale = useLocale();
+  const displayDate = formatBlogPublishDate(post.publishDate, locale);
 
   return (
     <motion.div
@@ -33,7 +36,7 @@ export default function BlogCard({ post, index }: { post: BlogPost; index: numbe
         <div className="mb-3 flex items-center gap-4 text-xs text-muted-foreground">
           <span className="flex items-center gap-1">
             <Calendar className="h-3 w-3" />
-            {post.publishDate}
+            {displayDate}
           </span>
           <span className="flex items-center gap-1">
             <Clock className="h-3 w-3" />

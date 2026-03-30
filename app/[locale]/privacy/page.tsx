@@ -1,74 +1,90 @@
+import { Link } from "@/i18n/navigation";
 import { Metadata } from "next";
+import type { ReactNode } from "react";
+import { getTranslations } from "next-intl/server";
+import type { AppLocale } from "@/i18n/routing";
 
-const link = "underline underline-offset-2 text-gray-600 dark:text-gray-400 hover:text-brand";
+const linkClass =
+    "underline underline-offset-2 text-gray-600 dark:text-gray-400 hover:text-brand";
 
-export const metadata: Metadata = {
-    title: "Privacy Policy",
-    description:
-        "Review how Typingverified collects and uses data, handles cookies, Google AdSense advertising, and your privacy rights and choices.",
-};
+export async function generateMetadata({
+    params,
+}: {
+    params: Promise<{ locale: AppLocale }>;
+}): Promise<Metadata> {
+    const { locale } = await params;
+    const t = await getTranslations({ locale, namespace: "Privacy" });
+    return {
+        title: t("metaTitle"),
+        description: t("metaDescription"),
+    };
+}
 
-export default function PrivacyPage() {
+export default async function PrivacyPage({
+    params,
+}: {
+    params: Promise<{ locale: AppLocale }>;
+}) {
+    const { locale } = await params;
+    const t = await getTranslations({ locale, namespace: "Privacy" });
+
+    const ext = (href: string) => (chunks: ReactNode) => (
+        <a href={href} target="_blank" rel="noopener noreferrer" className={linkClass}>
+            {chunks}
+        </a>
+    );
+
+    const richLinks = {
+        adsSettings: ext("https://adssettings.google.com"),
+        googlePartner: ext("https://policies.google.com/technologies/partner-sites"),
+        contactPage: (chunks: ReactNode) => (
+            <Link href="/contact" className={linkClass}>
+                {chunks}
+            </Link>
+        ),
+        email: (chunks: ReactNode) => (
+            <a href="mailto:support@typingverified.com" className={linkClass}>
+                {chunks}
+            </a>
+        ),
+        website: (chunks: ReactNode) => (
+            <Link href="/contact" className={linkClass}>
+                {chunks}
+            </Link>
+        ),
+    };
+
     return (
         <div className="flex flex-col flex-1 w-full max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8 relative">
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[500px] bg-brand/5 dark:bg-brand/10 blur-[120px] rounded-full pointer-events-none -z-10" />
 
             <div className="mb-10 text-center">
                 <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
-                    Privacy <span className="text-brand">Policy</span>
+                    {t("heroTitleBefore")}{" "}
+                    <span className="text-brand">{t("heroTitleHighlight")}</span>
                 </h1>
                 <p className="mt-4 text-base sm:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-                    Last updated: March 29, 2026
+                    {t("lastUpdated")}
                 </p>
             </div>
 
-            <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-8">
-                Welcome to Typingverified. This Privacy Policy explains what information we collect, how we use it, and
-                your rights regarding your data. By using our website, you agree to the practices described here.
-            </p>
+            <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-8">{t("intro")}</p>
 
             <hr className="border-gray-200 dark:border-gray-700 mb-8" />
 
             <section className="mb-8">
                 <h2 className="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-white mb-4">
-                    1. Information We Collect
+                    {t("s1Title")}
                 </h2>
-                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-4">
-                    Account Information: When you register, we collect your name and email address.
-                </p>
-                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-4">
-                    Usage Data: We collect lesson progress, WPM scores, accuracy rates, and test results.
-                </p>
-                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-4">
-                    Cookies and Tracking: We use cookies to operate the site, remember your session, and serve relevant
-                    advertising.
-                </p>
-                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-4">
-                    Third-Party Advertising Cookies: We use Google AdSense to display advertisements. Google and its
-                    partners may use cookies, including the DoubleClick cookie, to serve ads based on your prior visits
-                    to this and other websites.
-                </p>
+                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-4">{t("s1Account")}</p>
+                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-4">{t("s1Usage")}</p>
+                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-4">{t("s1Cookies")}</p>
+                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-4">{t("s1Ads")}</p>
                 <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-1">
-                    Opt out of personalized ads:{" "}
-                    <a
-                        href="https://adssettings.google.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={link}
-                    >
-                        https://adssettings.google.com
-                    </a>
+                    {t.rich("s1OptOut", richLinks)}
                 </p>
-                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400">
-                    How Google uses data:{" "}
-                    <a
-                        href="https://policies.google.com/technologies/partner-sites"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={link}
-                    >
-                        https://policies.google.com/technologies/partner-sites
-                    </a>
+                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-4">
+                    {t.rich("s1GoogleData", richLinks)}
                 </p>
             </section>
 
@@ -76,14 +92,14 @@ export default function PrivacyPage() {
 
             <section className="mb-8">
                 <h2 className="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-white mb-4">
-                    2. How We Use Your Information
+                    {t("s2Title")}
                 </h2>
                 <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-600 dark:text-gray-400">
-                    <li>Create and manage your account</li>
-                    <li>Track your lesson and test progress</li>
-                    <li>Determine when you have earned a certificate</li>
-                    <li>Display relevant advertisements through Google AdSense</li>
-                    <li>Improve the platform and respond to support requests</li>
+                    <li>{t("s2Item1")}</li>
+                    <li>{t("s2Item2")}</li>
+                    <li>{t("s2Item3")}</li>
+                    <li>{t("s2Item4")}</li>
+                    <li>{t("s2Item5")}</li>
                 </ul>
             </section>
 
@@ -91,74 +107,36 @@ export default function PrivacyPage() {
 
             <section className="mb-8">
                 <h2 className="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-white mb-4">
-                    3. Google AdSense and Third-Party Advertising
+                    {t("s3Title")}
                 </h2>
-                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-4">
-                    We participate in Google AdSense, provided by Google LLC. Google AdSense uses cookies and web
-                    beacons to serve ads based on prior visits to our website and other websites.
-                </p>
+                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-4">{t("s3p1")}</p>
                 <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-1">
-                    Opt out of personalized ads:{" "}
-                    <a
-                        href="https://adssettings.google.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={link}
-                    >
-                        https://adssettings.google.com
-                    </a>
+                    {t.rich("s3OptOut", richLinks)}
                 </p>
-                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400">
-                    More info:{" "}
-                    <a
-                        href="https://policies.google.com/technologies/partner-sites"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={link}
-                    >
-                        https://policies.google.com/technologies/partner-sites
-                    </a>
+                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-4">
+                    {t.rich("s3MoreInfo", richLinks)}
                 </p>
             </section>
 
             <hr className="border-gray-200 dark:border-gray-700 mb-8" />
 
             <section className="mb-8">
-                <h2 className="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-white mb-4">4. Data Sharing</h2>
-                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400">
-                    We do not sell your personal data. We may share data only with trusted service providers, when
-                    required by law, or in the event of a business transfer.
-                </p>
+                <h2 className="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-white mb-4">
+                    {t("s4Title")}
+                </h2>
+                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400">{t("s4p1")}</p>
             </section>
 
             <hr className="border-gray-200 dark:border-gray-700 mb-8" />
 
             <section className="mb-8">
-                <h2 className="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-white mb-4">5. Your Rights</h2>
+                <h2 className="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-white mb-4">
+                    {t("s5Title")}
+                </h2>
                 <ul className="list-disc list-inside space-y-2 text-sm sm:text-base text-gray-600 dark:text-gray-400">
-                    <li>Access, correct, or delete your data at any time</li>
-                    <li>
-                        Opt out of personalized ads via{" "}
-                        <a
-                            href="https://adssettings.google.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className={link}
-                        >
-                            https://adssettings.google.com
-                        </a>
-                    </li>
-                    <li>
-                        Contact us at{" "}
-                        <a
-                            href="https://www.typingverified.com/contact"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className={link}
-                        >
-                            https://www.typingverified.com/contact
-                        </a>
-                    </li>
+                    <li>{t("s5Item1")}</li>
+                    <li>{t.rich("s5Item2", richLinks)}</li>
+                    <li>{t.rich("s5Item3", richLinks)}</li>
                 </ul>
             </section>
 
@@ -166,50 +144,31 @@ export default function PrivacyPage() {
 
             <section className="mb-8">
                 <h2 className="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-white mb-4">
-                    6. Children&apos;s Privacy
+                    {t("s6Title")}
                 </h2>
-                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400">
-                    Typingverified is not directed at children under 13. We do not knowingly collect data from children
-                    under 13.
-                </p>
+                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400">{t("s6p1")}</p>
             </section>
 
             <hr className="border-gray-200 dark:border-gray-700 mb-8" />
 
             <section className="mb-8">
                 <h2 className="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-white mb-4">
-                    7. Changes to This Policy
+                    {t("s7Title")}
                 </h2>
-                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400">
-                    We will update the Last updated date when this policy changes.
-                </p>
+                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400">{t("s7p1")}</p>
             </section>
 
             <hr className="border-gray-200 dark:border-gray-700 mb-8" />
 
             <section>
-                <h2 className="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-white mb-4">8. Contact Us</h2>
+                <h2 className="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-white mb-4">
+                    {t("s8Title")}
+                </h2>
                 <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-2">
-                    Email:{" "}
-                    <a
-                        href="mailto:support@typingverified.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={link}
-                    >
-                        support@typingverified.com
-                    </a>
+                    {t.rich("s8Email", richLinks)}
                 </p>
                 <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400">
-                    Website:{" "}
-                    <a
-                        href="https://www.typingverified.com/contact"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className={link}
-                    >
-                        https://www.typingverified.com/contact
-                    </a>
+                    {t.rich("s8Website", richLinks)}
                 </p>
             </section>
         </div>

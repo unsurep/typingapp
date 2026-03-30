@@ -3,11 +3,22 @@ import { createClient } from "@/utils/supabase/server";
 import CertificatePreview from "@/components/CertificatePreview";
 import PrintCertificateButton from "@/components/PrintCertificateButton";
 import type { AppLocale } from "@/i18n/routing";
-import type { Metadata } from 'next'
+import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 
-export const metadata: Metadata = {
-    robots: { index: false, follow: false },
-};
+export async function generateMetadata({
+    params,
+}: {
+    params: Promise<{ locale: AppLocale }>;
+}): Promise<Metadata> {
+    const { locale } = await params;
+    const t = await getTranslations({ locale, namespace: "VerifyCertificate" });
+    return {
+        title: t("metaTitle"),
+        description: t("metaDescription"),
+        robots: { index: false, follow: false },
+    };
+}
 
 async function fetchCertificate(certificateId: string) {
     try {
@@ -33,6 +44,7 @@ export default async function VerificationPage({
     params: Promise<{ certificateId: string; locale: AppLocale }>;
 }) {
     const { certificateId, locale } = await params;
+    const t = await getTranslations({ locale, namespace: "VerifyCertificate" });
 
     const supabase = await createClient();
     const { data: { user } } = await supabase.auth.getUser();
@@ -52,27 +64,44 @@ export default async function VerificationPage({
                 <div className="w-full flex flex-col items-center gap-8">
                     <div className="text-center print-hide">
                         <h1 className="text-2xl sm:text-3xl font-extrabold text-gray-900 dark:text-white mb-2">
-                            Verified Certificate
+                            {t("verifiedTitle")}
                         </h1>
                         <p className="text-gray-500 dark:text-gray-400 text-sm sm:text-base">
-                            This certificate is officially recognized and issued by Typingverified.
+                            {t("verifiedSubtitle")}
                         </p>
                         <div className="mt-4">
-                            <PrintCertificateButton />
+                            <PrintCertificateButton
+                                label={t("downloadImage")}
+                                loadingLabel={t("preparingImage")}
+                            />
                         </div>
                     </div>
 
                     <div id="certificate-root" className="print-certificate-wrapper w-full flex justify-center">
                         <CertificatePreview
-                            name={certificate.full_name || "Certified Candidate"}
+                            name={certificate.full_name || t("fallbackName")}
                             netSpeed={certificate.net_wpm}
                             accuracy={certificate.accuracy}
                             duration={certificate.duration_seconds}
                             certificateId={certificate.certificate_code}
-                            issuedDate={new Date(certificate.issued_at).toLocaleDateString("en-US", {
+                            issuedDate={new Date(certificate.issued_at).toLocaleDateString(locale, {
                                 month: "short",
                                 year: "numeric",
                             })}
+                            labels={{
+                                title: t("labelsTitle"),
+                                subtitle: t("labelsSubtitle"),
+                                presentedTo: t("labelsPresentedTo"),
+                                body: t("labelsBody"),
+                                netSpeed: t("labelsNetSpeed"),
+                                accuracy: t("labelsAccuracy"),
+                                duration: t("labelsDuration"),
+                                seconds: t("labelsSeconds"),
+                                director: t("labelsDirector"),
+                                certificateId: t("labelsCertificateId"),
+                                issuedPrefix: t("labelsIssuedPrefix"),
+                                grade: t("labelsGrade"),
+                            }}
                         />
                     </div>
                 </div>
@@ -89,11 +118,11 @@ export default async function VerificationPage({
                         </div>
 
                         <h1 className="text-2xl sm:text-3xl font-extrabold text-gray-900 dark:text-white mb-4 text-center">
-                            Certificate Not Found
+                            {t("notFoundTitle")}
                         </h1>
                         <div className="bg-red-50 dark:bg-red-900/20 text-red-800 dark:text-red-300 p-4 rounded-xl border border-red-100 dark:border-red-800/50 mb-8 w-full">
                             <p className="text-sm md:text-base text-center font-medium leading-relaxed">
-                                The certificate code entered is invalid or has been revoked. Please check the ID and try again.
+                                {t("notFoundDesc")}
                             </p>
                         </div>
                     </div>
@@ -102,7 +131,7 @@ export default async function VerificationPage({
                         href="/"
                         className="w-full inline-flex justify-center items-center py-3.5 px-4 bg-gray-100 dark:bg-zinc-800 text-gray-900 dark:text-white hover:bg-gray-200 dark:hover:bg-zinc-700 font-semibold rounded-xl transition-colors shadow-sm"
                     >
-                        Return to Homepage
+                        {t("returnHome")}
                     </Link>
                 </div>
             )}

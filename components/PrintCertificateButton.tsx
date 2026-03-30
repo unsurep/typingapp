@@ -5,9 +5,13 @@ import html2canvas from "html2canvas";
 
 interface PrintCertificateButtonProps {
     label?: string;
+    loadingLabel?: string;
 }
 
-export default function PrintCertificateButton({ label = "Download as Image" }: PrintCertificateButtonProps) {
+export default function PrintCertificateButton({
+    label = "Download as Image",
+    loadingLabel = "Preparing image...",
+}: PrintCertificateButtonProps) {
     const [downloading, setDownloading] = useState(false);
 
     const handleDownload = async () => {
@@ -60,7 +64,7 @@ export default function PrintCertificateButton({ label = "Download as Image" }: 
                     d="M6 9V4h12v5M6 18h12v2H6zm3-4l3 3 3-3"
                 />
             </svg>
-            {downloading ? "Preparing image..." : label}
+            {downloading ? loadingLabel : label}
         </button>
     );
 }

@@ -89,14 +89,14 @@ export const lessonsPt: Lesson[] = [
   {
     id: 8,
     title: "Lição 8: rajadas de velocidade",
-    focus: "Palavras curtas comuns (inglês)",
+    focus: "Palavras curtas comuns (português)",
     shortDesc:
-      "Aumente a velocidade bruta repetindo palavras inglesas muito frequentes (mesmo layout QWERTY).",
+      "Aumente a velocidade bruta repetindo palavras portuguesas muito frequentes (teclado QWERTY).",
     tasks: [
-      "the of and a to in is you that it he was for on are as with his they I at be this have from or one had by word but not what all were we when your can said there use an each which she do how",
-      "their if will up other about out many then them these so some her would make like him into time has look two more write go see number no way could people my than first water been call who oil its now",
-      "find long down day did get come made may part over new sound take only little work know place year live me back give most very after thing our just name good sentence man think say great where help through much",
-      "before line right too mean old any same tell boy follow came want show also around form three small set put end does another well large must big even such because turn here why ask went men read need land different",
+      "o a os as um uma uns umas de do da dos das em no na nos nas por para com sem sobre entre perante até desde após durante mediante segundo conforme e ou mas porém contudo então logo pois porque que quando onde como quem qual cujo quanto muito mais menos bem mal também ainda já nunca sempre talvez aqui ali assim mesmo próprio ser estar haver fazer ter dizer ir ver saber poder dever querer parecer seguir encontrar chamar vir pensar sair voltar tomar conhecer viver sentir tentar olhar contar começar esperar buscar existir entrar trabalhar escrever perder acontecer entender pedir receber lembrar resultar aparecer manter considerar",
+      "tempo ano dia coisa momento maneira caso vida homem mulher mundo país cidade estado governo trabalho parte número grupo primeiro segundo último novo velho grande pequeno melhor pior mesmo outro tal qual cada tudo nenhum algum muitos poucos muito pouco mais menos muito bastante algo nada alguém nada acaso talvez agora hoje amanhã ontem tarde noite manhã semana mês ano século época estação verão inverno primavera outono lugar sítio casa rua praça porta janela quarto cozinha sala país terra água fogo ar céu sol lua mar rio monte campo bosque aldeia cidade",
+      "antes linha direita demasiado significar velho qualquer mesmo dizer rapaz seguir veio querer mostrar também à volta forma três pequeno pôr fim faz outro bem grande deve porque girar aqui porque pediram homens ler precisar terra diferente mundo lugar família país região rua praça porta janela quarto cozinha sala tempo hora dia mês ano momento lugar parte forma maneira estilo tipo classe espécie exemplo caso facto coisa pessoas mundo vida trabalho estudo escola universidade empresa escritório negócio dinheiro preço custo valor conta banco imposto lei direito estado governo presidente ministro cidadão cidadã vizinho vizinha colega chefe equipa grupo empresa escritório escola universidade estudo trabalho emprego salário ordenado imposto lei direito juiz tribunal polícia crime justiça paz guerra tempo espaço lugar mundo terra país nação região cidade aldeia rua praça casa quarto cozinha sala porta janela chão teto parede tecto telhado jardim quintal rua estrada caminho ponte rio mar lago monte vale campo floresta árvore flor folha ramo raiz céu sol lua estrela nuvem chuva vento neve gelo calor frio",
+      "frente linha certa demasiado querer dizer velho qualquer mesmo contar miúdo seguir veio mostrar também volta forma três pequeno pôr fim faz outro bem grande deve porque virar aqui pedir foram homens ler precisar terra diferente mundo lugar casa país cidade rua praça porta janela quarto cozinha sala tempo hora dia mês ano século época estação verão inverno primavera outono manhã tarde noite amanhã ontem hoje agora depois antes durante enquanto até desde mediante segundo conforme salvo exceto fora dentro cima baixo esquerda direita meio centro início fim primeiro último próximo anterior seguinte atual antigo novo velho jovem idoso grande pequeno alto baixo largo estreito comprido curto fundo raso cheio vazio leve pesado rápido lento fácil difícil simples complexo claro escuro bom mau melhor pior certo errado verdadeiro falso justo injusto livre preso aberto fechado",
     ],
   },
   {
@@ -106,10 +106,10 @@ export const lessonsPt: Lesson[] = [
     shortDesc:
       "Digite vocabulário técnico como em ambiente de desenvolvimento.",
     tasks: [
-      'function calculateTotal(price, taxRate) { return price + (price * taxRate); } const myVariable = true; let count = 0; console.log("Initialization complete"); The modern web relies heavily on JavaScript.',
-      'const user = { name: "Alice", role: "Admin", active: true }; if (user.role === "Admin") { grantAccess(); } else { throw new Error("Access Denied"); } Arrays and objects are fundamental data structures.',
-      "body { margin: 0; padding: 1rem; font-family: 'Inter', sans-serif; background-color: #f4f4f5; } .container { display: flex; flex-direction: column; align-items: center; justify-content: space-between; gap: 20px; }",
-      'async function fetchData(url) { try { const response = await fetch(url); const json = await response.json(); return json; } catch (error) { console.error("Fetch failed:", error); } } Promises handle async behavior.',
+      'Em JavaScript, uma função pode devolver um número. O cálculo do total com IVA costuma ser assim. function calculateTotal(preco, taxaIVA) { return preco + (preco * taxaIVA); } const pronto = true; let contador = 0; console.log("Inicialização concluída"); A web moderna depende muito de JavaScript nas interfaces.',
+      'Os objetos descrevem um utilizador: nome, função e estado ativo. const utilizador = { nome: "Alice", role: "Administrador", active: true }; if (utilizador.role === "Administrador") { grantAccess(); } else { throw new Error("Acesso negado"); } Arrays e objetos são estruturas de dados fundamentais.',
+      "/* Estilo: contentor centrado e margens do body a zero */ body { margin: 0; padding: 1rem; font-family: 'Inter', sans-serif; background-color: #f4f4f5; } .container { display: flex; flex-direction: column; align-items: center; justify-content: space-between; gap: 20px; }",
+      'Os pedidos assíncronos obtêm dados sem bloquear o ecrã. async function fetchData(url) { try { const response = await fetch(url); const json = await response.json(); return json; } catch (error) { console.error("Falha ao carregar:", error); } } As promises modelam esse comportamento assíncrono.',
     ],
   },
   {

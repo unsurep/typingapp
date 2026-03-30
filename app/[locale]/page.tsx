@@ -263,13 +263,13 @@ export default function Home() {
               onClick={handleTestClick}
               className="inline-flex items-center justify-center px-7 py-3 text-sm font-bold text-background bg-brand rounded-full hover:bg-brand/90 transition-all shadow-md"
             >
-              Start Your Free Typing Test <span className="ml-2">→</span>
+              {t("ctaTest")} <span className="ml-2">→</span>
             </Link>
             <Link
               href="/lessons"
               className="inline-flex items-center justify-center px-7 py-3 text-sm font-bold text-foreground bg-transparent border-2 border-border rounded-full hover:border-brand/60 hover:bg-brand/10 dark:hover:bg-brand/20 transition-all duration-300"
             >
-              Begin Lessons <span className="ml-2">→</span>
+              {t("ctaLessons")} <span className="ml-2">→</span>
             </Link>
           </div>
         </div>

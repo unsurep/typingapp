@@ -1,13 +1,22 @@
-import { getBlogPosts } from "@/lib/blog-data";
+import { getBlogPostsWithLocaleUi } from "@/lib/blog-i18n";
 import BlogCard from "@/components/BlogCard";
 import AdSlot from "@/components/AdSlot";
-import { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
+import type { Metadata } from "next";
 import type { AppLocale } from "@/i18n/routing";
 
-export const metadata: Metadata = {
-  title: "Blog | Typingverified",
-  description: "Improve your typing speed with our latest articles, tips, and guides.",
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: AppLocale }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const t = await getTranslations({ locale, namespace: "Blog" });
+  return {
+    title: t("metaTitle"),
+    description: t("metaDescription"),
+  };
+}
 
 export default async function BlogPage({
   params,
@@ -15,7 +24,8 @@ export default async function BlogPage({
   params: Promise<{ locale: AppLocale }>;
 }) {
   const { locale } = await params;
-  const blogPosts = getBlogPosts(locale);
+  const t = await getTranslations({ locale, namespace: "Blog" });
+  const blogPosts = getBlogPostsWithLocaleUi(locale);
 
   return (
     <div className="relative flex flex-col flex-1 w-full max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
@@ -23,10 +33,12 @@ export default async function BlogPage({
 
       <div className="mb-12 text-center">
         <h1 className="mb-4 text-4xl font-extrabold tracking-tight sm:text-5xl">
-          Typing<span className="text-brand">verified</span> <span className="text-primary">Blog</span>
+          {t("headingBefore")}
+          <span className="text-brand">{t("headingBrand")}</span>{" "}
+          <span className="text-primary">{t("headingHighlight")}</span>
         </h1>
         <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
-          Expert advice, tutorials, and insights to help you master the art of typing and boost your productivity.
+          {t("intro")}
         </p>
       </div>
 

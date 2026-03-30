@@ -89,14 +89,14 @@ export const lessonsEs: Lesson[] = [
   {
     id: 8,
     title: "Lección 8: ráfagas de velocidad",
-    focus: "Palabras cortas comunes (inglés)",
+    focus: "Palabras cortas comunes (español)",
     shortDesc:
-      "Gana velocidad bruta repitiendo palabras inglesas muy frecuentes (mismo teclado QWERTY).",
+      "Gana velocidad bruta repitiendo palabras españolas muy frecuentes en teclado QWERTY.",
     tasks: [
-      "the of and a to in is you that it he was for on are as with his they I at be this have from or one had by word but not what all were we when your can said there use an each which she do how",
-      "their if will up other about out many then them these so some her would make like him into time has look two more write go see number no way could people my than first water been call who oil its now",
-      "find long down day did get come made may part over new sound take only little work know place year live me back give most very after thing our just name good sentence man think say great where help through much",
-      "before line right too mean old any same tell boy follow came want show also around form three small set put end does another well large must big even such because turn here why ask went men read need land different",
+      "el la los las un una unos unas de del al y o en por para con sin sobre entre hacia desde hasta durante como cuando donde quien cual cuyo que porque si bien pero mas menos muy más también tan tanto tal cual mismo mismos así pues entonces ya aún todavía nunca siempre quizá ahora aquí ahí allí hay ser estar haber hacer tener decir ir ver saber poder deber querer parecer seguir",
+      "encontrar llamar venir pensar salir volver tomar conocer vivir sentir tratar mirar contar empezar esperar buscar existir entrar trabajar escribir perder ocurrir entender pedir recibir recordar resultar aparecer mantener considerar tiempo año día cosa momento manera caso vida hombre mujer mundo país ciudad estado gobierno trabajo parte número grupo",
+      "primero segundo último nuevo viejo gran pequeño mejor peor mismo otro tal cual cada todo ningún algún muchos pocos mucho poco más menos muy bastante algo nada alguien nadie acaso quizá tal vez mañana tarde noche mañana tarde semana mes año siglo época temporada verano invierno primavera otoño lugar sitio casa calle plaza puerta ventana habitación cocina sala país tierra agua fuego aire cielo sol luna mar río montaña campo bosque pueblo ciudad",
+      "antes línea derecha demasiado significar viejo cualquier mismo decir niño seguir vino querer mostrar también alrededor forma tres pequeño poner fin hace otro bien grande debe porque girar aquí porque pedir fueron hombres leer necesidad tierra diferente mundo lugar familia país región calle plaza puerta ventana habitación cocina sala tiempo hora día mes año momento lugar parte forma manera estilo tipo clase especie ejemplo caso hecho cosa gente personas mundo vida trabajo estudio escuela universidad empresa oficina",
     ],
   },
   {
@@ -106,10 +106,10 @@ export const lessonsEs: Lesson[] = [
     shortDesc:
       "Escribe vocabulario técnico como en un entorno de desarrollo.",
     tasks: [
-      'function calculateTotal(price, taxRate) { return price + (price * taxRate); } const myVariable = true; let count = 0; console.log("Initialization complete"); The modern web relies heavily on JavaScript.',
-      'const user = { name: "Alice", role: "Admin", active: true }; if (user.role === "Admin") { grantAccess(); } else { throw new Error("Access Denied"); } Arrays and objects are fundamental data structures.',
-      "body { margin: 0; padding: 1rem; font-family: 'Inter', sans-serif; background-color: #f4f4f5; } .container { display: flex; flex-direction: column; align-items: center; justify-content: space-between; gap: 20px; }",
-      'async function fetchData(url) { try { const response = await fetch(url); const json = await response.json(); return json; } catch (error) { console.error("Fetch failed:", error); } } Promises handle async behavior.',
+      'En JavaScript, una función puede devolver un número. El cálculo del total con IVA suele verse así. function calculateTotal(precio, tasaIVA) { return precio + (precio * tasaIVA); } const listo = true; let contador = 0; console.log("Inicialización completa"); La web moderna depende mucho de JavaScript para las interfaces.',
+      'Los objetos describen a un usuario: nombre, rol y si está activo. const usuario = { nombre: "Alice", role: "Administrador", active: true }; if (usuario.role === "Administrador") { grantAccess(); } else { throw new Error("Acceso denegado"); } Los arrays y los objetos son estructuras de datos fundamentales.',
+      "/* Diseño: contenedor centrado y cuerpo sin margen externo */ body { margin: 0; padding: 1rem; font-family: 'Inter', sans-serif; background-color: #f4f4f5; } .container { display: flex; flex-direction: column; align-items: center; justify-content: space-between; gap: 20px; }",
+      'Las peticiones asíncronas obtienen datos sin bloquear la pantalla. async function fetchData(url) { try { const response = await fetch(url); const json = await response.json(); return json; } catch (error) { console.error("Error al cargar:", error); } } Las promesas modelan ese comportamiento asíncrono.',
     ],
   },
   {

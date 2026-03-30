@@ -10,6 +10,20 @@ interface CertificatePreviewProps {
     duration: number | string;
     certificateId: string;
     issuedDate: string;
+    labels?: {
+        title: string;
+        subtitle: string;
+        presentedTo: string;
+        body: string;
+        netSpeed: string;
+        accuracy: string;
+        duration: string;
+        seconds: string;
+        director: string;
+        certificateId: string;
+        issuedPrefix: string;
+        grade: string;
+    };
 }
 
 const itemVariants: Variants = {
@@ -23,7 +37,8 @@ export default function CertificatePreview({
     accuracy,
     duration,
     certificateId,
-    issuedDate
+    issuedDate,
+    labels
 }: CertificatePreviewProps) {
     const speed =
         typeof netSpeed === "string" ? Number(netSpeed) : (netSpeed ?? 0);
@@ -46,6 +61,21 @@ export default function CertificatePreview({
 
     const badgeTextClass =
         gradeLetter === "B" ? "text-[#5b2e33]" : "text-white";
+
+    const text = labels ?? {
+        title: "Certificate",
+        subtitle: "Of Completion",
+        presentedTo: "this certificate presented to",
+        body: "has successfully demonstrated professional typing proficiency and met the rigorous standards set forth by the examination board.",
+        netSpeed: "Net Speed",
+        accuracy: "Accuracy",
+        duration: "Duration",
+        seconds: "seconds",
+        director: "Director",
+        certificateId: "Certificate ID",
+        issuedPrefix: "Issued",
+        grade: "Grade",
+    };
 
     return (
         <motion.div
@@ -80,18 +110,18 @@ export default function CertificatePreview({
                         </div>
 
                         <h1 className="mt-4 text-3xl sm:text-4xl md:text-5xl font-black tracking-[0.18em] text-[#1857b6] drop-shadow-[3px_4px_0px_rgba(0,0,0,0.22)] uppercase">
-                            Certificate
+                            {text.title}
                         </h1>
 
                         <div className="mt-3 inline-flex items-center justify-center px-6 sm:px-10 py-2 bg-[#f35454] text-white text-xs sm:text-sm font-semibold tracking-[0.25em] uppercase rounded-full">
-                            Of Completion
+                            {text.subtitle}
                         </div>
                     </div>
 
                     {/* Recipient section */}
                     <div className="mt-4 text-center">
                         <p className="text-xs sm:text-sm tracking-[0.35em] uppercase text-[#c48a5e] mb-4">
-                            this certificate presented to
+                            {text.presentedTo}
                         </p>
 
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-[0.08em] text-[#5b2e33] pb-2 border-b-4 border-[#e8b26a] inline-block px-4">
@@ -101,15 +131,14 @@ export default function CertificatePreview({
 
                     {/* Body text */}
                     <p className="mt-6 sm:mt-8 text-sm sm:text-base text-[#7c5c46] font-serif text-center max-w-2xl mx-auto leading-relaxed">
-                        has successfully demonstrated professional typing proficiency and met the rigorous standards
-                        set forth by the examination board.
+                        {text.body}
                     </p>
 
                     {/* Stats row */}
                     <div className="mt-8 sm:mt-10 grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-xl mx-auto text-center">
                         <div>
                             <div className="text-[0.7rem] sm:text-xs uppercase tracking-[0.2em] text-[#bb8a5c] mb-1">
-                                Net Speed
+                                {text.netSpeed}
                             </div>
                             <div className="text-2xl sm:text-3xl font-extrabold text-[#5b2e33]">
                                 {netSpeed}
@@ -118,7 +147,7 @@ export default function CertificatePreview({
                         </div>
                         <div>
                             <div className="text-[0.7rem] sm:text-xs uppercase tracking-[0.2em] text-[#bb8a5c] mb-1">
-                                Accuracy
+                                {text.accuracy}
                             </div>
                             <div className="text-2xl sm:text-3xl font-extrabold text-[#5b2e33]">
                                 {accuracy}
@@ -127,11 +156,11 @@ export default function CertificatePreview({
                         </div>
                         <div>
                             <div className="text-[0.7rem] sm:text-xs uppercase tracking-[0.2em] text-[#bb8a5c] mb-1">
-                                Duration
+                                {text.duration}
                             </div>
                             <div className="text-2xl sm:text-3xl font-extrabold text-[#5b2e33]">
                                 {duration}
-                                <span className="ml-1 text-sm sm:text-base font-semibold text-[#a36b4b]">seconds</span>
+                                <span className="ml-1 text-sm sm:text-base font-semibold text-[#a36b4b]">{text.seconds}</span>
                             </div>
                         </div>
                     </div>
@@ -146,7 +175,7 @@ export default function CertificatePreview({
                                 Louis U
                             </div>
                             <div className="text-xs uppercase tracking-[0.25em] text-[#b27e4f]">
-                                Director
+                                {text.director}
                             </div>
                         </div>
 
@@ -154,13 +183,13 @@ export default function CertificatePreview({
                             <div className="flex items-center gap-3">
                                 <div className="flex flex-col items-end text-right">
                                     <span className="text-[0.6rem] uppercase tracking-[0.25em] text-[#c49864]">
-                                        Certificate ID
+                                        {text.certificateId}
                                     </span>
                                     <span className="text-xs sm:text-sm font-mono font-semibold text-[#5b2e33]">
                                         {certificateId}
                                     </span>
                                     <span className="mt-1 text-[0.6rem] uppercase tracking-[0.25em] text-[#c49864]">
-                                        Issued {issuedDate}
+                                        {text.issuedPrefix} {issuedDate}
                                     </span>
                                 </div>
 
@@ -172,7 +201,7 @@ export default function CertificatePreview({
                                         {gradeLetter}
                                     </span>
                                     <span className="text-[0.55rem] uppercase tracking-[0.18em]">
-                                        Grade
+                                        {text.grade}
                                     </span>
                                 </div>
                             </div>

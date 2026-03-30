@@ -89,14 +89,14 @@ export const lessonsDe: Lesson[] = [
   {
     id: 8,
     title: "Lektion 8: Geschwindigkeitssprints",
-    focus: "Kurze, häufige Wörter (Englisch)",
+    focus: "Kurze, häufige Wörter (Deutsch)",
     shortDesc:
-      "Steigere die Rohgeschwindigkeit mit sehr häufigen englischen Wörtern (gleiches QWERTY-Layout).",
+      "Steigere die Rohgeschwindigkeit mit sehr häufigen deutschen Wörtern (QWERTZ / QWERTY).",
     tasks: [
-      "the of and a to in is you that it he was for on are as with his they I at be this have from or one had by word but not what all were we when your can said there use an each which she do how",
-      "their if will up other about out many then them these so some her would make like him into time has look two more write go see number no way could people my than first water been call who oil its now",
-      "find long down day did get come made may part over new sound take only little work know place year live me back give most very after thing our just name good sentence man think say great where help through much",
-      "before line right too mean old any same tell boy follow came want show also around form three small set put end does another well large must big even such because turn here why ask went men read need land different",
+      "der die das und oder aber noch schon sehr mehr wenig hier dort heute morgen gestern Jahr Monat Woche Tag Stunde Minute Mensch Frau Mann Kind Zeit Arbeit Leben Welt Land Stadt Haus Straße Weg Platz Hand Kopf Auge Ohr Herz ein eine eines einem einen einer einem den dem des denen nicht nur auch immer nie wieder gut schlecht groß klein neu alt jung viel wenig mehr weniger sehr ganz halb vielleicht etwa gegenüber zwischen ohne mit von zu bei nach vor über unter hinter neben innerhalb außerhalb",
+      "sein haben werden können müssen sollen wollen dürfen mögen sagen gehen sehen kommen geben nehmen machen denken wissen glauben finden bleiben heißen lassen stehen zeigen führen halten spielen arbeiten leben meinen hören schreiben lesen lernen verstehen erklären beginnen enden bleiben werden bleiben scheinen gelingen misslingen versuchen brauchen dürfen mögen möchten wollen sollen müssen können",
+      "Zeit Jahr Tag Weg Ding Frage Weise Fall Leben Hand Teil Welt Arbeit Problem Punkt Mittel Ende Zweck Kind Kunde Recht Herr Frau Woche Monat Stunde Minute Sekunde Ort Platz Land Stadt Haus Straße Raum Tür Fenster Zimmer Küche Wohnzimmer Schlafzimmer Bad Boden Decke Wand Schlüssel Licht Schatten Farbe Form Größe Länge Breite Höhe Tiefe Weite Nähe Ferne Mitte Rand Kante Ecke Seite",
+      "vor Linie rechts zu viel bedeuten alt jeder gleich sagen Junge folgen kam wollen zeigen auch um Form drei klein setzen Ende tut andere gut groß muss groß sogar weil drehen hier warum fragen gingen Männer lesen brauchen Land verschieden Welt Ort Stelle Raum Zeit Raum Form Art Weise Sorte Art Gattung Typ Beispiel Fall Sache Leute Menschen Familie Heimat Vater Mutter Sohn Tochter Bruder Schwester Freund Freundin Nachbar Nachbarin Kollege Kollegin Chef Chefin Team Gruppe Firma Büro Schule Universität Studium Ausbildung Beruf Arbeit Lohn Gehalt Steuer Recht Gesetz Staat Regierung Präsident Minister Bürger Bürgerin",
     ],
   },
   {
@@ -106,10 +106,10 @@ export const lessonsDe: Lesson[] = [
     shortDesc:
       "Tippe Fachvokabular wie in Softwareprojekten.",
     tasks: [
-      'function calculateTotal(price, taxRate) { return price + (price * taxRate); } const myVariable = true; let count = 0; console.log("Initialization complete"); The modern web relies heavily on JavaScript.',
-      'const user = { name: "Alice", role: "Admin", active: true }; if (user.role === "Admin") { grantAccess(); } else { throw new Error("Access Denied"); } Arrays and objects are fundamental data structures.',
-      "body { margin: 0; padding: 1rem; font-family: 'Inter', sans-serif; background-color: #f4f4f5; } .container { display: flex; flex-direction: column; align-items: center; justify-content: space-between; gap: 20px; }",
-      'async function fetchData(url) { try { const response = await fetch(url); const json = await response.json(); return json; } catch (error) { console.error("Fetch failed:", error); } } Promises handle async behavior.',
+      'In JavaScript kann eine Funktion eine Zahl zurückgeben. Die Berechnung des Bruttobetrags mit Steuersatz sieht oft so aus. function calculateTotal(preis, steuersatz) { return preis + (preis * steuersatz); } const bereit = true; let zaehler = 0; console.log("Initialisierung abgeschlossen"); Das moderne Web baut stark auf JavaScript für interaktive Oberflächen.',
+      'Objekte beschreiben oft einen Benutzer: Name, Rolle und ob aktiv. const benutzer = { name: "Alice", role: "Administrator", active: true }; if (benutzer.role === "Administrator") { grantAccess(); } else { throw new Error("Zugriff verweigert"); } Arrays und Objekte sind grundlegende Datenstrukturen.',
+      "/* Layout: zentrierter Container, äußere Ränder am body auf null */ body { margin: 0; padding: 1rem; font-family: 'Inter', sans-serif; background-color: #f4f4f5; } .container { display: flex; flex-direction: column; align-items: center; justify-content: space-between; gap: 20px; }",
+      'Asynchrone Anfragen laden Daten, ohne die Oberfläche zu blockieren. async function fetchData(url) { try { const response = await fetch(url); const json = await response.json(); return json; } catch (error) { console.error("Laden fehlgeschlagen:", error); } } Promises modellieren dieses asynchrone Verhalten.',
     ],
   },
   {

@@ -89,14 +89,14 @@ export const lessonsFr: Lesson[] = [
   {
     id: 8,
     title: "Leçon 8 : rafales de vitesse",
-    focus: "Mots courts et fréquents (anglais)",
+    focus: "Mots courts et fréquents (français)",
     shortDesc:
-      "Renforcez la vitesse brute avec des mots anglais très courants (même agencement QWERTY).",
+      "Renforcez la vitesse brute en répétant des mots français très courants sur clavier AZERTY / QWERTY.",
     tasks: [
-      "the of and a to in is you that it he was for on are as with his they I at be this have from or one had by word but not what all were we when your can said there use an each which she do how",
-      "their if will up other about out many then them these so some her would make like him into time has look two more write go see number no way could people my than first water been call who oil its now",
-      "find long down day did get come made may part over new sound take only little work know place year live me back give most very after thing our just name good sentence man think say great where help through much",
-      "before line right too mean old any same tell boy follow came want show also around form three small set put end does another well large must big even such because turn here why ask went men read need land different",
+      "le la les un une des du de et à en dans pour par avec sans sur sous vers chez entre parmi comme aussi bien mais ou où qui que dont ce cet cette ces son sa ses leur leurs mon ma mes ton ta tes notre votre leur tout tous toute toutes chaque même autre autres très plus moins aussi encore déjà jamais toujours peu beaucoup assez trop rien personne quelque chose quelqu'un fois jour année heure",
+      "alors ainsi donc car ni soit cependant toutefois pourtant néanmoins lorsque si bien que quoique lors même pendant avant après depuis jusqu lorsqu alors quand comment combien pourquoi tel quel quelle quels quelles aucun aucune certains certaines plusieurs quelques tous toutes chaque autre autres même tel telle fois jour mois semaine minute seconde lieu endroit part côté façon manière sorte espèce genre type cas exemple chose gens monde vie temps travail famille maison pays ville rue place",
+      "avoir être faire dire aller voir savoir pouvoir falloir vouloir devoir paraître sembler rester tenir prendre mettre donner laisser passer entrer sortir monter descendre suivre écrire lire demander répondre entendre croire penser trouver chercher garder perdre gagner aimer préférer espérer craindre courir marcher venir partir arriver repartir retourner revenir tenir croire savoir pouvoir devoir falloir vouloir",
+      "avant ligne droite trop signifier vieux aucun même dire enfant suivre vient vouloir montrer aussi autour forme trois petit mettre fin autre bien grand même parce tourner ici pourquoi demander hommes lire besoin terre différent monde temps heure jour mois année siècle époque saison printemps été automne hiver siècle lieu endroit part façon manière sorte espèce genre type cas exemple chose gens famille pays ville rue porte fenêtre chambre cuisine salon terre eau feu air ciel soleil lune étoile mer lac rivière fleuve montagne forêt champ village",
     ],
   },
   {
@@ -106,10 +106,10 @@ export const lessonsFr: Lesson[] = [
     shortDesc:
       "Tapez du vocabulaire technique tel qu’en environnement logiciel.",
     tasks: [
-      'function calculateTotal(price, taxRate) { return price + (price * taxRate); } const myVariable = true; let count = 0; console.log("Initialization complete"); The modern web relies heavily on JavaScript.',
-      'const user = { name: "Alice", role: "Admin", active: true }; if (user.role === "Admin") { grantAccess(); } else { throw new Error("Access Denied"); } Arrays and objects are fundamental data structures.',
-      "body { margin: 0; padding: 1rem; font-family: 'Inter', sans-serif; background-color: #f4f4f5; } .container { display: flex; flex-direction: column; align-items: center; justify-content: space-between; gap: 20px; }",
-      'async function fetchData(url) { try { const response = await fetch(url); const json = await response.json(); return json; } catch (error) { console.error("Fetch failed:", error); } } Promises handle async behavior.',
+      'En JavaScript, une fonction peut retourner un résultat numérique. Le calcul du total avec TVA ressemble à ceci. function calculateTotal(prix, tauxTVA) { return prix + (prix * tauxTVA); } const pret = true; let compteur = 0; console.log("Initialisation terminée"); Le web moderne repose fortement sur JavaScript pour les pages interactives.',
+      'Les objets décrivent souvent un utilisateur : nom, rôle, état actif. const utilisateur = { nom: "Alice", role: "Administrateur", active: true }; if (utilisateur.role === "Administrateur") { grantAccess(); } else { throw new Error("Accès refusé"); } Les tableaux et les objets sont des structures de données fondamentales.',
+      "/* Mise en page : conteneur centré, marges nulles sur le corps de page */ body { margin: 0; padding: 1rem; font-family: 'Inter', sans-serif; background-color: #f4f4f5; } .container { display: flex; flex-direction: column; align-items: center; justify-content: space-between; gap: 20px; }",
+      'Les requêtes asynchrones récupèrent des données sans bloquer l’interface. async function fetchData(url) { try { const response = await fetch(url); const json = await response.json(); return json; } catch (error) { console.error("Échec du chargement :", error); } } Les promesses modèlent ce comportement asynchrone.',
     ],
   },
   {

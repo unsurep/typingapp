@@ -4,11 +4,22 @@ import { createClient } from "@/utils/supabase/server";
 import { redirect } from "@/i18n/navigation";
 import type { AppLocale } from "@/i18n/routing";
 import { premiumFreeWindowActive } from "@/lib/server/premiumFree";
-import type { Metadata } from 'next'
+import type { Metadata } from "next";
+import { getTranslations } from "next-intl/server";
 
-export const metadata: Metadata = {
-    robots: { index: false, follow: false },
-};
+export async function generateMetadata({
+    params,
+}: {
+    params: Promise<{ locale: AppLocale }>;
+}): Promise<Metadata> {
+    const { locale } = await params;
+    const t = await getTranslations({ locale, namespace: "Certificate" });
+    return {
+        title: t("metaTitle"),
+        description: t("metaDescription"),
+        robots: { index: false, follow: false },
+    };
+}
 
 export default async function CertificatePage({
     params,
@@ -16,6 +27,8 @@ export default async function CertificatePage({
     params: Promise<{ locale: AppLocale }>;
 }) {
     const { locale } = await params;
+    const t = await getTranslations({ locale, namespace: "Certificate" });
+    const tVerify = await getTranslations({ locale, namespace: "VerifyCertificate" });
     const supabase = await createClient();
     const { data: { user } } = await supabase.auth.getUser();
 
@@ -64,10 +77,10 @@ export default async function CertificatePage({
             {/* Header Info */}
             <div className="text-center mb-10 max-w-3xl mx-auto">
                 <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
-                    Your Professional <span className="text-brand">Certificate</span>
+                    {t("heroTitleBefore")} <span className="text-brand">{t("heroTitleHighlight")}</span>
                 </h1>
                 <p className="mt-4 text-lg text-gray-600 dark:text-gray-400">
-                    Earn a verified certification of your typing proficiency to share directly with employers.
+                    {t("heroSubtitle")}
                 </p>
             </div>
 
@@ -82,10 +95,13 @@ export default async function CertificatePage({
                     </div>
                     <div className="flex-1 text-center sm:text-left">
                         <h3 className="text-lg font-bold text-amber-900 dark:text-amber-300 mb-2">
-                            Certificate Locked
+                            {t("lockedTitle")}
                         </h3>
                         <p className="text-sm md:text-base text-amber-800 dark:text-amber-200/80 mb-6 leading-relaxed">
-                            Complete all lessons and pass a 60 second test with <span className="font-bold">35+ WPM</span> and <span className="font-bold">95% accuracy</span> to unlock your certificate.
+                            {t.rich("lockedDesc", {
+                                wpm: (chunks) => <span className="font-bold">{chunks}</span>,
+                                accuracy: (chunks) => <span className="font-bold">{chunks}</span>,
+                            })}
                         </p>
                         <CheckEligibilityButton />
                     </div>
@@ -95,7 +111,7 @@ export default async function CertificatePage({
             <div className="w-full flex items-center justify-center mb-8">
                 <div className="h-px bg-gray-200 dark:bg-zinc-800 w-full max-w-sm"></div>
                 <span className="px-4 text-sm font-medium text-gray-400 dark:text-gray-500 uppercase tracking-widest shrink-0">
-                    Preview
+                    {t("previewLabel")}
                 </span>
                 <div className="h-px bg-gray-200 dark:bg-zinc-800 w-full max-w-sm"></div>
             </div>
@@ -109,14 +125,28 @@ export default async function CertificatePage({
                         accuracy={certificate.accuracy}
                         duration={certificate.duration_seconds}
                         certificateId={certificate.certificate_code}
-                        issuedDate={new Date(certificate.issued_at).toLocaleDateString("en-US", {
+                        issuedDate={new Date(certificate.issued_at).toLocaleDateString(locale, {
                             month: "short",
                             year: "numeric",
                         })}
+                        labels={{
+                            title: tVerify("labelsTitle"),
+                            subtitle: tVerify("labelsSubtitle"),
+                            presentedTo: tVerify("labelsPresentedTo"),
+                            body: tVerify("labelsBody"),
+                            netSpeed: tVerify("labelsNetSpeed"),
+                            accuracy: tVerify("labelsAccuracy"),
+                            duration: tVerify("labelsDuration"),
+                            seconds: tVerify("labelsSeconds"),
+                            director: tVerify("labelsDirector"),
+                            certificateId: tVerify("labelsCertificateId"),
+                            issuedPrefix: tVerify("labelsIssuedPrefix"),
+                            grade: tVerify("labelsGrade"),
+                        }}
                     />
                 ) : (
                     <div className="text-center text-gray-500 dark:text-gray-400">
-                        <p className="italic">Your certificate preview will appear here once you unlock it.</p>
+                        <p className="italic">{t("emptyPreview")}</p>
                     </div>
                 )}
             </div>
@@ -130,7 +160,7 @@ export default async function CertificatePage({
                     <svg className="w-5 h-5 mr-2 opacity-50 relative z-10" fill="none" stroke="currentColor" viewBox="0 0 24 24" strokeWidth="2">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
                     </svg>
-                    <span className="relative z-10">Download PDF</span>
+                    <span className="relative z-10">{t("downloadPdf")}</span>
                 </button>
             </div>
 

@@ -11,12 +11,21 @@ import { hasLocale } from "next-intl";
 import { routing } from "@/i18n/routing";
 import { motion, AnimatePresence } from "framer-motion";
 import { getPerformanceLevel } from "@/utils/performance";
-import { useTranslations } from "next-intl";
+import { useLocale, useTranslations } from "next-intl";
+import type { AppLocale } from "@/i18n/routing";
 
 // In Next.js 15, dynamic route parameters must be awaited or unwrapped via `use()`
 export default function LessonPage({ params }: { params: Promise<{ locale: string; lessonId: string }> }) {
     const { lessonId, locale: loc } = use(params);
-    const locale = hasLocale(routing.locales, loc) ? loc : routing.defaultLocale;
+    const localeFromIntl = useLocale();
+    /** URL segment `[locale]` is the source of truth for which lesson file to load; then intl (e.g. cookie) as fallback. */
+    const locale = (
+        hasLocale(routing.locales, loc)
+            ? loc
+            : hasLocale(routing.locales, localeFromIntl)
+              ? localeFromIntl
+              : routing.defaultLocale
+    ) as AppLocale;
     const parsedId = parseInt(lessonId, 10);
     const router = useRouter();
     const t = useTranslations("LessonDetail");

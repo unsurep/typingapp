@@ -102,7 +102,9 @@ export default function Navbar({
               )}
             </div>
             <div className="flex items-center gap-3 pl-2 border-l border-border/50">
-              {/* <LanguageSwitcher /> */}
+
+            {/* Language Toggle */}
+              <LanguageSwitcher />
               <div>
                 <Image src="/typing.svg" alt="Logo" width={50} height={50} />
               </div>
