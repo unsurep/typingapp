@@ -4,6 +4,7 @@ import {
     createAdminSessionToken,
     setAdminSessionCookie,
 } from "@/lib/admin-session";
+import { localizedPath } from "@/lib/locale-path";
 
 function envReadyForAdmin(): boolean {
     return Boolean(
@@ -18,9 +19,12 @@ export async function POST(req: NextRequest) {
     if (!envReadyForAdmin()) {
         return NextResponse.redirect(
             new URL(
-                `/admin/signin?error=${encodeURIComponent(
-                    "Admin login is not configured. Set USER_ID, PASSWORD, and ADMIN_SESSION_SECRET (or rely on SUPABASE_SERVICE_ROLE_KEY for signing) in the server environment."
-                )}`,
+                localizedPath(
+                    `/admin/signin?error=${encodeURIComponent(
+                        "Admin login is not configured. Set USER_ID, PASSWORD, and ADMIN_SESSION_SECRET (or rely on SUPABASE_SERVICE_ROLE_KEY for signing) in the server environment."
+                    )}`,
+                    req
+                ),
                 req.url
             )
         );
@@ -33,9 +37,12 @@ export async function POST(req: NextRequest) {
     if (!username || !password) {
         return NextResponse.redirect(
             new URL(
-                `/admin/signin?error=${encodeURIComponent(
-                    "Username and password are required."
-                )}`,
+                localizedPath(
+                    `/admin/signin?error=${encodeURIComponent(
+                        "Username and password are required."
+                    )}`,
+                    req
+                ),
                 req.url
             )
         );
@@ -47,7 +54,10 @@ export async function POST(req: NextRequest) {
     if (username !== expectedUser || password !== expectedPass) {
         return NextResponse.redirect(
             new URL(
-                `/admin/signin?error=${encodeURIComponent("Invalid credentials.")}`,
+                localizedPath(
+                    `/admin/signin?error=${encodeURIComponent("Invalid credentials.")}`,
+                    req
+                ),
                 req.url
             )
         );
@@ -56,5 +66,5 @@ export async function POST(req: NextRequest) {
     const token = createAdminSessionToken();
     await setAdminSessionCookie(token);
     revalidatePath("/", "layout");
-    return NextResponse.redirect(new URL("/admin", req.url));
+    return NextResponse.redirect(new URL(localizedPath("/admin", req), req.url));
 }

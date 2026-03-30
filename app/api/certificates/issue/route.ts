@@ -1,6 +1,7 @@
 import { revalidatePath } from "next/cache";
 import { NextRequest, NextResponse } from "next/server";
 import { issueCertificate } from "@/lib/server/certificate";
+import { localizedPath } from "@/lib/locale-path";
 
 export async function POST(req: NextRequest) {
     const result = await issueCertificate();
@@ -8,7 +9,10 @@ export async function POST(req: NextRequest) {
     if (result.success && result.certificateId) {
         revalidatePath("/dashboard");
         return NextResponse.redirect(
-            new URL(`/verify/${result.certificateId}`, req.url)
+            new URL(
+                localizedPath(`/verify/${result.certificateId}`, req),
+                req.url
+            )
         );
     }
 
@@ -20,13 +24,19 @@ export async function POST(req: NextRequest) {
                   ? "Please sign in."
                   : "Could not issue certificate.";
         return NextResponse.redirect(
-            new URL(`/dashboard?error=${encodeURIComponent(msg)}`, req.url)
+            new URL(
+                localizedPath(`/dashboard?error=${encodeURIComponent(msg)}`, req),
+                req.url
+            )
         );
     }
 
     return NextResponse.redirect(
         new URL(
-            `/dashboard?error=${encodeURIComponent("Could not issue certificate.")}`,
+            localizedPath(
+                `/dashboard?error=${encodeURIComponent("Could not issue certificate.")}`,
+                req
+            ),
             req.url
         )
     );

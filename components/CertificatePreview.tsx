@@ -31,9 +31,9 @@ export default function CertificatePreview({
     const performance = getPerformanceLevel(safeSpeed);
 
     const gradeLetter =
-        performance.label === "Beginner"
+        performance.key === "beginner"
             ? "C"
-            : performance.label === "Average" || performance.label === "Good"
+            : performance.key === "average" || performance.key === "good"
               ? "B"
               : "A";
 

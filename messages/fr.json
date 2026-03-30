@@ -1,0 +1,52 @@
+{
+  "Nav": {
+    "practice": "Entraînement",
+    "tests": "Tests",
+    "blog": "Blog",
+    "lessons": "Leçons",
+    "certificate": "Certificat",
+    "dashboard": "Tableau de bord",
+    "logout": "Déconnexion",
+    "login": "Connexion",
+    "brand": "TypingVerified",
+    "openMenu": "Ouvrir le menu"
+  },
+  "Footer": {
+    "about": "À propos",
+    "privacy": "Confidentialité",
+    "terms": "Conditions",
+    "contact": "Contact",
+    "pricing": "Tarifs",
+    "blog": "Blog",
+    "rights": "Typingverified. Tous droits réservés."
+  },
+  "Language": {
+    "label": "Langue"
+  },
+  "Home": {
+    "heroBefore": "Élevez votre",
+    "heroHighlight": "Typing",
+    "heroAfter": "expérience",
+    "heroSubtitle": "Des tests de dactylo minimalistes, personnalisables et fluides pour les professionnels.",
+    "startTest": "Lancer le test",
+    "practiceFree": "Pratiquer gratuitement"
+  },
+  "Blog": {
+    "metaTitle": "Blog | Typingverified",
+    "metaDescription": "Améliorez votre vitesse de frappe grâce à nos derniers articles, conseils et guides.",
+    "headingBefore": "Typingverified",
+    "headingHighlight": "Blog",
+    "intro": "Conseils d’experts, tutoriels et analyses pour maîtriser la dactylographie et gagner en productivité."
+  },
+  "BlogPost": {
+    "notFoundTitle": "Article introuvable",
+    "backToBlog": "Retour au blog",
+    "minRead": "{count} min de lecture",
+    "enjoyed": "Cet article vous a plu ?",
+    "shareTitle": "Partagez-le avec vos proches"
+  },
+  "BlogCard": {
+    "minRead": "{count} min de lecture",
+    "readArticle": "Lire l’article"
+  }
+}

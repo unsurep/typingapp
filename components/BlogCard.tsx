@@ -1,13 +1,16 @@
 "use client";
 
-import Link from "next/link";
+import { Link } from "@/i18n/navigation";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Calendar, Clock, ArrowRight } from "lucide-react";
-import { BlogPost, getReadingTimeMinutes } from "@/lib/blog-data";
+import type { BlogPost } from "@/lib/blog-types";
+import { getReadingTimeMinutes } from "@/lib/blog-data";
+import { useTranslations } from "next-intl";
 
 export default function BlogCard({ post, index }: { post: BlogPost; index: number }) {
   const readingTime = getReadingTimeMinutes(post.content);
+  const t = useTranslations("BlogCard");
 
   return (
     <motion.div
@@ -34,7 +37,7 @@ export default function BlogCard({ post, index }: { post: BlogPost; index: numbe
           </span>
           <span className="flex items-center gap-1">
             <Clock className="h-3 w-3" />
-            {readingTime} min read
+            {t("minRead", { count: readingTime })}
           </span>
         </div>
 
@@ -53,7 +56,7 @@ export default function BlogCard({ post, index }: { post: BlogPost; index: numbe
             href={`/blog/${post.slug}`}
             className="inline-flex items-center gap-2 text-sm font-semibold text-primary transition-gap hover:gap-3"
           >
-            Read Article
+            {t("readArticle")}
             <ArrowRight className="h-4 w-4" />
           </Link>
         </div>

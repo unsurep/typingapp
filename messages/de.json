@@ -1,0 +1,52 @@
+{
+  "Nav": {
+    "practice": "Üben",
+    "tests": "Tests",
+    "blog": "Blog",
+    "lessons": "Lektionen",
+    "certificate": "Zertifikat",
+    "dashboard": "Dashboard",
+    "logout": "Abmelden",
+    "login": "Anmelden",
+    "brand": "TypingVerified",
+    "openMenu": "Hauptmenü öffnen"
+  },
+  "Footer": {
+    "about": "Über uns",
+    "privacy": "Datenschutz",
+    "terms": "AGB",
+    "contact": "Kontakt",
+    "pricing": "Preise",
+    "blog": "Blog",
+    "rights": "Typingverified. Alle Rechte vorbehalten."
+  },
+  "Language": {
+    "label": "Sprache"
+  },
+  "Home": {
+    "heroBefore": "Verbessern Sie Ihr",
+    "heroHighlight": "Typing",
+    "heroAfter": "Erlebnis",
+    "heroSubtitle": "Minimalistische, anpassbare und flüssige Schreibtests für Profis.",
+    "startTest": "Test starten",
+    "practiceFree": "Kostenlos üben"
+  },
+  "Blog": {
+    "metaTitle": "Blog | Typingverified",
+    "metaDescription": "Verbessern Sie Ihre Tippgeschwindigkeit mit Artikeln, Tipps und Anleitungen.",
+    "headingBefore": "Typingverified",
+    "headingHighlight": "Blog",
+    "intro": "Expertenratschläge, Tutorials und Einblicke, damit Sie Tippen meistern und produktiver werden."
+  },
+  "BlogPost": {
+    "notFoundTitle": "Beitrag nicht gefunden",
+    "backToBlog": "Zurück zum Blog",
+    "minRead": "{count} Min. Lesezeit",
+    "enjoyed": "Hat Ihnen der Artikel gefallen?",
+    "shareTitle": "Teilen Sie ihn mit Freunden"
+  },
+  "BlogCard": {
+    "minRead": "{count} Min. Lesezeit",
+    "readArticle": "Artikel lesen"
+  }
+}

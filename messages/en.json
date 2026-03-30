@@ -1,0 +1,218 @@
+{
+  "Nav": {
+    "practice": "Practice",
+    "tests": "Tests",
+    "blog": "Blog",
+    "lessons": "Lessons",
+    "certificate": "Certificate",
+    "dashboard": "Dashboard",
+    "logout": "Logout",
+    "login": "Login",
+    "brand": "TypingVerified",
+    "openMenu": "Open main menu"
+  },
+  "Footer": {
+    "about": "About",
+    "privacy": "Privacy",
+    "terms": "Terms",
+    "contact": "Contact",
+    "pricing": "Pricing",
+    "blog": "Blog",
+    "rights": "Typingverified. All rights reserved."
+  },
+  "Language": {
+    "label": "Language"
+  },
+  "Home": {
+    "heroBefore": "Elevate your",
+    "heroHighlight": "Typing",
+    "heroAfter": "experience",
+    "heroSubtitle": "Minimalist, customizable, and smooth typing tests for professionals.",
+    "startTest": "Start Test",
+    "practiceFree": "Practice Free",
+    "authWarning": "You need to login before you can take tests and earn certificates.",
+    "close": "Close",
+    "signIn": "Sign In",
+    "featTests": "60s / 120s Tests",
+    "featAccuracy": "Real-time Accuracy",
+    "featStats": "Premium Stats",
+    "whatIsTitle": "What Is Typingverified?",
+    "whatIsP1": "Typingverified is a free typing speed test and lesson platform designed to help you build real, measurable typing skills. Whether you're a beginner who wants to stop hunting and pecking, or a professional who needs to prove their WPM to an employer, Typingverified gives you the tools to practice, improve, and get certified.",
+    "whatIsP2": "Unlike basic online typing tests, Typingverified combines structured lessons, real-time feedback, and a verifiable certificate - all in a clean, distraction-free interface built for serious learners.",
+    "howTitle": "How It Works",
+    "howStep1Title": "Step 1 - Practice",
+    "howStep1Body": "Warm up with unlimited free-form typing practice. No pressure, no timer - just you and the keyboard, building muscle memory at your own pace.",
+    "howStep2Title": "Step 2 - Complete the Lessons",
+    "howStep2Body": "Work through 10 structured lessons, each with multiple tasks designed to progressively improve your speed and accuracy. Every task requires at least 90% accuracy and a minimum speed to pass.",
+    "howStep3Title": "Step 3 - Get Certified",
+    "howStep3Body": "Once you've completed all lessons and passed the final 60-second typing test (35 WPM / 95% accuracy), download your official Typingverified certificate - ready to attach to your resume or share with employers.",
+    "whoTitle": "Who Is This For?",
+    "who1": "Job seekers who need to prove their typing speed during the hiring process",
+    "who2": "Students looking to build a professional skill before entering the workforce",
+    "who3": "Remote workers who want to boost productivity by typing faster and with fewer errors",
+    "who4": "Anyone who spends time at a keyboard and wants to get better at it",
+    "whyTitle": "Why Typingverified?",
+    "why1Title": "Accurate WPM Measurement",
+    "why1Body": "We calculate net WPM - subtracting errors from your gross speed - so your result reflects your real-world productivity, not just how fast you mash keys.",
+    "why2Title": "Real-time Feedback",
+    "why2Body": "Watch your speed and accuracy update live as you type. Instant feedback helps you learn which habits to correct.",
+    "why3Title": "Structured Lessons That Work",
+    "why3Body": "Our 10-lesson curriculum is built to take you from beginner habits to professional-grade speed, one step at a time.",
+    "why4Title": "A Certificate Worth Sharing",
+    "why4Body": "Your Typingverified certificate includes your name, WPM, accuracy, and issue date. It's a clean, professional credential you can include in job applications.",
+    "faqTitle": "Typing FAQ",
+    "faqIntro": "Common questions about typing speed, typing tests, and earning a typing certificate.",
+    "faq1Q": "What is a good WPM for a job?",
+    "faq1A": "Most office jobs expect at least 40 WPM. Data entry roles typically require 50 to 65 WPM, while transcription and medical roles need 70 to 85 WPM with 98% or higher accuracy. Take a free timed test to find out your current speed.",
+    "faq2Q": "How long does it take to improve typing speed?",
+    "faq2A": "Most people improve from 40 WPM to 60+ WPM within 4 to 6 weeks of 15 minutes of daily structured practice. Short daily sessions beat long occasional ones every time.",
+    "faq3Q": "Is a typing certificate worth it?",
+    "faq3A": "Yes — especially for roles where typing is a core skill. A verified certificate removes doubt for recruiters, can replace a live typing test in many remote job applications, and shows you take professional skill development seriously.",
+    "faq4Q": "Should I focus on speed or accuracy first?",
+    "faq4A": "Always accuracy first. Speed follows naturally once your muscle memory is solid. Practicing fast while making errors just reinforces bad habits and slows your long-term progress.",
+    "faq5Q": "Can I practice typing for free on Typingverified?",
+    "faq5A": "Yes. The practice page and all lessons are completely free. Create a free account to save your progress across sessions and work toward earning your typing certificate.",
+    "faq6Q": "How do I unlock the Typingverified certificate?",
+    "faq6A": "Complete all 10 lessons with at least 90% accuracy and a minimum Average WPM on every task. Then, while logged in, pass a 60-second test with at least 35 WPM net speed and 95% accuracy in a single run. Visit the Certificate page to generate and download your certificate.",
+    "ctaTitle": "Start Free Today",
+    "ctaBody": "No credit card required. Practice as a guest or create a free account to save your progress, track your improvement, and work toward your typing certificate.",
+    "ctaTest": "Start Your Free Typing Test",
+    "ctaLessons": "Begin Lessons"
+  },
+  "Blog": {
+    "metaTitle": "Blog | Typingverified",
+    "metaDescription": "Improve your typing speed with our latest articles, tips, and guides.",
+    "headingBefore": "Typingverified",
+    "headingHighlight": "Blog",
+    "intro": "Expert advice, tutorials, and insights to help you master the art of typing and boost your productivity."
+  },
+  "BlogPost": {
+    "notFoundTitle": "Post not found",
+    "backToBlog": "Back to Blog",
+    "minRead": "{count} min read",
+    "authorByline": "By {name}",
+    "enjoyed": "Enjoyed this article?",
+    "shareTitle": "Share it with your friends"
+  },
+  "About": {
+    "bioTitle": "About the Creator",
+    "bioP1": "Typingverified was built by Louis, a developer and productivity tools creator focused on helping professionals build verifiable workplace skills.",
+    "bioP2": "Having seen how many job applications are filtered out because of unverified typing speed claims, Typingverified was created to give every typist a clear, structured path from practice to professional certification — completely free to start.",
+    "contactHeading": "For questions or feedback:",
+    "emailLabel": "Email:",
+    "websiteLabel": "Website:"
+  },
+  "BlogCard": {
+    "minRead": "{count} min read",
+    "readArticle": "Read Article"
+  },
+  "Practice": {
+    "titleBefore": "Typing",
+    "titleHighlight": "Practice",
+    "subtitle": "Warm up your fingers and improve your accuracy in free practice mode.",
+    "freeMode": "Free Mode",
+    "wpm": "WPM",
+    "accuracy": "Accuracy",
+    "errors": "Errors",
+    "time": "Time",
+    "restart": "Restart",
+    "changeText": "Change Text",
+    "nextTest": "Next Test"
+  },
+  "Test": {
+    "guestBannerBefore": "You are practicing as a guest. ",
+    "guestBannerStrong": "Your results will not be saved.",
+    "signInToSave": "Sign In to Save",
+    "titleBefore": "Typing",
+    "titleHighlight": "Test",
+    "secondsLabel": "{duration} Seconds",
+    "seconds60": "60 seconds",
+    "seconds120": "120 seconds",
+    "restart": "Restart",
+    "loading": "Loading Test...",
+    "toastSaved": "Test result saved!",
+    "toastSaveFailed": "Failed to save test result to the database.",
+    "toastUnexpected": "An unexpected error occurred while saving."
+  },
+  "LessonDetail": {
+    "backToLessons": "Back to Lessons",
+    "checking": "Checking...",
+    "lessonCompleted": "Lesson Completed",
+    "lessonIncomplete": "Lesson Incomplete",
+    "taskLabel": "Task {n}",
+    "passCriteriaBefore": "You must reach ",
+    "passCriteriaHighlight": "90% accuracy",
+    "passCriteriaAfter": " and complete the task context to pass this task.",
+    "loadingState": "Loading lesson state...",
+    "performancePrefix": "Performance Level:",
+    "wpm": "WPM",
+    "accuracy": "Accuracy",
+    "errors": "Errors",
+    "time": "Time",
+    "restartTask": "Restart Task",
+    "nextTask": "Next Task",
+    "nextLesson": "Next Lesson",
+    "performanceLevel": {
+      "beginner": "Beginner",
+      "average": "Average",
+      "good": "Good",
+      "pro": "Pro",
+      "elite": "Elite"
+    }
+  },
+  "ResultCard": {
+    "testComplete": "Test Complete",
+    "netWpm": "Net WPM",
+    "performancePrefix": "Performance Level:",
+    "accuracy": "Accuracy",
+    "errors": "Errors",
+    "timeLeft": "Time Left",
+    "duration": "Duration",
+    "tryAgain": "Try Again",
+    "performanceLevel": {
+      "beginner": "Beginner",
+      "average": "Average",
+      "good": "Good",
+      "pro": "Pro",
+      "elite": "Elite"
+    }
+  },
+  "ShareButton": {
+    "copyLink": "Copy Link",
+    "copied": "Copied!",
+    "toastCopied": "Link copied to clipboard!",
+    "toastFailed": "Failed to copy link"
+  },
+  "CookieConsent": {
+    "defaultHint": "We use cookies to operate this site and serve ads via Google AdSense.",
+    "agreeContinue": "By continuing, you agree to our",
+    "privacyPolicy": "Privacy Policy",
+    "accept": "Accept",
+    "decline": "Decline"
+  },
+  "Metadata": {
+    "titleDefault": "Typingverified | Typing Speed Test & Lessons",
+    "titleTemplate": "%s | Typingverified",
+    "description": "Test your typing speed, take engaging lessons, track your WPM, and earn certificates with Typingverified.",
+    "keywords": "typing test, typing speed, WPM, learn to type, touch typing, typing practice, typing certificate",
+    "ogLocale": "en_US"
+  },
+  "LessonsList": {
+    "titleBefore": "Typing",
+    "titleHighlight": "Lessons",
+    "subtitle": "Master your keyboard skills step-by-step. Go from standard home row techniques to typing complex professional vocabulary without looking."
+  },
+  "LessonCard": {
+    "premium": "Premium",
+    "courseProgress": "Course Progress",
+    "unlockCta": "Unlock — $3.99",
+    "startLesson": "Start Lesson"
+  },
+  "Api": {
+    "contactAllFields": "All fields are required.",
+    "contactLength": "Input exceeds maximum allowed length.",
+    "contactInvalidEmail": "Invalid email address.",
+    "contactSaveFailed": "Failed to save message.",
+    "contactInternalError": "Internal server error."
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "Nav": {
+    "practice": "Práctica",
+    "tests": "Tests",
+    "blog": "Blog",
+    "lessons": "Lecciones",
+    "certificate": "Certificado",
+    "dashboard": "Panel",
+    "logout": "Cerrar sesión",
+    "login": "Iniciar sesión",
+    "brand": "TypingVerified",
+    "openMenu": "Abrir menú principal"
+  },
+  "Footer": {
+    "about": "Acerca de",
+    "privacy": "Privacidad",
+    "terms": "Términos",
+    "contact": "Contacto",
+    "pricing": "Precios",
+    "blog": "Blog",
+    "rights": "Typingverified. Todos los derechos reservados."
+  },
+  "Language": {
+    "label": "Idioma"
+  },
+  "Home": {
+    "heroBefore": "Eleva tu",
+    "heroHighlight": "Typing",
+    "heroAfter": "experiencia",
+    "heroSubtitle": "Tests de mecanografía minimalistas, personalizables y fluidos para profesionales.",
+    "startTest": "Empezar test",
+    "practiceFree": "Practicar gratis"
+  },
+  "Blog": {
+    "metaTitle": "Blog | Typingverified",
+    "metaDescription": "Mejora tu velocidad de mecanografía con artículos, consejos y guías.",
+    "headingBefore": "Typingverified",
+    "headingHighlight": "Blog",
+    "intro": "Consejos de expertos, tutoriales e ideas para dominar la mecanografía y ser más productivo."
+  },
+  "BlogPost": {
+    "notFoundTitle": "Artículo no encontrado",
+    "backToBlog": "Volver al blog",
+    "minRead": "{count} min de lectura",
+    "enjoyed": "¿Te ha gustado el artículo?",
+    "shareTitle": "Compártelo con tus amigos"
+  },
+  "BlogCard": {
+    "minRead": "{count} min de lectura",
+    "readArticle": "Leer artículo"
+  }
+}

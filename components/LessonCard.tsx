@@ -1,6 +1,7 @@
 "use client";
 
-import Link from "next/link";
+import { useTranslations } from "next-intl";
+import { Link } from "@/i18n/navigation";
 import { motion, Variants } from "framer-motion";
 
 interface LessonCardProps {
@@ -18,6 +19,8 @@ const itemVariants: Variants = {
 };
 
 export default function LessonCard({ id, title, focus, shortDesc, progress, locked }: LessonCardProps) {
+    const t = useTranslations("LessonCard");
+
     return (
         <motion.div
             variants={itemVariants}
@@ -41,7 +44,7 @@ export default function LessonCard({ id, title, focus, shortDesc, progress, lock
                     <svg className="w-3 h-3 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                     </svg>
-                    <span className="text-xs font-semibold text-gray-500">Premium</span>
+                    <span className="text-xs font-semibold text-gray-500">{t("premium")}</span>
                 </div>
             )}
 
@@ -61,7 +64,7 @@ export default function LessonCard({ id, title, focus, shortDesc, progress, lock
             {/* Progress Section */}
             <div className="mb-6 relative z-10">
                 <div className="flex justify-between items-center mb-2">
-                    <span className="text-xs font-medium text-gray-500 dark:text-gray-400">Course Progress</span>
+                    <span className="text-xs font-medium text-gray-500 dark:text-gray-400">{t("courseProgress")}</span>
                     <span className="text-xs font-bold text-gray-900 dark:text-white">{locked ? '—' : `${progress}%`}</span>
                 </div>
                 <div className="w-full h-2 bg-gray-100 dark:bg-zinc-800 rounded-full overflow-hidden">
@@ -83,7 +86,7 @@ export default function LessonCard({ id, title, focus, shortDesc, progress, lock
                     <svg className="w-4 h-4 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
                     </svg>
-                    Unlock — $3.99
+                    {t("unlockCta")}
                 </Link>
             ) : (
                 <Link
@@ -97,7 +100,7 @@ export default function LessonCard({ id, title, focus, shortDesc, progress, lock
                         transition={{ duration: 0.5, ease: "easeInOut" }}
                     />
                     <span className="relative z-10 flex items-center">
-                        Start Lesson <span className="ml-2 group-hover/btn:translate-x-1 transition-transform">→</span>
+                        {t("startLesson")} <span className="ml-2 group-hover/btn:translate-x-1 transition-transform">→</span>
                     </span>
                 </Link>
             )}

@@ -1,6 +1,7 @@
 import { revalidatePath } from "next/cache";
 import { NextRequest, NextResponse } from "next/server";
 import { createClient } from "@/utils/supabase/server";
+import { localizedPath } from "@/lib/locale-path";
 
 export async function POST(req: NextRequest) {
     const formData = await req.formData();
@@ -26,5 +27,5 @@ export async function POST(req: NextRequest) {
         !redirectTo.startsWith("//");
     const dest = isSafeRedirect ? redirectTo : "/dashboard";
 
-    return NextResponse.redirect(new URL(dest, req.url));
+    return NextResponse.redirect(new URL(localizedPath(dest, req), req.url));
 }

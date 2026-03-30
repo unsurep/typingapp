@@ -2,19 +2,21 @@
 
 import { Share2, Check } from "lucide-react";
 import { useState } from "react";
+import { useTranslations } from "next-intl";
 import { toast } from "sonner";
 
 export default function ShareButton() {
+  const t = useTranslations("ShareButton");
   const [copied, setCopied] = useState(false);
 
   const handleCopy = async () => {
     try {
       await navigator.clipboard.writeText(window.location.href);
       setCopied(true);
-      toast.success("Link copied to clipboard!");
+      toast.success(t("toastCopied"));
       setTimeout(() => setCopied(false), 2000);
     } catch (err) {
-      toast.error("Failed to copy link");
+      toast.error(t("toastFailed"));
       console.error("Failed to copy: ", err);
     }
   };
@@ -29,7 +31,7 @@ export default function ShareButton() {
       ) : (
         <Share2 className="h-4 w-4" />
       )}
-      {copied ? "Copied!" : "Copy Link"}
+      {copied ? t("copied") : t("copyLink")}
     </button>
   );
 }

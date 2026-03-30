@@ -1,0 +1,52 @@
+{
+  "Nav": {
+    "practice": "Prática",
+    "tests": "Testes",
+    "blog": "Blog",
+    "lessons": "Lições",
+    "certificate": "Certificado",
+    "dashboard": "Painel",
+    "logout": "Sair",
+    "login": "Entrar",
+    "brand": "TypingVerified",
+    "openMenu": "Abrir menu principal"
+  },
+  "Footer": {
+    "about": "Sobre",
+    "privacy": "Privacidade",
+    "terms": "Termos",
+    "contact": "Contato",
+    "pricing": "Preços",
+    "blog": "Blog",
+    "rights": "Typingverified. Todos os direitos reservados."
+  },
+  "Language": {
+    "label": "Idioma"
+  },
+  "Home": {
+    "heroBefore": "Eleve sua",
+    "heroHighlight": "Typing",
+    "heroAfter": "experiência",
+    "heroSubtitle": "Testes de digitação minimalistas, personalizáveis e fluidos para profissionais.",
+    "startTest": "Iniciar teste",
+    "practiceFree": "Praticar grátis"
+  },
+  "Blog": {
+    "metaTitle": "Blog | Typingverified",
+    "metaDescription": "Melhore sua velocidade de digitação com artigos, dicas e guias.",
+    "headingBefore": "Typingverified",
+    "headingHighlight": "Blog",
+    "intro": "Conselhos de especialistas, tutoriais e insights para dominar a digitação e aumentar a produtividade."
+  },
+  "BlogPost": {
+    "notFoundTitle": "Post não encontrado",
+    "backToBlog": "Voltar ao blog",
+    "minRead": "{count} min de leitura",
+    "enjoyed": "Gostou do artigo?",
+    "shareTitle": "Compartilhe com amigos"
+  },
+  "BlogCard": {
+    "minRead": "{count} min de leitura",
+    "readArticle": "Ler artigo"
+  }
+}
