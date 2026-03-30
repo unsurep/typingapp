@@ -1,4 +1,8 @@
-import { DEFAULT_BLOG_AUTHOR, getReadingTimeMinutes } from "@/lib/blog-data";
+import {
+  DEFAULT_BLOG_AUTHOR,
+  getPostBySlug,
+  getReadingTimeMinutes,
+} from "@/lib/blog-data";
 import { getPostBySlugWithLocaleUi } from "@/lib/blog-i18n";
 import { notFound } from "next/navigation";
 import Image from "next/image";
@@ -46,6 +50,11 @@ export default async function BlogPostPage({ params }: Props) {
   const contentSections = post.content.split("\n\n").filter(Boolean);
   const readingTime = getReadingTimeMinutes(post.content);
   const authorName = post.authorName ?? DEFAULT_BLOG_AUTHOR;
+  const englishPost = getPostBySlug(routing.defaultLocale, slug);
+  const isArticleBodyFallbackFromEnglish =
+    locale !== routing.defaultLocale &&
+    !!englishPost &&
+    post.content.trim() === englishPost.content.trim();
 
   return (
     <article className="relative flex flex-col flex-1 w-full max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
@@ -60,7 +69,7 @@ export default async function BlogPostPage({ params }: Props) {
           {t("backToBlog")}
         </Link>
 
-        {locale !== routing.defaultLocale && (
+        {isArticleBodyFallbackFromEnglish && (
           <p className="mb-8 text-sm text-muted-foreground rounded-lg border border-border bg-muted/30 px-4 py-3">
             {t("articleBodyLocaleNote")}
           </p>
