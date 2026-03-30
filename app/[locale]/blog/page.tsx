@@ -23,7 +23,7 @@ export default async function BlogPage({
 
       <div className="mb-12 text-center">
         <h1 className="mb-4 text-4xl font-extrabold tracking-tight sm:text-5xl">
-          Typingverified <span className="text-primary">Blog</span>
+          Typing<span className="text-brand">verified</span> <span className="text-primary">Blog</span>
         </h1>
         <p className="mx-auto max-w-2xl text-lg text-muted-foreground">
           Expert advice, tutorials, and insights to help you master the art of typing and boost your productivity.

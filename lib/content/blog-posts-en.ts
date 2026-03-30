@@ -68,7 +68,7 @@ The good news: moving from average (41 WPM) to above average (60 WPM) is achieva
     metaDescription:
       "Which generation types the fastest? The answer might surprise you. Here's the complete breakdown of average typing speed by age group in 2026.",
     publishDate: "Jan 19, 2026",
-    image: "/blog/what-is-a-good-typing-speed.png",
+    image: "/blog/t2.png",
     content: `
 You might assume that younger people type faster — they grew up with technology, after all. But the data tells a more complicated story, and the results might genuinely surprise you.
 
@@ -112,7 +112,7 @@ The practical takeaway: regardless of your age or generation, deliberate practic
     slug: "what-is-a-good-typing-speed",
     metaDescription: "Wondering what counts as a good WPM? Learn the average typing speeds by profession and how to improve yours with targeted practice.",
     publishDate: "Jan 26, 2026",
-    image: "/blog/what-is-a-good-typing-speed.png",
+    image: "/blog/t3.png",
     content: `
 Most people type somewhere between 40 and 60 words per minute (WPM). But what actually counts as "good" depends on your goal. If you only write occasional emails, 40 WPM can be enough. If you work in operations, support, coding, legal admin, or transcription, your speed and consistency can directly affect output, confidence, and career opportunities.
 
@@ -268,7 +268,7 @@ Most people who follow this plan hit 55–65 WPM within 6 weeks.
     metaDescription:
       "Think typing faster is always better? The math says otherwise. Here's why accuracy beats raw speed — and how net WPM actually works.",
     publishDate: "Feb 9, 2026",
-    image: "/blog/what-is-a-good-typing-speed.png",
+    image: "/blog/t4.png",
     content: `
 Here is a fact that surprises most people: a typist doing 80 WPM with 85% accuracy is producing less usable text per minute than one doing 55 WPM with 99% accuracy.
 
@@ -566,7 +566,7 @@ If you want structured drills for these exact problems, [practice with Typingver
     metaDescription:
       "I committed to a 30-day typing speed challenge. Here's my honest progress log, what worked, what didn't, and how much my WPM actually improved.",
     publishDate: "Mar 2, 2026",
-    image: "/blog/what-is-a-good-typing-speed.png",
+    image: "/blog/t5.png",
     content: `
 I had a problem. I had been typing every single day for years — emails, reports, messages — and I had no idea how fast I actually was. I assumed I was decent. I was wrong.
 
@@ -637,7 +637,7 @@ Start with a baseline test today. Write down your WPM and accuracy. Then come ba
     metaDescription:
       "Looking for work-from-home jobs that match your typing skills? Here are 10 remote jobs in 2026 that require fast, accurate typing — and how to qualify.",
     publishDate: "Mar 9, 2026",
-    image: "/blog/what-is-a-good-typing-speed.png",
+    image: "/blog/t6.png",
     content: `
 If you can type fast and accurately, you have a marketable skill that is in high demand right now. Remote employers across multiple industries are actively hiring for typing-intensive roles — and many of them do not require a degree.
 
@@ -843,7 +843,7 @@ If you are ready to earn yours, start with structured practice and complete the 
     metaDescription:
       "One job seeker shares how earning a typing certificate changed their application results. A real story about skill, confidence, and getting hired remotely.",
     publishDate: "Mar 23, 2026",
-    image: "/blog/what-is-a-good-typing-speed.png",
+    image: "/blog/t7.png",
     content: `
 Six months ago, I was applying for remote data entry roles and getting no callbacks. My resume was solid. My cover letters were tailored. But I was competing against hundreds of applicants for every position, and I had nothing that set me apart.
 
