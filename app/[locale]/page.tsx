@@ -2,10 +2,11 @@
 
 import { useEffect, useState } from "react";
 import { useTranslations } from "next-intl";
-import { Link, useRouter } from "@/i18n/navigation";
+import { Link } from "@/i18n/navigation";
 import { createClient } from "@/utils/supabase/client";
 import { motion, Variants } from "framer-motion";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { X } from "lucide-react";
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -29,6 +30,7 @@ export default function Home() {
     { question: t("faq4Q"), answer: t("faq4A") },
     { question: t("faq5Q"), answer: t("faq5A") },
     { question: t("faq6Q"), answer: t("faq6A") },
+    { question: t("faq7Q"), answer: t("faq7A") },
   ];
   // React simple typewriter
   // const [text] = useTypewriter({
@@ -39,9 +41,9 @@ export default function Home() {
   //   delaySpeed: 2000
   // })
 
-  const router = useRouter();
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [showAuthWarning, setShowAuthWarning] = useState(false);
+  const languageBadges = ["English", "Français", "Español", "Deutsch", "Português"];
 
   useEffect(() => {
     async function checkAuth() {
@@ -57,6 +59,18 @@ export default function Home() {
     checkAuth();
   }, []);
 
+  useEffect(() => {
+    const root = document.documentElement;
+    if (showAuthWarning) {
+      root.style.setProperty("--announcement-height", "3.25rem");
+    } else {
+      root.style.setProperty("--announcement-height", "0px");
+    }
+    return () => {
+      root.style.removeProperty("--announcement-height");
+    };
+  }, [showAuthWarning]);
+
   const handleTestClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     if (!isLoggedIn) {
       e.preventDefault();
@@ -65,35 +79,31 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col min-h-[calc(100vh-8rem)] w-full items-center relative">
+    <div className="relative flex min-h-[calc(100vh-8rem)] w-full flex-col items-center">
       {showAuthWarning && (
-        <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
-          <div className="absolute inset-0 bg-black/45" onClick={() => setShowAuthWarning(false)} />
-          <div className="relative w-full max-w-[520px] bg-yellow-50 dark:bg-zinc-900/95 border-l-4 border-yellow-400 dark:border-yellow-500 rounded-xl p-5 text-yellow-800 dark:text-yellow-200 text-sm shadow-2xl">
-            <div className="flex items-start">
-              <svg className="w-5 h-5 mr-3 shrink-0 mt-0.5 text-yellow-500" fill="currentColor" viewBox="0 0 20 20">
-                <path fillRule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clipRule="evenodd"></path>
-              </svg>
-              <span className="leading-snug">{t("authWarning")}</span>
-            </div>
-            <div className="mt-4 flex justify-end gap-2">
-              <button
-                onClick={() => setShowAuthWarning(false)}
-                className="px-4 py-2 rounded-lg border border-yellow-200 dark:border-yellow-800 bg-transparent hover:bg-yellow-100/70 dark:hover:bg-yellow-900/40 font-semibold transition-colors"
-              >
-                {t("close")}
-              </button>
-              <button
-                onClick={() => {
-                  setShowAuthWarning(false);
-                  router.push("/login");
-                }}
-                className="px-4 py-2 bg-yellow-100 dark:bg-yellow-900/60 hover:bg-yellow-200 dark:hover:bg-yellow-900/80 rounded-lg transition-colors whitespace-nowrap font-semibold border border-yellow-200 dark:border-yellow-800"
-              >
-                {t("signIn")}
-              </button>
-            </div>
-          </div>
+        <div
+          role="alert"
+          aria-live="polite"
+          className="fixed left-0 right-0 top-0 z-60 flex min-h-13 items-center justify-center border-b border-black/10 bg-brand px-10 text-neutral-950 shadow-sm sm:px-14"
+        >
+          <p className="mx-auto max-w-4xl text-center text-xs leading-snug sm:text-sm">
+            {t("authWarning")}{" "}
+            <Link
+              href="/login"
+              onClick={() => setShowAuthWarning(false)}
+              className="cursor-pointer font-semibold text-neutral-950 underline decoration-2 underline-offset-2 hover:text-black"
+            >
+              {t("signIn")}
+            </Link>
+          </p>
+          <button
+            type="button"
+            onClick={() => setShowAuthWarning(false)}
+            className="absolute right-2 top-1/2 flex h-8 w-8 -translate-y-1/2 cursor-pointer items-center justify-center rounded-md text-neutral-950 transition-colors hover:bg-black/15"
+            aria-label={t("close")}
+          >
+            <X className="h-4 w-4 sm:h-5 sm:w-5" strokeWidth={2.25} aria-hidden />
+          </button>
         </div>
       )}
 
@@ -122,6 +132,24 @@ export default function Home() {
         >
           {t("heroSubtitle")}
         </motion.p>
+
+        <motion.div
+          variants={itemVariants}
+          className="mt-5 flex max-w-2xl flex-col items-center gap-3 text-center"
+        >
+          <p className="text-sm sm:text-base leading-relaxed text-muted-foreground">
+            {t("heroLanguagesLine")}
+          </p>
+          <ul className="m-0 flex list-none flex-wrap items-center justify-center gap-2 p-0">
+            {languageBadges.map((lang) => (
+              <li key={lang}>
+                <span className="inline-block rounded-md border border-border/40 bg-muted/20 px-2 py-0.5 text-[11px] font-medium text-muted-foreground sm:text-xs">
+                  {lang}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </motion.div>
 
         <motion.div variants={itemVariants} className="mt-10 flex flex-col sm:flex-row gap-6 justify-center items-center w-full">
           <Link

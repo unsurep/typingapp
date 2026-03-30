@@ -1,5 +1,13 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Typingverified
+
+The production app is **Typingverified** — typing tests, lessons, and certificates.
+
+### Internationalization
+
+The UI is multilingual via [next-intl](https://next-intl-docs.vercel.app/). Locales are defined in [`i18n/routing.ts`](i18n/routing.ts): **English** (default), **French**, **Spanish**, **German**, and **Portuguese**. Copy lives in [`messages/`](messages/) (English is the base; other locale files merge on top). The default locale uses `localePrefix: "as-needed"` so English URLs stay unprefixed where applicable.
+
 ## Getting Started
 
 First, run the development server:

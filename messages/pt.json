@@ -8,6 +8,7 @@
     "dashboard": "Painel",
     "logout": "Sair",
     "login": "Entrar",
+    "signup": "Registar",
     "brand": "TypingVerified",
     "openMenu": "Abrir menu principal"
   },
@@ -28,6 +29,7 @@
     "heroHighlight": "Typing",
     "heroAfter": "experiência",
     "heroSubtitle": "Testes de digitação minimalistas, personalizáveis e fluidos para profissionais.",
+    "heroLanguagesLine": "Disponível em inglês, francês, espanhol, alemão e português — altere a qualquer momento no cabeçalho.",
     "startTest": "Iniciar teste",
     "practiceFree": "Praticar grátis",
     "authWarning": "Você precisa fazer login antes de poder fazer testes e ganhar certificados.",
@@ -74,6 +76,8 @@
     "faq5A": "Sim. A página de prática e todas as lições são completamente gratuitas. Crie uma conta grátis para salvar seu progresso e avançar em direção ao seu certificado.",
     "faq6Q": "Como desbloquear o certificado do Typingverified?",
     "faq6A": "Conclua todas as 10 lições com pelo menos 90% de precisão e uma velocidade mínima média em cada tarefa. Depois, enquanto estiver logado, passe no teste de 60 segundos com pelo menos 35 WPM de velocidade líquida e 95% de precisão em uma única execução. Acesse a página de Certificado para gerar e baixar seu certificado.",
+    "faq7Q": "O Typingverified está disponível em outros idiomas?",
+    "faq7A": "Sim. O site está disponível em inglês, francês, espanhol, alemão e português. Use o menu de idioma no cabeçalho para alterar a interface.",
     "ctaTitle": "Comece grátis hoje",
     "ctaBody": "Não é necessário cartão de crédito. Pratique como visitante ou crie uma conta gratuita para salvar seu progresso, acompanhar suas melhorias e trabalhar em direção ao seu certificado de digitação.",
     "ctaTest": "Começar o teste gratuito de digitação",
@@ -102,10 +106,12 @@
   },
   "About": {
     "metaTitle": "Sobre | Typingverified",
-    "metaDescription": "Saiba o que é o Typingverified, como funcionam as lições e os testes cronometrados e como desbloquear um certificado de digitação verificado.",
+    "metaDescription": "Saiba o que é o Typingverified, como funcionam as lições e os testes cronometrados e como desbloquear um certificado de digitação verificado. Disponível em inglês, francês, espanhol, alemão e português.",
     "heroTitleBefore": "Sobre",
     "heroTitleHighlight": "Typingverified",
     "heroIntro": "O Typingverified é um aplicativo de digitação claro e focado, feito para ajudar você a desenvolver velocidade e precisão reais para o trabalho moderno. Você pode praticar à vontade, seguir lições passo a passo e fazer testes cronometrados para comprovar suas habilidades.",
+    "languagesTitle": "Idiomas disponíveis",
+    "languagesBody": "A interface do Typingverified está disponível em inglês, francês, espanhol, alemão e português. Use o menu de idioma no cabeçalho para alternar a qualquer momento.",
     "bioTitle": "Sobre o criador",
     "bioP1": "O Typingverified foi criado por Louis, criador de ferramentas de produtividade, com foco em ajudar profissionais a construir habilidades profissionais verificáveis.",
     "bioP2": "Ao perceber como muitas candidaturas são filtradas por causa de alegações de velocidade de digitação não verificadas, o Typingverified foi criado para oferecer a cada digitador um caminho claro e estruturado da prática até a certificação profissional - totalmente gratuito para começar.",
@@ -212,8 +218,8 @@
   "Metadata": {
     "titleDefault": "Typingverified | Teste de velocidade de digitação e lições",
     "titleTemplate": "%s | Typingverified",
-    "description": "Teste sua velocidade de digitação, faça lições envolventes, acompanhe seu WPM e conquiste certificados com o Typingverified.",
-    "keywords": "teste de digitação, velocidade de digitação, WPM, aprender a digitar, digitação de toque, prática de digitação, certificado de digitação",
+    "description": "Teste sua velocidade de digitação, faça lições envolventes, acompanhe seu WPM e conquiste certificados com o Typingverified. Interface multilíngue: inglês, francês, espanhol, alemão e português.",
+    "keywords": "teste de digitação, velocidade de digitação, WPM, aprender a digitar, digitação de toque, prática de digitação, certificado de digitação, teste de digitação multilíngue",
     "ogLocale": "pt_PT"
   },
   "LessonsList": {

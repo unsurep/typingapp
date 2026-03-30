@@ -8,6 +8,7 @@
     "dashboard": "Dashboard",
     "logout": "Logout",
     "login": "Login",
+    "signup": "Sign up",
     "brand": "TypingVerified",
     "openMenu": "Open main menu"
   },
@@ -28,6 +29,7 @@
     "heroHighlight": "Typing",
     "heroAfter": "experience",
     "heroSubtitle": "Minimalist, customizable, and smooth typing tests for professionals.",
+    "heroLanguagesLine": "Available in English, French, Spanish, German, and Portuguese — switch anytime from the header.",
     "startTest": "Start Test",
     "practiceFree": "Practice Free",
     "authWarning": "You need to login before you can take tests and earn certificates.",
@@ -74,6 +76,8 @@
     "faq5A": "Yes. The practice page and all lessons are completely free. Create a free account to save your progress across sessions and work toward earning your typing certificate.",
     "faq6Q": "How do I unlock the Typingverified certificate?",
     "faq6A": "Complete all 10 lessons with at least 90% accuracy and a minimum Average WPM on every task. Then, while logged in, pass a 60-second test with at least 35 WPM net speed and 95% accuracy in a single run. Visit the Certificate page to generate and download your certificate.",
+    "faq7Q": "Is Typingverified available in other languages?",
+    "faq7A": "Yes. The site is available in English, French, Spanish, German, and Portuguese. Use the language menu in the header to change the interface.",
     "ctaTitle": "Start Free Today",
     "ctaBody": "No credit card required. Practice as a guest or create a free account to save your progress, track your improvement, and work toward your typing certificate.",
     "ctaTest": "Start Your Free Typing Test",
@@ -98,10 +102,12 @@
   },
   "About": {
     "metaTitle": "About | Typingverified",
-    "metaDescription": "Learn what Typingverified is, how our typing lessons and timed tests work, and how to unlock a verified typing certificate.",
+    "metaDescription": "Learn what Typingverified is, how our typing lessons and timed tests work, and how to unlock a verified typing certificate. Available in English, French, Spanish, German, and Portuguese.",
     "heroTitleBefore": "About",
     "heroTitleHighlight": "Typingverified",
     "heroIntro": "Typingverified is a clean, focused typing app designed to help you build real typing speed and accuracy for modern work. You can practice freely, follow step-by-step lessons, and take timed tests to prove your skills.",
+    "languagesTitle": "Available languages",
+    "languagesBody": "The Typingverified interface is available in English, French, Spanish, German, and Portuguese. Use the language menu in the header to switch anytime.",
     "bioTitle": "About the Creator",
     "bioP1": "Typingverified was built by Louis, a developer and productivity tools creator focused on helping professionals build verifiable workplace skills.",
     "bioP2": "Having seen how many job applications are filtered out because of unverified typing speed claims, Typingverified was created to give every typist a clear, structured path from practice to professional certification — completely free to start.",
@@ -212,8 +218,8 @@
   "Metadata": {
     "titleDefault": "Typingverified | Typing Speed Test & Lessons",
     "titleTemplate": "%s | Typingverified",
-    "description": "Test your typing speed, take engaging lessons, track your WPM, and earn certificates with Typingverified.",
-    "keywords": "typing test, typing speed, WPM, learn to type, touch typing, typing practice, typing certificate",
+    "description": "Test your typing speed, take engaging lessons, track your WPM, and earn certificates with Typingverified. Multilingual interface: English, French, Spanish, German, and Portuguese.",
+    "keywords": "typing test, typing speed, WPM, learn to type, touch typing, typing practice, typing certificate, multilingual typing test, typing in French Spanish German Portuguese",
     "ogLocale": "en_US"
   },
   "LessonsList": {

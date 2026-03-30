@@ -8,6 +8,7 @@
     "dashboard": "Panel",
     "logout": "Cerrar sesión",
     "login": "Iniciar sesión",
+    "signup": "Registrarse",
     "brand": "TypingVerified",
     "openMenu": "Abrir menú principal"
   },
@@ -28,6 +29,7 @@
     "heroHighlight": "Typing",
     "heroAfter": "experiencia",
     "heroSubtitle": "Tests de mecanografía minimalistas, personalizables y fluidos para profesionales.",
+    "heroLanguagesLine": "Disponible en inglés, francés, español, alemán y portugués — cambia en cualquier momento desde la cabecera.",
     "startTest": "Empezar test",
     "practiceFree": "Practicar gratis",
     "authWarning": "Necesitas iniciar sesión antes de poder realizar pruebas y obtener certificados.",
@@ -74,6 +76,8 @@
     "faq5A": "Sí. La página de práctica y todas las lecciones son completamente gratis. Crea una cuenta gratuita para guardar tu progreso a lo largo de las sesiones y avanzar hacia la obtención de tu certificado de mecanografía.",
     "faq6Q": "¿Cómo desbloqueo el certificado de Typingverified?",
     "faq6A": "Completa las 10 lecciones con al menos un 90 % de precisión y una velocidad mínima media en cada tarea. Luego, mientras estás conectado, realiza el test de 60 segundos con al menos 35 WPM netos y un 95 % de precisión en una sola ejecución. Visita la página de Certificado para generar y descargar tu certificado.",
+    "faq7Q": "¿Typingverified está disponible en otros idiomas?",
+    "faq7A": "Sí. El sitio está disponible en inglés, francés, español, alemán y portugués. Usa el menú de idioma en la cabecera para cambiar la interfaz.",
     "ctaTitle": "Empieza gratis hoy",
     "ctaBody": "No se requiere tarjeta de crédito. Practica como invitado o crea una cuenta gratuita para guardar tu progreso, seguir tu mejora y trabajar para obtener tu certificado de mecanografía.",
     "ctaTest": "Comenzar el test de mecanografía gratuito",
@@ -102,10 +106,12 @@
   },
   "About": {
     "metaTitle": "Acerca de | Typingverified",
-    "metaDescription": "Descubre qué es Typingverified, cómo funcionan las lecciones y los tests cronometrados, y cómo desbloquear un certificado de mecanografía verificado.",
+    "metaDescription": "Descubre qué es Typingverified, cómo funcionan las lecciones y los tests cronometrados, y cómo desbloquear un certificado de mecanografía verificado. Disponible en inglés, francés, español, alemán y portugués.",
     "heroTitleBefore": "Acerca de",
     "heroTitleHighlight": "Typingverified",
     "heroIntro": "Typingverified es una aplicación de mecanografía clara y enfocada, diseñada para ayudarte a desarrollar velocidad y precisión reales para el trabajo moderno. Puedes practicar con libertad, seguir lecciones paso a paso y hacer tests cronometrados para demostrar tus habilidades.",
+    "languagesTitle": "Idiomas disponibles",
+    "languagesBody": "La interfaz de Typingverified está disponible en inglés, francés, español, alemán y portugués. Usa el menú de idioma en la cabecera para cambiar en cualquier momento.",
     "bioTitle": "Sobre el creador",
     "bioP1": "Typingverified fue creado por Louis, un desarrollador y creador de herramientas de productividad centrado en ayudar a los profesionales a construir habilidades profesionales verificables.",
     "bioP2": "Habiendo visto cómo muchas solicitudes de empleo se filtran debido a afirmaciones de velocidad de mecanografía no verificadas, Typingverified se creó para ofrecer a cada mecanógrafo una ruta clara y estructurada desde la práctica hasta la certificación profesional; completamente gratis para empezar.",
@@ -212,8 +218,8 @@
   "Metadata": {
     "titleDefault": "Typingverified | Prueba de velocidad de mecanografía y lecciones",
     "titleTemplate": "%s | Typingverified",
-    "description": "Prueba tu velocidad de mecanografía, disfruta de lecciones atractivas, controla tu WPM y obtén certificados con Typingverified.",
-    "keywords": "prueba de mecanografía, velocidad de mecanografía, WPM, aprende a escribir, mecanografía al tacto, práctica de mecanografía, certificado de mecanografía",
+    "description": "Prueba tu velocidad de mecanografía, disfruta de lecciones atractivas, controla tu WPM y obtén certificados con Typingverified. Interfaz multilingüe: inglés, francés, español, alemán y portugués.",
+    "keywords": "prueba de mecanografía, velocidad de mecanografía, WPM, aprende a escribir, mecanografía al tacto, práctica de mecanografía, certificado de mecanografía, test de mecanografía multilingüe",
     "ogLocale": "es_ES"
   },
   "LessonsList": {

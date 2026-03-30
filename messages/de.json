@@ -8,6 +8,7 @@
     "dashboard": "Dashboard",
     "logout": "Abmelden",
     "login": "Anmelden",
+    "signup": "Registrieren",
     "brand": "TypingVerified",
     "openMenu": "Hauptmenü öffnen"
   },
@@ -28,6 +29,7 @@
     "heroHighlight": "Typing",
     "heroAfter": "Erlebnis",
     "heroSubtitle": "Minimalistische, anpassbare und flüssige Schreibtests für Profis.",
+    "heroLanguagesLine": "Verfügbar auf Englisch, Französisch, Spanisch, Deutsch und Portugiesisch — jederzeit über die Kopfzeile wechseln.",
     "startTest": "Test starten",
     "practiceFree": "Kostenlos üben",
     "authWarning": "Du musst dich anmelden, bevor du Tests machen und Zertifikate verdienen kannst.",
@@ -74,6 +76,8 @@
     "faq5A": "Ja. Die Übungsseite und alle Lektionen sind komplett kostenlos. Erstelle ein kostenloses Konto, um deinen Fortschritt zu speichern und auf dein Tipp-Zertifikat hinzuarbeiten.",
     "faq6Q": "Wie schalte ich das Typingverified-Zertifikat frei?",
     "faq6A": "Schließe alle 10 Lektionen mit mindestens 90 % Genauigkeit und einer Mindestgeschwindigkeit (Durchschnitt) auf jeder Aufgabe ab. Dann, während du angemeldet bist, bestehe den 60-Sekunden-Test mit mindestens 35 WPM Netto und 95 % Genauigkeit in einem Durchlauf. Besuche die Zertifikatsseite, um dein Zertifikat zu erzeugen und herunterzuladen.",
+    "faq7Q": "Ist Typingverified in anderen Sprachen verfügbar?",
+    "faq7A": "Ja. Die Website ist auf Englisch, Französisch, Spanisch, Deutsch und Portugiesisch verfügbar. Nutze das Sprachmenü in der Kopfzeile, um die Oberfläche zu ändern.",
     "ctaTitle": "Starte kostenlos heute",
     "ctaBody": "Keine Kreditkarte erforderlich. Übe als Gast oder erstelle ein kostenloses Konto, um deinen Fortschritt zu speichern, deine Verbesserung zu verfolgen und auf dein Tipp-Zertifikat hinzuarbeiten.",
     "ctaTest": "Kostenlosen Tipp-Test starten",
@@ -102,10 +106,12 @@
   },
   "About": {
     "metaTitle": "Über uns | Typingverified",
-    "metaDescription": "Erfahren Sie, was Typingverified ist, wie Lektionen und zeitgesteuerte Tests funktionieren und wie Sie ein verifiziertes Tipp-Zertifikat freischalten.",
+    "metaDescription": "Erfahren Sie, was Typingverified ist, wie Lektionen und zeitgesteuerte Tests funktionieren und wie Sie ein verifiziertes Tipp-Zertifikat freischalten. Verfügbar auf Englisch, Französisch, Spanisch, Deutsch und Portugiesisch.",
     "heroTitleBefore": "Über",
     "heroTitleHighlight": "Typingverified",
     "heroIntro": "Typingverified ist eine klare, fokussierte Tipp-App, die dir hilft, echte Tippgeschwindigkeit und Genauigkeit für moderne Arbeit aufzubauen. Du kannst frei üben, Schritt für Schritt Lektionen absolvieren und zeitgesteuerte Tests machen, um deine Fähigkeiten zu beweisen.",
+    "languagesTitle": "Verfügbare Sprachen",
+    "languagesBody": "Die Typingverified-Oberfläche ist auf Englisch, Französisch, Spanisch, Deutsch und Portugiesisch verfügbar. Über das Sprachmenü in der Kopfzeile kannst du jederzeit wechseln.",
     "bioTitle": "Über den Ersteller",
     "bioP1": "Typingverified wurde von Louis, einem Entwickler und Schöpfer von Produktivitätstools, entwickelt. Der Fokus liegt darauf, Profis dabei zu helfen, verifizierbare Fähigkeiten für den Arbeitsplatz aufzubauen.",
     "bioP2": "Da Typingverified gesehen hat, wie viele Bewerbungen aufgrund nicht verifizierter Aussagen zur Tippgeschwindigkeit gefiltert werden, wurde Typingverified entwickelt, um jedem Typisten einen klaren, strukturierten Weg von der Praxis bis zur professionellen Zertifizierung zu geben - komplett kostenlos zum Start.",
@@ -213,8 +219,8 @@
   "Metadata": {
     "titleDefault": "Typingverified | Tippgeschwindigkeitstest & Lektionen",
     "titleTemplate": "%s | Typingverified",
-    "description": "Teste deine Tippgeschwindigkeit, mache ansprechende Lektionen, verfolge deine WPM und verdiene Zertifikate mit Typingverified.",
-    "keywords": "Tipp-Test, Tippgeschwindigkeit, WPM, lernen zu tippen, Touch-Typing, Tipp-Übung, Tipp-Zertifikat",
+    "description": "Teste deine Tippgeschwindigkeit, mache ansprechende Lektionen, verfolge deine WPM und verdiene Zertifikate mit Typingverified. Mehrsprachige Oberfläche: Englisch, Französisch, Spanisch, Deutsch und Portugiesisch.",
+    "keywords": "Tipp-Test, Tippgeschwindigkeit, WPM, lernen zu tippen, Touch-Typing, Tipp-Übung, Tipp-Zertifikat, mehrsprachiger Tipp-Test",
     "ogLocale": "de_DE"
   },
   "LessonsList": {

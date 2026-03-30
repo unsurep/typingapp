@@ -20,7 +20,7 @@ export default function Navbar({
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ type: "spring", stiffness: 300, damping: 30 }}
-      className="sticky top-0 z-50 backdrop-blur-md bg-white/70 border-b border-gray-100/50 dark:bg-[#111111]/70 dark:border-white/5"
+      className="sticky top-[var(--announcement-height,0px)] z-50 mt-[var(--announcement-height,0px)] backdrop-blur-md bg-white/70 border-b border-gray-100/50 dark:bg-[#111111]/70 dark:border-white/5"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
@@ -93,12 +93,20 @@ export default function Navbar({
                   </form>
                 </div>
               ) : (
-                <Link
-                  href="/login"
-                  className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-background bg-foreground rounded-md hover:bg-foreground/90 transition-colors"
-                >
-                  {t("login")}
-                </Link>
+                <div className="flex items-center gap-2">
+                  <Link
+                    href="/login"
+                    className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-md border border-foreground/25 bg-transparent text-foreground hover:bg-muted dark:border-white/25 dark:hover:bg-white/10 transition-colors"
+                  >
+                    {t("login")}
+                  </Link>
+                  <Link
+                    href="/signup"
+                    className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-background bg-foreground rounded-md hover:bg-foreground/90 transition-colors"
+                  >
+                    {t("signup")}
+                  </Link>
+                </div>
               )}
             </div>
             <div className="flex items-center gap-3 pl-2 border-l border-border/50">
@@ -227,13 +235,22 @@ export default function Navbar({
                   </form>
                 </>
               ) : (
-                <Link
-                  href="/login"
-                  className="block w-full text-center mt-4 px-4 py-2 rounded-md text-base font-medium text-background bg-foreground hover:bg-foreground/90 transition-colors"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  {t("login")}
-                </Link>
+                <div className="mt-4 w-full space-y-2">
+                  <Link
+                    href="/login"
+                    className="block w-full text-center px-4 py-2 rounded-md text-base font-medium border border-foreground/25 bg-transparent text-foreground hover:bg-muted dark:border-white/25 dark:hover:bg-white/10 transition-colors"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {t("login")}
+                  </Link>
+                  <Link
+                    href="/signup"
+                    className="block w-full text-center px-4 py-2 rounded-md text-base font-medium text-background bg-foreground hover:bg-foreground/90 transition-colors"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {t("signup")}
+                  </Link>
+                </div>
               )}
             </div>
           </motion.div>

@@ -8,6 +8,7 @@
     "dashboard": "Tableau de bord",
     "logout": "Déconnexion",
     "login": "Connexion",
+    "signup": "S'inscrire",
     "brand": "TypingVerified",
     "openMenu": "Ouvrir le menu"
   },
@@ -28,6 +29,7 @@
     "heroHighlight": "Typing",
     "heroAfter": "expérience",
     "heroSubtitle": "Des tests de dactylo minimalistes, personnalisables et fluides pour les professionnels.",
+    "heroLanguagesLine": "Disponible en anglais, français, espagnol, allemand et portugais — changez en tout temps depuis l'en-tête.",
     "startTest": "Lancer le test",
     "practiceFree": "Pratiquer gratuitement",
     "authWarning": "Vous devez vous connecter avant de pouvoir passer des tests et gagner des certificats.",
@@ -74,6 +76,8 @@
     "faq5A": "Oui. La page de pratique et toutes les leçons sont entièrement gratuites. Créez un compte gratuit pour sauvegarder vos progrès et avancer vers l'obtention de votre certificat.",
     "faq6Q": "Comment débloquer le certificat Typingverified ?",
     "faq6A": "Terminez les 10 leçons avec au moins 90 % de précision et une vitesse minimale moyenne sur chaque tâche. Ensuite, une fois connecté, passez le test de 60 secondes avec au moins 35 WPM en vitesse nette et 95 % de précision en un seul passage. Rendez-vous sur la page Certificat pour générer et télécharger votre certificat.",
+    "faq7Q": "Typingverified est-il disponible dans d'autres langues ?",
+    "faq7A": "Oui. Le site est disponible en anglais, français, espagnol, allemand et portugais. Utilisez le menu de langue dans l'en-tête pour modifier l'interface.",
     "ctaTitle": "Commencez gratuitement aujourd'hui",
     "ctaBody": "Aucune carte bancaire n'est requise. Pratiquez en tant qu'invité ou créez un compte gratuit pour sauvegarder votre progression, suivre vos améliorations et travailler vers votre certificat de dactylographie.",
     "ctaTest": "Démarrer le test de dactylographie gratuit",
@@ -102,10 +106,12 @@
   },
   "About": {
     "metaTitle": "À propos | Typingverified",
-    "metaDescription": "Découvrez Typingverified, le fonctionnement des leçons et des tests chronométrés, et comment obtenir un certificat de dactylographie vérifié.",
+    "metaDescription": "Découvrez Typingverified, le fonctionnement des leçons et des tests chronométrés, et comment obtenir un certificat de dactylographie vérifié. Disponible en anglais, français, espagnol, allemand et portugais.",
     "heroTitleBefore": "À propos",
     "heroTitleHighlight": "Typingverified",
     "heroIntro": "Typingverified est une application de dactylographie claire et ciblée, conçue pour vous aider à développer une vitesse et une précision réelles pour le travail moderne. Vous pouvez pratiquer librement, suivre des leçons pas à pas et passer des tests chronométrés pour prouver vos compétences.",
+    "languagesTitle": "Langues disponibles",
+    "languagesBody": "L'interface Typingverified est disponible en anglais, français, espagnol, allemand et portugais. Utilisez le menu de langue dans l'en-tête pour changer à tout moment.",
     "bioTitle": "À propos de la créatrice",
     "bioP1": "Typingverified a été créé par Louis, développeur et créateur d'outils de productivité, avec pour objectif d'aider les professionnels à développer des compétences professionnelles vérifiables.",
     "bioP2": "Après avoir constaté combien d'offres d'emploi sont filtrées à cause d'affirmations de vitesse de frappe non vérifiées, Typingverified a été créé pour offrir à chaque dactylographe un parcours clair et structuré de la pratique à la certification professionnelle - entièrement gratuit pour commencer.",
@@ -212,8 +218,8 @@
   "Metadata": {
     "titleDefault": "Typingverified | Tests de vitesse de frappe & Leçons",
     "titleTemplate": "%s | Typingverified",
-    "description": "Testez votre vitesse de frappe, suivez des leçons captivantes, suivez votre WPM et obtenez des certificats avec Typingverified.",
-    "keywords": "test de frappe, vitesse de frappe, WPM, apprendre à taper, dactylographie au toucher, pratique de dactylographie, certificat de dactylographie",
+    "description": "Testez votre vitesse de frappe, suivez des leçons captivantes, suivez votre WPM et obtenez des certificats avec Typingverified. Interface multilingue : anglais, français, espagnol, allemand et portugais.",
+    "keywords": "test de frappe, vitesse de frappe, WPM, apprendre à taper, dactylographie au toucher, pratique de dactylographie, certificat de dactylographie, test de frappe multilingue, site de dactylo en plusieurs langues",
     "ogLocale": "fr_FR"
   },
   "LessonsList": {
