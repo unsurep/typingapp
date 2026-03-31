@@ -3,6 +3,7 @@ import { redirect } from "@/i18n/navigation";
 import { redirect as redirectExternal } from "next/navigation";
 import Stripe from "stripe";
 import {
+  isStripeTestCheckoutRequest,
   isStripeCheckoutEnabled,
   premiumFreeWindowActive,
 } from "@/lib/server/premiumFree";
@@ -16,16 +17,24 @@ export const metadata: Metadata = {
 
 export default async function CheckoutPage({
   params,
+  searchParams,
 }: {
   params: Promise<{ locale: AppLocale }>;
+  searchParams: Promise<{ test_checkout?: string; token?: string }>;
 }) {
   const { locale } = await params;
+  const { test_checkout, token } = await searchParams;
   const supabase = await createClient();
   const {
     data: { user },
   } = await supabase.auth.getUser();
 
-  if (premiumFreeWindowActive() || !isStripeCheckoutEnabled()) {
+  const isTestCheckoutRequest = isStripeTestCheckoutRequest({
+    testCheckout: test_checkout,
+    token,
+  });
+
+  if ((premiumFreeWindowActive() || !isStripeCheckoutEnabled()) && !isTestCheckoutRequest) {
     redirect({ href: "/pricing?trial=true", locale });
   }
 
@@ -63,6 +72,7 @@ export default async function CheckoutPage({
     ],
     metadata: {
       user_id: authUser.id,
+      stripe_test_trigger: isTestCheckoutRequest ? "1" : "0",
     },
     success_url: `${base}${successPath}?session_id={CHECKOUT_SESSION_ID}`,
     cancel_url: `${base}${cancelPath}`,

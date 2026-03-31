@@ -39,3 +39,24 @@ export function isStripeCheckoutEnabled(): boolean {
   return parseEnvBool(process.env.STRIPE_CHECKOUT_ENABLED)
 }
 
+export function isStripeTestTriggerEnabled(): boolean {
+  return parseEnvBool(process.env.STRIPE_TEST_TRIGGER_ENABLED)
+}
+
+export function isValidStripeTestTriggerToken(token: string | undefined): boolean {
+  const expected = process.env.STRIPE_TEST_TRIGGER_TOKEN
+  if (!token || !expected) return false
+  return token === expected
+}
+
+export function isStripeTestCheckoutRequest(args: {
+  testCheckout: string | undefined
+  token: string | undefined
+}): boolean {
+  return (
+    isStripeTestTriggerEnabled() &&
+    args.testCheckout === '1' &&
+    isValidStripeTestTriggerToken(args.token)
+  )
+}
+

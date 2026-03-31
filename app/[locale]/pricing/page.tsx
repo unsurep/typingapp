@@ -5,6 +5,7 @@ import { getTranslations } from "next-intl/server";
 import { createClient } from "@/utils/supabase/server";
 import {
     getPremiumFreeDaysRemaining,
+    isStripeTestTriggerEnabled,
     isStripeCheckoutEnabled,
     premiumFreeWindowActive,
 } from "@/lib/server/premiumFree";
@@ -55,6 +56,11 @@ export default async function PricingPage({
 
     const premiumCtaAvailable = !trialActive && stripeCheckoutEnabled
     const premiumCardIsActive = !trialActive && isPremiumDb
+    const stripeTestToken = process.env.STRIPE_TEST_TRIGGER_TOKEN?.trim()
+    const hasTestTriggerToken = isStripeTestTriggerEnabled() && Boolean(stripeTestToken)
+    const premiumCheckoutHref = hasTestTriggerToken
+        ? `/checkout?test_checkout=1&token=${encodeURIComponent(stripeTestToken!)}`
+        : "/checkout"
 
     return (
         <div className="flex flex-col flex-1 w-full max-w-5xl mx-auto py-12 px-4 sm:px-6 lg:px-8 relative">
@@ -171,9 +177,7 @@ export default async function PricingPage({
                     >
                         {premiumCardIsActive
                             ? t("badgeCurrent")
-                            : trialActive
-                              ? t("badgeComingSoon")
-                              : t("badgeBest")}
+                            : t("badgeBest")}
                     </div>
 
                     <div className="mb-4">
@@ -213,40 +217,35 @@ export default async function PricingPage({
                         </li>
                     </ul>
 
-                    {premiumCtaAvailable ? (
-                        isPremiumDb ? (
-                            <button
-                                type="button"
-                                disabled
-                                aria-disabled="true"
-                                aria-label={t("ariaOnPremium")}
-                                className="mt-auto inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full bg-zinc-200 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300 font-semibold text-sm cursor-not-allowed border border-zinc-300 dark:border-zinc-600"
-                            >
-                                <span aria-hidden className="text-emerald-600 dark:text-emerald-400">✓</span>
-                                {t("ctaOnPremium")}
-                            </button>
-                        ) : (
-                            <Link
-                                href="/checkout"
-                                className="mt-auto inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-brand text-black font-semibold text-sm shadow-sm hover:bg-amber-400 transition-colors"
-                            >
-                                {t("ctaUpgrade")}
-                            </Link>
-                        )
+                    {isPremiumDb ? (
+                        <button
+                            type="button"
+                            disabled
+                            aria-disabled="true"
+                            aria-label={t("ariaOnPremium")}
+                            className="mt-auto inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full bg-zinc-200 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300 font-semibold text-sm cursor-not-allowed border border-zinc-300 dark:border-zinc-600"
+                        >
+                            <span aria-hidden className="text-emerald-600 dark:text-emerald-400">✓</span>
+                            {t("ctaOnPremium")}
+                        </button>
+                    ) : premiumCtaAvailable ? (
+                        <Link
+                            href={premiumCheckoutHref}
+                            className="mt-auto inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-brand text-black font-semibold text-sm shadow-sm hover:bg-amber-400 transition-colors"
+                            aria-label={t("ctaUpgrade")}
+                        >
+                            {t("ctaUpgrade")}
+                        </Link>
                     ) : (
-                        <div className="mt-auto">
-                            <button
-                                type="button"
-                                disabled
-                                aria-disabled="true"
-                                aria-label={t("ariaCheckoutComingSoon")}
-                                className="w-full inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full bg-zinc-200 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300 font-semibold text-sm cursor-not-allowed border border-zinc-300 dark:border-zinc-600"
-                            >
-                                {t("ctaComingSoon")}
-                            </button>
-
-                            {/* <PremiumWaitlistForm /> */}
-                        </div>
+                        <button
+                            type="button"
+                            disabled
+                            aria-disabled="true"
+                            aria-label={t("ariaCheckoutComingSoon")}
+                            className="mt-auto inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-zinc-200 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300 border border-zinc-300 dark:border-zinc-600 font-semibold text-sm cursor-not-allowed"
+                        >
+                            {t("ctaUpgrade")}
+                        </button>
                     )}
                 </div>
             </div>
