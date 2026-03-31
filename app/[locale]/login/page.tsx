@@ -59,7 +59,7 @@ export default async function LoginPage({
           </div>
         )}
 
-        <form action="/api/auth/login" method="POST" className="space-y-6">
+        <form action="/api/auth/login" method="POST" className="space-y-6" autoComplete="off">
           {redirectTo && (
             <input type="hidden" name="redirectTo" value={redirectTo} />
           )}
@@ -74,13 +74,17 @@ export default async function LoginPage({
               id="email"
               name="email"
               type="email"
+              autoComplete="off"
+              autoCapitalize="none"
+              autoCorrect="off"
+              spellCheck={false}
               required
               className="block w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-zinc-700 bg-white dark:bg-black text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-900 dark:focus:ring-white transition-shadow"
               placeholder={t("placeholderEmail")}
             />
           </div>
 
-          <PasswordInput />
+          <PasswordInput autoComplete="off" />
 
           <SignInLoadingButton
             label={t("submitButton")}

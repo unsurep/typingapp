@@ -35,7 +35,7 @@ export default async function AdminSignInPage({
                     </div>
                 )}
 
-                <form action="/api/admin/login" method="POST" className="space-y-6">
+                <form action="/api/admin/login" method="POST" className="space-y-6" autoComplete="off">
                     <div>
                         <label
                             className="block text-sm font-semibold text-gray-700 dark:text-gray-300 mb-2"
@@ -47,14 +47,17 @@ export default async function AdminSignInPage({
                             id="username"
                             name="username"
                             type="text"
-                            autoComplete="username"
+                            autoComplete="off"
+                            autoCapitalize="none"
+                            autoCorrect="off"
+                            spellCheck={false}
                             required
                             className="block w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-zinc-700 bg-white dark:bg-black text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-900 dark:focus:ring-white transition-shadow"
                             placeholder="admin@example.com"
                         />
                     </div>
 
-                    <PasswordInput />
+                    <PasswordInput autoComplete="off" />
 
                     <SignInLoadingButton
                         label="Sign In"

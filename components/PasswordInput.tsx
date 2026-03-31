@@ -3,7 +3,11 @@
 import React, { useState } from "react";
 import { useTranslations } from "next-intl";
 
-export default function PasswordInput() {
+type PasswordInputProps = {
+    autoComplete?: string;
+};
+
+export default function PasswordInput({ autoComplete = "current-password" }: PasswordInputProps) {
     const [showPassword, setShowPassword] = useState(false);
     const t = useTranslations("Auth");
 
@@ -16,6 +20,7 @@ export default function PasswordInput() {
                 id="password"
                 name="password"
                 type={showPassword ? "text" : "password"}
+                autoComplete={autoComplete}
                 required
                 className="block w-full px-4 py-3 rounded-xl border border-gray-300 dark:border-zinc-700 bg-white dark:bg-black text-gray-900 dark:text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-gray-900 dark:focus:ring-white transition-shadow pr-12"
                 placeholder={t("passwordPlaceholder")}

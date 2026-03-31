@@ -86,7 +86,7 @@ export default async function SignupPage({
             />
           </div>
 
-          <PasswordInput />
+          <PasswordInput autoComplete="new-password" />
 
           <button
             type="submit"
