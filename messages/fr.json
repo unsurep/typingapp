@@ -89,7 +89,8 @@
     "headingBefore": "Typing",
     "headingBrand": "verified",
     "headingHighlight": "Blog",
-    "intro": "Conseils d’experts, tutoriels et analyses pour maîtriser la dactylographie et gagner en productivité."
+    "intro": "Conseils d’experts, tutoriels et analyses pour maîtriser la dactylographie et gagner en productivité.",
+    "seeMore": "Voir plus"
   },
   "BlogPost": {
     "articleBodyLocaleNote": "Le corps de l’article est affiché en anglais pendant que nous finalisons la traduction complète.",

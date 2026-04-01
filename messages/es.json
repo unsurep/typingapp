@@ -89,7 +89,8 @@
     "headingBefore": "Typing",
     "headingBrand": "verified",
     "headingHighlight": "Blog",
-    "intro": "Consejos de expertos, tutoriales e ideas para dominar la mecanografía y ser más productivo."
+    "intro": "Consejos de expertos, tutoriales e ideas para dominar la mecanografía y ser más productivo.",
+    "seeMore": "Ver más"
   },
   "BlogPost": {
     "articleBodyLocaleNote": "El texto del artículo se muestra en inglés mientras completamos la traducción.",

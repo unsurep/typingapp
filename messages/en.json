@@ -89,7 +89,8 @@
     "headingBefore": "Typing",
     "headingBrand": "verified",
     "headingHighlight": "Blog",
-    "intro": "Expert advice, tutorials, and insights to help you master the art of typing and boost your productivity."
+    "intro": "Expert advice, tutorials, and insights to help you master the art of typing and boost your productivity.",
+    "seeMore": "See more"
   },
   "BlogPost": {
     "articleBodyLocaleNote": "",

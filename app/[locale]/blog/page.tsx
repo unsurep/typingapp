@@ -1,5 +1,5 @@
 import { getBlogPostsWithLocaleUi } from "@/lib/blog-i18n";
-import BlogCard from "@/components/BlogCard";
+import BlogListWithSeeMore from "@/components/BlogListWithSeeMore";
 import AdSlot from "@/components/AdSlot";
 import { getTranslations } from "next-intl/server";
 import type { Metadata } from "next";
@@ -42,11 +42,7 @@ export default async function BlogPage({
         </p>
       </div>
 
-      <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-        {blogPosts.map((post, index) => (
-          <BlogCard key={post.slug} post={post} index={index} />
-        ))}
-      </div>
+      <BlogListWithSeeMore posts={blogPosts} />
 
       <AdSlot
         slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_BLOG}
