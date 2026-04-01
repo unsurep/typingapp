@@ -996,4 +996,49 @@ Você quer mãos frescas e uma mente clara, não fadiga.
 Digitar o sucesso da entrevista não é sorte. É preparação, ritmo e consistência. Treine diariamente em sessões curtas e focadas, priorize a precisão e simule a pressão antes do teste real. 
 
 Se você quiser fazer um benchmark hoje, [execute um teste de digitação cronometrado no Typingverified e monitore seu WPM líquido.](https://www.typingverified.com/test)`,
+  },
+  {
+    title: "O que e WPM liquido? A metrica de digitacao que realmente importa",
+    slug: "what-is-net-wpm",
+    metaDescription:
+      "WPM bruto e WPM liquido nao sao a mesma coisa. Veja o que e WPM liquido, como e calculado e por que e o unico numero que os empregadores realmente consideram.",
+    publishDate: "Apr 1, 2026",
+    image: "/blog/t8.png",
+    content: `
+Quando a maioria das pessoas fala sobre velocidade de digitacao, costuma citar o WPM bruto - o numero cru de palavras digitadas por minuto. Mas empregadores, testes de digitacao e avaliacoes profissionais quase sempre usam outra metrica: WPM liquido.
+
+Entender a diferenca entre os dois e essencial se voce quiser avaliar e melhorar sua digitacao com precisao.
+
+## WPM bruto vs WPM liquido
+
+WPM bruto e simplesmente o total de palavras digitadas dividido pelo numero de minutos decorridos. Ele nao considera erros.
+
+WPM liquido desconta uma penalidade para cada erro cometido. A formula padrao e:
+
+WPM liquido = WPM bruto - (Erros por minuto)
+
+Entao, se voce digita 70 palavras em um minuto, mas comete 8 erros, seu WPM liquido fica em aproximadamente 62.
+
+## Por que o WPM liquido e o que realmente importa
+
+No trabalho real, erros nao sao gratis. Cada erro em um email, relatorio ou registro de dados precisa ser corrigido - e correcao custa tempo. WPM liquido reflete sua producao efetiva: as palavras que voce produziu e que nao precisaram de ajuste.
+
+Uma pessoa com 90 WPM bruto e 80 % de precisao produz bem menos trabalho utilizavel do que alguem com 65 WPM bruto e 99 % de precisao, porque a primeira gasta bastante tempo apagando e digitando novamente.
+
+Empregadores usam WPM liquido porque ele e um indicador melhor da produtividade real.
+
+## Como o Typingverified mede WPM liquido
+
+O Typingverified calcula seu WPM liquido em tempo real durante cada teste. Voce pode ver tanto sua velocidade bruta quanto sua porcentagem de precisao, para entender exatamente como os erros estao afetando sua pontuacao.
+
+O objetivo nao e apenas digitar rapido - e digitar rapido e com precisao. Quando as duas metricas estao fortes, seu WPM liquido reflete um nivel realmente alto de proficiencia.
+
+## Como melhorar seu WPM liquido
+
+A forma mais eficaz de melhorar o WPM liquido e melhorar a precisao primeiro. Parece contraintuitivo, mas reduzir um pouco a velocidade e focar em zero erros aumenta seu WPM liquido mais rapido do que tentar elevar apenas o WPM bruto.
+
+Pratique com metas de precisao: mire 97 % ou mais em cada sessao, mesmo que isso signifique digitar de 10 a 15 % mais devagar que seu ritmo confortavel maximo. Quando essa precisao fica consistente, a velocidade sobe naturalmente.
+
+[Veja seu WPM liquido com um teste gratuito →](https://www.typingverified.com/test)
+    `,
   }];

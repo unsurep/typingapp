@@ -996,4 +996,49 @@ Sie wollen frische Hände und einen klaren Kopf, keine Müdigkeit.
 Der Erfolg im Vorstellungsgespräch ist kein Glück. Es geht um Vorbereitung, Tempo und Konsistenz. Trainieren Sie täglich in kurzen, konzentrierten Sitzungen, legen Sie Wert auf Genauigkeit und simulieren Sie den Druck vor dem eigentlichen Test. 
 
 Wenn Sie noch heute einen Benchmark durchführen möchten, [führen Sie einen zeitgesteuerten Tipptest auf Typingverified durch und verfolgen Sie Ihren Netto-WPM.](https://www.typingverified.com/test)`,
+  },
+  {
+    title: "Was ist Netto-WPM? Die Tippmetrik, die wirklich zahlt",
+    slug: "what-is-net-wpm",
+    metaDescription:
+      "Brutto-WPM und Netto-WPM sind nicht dasselbe. Hier erfahren Sie, was Netto-WPM ist, wie es berechnet wird und warum Arbeitgeber genau auf diese Zahl achten.",
+    publishDate: "Apr 1, 2026",
+    image: "/blog/t8.png",
+    content: `
+Wenn die meisten Menschen ueber ihre Tippgeschwindigkeit sprechen, nennen sie ihre Brutto-WPM - also die rohe Anzahl an Woertern pro Minute. Arbeitgeber, Tipptests und professionelle Bewertungen verwenden jedoch fast immer eine andere Kennzahl: Netto-WPM.
+
+Den Unterschied zwischen beiden zu verstehen ist entscheidend, wenn Sie Ihre Tippfaehigkeit korrekt bewerten und verbessern wollen.
+
+## Brutto-WPM vs Netto-WPM
+
+Brutto-WPM ist einfach die Gesamtzahl der getippten Woerter geteilt durch die vergangene Zeit in Minuten. Fehler werden dabei nicht beruecksichtigt.
+
+Netto-WPM zieht fuer jeden Fehler eine Strafe ab. Die Standardformel lautet:
+
+Netto-WPM = Brutto-WPM - (Fehler pro Minute)
+
+Wenn Sie also in einer Minute 70 Woerter tippen, aber 8 Fehler machen, liegt Ihre Netto-WPM bei ungefaehr 62.
+
+## Warum Netto-WPM wirklich zaehlt
+
+Im echten Arbeitsalltag sind Fehler nicht kostenlos. Jeder Tippfehler in einer E-Mail, einem Bericht oder einem Datensatz muss korrigiert werden - und Korrekturen kosten Zeit. Netto-WPM bildet Ihre effektive Leistung ab: die Woerter, die ohne Nacharbeit nutzbar sind.
+
+Eine Person mit 90 Brutto-WPM und 80 % Genauigkeit liefert deutlich weniger verwertbare Arbeit als jemand mit 65 Brutto-WPM und 99 % Genauigkeit, weil die erste Person viel Zeit mit Rueckschritten und Neu-Eingaben verliert.
+
+Arbeitgeber verwenden Netto-WPM, weil dieser Wert die reale Produktivitaet besser widerspiegelt.
+
+## Wie Typingverified Netto-WPM misst
+
+Typingverified berechnet Ihre Netto-WPM in Echtzeit waehrend jedes Tests. Sie sehen sowohl Ihre Brutto-Geschwindigkeit als auch Ihren Genauigkeitswert, sodass Sie jederzeit erkennen, wie stark Fehler Ihr Ergebnis beeinflussen.
+
+Das Ziel ist nicht nur schnell zu tippen - sondern schnell und praezise zu tippen. Wenn beide Kennzahlen stark sind, zeigt Ihre Netto-WPM ein wirklich hohes Tippniveau.
+
+## So verbessern Sie Ihre Netto-WPM
+
+Der effektivste Weg zu besserer Netto-WPM ist, zuerst die Genauigkeit zu verbessern. Auch wenn es kontraintuitiv wirkt: Etwas langsamer zu tippen und auf null Fehler zu fokussieren, steigert Ihre Netto-WPM oft schneller als das blosse Hochdruecken der Brutto-Geschwindigkeit.
+
+Trainieren Sie mit Genauigkeitszielen: Streben Sie in jeder Session 97 % oder mehr an, selbst wenn Sie dafuer 10-15 % unter Ihrem maximal angenehmen Tempo bleiben. Sobald diese Genauigkeit konstant ist, steigt die Geschwindigkeit von selbst.
+
+[Sehen Sie Ihre Netto-WPM mit einem kostenlosen Test →](https://www.typingverified.com/test)
+    `,
   }];

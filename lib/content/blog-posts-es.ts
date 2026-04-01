@@ -996,4 +996,49 @@ Quieres manos frescas y una mente clara, no fatiga.
 El éxito en una entrevista de mecanografía no es cuestión de suerte. Es preparación, ritmo y consistencia. Entrene diariamente en sesiones breves y concentradas, priorice la precisión y simule la presión antes de la prueba real. 
 
 Si desea realizar una evaluación comparativa hoy, [ejecute una prueba de mecanografía cronometrada en Typingverified y realice un seguimiento de sus palabras por minuto netas](https://www.typingverified.com/test)`,
+  },
+  {
+    title: "¿Que es el PPM neto? La metrica de mecanografia que realmente importa",
+    slug: "what-is-net-wpm",
+    metaDescription:
+      "El PPM bruto y el PPM neto no son lo mismo. Aqui tienes que es el PPM neto, como se calcula y por que es el unico numero que les importa a los empleadores.",
+    publishDate: "Apr 1, 2026",
+    image: "/blog/t8.png",
+    content: `
+Cuando la mayoria de la gente habla de su velocidad de escritura, cita su PPM bruto: la cantidad bruta de palabras que tecleo por minuto. Pero los empleadores, las pruebas de mecanografia y las evaluaciones profesionales casi siempre usan una metrica distinta: el PPM neto.
+
+Entender la diferencia entre ambas es esencial si quieres evaluar y mejorar tu mecanografia con precision.
+
+## PPM bruto vs PPM neto
+
+El PPM bruto es simplemente el total de palabras que escribiste dividido entre los minutos transcurridos. No tiene en cuenta los errores.
+
+El PPM neto descuenta una penalizacion por cada error. La formula estandar es:
+
+PPM neto = PPM bruto - (Errores por minuto)
+
+Asi, si escribes 70 palabras en un minuto pero cometes 8 errores, tu PPM neto es aproximadamente 62.
+
+## Por que el PPM neto es lo que realmente importa
+
+En un entorno laboral real, los errores no salen gratis. Cada error en un correo, informe o registro requiere correccion, y corregir toma tiempo. El PPM neto refleja tu produccion efectiva: las palabras que produjiste y no necesitaron correccion.
+
+Un mecanografo con 90 PPM brutos y 80 % de precision produce mucho menos trabajo util que otro con 65 PPM brutos y 99 % de precision, porque el primero pierde bastante tiempo borrando y reescribiendo texto.
+
+Los empleadores usan el PPM neto porque es un mejor indicador de la productividad real.
+
+## Como Typingverified mide el PPM neto
+
+Typingverified calcula tu PPM neto en tiempo real durante cada prueba. Puedes ver tanto tu velocidad bruta como tu porcentaje de precision, asi que siempre sabes exactamente como los errores afectan tu puntuacion.
+
+La meta no es solo escribir rapido, sino escribir rapido y con precision. Cuando ambas metricas son solidas, tu PPM neto refleja un nivel realmente alto de competencia.
+
+## Como mejorar tu PPM neto
+
+La forma mas efectiva de mejorar el PPM neto es mejorar primero la precision. Aunque parezca contraintuitivo, reducir un poco la velocidad y enfocarte en cero errores elevara tu PPM neto mas rapido que intentar subir solo tu velocidad bruta.
+
+Practica con objetivos de precision: apunta a 97 % o mas en cada sesion, incluso si eso significa escribir entre 10 y 15 % mas lento que tu ritmo comodo maximo. Cuando esa precision se vuelve constante, la velocidad sube de forma natural.
+
+[Mide tu PPM neto con una prueba gratis →](https://www.typingverified.com/test)
+    `,
   }];

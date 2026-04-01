@@ -996,4 +996,49 @@ Vous voulez des mains fraîches et un esprit clair, pas de fatigue.
 Le succès d’un entretien de dactylographie n’est pas une chance. C’est la préparation, le rythme et la cohérence. Entraînez-vous quotidiennement lors de courtes séances ciblées, donnez la priorité à la précision et simulez la pression avant le test réel. 
 
 Si vous souhaitez effectuer une analyse comparative aujourd'hui, [exécutez un test de frappe chronométré sur Typingverified et suivez votre WPM net.](https://www.typingverified.com/test)`,
+  },
+  {
+    title: "Qu’est-ce que le WPM net ? La métrique de frappe qui compte vraiment",
+    slug: "what-is-net-wpm",
+    metaDescription:
+      "WPM brut et WPM net ne sont pas identiques. Voici ce qu’est le WPM net, comment il se calcule et pourquoi c’est le chiffre qui intéresse les employeurs.",
+    publishDate: "Apr 1, 2026",
+    image: "/blog/t8.png",
+    content: `
+Quand la plupart des gens parlent de leur vitesse de frappe, ils citent leur WPM brut - le nombre brut de mots tapes par minute. Mais les employeurs, les tests de frappe et les evaluations professionnelles utilisent presque toujours une autre metrique : le WPM net.
+
+Comprendre la difference entre les deux est essentiel si vous voulez evaluer et ameliorer votre frappe avec precision.
+
+## WPM brut vs WPM net
+
+Le WPM brut correspond simplement au nombre total de mots tapes divise par le nombre de minutes ecoulees. Il ne tient pas compte des erreurs.
+
+Le WPM net applique une penalite pour chaque erreur. La formule standard est :
+
+WPM net = WPM brut - (Erreurs par minute)
+
+Donc si vous tapez 70 mots en une minute mais faites 8 erreurs, votre WPM net est d'environ 62.
+
+## Pourquoi le WPM net est ce qui compte vraiment
+
+Dans un vrai contexte de travail, les erreurs ne sont pas gratuites. Chaque faute dans un email, un rapport ou une saisie de donnees doit etre corrigee - et les corrections prennent du temps. Le WPM net refl ete votre production effective : les mots produits qui n'ont pas besoin d'etre corriges.
+
+Un dactylographe a 90 WPM brut avec 80 % de precision produit beaucoup moins de travail utilisable qu'une personne a 65 WPM brut avec 99 % de precision, car le premier passe beaucoup de temps a supprimer puis retaper du texte.
+
+Les employeurs utilisent le WPM net car c'est un meilleur indicateur de la productivite reelle.
+
+## Comment Typingverified mesure le WPM net
+
+Typingverified calcule votre WPM net en temps reel pendant chaque test. Vous voyez a la fois votre vitesse brute et votre pourcentage de precision, donc vous savez toujours exactement comment les erreurs impactent votre score.
+
+L'objectif n'est pas seulement de taper vite - c'est de taper vite et avec precision. Quand ces deux metriques sont solides, votre WPM net refl ete un vrai niveau eleve de maitrise.
+
+## Comment ameliorer votre WPM net
+
+La methode la plus efficace pour ameliorer le WPM net est d'ameliorer d'abord la precision. De maniere contre-intuitive, ralentir legerement et viser zero erreur augmente votre WPM net plus vite que de pousser uniquement votre vitesse brute.
+
+Pratiquez avec des objectifs de precision : visez 97 % ou plus a chaque session, meme si cela signifie taper 10-15 % plus lentement que votre rythme maximal confortable. Une fois cette precision stable, la vitesse monte naturellement.
+
+[Voyez votre WPM net avec un test gratuit →](https://www.typingverified.com/test)
+    `,
   }];

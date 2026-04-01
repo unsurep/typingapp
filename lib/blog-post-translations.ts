@@ -71,6 +71,11 @@ export const blogPostTranslations: {
       metaDescription:
         "Beaucoup d’employeurs imposent un test de frappe. Comment vous préparer, à quoi vous attendre et rester calme le jour J.",
     },
+    "what-is-net-wpm": {
+      title: "Qu’est-ce que le WPM net ? La métrique de frappe qui compte vraiment",
+      metaDescription:
+        "WPM brut et WPM net ne sont pas identiques. Voici ce qu’est le WPM net, comment il se calcule et pourquoi c’est le chiffre qui intéresse les employeurs.",
+    },
   },
   es: {
     "average-typing-speed-2026": {
@@ -135,6 +140,11 @@ export const blogPostTranslations: {
       title: "Cómo prepararte para un test de mecanografía en una entrevista de trabajo",
       metaDescription:
         "Muchos empleadores exigen un test de mecanografía. Cómo prepararte, qué esperar y mantener la calma el día de la prueba.",
+    },
+    "what-is-net-wpm": {
+      title: "¿Qué es el PPM neto? La métrica de mecanografía que realmente importa",
+      metaDescription:
+        "El PPM bruto y el PPM neto no son lo mismo. Aquí tienes qué es el PPM neto, cómo se calcula y por qué es el único número que les importa a los empleadores.",
     },
   },
   de: {
@@ -201,6 +211,11 @@ export const blogPostTranslations: {
       metaDescription:
         "Viele Arbeitgeber verlangen Tipp-Tests. So üben Sie, was Sie erwarten und wie Sie ruhig bleiben.",
     },
+    "what-is-net-wpm": {
+      title: "Was ist Netto-WPM? Die Tippmetrik, die wirklich zählt",
+      metaDescription:
+        "Brutto-WPM und Netto-WPM sind nicht dasselbe. Hier erfahren Sie, was Netto-WPM ist, wie es berechnet wird und warum Arbeitgeber genau auf diese Zahl achten.",
+    },
   },
   pt: {
     "average-typing-speed-2026": {
@@ -265,6 +280,11 @@ export const blogPostTranslations: {
       title: "Como se preparar para um teste de digitação numa entrevista de emprego",
       metaDescription:
         "Muitos empregadores exigem teste de digitação. Como se preparar, o que esperar e manter a calma no dia.",
+    },
+    "what-is-net-wpm": {
+      title: "O que é WPM líquido? A métrica de digitação que realmente importa",
+      metaDescription:
+        "WPM bruto e WPM líquido não são a mesma coisa. Veja o que é WPM líquido, como é calculado e por que é o único número que os empregadores realmente consideram.",
     },
   },
 };

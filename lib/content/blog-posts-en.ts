@@ -1020,4 +1020,49 @@ Typing interview success is not luck. It is preparation, pacing, and consistency
 
 If you want to benchmark today, [run a timed typing test on Typingverified and track your net WPM.](https://www.typingverified.com/test)
     `,
+  },
+  {
+    title: "What Is Net WPM? The Typing Metric That Actually Matters",
+    slug: "what-is-net-wpm",
+    metaDescription:
+      "Gross WPM and net WPM are not the same thing. Here's what net WPM is, how it's calculated, and why it's the only number employers care about.",
+    publishDate: "Apr 1, 2026",
+    image: "/blog/t8.png",
+    content: `
+When most people talk about their typing speed, they quote their gross WPM - the raw number of words they typed per minute. But employers, typing tests, and professional assessments almost always use a different metric: net WPM.
+
+Understanding the difference between the two is essential if you want to accurately assess and improve your typing.
+
+## Gross WPM vs Net WPM
+
+Gross WPM is simply the total number of words you typed divided by the number of minutes elapsed. It does not account for errors.
+
+Net WPM deducts a penalty for every error you made. The standard formula is:
+
+Net WPM = Gross WPM - (Errors per minute)
+
+So if you type 70 words in one minute but make 8 errors, your net WPM is approximately 62.
+
+## Why Net WPM Is What Actually Matters
+
+In a real workplace, errors are not free. Every typo in an email, report, or database entry requires correction - and corrections take time. Net WPM reflects your effective output: the words you produced that did not need to be fixed.
+
+A typist with 90 gross WPM and 80% accuracy is producing far less usable work than one with 65 gross WPM and 99% accuracy, because the first typist spends significant time backspacing and re-entering text.
+
+Employers use net WPM because it is a better proxy for real productivity.
+
+## How Typingverified Measures Net WPM
+
+Typingverified calculates your net WPM in real time during every test. You can see both your gross speed and your accuracy percentage, so you always know exactly how errors are affecting your score.
+
+The goal is not just to type fast - it is to type fast and accurately. When both metrics are strong, your net WPM reflects a genuinely high level of typing proficiency.
+
+## How to Improve Your Net WPM
+
+The most effective way to improve net WPM is to improve accuracy first. Counterintuitively, slowing down slightly and focusing on zero errors will raise your net WPM faster than trying to push your gross speed higher.
+
+Practice with accuracy targets: aim for 97% or higher in every session, even if it means typing 10-15% slower than your maximum comfortable pace. Once that accuracy is consistent, speed climbs naturally.
+
+[See your net WPM with a free test →](https://www.typingverified.com/test)
+    `,
   }];
