@@ -87,14 +87,7 @@ export default function Home() {
           className="fixed left-0 right-0 top-0 z-60 flex min-h-13 items-center justify-center border-b border-black/10 bg-brand px-10 text-neutral-950 shadow-sm sm:px-14"
         >
           <p className="mx-auto max-w-4xl text-center text-xs leading-snug sm:text-sm">
-            {t("authWarning")}{" "}
-            <Link
-              href="/login"
-              onClick={() => setShowAuthWarning(false)}
-              className="cursor-pointer font-semibold text-neutral-950 underline decoration-2 underline-offset-2 hover:text-black"
-            >
-              {t("signIn")}
-            </Link>
+            {t("authWarning")}
           </p>
           <button
             type="button"
