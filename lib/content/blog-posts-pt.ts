@@ -1041,4 +1041,61 @@ Pratique com metas de precisao: mire 97 % ou mais em cada sessao, mesmo que isso
 
 [Veja seu WPM liquido com um teste gratuito →](https://www.typingverified.com/test)
     `,
+  },
+  {
+    title:
+      "Como passar num teste de digitação numa entrevista de emprego (o que os empregadores realmente avaliam)",
+    slug: "how-to-pass-typing-test-job-interview",
+    metaDescription:
+      "Muitos empregadores usam testes de digitação na contratação. Saiba o que medem, que pontuações esperam e como se preparar para o seu melhor desempenho.",
+    publishDate: "Apr 4, 2026",
+    image: "/blog/t9.png",
+    content: `
+Muitos candidatos são apanhados de surpresa por um teste de digitação durante o processo de seleção. Preparou o CV, ensaiou respostas e pesquisou a empresa — e de repente um recrutador envia um link para uma avaliação de digitação de 5 minutos.
+
+Aqui está o que precisa de saber para chegar preparado e confiante.
+
+## O que os empregadores realmente testam
+
+Um teste de digitação numa entrevista mede três coisas:
+
+1. **Velocidade** — consegue atingir o mínimo de PPM exigido para a função?
+2. **Precisão** — produz texto limpo e utilizável ou comete erros frequentes?
+3. **Consistência** — mantém velocidade e precisão sob pressão moderada?
+
+A maioria dos empregadores não procura digitadores de elite. Procuram candidatos que atinjam um nível de base razoável e não sejam atrasados por uma digitação fraca quando o teclado é central no trabalho.
+
+## Mínimos de PPM típicos por função
+
+| Função | Mínimo típico de PPM |
+|---|---|
+| Administração geral / escritório | 35–45 PPM |
+| Apoio ao cliente | 45–55 PPM |
+| Introdução de dados | 50–65 PPM |
+| Administrativo jurídico ou de saúde | 60–80 PPM |
+| Transcrição | 65–85 PPM |
+
+Se estiver a candidatar-se, pesquise o requisito de PPM no anúncio e garanta que o atinge com folga — não só num bom dia, mas de forma consistente.
+
+## Como se preparar antes da entrevista
+
+- **Pratique em condições de teste.** Não basta digitar à vontade. Faça testes cronometrados completos — 60 segundos, 2 minutos, 5 minutos — em silêncio, sem música e sem pausas. Simule a pressão do exame.
+- **Conheça o seu ponto de partida.** Faça um teste hoje e anote o resultado. Precisa de saber onde está para se preparar bem.
+- **Priorize a precisão, não a velocidade máxima.** Muitos empregadores valorizam mais 98% de precisão a 50 PPM do que 90% a 65 PPM. Erros eliminam em muitas funções.
+- **Obtenha um certificado.** Muitos empregadores — sobretudo em remoto — aceitam ou valorizam um certificado de digitação verificado. Envie-o com a candidatura e pode dispensar o teste presencial.
+
+## No dia do teste
+
+- Sente-se com as costas direitas, pés no chão e punhos relaxados sobre o teclado.
+- Leia o texto antes de começar se tiver oportunidade.
+- Digite ao ritmo que praticou — não mais rápido por nervosismo.
+- Se errar, continue. Ficar preso ao erro quebra o ritmo e gera mais falhas.
+- Respire devagar se sentir as mãos a tensar.
+
+## Depois do teste
+
+Se a pontuação for mais baixa do que esperava, seja honesto e proativo. Mencione que está a trabalhar ativamente a velocidade e ofereça um certificado como prova adicional do seu empenho.
+
+[Pratique gratuitamente e obtenha um certificado antes da próxima entrevista →](https://www.typingverified.com/certificate)
+    `,
   }];

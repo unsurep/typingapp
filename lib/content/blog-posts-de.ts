@@ -1041,4 +1041,61 @@ Trainieren Sie mit Genauigkeitszielen: Streben Sie in jeder Session 97 % oder me
 
 [Sehen Sie Ihre Netto-WPM mit einem kostenlosen Test →](https://www.typingverified.com/test)
     `,
+  },
+  {
+    title:
+      "So bestehen Sie den Tipp-Test im Vorstellungsgespräch (worauf Arbeitgeber wirklich achten)",
+    slug: "how-to-pass-typing-test-job-interview",
+    metaDescription:
+      "Viele Arbeitgeber nutzen Tipp-Tests in der Einstellung. Hier erfahren Sie, was gemessen wird, welche Werte erwartet werden und wie Sie sich optimal vorbereiten.",
+    publishDate: "Apr 4, 2026",
+    image: "/blog/t9.png",
+    content: `
+Viele Bewerber werden vom Tipp-Test im Auswahlverfahren ueberrascht. Lebenslauf ist vorbereitet, Antworten geuebt, Unternehmen recherchiert — und dann schickt ein Recruiter einen Link zu einer fuenfminuetigen Tipp-Pruefung.
+
+Damit Sie vorbereitet und selbstsicher sind, finden Sie hier das Wichtigste.
+
+## Was Arbeitgeber wirklich pruefen
+
+Ein Tipp-Test im Vorstellungsgespräch misst drei Dinge:
+
+1. **Geschwindigkeit** — erreichen Sie die Mindest-WPM fuer die Rolle?
+2. **Genauigkeit** — liefern Sie saubere, brauchbare Ergebnisse oder fallen viele Fehler?
+3. **Konstanz** — halten Sie Tempo und Genauigkeit unter leichtem Druck?
+
+Die meisten Arbeitgeber suchen keine Elite-Tippen. Sie wollen Bewerber, die ein vernuenftiges Mindestniveau erreichen und in rollen mit viel Schreibarbeit nicht durch schlechtes Tippen ausgebremst werden.
+
+## Typische Mindest-WPM nach Rolle
+
+| Rolle | Typische Mindest-WPM |
+|---|---|
+| Allgemeine Verwaltung / Buero | 35–45 WPM |
+| Kundenservice | 45–55 WPM |
+| Datenerfassung | 50–65 WPM |
+| Juristische oder medizinische Assistenz | 60–80 WPM |
+| Transkription | 65–85 WPM |
+
+Lesen Sie die WPM-Anforderung in der Stellenanzeige und stellen Sie sicher, dass Sie sie zuverlaessig schaffen — nicht nur an guten Tagen.
+
+## Vorbereitung vor dem Gespraech
+
+- **Unter Testbedingungen ueben.** Tippen Sie nicht nur locker. Machen Sie vollstaendige zeitgesteuerte Tests — 60 Sekunden, 2 Minuten, 5 Minuten — ruhig, ohne Musik, ohne Pausen. Simulieren Sie den Testdruck.
+- **Ihren Ausgangswert kennen.** Machen Sie heute einen Test und notieren Sie das Ergebnis. Ohne Ausgangslage keine gezielte Vorbereitung.
+- **Genauigkeit vor Hoechstgeschwindigkeit.** Oft zaehlen 98 % Genauigkeit bei 50 WPM mehr als 90 % bei 65 WPM. Fehler fuehren in vielen Rollen zur Ablehnung.
+- **Zertifikat erwerben.** Viele Arbeitgeber — besonders im Remote-Bereich — akzeptieren oder honorieren ein verifiziertes Tipp-Zertifikat. Reichen Sie es mit ein; manchmal entfaellt der Live-Test.
+
+## Am Tag des Tests
+
+- Gerade sitzen, Fuesse flach, Handgelenke entspannt ueber der Tastatur.
+- Text vorher lesen, wenn es moeglich ist.
+- Im geuebten Tempo tippen — nicht schneller aus Nervositaet.
+- Bei Fehlern weitertippen. Stehenbleiben stoert den Rhythmus und erzeugt mehr Fehler.
+- Ruhig einatmen, wenn die Haende sich anspannen.
+
+## Nach dem Test
+
+Falls das Ergebnis niedriger ist als erwartet: ehrlich und aktiv reagieren. Sagen Sie, dass Sie aktiv an Ihrer Tippgeschwindigkeit arbeiten, und bieten Sie ein Zertifikat als zusaetzlichen Nachweis an.
+
+[Kostenlos ueben und vor dem naechsten Gespraech ein Zertifikat erhalten →](https://www.typingverified.com/certificate)
+    `,
   }];

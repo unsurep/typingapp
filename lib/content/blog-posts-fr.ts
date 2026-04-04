@@ -1041,4 +1041,61 @@ Pratiquez avec des objectifs de precision : visez 97 % ou plus a chaque session,
 
 [Voyez votre WPM net avec un test gratuit →](https://www.typingverified.com/test)
     `,
+  },
+  {
+    title:
+      "Comment réussir un test de frappe en entretien d'embauche (ce que les employeurs regardent vraiment)",
+    slug: "how-to-pass-typing-test-job-interview",
+    metaDescription:
+      "De nombreux employeurs utilisent des tests de frappe lors du recrutement. Voici ce qu'ils mesurent vraiment, les scores attendus, et comment vous préparer pour donner le meilleur de vous-même.",
+    publishDate: "Apr 4, 2026",
+    image: "/blog/t9.png",
+    content: `
+Beaucoup de candidats sont pris au dépourvu par un test de frappe pendant le processus de recrutement. Vous avez préparé votre CV, répété vos réponses et renseigné l'entreprise — puis un recruteur vous envoie un lien vers une évaluation de frappe de 5 minutes.
+
+Voici ce qu'il faut savoir pour arriver préparé et confiant.
+
+## Ce que les employeurs évaluent vraiment
+
+Un test de frappe en entretien mesure trois choses :
+
+1. **Vitesse** — pouvez-vous atteindre le seuil minimal de WPM pour ce poste ?
+2. **Précision** — produisez-vous un texte propre et exploitable ou commettez-vous souvent des erreurs ?
+3. **Régularité** — maintenez-vous vitesse et précision sous une légère pression ?
+
+La plupart des employeurs ne cherchent pas des dactylos d'élite. Ils veulent des candidats qui atteignent un niveau raisonnable et ne seront pas ralentis par une mauvaise frappe lorsque la saisie est centrale dans le métier.
+
+## Seuils de WPM minimums selon le métier
+
+| Poste | WPM minimum typique |
+|---|---|
+| Administration générale / bureau | 35–45 WPM |
+| Service client | 45–55 WPM |
+| Saisie de données | 50–65 WPM |
+| Assistant juridique ou médical | 60–80 WPM |
+| Transcription | 65–85 WPM |
+
+Si vous postulez, renseignez l'exigence de WPM dans l'annonce et assurez-vous de la dépasser confortablement — pas seulement les bons jours, mais de façon constante.
+
+## Comment vous préparer avant l'entretien
+
+- **Entraînez-vous en conditions d'examen.** Ne tapez pas seulement de façon décontractée. Faites des tests chronométrés complets — 60 secondes, 2 minutes, 5 minutes — dans le calme, sans musique ni pause. Reproduisez la pression du test.
+- **Connaissez votre niveau de départ.** Passez un test aujourd'hui et notez votre score. Il faut savoir d'où vous partez pour vous préparer correctement.
+- **Priorité à la précision, pas à la vitesse max.** Les employeurs préfèrent souvent 98 % de précision à 50 WPM plutôt que 90 % à 65 WPM. Les erreurs éliminent dans beaucoup de métiers.
+- **Obtenez un certificat.** Beaucoup d'employeurs — surtout en télétravail — acceptent ou valorisent un certificat de frappe vérifié. Joignez-le à votre dossier : vous pourriez éviter le test sur place.
+
+## Le jour du test
+
+- Asseyez-vous le dos droit, pieds à plat, poignets détendus au-dessus du clavier.
+- Lisez le texte avant de commencer si vous en avez l'occasion.
+- Tapez au rythme que vous avez entraîné — n'accélérez pas par nervosité.
+- En cas d'erreur, continuez. S'arrêter casse le rythme et multiplie les fautes.
+- Respirez calmement si vous sentez vos mains se crisper.
+
+## Après le test
+
+Si le score est plus bas que prévu, soyez honnête et proactif. Expliquez que vous travaillez activement votre vitesse et proposez un certificat comme preuve de votre engagement.
+
+[Pratiquez gratuitement et obtenez un certificat avant votre prochain entretien →](https://www.typingverified.com/certificate)
+    `,
   }];

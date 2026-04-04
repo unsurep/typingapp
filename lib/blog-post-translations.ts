@@ -76,6 +76,12 @@ export const blogPostTranslations: {
       metaDescription:
         "WPM brut et WPM net ne sont pas identiques. Voici ce qu’est le WPM net, comment il se calcule et pourquoi c’est le chiffre qui intéresse les employeurs.",
     },
+    "how-to-pass-typing-test-job-interview": {
+      title:
+        "Comment réussir un test de frappe en entretien d'embauche (ce que les employeurs regardent vraiment)",
+      metaDescription:
+        "De nombreux employeurs utilisent des tests de frappe lors du recrutement. Voici ce qu'ils mesurent vraiment, les scores attendus, et comment vous préparer pour donner le meilleur de vous-même.",
+    },
   },
   es: {
     "average-typing-speed-2026": {
@@ -145,6 +151,12 @@ export const blogPostTranslations: {
       title: "¿Qué es el PPM neto? La métrica de mecanografía que realmente importa",
       metaDescription:
         "El PPM bruto y el PPM neto no son lo mismo. Aquí tienes qué es el PPM neto, cómo se calcula y por qué es el único número que les importa a los empleadores.",
+    },
+    "how-to-pass-typing-test-job-interview": {
+      title:
+        "Cómo superar un test de mecanografía en una entrevista de trabajo (lo que buscan de verdad los empleadores)",
+      metaDescription:
+        "Muchos empleadores usan pruebas de mecanografía en el proceso de selección. Esto es lo que miden, qué puntuaciones esperan y cómo prepararte para dar lo mejor de ti.",
     },
   },
   de: {
@@ -216,6 +228,12 @@ export const blogPostTranslations: {
       metaDescription:
         "Brutto-WPM und Netto-WPM sind nicht dasselbe. Hier erfahren Sie, was Netto-WPM ist, wie es berechnet wird und warum Arbeitgeber genau auf diese Zahl achten.",
     },
+    "how-to-pass-typing-test-job-interview": {
+      title:
+        "So bestehen Sie den Tipp-Test im Vorstellungsgespräch (worauf Arbeitgeber wirklich achten)",
+      metaDescription:
+        "Viele Arbeitgeber nutzen Tipp-Tests in der Einstellung. Hier erfahren Sie, was gemessen wird, welche Werte erwartet werden und wie Sie sich optimal vorbereiten.",
+    },
   },
   pt: {
     "average-typing-speed-2026": {
@@ -285,6 +303,12 @@ export const blogPostTranslations: {
       title: "O que é WPM líquido? A métrica de digitação que realmente importa",
       metaDescription:
         "WPM bruto e WPM líquido não são a mesma coisa. Veja o que é WPM líquido, como é calculado e por que é o único número que os empregadores realmente consideram.",
+    },
+    "how-to-pass-typing-test-job-interview": {
+      title:
+        "Como passar num teste de digitação numa entrevista de emprego (o que os empregadores realmente avaliam)",
+      metaDescription:
+        "Muitos empregadores usam testes de digitação na contratação. Saiba o que medem, que pontuações esperam e como se preparar para o seu melhor desempenho.",
     },
   },
 };

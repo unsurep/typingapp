@@ -1041,4 +1041,61 @@ Practica con objetivos de precision: apunta a 97 % o mas en cada sesion, incluso
 
 [Mide tu PPM neto con una prueba gratis →](https://www.typingverified.com/test)
     `,
+  },
+  {
+    title:
+      "Cómo superar un test de mecanografía en una entrevista de trabajo (lo que buscan de verdad los empleadores)",
+    slug: "how-to-pass-typing-test-job-interview",
+    metaDescription:
+      "Muchos empleadores usan pruebas de mecanografía en el proceso de selección. Esto es lo que miden, qué puntuaciones esperan y cómo prepararte para dar lo mejor de ti.",
+    publishDate: "Apr 4, 2026",
+    image: "/blog/t9.png",
+    content: `
+A muchos candidatos les pillan por sorpresa las pruebas de mecanografía durante el proceso de selección. Has preparado el currículum, ensayado respuestas e investigado la empresa — y de pronto un reclutador te envía un enlace a una evaluación de mecanografía de 5 minutos.
+
+Aquí tienes lo esencial para llegar preparado y con confianza.
+
+## Qué evalúan realmente los empleadores
+
+Un test de mecanografía en una entrevista mide tres cosas:
+
+1. **Velocidad** — ¿alcanzas el mínimo de PPM exigido para el puesto?
+2. **Precisión** — ¿generas texto limpio y usable o cometes errores a menudo?
+3. **Constancia** — ¿mantienes velocidad y precisión bajo una ligera presión?
+
+La mayoría de empleadores no buscan mecanógrafos de élite. Buscan candidatos que cumplan un nivel razonable y no se ralenticen por una mala mecanografía cuando escribir a teclado es central en el trabajo.
+
+## Mínimos de PPM habituales según el rol
+
+| Rol | Mínimo típico de PPM |
+|---|---|
+| Administración general / oficina | 35–45 PPM |
+| Atención al cliente | 45–55 PPM |
+| Entrada de datos | 50–65 PPM |
+| Administración legal o sanitaria | 60–80 PPM |
+| Transcripción | 65–85 PPM |
+
+Si aplicas a un puesto, revisa el requisito de PPM en la oferta y asegúrate de superarlo con holgura — no solo un día suerte, sino de forma constante.
+
+## Cómo prepararte antes de la entrevista
+
+- **Practica en condiciones de examen.** No basta con teclear de forma relajada. Haz tests cronometrados completos — 60 segundos, 2 minutos, 5 minutos — en silencio, sin música y sin pausas. Simula la presión del test.
+- **Conoce tu punto de partida.** Haz un test hoy y anota el resultado. Necesitas saber dónde estás para prepararte bien.
+- **Prioriza la precisión, no la velocidad máxima.** A muchos empleadores les importa más un 98 % de precisión a 50 PPM que un 90 % a 65 PPM. Los errores descalifican en muchos roles.
+- **Consigue un certificado.** Muchos empleadores — sobre todo en remoto — aceptan o valoran un certificado de mecanografía verificado. Adjúntalo a la candidatura y quizá evites la prueba presencial.
+
+## El día del test
+
+- Siéntate con la espalda recta, pies en el suelo y muñecas relajadas sobre el teclado.
+- Lee el texto antes de empezar si te lo permiten.
+- Teclea al ritmo que has practicado — no más rápido por los nervios.
+- Si te equivocas, sigue. Detenerte rompe el ritmo y genera más errores.
+- Respira despacio si notas las manos tensas.
+
+## Después del test
+
+Si la puntuación es más baja de lo esperado, sé honesto y proactivo. Indica que estás mejorando activamente tu velocidad y ofrece un certificado como prueba adicional de tu compromiso.
+
+[Practica gratis y obtén un certificado antes de tu próxima entrevista →](https://www.typingverified.com/certificate)
+    `,
   }];
