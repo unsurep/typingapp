@@ -82,6 +82,30 @@ export const blogPostTranslations: {
       metaDescription:
         "De nombreux employeurs utilisent des tests de frappe lors du recrutement. Voici ce qu'ils mesurent vraiment, les scores attendus, et comment vous préparer pour donner le meilleur de vous-même.",
     },
+    "fastest-typists-in-history": {
+      title:
+        "Les 10 dactylos les plus rapides de l'histoire (et ce qu'on peut en apprendre)",
+      metaDescription:
+        "Des records à la machine à écrire en 1946 aux champions modernes du clavier : les 10 dactylos les plus rapides de l'histoire et ce qui les rendait exceptionnels.",
+    },
+    "typing-speed-percentile-chart": {
+      title:
+        "Tableau des percentiles de vitesse de frappe : êtes-vous dans le top 10 % ?",
+      metaDescription:
+        "Où se situe votre vitesse de frappe au niveau mondial ? Utilisez ce tableau complet des percentiles pour voir exactement comment vous vous comparez aux autres dactylos.",
+    },
+    "how-long-to-learn-touch-typing": {
+      title:
+        "Combien de temps faut-il pour apprendre la frappe au clavier ? (Calendrier réaliste)",
+      metaDescription:
+        "Vous vous demandez combien de temps il faut pour apprendre la frappe au clavier ? Voici un calendrier honnete et realiste - du debutant complet a la vitesse professionnelle - base sur une pratique quotidienne.",
+    },
+    "typing-speed-for-data-entry-jobs": {
+      title:
+        "Quelle vitesse de frappe pour les emplois de saisie de données ? (Exigences 2026)",
+      metaDescription:
+        "Les emplois de saisie de données imposent des exigences de WPM précises. Ce qu'attendent les employeurs en 2026, comment vous préparer et comment un certificat renforce votre candidature.",
+    },
   },
   es: {
     "average-typing-speed-2026": {
@@ -157,6 +181,30 @@ export const blogPostTranslations: {
         "Cómo superar un test de mecanografía en una entrevista de trabajo (lo que buscan de verdad los empleadores)",
       metaDescription:
         "Muchos empleadores usan pruebas de mecanografía en el proceso de selección. Esto es lo que miden, qué puntuaciones esperan y cómo prepararte para dar lo mejor de ti.",
+    },
+    "fastest-typists-in-history": {
+      title:
+        "Los 10 mecanógrafos más rápidos de la historia (y qué puedes aprender de ellos)",
+      metaDescription:
+        "Desde récords de máquina de escribir en 1946 hasta campeones modernos del teclado: los 10 mecanógrafos más rápidos de la historia y qué los hizo excepcionales.",
+    },
+    "typing-speed-percentile-chart": {
+      title:
+        "Tabla de percentiles de mecanografía: ¿estás en el 10% superior?",
+      metaDescription:
+        "¿En qué puesto global está tu velocidad de mecanografía? Usa esta tabla completa de percentiles para ver exactamente cómo te comparas con otros mecanógrafos.",
+    },
+    "how-long-to-learn-touch-typing": {
+      title:
+        "¿Cuánto tiempo se tarda en aprender mecanografía al tacto? (Cronograma realista)",
+      metaDescription:
+        "¿Te preguntas cuánto tarda en aprenderse la mecanografía al tacto? Aquí tienes un cronograma honesto y realista - desde principiante total hasta velocidad profesional - basado en la práctica diaria.",
+    },
+    "typing-speed-for-data-entry-jobs": {
+      title:
+        "¿Qué velocidad de mecanografía necesitas para trabajos de entrada de datos? (Requisitos 2026)",
+      metaDescription:
+        "Los trabajos de entrada de datos exigen un PPM concreto. Qué esperan los empleadores en 2026, cómo prepararte y cómo un certificado refuerza tu candidatura.",
     },
   },
   de: {
@@ -234,6 +282,30 @@ export const blogPostTranslations: {
       metaDescription:
         "Viele Arbeitgeber nutzen Tipp-Tests in der Einstellung. Hier erfahren Sie, was gemessen wird, welche Werte erwartet werden und wie Sie sich optimal vorbereiten.",
     },
+    "fastest-typists-in-history": {
+      title:
+        "Die 10 schnellsten Tipper der Geschichte (und was Sie von ihnen lernen können)",
+      metaDescription:
+        "Von Schreibmaschinenrekorden 1946 bis zu modernen Tastatur-Champions: die 10 schnellsten Tipper der Geschichte und was sie auszeichnete.",
+    },
+    "typing-speed-percentile-chart": {
+      title:
+        "Tippgeschwindigkeit-Perzentil-Tabelle: Sind Sie in den Top 10 %?",
+      metaDescription:
+        "Wo steht Ihre Tippgeschwindigkeit weltweit? Nutzen Sie diese vollständige Tippgeschwindigkeit-Perzentil-Tabelle, um genau zu sehen, wie Sie im Vergleich zu anderen abschneiden.",
+    },
+    "how-long-to-learn-touch-typing": {
+      title:
+        "Wie lange dauert es, Touch-Typing zu lernen? (Realistische Zeitleiste)",
+      metaDescription:
+        "Sie fragen sich, wie lange es dauert, Touch-Typing zu lernen? Hier ist eine ehrliche, realistische Zeitleiste - vom absoluten Anfang bis zur professionellen Geschwindigkeit - basierend auf taeglicher Uebung.",
+    },
+    "typing-speed-for-data-entry-jobs": {
+      title:
+        "Welche Tippgeschwindigkeit brauchen Sie für Datenerfassungsjobs? (Anforderungen 2026)",
+      metaDescription:
+        "Datenerfassungsjobs haben konkrete WPM-Anforderungen. Das erwarten Arbeitgeber 2026, wie Sie sich vorbereiten und wie ein Zertifikat Ihre Bewerbung stärkt.",
+    },
   },
   pt: {
     "average-typing-speed-2026": {
@@ -309,6 +381,29 @@ export const blogPostTranslations: {
         "Como passar num teste de digitação numa entrevista de emprego (o que os empregadores realmente avaliam)",
       metaDescription:
         "Muitos empregadores usam testes de digitação na contratação. Saiba o que medem, que pontuações esperam e como se preparar para o seu melhor desempenho.",
+    },
+    "fastest-typists-in-history": {
+      title:
+        "Os 10 digitadores mais rápidos da história (e o que pode aprender com eles)",
+      metaDescription:
+        "Dos recordes de máquina de escrever em 1946 aos campeões modernos de velocidade no teclado: os 10 digitadores mais rápidos da história e o que os tornou excecionais.",
+    },
+    "typing-speed-percentile-chart": {
+      title: "Tabela de percentis de velocidade de digitação: você está no top 10%?",
+      metaDescription:
+        "Onde a sua velocidade de digitação se posiciona globalmente? Use esta tabela completa de percentis para ver exatamente como se compara com outros digitadores.",
+    },
+    "how-long-to-learn-touch-typing": {
+      title:
+        "Quanto tempo demora para aprender digitacao ao toque? (Cronograma realista)",
+      metaDescription:
+        "Quer saber quanto tempo leva para aprender digitacao ao toque? Aqui esta um cronograma honesto e realista - do iniciante total a velocidade profissional - com base na pratica diaria.",
+    },
+    "typing-speed-for-data-entry-jobs": {
+      title:
+        "Que velocidade de digitação precisa para empregos de introdução de dados? (Requisitos 2026)",
+      metaDescription:
+        "Empregos de introdução de dados exigem PPM específicos. O que os empregadores esperam em 2026, como se preparar e como um certificado fortalece a sua candidatura.",
     },
   },
 };

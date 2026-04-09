@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: post.title,
       description: post.metaDescription,
-      images: [post.image],
+      ...(post.image ? { images: [post.image] } : {}),
     },
   };
 }
@@ -96,15 +96,17 @@ export default async function BlogPostPage({ params }: Props) {
             {post.title}
           </h1>
 
-          <div className="relative aspect-21/9 overflow-hidden rounded-3xl border border-border shadow-2xl">
-            <Image
-              src={post.image}
-              alt={post.title}
-              fill
-              className="object-cover"
-              priority
-            />
-          </div>
+          {post.image ? (
+            <div className="relative aspect-21/9 overflow-hidden rounded-3xl border border-border shadow-2xl">
+              <Image
+                src={post.image}
+                alt={post.title}
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+          ) : null}
         </header>
 
         <div className="prose dark:prose-invert max-w-none prose-headings:text-foreground prose-p:text-muted-foreground prose-a:text-primary prose-strong:text-foreground">

@@ -13,6 +13,7 @@ export default function BlogCard({ post, index }: { post: BlogPost; index: numbe
   const readingTime = getReadingTimeMinutes(post.content);
   const t = useTranslations("BlogCard");
   const locale = useLocale();
+  // Same date display policy as the article page — see `formatBlogPublishDate` in lib/blog-date.ts
   const displayDate = formatBlogPublishDate(post.publishDate, locale);
 
   return (
@@ -22,14 +23,21 @@ export default function BlogCard({ post, index }: { post: BlogPost; index: numbe
       transition={{ duration: 0.4, delay: index * 0.1 }}
       className="group relative flex flex-col overflow-hidden rounded-2xl border border-border bg-card transition-all hover:shadow-xl hover:shadow-primary/5"
     >
-      <Link href={`/blog/${post.slug}`} className="relative aspect-[16/9] overflow-hidden">
-        <Image
-          src={post.image}
-          alt={post.title}
-          fill
-          className="object-cover transition-transform duration-500 group-hover:scale-105"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+      <Link
+        href={`/blog/${post.slug}`}
+        className="relative aspect-[16/9] overflow-hidden bg-muted"
+      >
+        {post.image ? (
+          <>
+            <Image
+              src={post.image}
+              alt={post.title}
+              fill
+              className="object-cover transition-transform duration-500 group-hover:scale-105"
+            />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+          </>
+        ) : null}
       </Link>
 
       <div className="flex flex-1 flex-col p-6">

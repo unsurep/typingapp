@@ -5,7 +5,7 @@ export const blogPostsFr: BlogPost[] = [  {
     slug: "average-typing-speed-2026",
     metaDescription:
       "The global average typing speed is lower than most people expect. Here's where you rank by profession, age group, and experience level in 2026.",
-    publishDate: "Jan 12, 2026",
+    publishDate: "Jan 5, 2026",
     image: "/blog/what-is-a-good-typing-speed.png",
     content: `La plupart des gens supposent qu’ils tapent à une vitesse moyenne ou supérieure. La plupart des gens ont tort. 
 
@@ -65,7 +65,7 @@ La bonne nouvelle : passer de la moyenne (41 WPM) à la moyenne supérieure (60 
     slug: "typing-speed-by-age-2026",
     metaDescription:
       "Which generation types the fastest? The answer might surprise you. Here's the complete breakdown of average typing speed by age group in 2026.",
-    publishDate: "Jan 19, 2026",
+    publishDate: "Jan 7, 2026",
     image: "/blog/t2.png",
     content: `On pourrait supposer que les jeunes tapent plus vite : après tout, ils ont grandi avec la technologie. Mais les données racontent une histoire plus complexe et les résultats pourraient véritablement vous surprendre. 
 
@@ -107,7 +107,7 @@ Le point pratique à retenir : quel que soit votre âge ou votre génération, 
     title: "What Is a Good Typing Speed? (And How to Improve Yours)",
     slug: "what-is-a-good-typing-speed",
     metaDescription: "Wondering what counts as a good WPM? Learn the average typing speeds by profession and how to improve yours with targeted practice.",
-    publishDate: "Jan 26, 2026",
+    publishDate: "Jan 9, 2026",
     image: "/blog/t3.png",
     content: `La plupart des gens tapent entre 40 et 60 mots par minute (WPM). Mais ce qui est réellement considéré comme « bon » dépend de votre objectif. Si vous n’écrivez qu’occasionnellement des emails, 40 WPM peuvent suffire. Si vous travaillez dans les opérations, le support, le codage, l'administration juridique ou la transcription, votre rapidité et votre cohérence peuvent affecter directement le rendement, la confiance et les opportunités de carrière. 
 
@@ -209,7 +209,7 @@ Si vous souhaitez des progrès mesurables, utilisez des leçons structurées, te
     slug: "is-40-wpm-good",
     metaDescription:
       "Is 40 WPM a good typing speed? Here's an honest answer based on industry benchmarks, plus a clear plan for improving quickly.",
-    publishDate: "Feb 2, 2026",
+    publishDate: "Jan 11, 2026",
     image: "/blog/t1.png",
     content: `La réponse courte : 40 WPM est la moyenne. Il est suffisant pour une utilisation quotidienne de l'ordinateur et pour de nombreux rôles de bureau généraux. Mais il reste inférieur au seuil pour la plupart des emplois spécifiques à la dactylographie. 
 
@@ -259,7 +259,7 @@ La plupart des personnes qui suivent ce plan atteignent 55 à 65 WPM en 6 semain
     slug: "typing-speed-vs-accuracy-math",
     metaDescription:
       "Think typing faster is always better? The math says otherwise. Here's why accuracy beats raw speed — and how net WPM actually works.",
-    publishDate: "Feb 9, 2026",
+    publishDate: "Jan 13, 2026",
     image: "/blog/t4.png",
     content: `Voici un fait qui surprend la plupart des gens : une dactylo faisant 80 WPM avec une précision de 85 % produit moins de texte utilisable par minute qu'une autre faisant 55 WPM avec une précision de 99 %. 
 
@@ -307,109 +307,56 @@ La vitesse suivra. C’est toujours le cas.
 [Testez votre précision et votre WPM net dès maintenant →](https://www.typingverified.com/test)`,
   },
   {
-    title: "Touch Typing vs. Hunt-and-Peck — Which Is Better?",
+    title: "Dactylo au toucher vs. chasse-et-pic: comparaison honnete",
     slug: "touch-typing-vs-hunt-and-peck",
-    metaDescription: "Should you learn touch typing or stick with hunt-and-peck? Here's an honest comparison and why the answer is almost always touch typing.",
-    publishDate: "Feb 16, 2026",
+    metaDescription:
+      "Dactylo au toucher ou chasse-et-pic: quelle methode est vraiment plus rapide? Comparaison honnete, plafonds de vitesse et transition.",
+    publishDate: "Jan 29, 2026",
     image: "/blog/touch-typing-vs-hunt-and-peck.png",
-    content: `Si vous n'utilisez pas les dix doigts, vous utilisez probablement une forme de chasse et de picage : rechercher visuellement des touches et les appuyer avec un à trois doigts. Beaucoup de gens deviennent étonnamment rapides avec cette méthode au fil du temps, donc cela peut sembler « assez bien ». Mais lorsque la vitesse, la cohérence et le confort de longue session comptent, les différences entre la saisie par chasse et picorage et la saisie tactile deviennent difficiles à ignorer. 
+    content: `Si vous tapez depuis longtemps avec deux doigts et que vous atteignez deja 50 WPM, vous vous demandez peut-etre: est-ce vraiment utile de passer au toucher?
 
-## Ce que Hunt-and-Peck fait bien 
+La reponse honnete est plus nuancee qu'on ne le pense.
 
-Chasser et picorer n’est pas inutile. Cela présente quelques avantages à court terme : 
+## Qu'est-ce que la methode chasse-et-pic?
 
-- Il est facile de démarrer sans formation formelle. 
-- Cela semble familier aux utilisateurs occasionnels. 
-- Vous pouvez mémoriser des mots et des raccourcis courants au fil des années. 
+La chasse-et-pic est la methode par defaut sans formation formelle. On cherche les touches avec les yeux et on les presse avec un, deux ou parfois trois doigts. Certains deviennent rapides par repetition et montent a 60-70 WPM.
 
-Certains dactylographes expérimentés atteignent 50 à 70 WPM, en particulier sur des claviers familiers et des tâches répétées. Si telle est votre référence, la méthode peut sembler suffisamment efficace pour une utilisation quotidienne. 
+## Qu'est-ce que la dactylo au toucher?
 
-## Là où Hunt-and-Peck commence à se briser 
+La frappe au toucher utilise les dix doigts places sur la rangee de base (ASDF a gauche, JKL; a droite). Chaque doigt couvre une zone precise. Avec un bon entrainement, on tape sans regarder le clavier.
 
-À mesure que la complexité du texte augmente, la recherche et le picage montrent des limites structurelles : 
+## Comparaison de vitesse
 
-- Plus de mouvements oculaires entre le clavier et l'écran 
-- Rythme moins stable sur la ponctuation, les symboles et les chiffres 
-- Récupération plus lente après des erreurs 
-- Une plus grande fatigue au niveau des index et des épaules 
-- Mise à l'échelle plus difficile au-delà des plages de vitesse modérées 
+| Mesure | Chasse-et-pic | Dactylo au toucher |
+|---|---|---|
+| Vitesse moyenne | 30-50 WPM | 50-70 WPM |
+| Plafond realiste | 60-70 WPM | 100-120+ WPM |
+| Precision (typique) | 88-93% | 94-99% |
+| Fatigue visuelle | Elevee (regards clavier) | Faible (yeux ecran) |
+| Fatigue main/poignet | Moyenne a elevee | Faible (charge repartie sur 10 doigts) |
+| Courbe de transition | 2-4 semaines plus lent | N/A (apprentissage initial) |
 
-La méthode repose sur une confirmation visuelle, qui ajoute une charge cognitive et interrompt le flux. 
+Le chiffre cle est le **plafond maximal**. Meme avec beaucoup d'experience, depasser 70 WPM avec deux doigts est rare. Atteindre 90, 100 ou 120 WPM devient pratiquement impossible.
 
-## Pourquoi la saisie tactile gagne à long terme 
+Le toucher offre un plafond bien plus haut car la charge est repartie sur tous les doigts, avec moins de deplacements et une meilleure anticipation des frappes.
 
-La saisie tactile maintient vos doigts ancrés dans la ligne d'accueil et attribue à chaque doigt des touches spécifiques. Cette conception crée des avantages majeurs en termes de performances : 
+## La phase de transition
 
-- **Plafond de vitesse plus élevé :** les meilleurs dactylographes utilisent des schémas de mouvement avec tous les doigts, et non une recherche visuelle par clé. 
-- **Meilleure cohérence de précision :** moins d'interruptions visuelles signifient une concentration plus constante sur le contenu. 
-- **Fatigue réduite :** la charge de travail est répartie entre les deux mains. 
-- **Transférabilité :** adaptation plus facile aux nouveaux claviers et environnements de travail. 
+La principale raison d'eviter le changement est la baisse temporaire de vitesse. En passant de 50 WPM en chasse-et-pic a la frappe au toucher, on peut tomber vers 25 WPM au debut.
 
-Pour quiconque tape professionnellement, ces différences s’aggravent chaque jour. 
+Ce n'est pas une regression reelle. C'est le cout normal pour construire une base plus solide. La plupart recuperent leur vitesse initiale en 2-4 semaines de pratique quotidienne, puis progressent au-dela.
 
-## Comparaison avec le monde réel 
+## Verdict
 
-Deux dactylographes peuvent démarrer à la même vitesse mais progresser de manière très différente : 
+Si vous tapez pour le travail ou voulez progresser nettement, la dactylo au toucher est le bon investissement long terme. La transition est temporairement inconfortable et durablement rentable.
 
-| Dactylographe | Méthode | Vitesse actuelle | Précision | Tendance sur 3 mois | 
-|---|---|---|---|---| 
-| Un | Chasser et picorer | 55 mots par minute | 93-95% | Gains mineurs, plateaux fréquents | 
-| B | Saisie tactile | 45 mots par minute | 96-98% | Amélioration constante à 60+ WPM | 
-
-Le dactylographe A peut sembler plus rapide maintenant, mais le dactylographe B dépasse souvent avec une meilleure mécanique et moins de corrections. 
-
-## La partie la plus difficile : le trempage de transition 
-
-Le plus grand obstacle est la régression temporaire. Si vous passez de la recherche et du picage à la saisie tactile, la vitesse diminue souvent pendant 1 à 3 semaines. Cette baisse est normale. Vous remplacez les anciens modèles de mouvement par des modèles plus évolutifs. 
-
-Chronologie commune : 
-
-1. **Jours 1 à 5 :** affectations de doigts difficiles, WPM inférieur. 
-2. **Jours 6 à 14 :** meilleure confiance en la clé, la précision se stabilise. 
-3. **Semaines 3 à 4 :** la vitesse commence à revenir vers l'ancienne ligne de base. 
-4. **Après la semaine 4 :** de nombreux apprenants dépassent l'ancienne vitesse avec un meilleur contrôle. 
-
-Le succès dépend moins du talent que de la régularité au quotidien. 
-
-## Comment changer sans frustration 
-
-Utilisez une stratégie de transition pratique : 
-
-1. Engagez-vous à dactylographier pour des séances d’entraînement dédiées. 
-2. Gardez les séances courtes (15 à 20 minutes) pour éviter l'épuisement professionnel. 
-3. Concentrez-vous sur la précision avant la vitesse. 
-4. Évitez de regarder le clavier, même lorsque vous êtes tenté. 
-5. Suivez les progrès hebdomadaires au lieu de juger une mauvaise journée. 
-
-Si les délais de travail sont serrés, vous pouvez utiliser temporairement vos anciennes habitudes pour les tâches urgentes et la dactylographie pour les blocs de formation, puis progressivement. 
-
-## Erreurs à éviter pendant la transition 
-
-- Changer les règles des doigts tous les jours (la cohérence compte) 
-- Passer trop tôt aux textes avancés 
-- Sprint pour le meilleur WPM avant que le contrôle de base ne soit stable 
-- Pratiquer uniquement les lettres et sauter les lignes de ponctuation/numéros 
-- Arrêter pendant la première semaine de régression 
-
-La plupart des gens qui se sentent « coincés » sont en réalité en pleine adaptation. 
-
-## Qui devrait rester avec Hunt-and-Peck ? 
-
-Si vous tapez très peu et n’avez pas besoin de gains de vitesse, la chasse et la piqûre peuvent rester acceptables. Mais si vous rédigez des rapports, codez, discutez avec des clients ou traitez des textes volumineux, la saisie tactile vaut presque toujours la peine d'être apprise. 
-
-Le seuil de rentabilité est simple : si la frappe au clavier affecte quotidiennement votre productivité, de meilleurs mécaniciens se rentabilisent rapidement. 
-
-## Verdict final 
-
-La chasse et le picage peuvent être réalisables, mais la saisie tactile est le système à long terme le plus puissant en termes de vitesse, de précision et de confort. La baisse à court terme du WPM est temporaire ; la hausse à long terme est durable. 
-
-Commencez par la discipline à domicile, entraînez-vous tous les jours et faites confiance au processus. [Commencez des cours de dactylographie structurés sur Typingverified.](https://www.typingverified.com/lessons)`,
+[Commencez vos lecons de dactylo gratuitement →](https://www.typingverified.com/lessons)`,
   },
   {
     title: "5 Typing Habits That Are Slowing You Down",
     slug: "typing-habits-slowing-you-down",
     metaDescription: "Bad typing habits can cap your WPM and cause fatigue. Here are 5 common mistakes and how to fix them.",
-    publishDate: "Feb 23, 2026",
+    publishDate: "Jan 15, 2026",
     image: "/blog/typing-habits-slowing-you-down.png",
     content: `De nombreux dactylographes pensent qu'ils sont limités par leur talent, la qualité du clavier ou le manque de temps. En réalité, les progrès sont souvent bloqués par des habitudes qui semblent normales mais qui réduisent discrètement la vitesse et la précision. La bonne nouvelle : les habitudes peuvent être modifiées plus rapidement que la plupart des gens ne le pensent. 
 
@@ -551,7 +498,7 @@ Si vous souhaitez des exercices structurés pour ces problèmes précis, [entra�
     slug: "30-day-typing-speed-challenge-results",
     metaDescription:
       "I committed to a 30-day typing speed challenge. Here's my honest progress log, what worked, what didn't, and how much my WPM actually improved.",
-    publishDate: "Mar 2, 2026",
+    publishDate: "Jan 17, 2026",
     image: "/blog/t5.png",
     content: `J'ai eu un problème. Je tapais tous les jours depuis des années – des e-mails, des rapports, des messages – et je n'avais aucune idée à quelle vitesse j'allais réellement. Je pensais que j'étais décent. J'ai eu tort. 
 
@@ -620,7 +567,7 @@ Commencez dès aujourd’hui par un test de base. Notez votre WPM et votre préc
     slug: "remote-jobs-that-require-typing-2026",
     metaDescription:
       "Looking for work-from-home jobs that match your typing skills? Here are 10 remote jobs in 2026 that require fast, accurate typing — and how to qualify.",
-    publishDate: "Mar 9, 2026",
+    publishDate: "Jan 19, 2026",
     image: "/blog/t6.png",
     content: `Si vous pouvez taper rapidement et avec précision, vous possédez une compétence commercialisable qui est actuellement très demandée. Les employeurs distants de plusieurs secteurs recrutent activement pour des postes à forte intensité de dactylographie – et beaucoup d'entre eux ne nécessitent pas de diplôme. 
 
@@ -718,7 +665,7 @@ Avant de postuler, passez un test gratuit pour connaître votre WPM actuel, puis
     title: "How to Earn a Typing Certificate (And Why It's Worth It)",
     slug: "how-to-earn-typing-certificate",
     metaDescription: "A typing certificate can strengthen your resume and prove your skills to employers. Here's how to earn one and where it helps most.",
-    publishDate: "Mar 16, 2026",
+    publishDate: "Jan 21, 2026",
     image: "/blog/how-to-earn-typing-certificate.png",
     content: `Un certificat de dactylographie est un document pratique de preuve de compétence. Il montre les employeurs, les clients ou les programmes de formation que vous pouvez taper à une vitesse vérifiée avec un niveau de précision vérifié. Dans un marché concurrentiel, cette simple preuve peut aider votre candidature à se démarquer plus rapidement qu'une affirmation générique de « saisie rapide » sur un CV. 
 
@@ -822,7 +769,7 @@ Si vous êtes prêt à obtenir le vôtre, commencez par une pratique structurée
     slug: "typing-certificate-helped-land-remote-job",
     metaDescription:
       "One job seeker shares how earning a typing certificate changed their application results. A real story about skill, confidence, and getting hired remotely.",
-    publishDate: "Mar 23, 2026",
+    publishDate: "Jan 23, 2026",
     image: "/blog/t7.png",
     content: `Il y a six mois, je postulais pour des postes de saisie de données à distance et je n'ai reçu aucun rappel. Mon CV était solide. Mes lettres de motivation ont été adaptées. Mais j’étais en compétition avec des centaines de candidats pour chaque poste et je n’avais rien qui me distinguait. 
 
@@ -866,7 +813,7 @@ Le certificat ne m'a pas permis d'obtenir le poste à lui seul. Mais cela m'a s�
     title: "How to Prepare for a Typing Test at a Job Interview",
     slug: "prepare-for-typing-test-job-interview",
     metaDescription: "Many employers require a typing test during hiring. Here's how to prepare, what to expect, and how to stay calm on the day.",
-    publishDate: "Mar 30, 2026",
+    publishDate: "Jan 25, 2026",
     image: "/blog/prepare-for-typing-test-job-interview.png",
     content: `Si vous postulez pour des postes de saisie de données, d'assistance administrative, de service client, d'assistant juridique ou de transcription, un test de dactylographie peut faire partie du processus d'entretien. Pour de nombreux candidats, cette étape est stressante car les performances sont mesurées en direct. La bonne nouvelle est que les tests de dactylographie peuvent facilement être entraînés lorsque vous vous préparez avec la bonne structure. 
 
@@ -1002,7 +949,7 @@ Si vous souhaitez effectuer une analyse comparative aujourd'hui, [exécutez un t
     slug: "what-is-net-wpm",
     metaDescription:
       "WPM brut et WPM net ne sont pas identiques. Voici ce qu’est le WPM net, comment il se calcule et pourquoi c’est le chiffre qui intéresse les employeurs.",
-    publishDate: "Apr 1, 2026",
+    publishDate: "Jan 27, 2026",
     image: "/blog/t8.png",
     content: `
 Quand la plupart des gens parlent de leur vitesse de frappe, ils citent leur WPM brut - le nombre brut de mots tapes par minute. Mais les employeurs, les tests de frappe et les evaluations professionnelles utilisent presque toujours une autre metrique : le WPM net.
@@ -1048,7 +995,7 @@ Pratiquez avec des objectifs de precision : visez 97 % ou plus a chaque session,
     slug: "how-to-pass-typing-test-job-interview",
     metaDescription:
       "De nombreux employeurs utilisent des tests de frappe lors du recrutement. Voici ce qu'ils mesurent vraiment, les scores attendus, et comment vous préparer pour donner le meilleur de vous-même.",
-    publishDate: "Apr 4, 2026",
+    publishDate: "Feb 4, 2026",
     image: "/blog/t9.png",
     content: `
 Beaucoup de candidats sont pris au dépourvu par un test de frappe pendant le processus de recrutement. Vous avez préparé votre CV, répété vos réponses et renseigné l'entreprise — puis un recruteur vous envoie un lien vers une évaluation de frappe de 5 minutes.
@@ -1097,5 +1044,202 @@ Si vous postulez, renseignez l'exigence de WPM dans l'annonce et assurez-vous de
 Si le score est plus bas que prévu, soyez honnête et proactif. Expliquez que vous travaillez activement votre vitesse et proposez un certificat comme preuve de votre engagement.
 
 [Pratiquez gratuitement et obtenez un certificat avant votre prochain entretien →](https://www.typingverified.com/certificate)
+    `,
+  },
+  {
+    title:
+      "Les 10 dactylos les plus rapides de l'histoire (et ce qu'on peut en apprendre)",
+    slug: "fastest-typists-in-history",
+    metaDescription:
+      "Des records à la machine à écrire en 1946 aux champions modernes du clavier : les 10 dactylos les plus rapides de l'histoire et ce qui les rendait exceptionnels.",
+    publishDate: "Feb 2, 2026",
+    image: "/blog/t10.png",
+    content: `
+Les dactylos les plus rapides de l'histoire rappellent à beaucoup de professionnels leur place. Quand quelqu'un dépasse 200 mots par minute — plus vite que la plupart des gens ne parlent — la compétence devient presque un super-pouvoir.
+
+Voici dix des dactylos les plus remarquables jamais enregistrés, et ce que leur technique nous apprend.
+
+## 1. Stella Pajunas — 216 WPM (1946)
+
+Stella Pajunas a battu un record du monde en 1946 sur une machine à écrire électrique IBM, avec 216 WPM. Ce record a tenu des décennies. Le plus frappant : elle y est parvenue sur une machine bien plus résistante qu'un clavier moderne, exigeant une vraie force à chaque frappe.
+
+Sa technique : maîtrise totale de la rangée de repos et aucune hésitation. On dit qu'elle ne regardait jamais le clavier.
+
+## 2. Barbara Blackburn — 212 WPM soutenus (2005)
+
+Barbara Blackburn détient le record Guinness de la vitesse soutenue la plus élevée : 150 WPM pendant 50 minutes, avec des pics à 212 WPM. Elle utilisait la disposition Dvorak plutôt que QWERTY, qu'elle créditait pour réduire fortement le parcours des doigts.
+
+## 3. Anthony Ermolin — 210 WPM (17 ans)
+
+L'un des plus jeunes dactylos d'élite documentés : Ermolin a atteint 210 WPM adolescent sur un QWERTY standard. Il a répété les mêmes courts passages des milliers de fois jusqu'à exécution sans réflexion consciente.
+
+## 4. Sean Wrona — 256 WPM en pointe
+
+Sean Wrona a enregistré des pointes à 256 WPM en compétition. À très haute vitesse, le texte disparaît de la conscience : les doigts anticipent pendant que les mots précédents se terminent presque tout seuls.
+
+## 5. Nathan Sanfilippo — plusieurs titres
+
+En tournoi, il domine avec plus de 150 WPM en continu et une précision quasi parfaite. Sa méthode s'appelle le « word chunk drilling » : travailler des séquences de deux ou trois mots plutôt que mot par mot.
+
+## Ce que tous les dactylos d'élite ont en commun
+
+Au-delà des styles, ils partagent ceci :
+
+1. **Aucun regard sur le clavier.** Sans exception.
+2. **La précision d'abord.** La vitesse s'est bâtie sur la précision, pas l'inverse.
+3. **Répétition volontaire.** La performance vient d'une pratique intentionnelle, pas seulement du volume.
+4. **Rangée de repos maîtrisée.** Elle est le socle de tout système rapide.
+
+Vous n'avez pas besoin de 200 WPM. Mais les techniques qui mènent à 200 WPM sont les mêmes qui vous font passer de 45 à 70.
+
+[Construisez des habitudes d'élite avec les leçons Typingverified →](https://www.typingverified.com/lessons)
+    `,
+  },
+  {
+    title:
+      "Quelle vitesse de frappe pour les emplois de saisie de données ? (Exigences 2026)",
+    slug: "typing-speed-for-data-entry-jobs",
+    metaDescription:
+      "Les emplois de saisie de données imposent des exigences de WPM précises. Ce qu'attendent les employeurs en 2026, comment vous préparer et comment un certificat renforce votre candidature.",
+    publishDate: "Jan 31, 2026",
+    image: "/blog/t11.png",
+    content: `
+La saisie de données compte parmi les portes d'entrée les plus accessibles du télétravail — et parmi les plus compétitives. Comprendre exactement quelle vitesse de frappe est attendue vous aide à préparer vos compétences et votre dossier.
+
+## Exigences de WPM courantes pour la saisie de données en 2026
+
+La plupart des offres fixent un WPM minimum. Voici ce que vous verrez souvent :
+
+| Rôle | WPM minimum | Précision |
+| --- | --- | --- |
+| Saisie générale | 45–55 WPM | 95 %+ |
+| Spécialiste saisie | 55–65 WPM | 97 %+ |
+| Saisie senior / gros volume | 65–80 WPM | 98 %+ |
+| Saisie numérique (pavé) | 8 000–10 000 KPH | 99 %+ |
+| Saisie médicale | 60–75 WPM | 98 %+ |
+
+Certaines fiches mesurent la vitesse en **frappes par heure (KPH)** plutôt qu'en WPM. 10 000 KPH équivaut environ à 40 WPM sur du texte courant.
+
+## Ce que testent vraiment les employeurs
+
+Lorsqu'un employeur de saisie vous fait passer un test, il regarde souvent :
+
+- Votre WPM net (vitesse moins les erreurs)
+- Votre pourcentage de précision
+- Votre capacité à tenir le rythme sur du texte peu familier et non conversationnel
+- Parfois : la vitesse au pavé numérique si le poste implique des chiffres
+
+## Comment préparer un test de saisie
+
+**Entraînez-vous sur du texte non conversationnel.** La saisie concerne souvent des adresses, codes produits, noms et champs de base — pas de la prose. Travaillez des listes, des chiffres et du contenu mixte, pas seulement des paragraphes.
+
+**Renforcez le pavé numérique.** Si le rôle est chiffré, consacrez du temps à la ligne de chiffres et au pavé. 8 000 KPH (seuil fréquent) demande une pratique ciblée.
+
+**Visez 60 WPM avant de postuler.** Même si l'offre indique 45 WPM minimum, arriver à 60 WPM vous place mieux face aux autres candidats.
+
+**Obtenez un certificat.** Un certificat vérifié indique votre vitesse avant tout test. C'est proactif et ça leur fait gagner du temps.
+
+[Développez votre vitesse et obtenez un certificat adapté à la saisie de données →](https://www.typingverified.com/certificate)
+    `,
+  },
+  {
+    title: "Tableau des percentiles de vitesse de frappe : êtes-vous dans le top 10 % ?",
+    slug: "typing-speed-percentile-chart",
+    metaDescription:
+      "Où se situe votre vitesse de frappe au niveau mondial ? Utilisez ce tableau complet des percentiles pour voir exactement comment vous vous comparez aux autres dactylos.",
+    publishDate: "Feb 6, 2026",
+    image: "/blog/t12.png",
+    content: `
+Connaître votre WPM est utile. Savoir où ce WPM vous place parmi tous les dactylos du monde est réellement motivant — surtout quand on comprend qu'il est assez simple d'entrer dans le top 25 % avec un effort modéré.
+
+Voici la répartition complète des percentiles de vitesse de frappe.
+
+## Tableau des percentiles de vitesse de frappe
+
+| Percentile | Plage WPM | Ce que cela signifie |
+| --- | --- | --- |
+| 10 % inférieurs | 0–20 WPM | Expérience clavier très limitée |
+| 10e–25e | 21–35 WPM | Débutant, méthode chasse-et-pic |
+| 25e–50e | 36–45 WPM | Sous la moyenne, usage occasionnel |
+| 50e (médiane) | 44–46 WPM | Exactement dans la moyenne mondiale |
+| 50e–75e | 46–65 WPM | Au-dessus de la moyenne, bon niveau bureautique |
+| 75e–90e | 65–80 WPM | Dactylo rapide, niveau professionnel |
+| 90e–95e | 80–95 WPM | Très rapide, zone compétitive |
+| 95e–99e | 95–120 WPM | Niveau élite |
+| Top 1 % | 120+ WPM | Niveau expert/compétitif |
+
+## Ce qu'il faut pour atteindre chaque palier
+
+**Top 50 % (45+ WPM) :** Accessible à presque tout le monde avec 2 à 4 semaines de pratique de base. Si vous êtes actuellement sous 45 WPM, c'est votre première cible.
+
+**Top 25 % (65+ WPM) :** Demande une vraie technique au clavier et 4 à 8 semaines de pratique quotidienne délibérée. C'est souvent à partir de ce niveau que les rôles pro paient davantage.
+
+**Top 10 % (80+ WPM) :** Demande un entraînement régulier pendant 2 à 4 mois. À ce niveau, les employeurs le remarquent, et les postes de transcription/sous-titrage deviennent plus accessibles.
+
+**Top 1 % (120+ WPM) :** Demande des années de pratique ciblée et une technique d'élite. La plupart des gens n'ont pas besoin d'aller aussi loin — mais c'est une bonne étoile polaire.
+
+## Où vous situez-vous aujourd'hui ?
+
+Faites un test chronométré gratuit maintenant pour connaître votre WPM exact et le comparer au tableau ci-dessus.
+
+[Trouvez votre percentile avec un test de frappe gratuit →](https://www.typingverified.com/test)
+    `,
+  },
+  {
+    title:
+      "Combien de temps faut-il pour apprendre la frappe au clavier ? (Calendrier réaliste)",
+    slug: "how-long-to-learn-touch-typing",
+    metaDescription:
+      "Vous vous demandez combien de temps il faut pour apprendre la frappe au clavier ? Voici un calendrier honnete et realiste - du debutant complet a la vitesse professionnelle - base sur une pratique quotidienne.",
+    publishDate: "Feb 8, 2026",
+    image: "/blog/t13.png",
+    content: `
+La reponse honnete : la plupart des personnes peuvent apprendre les bases de la frappe au clavier en 2-4 semaines et atteindre une vitesse professionnelle en 2-3 mois de pratique quotidienne. Mais ce delai depend fortement de votre point de depart et de votre regularite.
+
+Voici une decomposition realiste.
+
+## Semaine 1-2 : Apprendre la rangée de base
+
+La premiere phase de la frappe au clavier est la plus difficile psychologiquement. Vous desapprenez des habitudes installees depuis des annees et les remplacez par un systeme qui semble d'abord plus lent et plus inconfortable.
+
+Concentrez-vous entierement sur la rangee de base - ASDF pour la main gauche, JKL; pour la main droite. Ne passez pas aux autres rangees tant que vous ne tapez pas des combinaisons de la rangee de base sans regarder et sans hesitation.
+
+Vitesse attendue pendant cette phase : 15-30 WPM.
+
+C'est normal. Ne paniquez pas.
+
+Pratique quotidienne necessaire : 15-20 minutes.
+
+## Semaine 3-4 : Couverture complete du clavier
+
+Une fois la rangee de base solide, ajoutez la rangee du haut (QWERTY et chiffres) et la rangee du bas (ZXCVB, NM). Votre vitesse restera inferieure a votre niveau pre-fappe au clavier pendant cette phase.
+
+A la fin de la Semaine 4, la plupart des apprenants peuvent taper tout l'alphabet sans regarder, a des vitesses de 25-40 WPM.
+
+Pratique quotidienne necessaire : 15-20 minutes.
+
+## Mois 2 : Retrouver votre ancienne vitesse
+
+C'est la phase la plus motivante. Votre memoire musculaire commence a se consolider et votre vitesse monte rapidement. La plupart retrouvent leur ancienne vitesse de chasse-et-pic a la fin du Mois 2 - mais avec une meilleure technique, une meilleure precision et un plafond bien plus eleve.
+
+Vitesse attendue : 40-55 WPM.
+
+Pratique quotidienne necessaire : 15-20 minutes.
+
+## Mois 3 et au-dela : Le nouveau plafond
+
+Au Mois 3, la plupart tapent plus vite qu'ils ne l'ont jamais pu avec la methode chasse-et-pic. La phase de pratique deliberee peut se reduire - l'usage quotidien de l'ordinateur renforce et continue d'ameliorer votre vitesse automatiquement.
+
+Vitesse attendue au Mois 3 : 55-75 WPM.
+
+Apres six mois d'usage occasionnel suite a la formation, la plupart se stabilisent entre 65 et 85 WPM.
+
+## Peut-on aller plus vite ?
+
+Oui - mais cela exige de poursuivre une pratique intentionnelle au-dela du Mois 3. Atteindre 90-100 WPM prend generalement 6-12 mois de frappe quotidienne. Atteindre des vitesses d'elite de 120+ WPM prend des annees d'entrainement delibere.
+
+Pour la plupart des objectifs professionnels, 65-80 WPM avec 97%+ de precision est largement suffisant - et tout a fait atteignable en 3 mois.
+
+[Commencez votre parcours de frappe au clavier aujourd'hui avec des lecons structurees gratuites →](https://www.typingverified.com/lessons)
     `,
   }];

@@ -5,7 +5,7 @@ export const blogPostsEs: BlogPost[] = [  {
     slug: "average-typing-speed-2026",
     metaDescription:
       "The global average typing speed is lower than most people expect. Here's where you rank by profession, age group, and experience level in 2026.",
-    publishDate: "Jan 12, 2026",
+    publishDate: "Jan 5, 2026",
     image: "/blog/what-is-a-good-typing-speed.png",
     content: `La mayoría de las personas asumen que escriben a una velocidad promedio o superior. La mayoría de la gente está equivocada. 
 
@@ -65,7 +65,7 @@ La buena noticia: pasar del promedio (41 palabras por minuto) a un nivel superio
     slug: "typing-speed-by-age-2026",
     metaDescription:
       "Which generation types the fastest? The answer might surprise you. Here's the complete breakdown of average typing speed by age group in 2026.",
-    publishDate: "Jan 19, 2026",
+    publishDate: "Jan 7, 2026",
     image: "/blog/t2.png",
     content: `Se podría suponer que las personas más jóvenes escriben más rápido; después de todo, crecieron con la tecnología. Pero los datos cuentan una historia más complicada y los resultados podrían realmente sorprenderle. 
 
@@ -107,7 +107,7 @@ La conclusión práctica: independientemente de su edad o generación, la práct
     title: "What Is a Good Typing Speed? (And How to Improve Yours)",
     slug: "what-is-a-good-typing-speed",
     metaDescription: "Wondering what counts as a good WPM? Learn the average typing speeds by profession and how to improve yours with targeted practice.",
-    publishDate: "Jan 26, 2026",
+    publishDate: "Jan 9, 2026",
     image: "/blog/t3.png",
     content: `La mayoría de las personas escriben entre 40 y 60 palabras por minuto (WPM). Pero lo que realmente se considera "bueno" depende de su objetivo. Si sólo escribe correos electrónicos ocasionales, 40 palabras por minuto pueden ser suficientes. Si trabaja en operaciones, soporte, codificación, administración legal o transcripción, su velocidad y coherencia pueden afectar directamente el rendimiento, la confianza y las oportunidades profesionales. 
 
@@ -209,7 +209,7 @@ Si desea un progreso mensurable, utilice lecciones estructuradas, realice prueba
     slug: "is-40-wpm-good",
     metaDescription:
       "Is 40 WPM a good typing speed? Here's an honest answer based on industry benchmarks, plus a clear plan for improving quickly.",
-    publishDate: "Feb 2, 2026",
+    publishDate: "Jan 11, 2026",
     image: "/blog/t1.png",
     content: `La respuesta corta: 40 palabras por minuto es el promedio. Es lo suficientemente bueno para el uso diario de la computadora y para muchas funciones generales de oficina. Pero cae por debajo del umbral para la mayoría de los trabajos específicos de mecanografía. 
 
@@ -259,7 +259,7 @@ La mayoría de las personas que siguen este plan alcanzan entre 55 y 65 palabras
     slug: "typing-speed-vs-accuracy-math",
     metaDescription:
       "Think typing faster is always better? The math says otherwise. Here's why accuracy beats raw speed — and how net WPM actually works.",
-    publishDate: "Feb 9, 2026",
+    publishDate: "Jan 13, 2026",
     image: "/blog/t4.png",
     content: `He aquí un hecho que sorprende a la mayoría de la gente: un mecanógrafo que escribe 80 palabras por minuto con un 85% de precisión produce menos texto utilizable por minuto que uno que escribe 55 palabras por minuto con un 99% de precisión. 
 
@@ -307,109 +307,56 @@ La velocidad seguirá. Siempre lo hace.
 [Pruebe su precisión y WPM netos ahora mismo →](https://www.typingverified.com/test)`,
   },
   {
-    title: "Touch Typing vs. Hunt-and-Peck — Which Is Better?",
+    title: "Mecanografia tactil vs. buscar y pulsar: comparacion honesta",
     slug: "touch-typing-vs-hunt-and-peck",
-    metaDescription: "Should you learn touch typing or stick with hunt-and-peck? Here's an honest comparison and why the answer is almost always touch typing.",
-    publishDate: "Feb 16, 2026",
+    metaDescription:
+      "Mecanografia tactil vs. buscar y pulsar: cual es realmente mas rapida? Comparacion honesta, limites de velocidad y como cambiar de metodo.",
+    publishDate: "Jan 29, 2026",
     image: "/blog/touch-typing-vs-hunt-and-peck.png",
-    content: `Si no está utilizando los diez dedos, probablemente esté utilizando alguna forma de buscar y picotear: buscar teclas visualmente y presionarlas con uno a tres dedos. Muchas personas se vuelven sorprendentemente rápidas con este método con el tiempo, por lo que pueden sentirse "bastante bien". Pero cuando la velocidad, la consistencia y la comodidad de las sesiones largas son importantes, las diferencias entre buscar y picotear y mecanografiar se vuelven difíciles de ignorar. 
+    content: `Si llevas toda la vida escribiendo con dos dedos y alcanzas 50 PPM, es normal preguntarte: realmente merece la pena cambiar a mecanografia tactil?
 
-## Lo que hace bien Hunt-and-Peck 
+La respuesta honesta es mas matizada de lo que parece.
 
-Cazar y picotear no es inútil. Tiene algunas ventajas a corto plazo: 
+## Que es buscar y pulsar?
 
-- Es fácil empezar sin formación formal. 
-- Resulta familiar para los usuarios ocasionales. 
-- Puedes memorizar palabras y atajos comunes a lo largo de años. 
+Buscar y pulsar es el metodo por defecto de muchas personas sin formacion formal. Miras el teclado, localizas cada tecla y la pulsas con uno, dos o a veces tres dedos. Algunos mecanografos logran buena velocidad por repeticion y llegan a 60-70 PPM.
 
-Algunos mecanógrafos experimentados alcanzan entre 50 y 70 palabras por minuto, especialmente en teclados familiares y tareas repetitivas. Si esta es su base, el método puede parecer lo suficientemente eficiente para el uso diario. 
+## Que es mecanografia tactil?
 
-## Dónde comienza a romperse Hunt-and-Peck 
+La mecanografia tactil usa los diez dedos colocados en la fila base (ASDF izquierda, JKL; derecha). Cada dedo cubre una zona concreta de teclas. Con entrenamiento correcto, escribes sin mirar el teclado.
 
-A medida que aumenta la complejidad del texto, el cazar y picotear muestra límites estructurales: 
+## Comparacion de velocidad
 
-- Más movimiento ocular entre el teclado y la pantalla 
-- Ritmo menos estable en puntuación, símbolos y números. 
-- Recuperación más lenta después de errores 
-- Mayor fatiga en dedos índices y hombros. 
-- Escalado más difícil más allá de los rangos de velocidad moderados 
+| Metrica | Buscar y pulsar | Mecanografia tactil |
+|---|---|---|
+| Velocidad media | 30-50 PPM | 50-70 PPM |
+| Techo realista | 60-70 PPM | 100-120+ PPM |
+| Precision (tipica) | 88-93% | 94-99% |
+| Fatiga visual | Alta (miradas al teclado) | Baja (ojos en pantalla) |
+| Fatiga mano/muneca | Media a alta | Baja (carga repartida en 10 dedos) |
+| Curva de cambio | 2-4 semanas mas lento | N/A (aprendizaje desde cero) |
 
-El método se basa en la confirmación visual, lo que añade carga cognitiva e interrumpe el flujo. 
+La cifra clave es el **techo maximo**. Aunque haya casos excepcionales de 70 PPM con dos dedos, 90, 100 o 120 PPM son practicamente imposibles por mecanica fisica.
 
-## Por qué la mecanografía gana a largo plazo 
+La mecanografia tactil tiene un techo muy superior porque reparte el trabajo entre los diez dedos, reduce desplazamientos y permite preparar la siguiente pulsacion.
 
-La mecanografía táctil mantiene los dedos anclados a la fila de inicio y asigna teclas específicas a cada dedo. Ese diseño crea importantes beneficios de rendimiento: 
+## El periodo de transicion
 
-- **Límite de velocidad más alto:** los mejores mecanógrafos utilizan patrones de movimiento de los dedos completos, no búsqueda visual de teclas. 
-- **Mejor consistencia en la precisión:** menos interrupciones visuales significan un enfoque más constante en el contenido. 
-- **Fatiga reducida:** la carga de trabajo se distribuye entre ambas manos. 
-- **Transferibilidad:** adaptación más sencilla a nuevos teclados y entornos de trabajo. 
+La mayor barrera para cambiar es la bajada temporal de velocidad. Al comprometerte con la mecanografia tactil, tu ritmo cae, a veces mucho. Pasar de 50 PPM a 25 PPM se siente como retroceso.
 
-Para cualquiera que escriba profesionalmente, estas diferencias se agravan cada día. 
+No lo es. Es el coste normal de construir una base mejor. La mayoria recupera su velocidad inicial en 2-4 semanas de practica diaria y luego supera su antiguo limite.
 
-## Comparación del mundo real 
+## Veredicto
 
-Dos mecanógrafos pueden empezar a la misma velocidad pero progresar de manera muy diferente: 
+Si escribes de forma profesional o quieres mejorar de verdad, la mecanografia tactil es la inversion correcta a largo plazo. El proceso duele un poco al principio y compensa para siempre.
 
-| Mecanógrafo | Método | Velocidad actual | Precisión | Tendencia de 3 meses | 
-|---|---|---|---|---| 
-| Un | Cazar y picotear | 55 palabras por minuto | 93-95% | Ganancias menores, frecuentes estancamientos | 
-| B | Mecanografía táctil | 45 palabras por minuto | 96-98% | Mejora constante a más de 60 palabras por minuto | 
-
-El mecanógrafo A puede parecer más rápido ahora, pero el mecanógrafo B suele adelantar con mejores mecánicas y menos correcciones. 
-
-## La parte difícil: la caída de la transición 
-
-La mayor barrera es la regresión temporal. Si cambia de buscar y picotear a mecanografía táctil, la velocidad suele disminuir durante 1 a 3 semanas. Esa caída es normal. Estás reemplazando viejos patrones de movimiento por otros más escalables. 
-
-Línea de tiempo común: 
-
-1. **Días 1 a 5:** asignaciones de dedos incómodas, palabras por minuto más bajas. 
-2. **Días 6 a 14:** mayor confianza en las claves, la precisión se estabiliza. 
-3. **Semanas 3-4:** la velocidad comienza a regresar a la línea de base anterior. 
-4. **Después de la semana 4:** muchos alumnos superan la velocidad anterior con mejor control. 
-
-El éxito depende menos del talento y más de la constancia diaria. 
-
-## Cómo cambiar sin frustración 
-
-Utilice una estrategia de transición práctica: 
-
-1. Comprométete a mecanografiar en sesiones de práctica dedicadas. 
-2. Mantenga las sesiones breves (de 15 a 20 minutos) para evitar el agotamiento. 
-3. Céntrese en la precisión antes que en la velocidad. 
-4. Evite mirar el teclado, incluso cuando esté tentado. 
-5. Realice un seguimiento del progreso semanal en lugar de juzgar un mal día. 
-
-Si los plazos de trabajo son ajustados, puedes utilizar temporalmente viejos hábitos para tareas urgentes y mecanografía para bloques de capacitación, y luego ir paulatinamente. 
-
-## Errores que se deben evitar durante la transición 
-
-- Cambiar las reglas de los dedos todos los días (la coherencia importa) 
-- Saltar a textos avanzados demasiado pronto 
-- Correr para obtener las mejores palabras por minuto antes de que el control básico sea estable. 
-- Practicar solo letras y saltarse puntuación/filas de números 
-- Dejar de fumar durante la primera semana de regresión 
-
-La mayoría de las personas que se sienten "estancadas" en realidad se encuentran en medio de un proceso de adaptación. 
-
-## ¿Quién debería quedarse con Hunt-and-Peck? 
-
-Si escribe muy poco y no necesita aumentar la velocidad, buscar y picotear puede seguir siendo aceptable. Pero si escribe informes, codifica, chatea con clientes o procesa un gran volumen de texto, casi siempre vale la pena aprender a mecanografiar. 
-
-El punto de equilibrio es simple: si escribir afecta su productividad diaria, los mejores mecánicos se amortizan rápidamente. 
-
-## Veredicto final 
-
-Buscar y picotear puede ser viable, pero la mecanografía es el sistema más sólido a largo plazo en términos de velocidad, precisión y comodidad. La caída a corto plazo de las palabras por minuto es temporal; la ventaja a largo plazo es duradera. 
-
-Comience con la disciplina de la fila de casa, practique todos los días y confíe en el proceso. [Comience lecciones estructuradas de mecanografía táctil en Typingverified.](https://www.typingverified.com/lessons)`,
+[Empieza gratis tus lecciones de mecanografia tactil →](https://www.typingverified.com/lessons)`,
   },
   {
     title: "5 Typing Habits That Are Slowing You Down",
     slug: "typing-habits-slowing-you-down",
     metaDescription: "Bad typing habits can cap your WPM and cause fatigue. Here are 5 common mistakes and how to fix them.",
-    publishDate: "Feb 23, 2026",
+    publishDate: "Jan 15, 2026",
     image: "/blog/typing-habits-slowing-you-down.png",
     content: `Muchos mecanógrafos creen que están limitados por el talento, la calidad del teclado o la falta de tiempo. En realidad, el progreso a menudo se ve bloqueado por hábitos que parecen normales pero que silenciosamente reducen la velocidad y la precisión. La buena noticia: los hábitos se pueden cambiar más rápido de lo que la mayoría de la gente espera. 
 
@@ -551,7 +498,7 @@ Si desea ejercicios estructurados para estos problemas exactos, [practique con l
     slug: "30-day-typing-speed-challenge-results",
     metaDescription:
       "I committed to a 30-day typing speed challenge. Here's my honest progress log, what worked, what didn't, and how much my WPM actually improved.",
-    publishDate: "Mar 2, 2026",
+    publishDate: "Jan 17, 2026",
     image: "/blog/t5.png",
     content: `Tuve un problema. Había estado escribiendo todos los días durante años (correos electrónicos, informes, mensajes) y no tenía idea de lo rápido que era en realidad. Supuse que era decente. Me equivoqué. 
 
@@ -620,7 +567,7 @@ Comience con una prueba de referencia hoy. Anota tus palabras por minuto y preci
     slug: "remote-jobs-that-require-typing-2026",
     metaDescription:
       "Looking for work-from-home jobs that match your typing skills? Here are 10 remote jobs in 2026 that require fast, accurate typing — and how to qualify.",
-    publishDate: "Mar 9, 2026",
+    publishDate: "Jan 19, 2026",
     image: "/blog/t6.png",
     content: `Si puedes escribir con rapidez y precisión, tienes una habilidad comercializable que tiene una gran demanda en este momento. Los empleadores remotos en múltiples industrias están contratando activamente para roles que requieren mecanografía intensiva, y muchos de ellos no requieren un título. 
 
@@ -718,7 +665,7 @@ Antes de presentar la solicitud, realice una prueba gratuita para conocer su WPM
     title: "How to Earn a Typing Certificate (And Why It's Worth It)",
     slug: "how-to-earn-typing-certificate",
     metaDescription: "A typing certificate can strengthen your resume and prove your skills to employers. Here's how to earn one and where it helps most.",
-    publishDate: "Mar 16, 2026",
+    publishDate: "Jan 21, 2026",
     image: "/blog/how-to-earn-typing-certificate.png",
     content: `Un certificado de mecanografía es un documento práctico de prueba de habilidad. Muestra empleadores, clientes o programas de capacitación que puede escribir a una velocidad verificada con un nivel verificado de precisión. En un mercado competitivo, esa simple prueba puede ayudar a que su solicitud se destaque más rápido que un reclamo genérico de "escrito rápido" en un currículum. 
 
@@ -822,7 +769,7 @@ Si está listo para ganar el suyo, comience con una práctica estructurada y com
     slug: "typing-certificate-helped-land-remote-job",
     metaDescription:
       "One job seeker shares how earning a typing certificate changed their application results. A real story about skill, confidence, and getting hired remotely.",
-    publishDate: "Mar 23, 2026",
+    publishDate: "Jan 23, 2026",
     image: "/blog/t7.png",
     content: `Hace seis meses, solicité puestos de entrada de datos remota y no recibí devoluciones de llamada. Mi currículum era sólido. Mis cartas de presentación fueron adaptadas. Pero estaba compitiendo contra cientos de solicitantes para cada puesto y no tenía nada que me diferenciara. 
 
@@ -866,7 +813,7 @@ El certificado no me consiguió el trabajo por sí solo. Pero me separó de un m
     title: "How to Prepare for a Typing Test at a Job Interview",
     slug: "prepare-for-typing-test-job-interview",
     metaDescription: "Many employers require a typing test during hiring. Here's how to prepare, what to expect, and how to stay calm on the day.",
-    publishDate: "Mar 30, 2026",
+    publishDate: "Jan 25, 2026",
     image: "/blog/prepare-for-typing-test-job-interview.png",
     content: `Si está solicitando puestos de ingreso de datos, soporte administrativo, servicio al cliente, asistente legal o transcripción, una prueba de mecanografía puede ser parte del proceso de entrevista. Para muchos candidatos, este paso resulta estresante porque el desempeño se mide en vivo. La buena noticia es que las pruebas de mecanografía son altamente fáciles de entrenar cuando te preparas con la estructura adecuada. 
 
@@ -1002,7 +949,7 @@ Si desea realizar una evaluación comparativa hoy, [ejecute una prueba de mecano
     slug: "what-is-net-wpm",
     metaDescription:
       "El PPM bruto y el PPM neto no son lo mismo. Aqui tienes que es el PPM neto, como se calcula y por que es el unico numero que les importa a los empleadores.",
-    publishDate: "Apr 1, 2026",
+    publishDate: "Jan 27, 2026",
     image: "/blog/t8.png",
     content: `
 Cuando la mayoria de la gente habla de su velocidad de escritura, cita su PPM bruto: la cantidad bruta de palabras que tecleo por minuto. Pero los empleadores, las pruebas de mecanografia y las evaluaciones profesionales casi siempre usan una metrica distinta: el PPM neto.
@@ -1048,7 +995,7 @@ Practica con objetivos de precision: apunta a 97 % o mas en cada sesion, incluso
     slug: "how-to-pass-typing-test-job-interview",
     metaDescription:
       "Muchos empleadores usan pruebas de mecanografía en el proceso de selección. Esto es lo que miden, qué puntuaciones esperan y cómo prepararte para dar lo mejor de ti.",
-    publishDate: "Apr 4, 2026",
+    publishDate: "Feb 4, 2026",
     image: "/blog/t9.png",
     content: `
 A muchos candidatos les pillan por sorpresa las pruebas de mecanografía durante el proceso de selección. Has preparado el currículum, ensayado respuestas e investigado la empresa — y de pronto un reclutador te envía un enlace a una evaluación de mecanografía de 5 minutos.
@@ -1097,5 +1044,202 @@ Si aplicas a un puesto, revisa el requisito de PPM en la oferta y asegúrate de 
 Si la puntuación es más baja de lo esperado, sé honesto y proactivo. Indica que estás mejorando activamente tu velocidad y ofrece un certificado como prueba adicional de tu compromiso.
 
 [Practica gratis y obtén un certificado antes de tu próxima entrevista →](https://www.typingverified.com/certificate)
+    `,
+  },
+  {
+    title:
+      "Los 10 mecanógrafos más rápidos de la historia (y qué puedes aprender de ellos)",
+    slug: "fastest-typists-in-history",
+    metaDescription:
+      "Desde récords de máquina de escribir en 1946 hasta campeones modernos del teclado: los 10 mecanógrafos más rápidos de la historia y qué los hizo excepcionales.",
+    publishDate: "Feb 2, 2026",
+    image: "/blog/t10.png",
+    content: `
+Los mecanógrafos más rápidos de la historia hacen sentir humildes a muchos profesionales. Cuando alguien supera las 200 palabras por minuto —más rápido de lo que la mayoría habla— deja de ser solo una habilidad y se acerca a un superpoder.
+
+Aquí tienes a diez de los mecanógrafos más notables jamás documentados y lo que su técnica nos enseña.
+
+## 1. Stella Pajunas — 216 PPM (1946)
+
+Stella Pajunas batió un récord mundial en 1946 con una máquina de escribir eléctrica IBM, alcanzando 216 PPM. El récord se mantuvo décadas. Lo notable es que lo logró en una máquina con mucha más resistencia física que un teclado moderno, exigiendo fuerza real en cada pulsación.
+
+Su técnica: dominio total de la fila base y cero dudas. Se dice que nunca miraba el teclado.
+
+## 2. Barbara Blackburn — 212 PPM sostenidas (2005)
+
+Barbara Blackburn tiene el récord Guinness de la mayor velocidad sostenida: 150 PPM durante 50 minutos, con picos de hasta 212 PPM. Usó la distribución Dvorak en lugar de QWERTY y atribuía a eso una reducción clara del recorrido de los dedos.
+
+## 3. Anthony Ermolin — 210 PPM (17 años)
+
+Uno de los mecanógrafos de élite más jóvenes: Ermolin alcanzó 210 PPM de adolescente en QWERTY estándar. Repitió los mismos pasajes cortos miles de veces hasta que los dedos ejecutaban sin pensar.
+
+## 4. Sean Wrona — 256 PPM en picos
+
+Sean Wrona ha registrado picos de 256 PPM en competiciones. Describe que a alta velocidad el texto casi desaparece de la conciencia: los dedos leen por delante mientras las palabras anteriores se cierran solas.
+
+## 5. Nathan Sanfilippo — múltiples títulos
+
+En torneos domina con más de 150 PPM de forma constante y una precisión casi perfecta. Su método lo llama «word chunk drilling»: practicar secuencias de dos o tres palabras en lugar de palabras sueltas.
+
+## Qué comparten todos los de élite
+
+Más allá de detalles personales, comparten esto:
+
+1. **Cero miradas al teclado.** Sin excepción.
+2. **Primero la precisión.** La velocidad se construyó sobre precisión, no al revés.
+3. **Repetición deliberada.** El rendimiento vino de práctica con intención, no solo de volumen.
+4. **Fila base dominada.** Es la base de todo sistema rápido.
+
+No necesitas 200 PPM. Pero las técnicas que llevan a 200 PPM son las mismas que te llevan de 45 a 70.
+
+[Empieza hábitos de élite con las lecciones de Typingverified →](https://www.typingverified.com/lessons)
+    `,
+  },
+  {
+    title:
+      "¿Qué velocidad de mecanografía necesitas para trabajos de entrada de datos? (Requisitos 2026)",
+    slug: "typing-speed-for-data-entry-jobs",
+    metaDescription:
+      "Los trabajos de entrada de datos exigen un PPM concreto. Qué esperan los empleadores en 2026, cómo prepararte y cómo un certificado refuerza tu candidatura.",
+    publishDate: "Jan 31, 2026",
+    image: "/blog/t11.png",
+    content: `
+La entrada de datos es una de las categorías remotas de nivel inicial más accesibles — y de las más competitivas. Saber exactamente qué velocidad de mecanografía esperan los empleadores te ayuda a preparar tus habilidades y tu candidatura.
+
+## Requisitos típicos de PPM para entrada de datos en 2026
+
+La mayoría de anuncios fijan un PPM mínimo. Lo habitual es:
+
+| Puesto | PPM mínimo | Precisión |
+| --- | --- | --- |
+| Entrada de datos general | 45–55 PPM | 95 %+ |
+| Especialista en entrada de datos | 55–65 PPM | 97 %+ |
+| Entrada de datos senior / alto volumen | 65–80 PPM | 98 %+ |
+| Entrada numérica (teclado numérico) | 8.000–10.000 PPH | 99 %+ |
+| Entrada de datos médicos | 60–75 PPM | 98 %+ |
+
+Algunos puestos miden la velocidad en **pulsaciones por hora (PPH)** en lugar de PPM. 10.000 PPH equivale aproximadamente a 40 PPM en texto estándar.
+
+## Qué evalúan realmente los empleadores
+
+Cuando piden un test de mecanografía, suelen mirar:
+
+- Tu PPM neto (velocidad menos errores)
+- Tu porcentaje de precisión
+- Si mantienes el ritmo con texto poco habitual y no conversacional
+- A veces: velocidad en el teclado numérico si el rol implica números
+
+## Cómo prepararte para un test de entrada de datos
+
+**Practica con texto no conversacional.** La entrada de datos suele ser direcciones, códigos de producto, nombres y campos de base de datos — no prosa. Practica listas, números y texto mixto, no solo párrafos.
+
+**Mejora el teclado numérico.** Si hay datos numéricos, dedica tiempo a la fila de números y al teclado lateral. 8.000 PPH (mínimo habitual) exige práctica enfocada.
+
+**Apunta a 60 PPM antes de aplicar.** Aunque el anuncio diga 45 PPM mínimo, llegar a 60 PPM te sitúa mejor entre los candidatos.
+
+**Consigue un certificado.** Un certificado verificado muestra tu velocidad antes de que te evalúen. Demuestra iniciativa y les ahorra un paso.
+
+[Mejora tu velocidad y obtén un certificado listo para entrada de datos →](https://www.typingverified.com/certificate)
+    `,
+  },
+  {
+    title: "Tabla de percentiles de mecanografía: ¿estás en el 10% superior?",
+    slug: "typing-speed-percentile-chart",
+    metaDescription:
+      "¿En qué puesto global está tu velocidad de mecanografía? Usa esta tabla completa de percentiles para ver exactamente cómo te comparas con otros mecanógrafos.",
+    publishDate: "Feb 6, 2026",
+    image: "/blog/t12.png",
+    content: `
+Conocer tus PPM es útil. Saber en qué lugar te ponen esos PPM entre todos los mecanógrafos del mundo es realmente motivador — sobre todo cuando descubres lo fácil que es entrar en el 25% superior con un esfuerzo moderado.
+
+Aquí tienes el desglose completo por percentiles de velocidad de mecanografía.
+
+## Tabla de percentiles de mecanografía
+
+| Percentil | Rango de PPM | Qué significa |
+| --- | --- | --- |
+| 10% inferior | 0–20 PPM | Experiencia muy limitada con teclado |
+| 10.º–25.º | 21–35 PPM | Principiante, método de buscar teclas |
+| 25.º–50.º | 36–45 PPM | Por debajo de la media, uso casual |
+| 50.º (mediana) | 44–46 PPM | Exactamente en la media global |
+| 50.º–75.º | 46–65 PPM | Por encima de la media, buen nivel de oficina |
+| 75.º–90.º | 65–80 PPM | Mecanógrafo rápido, nivel profesional |
+| 90.º–95.º | 80–95 PPM | Muy rápido, rango competitivo |
+| 95.º–99.º | 95–120 PPM | Nivel élite |
+| 1% superior | 120+ PPM | Nivel experto/competitivo |
+
+## Qué hace falta para llegar a cada nivel
+
+**Top 50% (45+ PPM):** Casi cualquiera puede conseguirlo con 2–4 semanas de práctica básica. Si ahora estás por debajo de 45 PPM, este es tu primer objetivo.
+
+**Top 25% (65+ PPM):** Requiere técnica correcta de mecanografía al tacto y 4–8 semanas de práctica diaria deliberada. Aquí es donde muchos trabajos profesionales empiezan a pagar mejor.
+
+**Top 10% (80+ PPM):** Requiere entrenamiento constante durante 2–4 meses. En este nivel, los empleadores lo notan y se abren roles de transcripción/subtitulado.
+
+**Top 1% (120+ PPM):** Requiere años de práctica deliberada y técnica de élite. La mayoría no necesita llegar hasta aquí — pero es una buena meta de largo plazo.
+
+## ¿Dónde estás ahora mismo?
+
+Haz un test cronometrado gratuito ahora para obtener tus PPM exactos y compararlos con la tabla de arriba.
+
+[Encuentra tu percentil con un test de mecanografía gratis →](https://www.typingverified.com/test)
+    `,
+  },
+  {
+    title:
+      "¿Cuánto tiempo se tarda en aprender mecanografía al tacto? (Cronograma realista)",
+    slug: "how-long-to-learn-touch-typing",
+    metaDescription:
+      "¿Te preguntas cuánto tarda en aprenderse la mecanografía al tacto? Aquí tienes un cronograma honesto y realista - desde principiante total hasta velocidad profesional - basado en la práctica diaria.",
+    publishDate: "Feb 8, 2026",
+    image: "/blog/t13.png",
+    content: `
+La respuesta honesta: la mayoría de las personas puede aprender las bases de la mecanografía al tacto en 2-4 semanas y alcanzar velocidad profesional en 2-3 meses de práctica diaria. Pero el tiempo depende mucho de tu punto de partida y de la constancia con la que practiques.
+
+Aquí tienes un desglose realista.
+
+## Semana 1-2: Aprender la fila base
+
+La primera fase de la mecanografía al tacto es la más difícil a nivel psicológico. Estás desaprendiendo hábitos que llevas años usando y sustituyéndolos por un sistema que al principio se siente más lento y más incómodo.
+
+Céntrate por completo en la fila base - ASDF para la mano izquierda, JKL; para la derecha. No pases a otras filas hasta que puedas escribir combinaciones de la fila base sin mirar y sin dudar.
+
+Velocidad esperada en esta fase: 15-30 PPM.
+
+Es normal. No entres en pánico.
+
+Práctica diaria necesaria: 15-20 minutos.
+
+## Semana 3-4: Cobertura completa del teclado
+
+Una vez sólida la fila base, añade la fila superior (QWERTY y números) y la fila inferior (ZXCVB, NM). Tu velocidad seguirá por debajo de tu nivel previo de buscar teclas durante esta fase.
+
+Al final de la Semana 4, la mayoría puede escribir todo el alfabeto sin mirar, con velocidades de 25-40 PPM.
+
+Práctica diaria necesaria: 15-20 minutos.
+
+## Mes 2: Recuperar tu velocidad anterior
+
+Esta es la fase emocionante. Tu memoria muscular empieza a consolidarse y tu velocidad sube rápido. La mayoría iguala su antigua velocidad de buscar teclas al final del Mes 2 - pero ahora con mejor técnica, mejor precisión y un techo mucho más alto.
+
+Velocidad esperada: 40-55 PPM.
+
+Práctica diaria necesaria: 15-20 minutos.
+
+## Mes 3 y más allá: El nuevo techo
+
+En el Mes 3, la mayoría escribe más rápido de lo que nunca pudo con buscar teclas. La fase de práctica deliberada puede reducirse - el uso normal diario del ordenador ahora refuerza y sigue mejorando tu velocidad automáticamente.
+
+Velocidad esperada en el Mes 3: 55-75 PPM.
+
+Tras seis meses de uso casual después del entrenamiento formal, la mayoría se estabiliza entre 65 y 85 PPM.
+
+## ¿Puedes ir más rápido?
+
+Sí - pero requiere práctica intencional continua más allá del Mes 3. Alcanzar 90-100 PPM suele llevar 6-12 meses de mecanografía diaria. Llegar a velocidades élite de 120+ PPM lleva años de entrenamiento deliberado.
+
+Para la mayoría de objetivos profesionales, 65-80 PPM con 97%+ de precisión es más que suficiente - y totalmente alcanzable en 3 meses.
+
+[Empieza hoy tu camino en mecanografía al tacto con lecciones estructuradas gratis →](https://www.typingverified.com/lessons)
     `,
   }];
