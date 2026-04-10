@@ -41,14 +41,17 @@ export default function BlogCard({ post, index }: { post: BlogPost; index: numbe
       </Link>
 
       <div className="flex flex-1 flex-col p-6">
-        <div className="mb-3 flex items-center gap-4 text-xs text-muted-foreground">
-          <span className="flex items-center gap-1">
-            <Calendar className="h-3 w-3" />
-            {displayDate}
+        <div className="mb-3 flex flex-wrap items-center gap-x-4 gap-y-2 text-xs text-muted-foreground">
+          <span className="inline-flex min-w-0 items-center gap-1.5">
+            <Calendar className="h-3.5 w-3.5 shrink-0" aria-hidden />
+            <span className="whitespace-nowrap">{displayDate}</span>
           </span>
-          <span className="flex items-center gap-1">
-            <Clock className="h-3 w-3" />
-            {t("minRead", { count: readingTime })}
+          {/* <span className="text-border select-none" aria-hidden>
+            •
+          </span> */}
+          <span className="inline-flex min-w-0 items-center gap-1.5">
+            <Clock className="h-3.5 w-3.5 shrink-0" aria-hidden />
+            <span>{t("minRead", { count: readingTime })}</span>
           </span>
         </div>
 
