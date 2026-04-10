@@ -92,7 +92,7 @@ export default async function LocaleLayout({
   }
 
   setRequestLocale(locale);
-  const messages = await getMessages();
+  const messages = await getMessages({ locale });
 
   const supabase = await createClient();
   const {
@@ -147,7 +147,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <main className="flex-1 w-full max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
               {children}
             </main>
-            <Footer />
+            <Footer locale={locale} />
             <Toaster
               position="bottom-right"
               richColors

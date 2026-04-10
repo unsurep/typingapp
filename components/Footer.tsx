@@ -1,8 +1,9 @@
 import { getTranslations } from "next-intl/server";
 import { Link } from "@/i18n/navigation";
+import type { AppLocale } from "@/i18n/routing";
 
-export default async function Footer() {
-  const t = await getTranslations("Footer");
+export default async function Footer({ locale }: { locale: AppLocale }) {
+  const t = await getTranslations({ locale, namespace: "Footer" });
 
   return (
     <footer className="bg-gray-50 dark:bg-zinc-900 border-t border-gray-100 dark:border-zinc-800">

@@ -46,9 +46,7 @@ export default function BlogCard({ post, index }: { post: BlogPost; index: numbe
             <Calendar className="h-3.5 w-3.5 shrink-0" aria-hidden />
             <span className="whitespace-nowrap">{displayDate}</span>
           </span>
-          {/* <span className="text-border select-none" aria-hidden>
-            •
-          </span> */}
+         
           <span className="inline-flex min-w-0 items-center gap-1.5">
             <Clock className="h-3.5 w-3.5 shrink-0" aria-hidden />
             <span>{t("minRead", { count: readingTime })}</span>
