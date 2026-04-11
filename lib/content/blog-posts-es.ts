@@ -1242,4 +1242,493 @@ Para la mayoría de objetivos profesionales, 65-80 PPM con 97%+ de precisión es
 
 [Empieza hoy tu camino en mecanografía al tacto con lecciones estructuradas gratis →](https://www.typingverified.com/lessons)
     `,
+  },
+  {
+    title:
+      "Cómo poner la velocidad de mecanografía en el currículum (con ejemplos)",
+    slug: "how-to-put-typing-speed-on-resume",
+    metaDescription:
+      "¿Debes incluir la velocidad de mecanografía en tu CV? Sí — si lo haces bien. Cómo redactarla, dónde ponerla y cómo un certificado la hace creíble.",
+    publishDate: "Feb 10, 2026",
+    image: "/blog/t14.png",
+    content: `
+La velocidad de mecanografía es una habilidad profesional legítima para incluir en un currículum — pero solo si lo haces bien. Bien presentada, transmite eficiencia y profesionalidad. Mal presentada, parece relleno. Aquí tienes la guía.
+
+## ¿Debes incluir la velocidad de mecanografía en tu CV?
+
+Sí, si te aplica alguno de estos casos:
+
+- Buscas un puesto donde la mecanografía sea función principal (entrada de datos, transcripción, atención al cliente, administración)
+- El anuncio menciona explícitamente un requisito de PPM
+- Escribes por encima de 55 PPM con un 95 % o más de precisión
+- Tienes un certificado verificado que respalda la cifra
+
+Si escribes a 38 PPM, no lo pongas — indica una velocidad por debajo de la media y perjudicará más que ayudar. Mejora primero y luego inclúyela cuando sea un dato del que presumir.
+
+## Dónde ponerla en el currículum
+
+La velocidad de mecanografía va en la sección de **Habilidades**, no en las descripciones de experiencia. Es una habilidad técnica, no un logro.
+
+**Ejemplo de línea en Habilidades:**
+
+Velocidad de mecanografía: 68 PPM / 97 % de precisión (Verificado — certificado Typingverified)
+
+Si el puesto exige un PPM concreto (por ejemplo 60 PPM) y lo cumples, también puedes mencionarlo en la carta de presentación:
+
+«Escribo a 68 PPM con un 97 % de precisión, con certificado verificado, y puedo cumplir el requisito de 60 PPM indicado en el anuncio.»
+
+## Qué no hacer
+
+- No redondees al alza de forma exagerada. «90 PPM» si en el test sacaste 72 PPM se notará en cuanto te hagan una prueba en la entrevista.
+- No pongas la velocidad sin la precisión. La velocidad sin contexto de precisión está incompleta y puede despertar recelo en reclutadores con experiencia.
+- No la indiques si no puedes demostrarla. Si el empleador te pide una prueba en vivo, debes poder acercarte a tu cifra.
+
+## Cómo un certificado refuerza tu credibilidad
+
+La velocidad autodeclarada en un CV es fácil de inflar, y los reclutadores lo saben. Un certificado verificado cambia las reglas: es una validación externa de tu velocidad y precisión exactas, obtenida mediante una evaluación estructurada.
+
+Incluir un enlace al certificado junto a tu PPM elimina dudas y te presenta como candidato preparado y creíble.
+
+[Consigue tu certificado de mecanografía verificado y refuerza tu CV →](https://www.typingverified.com/certificate)
+    `,
+  },
+  {
+    title:
+      "Gana dinero escribiendo: 9 trabajos de mecanografía en casa serios en 2026",
+    slug: "get-paid-to-type-work-from-home-2026",
+    metaDescription:
+      "¿De verdad puedes cobrar por escribir desde casa? Sí — aquí tienes 9 trabajos remotos legítimos en 2026 con sueldos reales y cómo empezar.",
+    publishDate: "Feb 12, 2026",
+    image: "/blog/t12.png",
+    content: `
+¿De verdad puedes cobrar por escribir desde casa? Sí — aquí tienes 9 trabajos de mecanografía a distancia legítimos en 2026, con rangos salariales reales y pasos para empezar.
+
+Escribir al teclado es una de las habilidades remotas más accesibles: casi todo el mundo ya lo hace. La cuestión es si lo haces lo bastante bien para cobrar por ello — y cómo encontrar oportunidades serias entre tanto ruido.
+
+Estos son nueve trabajos bien pagados desde casa disponibles en 2026.
+
+## 1. Transcriptor freelance (Rev, TranscribeMe, GoTranscript)
+
+**Cómo funciona:** Escuchas audio y escribes lo que oyes.
+
+**Pago:** 0,45–1,50 $ por minuto de audio (Rev), 0,79–0,97 $ por minuto de audio (TranscribeMe)
+
+**PPM necesarios:** 60–75
+
+**Cómo empezar:** Solicita en las webs de las plataformas. Casi todas piden un test corto.
+
+Los ingresos escalan con la velocidad. A 80 PPM puedes transcribir unas 4–5 veces el tiempo real y ganar 18–25 $ la hora en buenas condiciones.
+
+## 2. Transcripción médica
+
+**Cómo funciona:** Conviertes grabaciones de médicos en notas estructuradas para el paciente.
+
+**Pago:** 15–22 $ la hora; algunos salarios anuales de 40 000–60 000 $
+
+**PPM necesarios:** 65–85, más terminología médica
+
+**Cómo empezar:** Hay formación en muchas plataformas. La certificación AHIMA ayuda pero no siempre es obligatoria en remoto junior.
+
+## 3. Especialista en entrada de datos
+
+**Cómo funciona:** Introduces, verificas y gestionas datos en bases y hojas de cálculo.
+
+**Pago:** 14–22 $ la hora en remoto
+
+**PPM necesarios:** 45–65
+
+**Cómo empezar:** Indeed, FlexJobs y Remote.co. Filtra por «data entry remote».
+
+Suele ser la puerta más fácil para quien empieza. Hay mucha oferta y un certificado marca diferencia frente a la competencia.
+
+## 4. Asistente virtual
+
+**Cómo funciona:** Correo, agenda, documentos, investigación y apoyo en comunicación.
+
+**Pago:** 15–35 $ la hora
+
+**PPM necesarios:** 50–65
+
+**Cómo empezar:** Belay, Time Etc y Zirtual contratan con frecuencia. Crea perfil en Upwork para freelance.
+
+## 5. Especialista en datos para entrenar IA
+
+**Cómo funciona:** Escribes, revisas, corriges y etiquetas texto para entrenar sistemas de inteligencia artificial.
+
+**Pago:** 15–25 $ la hora
+
+**PPM necesarios:** 45–60
+
+**Cómo empezar:** Scale AI, Appen y Remotasks publican este tipo de rol. En 2026 la demanda sigue subiendo.
+
+## 6. Atención al cliente por chat en vivo
+
+**Cómo funciona:** Respondes a clientes en tiempo real por chat.
+
+**Pago:** 13–20 $ la hora
+
+**PPM necesarios:** 45–55
+
+**Cómo empezar:** Busca «remote chat support» en Indeed y We Work Remotely.
+
+## 7. Subtitulador / CART
+
+**Cómo funciona:** Subtitulado en tiempo real para vídeo, eventos o accesibilidad.
+
+**Pago:** 20–45 $ la hora
+
+**PPM necesarios:** 80–100+
+
+**Cómo empezar:** 3Play Media, Vitac y Caption Max contratan en remoto. Sueldo alto pero exigencia alta — sube primero tu velocidad.
+
+## 8. Transcripción jurídica
+
+**Cómo funciona:** Transcripciones de declaraciones, vistas y dictados legales.
+
+**Pago:** 18–30 $ la hora
+
+**PPM necesarios:** 65–80
+
+**Cómo empezar:** Portales de despachos, Upwork y agencias legales de personal.
+
+## 9. Redactor de contenidos freelance
+
+**Cómo funciona:** Artículos, blogs, fichas de producto y copy para clientes.
+
+**Pago:** 0,05–0,30 $ por palabra en muchos casos; 50–150 $/h para especialistas
+
+**PPM necesarios:** 60+ recomendado para rendimiento
+
+**Cómo empezar:** Upwork, Contena, ProBlogger y contacto directo con clientes.
+
+## El hilo común: certifícate primero
+
+En casi todos estos roles tendrás que demostrar velocidad o cobrarás más si lo haces. Un certificado de mecanografía verificado es una credencial clara que puedes adjuntar a cada solicitud.
+
+[Consigue tu certificado y empieza a aplicar hoy →](https://www.typingverified.com/certificate)
+    `,
+  },
+  {
+    title:
+      "Requisitos de velocidad en transcripción médica: lo que debes saber",
+    slug: "typing-speed-medical-transcription",
+    metaDescription:
+      "La transcripción médica exige velocidad y precisión concretas. Qué necesitas en 2026 y cómo prepararte para esta carrera.",
+    publishDate: "Feb 14, 2026",
+    image: "/blog/t15.png",
+    content: `
+La transcripción médica es una de las carreras remotas de mecanografía mejor pagadas — pero exige mucho más que un WPM alto. Esto es lo que conviene saber antes de dedicarte a ello.
+
+## WPM mínimos en transcripción médica
+
+Muchos puestos piden al menos **65–75 PPM** en nivel inicial; los roles senior y las plataformas de gran volumen suelen buscar **80–90 PPM**. La precisión es estricta: **98 %+** es habitual y muchas plataformas exigen **99 %+** por seguridad del paciente.
+
+No vale la ortografía aproximada: los documentos forman parte del historial clínico y los errores pueden tener consecuencias.
+
+## Qué la hace distinta
+
+Además de velocidad y precisión, hay que escribir bien terminología especializada con prisa:
+
+- Fármacos y dosis
+- Términos anatómicos
+- Códigos diagnósticos y de procedimientos
+- Abreviaturas por especialidad
+
+Quien entra suele necesitar formación en terminología médica además de subir velocidad.
+
+## Cómo prepararte
+
+**Paso 1 — Llega al menos a 70 PPM** con 98 % de precisión. Lecciones estructuradas y tests cronometrados.
+
+**Paso 2 — Estudia terminología médica.** Cursos online, centros formativos y plataformas como Career Step.
+
+**Paso 3 — Practica con contenido médico.** Con la terminología afianzada, transcribe dictados de ejemplo — hay material gratuito en línea.
+
+**Paso 4 — Certifícate.** Un certificado con 70+ PPM y 98 % es una credencial sólida para perfiles junior.
+
+## Dónde buscar trabajo
+
+Entre otros, Nuance (ahora Microsoft), Acusis y Ciox Health contratan teletranscripción. Freelance: Upwork y agencias de personal sanitario.
+
+[Mejora tu velocidad para una carrera en transcripción médica →](https://www.typingverified.com/lessons)
+    `,
+  },
+  {
+    title:
+      "La forma más rápida de pasar de 40 a 70 PPM (plan de 7 semanas)",
+    slug: "40-to-70-wpm-plan",
+    metaDescription:
+      "¿Quieres subir de 40 a 70 PPM? Aquí tienes un plan semana a semana con tiempos de práctica diarios y hitos claros.",
+    publishDate: "Feb 16, 2026",
+    image: "/blog/t11.png",
+    content: `
+Pasar de 40 a 70 PPM no es cuestión de talento, sino de método. Aquí tienes un plan de siete semanas que ha funcionado para miles de mecanógrafos, con sesiones diarias de 15–20 minutos.
+
+## Antes de empezar
+
+Haz un test base ahora. Anota tu PPM y precisión exactos. Volverás a este número al final de cada semana para medir el progreso.
+
+## Semana 1: Fila base fija
+
+**Objetivo:** Escribir la fila base (ASDF / JKL;) sin mirar el teclado, cero errores.
+
+**Práctica diaria (15 min):** Solo fila base. Cubre las manos con un papel si hace falta. Sin mirar.
+
+**Fin de semana:** Combinaciones «asdfghjkl;» durante 60 segundos sin mirar, a cualquier velocidad, con 100 % de precisión.
+
+## Semana 2: Mapa completo del teclado
+
+**Objetivo:** Añadir fila superior e inferior. Empezar a escribir todo el alfabeto sin mirar.
+
+**Práctica diaria (15 min):** Letras en todas las filas. Prioriza la precisión. Ir lento es normal — 25–35 PPM aquí.
+
+**Fin de semana:** Las 26 letras sin mirar, con 95 %+ de precisión.
+
+## Semana 3: Palabras frecuentes
+
+**Objetivo:** Fluidez con las 200 palabras más comunes.
+
+**Práctica diaria (15 min):** Listas de palabras frecuentes. Que las más usadas sean automáticas.
+
+**Fin de semana:** Las palabras fluyen mejor. Apunta a 38–45 PPM.
+
+## Semana 4: Frases completas
+
+**Objetivo:** Encadenar palabras en frases. Puntuación y mayúsculas.
+
+**Práctica diaria (15 min):** Párrafos enteros. Cero errores y ritmo constante, no ráfagas sueltas.
+
+**Fin de semana:** 45–52 PPM con 96 % de precisión.
+
+## Semana 5: Ráfagas de velocidad
+
+**Objetivo:** Subir el techo con ejercicios cortos e intensos.
+
+**Práctica diaria (20 min):** Alterna 30 s al máximo y pasajes de 60 s enfocados en precisión. Los picos enseñan que velocidades mayores son posibles.
+
+**Fin de semana:** 52–60 PPM en ráfagas, 48–55 PPM sostenidos.
+
+## Semana 6: Velocidad sostenida
+
+**Objetivo:** Mantener 60+ PPM en un test de 60 segundos completo.
+
+**Práctica diaria (20 min):** Tests de 60 s y 120 s. Sigue el PPM neto. Precisión por encima del 96 %.
+
+**Fin de semana:** 60–65 PPM / 96 %+ en 60 segundos completos.
+
+## Semana 7: Simulación final y certificado
+
+**Objetivo:** Llegar a 70 PPM con regularidad. Preparar el certificado.
+
+**Práctica diaria (20 min):** Imita el test del certificado. 60 segundos, presión real, anota cada intento. Descansa entre intentos.
+
+**Fin de semana:** 65–75 PPM / 97 %+. Certificado al alcance.
+
+[Empieza el plan y consigue tu certificado →](https://www.typingverified.com/certificate)
+    `,
+  },
+  {
+    title:
+      "Velocidad de mecanografía para atención al cliente: ¿cuánto necesitas?",
+    slug: "typing-speed-customer-service",
+    metaDescription:
+      "¿Buscas trabajo en atención al cliente? Aquí tienes la velocidad exacta que necesitas para chat en vivo, soporte por email y otros puestos en 2026.",
+    publishDate: "Feb 18, 2026",
+    image: "/blog/t17.png",
+    content: `
+La atención al cliente es una de las categorías más grandes de trabajo remoto, y la velocidad de mecanografía es un requisito fundamental — especialmente en los roles de chat en vivo donde el cliente espera tu respuesta en tiempo real.
+
+Aquí tienes un desglose claro de lo que exigen los distintos puestos de atención al cliente.
+
+## Chat en vivo
+
+**PPM necesarios:** 45–55 mínimo, 60+ preferible
+
+El chat en vivo es el formato más exigente en mecanografía. Respondes a varios clientes a la vez, navegas sistemas internos y mantienes un tono profesional — todo mientras el cliente ve el indicador de escritura.
+
+Los mecanógrafos lentos en el chat en vivo generan peores experiencias y bajan los índices de satisfacción. La mayoría de las empresas fija un mínimo de 45–50 PPM para puestos de chat, con preferencia por 55–65 PPM.
+
+## Soporte por email
+
+**PPM necesarios:** 40–50 mínimo
+
+El soporte por email tiene menos presión de tiempo que el chat, pero el volumen de respuestas importa. Los agentes que gestionan 80–120 emails por turno necesitan redactar respuestas claras y completas con eficiencia. La mayoría de los puestos esperan al menos 40 PPM y buenas habilidades de comunicación escrita.
+
+## Soporte telefónico con toma de notas simultánea
+
+**PPM necesarios:** 35–50
+
+En los roles de soporte telefónico que exigen escribir notas y actualizar un CRM mientras hablas con el cliente, necesitas teclear sin pensar conscientemente en ello — para mantener toda la atención en la conversación.
+
+## Soporte técnico / Help Desk
+
+**PPM necesarios:** 50–65
+
+Los roles de soporte técnico a menudo requieren documentación escrita detallada, gestión de tickets y comunicación con el cliente de forma simultánea. Un PPM mayor permite gestionar más tickets por turno y redactar notas más completas.
+
+## Cómo prepararse para un test de mecanografía en atención al cliente
+
+La mayoría de los empleadores piden completar un test online antes o durante el proceso de entrevista. Suele durar 3–5 minutos y usa texto general, no técnico.
+
+Practica tests cronometrados a diario durante la semana previa a tu candidatura o entrevista. Concéntrate en la precisión — la mayoría valora más un resultado limpio y profesional que la velocidad bruta.
+
+[Haz un test gratuito y comprueba tu nivel →](https://www.typingverified.com/test)
+    `,
+  },
+  {
+    title: "Mecanógrafo jurídico vs taquígrafo judicial: ¿cuál paga más?",
+    slug: "legal-typist-vs-court-reporter",
+    metaDescription:
+      "Los mecanógrafos jurídicos y los taquígrafos judiciales trabajan con el registro escrito de los procedimientos legales — pero las carreras difieren significativamente en sueldo, formación y velocidad de escritura.",
+    publishDate: "Feb 20, 2026",
+    image: "/blog/t18.png",
+    content: `
+Si te interesa una carrera de mecanografía en el ámbito legal, tienes dos caminos distintos: mecanógrafo jurídico y taquígrafo judicial. Ambos tienen demanda, ambos pagan bien y ambos requieren excelentes habilidades de escritura — pero son trabajos muy diferentes.
+
+## Mecanógrafo jurídico / Transcriptor legal
+
+**Qué hacen:** Los mecanógrafos jurídicos transcriben contenido dictado por abogados, jueces y paralegales en documentos legales formateados — contratos, escritos, correspondencia, declaraciones y documentos judiciales.
+
+**Velocidad de escritura requerida:** 60–80 PPM, precisión 98%+
+
+**Salario medio:** 40.000–65.000 $/año en remoto, más en grandes mercados
+
+**Formación requerida:** No se requiere certificación especializada, aunque el conocimiento de terminología legal es valioso. Muchos mecanógrafos jurídicos son autodidactas o completan cursos cortos en línea.
+
+**Entorno de trabajo:** Principalmente remoto. Horario flexible. Demanda creciente a medida que los bufetes de abogados digitalizan sus operaciones.
+
+## Taquígrafo judicial
+
+**Qué hacen:** Los taquígrafos judiciales crean la transcripción literal oficial de los procedimientos judiciales, declaraciones y vistas — en tiempo real. La mayoría usa una máquina estenográfica, no un teclado estándar.
+
+**Velocidad requerida:** 225 PPM en estenografía (requerido para la certificación), equivalente aproximadamente a 180+ PPM en un teclado estándar.
+
+**Salario medio:** 60.000–100.000 $/año+, con los mejores ganando 150.000 $+
+
+**Formación requerida:** 2–4 años de escuela de taquigrafía judicial. La certificación NCRA Registered Professional Reporter (RPR) es el estándar del sector.
+
+**Entorno de trabajo:** Principalmente presencial en salas de tribunal, con algo de trabajo remoto en declaraciones por videoconferencia.
+
+## Comparativa lado a lado
+
+| Factor | Mecanógrafo jurídico | Taquígrafo judicial |
+|--------|---------------------|---------------------|
+| Salario inicial | 38.000–50.000 $ | 50.000–65.000 $ |
+| Salario máximo | 65.000 $ | 100.000–150.000 $+ |
+| Tiempo de formación | Semanas o meses | 2–4 años |
+| Certificación requerida | No | Sí (RPR) |
+| Equipo | Teclado estándar | Máquina estenográfica |
+| Modalidad de trabajo | Principalmente remoto, flexible | Principalmente presencial, con horario |
+
+## ¿Cuál deberías elegir?
+
+Si quieres entrar en el sector legal rápidamente con tus habilidades de escritura actuales, la transcripción legal es el camino más rápido y accesible, con buen sueldo y gran flexibilidad en remoto.
+
+Si estás dispuesto a invertir 2–4 años en formación profesional, la taquigrafía judicial ofrece ingresos a largo plazo significativamente más altos y una especialización difícil de reemplazar.
+
+[Mejora tu velocidad de escritura para una carrera jurídica →](https://www.typingverified.com/certificate)
+    `,
+  },
+  {
+    title: "¿Vale la pena un certificado de mecanografía? Esto es lo que dicen los empleadores",
+    slug: "is-typing-certificate-worth-it",
+    metaDescription:
+      "¿Merece la pena obtener un certificado de mecanografía? Analizamos qué dicen los empleadores, qué sectores lo valoran más y cómo utilizarlo de forma efectiva.",
+    publishDate: "Feb 22, 2026",
+    image: "/blog/t19.png",
+    content: `
+Si vas a invertir tiempo practicando y evaluando tus habilidades de mecanografía, querrás saber: ¿el certificado al final realmente importa? Aquí tienes una respuesta honesta basada en lo que dicen los empleadores y los responsables de selección.
+
+## Lo que dicen los empleadores
+
+En los sectores donde escribir es una función central del puesto, los reclutadores dicen sistemáticamente lo mismo sobre los certificados de mecanografía:
+
+**"Elimina un paso de nuestro proceso."** Los empleadores que exigen pruebas de mecanografía durante la contratación tienen que programar, administrar y evaluar esas pruebas para cada candidato. Un candidato que llega con un certificado creíble — que muestra PPM específicos y un porcentaje de precisión — les permite omitir o acelerar ese paso.
+
+**"Demuestra iniciativa."** Un candidato que proactivamente obtuvo un certificado antes de postularse demuestra que se toma el puesto en serio y se prepara de forma deliberada. Esa señal va más allá de la habilidad de mecanografía en sí.
+
+**"Hace que la afirmación sea creíble."** La velocidad de escritura autodeclarada en un currículum es imposible de verificar sin una prueba. Un certificado convierte una afirmación inverificable en evidencia documentada.
+
+## Qué sectores lo valoran más
+
+Los certificados de mecanografía tienen más peso en:
+
+- **Entrada de datos y gestión de bases de datos** — los PPM son un indicador de productividad central
+- **Transcripción médica y jurídica** — la documentación de precisión es crítica
+- **Atención al cliente remota** — especialmente en roles de chat en vivo
+- **Roles de asistente administrativo y ejecutivo** — la eficiencia en la escritura es una expectativa básica
+- **Agencias de empleo y trabajo temporal** — las agencias usan los certificados para asignar candidatos a roles apropiados rápidamente
+
+## Cuándo un certificado tiene menos valor
+
+Un certificado de mecanografía tiene menos peso en roles donde escribir es incidental en lugar de central — desarrollo de software, gestión, roles creativos, o trabajos donde otra habilidad es el calificador principal.
+
+También tiene menos valor si no puedes respaldarlo. Si tu certificado muestra 65 PPM pero te cuesta llegar a 50 PPM en una prueba en vivo, el certificado crea más problemas de los que resuelve.
+
+## Conclusión
+
+Un certificado de mecanografía vale la pena cuando se cumplen dos condiciones: el puesto al que te postulas tiene un componente de escritura, y el certificado refleja con precisión tu habilidad actual. Cuando ambas son ciertas, es una credencial de bajo coste y alto rendimiento que solo te cuesta tiempo para obtener.
+
+[Obtén tu certificado de mecanografía gratis →](https://www.typingverified.com/certificate)
+    `,
+  },
+  {
+    title: "Probé 5 sitios de test de mecanografía y esto es lo que encontré (reseña honesta)",
+    slug: "best-typing-test-sites-comparison",
+    metaDescription:
+      "Probé 5 de los sitios de test de mecanografía más populares en 2026. Aquí tienes una comparativa honesta de características, precisión y cuál merece realmente tu tiempo.",
+    publishDate: "Feb 24, 2026",
+    image: "/blog/t20.png",
+    content: `
+No todos los sitios de test de mecanografía son iguales. Pasé tiempo en cinco de las plataformas más populares para darte una comparativa honesta lado a lado — para que puedas invertir tu tiempo de práctica donde realmente vale la pena.
+
+1. **10FastFingers**
+**Ideal para:** Tests de velocidad rápidos y casuales
+**Precisión PPM:** Buena para palabras comunes, menos realista para texto profesional
+**Características:** Carreras multijugador, texto personalizado, clasificaciones
+**Certificado:** No
+**Veredicto:** Divertido para la competición y la motivación. No es ideal para el desarrollo profesional.
+
+2. **Monkeytype**
+**Ideal para:** Práctica personalizable
+**Precisión PPM:** Excelente — parámetros de test altamente configurables
+**Características:** Personalización extensa, temas, listas de palabras, modos de puntuación
+**Certificado:** No
+**Veredicto:** El mejor test de mecanografía puro para aficionados y entusiastas de la velocidad. Sin ruta de aprendizaje estructurada ni certificado.
+
+3. **Keybr**
+**Ideal para:** Principiantes que aprenden técnica correcta
+**Precisión PPM:** Buena
+**Características:** Lecciones adaptativas que identifican y trabajan tus teclas débiles
+**Certificado:** No
+**Veredicto:** Excelente para principiantes que necesitan aprendizaje estructurado. Limitado más allá de las primeras etapas.
+
+4. **TypeRacer**
+**Ideal para:** Mejora de velocidad gamificada
+**Precisión PPM:** Buena, usa citas y pasajes reales
+**Características:** Carreras competitivas, carreras fantasma, torneos
+**Certificado:** No
+**Veredicto:** Muy atractivo y motivador. Sin ruta de desarrollo profesional.
+
+5. **Typingverified**
+**Ideal para:** Desarrollo profesional y certificación
+**Precisión PPM:** Excelente — PPM neto calculado en tiempo real
+**Características:** Plan de estudios estructurado de 10 lecciones, modo práctica, tests cronometrados 60s/120s, certificado verificado
+**Certificado:** Sí — descargable, compartible, listo para el currículum
+**Veredicto:** La única plataforma de esta lista diseñada para personas que necesitan demostrar su habilidad de mecanografía — no solo practicarla.
+
+## Comparativa lado a lado
+
+| Plataforma | Lecciones estructuradas | Certificado | PPM neto | Enfoque profesional |
+|------------|------------------------|-------------|----------|---------------------|
+| 10FastFingers | ❌ | ❌ | ❌ | ❌ |
+| Monkeytype | ❌ | ❌ | ✅ | ❌ |
+| Keybr | Parcial | ❌ | ✅ | ❌ |
+| TypeRacer | ❌ | ❌ | ❌ | ❌ |
+| Typingverified | ✅ | ✅ | ✅ | ✅ |
+
+Si tu objetivo es el entretenimiento y la competición de velocidad, Monkeytype y TypeRacer son excelentes. Si tu objetivo es desarrollar una habilidad profesional verificable y salir con una credencial, Typingverified es la única plataforma diseñada para ese propósito.
+
+[Empieza tus lecciones gratuitas en Typingverified →](https://www.typingverified.com/lessons)
+    `,
   }];

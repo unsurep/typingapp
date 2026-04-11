@@ -1,0 +1,61 @@
+---
+description: Workflow for adding new blog posts to all locales
+globs: lib/content/blog-posts-*.ts,lib/blog-post-translations.ts
+alwaysApply: false
+---
+
+# Blog Post Addition Workflow
+
+Every new article requires changes to exactly **6 files**. Always follow this order.
+
+## 1. `lib/content/blog-posts-en.ts`
+Append a `BlogPost` object at the end of the array (before `];`):
+```ts
+{
+  title: "Article Title",
+  slug: "article-slug",
+  metaDescription: "Clean meta description.",
+  publishDate: "Feb 20, 2026",
+  image: "/blog/tXX.png",
+  content: `...full markdown body...`,
+}
+```
+
+## 2–5. `lib/content/blog-posts-{fr,es,de,pt}.ts`
+Append a matching object with:
+- Same `slug`, `publishDate`, `image`
+- `title` and `content` **fully translated** into the locale language
+- Do NOT duplicate English content — the blog page shows a "not translated" banner if `post.content === englishPost.content`
+
+## 6. `lib/blog-post-translations.ts`
+Add the slug under each of `fr`, `es`, `de`, `pt` with localized `title` + `metaDescription` (used for blog listings and SEO):
+```ts
+fr: {
+  "article-slug": {
+    title: "Translated title",
+    metaDescription: "Translated meta.",
+  },
+},
+```
+
+## Copy cleanup rules
+- Fix run-on paste artifacts (e.g. `"corerequirement"` → `"core requirement"`)
+- Fix missing spaces after punctuation (e.g. `"filler.Here"` → `"filler. Here"`)
+- Clean meta description punctuation
+
+## Markdown in content
+- `## Heading` — section headings
+- `**bold**` — field labels
+- `[CTA text →](https://www.typingverified.com/certificate)` — call to action
+- `| pipe | tables |` — renders natively via the blog page table handler
+
+## CTA links
+- Certificate: `https://www.typingverified.com/certificate`
+- Practice test: `https://www.typingverified.com/test`
+
+## Images
+- Live in `public/blog/` — confirm the file exists with Glob before using it
+- Format: `/blog/tXX.png`
+
+## Verification
+Always run `npm run build` at the end and confirm it passes with no TypeScript errors.

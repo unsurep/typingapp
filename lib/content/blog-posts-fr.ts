@@ -1242,4 +1242,493 @@ Pour la plupart des objectifs professionnels, 65-80 WPM avec 97%+ de precision e
 
 [Commencez votre parcours de frappe au clavier aujourd'hui avec des lecons structurees gratuites →](https://www.typingverified.com/lessons)
     `,
+  },
+  {
+    title:
+      "Comment indiquer la vitesse de frappe sur un CV ? (avec exemples)",
+    slug: "how-to-put-typing-speed-on-resume",
+    metaDescription:
+      "Faut-il mentionner la vitesse de frappe sur un CV ? Oui — si vous le faites bien. Formulations, emplacement et crédibilité grâce à un certificat.",
+    publishDate: "Feb 10, 2026",
+    image: "/blog/t14.png",
+    content: `
+La vitesse de frappe est une compétence professionnelle légitime à mentionner sur un CV — mais seulement si vous le faites correctement. Bien présentée, elle montre efficacité et professionnalisme. Mal présentée, elle ressemble à du remplissage. Voici le guide.
+
+## Faut-il inclure la vitesse de frappe sur son CV ?
+
+Oui, si au moins un de ces cas vous concerne :
+
+- Vous postulez à un poste où la frappe est au cœur du métier (saisie de données, transcription, service client, administration)
+- L'offre mentionne explicitement une exigence en WPM
+- Vous tapez au-dessus de 55 WPM avec 95 % de précision ou plus
+- Vous disposez d'un certificat vérifié pour étayer votre affirmation
+
+Si vous tapez 38 WPM, ne l'indiquez pas — cela signale une vitesse inférieure à la moyenne et fera plus de mal que de bien. Améliorez d'abord votre niveau, puis mentionnez-la lorsque vous en serez fier.
+
+## Où l'indiquer sur le CV
+
+La vitesse de frappe va dans la section **Compétences** du CV, pas dans les descriptions d'expérience. C'est une compétence technique, pas une réalisation.
+
+**Exemple de ligne dans Compétences :**
+
+Vitesse de frappe : 68 WPM / 97 % de précision (Vérifié — certificat Typingverified)
+
+Si le poste impose un WPM précis (par exemple 60 WPM) et que vous le respectez, vous pouvez aussi l'évoquer dans la lettre de motivation :
+
+« Je tape à 68 WPM avec 97 % de précision, certifié, et je suis à l'aise pour respecter l'exigence de 60 WPM indiquée dans l'offre. »
+
+## Ce qu'il ne faut pas faire
+
+- Ne gonflez pas artificiellement votre score. « 90 WPM » alors que vous avez testé à 72 WPM sera vite démasqué lors d'un test en entretien.
+- N'indiquez pas la vitesse sans la précision. La vitesse sans contexte de précision est incomplète et peut paraître suspecte aux recruteurs expérimentés.
+- Ne l'indiquez pas si vous ne pouvez pas le démontrer. Si un employeur vous fait passer un test en direct, vous devez pouvoir tenir le niveau annoncé.
+
+## Comment un certificat renforce votre crédibilité
+
+Une vitesse déclarée sur un CV est facile à exagérer, et les recruteurs le savent. Un certificat vérifié change la donne : c'est une validation tierce de votre vitesse et de votre précision, obtenue via une évaluation structurée.
+
+Ajouter un lien vers le certificat à côté de votre WPM dissipera les doutes et vous positionnera comme un candidat préparé et crédible.
+
+[Obtenez votre certificat de frappe vérifié et renforcez votre CV →](https://www.typingverified.com/certificate)
+    `,
+  },
+  {
+    title:
+      "Être payé pour taper : 9 emplois de saisie sérieux à domicile en 2026",
+    slug: "get-paid-to-type-work-from-home-2026",
+    metaDescription:
+      "Peut-on vraiment être payé pour taper depuis chez soi ? Oui — voici 9 emplois télétravail légitimes en 2026 avec salaires réels et comment démarrer.",
+    publishDate: "Feb 12, 2026",
+    image: "/blog/t12.png",
+    content: `
+Peut-on vraiment être payé pour taper depuis chez soi ? Oui — voici 9 emplois de saisie à distance sérieux en 2026, avec des rémunérations réelles et une entrée en matière concrète.
+
+La frappe est l'une des compétences à distance les plus accessibles : presque tout le monde tape déjà. La question est de savoir si vous le faites assez bien pour être payé — et comment repérer les opportunités sérieuses dans le bruit.
+
+Voici neuf emplois à domicile bien rémunérés, disponibles en 2026.
+
+## 1. Transcriptionniste indépendant (Rev, TranscribeMe, GoTranscript)
+
+**Fonctionnement :** Vous écoutez des enregistrements et vous tapez ce que vous entendez.
+
+**Rémunération :** 0,45–1,50 $ par minute audio (Rev), 0,79–0,97 $ par minute audio (TranscribeMe)
+
+**WPM requis :** 60–75
+
+**Pour commencer :** Postulez sur les sites des plateformes. La plupart imposent un court test d'entrée.
+
+Les gains en transcription dépendent directement de la vitesse. À 80 WPM, on peut transcrire environ 4 à 5 fois le temps réel et gagner 18–25 $ de l'heure dans les meilleurs cas.
+
+## 2. Transcriptionniste médical
+
+**Fonctionnement :** Transformer les enregistrements vocaux des médecins en comptes rendus structurés.
+
+**Rémunération :** 15–22 $ de l'heure, certains postes salariés autour de 40 000–60 000 $/an
+
+**WPM requis :** 65–85, plus terminologie médicale
+
+**Pour commencer :** De nombreuses plateformes proposent une formation. La certification AHIMA est valorisée mais pas toujours exigée pour les débuts en télétravail.
+
+## 3. Spécialiste de la saisie de données
+
+**Fonctionnement :** Saisir, vérifier et gérer des données dans des bases et tableurs.
+
+**Rémunération :** 14–22 $ de l'heure à distance
+
+**WPM requis :** 45–65
+
+**Pour commencer :** Postulez sur Indeed, FlexJobs et Remote.co. Filtrez « data entry remote ».
+
+C'est souvent la porte d'entrée la plus simple pour les débutants. L'offre est volumineuse et la concurrence reste gérable avec un certificat.
+
+## 4. Assistant virtuel
+
+**Fonctionnement :** E-mails, agenda, rédaction, recherche et support à la communication.
+
+**Rémunération :** 15–35 $ de l'heure
+
+**WPM requis :** 50–65
+
+**Pour commencer :** Belay, Time Etc et Zirtual recrutent régulièrement. Créez un profil sur Upwork pour le freelance.
+
+## 5. Spécialiste des données d'entraînement pour l'IA
+
+**Fonctionnement :** Saisir, relire, corriger et annoter du texte pour entraîner des modèles d'intelligence artificielle.
+
+**Rémunération :** 15–25 $ de l'heure
+
+**WPM requis :** 45–60
+
+**Pour commencer :** Scale AI, Appen et Remotasks proposent ce type de poste. La demande est forte en 2026.
+
+## 6. Support client par chat en direct
+
+**Fonctionnement :** Répondre en temps réel aux clients par chat.
+
+**Rémunération :** 13–20 $ de l'heure
+
+**WPM requis :** 45–55
+
+**Pour commencer :** Cherchez « remote chat support » sur Indeed et We Work Remotely.
+
+## 7. Sous-titreur / prestataire CART
+
+**Fonctionnement :** Sous-titrer en direct vidéos, événements ou services d'accessibilité.
+
+**Rémunération :** 20–45 $ de l'heure
+
+**WPM requis :** 80–100+
+
+**Pour commencer :** 3Play Media, Vitac et Caption Max recrutent à distance. Rémunération élevée mais exigences élevées — montez d'abord en vitesse.
+
+## 8. Transcriptionniste juridique
+
+**Fonctionnement :** Transcrire dépositions, audiences et dictées juridiques.
+
+**Rémunération :** 18–30 $ de l'heure
+
+**WPM requis :** 65–80
+
+**Pour commencer :** Offres sur les sites des cabinets, Upwork et agences de recrutement juridique.
+
+## 9. Rédacteur web freelance
+
+**Fonctionnement :** Articles, blogs, fiches produits et contenus web pour des clients.
+
+**Rémunération :** 0,05–0,30 $ par mot pour la majorité des clients, 50–150 $/h pour les profils pointus
+
+**WPM requis :** 60+ recommandé pour la productivité
+
+**Pour commencer :** Upwork, Contena, ProBlogger et prospection directe.
+
+## Le fil commun : se certifier d'abord
+
+Chaque poste de cette liste exigera soit une preuve de vitesse, soit vous paiera mieux si vous pouvez la démontrer. Un certificat de frappe vérifié vous donne une preuve crédible et réutilisable à chaque candidature.
+
+[Obtenez votre certificat et commencez à postuler dès aujourd'hui →](https://www.typingverified.com/certificate)
+    `,
+  },
+  {
+    title:
+      "Vitesse de frappe en transcription médicale : ce qu'il faut savoir",
+    slug: "typing-speed-medical-transcription",
+    metaDescription:
+      "La transcription médicale impose des exigences précises de vitesse et de précision. Ce qu'il vous faut en 2026 et comment vous préparer à ce métier.",
+    publishDate: "Feb 14, 2026",
+    image: "/blog/t15.png",
+    content: `
+La transcription médicale compte parmi les carrières de saisie à distance les mieux rémunérées — mais elle impose des critères qui vont au-delà du simple WPM. Voici l'essentiel avant de vous lancer.
+
+## WPM minimum en transcription médicale
+
+La plupart des postes demandent au moins **65–75 WPM** en entrée de carrière ; les rôles seniors et les plateformes à fort volume visent souvent **80–90 WPM**. La précision est très exigeante : **98 %+** est courant, et beaucoup d'acteurs exigent **99 %+** pour la sécurité des patients.
+
+L'approximation orthographique ne suffit pas : les documents médicaux intègrent le dossier patient, et une erreur peut avoir des conséquences cliniques.
+
+## En quoi la transcription médicale est différente
+
+Au-delà de la vitesse et de la précision, il faut saisir correctement une terminologie spécialisée sous pression :
+
+- Noms de médicaments et dosages
+- Termes anatomiques
+- Codes diagnostiques et procéduraux
+- Abréviations propres aux spécialités
+
+La plupart des débutants doivent investir dans la terminologie médicale en parallèle de l'amélioration de la vitesse.
+
+## Comment se préparer
+
+**Étape 1 — Atteindre au moins 70 WPM** avec 98 % de précision. Leçons structurées et tests chronométrés.
+
+**Étape 2 — Apprendre la terminologie médicale.** Cours en ligne, programmes de collège, plateformes comme Career Step.
+
+**Étape 3 — S'entraîner sur du contenu médical.** Une fois la terminologie acquise, transcrivez des dictées d'exemple — des fichiers d'entraînement gratuits existent en ligne.
+
+**Étape 4 — Se faire certifier.** Un certificat affichant 70+ WPM et 98 % de précision constitue un bon point de départ pour les candidatures junior.
+
+## Où chercher du travail
+
+Parmi les acteurs qui recrutent en télétranscription : Nuance (désormais Microsoft), Acusis, Ciox Health. En freelance : Upwork et agences spécialisées santé.
+
+[Développez votre vitesse pour une carrière en transcription médicale →](https://www.typingverified.com/lessons)
+    `,
+  },
+  {
+    title:
+      "Le moyen le plus rapide de passer de 40 à 70 WPM (plan sur 7 semaines)",
+    slug: "40-to-70-wpm-plan",
+    metaDescription:
+      "Vous voulez passer de 40 à 70 WPM ? Voici un plan structuré semaine par semaine — durées quotidiennes et jalons clairs.",
+    publishDate: "Feb 16, 2026",
+    image: "/blog/t11.png",
+    content: `
+Passer de 40 à 70 WPM ne tient pas au talent, mais à la méthode. Voici un plan sur sept semaines qui a fait ses preuves, avec des séances quotidiennes de 15–20 minutes.
+
+## Avant de commencer
+
+Passez un test de référence maintenant. Notez votre WPM et votre précision exacts. Vous vous y référerez chaque fin de semaine pour mesurer les progrès.
+
+## Semaine 1 : Maîtrise de la rangée de base
+
+**Objectif :** Taper la rangée de base (ASDF / JKL;) sans regarder le clavier, zéro erreur.
+
+**Pratique quotidienne (15 min) :** Exercices sur la rangée de base uniquement. Couvrez vos mains avec une feuille si besoin. Pas de coups d'œil.
+
+**Fin de semaine :** Enchaîner « asdfghjkl; » pendant 60 secondes sans regarder, à n'importe quelle vitesse, avec 100 % de précision.
+
+## Semaine 2 : Tout le clavier
+
+**Objectif :** Ajouter la rangée du haut et du bas. Commencer à taper tout l'alphabet sans regarder.
+
+**Pratique quotidienne (15 min) :** Lettres sur toutes les rangées. Priorité à la précision. Ralentissement normal — 25–35 WPM est fréquent.
+
+**Fin de semaine :** Les 26 lettres sans regarder, avec au moins 95 % de précision.
+
+## Semaine 3 : Mots fréquents
+
+**Objectif :** Fluidité sur les 200 mots les plus fréquents.
+
+**Pratique quotidienne (15 min) :** Listes de mots courants. Les mots les plus utilisés doivent devenir automatiques.
+
+**Fin de semaine :** Les mots coulent naturellement. Visez 38–45 WPM.
+
+## Semaine 4 : Phrases complètes
+
+**Objectif :** Enchaîner les mots en phrases. Ponctuation et majuscules.
+
+**Pratique quotidienne (15 min) :** Paragraphes entiers. Viser zéro erreur et un rythme régulier plutôt que des accélérations ponctuelles.
+
+**Fin de semaine :** 45–52 WPM à 96 % de précision.
+
+## Semaine 5 : Pics de vitesse
+
+**Objectif :** Repousser le plafond avec des exercices courts et intenses.
+
+**Pratique quotidienne (20 min) :** Alterner 30 s à effort maximal et passages d'une minute axés précision. Les pics montrent au corps que des vitesses plus élevées sont possibles.
+
+**Fin de semaine :** 52–60 WPM en pics, 48–55 WPM en continu.
+
+## Semaine 6 : Tenue dans le temps
+
+**Objectif :** Tenir 60+ WPM sur un test d'une minute complète.
+
+**Pratique quotidienne (20 min) :** Tests chronométrés 60 s et 120 s. Suivez le WPM net. Précision au-dessus de 96 %.
+
+**Fin de semaine :** 60–65 WPM / 96 %+ sur 60 secondes complètes.
+
+## Semaine 7 : Simulation finale et certificat
+
+**Objectif :** Atteindre 70 WPM de façon régulière. Préparer le certificat.
+
+**Pratique quotidienne (20 min) :** Reproduire les conditions du test certifiant. 60 secondes, pression réelle, noter chaque essai. Pause entre les passages.
+
+**Fin de semaine :** 65–75 WPM / 97 %+ de précision. Certificat à portée de main.
+
+[Lancez le plan et obtenez votre certificat →](https://www.typingverified.com/certificate)
+    `,
+  },
+  {
+    title:
+      "Vitesse de frappe pour les agents de service client : ce qu'il faut savoir",
+    slug: "typing-speed-customer-service",
+    metaDescription:
+      "Vous postulez à un poste de service client ? Voici la vitesse exacte requise pour le chat en direct, le support e-mail et d'autres rôles en 2026.",
+    publishDate: "Feb 18, 2026",
+    image: "/blog/t17.png",
+    content: `
+Le service client représente l'une des plus grandes catégories de travail à distance, et la vitesse de frappe est une exigence fondamentale — en particulier pour les rôles de chat en direct où le client attend votre réponse en temps réel.
+
+Voici ce que demandent concrètement les différents postes de service client.
+
+## Chat en direct
+
+**WPM requis :** 45–55 minimum, 60+ de préférence
+
+Le chat en direct est le format le plus exigeant en termes de frappe. Vous répondez à plusieurs clients en même temps, naviguez dans des systèmes internes et maintenez un ton professionnel — le tout pendant que le client voit l'indicateur de frappe.
+
+Des typistes lents dans le chat en direct dégradent l'expérience client et font baisser les scores de satisfaction. La plupart des entreprises fixent un minimum de 45–50 WPM pour les rôles chat, avec une préférence pour 55–65 WPM.
+
+## Support par e-mail
+
+**WPM requis :** 40–50 minimum
+
+Le support par e-mail est moins soumis à la pression du temps que le chat, mais le volume de réponses compte. Les agents traitant 80–120 e-mails par poste doivent rédiger des réponses claires et complètes efficacement. La plupart des rôles attendent au moins 40 WPM avec de solides compétences de communication écrite.
+
+## Support téléphonique avec prise de notes simultanée
+
+**WPM requis :** 35–50
+
+Dans les rôles de support téléphonique où vous devez saisir des notes et des mises à jour dans un CRM tout en parlant avec les clients, vous devez taper sans y réfléchir consciemment — pour que toute votre attention reste sur la conversation.
+
+## Support technique / Help Desk
+
+**WPM requis :** 50–65
+
+Les rôles de support technique exigent souvent de la documentation écrite détaillée, la gestion de tickets et la communication client simultanément. Un WPM plus élevé permet aux agents de traiter plus de tickets par poste et de rédiger des notes plus complètes.
+
+## Comment se préparer à un test de frappe en service client
+
+La plupart des employeurs demandent de compléter un test de frappe en ligne avant ou pendant l'entretien. Le test dure généralement 3–5 minutes et utilise du texte général plutôt que du contenu technique.
+
+Préparez-vous en pratiquant des tests chronométrés quotidiennement dans la semaine précédant votre candidature ou entretien. Concentrez-vous sur la précision — la plupart des employeurs privilégient un résultat propre et professionnel à la vitesse brute.
+
+[Passez un test gratuit et voyez où vous en êtes →](https://www.typingverified.com/test)
+    `,
+  },
+  {
+    title: "Typiste juridique vs sténographe judiciaire : quel métier paye le plus ?",
+    slug: "legal-typist-vs-court-reporter",
+    metaDescription:
+      "Les typistes juridiques et les sténographes judiciaires travaillent tous deux avec les écrits des procédures légales — mais les carrières diffèrent nettement en termes de salaire, de formation et de vitesse de frappe.",
+    publishDate: "Feb 20, 2026",
+    image: "/blog/t18.png",
+    content: `
+Si vous souhaitez travailler dans le domaine juridique grâce à votre vitesse de frappe, deux voies s'offrent à vous : typiste juridique et sténographe judiciaire. Les deux sont recherchés, bien rémunérés et exigent d'excellentes compétences en frappe — mais ce sont des métiers très différents.
+
+## Typiste juridique / Transcripteur juridique
+
+**Ce qu'ils font :** Les typistes juridiques transcrivent le contenu dicté par des avocats, juges et parajuristes en documents légaux formatés — contrats, mémoires, correspondances, dépositions et actes judiciaires.
+
+**Vitesse de frappe requise :** 60–80 WPM, précision 98%+
+
+**Salaire moyen :** 40 000–65 000 $/an en télétravail, plus dans les grandes villes
+
+**Formation requise :** Aucune certification spécialisée obligatoire, mais la connaissance de la terminologie juridique est précieuse. De nombreux typistes juridiques sont autodidactes ou suivent de courts cours en ligne.
+
+**Environnement de travail :** Principalement à distance. Horaires flexibles. Demande croissante à mesure que les cabinets d'avocats se numérisent.
+
+## Sténographe judiciaire
+
+**Ce qu'ils font :** Les sténographes judiciaires rédigent la transcription verbatim officielle des audiences, dépositions et procès — en temps réel. La plupart utilisent une machine sténotype, pas un clavier standard.
+
+**Vitesse requise :** 225 WPM en sténo (requis pour la certification), soit approximativement 180+ WPM sur un clavier standard.
+
+**Salaire moyen :** 60 000–100 000 $/an+, avec les meilleurs gagnant 150 000 $+
+
+**Formation requise :** 2–4 ans d'école de sténographie judiciaire. La certification NCRA Registered Professional Reporter (RPR) est la référence.
+
+**Environnement de travail :** Principalement en présentiel dans les salles d'audience, avec quelques dépositions à distance par visioconférence.
+
+## Comparaison côte à côte
+
+| Critère | Typiste juridique | Sténographe judiciaire |
+|---------|------------------|------------------------|
+| Salaire de départ | 38 000–50 000 $ | 50 000–65 000 $ |
+| Salaire maximum | 65 000 $ | 100 000–150 000 $+ |
+| Durée de formation | Quelques semaines à quelques mois | 2–4 ans |
+| Certification requise | Non | Oui (RPR) |
+| Équipement | Clavier standard | Machine sténotype |
+| Mode de travail | Principalement à distance, flexible | Principalement en présentiel, planifié |
+
+## Que choisir ?
+
+Si vous souhaitez intégrer rapidement le domaine juridique avec vos compétences actuelles en frappe, la transcription juridique est la voie la plus rapide et accessible, avec une bonne rémunération et une grande flexibilité en télétravail.
+
+Si vous êtes prêt à investir 2–4 ans dans une formation professionnelle, la sténographie judiciaire offre des revenus à long terme nettement plus élevés et une compétence spécialisée difficile à remplacer.
+
+[Développez votre vitesse de frappe pour une carrière juridique →](https://www.typingverified.com/certificate)
+    `,
+  },
+  {
+    title: "Un certificat de frappe en vaut-il la peine ? Voici ce que disent les employeurs",
+    slug: "is-typing-certificate-worth-it",
+    metaDescription:
+      "Obtenir un certificat de frappe en vaut-il vraiment la peine ? Voici ce que disent les employeurs, quels secteurs y attachent le plus d'importance et comment l'utiliser efficacement.",
+    publishDate: "Feb 22, 2026",
+    image: "/blog/t19.png",
+    content: `
+Si vous investissez du temps à pratiquer et à tester vos compétences en frappe, vous voulez savoir : le certificat à la clé a-t-il vraiment de l'importance ? Voici une réponse honnête basée sur ce que disent les employeurs et les recruteurs.
+
+## Ce que disent les employeurs
+
+Dans les secteurs où la frappe est une fonction centrale du poste, les recruteurs disent régulièrement les mêmes choses sur les certificats de frappe :
+
+**« Cela supprime une étape de notre processus. »** Les employeurs qui exigent des tests de frappe lors du recrutement doivent planifier, administrer et évaluer ces tests pour chaque candidat. Un candidat qui arrive avec un certificat crédible — indiquant un WPM précis et un pourcentage de précision — leur permet de sauter ou d'accélérer cette étape.
+
+**« Cela montre de l'initiative. »** Un candidat qui a proactivement obtenu un certificat avant de postuler démontre qu'il prend le poste au sérieux et se prépare délibérément. Ce signal va bien au-delà de la compétence de frappe elle-même.
+
+**« Cela rend la revendication crédible. »** La vitesse de frappe déclarée par le candidat sur un CV est impossible à vérifier sans test. Un certificat transforme une affirmation invérifiable en preuve documentée.
+
+## Quels secteurs y accordent le plus de valeur
+
+Les certificats de frappe ont le plus de poids dans :
+
+- **La saisie de données et la gestion de bases de données** — le WPM est un indicateur de productivité central
+- **La transcription médicale et juridique** — la documentation de précision est critique
+- **Le service client à distance** — surtout pour les rôles de chat en direct
+- **Les postes d'assistant administratif et de direction** — l'efficacité de frappe est une attente de base
+- **Les agences de placement et le travail temporaire** — les agences utilisent les certificats pour associer rapidement les candidats aux postes adaptés
+
+## Quand un certificat a moins de valeur
+
+Un certificat de frappe a moins de poids dans les rôles où la frappe est accessoire plutôt que centrale — développement logiciel, management, rôles créatifs, ou postes où une autre compétence est le qualificatif principal.
+
+Il a également moins de valeur si vous ne pouvez pas l'étayer. Si votre certificat indique 65 WPM mais que vous peinez à atteindre 50 WPM lors d'un test en direct, le certificat crée plus de problèmes qu'il n'en résout.
+
+## Conclusion
+
+Un certificat de frappe en vaut la peine lorsque deux conditions sont réunies : le poste pour lequel vous postulez comporte une composante de frappe, et le certificat reflète fidèlement votre niveau actuel. Quand les deux sont vrais, c'est une accréditation peu coûteuse à fort rendement qui ne vous coûte que du temps.
+
+[Obtenez votre certificat de frappe gratuitement →](https://www.typingverified.com/certificate)
+    `,
+  },
+  {
+    title: "J'ai testé 5 sites de test de frappe — voici ce que j'ai trouvé (avis honnête)",
+    slug: "best-typing-test-sites-comparison",
+    metaDescription:
+      "J'ai testé 5 des sites de test de frappe les plus populaires en 2026. Voici une comparaison honnête des fonctionnalités, de la précision et lequel vaut vraiment votre temps.",
+    publishDate: "Feb 24, 2026",
+    image: "/blog/t20.png",
+    content: `
+Tous les sites de test de frappe ne se valent pas. J'ai passé du temps sur cinq des plateformes les plus populaires pour vous offrir une comparaison honnête côte à côte — afin que vous puissiez consacrer votre temps de pratique là où cela en vaut vraiment la peine.
+
+1. **10FastFingers**
+**Idéal pour :** Tests de vitesse rapides et décontractés
+**Précision WPM :** Bonne pour les mots courants, moins réaliste pour le texte professionnel
+**Fonctionnalités :** Courses multijoueurs, texte personnalisé, classements
+**Certificat :** Non
+**Verdict :** Amusant pour la compétition et la motivation. Pas idéal pour le développement professionnel.
+
+2. **Monkeytype**
+**Idéal pour :** Pratique personnalisable
+**Précision WPM :** Excellente — paramètres de test hautement configurables
+**Fonctionnalités :** Personnalisation poussée, thèmes, listes de mots, modes de ponctuation
+**Certificat :** Non
+**Verdict :** Le meilleur test de frappe pur pour les passionnés. Pas de parcours d'apprentissage structuré ni de certificat.
+
+3. **Keybr**
+**Idéal pour :** Débutants apprenant la technique correcte
+**Précision WPM :** Bonne
+**Fonctionnalités :** Leçons adaptatives qui identifient et travaillent vos touches faibles
+**Certificat :** Non
+**Verdict :** Excellent pour les débutants qui ont besoin d'un apprentissage structuré. Limité au-delà des premières étapes.
+
+4. **TypeRacer**
+**Idéal pour :** Amélioration de la vitesse par le jeu
+**Précision WPM :** Bonne, utilise de vraies citations et passages
+**Fonctionnalités :** Courses compétitives, courses fantômes, tournois
+**Certificat :** Non
+**Verdict :** Très engageant et motivant. Aucun parcours de développement professionnel.
+
+5. **Typingverified**
+**Idéal pour :** Développement professionnel et certification
+**Précision WPM :** Excellente — WPM net calculé en temps réel
+**Fonctionnalités :** Programme structuré de 10 leçons, mode pratique, tests chronométrés 60s/120s, certificat vérifié
+**Certificat :** Oui — téléchargeable, partageable, prêt pour le CV
+**Verdict :** La seule plateforme de cette liste conçue pour ceux qui ont besoin de prouver leur compétence en frappe — pas seulement la pratiquer.
+
+## Comparaison côte à côte
+
+| Plateforme | Leçons structurées | Certificat | WPM net | Orientation professionnelle |
+|------------|-------------------|------------|---------|----------------------------|
+| 10FastFingers | ❌ | ❌ | ❌ | ❌ |
+| Monkeytype | ❌ | ❌ | ✅ | ❌ |
+| Keybr | Partiel | ❌ | ✅ | ❌ |
+| TypeRacer | ❌ | ❌ | ❌ | ❌ |
+| Typingverified | ✅ | ✅ | ✅ | ✅ |
+
+Si votre objectif est le divertissement et la compétition de vitesse, Monkeytype et TypeRacer sont excellents. Si votre objectif est de développer une compétence professionnelle vérifiable et de repartir avec un diplôme, Typingverified est la seule plateforme conçue à cet effet.
+
+[Commencez vos leçons gratuites sur Typingverified →](https://www.typingverified.com/lessons)
+    `,
   }];

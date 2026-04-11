@@ -1265,4 +1265,490 @@ For most professional purposes, 65–80 WPM with 97%+ accuracy is more than suff
 
 [Start your touch typing journey today with free structured lessons →](https://www.typingverified.com/lessons)
     `,
+  },
+  {
+    title: "How to Put Typing Speed on Your Resume (With Examples)",
+    slug: "how-to-put-typing-speed-on-resume",
+    metaDescription:
+      "Should you list typing speed on your resume? Yes — if you do it right. Here's exactly how to phrase it, where to put it, and how a certificate makes it credible.",
+    publishDate: "Feb 10, 2026",
+    image: "/blog/t14.png",
+    content: `
+Typing speed is a legitimate professional skill worth listing on a resume — but only if you list it correctly. Done right, it signals efficiency and professionalism. Done wrong, it looks like filler. Here is the definitive guide.
+
+## Should You Include Typing Speed on Your Resume?
+
+Yes, if any of these apply to you:
+
+- You are applying for a role where typing is a core function (data entry, transcription, customer service, admin)
+- The job listing specifically mentions a WPM requirement
+- You type above 55 WPM with 95%+ accuracy
+- You have a verified certificate to back up the claim
+
+If you type 38 WPM, do not list it — it signals below-average speed and will hurt more than help. Work on improving it first, then list it once it is something to be proud of.
+
+## Where to List It on Your Resume
+
+Typing speed belongs in the **Skills** section of your resume, not in the experience descriptions. It is a technical skill, not an achievement.
+
+**Example Skills section entry:**
+
+Typing Speed: 68 WPM / 97% Accuracy (Verified — Typingverified Certificate)
+
+If the role has a specific WPM requirement (say, 60 WPM), and you meet it, you can also reference it in your cover letter:
+
+"I type at 68 WPM with 97% accuracy, verified by certificate, and am comfortable meeting the 60 WPM requirement outlined in the listing."
+
+## What Not to Do
+
+- Do not round up dramatically. "90 WPM" when you tested at 72 WPM will be exposed the moment you sit for an interview test.
+- Do not list typing speed without accuracy. Speed without accuracy context is incomplete and slightly suspicious to experienced recruiters.
+- Do not list it without being able to demonstrate it. If an employer asks you to take a live test, you should be able to match your claimed speed.
+
+## How a Certificate Strengthens the Claim
+
+Self-reported typing speed on a resume is easy to exaggerate, and recruiters know it. A verified certificate changes the dynamic entirely — it is a third-party validation of your exact speed and accuracy, earned through a structured assessment.
+
+Including a certificate link alongside your claimed WPM removes all skepticism and positions you as a prepared, credible candidate.
+
+[Earn your verified typing certificate and strengthen your resume →](https://www.typingverified.com/certificate)
+    `,
+  },
+  {
+    title: "Get Paid to Type: 9 Legit Work-From-Home Typing Jobs in 2026",
+    slug: "get-paid-to-type-work-from-home-2026",
+    metaDescription:
+      "Can you really get paid to type from home? Yes — here are 9 legitimate work-from-home typing jobs in 2026 with real pay rates and how to get started.",
+    publishDate: "Feb 12, 2026",
+    image: "/blog/t12.png",
+    content: `
+Can you really get paid to type from home? Yes — here are 9 legitimate work-from-home typing jobs in 2026 with real pay rates and how to get started.
+
+Typing is one of the most accessible remote skills because almost everyone already does it. The question is whether you do it well enough to get paid for it — and how to find the legitimate opportunities among the noise.
+
+Here are nine real, well-paying work-from-home typing jobs available in 2026.
+
+## 1. Freelance Transcriptionist (Rev, TranscribeMe, GoTranscript)
+
+**How it works:** You listen to audio recordings and type what you hear.
+
+**Pay rate:** $0.45–$1.50 per audio minute (Rev), $0.79–$0.97 per audio minute (TranscribeMe)
+
+**Required WPM:** 60–75
+
+**Getting started:** Apply directly on the platform websites. Most require a short entrance test.
+
+Transcription earnings scale directly with speed. A typist at 80 WPM can transcribe audio at roughly 4–5x real time and earn $18–$25 per hour in peak conditions.
+
+## 2. Medical Transcriptionist
+
+**How it works:** Convert physician voice recordings into structured patient notes.
+
+**Pay rate:** $15–$22 per hour, some salaried roles at $40,000–$60,000/year
+
+**Required WPM:** 65–85, plus medical terminology knowledge
+
+**Getting started:** Many platforms offer training. AHIMA certification is respected but not always required for remote entry-level roles.
+
+## 3. Data Entry Specialist
+
+**How it works:** Input, verify, and manage information in databases and spreadsheets.
+
+**Pay rate:** $14–$22 per hour remotely
+
+**Required WPM:** 45–65
+
+**Getting started:** Apply on Indeed, FlexJobs, and Remote.co. Filter for "data entry remote."
+
+This is the most accessible entry point for new remote typists. Volume is high and competition is manageable with a certificate.
+
+## 4. Virtual Assistant
+
+**How it works:** Email management, scheduling, document creation, research, and communication support.
+
+**Pay rate:** $15–$35 per hour
+
+**Required WPM:** 50–65
+
+**Getting started:** Platforms like Belay, Time Etc, and Zirtual hire regularly. Build a profile on Upwork for freelance opportunities.
+
+## 5. AI Training Data Specialist
+
+**How it works:** Type, review, correct, and label text data used to train artificial intelligence systems.
+
+**Pay rate:** $15–$25 per hour
+
+**Required WPM:** 45–60
+
+**Getting started:** Scale AI, Appen, and Remotasks hire for these roles. Volume is high in 2026 as AI development accelerates.
+
+## 6. Live Chat Customer Support
+
+**How it works:** Respond to customer questions and issues in real time via chat.
+
+**Pay rate:** $13–$20 per hour
+
+**Required WPM:** 45–55
+
+**Getting started:** Look for "remote chat support" on Indeed and We Work Remotely.
+
+## 7. Captioner / CART Provider
+
+**How it works:** Provide real-time captions for video content, live events, or accessibility services.
+
+**Pay rate:** $20–$45 per hour
+
+**Required WPM:** 80–100+
+
+**Getting started:** 3Play Media, Vitac, and Caption Max hire remote captioners. High pay but high bar — build your speed first.
+
+## 8. Legal Transcriptionist
+
+**How it works:** Transcribe depositions, hearings, and legal dictation.
+
+**Pay rate:** $18–$30 per hour
+
+**Required WPM:** 65–80
+
+**Getting started:** Look for roles on law firm job boards, Upwork, and legal staffing agencies.
+
+## 9. Freelance Content Writer
+
+**How it works:** Write articles, blogs, product descriptions, and web copy for clients.
+
+**Pay rate:** $0.05–$0.30 per word for most clients, $50–$150/hour for specialists
+
+**Required WPM:** 60+ recommended for productivity
+
+**Getting started:** Upwork, Contena, ProBlogger job board, and direct outreach.
+
+## The Common Thread: Get Certified First
+
+Every role on this list will either require you to prove your typing speed or pay you more if you can demonstrate it. A verified typing certificate gives you a credible, portable credential to attach to every application.
+
+[Earn your certificate and start applying today →](https://www.typingverified.com/certificate)
+    `,
+  },
+  {
+    title:
+      "Medical Transcription Typing Speed Requirements: What You Need to Know",
+    slug: "typing-speed-medical-transcription",
+    metaDescription:
+      "Medical transcription has specific typing speed and accuracy requirements. Here's what you need in 2026 and how to prepare for a career in medical transcription.",
+    publishDate: "Feb 14, 2026",
+    image: "/blog/t15.png",
+    content: `
+Medical transcription is one of the higher-paying remote typing careers available — but it comes with specific requirements that go beyond raw WPM. Here is what you need to know before pursuing this field.
+
+## Minimum WPM Requirement for Medical Transcription
+
+Most medical transcription roles require a minimum of **65–75 WPM** for entry-level positions, with senior roles and higher-volume platforms expecting **80–90 WPM**. Accuracy requirements are strict: **98%+** is standard, and many platforms require **99%+** for patient safety reasons.
+
+This is not a role where approximate spelling is acceptable. Medical documents become part of patient records, and errors can have clinical consequences.
+
+## What Makes Medical Transcription Different
+
+Beyond speed and accuracy, medical transcriptionists need to type specialized terminology correctly under time pressure. This includes:
+
+- Drug names and dosages
+- Anatomical terms
+- Diagnostic and procedural codes
+- Abbreviations specific to different medical specialties
+
+Most people who enter medical transcription need to invest time in medical terminology training in addition to building their typing speed.
+
+## How to Prepare
+
+**Step 1 — Build your typing speed to at least 70 WPM** with 98% accuracy. Use structured lessons and timed tests to get there.
+
+**Step 2 — Learn medical terminology.** Online courses, community college programs, and platforms like Career Step offer focused training.
+
+**Step 3 — Practice with medical content.** Once your terminology is solid, practice transcribing sample medical dictation — freely available practice files exist online for this purpose.
+
+**Step 4 — Get certified.** A typing certificate showing 70+ WPM and 98% accuracy is a strong starting credential for entry-level applications.
+
+## Where to Find Medical Transcription Work
+
+Platforms and companies currently hiring remote medical transcriptionists include Nuance (now part of Microsoft), Acusis, and Ciox Health. Freelance options are available through Upwork and medical staffing agencies.
+
+[Build your typing speed for a medical transcription career →](https://www.typingverified.com/lessons)
+    `,
+  },
+  {
+    title: "The Fastest Way to Go From 40 WPM to 70 WPM (7-Week Plan)",
+    slug: "40-to-70-wpm-plan",
+    metaDescription:
+      "Want to improve your typing speed from 40 WPM to 70 WPM? Here's a structured, week-by-week plan that works — with daily practice times and clear milestones.",
+    publishDate: "Feb 16, 2026",
+    image: "/blog/t11.png",
+    content: `
+Going from 40 WPM to 70 WPM is not a matter of talent. It is a matter of structure. Here is a seven-week plan that has worked for thousands of typists, broken down into daily sessions you can complete in 15–20 minutes.
+
+## Before You Start
+
+Take a baseline test right now. Record your exact WPM and accuracy. You will check back against this number at the end of each week to track progress.
+
+## Week 1: Home Row Lockdown
+
+**Goal:** Type home row keys (ASDF / JKL;) without looking at the keyboard, zero errors.
+
+**Daily practice (15 min):** Home row only drills. Use a piece of paper to cover your hands if necessary. Do not peek.
+
+**End-of-week target:** Type "asdfghjkl;" combinations for 60 seconds without looking, at any speed, with 100% accuracy.
+
+## Week 2: Full Keyboard Map
+
+**Goal:** Add the top row and bottom row. Begin typing the full alphabet without looking.
+
+**Daily practice (15 min):** Expand letter drills to all rows. Still prioritize accuracy over speed. Accept that you will be slow — 25–35 WPM is normal here.
+
+**End-of-week target:** Type all 26 letters without looking, maintaining 95%+ accuracy.
+
+## Week 3: Common Word Drilling
+
+**Goal:** Build fluency on the 200 most common English words.
+
+**Daily practice (15 min):** Practice typing common word lists. The goal is to make the most frequent words feel automatic so you stop thinking about individual letters.
+
+**End-of-week target:** Common words should feel natural and fast. Speed should start climbing — aim for 38–45 WPM.
+
+## Week 4: Full Sentence Practice
+
+**Goal:** String words into sentences smoothly. Work on punctuation and capitalization.
+
+**Daily practice (15 min):** Type full paragraphs of natural English. Focus on zero errors and smooth, steady rhythm rather than bursts of speed.
+
+**End-of-week target:** 45–52 WPM at 96% accuracy.
+
+## Week 5: Speed Bursts
+
+**Goal:** Push your ceiling with short, intense drills.
+
+**Daily practice (20 min):** Alternate between 30-second maximum-effort bursts and 60-second accuracy-focused full passages. The bursts teach your fingers that higher speeds are physically achievable.
+
+**End-of-week target:** 52–60 WPM in short bursts, 48–55 WPM sustained.
+
+## Week 6: Sustained Speed
+
+**Goal:** Hold 60+ WPM for a full 60-second test.
+
+**Daily practice (20 min):** Full 60-second and 120-second timed tests. Track your net WPM. Accuracy must stay above 96%.
+
+**End-of-week target:** 60–65 WPM / 96%+ accuracy on a full 60-second test.
+
+## Week 7: Final Test Simulation and Certificate Prep
+
+**Goal:** Hit 70 WPM or above consistently. Qualify for your typing certificate.
+
+**Daily practice (20 min):** Simulate the certificate test conditions. 60 seconds, full pressure, track every result. Rest between attempts.
+
+**End-of-week target:** 65–75 WPM / 97%+ accuracy. Certificate unlocked.
+
+[Start the plan and earn your certificate →](https://www.typingverified.com/certificate)
+    `,
+  },
+  {
+    title:
+      "Customer Service Rep Typing Requirements: How Fast Do You Need to Be?",
+    slug: "typing-speed-customer-service",
+    metaDescription:
+      "Applying for a customer service role? Here's the exact typing speed you need for chat support, email support, and other customer-facing positions in 2026.",
+    publishDate: "Feb 18, 2026",
+    image: "/blog/t17.png",
+    content: `
+Customer service is one of the largest categories of remote work, and typing speed is a core requirement — especially for live chat roles where customers are waiting in real time for your response.
+
+Here is a clear breakdown of what different customer service roles actually require.
+
+## Live Chat Support
+
+**Required WPM:** 45–55 minimum, 60+ preferred
+
+Live chat is the most typing-intensive customer service format. You are responding to multiple customers simultaneously, navigating internal systems, and maintaining a professional tone — all while the customer watches a typing indicator.
+
+Slow typists in live chat create poor customer experiences and lower satisfaction scores. Most companies set a minimum of 45–50 WPM for chat roles, with a preference for 55–65 WPM.
+
+## Email Support
+
+**Required WPM:** 40–50 minimum
+
+Email support is less time-pressured than live chat, but response volume matters. Agents handling 80–120 emails per shift need to write clear, complete responses efficiently. Most email support roles expect at least 40 WPM with strong written communication skills.
+
+## Phone Support with Simultaneous Note-Taking
+
+**Required WPM:** 35–50
+
+In phone support roles that require you to type notes and updates into a CRM while speaking with customers, you need to be able to type without consciously thinking about it — so that your full attention stays on the conversation.
+
+## Technical Support / IT Help Desk
+
+**Required WPM:** 50–65
+
+Technical support roles often require detailed written documentation, ticket management, and customer communication simultaneously. Higher WPM allows agents to handle more tickets per shift and write more thorough notes.
+
+## How to Prepare for a Customer Service Typing Test
+
+Most customer service employers will ask you to complete a typing test online before or during the interview process. The test is usually 3–5 minutes long and uses general text rather than technical content.
+
+Prepare by practicing timed tests daily in the week before your application or interview. Focus on accuracy — most customer service employers care more about clean, professional output than raw speed.
+
+[Take a free practice test and see where you stand →](https://www.typingverified.com/test)
+    `,
+  },
+  {
+    title: "Legal Typist vs Court Reporter: Which Career Pays More?",
+    slug: "legal-typist-vs-court-reporter",
+    metaDescription:
+      "Legal typists and court reporters both work with the written record of legal proceedings — but the careers differ significantly in pay, training, and typing requirements.",
+    publishDate: "Feb 20, 2026",
+    image: "/blog/t18.png",
+    content: `
+If you are interested in a typing career in the legal field, you have two distinct paths: legal typist and court reporter. Both are in demand, both pay well, and both require excellent typing skills — but they are very different jobs.
+
+## Legal Typist / Legal Transcriptionist
+
+**What they do:** Legal typists transcribe dictated content from lawyers, judges, and paralegals into formatted legal documents — contracts, briefs, correspondence, depositions, and court filings.
+
+**Required typing speed:** 60–80 WPM, 98%+ accuracy
+
+**Average salary:** $40,000–$65,000/year remotely, higher in major markets
+
+**Training required:** No specialized certification required, though legal terminology knowledge is valuable. Many legal typists are self-taught or complete short online courses.
+
+**Work environment:** Mostly remote. Flexible hours. Growing demand as law firms digitize operations.
+
+## Court Reporter
+
+**What they do:** Court reporters create the official verbatim transcript of courtroom proceedings, depositions, and hearings — in real time. Most use a stenotype machine, not a standard keyboard.
+
+**Required speed:** 225 WPM in steno (required for certification), which is approximately equivalent to 180+ WPM on a standard keyboard.
+
+**Average salary:** $60,000–$100,000+/year, with top reporters earning $150,000+
+
+**Training required:** 2–4 years of formal court reporting school. NCRA Registered Professional Reporter (RPR) certification is the standard credential.
+
+**Work environment:** Primarily in-person in courtrooms, with some remote deposition work available via videoconference.
+
+## Side-by-Side Comparison
+
+| Factor | Legal Typist | Court Reporter |
+|--------|-------------|----------------|
+| Starting salary | $38,000–$50,000 | $50,000–$65,000 |
+| Peak salary | $65,000 | $100,000–$150,000+ |
+| Training time | Weeks to months | 2–4 years |
+| Certification required | No | Yes (RPR) |
+| Equipment | Standard keyboard | Stenotype machine |
+| Work style | Mostly remote, flexible | Mostly in-person, scheduled |
+
+## Which Should You Choose?
+
+If you want to enter the legal field quickly with your existing typing skills, legal transcription is the faster, lower-barrier path with solid pay and strong remote flexibility.
+
+If you are willing to invest 2–4 years in professional training, court reporting offers significantly higher long-term earnings and a specialized, hard-to-replace skill set.
+
+[Build your typing speed for a legal career →](https://www.typingverified.com/certificate)
+    `,
+  },
+  {
+    title: "Is a Typing Certificate Worth It? Here's What Employers Actually Say",
+    slug: "is-typing-certificate-worth-it",
+    metaDescription:
+      "Is earning a typing certificate actually worth the effort? We look at what employers say, which industries value it most, and how to use a certificate effectively.",
+    publishDate: "Feb 22, 2026",
+    image: "/blog/t19.png",
+    content: `
+If you are going to invest time practicing and testing your typing skills, you want to know: does the certificate at the end actually matter? Here is an honest answer based on what employers and hiring managers actually say.
+
+## What Employers Say
+
+In industries where typing is a core job function, recruiters consistently say the same things about typing certificates:
+
+**"It removes a step from our process."** Employers who require typing tests during hiring have to schedule, administer, and evaluate those tests for every candidate. A candidate who arrives with a credible certificate — showing a specific WPM and accuracy percentage — allows them to skip or fast-track that step.
+
+**"It shows initiative."** A candidate who proactively earned a certificate before applying demonstrates that they take the role seriously and prepare deliberately. That signal goes beyond the typing skill itself.
+
+**"It makes the claim credible."** Self-reported typing speed on a resume is impossible to verify without testing. A certificate converts an unverifiable claim into documented evidence.
+
+## Which Industries Value It Most
+
+Typing certificates carry the most weight in:
+
+- **Data entry and database management** — WPM is a core productivity metric
+- **Medical and legal transcription** — accuracy documentation is critical
+- **Remote customer service** — especially live chat roles
+- **Administrative and executive assistant roles** — typing efficiency is a baseline expectation
+- **Staffing agencies and temp work** — agencies use certificates to match candidates to appropriate roles quickly
+
+## When a Certificate Is Less Valuable
+
+A typing certificate carries less weight in roles where typing is incidental rather than central — software development, management, creative roles, or jobs where a different skill is the primary qualifier.
+
+It also carries less weight if you cannot back it up. If your certificate shows 65 WPM but you struggle to hit 50 WPM in a live test, the certificate creates more problems than it solves.
+
+## The Bottom Line
+
+A typing certificate is worth it when two conditions are met: the role you are applying for has a typing component, and the certificate accurately reflects your current skill. When both are true, it is a low-cost, high-return credential that costs you nothing but time to earn.
+
+[Earn your typing certificate for free →](https://www.typingverified.com/certificate)
+    `,
+  },
+  {
+    title: "I Tried 5 Typing Test Sites and This Is What I Found (Honest Review)",
+    slug: "best-typing-test-sites-comparison",
+    metaDescription:
+      "I tested 5 of the most popular typing test sites in 2026. Here's an honest comparison of features, accuracy, and which one is actually worth your time.",
+    publishDate: "Feb 24, 2026",
+    image: "/blog/t20.png",
+    content: `
+Not all typing test sites are equal. I spent time on five of the most popular platforms to give you an honest, side-by-side comparison — so you can spend your practice time where it actually pays off.
+
+1. **10FastFingers**
+**Best for:** Quick casual speed tests
+**WPM accuracy:** Good for common words, less realistic for professional text
+**Features:** Multiplayer races, custom text, leaderboards
+**Certificate:** No
+**Verdict:** Fun for competition and motivation. Not ideal for professional skill-building.
+
+2. **Monkeytype**
+**Best for:** Customizable practice
+**WPM accuracy:** Excellent — highly configurable test parameters
+**Features:** Extensive customization, themes, word lists, punctuation modes
+**Certificate:** No
+**Verdict:** The best pure typing test for hobbyists and speed enthusiasts. No structured learning path and no certificate.
+
+3. **Keybr**
+**Best for:** Beginners learning proper technique
+**WPM accuracy:** Good
+**Features:** Adaptive lessons that identify and drill your weak keys
+**Certificate:** No
+**Verdict:** Excellent for beginners who need structured skill-building. Limited beyond early-stage learning.
+
+4. **TypeRacer**
+**Best for:** Gamified speed improvement
+**WPM accuracy:** Good, uses real quotes and passages
+**Features:** Competitive racing, ghost races, tournaments
+**Certificate:** No
+**Verdict:** Highly engaging and motivating. No professional development path.
+
+5. **Typingverified**
+**Best for:** Professional skill development and certification
+**WPM accuracy:** Excellent — net WPM calculated in real time
+**Features:** Structured 10-lesson curriculum, practice mode, 60s/120s timed tests, verified certificate
+**Certificate:** Yes — downloadable, shareable, resume-ready
+**Verdict:** The only platform on this list designed for people who need to prove their typing skill — not just practice it.
+
+## Side-by-Side Comparison
+
+| Platform | Structured Lessons | Certificate | Net WPM | Professional Focus |
+|----------|-------------------|-------------|---------|-------------------|
+| 10FastFingers | ❌ | ❌ | ❌ | ❌ |
+| Monkeytype | ❌ | ❌ | ✅ | ❌ |
+| Keybr | Partial | ❌ | ✅ | ❌ |
+| TypeRacer | ❌ | ❌ | ❌ | ❌ |
+| Typingverified | ✅ | ✅ | ✅ | ✅ |
+
+If your goal is entertainment and speed competition, Monkeytype and TypeRacer are excellent. If your goal is to build a verifiable professional skill and walk away with a credential, Typingverified is the only platform built for that purpose.
+
+[Start your free lessons on Typingverified →](https://www.typingverified.com/lessons)
+    `,
   }];

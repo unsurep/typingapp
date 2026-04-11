@@ -1242,4 +1242,493 @@ Para a maioria dos objetivos profissionais, 65-80 PPM com 97%+ de precisao e mai
 
 [Comece hoje sua jornada de digitacao ao toque com licoes estruturadas gratuitas →](https://www.typingverified.com/lessons)
     `,
+  },
+  {
+    title:
+      "Como colocar a velocidade de digitação no currículo (com exemplos)",
+    slug: "how-to-put-typing-speed-on-resume",
+    metaDescription:
+      "Deve incluir a velocidade de digitação no currículo? Sim — se fizer certo. Como redigir, onde colocar e como um certificado torna a informação credível.",
+    publishDate: "Feb 10, 2026",
+    image: "/blog/t14.png",
+    content: `
+A velocidade de digitação é uma competência profissional válida para o currículo — mas só se for bem apresentada. Bem feita, transmite eficiência e profissionalismo. Mal feita, parece preenchimento. Eis o guia.
+
+## Deve incluir a velocidade de digitação no currículo?
+
+Sim, se qualquer destas situações se aplicar:
+
+- Candidata-se a funções em que digitar é central (introdução de dados, transcrição, apoio ao cliente, administrativo)
+- O anúncio menciona explicitamente um requisito de PPM
+- Digita acima de 55 PPM com 95 % ou mais de precisão
+- Tem um certificado verificado que sustenta a afirmação
+
+Se digita a 38 PPM, não coloque — isso indica velocidade abaixo da média e prejudica mais do que ajuda. Melhore primeiro e só depois inclua quando for um número de que se orgulhe.
+
+## Onde colocar no currículo
+
+A velocidade de digitação fica na secção **Competências**, não nas descrições de experiência. É uma competência técnica, não uma conquista.
+
+**Exemplo de linha em Competências:**
+
+Velocidade de digitação: 68 PPM / 97 % de precisão (Verificado — certificado Typingverified)
+
+Se a vaga exige um PPM específico (por exemplo 60 PPM) e cumpre o requisito, também pode mencioná-lo na carta de apresentação:
+
+«Digito a 68 PPM com 97 % de precisão, com certificado verificado, e consigo cumprir o requisito de 60 PPM indicado no anúncio.»
+
+## O que não fazer
+
+- Não arredonde em excesso. «90 PPM» quando o teste deu 72 PPM será notado assim que fizerem um teste na entrevista.
+- Não indique velocidade sem precisão. Velocidade sem contexto de precisão está incompleta e pode soar suspeita a recrutadores experientes.
+- Não indique o que não pode demonstrar. Se o empregador pedir um teste ao vivo, deve conseguir aproximar-se da sua afirmação.
+
+## Como um certificado reforça a credibilidade
+
+A velocidade autodeclarada no currículo é fácil de exagerar, e os recrutadores sabem. Um certificado verificado muda o jogo: é validação externa da sua velocidade e precisão exatas, obtida numa avaliação estruturada.
+
+Incluir um link para o certificado junto ao seu PPM reduz dúvidas e posiciona-o como candidato preparado e credível.
+
+[Obtenha o seu certificado de digitação verificado e fortaleça o currículo →](https://www.typingverified.com/certificate)
+    `,
+  },
+  {
+    title:
+      "Ganhe a digitar: 9 trabalhos remotos sérios de digitação em 2026",
+    slug: "get-paid-to-type-work-from-home-2026",
+    metaDescription:
+      "Dá mesmo para ganhar a digitar em casa? Sim — aqui estão 9 trabalhos remotos legítimos em 2026 com valores reais e como começar.",
+    publishDate: "Feb 12, 2026",
+    image: "/blog/t12.png",
+    content: `
+Dá mesmo para ganhar a digitar em casa? Sim — aqui estão 9 trabalhos remotos legítimos de digitação em 2026, com valores de pagamento reais e passos para começar.
+
+Digitar é uma das competências remotas mais acessíveis: quase toda a gente já o faz. A questão é se o faz bem o suficiente para ser pago — e como encontrar oportunidades sérias entre o ruído.
+
+Eis nove trabalhos bem pagos em casa disponíveis em 2026.
+
+## 1. Transcrição freelance (Rev, TranscribeMe, GoTranscript)
+
+**Como funciona:** Ouve áudio e escreve o que ouve.
+
+**Pagamento:** 0,45–1,50 $ por minuto de áudio (Rev), 0,79–0,97 $ por minuto de áudio (TranscribeMe)
+
+**PPM necessários:** 60–75
+
+**Como começar:** Candidate-se nos sites das plataformas. Quase todas exigem um teste curto.
+
+Os ganhos sobem com a velocidade. A 80 PPM é possível transcrever cerca de 4–5× em tempo real e ganhar 18–25 $/h em boas condições.
+
+## 2. Transcrição médica
+
+**Como funciona:** Converter gravações de médicos em notas de paciente estruturadas.
+
+**Pagamento:** 15–22 $/h; alguns salários anuais na ordem dos 40 000–60 000 $
+
+**PPM necessários:** 65–85, mais terminologia médica
+
+**Como começar:** Há formação em várias plataformas. Certificação AHIMA ajuda mas nem sempre é obrigatória em remoto júnior.
+
+## 3. Especialista em introdução de dados
+
+**Como funciona:** Introduzir, verificar e gerir dados em bases e folhas de cálculo.
+
+**Pagamento:** 14–22 $/h em remoto
+
+**PPM necessários:** 45–65
+
+**Como começar:** Indeed, FlexJobs e Remote.co. Filtre «data entry remote».
+
+Costuma ser a porta mais simples para quem começa. Há muita oferta e um certificado ajuda a destacar-se.
+
+## 4. Assistente virtual
+
+**Como funciona:** Email, agenda, documentos, pesquisa e apoio à comunicação.
+
+**Pagamento:** 15–35 $/h
+
+**PPM necessários:** 50–65
+
+**Como começar:** Belay, Time Etc e Zirtual contratam com frequência. Crie perfil no Upwork para freelance.
+
+## 5. Especialista em dados para treino de IA
+
+**Como funciona:** Escrever, rever, corrigir e etiquetar texto para treinar modelos de inteligência artificial.
+
+**Pagamento:** 15–25 $/h
+
+**PPM necessários:** 45–60
+
+**Como começar:** Scale AI, Appen e Remotasks — forte procura em 2026.
+
+## 6. Apoio ao cliente por chat em tempo real
+
+**Como funciona:** Responder a clientes em tempo real por chat.
+
+**Pagamento:** 13–20 $/h
+
+**PPM necessários:** 45–55
+
+**Como começar:** Procure «remote chat support» no Indeed e We Work Remotely.
+
+## 7. Legendador / CART
+
+**Como funciona:** Legendas em tempo real para vídeo, eventos ou acessibilidade.
+
+**Pagamento:** 20–45 $/h
+
+**PPM necessários:** 80–100+
+
+**Como começar:** 3Play Media, Vitac e Caption Max contratam em remoto. Pagamento alto mas exigência alta — suba primeiro a velocidade.
+
+## 8. Transcrição jurídica
+
+**Como funciona:** Transcrever depoimentos, audiências e ditados jurídicos.
+
+**Pagamento:** 18–30 $/h
+
+**PPM necessários:** 65–80
+
+**Como começar:** Sites de escritórios, Upwork e agências jurídicas.
+
+## 9. Redator de conteúdos freelance
+
+**Como funciona:** Artigos, blogs, fichas de produto e copy para clientes.
+
+**Pagamento:** 0,05–0,30 $ por palavra em muitos casos; 50–150 $/h para especialistas
+
+**PPM necessários:** 60+ recomendado para produtividade
+
+**Como começar:** Upwork, Contena, ProBlogger e contacto direto.
+
+## O fio comum: certifique-se primeiro
+
+Quase todos estes papéis exigem prova de velocidade ou pagam melhor se a demonstrar. Um certificado de digitação verificado é uma credencial credível para anexar a cada candidatura.
+
+[Obtenha o certificado e comece a candidatar-se hoje →](https://www.typingverified.com/certificate)
+    `,
+  },
+  {
+    title:
+      "Velocidade de digitação em transcrição médica: o que precisa de saber",
+    slug: "typing-speed-medical-transcription",
+    metaDescription:
+      "A transcrição médica exige velocidade e precisão específicas. O que precisa em 2026 e como se preparar para esta carreira.",
+    publishDate: "Feb 14, 2026",
+    image: "/blog/t15.png",
+    content: `
+A transcrição médica é uma das carreiras remotas de digitação melhor pagas — mas exige mais do que um PPM alto. Saiba o essencial antes de se dedicar a ela.
+
+## PPM mínimos na transcrição médica
+
+Muitas vagas pedem pelo menos **65–75 PPM** em nível inicial; funções sénior e plataformas de grande volume costumam pedir **80–90 PPM**. A precisão é rigorosa: **98 %+** é habitual e muitas plataformas exigem **99 %+** por segurança do doente.
+
+Não chega uma ortografia aproximada: os documentos integram o processo clínico e os erros podem ter consequências.
+
+## O que a torna diferente
+
+Para além de velocidade e precisão, é preciso escrever bem terminologia especializada sob pressão:
+
+- Fármacos e doses
+- Termos anatómicos
+- Códigos de diagnóstico e procedimento
+- Abreviaturas por especialidade
+
+Quem entra costuma precisar de formação em terminologia médica além de subir a velocidade.
+
+## Como se preparar
+
+**Passo 1 — Atinga pelo menos 70 PPM** com 98 % de precisão. Lições estruturadas e testes cronometrados.
+
+**Passo 2 — Aprenda terminologia médica.** Cursos online, formações locais e plataformas como Career Step.
+
+**Passo 3 — Pratique com conteúdo médico.** Com a terminologia sólida, transcreva ditados de exemplo — há ficheiros gratuitos online.
+
+**Passo 4 — Obtenha certificação.** Um certificado com 70+ PPM e 98 % é uma credencial forte para candidaturas júnior.
+
+## Onde procurar trabalho
+
+Entre outros, Nuance (agora Microsoft), Acusis e Ciox Health recrutam transcrição remota. Freelance: Upwork e agências de saúde.
+
+[Desenvolva a velocidade para uma carreira em transcrição médica →](https://www.typingverified.com/lessons)
+    `,
+  },
+  {
+    title:
+      "A forma mais rápida de passar de 40 a 70 PPM (plano de 7 semanas)",
+    slug: "40-to-70-wpm-plan",
+    metaDescription:
+      "Quer subir de 40 a 70 PPM? Eis um plano semana a semana com prática diária e marcos claros.",
+    publishDate: "Feb 16, 2026",
+    image: "/blog/t11.png",
+    content: `
+Passar de 40 a 70 PPM não é talento — é método. Eis um plano de sete semanas com sessões diárias de 15–20 minutos.
+
+## Antes de começar
+
+Faça um teste base agora. Anote PPM e precisão. No fim de cada semana compara para ver o progresso.
+
+## Semana 1: Fila base fixa
+
+**Objetivo:** Escrever a fila base (ASDF / JKL;) sem olhar, zero erros.
+
+**Prática diária (15 min):** Só fila base. Tape as mãos se precisar. Sem espreitar.
+
+**Fim de semana:** Combinações «asdfghjkl;» durante 60 segundos sem olhar, a qualquer velocidade, 100 % de precisão.
+
+## Semana 2: Teclado completo
+
+**Objetivo:** Filas de cima e de baixo. Alfabeto inteiro sem olhar.
+
+**Prática diária (15 min):** Letras em todas as filas. Precisão primeiro. 25–35 PPM é normal.
+
+**Fim de semana:** 26 letras sem olhar, 95 %+ de precisão.
+
+## Semana 3: Palavras frequentes
+
+**Objetivo:** Fluidez nas 200 palavras mais comuns.
+
+**Prática diária (15 min):** Listas de palavras. As mais usadas devem ficar automáticas.
+
+**Fim de semana:** Palavras a fluir — meta 38–45 PPM.
+
+## Semana 4: Frases completas
+
+**Objetivo:** Palavras em frases. Pontuação e maiúsculas.
+
+**Prática diária (15 min):** Parágrafos inteiros. Zero erros e ritmo estável.
+
+**Fim de semana:** 45–52 PPM com 96 % de precisão.
+
+## Semana 5: Picos de velocidade
+
+**Objetivo:** Empurrar o tecto com blocos curtos e intensos.
+
+**Prática diária (20 min):** Alternar 30 s ao máximo e passagens de 60 s com foco em precisão.
+
+**Fim de semana:** 52–60 PPM em picos, 48–55 PPM sustentados.
+
+## Semana 6: Velocidade sustentada
+
+**Objetivo:** Manter 60+ PPM num teste de 60 segundos.
+
+**Prática diária (20 min):** Testes de 60 s e 120 s. Acompanhe o PPM líquido. Precisão acima de 96 %.
+
+**Fim de semana:** 60–65 PPM / 96 %+ em 60 segundos.
+
+## Semana 7: Simulação final e certificado
+
+**Objetivo:** 70 PPM de forma consistente. Preparar certificação.
+
+**Prática diária (20 min):** Condições do teste do certificado. 60 segundos, pressão real, registe cada tentativa. Descanse entre tentativas.
+
+**Fim de semana:** 65–75 PPM / 97 %+. Certificado ao alcance.
+
+[Comece o plano e obtenha o seu certificado →](https://www.typingverified.com/certificate)
+    `,
+  },
+  {
+    title:
+      "Velocidade de digitação para atendimento ao cliente: o que precisa?",
+    slug: "typing-speed-customer-service",
+    metaDescription:
+      "A candidatar-se a um cargo de atendimento ao cliente? Eis a velocidade de digitação exacta para chat ao vivo, suporte por email e outros cargos em 2026.",
+    publishDate: "Feb 18, 2026",
+    image: "/blog/t17.png",
+    content: `
+O atendimento ao cliente é uma das maiores categorias de trabalho remoto, e a velocidade de digitação é um requisito central — especialmente no chat ao vivo, onde o cliente aguarda a sua resposta em tempo real.
+
+Eis um resumo claro do que os diferentes cargos de atendimento ao cliente realmente exigem.
+
+## Chat ao vivo
+
+**PPM necessários:** 45–55 mínimo, 60+ preferível
+
+O chat ao vivo é o formato de atendimento mais exigente em digitação. Responde a vários clientes em simultâneo, navega sistemas internos e mantém um tom profissional — enquanto o cliente vê o indicador de escrita.
+
+Quem digita lentamente no chat ao vivo cria experiências piores e faz baixar os índices de satisfação. A maioria das empresas fixa um mínimo de 45–50 PPM para funções de chat, com preferência por 55–65 PPM.
+
+## Suporte por email
+
+**PPM necessários:** 40–50 mínimo
+
+O suporte por email tem menos pressão de tempo do que o chat, mas o volume de respostas importa. Agentes que gerem 80–120 emails por turno precisam de redigir respostas claras e completas com eficiência. A maioria dos cargos espera pelo menos 40 PPM e boas competências de comunicação escrita.
+
+## Suporte telefónico com tomada de notas simultânea
+
+**PPM necessários:** 35–50
+
+Em funções de suporte telefónico que exigem digitar notas e actualizações num CRM enquanto fala com o cliente, precisa de conseguir escrever sem pensar conscientemente nisso — para manter toda a atenção na conversa.
+
+## Suporte técnico / Help Desk
+
+**PPM necessários:** 50–65
+
+As funções de suporte técnico exigem frequentemente documentação escrita detalhada, gestão de tickets e comunicação com o cliente em simultâneo. PPM mais elevados permitem gerir mais tickets por turno e escrever notas mais completas.
+
+## Como se preparar para um teste de digitação em atendimento ao cliente
+
+A maioria dos empregadores pede um teste de digitação online antes ou durante o processo de entrevista. O teste tem geralmente 3–5 minutos e usa texto geral, não técnico.
+
+Prepare-se praticando testes cronometrados diariamente na semana anterior à candidatura ou entrevista. Foque-se na precisão — a maioria valoriza mais um resultado limpo e profissional do que a velocidade bruta.
+
+[Faça um teste gratuito e veja onde está →](https://www.typingverified.com/test)
+    `,
+  },
+  {
+    title: "Dactilógrafo jurídico vs taquígrafo judicial: qual carreira paga mais?",
+    slug: "legal-typist-vs-court-reporter",
+    metaDescription:
+      "Os dactilógrafos jurídicos e os taquígrafos judiciais trabalham com o registo escrito dos processos legais — mas as carreiras diferem significativamente em salário, formação e requisitos de digitação.",
+    publishDate: "Feb 20, 2026",
+    image: "/blog/t18.png",
+    content: `
+Se tem interesse numa carreira de digitação no sector jurídico, tem dois caminhos distintos: dactilógrafo jurídico e taquígrafo judicial. Ambos têm procura, ambos pagam bem e ambos exigem excelentes competências de digitação — mas são trabalhos muito diferentes.
+
+## Dactilógrafo jurídico / Transcritor legal
+
+**O que fazem:** Os dactilógrafos jurídicos transcrevem conteúdo ditado por advogados, juízes e paralegais em documentos legais formatados — contratos, peças processuais, correspondência, depoimentos e actos judiciais.
+
+**Velocidade de digitação exigida:** 60–80 PPM, precisão 98%+
+
+**Salário médio:** 40.000–65.000 $/ano em teletrabalho, mais nos grandes mercados
+
+**Formação necessária:** Não é exigida certificação especializada, embora o conhecimento de terminologia jurídica seja valioso. Muitos dactilógrafos jurídicos são autodidactas ou completam cursos curtos online.
+
+**Ambiente de trabalho:** Maioritariamente remoto. Horários flexíveis. Procura crescente à medida que os escritórios de advocacia digitalizam as suas operações.
+
+## Taquígrafo judicial
+
+**O que fazem:** Os taquígrafos judiciais criam a transcrição literal oficial das audiências, depoimentos e julgamentos — em tempo real. A maioria usa uma máquina estenográfica, não um teclado standard.
+
+**Velocidade exigida:** 225 PPM em estenografia (obrigatório para certificação), equivalente aproximadamente a 180+ PPM num teclado standard.
+
+**Salário médio:** 60.000–100.000 $/ano+, com os melhores a ganhar 150.000 $+
+
+**Formação necessária:** 2–4 anos numa escola formal de taquigrafia judicial. A certificação NCRA Registered Professional Reporter (RPR) é a referência do sector.
+
+**Ambiente de trabalho:** Principalmente presencial em salas de tribunal, com algum trabalho remoto em depoimentos por videoconferência.
+
+## Comparação lado a lado
+
+| Factor | Dactilógrafo jurídico | Taquígrafo judicial |
+|--------|-----------------------|---------------------|
+| Salário inicial | 38.000–50.000 $ | 50.000–65.000 $ |
+| Salário máximo | 65.000 $ | 100.000–150.000 $+ |
+| Duração da formação | Semanas a meses | 2–4 anos |
+| Certificação obrigatória | Não | Sim (RPR) |
+| Equipamento | Teclado standard | Máquina estenográfica |
+| Modalidade de trabalho | Maioritariamente remoto, flexível | Maioritariamente presencial, programado |
+
+## Qual deve escolher?
+
+Se quer entrar rapidamente no sector jurídico com as suas competências actuais de digitação, a transcrição legal é o caminho mais rápido e acessível, com bom salário e grande flexibilidade em teletrabalho.
+
+Se está disposto a investir 2–4 anos em formação profissional, a taquigrafia judicial oferece rendimentos a longo prazo significativamente mais elevados e uma competência especializada difícil de substituir.
+
+[Desenvolva a sua velocidade de digitação para uma carreira jurídica →](https://www.typingverified.com/certificate)
+    `,
+  },
+  {
+    title: "Vale a pena um certificado de digitação? Eis o que os empregadores dizem",
+    slug: "is-typing-certificate-worth-it",
+    metaDescription:
+      "Vale mesmo a pena obter um certificado de digitação? Analisamos o que dizem os empregadores, quais os sectores que mais o valorizam e como utilizá-lo com eficácia.",
+    publishDate: "Feb 22, 2026",
+    image: "/blog/t19.png",
+    content: `
+Se vai investir tempo a praticar e a testar as suas competências de digitação, quer saber: o certificado no final realmente importa? Eis uma resposta honesta baseada no que os empregadores e os responsáveis de recrutamento dizem de facto.
+
+## O que dizem os empregadores
+
+Nos sectores onde a digitação é uma função central do posto de trabalho, os recrutadores dizem consistentemente as mesmas coisas sobre os certificados de digitação:
+
+**"Remove um passo do nosso processo."** Os empregadores que exigem testes de digitação durante o recrutamento têm de agendar, administrar e avaliar esses testes para cada candidato. Um candidato que chega com um certificado credível — mostrando PPM específicos e uma percentagem de precisão — permite-lhes saltar ou acelerar esse passo.
+
+**"Demonstra iniciativa."** Um candidato que obteve proactivamente um certificado antes de se candidatar demonstra que leva o cargo a sério e prepara-se deliberadamente. Esse sinal vai além da própria competência de digitação.
+
+**"Torna a afirmação credível."** A velocidade de digitação autodeclarada num currículo é impossível de verificar sem testes. Um certificado converte uma afirmação inverificável em evidência documentada.
+
+## Que sectores mais o valorizam
+
+Os certificados de digitação têm mais peso em:
+
+- **Introdução de dados e gestão de bases de dados** — os PPM são um indicador de produtividade central
+- **Transcrição médica e jurídica** — a documentação de precisão é crítica
+- **Atendimento ao cliente remoto** — especialmente em funções de chat ao vivo
+- **Funções de assistente administrativo e de direcção** — a eficiência de digitação é uma expectativa base
+- **Agências de emprego e trabalho temporário** — as agências usam certificados para associar candidatos a funções adequadas rapidamente
+
+## Quando um certificado tem menos valor
+
+Um certificado de digitação tem menos peso em funções onde a digitação é acessória em vez de central — desenvolvimento de software, gestão, funções criativas, ou empregos onde outra competência é o qualificador principal.
+
+Também tem menos valor se não conseguir sustentá-lo. Se o seu certificado mostra 65 PPM mas tem dificuldade em atingir 50 PPM num teste ao vivo, o certificado cria mais problemas do que resolve.
+
+## Conclusão
+
+Um certificado de digitação vale a pena quando duas condições estão reunidas: a função para a qual se candidata tem uma componente de digitação, e o certificado reflecte com precisão a sua competência actual. Quando ambas são verdadeiras, é uma credencial de baixo custo e alto retorno que apenas lhe custa tempo para obter.
+
+[Obtenha o seu certificado de digitação gratuitamente →](https://www.typingverified.com/certificate)
+    `,
+  },
+  {
+    title: "Experimentei 5 sites de teste de digitação e eis o que encontrei (análise honesta)",
+    slug: "best-typing-test-sites-comparison",
+    metaDescription:
+      "Testei 5 dos sites de teste de digitação mais populares em 2026. Aqui está uma comparação honesta de funcionalidades, precisão e qual deles realmente vale o seu tempo.",
+    publishDate: "Feb 24, 2026",
+    image: "/blog/t20.png",
+    content: `
+Nem todos os sites de teste de digitação são iguais. Passei tempo em cinco das plataformas mais populares para lhe dar uma comparação honesta lado a lado — para que possa investir o seu tempo de prática onde realmente compensa.
+
+1. **10FastFingers**
+**Ideal para:** Testes de velocidade rápidos e casuais
+**Precisão PPM:** Boa para palavras comuns, menos realista para texto profissional
+**Funcionalidades:** Corridas multijogador, texto personalizado, classificações
+**Certificado:** Não
+**Veredicto:** Divertido para competição e motivação. Não é ideal para o desenvolvimento profissional.
+
+2. **Monkeytype**
+**Ideal para:** Prática personalizável
+**Precisão PPM:** Excelente — parâmetros de teste altamente configuráveis
+**Funcionalidades:** Personalização extensa, temas, listas de palavras, modos de pontuação
+**Certificado:** Não
+**Veredicto:** O melhor teste de digitação puro para entusiastas. Sem percurso de aprendizagem estruturado nem certificado.
+
+3. **Keybr**
+**Ideal para:** Principiantes que aprendem a técnica correcta
+**Precisão PPM:** Boa
+**Funcionalidades:** Lições adaptativas que identificam e treinam as suas teclas fracas
+**Certificado:** Não
+**Veredicto:** Excelente para principiantes que precisam de aprendizagem estruturada. Limitado para além das primeiras etapas.
+
+4. **TypeRacer**
+**Ideal para:** Melhoria de velocidade gamificada
+**Precisão PPM:** Boa, usa citações e passagens reais
+**Funcionalidades:** Corridas competitivas, corridas fantasma, torneios
+**Certificado:** Não
+**Veredicto:** Muito envolvente e motivador. Sem percurso de desenvolvimento profissional.
+
+5. **Typingverified**
+**Ideal para:** Desenvolvimento profissional e certificação
+**Precisão PPM:** Excelente — PPM líquido calculado em tempo real
+**Funcionalidades:** Plano de estudos estruturado de 10 lições, modo prática, testes cronometrados 60s/120s, certificado verificado
+**Certificado:** Sim — descarregável, partilhável, pronto para o currículo
+**Veredicto:** A única plataforma desta lista concebida para pessoas que precisam de provar a sua competência de digitação — não apenas praticá-la.
+
+## Comparação lado a lado
+
+| Plataforma | Lições estruturadas | Certificado | PPM líquido | Foco profissional |
+|------------|--------------------|--------------|--------------|--------------------|
+| 10FastFingers | ❌ | ❌ | ❌ | ❌ |
+| Monkeytype | ❌ | ❌ | ✅ | ❌ |
+| Keybr | Parcial | ❌ | ✅ | ❌ |
+| TypeRacer | ❌ | ❌ | ❌ | ❌ |
+| Typingverified | ✅ | ✅ | ✅ | ✅ |
+
+Se o seu objectivo é entretenimento e competição de velocidade, Monkeytype e TypeRacer são excelentes. Se o seu objectivo é desenvolver uma competência profissional verificável e sair com uma credencial, Typingverified é a única plataforma criada para esse fim.
+
+[Comece as suas lições gratuitas no Typingverified →](https://www.typingverified.com/lessons)
+    `,
   }];

@@ -106,6 +106,54 @@ export const blogPostTranslations: {
       metaDescription:
         "Les emplois de saisie de données imposent des exigences de WPM précises. Ce qu'attendent les employeurs en 2026, comment vous préparer et comment un certificat renforce votre candidature.",
     },
+    "how-to-put-typing-speed-on-resume": {
+      title:
+        "Comment indiquer la vitesse de frappe sur un CV ? (avec exemples)",
+      metaDescription:
+        "Faut-il mentionner la vitesse de frappe sur un CV ? Oui — si vous le faites bien. Formulations, emplacement et crédibilité grâce à un certificat.",
+    },
+    "get-paid-to-type-work-from-home-2026": {
+      title:
+        "Être payé pour taper : 9 emplois de saisie sérieux à domicile en 2026",
+      metaDescription:
+        "Peut-on vraiment être payé pour taper depuis chez soi ? Oui — voici 9 emplois télétravail légitimes en 2026 avec salaires réels et comment démarrer.",
+    },
+    "typing-speed-medical-transcription": {
+      title:
+        "Vitesse de frappe en transcription médicale : ce qu'il faut savoir",
+      metaDescription:
+        "La transcription médicale impose des exigences précises de vitesse et de précision. Ce qu'il vous faut en 2026 et comment vous préparer à ce métier.",
+    },
+    "40-to-70-wpm-plan": {
+      title:
+        "Le moyen le plus rapide de passer de 40 à 70 WPM (plan sur 7 semaines)",
+      metaDescription:
+        "Vous voulez passer de 40 à 70 WPM ? Voici un plan structuré semaine par semaine — durées quotidiennes et jalons clairs.",
+    },
+    "typing-speed-customer-service": {
+      title:
+        "Vitesse de frappe pour les agents de service client : ce qu'il faut savoir",
+      metaDescription:
+        "Vous postulez à un poste de service client ? Voici la vitesse exacte requise pour le chat en direct, le support e-mail et d'autres rôles en 2026.",
+    },
+    "legal-typist-vs-court-reporter": {
+      title:
+        "Typiste juridique vs sténographe judiciaire : quel métier paye le plus ?",
+      metaDescription:
+        "Typistes juridiques et sténographes judiciaires travaillent tous deux avec les écrits légaux — mais diffèrent nettement en salaire, formation et vitesse de frappe requise.",
+    },
+    "is-typing-certificate-worth-it": {
+      title:
+        "Un certificat de frappe en vaut-il la peine ? Voici ce que disent les employeurs",
+      metaDescription:
+        "Obtenir un certificat de frappe vaut-il l'effort ? Voici ce que disent les employeurs, quels secteurs y accordent le plus d'importance et comment l'utiliser efficacement.",
+    },
+    "best-typing-test-sites-comparison": {
+      title:
+        "J'ai testé 5 sites de test de frappe — voici ce que j'ai trouvé (avis honnête)",
+      metaDescription:
+        "J'ai testé 5 des sites de test de frappe les plus populaires en 2026. Comparaison honnête des fonctionnalités, de la précision et lequel vaut vraiment votre temps.",
+    },
   },
   es: {
     "average-typing-speed-2026": {
@@ -205,6 +253,54 @@ export const blogPostTranslations: {
         "¿Qué velocidad de mecanografía necesitas para trabajos de entrada de datos? (Requisitos 2026)",
       metaDescription:
         "Los trabajos de entrada de datos exigen un PPM concreto. Qué esperan los empleadores en 2026, cómo prepararte y cómo un certificado refuerza tu candidatura.",
+    },
+    "how-to-put-typing-speed-on-resume": {
+      title:
+        "Cómo poner la velocidad de mecanografía en el currículum (con ejemplos)",
+      metaDescription:
+        "¿Debes incluir la velocidad de mecanografía en tu CV? Sí — si lo haces bien. Cómo redactarla, dónde ponerla y cómo un certificado la hace creíble.",
+    },
+    "get-paid-to-type-work-from-home-2026": {
+      title:
+        "Gana dinero escribiendo: 9 trabajos de mecanografía en casa serios en 2026",
+      metaDescription:
+        "¿De verdad puedes cobrar por escribir desde casa? Sí — aquí tienes 9 trabajos remotos legítimos en 2026 con sueldos reales y cómo empezar.",
+    },
+    "typing-speed-medical-transcription": {
+      title:
+        "Requisitos de velocidad en transcripción médica: lo que debes saber",
+      metaDescription:
+        "La transcripción médica exige velocidad y precisión concretas. Qué necesitas en 2026 y cómo prepararte para esta carrera.",
+    },
+    "40-to-70-wpm-plan": {
+      title:
+        "La forma más rápida de pasar de 40 a 70 PPM (plan de 7 semanas)",
+      metaDescription:
+        "¿Quieres subir de 40 a 70 PPM? Aquí tienes un plan semana a semana con tiempos de práctica diarios y hitos claros.",
+    },
+    "typing-speed-customer-service": {
+      title:
+        "Velocidad de mecanografía para atención al cliente: ¿cuánto necesitas?",
+      metaDescription:
+        "¿Buscas trabajo en atención al cliente? Aquí tienes la velocidad exacta para chat en vivo, soporte por email y otros puestos en 2026.",
+    },
+    "legal-typist-vs-court-reporter": {
+      title:
+        "Mecanógrafo jurídico vs taquígrafo judicial: ¿cuál paga más?",
+      metaDescription:
+        "Los mecanógrafos jurídicos y los taquígrafos judiciales trabajan con los registros legales — pero difieren en sueldo, formación y requisitos de velocidad de escritura.",
+    },
+    "is-typing-certificate-worth-it": {
+      title:
+        "¿Vale la pena un certificado de mecanografía? Esto es lo que dicen los empleadores",
+      metaDescription:
+        "¿Merece la pena obtener un certificado de mecanografía? Analizamos qué dicen los empleadores, qué sectores lo valoran más y cómo utilizarlo de forma efectiva.",
+    },
+    "best-typing-test-sites-comparison": {
+      title:
+        "Probé 5 sitios de test de mecanografía — esto es lo que encontré (reseña honesta)",
+      metaDescription:
+        "Probé 5 de los sitios de test de mecanografía más populares en 2026. Comparativa honesta de características, precisión y cuál merece realmente tu tiempo.",
     },
   },
   de: {
@@ -306,6 +402,54 @@ export const blogPostTranslations: {
       metaDescription:
         "Datenerfassungsjobs haben konkrete WPM-Anforderungen. Das erwarten Arbeitgeber 2026, wie Sie sich vorbereiten und wie ein Zertifikat Ihre Bewerbung stärkt.",
     },
+    "how-to-put-typing-speed-on-resume": {
+      title:
+        "So geben Sie die Tippgeschwindigkeit im Lebenslauf an (mit Beispielen)",
+      metaDescription:
+        "Sollten Sie die Tippgeschwindigkeit im Lebenslauf nennen? Ja — wenn Sie es richtig machen. Formulierung, Platzierung und Glaubwürdigkeit durch ein Zertifikat.",
+    },
+    "get-paid-to-type-work-from-home-2026": {
+      title:
+        "Geld fürs Tippen: 9 seriöse Heimarbeits-Jobs zum Tippen 2026",
+      metaDescription:
+        "Kann man wirklich von zu Hause fürs Tippen bezahlt werden? Ja — hier sind 9 legitime Remote-Jobs 2026 mit echten Sätzen und Einstiegstipps.",
+    },
+    "typing-speed-medical-transcription": {
+      title:
+        "Tippgeschwindigkeit in der medizinischen Transkription: Was Sie wissen müssen",
+      metaDescription:
+        "Medizinische Transkription stellt klare Anforderungen an Geschwindigkeit und Genauigkeit. Was 2026 zählt und wie Sie sich vorbereiten.",
+    },
+    "40-to-70-wpm-plan": {
+      title:
+        "Am schnellsten von 40 auf 70 WPM: 7-Wochen-Plan",
+      metaDescription:
+        "Von 40 auf 70 WPM? Hier ist ein strukturierter Wochenplan mit täglicher Übungszeit und klaren Meilensteinen.",
+    },
+    "typing-speed-customer-service": {
+      title:
+        "Tippgeschwindigkeit im Kundenservice: Wie schnell müssen Sie sein?",
+      metaDescription:
+        "Bewerben Sie sich auf eine Kundenservice-Stelle? Hier ist die genaue Tippgeschwindigkeit für Chat-Support, E-Mail-Support und andere Positionen 2026.",
+    },
+    "legal-typist-vs-court-reporter": {
+      title:
+        "Rechtlicher Schreiber vs. Gerichtsreporter: Wer verdient mehr?",
+      metaDescription:
+        "Rechtliche Schreiber und Gerichtsreporter arbeiten beide mit juristischen Protokollen — unterscheiden sich jedoch erheblich in Gehalt, Ausbildung und Tippanforderungen.",
+    },
+    "is-typing-certificate-worth-it": {
+      title:
+        "Lohnt sich ein Tipp-Zertifikat? Das sagen Arbeitgeber wirklich",
+      metaDescription:
+        "Lohnt es sich wirklich, ein Tipp-Zertifikat zu erwerben? Wir schauen, was Arbeitgeber sagen, welche Branchen es am meisten schätzen und wie man es effektiv einsetzt.",
+    },
+    "best-typing-test-sites-comparison": {
+      title:
+        "Ich habe 5 Tipp-Test-Seiten ausprobiert — das habe ich herausgefunden (ehrlicher Test)",
+      metaDescription:
+        "Ich habe 5 der beliebtesten Tipp-Test-Seiten in 2026 getestet. Ehrlicher Vergleich von Funktionen, Genauigkeit und welche Seite wirklich Ihre Zeit wert ist.",
+    },
   },
   pt: {
     "average-typing-speed-2026": {
@@ -404,6 +548,54 @@ export const blogPostTranslations: {
         "Que velocidade de digitação precisa para empregos de introdução de dados? (Requisitos 2026)",
       metaDescription:
         "Empregos de introdução de dados exigem PPM específicos. O que os empregadores esperam em 2026, como se preparar e como um certificado fortalece a sua candidatura.",
+    },
+    "how-to-put-typing-speed-on-resume": {
+      title:
+        "Como colocar a velocidade de digitação no currículo (com exemplos)",
+      metaDescription:
+        "Deve incluir a velocidade de digitação no currículo? Sim — se fizer certo. Como redigir, onde colocar e como um certificado torna a informação credível.",
+    },
+    "get-paid-to-type-work-from-home-2026": {
+      title:
+        "Ganhe a digitar: 9 trabalhos remotos sérios de digitação em 2026",
+      metaDescription:
+        "Dá mesmo para ganhar a digitar em casa? Sim — aqui estão 9 trabalhos remotos legítimos em 2026 com valores reais e como começar.",
+    },
+    "typing-speed-medical-transcription": {
+      title:
+        "Velocidade de digitação em transcrição médica: o que precisa de saber",
+      metaDescription:
+        "A transcrição médica exige velocidade e precisão específicas. O que precisa em 2026 e como se preparar para esta carreira.",
+    },
+    "40-to-70-wpm-plan": {
+      title:
+        "A forma mais rápida de passar de 40 a 70 PPM (plano de 7 semanas)",
+      metaDescription:
+        "Quer subir de 40 a 70 PPM? Eis um plano semana a semana com prática diária e marcos claros.",
+    },
+    "typing-speed-customer-service": {
+      title:
+        "Velocidade de digitação para atendimento ao cliente: o que precisa?",
+      metaDescription:
+        "A candidatar-se a um cargo de atendimento ao cliente? Eis a velocidade exacta para chat ao vivo, suporte por email e outros cargos em 2026.",
+    },
+    "legal-typist-vs-court-reporter": {
+      title:
+        "Dactilógrafo jurídico vs taquígrafo judicial: qual carreira paga mais?",
+      metaDescription:
+        "Os dactilógrafos jurídicos e os taquígrafos judiciais trabalham com registos legais — mas diferem significativamente em salário, formação e requisitos de digitação.",
+    },
+    "is-typing-certificate-worth-it": {
+      title:
+        "Vale a pena um certificado de digitação? Eis o que os empregadores dizem",
+      metaDescription:
+        "Vale mesmo a pena obter um certificado de digitação? Analisamos o que dizem os empregadores, quais os sectores que mais o valorizam e como utilizá-lo com eficácia.",
+    },
+    "best-typing-test-sites-comparison": {
+      title:
+        "Experimentei 5 sites de teste de digitação e eis o que encontrei (análise honesta)",
+      metaDescription:
+        "Testei 5 dos sites de teste de digitação mais populares em 2026. Comparação honesta de funcionalidades, precisão e qual deles realmente vale o seu tempo.",
     },
   },
 };
