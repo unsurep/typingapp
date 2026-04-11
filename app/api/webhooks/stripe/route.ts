@@ -4,7 +4,6 @@ import Stripe from 'stripe'
 import {
   isStripeCheckoutEnabled,
   isStripeTestTriggerEnabled,
-  premiumFreeWindowActive,
 } from '@/lib/server/premiumFree'
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
@@ -34,11 +33,8 @@ export async function POST(req: NextRequest) {
     const session = event.data.object as Stripe.Checkout.Session
     const isTriggerTaggedSession = session.metadata?.stripe_test_trigger === '1'
 
-    // During free window/disabled checkout, only allow explicitly tagged
-    // test-trigger sessions when STRIPE_TEST_TRIGGER_ENABLED=true.
-    if ((!isStripeCheckoutEnabled() || premiumFreeWindowActive()) &&
-      !(isStripeTestTriggerEnabled() && isTriggerTaggedSession)
-    ) {
+    // Only process sessions from the active checkout flow
+    if (!isStripeCheckoutEnabled() && !(isStripeTestTriggerEnabled() && isTriggerTaggedSession)) {
       return NextResponse.json({ received: true })
     }
 

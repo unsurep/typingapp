@@ -4,10 +4,8 @@ import type { ReactNode } from "react";
 import { getTranslations } from "next-intl/server";
 import { createClient } from "@/utils/supabase/server";
 import {
-    getPremiumFreeDaysRemaining,
     isStripeTestTriggerEnabled,
     isStripeCheckoutEnabled,
-    premiumFreeWindowActive,
 } from "@/lib/server/premiumFree";
 import type { AppLocale } from "@/i18n/routing";
 
@@ -37,8 +35,6 @@ export default async function PricingPage({
 
     const strong = (chunks: ReactNode) => <strong>{chunks}</strong>;
 
-    const trialActive = premiumFreeWindowActive()
-    const daysRemaining = getPremiumFreeDaysRemaining()
     const stripeCheckoutEnabled = isStripeCheckoutEnabled()
 
     const supabase = await createClient()
@@ -54,8 +50,8 @@ export default async function PricingPage({
         isPremiumDb = profile?.is_premium ?? false
     }
 
-    const premiumCtaAvailable = !trialActive && stripeCheckoutEnabled
-    const premiumCardIsActive = !trialActive && isPremiumDb
+    const premiumCtaAvailable = stripeCheckoutEnabled
+    const premiumCardIsActive = isPremiumDb
     const stripeTestToken = process.env.STRIPE_TEST_TRIGGER_TOKEN?.trim()
     const hasTestTriggerToken = isStripeTestTriggerEnabled() && Boolean(stripeTestToken)
     const premiumCheckoutHref = hasTestTriggerToken
@@ -85,22 +81,16 @@ export default async function PricingPage({
                 </p>
             </div>
 
-            {trialActive && (
-                <div className="mb-10 max-w-xl mx-auto w-full px-4 py-3 rounded-xl bg-brand/10 border border-brand/20 text-sm text-brand text-center">
-                    {t("trialBanner", { count: daysRemaining })}
-                </div>
-            )}
-
             {/* Plans */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
                 {/* Freemium plan */}
                 <div className="relative bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 rounded-2xl p-6 sm:p-8 shadow-sm flex flex-col">
                     <div className="mb-4">
                         <h2 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">
-                            {trialActive ? t("freemiumTitleFreeMium") : t("freemiumTitleFreemium")}
+                            {t("freemiumTitleFreemium")}
                         </h2>
                         <p className="mt-1 text-sm sm:text-base text-gray-600 dark:text-gray-400">
-                            {trialActive ? t("freemiumSubtitleTrial") : t("freemiumSubtitleNormal")}
+                            {t("freemiumSubtitleNormal")}
                         </p>
                     </div>
 
@@ -109,7 +99,7 @@ export default async function PricingPage({
                             {t("priceZero")}
                         </span>
                         <span className="ml-1 text-sm text-gray-500 dark:text-gray-400">
-                            {trialActive ? t("priceSuffix30Days") : t("priceSuffixForever")}
+                            {t("priceSuffixForever")}
                         </span>
                     </div>
 
@@ -120,19 +110,11 @@ export default async function PricingPage({
                         </li>
                         <li className="flex items-start gap-2">
                             <span className="mt-1 h-1.5 w-1.5 rounded-full bg-yellow-400" />
-                            <span>
-                                {trialActive
-                                    ? t("freemiumBulletLessonsTrial")
-                                    : t("freemiumBulletLessonsNormal")}
-                            </span>
+                            <span>{t("freemiumBulletLessonsNormal")}</span>
                         </li>
                         <li className="flex items-start gap-2">
                             <span className="mt-1 h-1.5 w-1.5 rounded-full bg-yellow-400" />
-                            <span>
-                                {trialActive
-                                    ? t("freemiumBulletTestsTrial")
-                                    : t("freemiumBulletTestsNormal")}
-                            </span>
+                            <span>{t("freemiumBulletTestsNormal")}</span>
                         </li>
                         <li className="flex items-start gap-2">
                             <span className="mt-1 h-1.5 w-1.5 rounded-full bg-yellow-400" />
@@ -144,11 +126,7 @@ export default async function PricingPage({
                         </li>
                         <li className="flex items-start gap-2">
                             <span className="mt-1 h-1.5 w-1.5 rounded-full bg-yellow-400" />
-                            <span>
-                                {trialActive
-                                    ? t.rich("freemiumBulletCertTrial", { strong })
-                                    : t.rich("freemiumBulletCertNormal", { strong })}
-                            </span>
+                            <span>{t.rich("freemiumBulletCertNormal", { strong })}</span>
                         </li>
                     </ul>
 

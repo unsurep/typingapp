@@ -4,6 +4,7 @@ import { useEffect } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { useRouter } from '@/i18n/navigation'
 import confetti from 'canvas-confetti'
+import { toast } from 'sonner'
 
 export default function ConfettiCelebration() {
     const searchParams = useSearchParams()
@@ -14,6 +15,12 @@ export default function ConfettiCelebration() {
 
         // Remove the query param so refresh doesn't replay it
         router.replace('/dashboard', { scroll: false })
+
+        // Show purchase confirmation toast
+        toast.success('Welcome to Premium! Your purchase was successful.', {
+            duration: 6000,
+            description: 'All lessons, no ads, and your certificate path are now unlocked.',
+        })
 
         // Fire confetti burst
         const end = Date.now() + 3000

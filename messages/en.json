@@ -391,7 +391,7 @@
     "freemiumCta": "Continue with Freemium",
     "badgeCurrent": "Current plan",
     "badgeComingSoon": "Coming soon",
-    "badgeBest": "Coming soon",
+    "badgeBest": "Best Value",
     "premiumTitle": "Premium",
     "premiumSubtitle": "Unlock the full course, certificate path, and an ad-free experience.",
     "pricePremium": "$3.99",
@@ -401,10 +401,10 @@
     "premiumBullet3": "Unlimited access to practice and timed tests.",
     "premiumBullet4": "<strong>Certificate included</strong> — complete all lessons and the final test to unlock and download your official certificate.",
     "ctaOnPremium": "You're on Premium",
-    "ctaUpgrade": "Premium coming soon",
+    "ctaUpgrade": "Get Premium",
     "ctaComingSoon": "Premium coming soon",
     "ariaOnPremium": "You already have the Premium plan",
-    "ariaCheckoutComingSoon": "Premium checkout is coming soon"
+    "ariaCheckoutComingSoon": "Upgrade to Premium"
   },
   "Auth": {
     "passwordLabel": "Password",

@@ -4,7 +4,9 @@
       "Bash(winget install:*)",
       "Bash(where.exe stripe)",
       "Read(//c/Users/Louis/AppData/Local/**)",
-      "Bash(xargs grep:*)"
+      "Bash(xargs grep:*)",
+      "Bash(npx:*)",
+      "Bash(curl:*)"
     ]
   }
 }

@@ -1,6 +1,8 @@
 import { redirect } from "@/i18n/navigation";
 import type { Metadata } from "next";
 import type { AppLocale } from "@/i18n/routing";
+import Stripe from "stripe";
+import { createClient } from "@supabase/supabase-js";
 
 export const metadata: Metadata = {
   robots: { index: false, follow: false },
@@ -18,6 +20,30 @@ export default async function SuccessPage({
 
   if (!session_id) {
     redirect({ href: "/pricing", locale });
+  }
+
+  try {
+    const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
+      apiVersion: "2026-02-25.clover",
+    });
+
+    const session = await stripe.checkout.sessions.retrieve(session_id!);
+
+    if (session.payment_status === "paid") {
+      const userId = session.metadata?.user_id;
+      if (userId) {
+        const supabase = createClient(
+          process.env.NEXT_PUBLIC_SUPABASE_URL!,
+          process.env.SUPABASE_SERVICE_ROLE_KEY!
+        );
+        await supabase
+          .from("profiles")
+          .update({ is_premium: true })
+          .eq("id", userId);
+      }
+    }
+  } catch {
+    // If Stripe verification fails, the webhook will still handle it
   }
 
   redirect({ href: "/dashboard?upgraded=true", locale });

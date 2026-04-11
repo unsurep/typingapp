@@ -5,7 +5,6 @@ import Stripe from "stripe";
 import {
   isStripeTestCheckoutRequest,
   isStripeCheckoutEnabled,
-  premiumFreeWindowActive,
 } from "@/lib/server/premiumFree";
 import type { Metadata } from "next";
 import { routing } from "@/i18n/routing";
@@ -34,8 +33,8 @@ export default async function CheckoutPage({
     token,
   });
 
-  if ((premiumFreeWindowActive() || !isStripeCheckoutEnabled()) && !isTestCheckoutRequest) {
-    redirect({ href: "/pricing?trial=true", locale });
+  if (!isStripeCheckoutEnabled() && !isTestCheckoutRequest) {
+    redirect({ href: "/pricing", locale });
   }
 
   if (!user) {
@@ -43,6 +42,17 @@ export default async function CheckoutPage({
   }
 
   const authUser = user!;
+
+  // Block re-purchase: redirect premium users back to pricing
+  const { data: profile } = await supabase
+    .from("profiles")
+    .select("is_premium")
+    .eq("id", authUser.id)
+    .single();
+
+  if (profile?.is_premium) {
+    redirect({ href: "/pricing", locale });
+  }
 
   const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
     apiVersion: "2026-02-25.clover",
