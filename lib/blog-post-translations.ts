@@ -41,9 +41,9 @@ export const blogPostTranslations: {
         "Toucher au clavier ou chercher les touches du regard ? Comparaison honnête et pourquoi le toucher gagne presque toujours sur la durée.",
     },
     "typing-habits-slowing-you-down": {
-      title: "5 habitudes de frappe qui vous freinent",
+      title: "5 habitudes de frappe qui vous freinent secrètement",
       metaDescription:
-        "De mauvaises habitudes peuvent plafonner votre WPM et fatiguer vos mains. Voici 5 erreurs fréquentes et comment les corriger.",
+        "Vous vous entraînez peut-être mal. Ces 5 habitudes de frappe courantes limitent silencieusement votre vitesse et votre précision — et la plupart des dactylographes ne savent même pas qu'ils les font.",
     },
     "30-day-typing-speed-challenge-results": {
       title:
@@ -154,6 +154,30 @@ export const blogPostTranslations: {
       metaDescription:
         "J'ai testé 5 des sites de test de frappe les plus populaires en 2026. Comparaison honnête des fonctionnalités, de la précision et lequel vaut vraiment votre temps.",
     },
+    "can-ai-make-you-a-better-typist": {
+      title:
+        "L'IA peut-elle faire de vous un meilleur dactylographe ? Nous l'avons testé pour vous",
+      metaDescription:
+        "Les outils d'IA promettent d'améliorer tout — mais peuvent-ils vraiment vous faire taper plus vite ? Nous avons testé les outils de frappe assistés par l'IA et partageons les résultats.",
+    },
+    "what-100-wpm-feels-like": {
+      title:
+        "Ce que 100 MPM fait vraiment ressentir — et comment y arriver",
+      metaDescription:
+        "Taper à 100 MPM est un objectif que la plupart des gens n'atteignent jamais — mais c'est plus accessible qu'il n'y paraît. Voici ce que ça fait et le chemin exact pour y arriver.",
+    },
+    "phone-typing-vs-keyboard": {
+      title:
+        "Frappe sur téléphone vs clavier : lequel vous rend plus rapide ?",
+      metaDescription:
+        "Frappe sur téléphone vs frappe au clavier — lequel est vraiment plus rapide ? Nous comparons les vitesses moyennes, la précision et la productivité pour déterminer le gagnant en 2026.",
+    },
+    "best-keyboards-for-typing-speed-2026": {
+      title:
+        "Les meilleurs claviers pour la vitesse de frappe en 2026 (testés et classés)",
+      metaDescription:
+        "Votre clavier affecte-t-il votre vitesse de frappe ? Oui — de manière significative. Voici les meilleurs claviers pour taper vite en 2026, classés par performance et rapport qualité-prix.",
+    },
   },
   es: {
     "average-typing-speed-2026": {
@@ -189,9 +213,9 @@ export const blogPostTranslations: {
         "¿Aprender mecanografía al tacto o seguir buscando teclas? Comparación honesta y por qué el tacto gana casi siempre a largo plazo.",
     },
     "typing-habits-slowing-you-down": {
-      title: "5 hábitos de mecanografía que te frenan",
+      title: "5 hábitos de mecanografía que te frenan en secreto",
       metaDescription:
-        "Los malos hábitos pueden limitar tus PPM y cansar las manos. Aquí tienes 5 errores frecuentes y cómo corregirlos.",
+        "Es posible que estés practicando mal. Estos 5 hábitos de mecanografía comunes están limitando silenciosamente tu velocidad y precisión — y la mayoría de los mecanógrafos ni siquiera saben que los hacen.",
     },
     "30-day-typing-speed-challenge-results": {
       title:
@@ -302,6 +326,30 @@ export const blogPostTranslations: {
       metaDescription:
         "Probé 5 de los sitios de test de mecanografía más populares en 2026. Comparativa honesta de características, precisión y cuál merece realmente tu tiempo.",
     },
+    "can-ai-make-you-a-better-typist": {
+      title:
+        "¿Puede la IA hacerte mejor mecanógrafo? Lo probamos para que no tengas que hacerlo",
+      metaDescription:
+        "Las herramientas de IA prometen mejorar todo — pero ¿realmente pueden hacerte escribir más rápido? Probamos las herramientas de mecanografía asistidas por IA y compartimos los resultados.",
+    },
+    "what-100-wpm-feels-like": {
+      title:
+        "Cómo se siente realmente escribir a 100 PPM — y cómo lograrlo",
+      metaDescription:
+        "Escribir a 100 PPM es un hito que la mayoría nunca alcanza — pero es más alcanzable de lo que parece. Así se siente y el camino exacto para lograrlo.",
+    },
+    "phone-typing-vs-keyboard": {
+      title:
+        "Escribir en el teléfono vs. teclado: ¿cuál te hace más rápido?",
+      metaDescription:
+        "Escritura en teléfono vs teclado — ¿cuál es realmente más rápida? Comparamos velocidades medias, precisión y productividad para descubrir qué método gana en 2026.",
+    },
+    "best-keyboards-for-typing-speed-2026": {
+      title:
+        "Los mejores teclados para velocidad de escritura en 2026 (probados y clasificados)",
+      metaDescription:
+        "¿Tu teclado afecta tu velocidad de escritura? Sí — significativamente. Aquí están los mejores teclados para escribir rápido en 2026, clasificados por rendimiento y valor.",
+    },
   },
   de: {
     "average-typing-speed-2026": {
@@ -337,9 +385,9 @@ export const blogPostTranslations: {
         "Zehnfingersystem lernen oder Tasten suchen? Ein ehrlicher Vergleich und warum Touch-Typing langfristig fast immer gewinnt.",
     },
     "typing-habits-slowing-you-down": {
-      title: "5 Tippgewohnheiten, die Sie bremsen",
+      title: "5 Tippgewohnheiten, die Sie heimlich bremsen",
       metaDescription:
-        "Schlechte Gewohnheiten können Ihren WPM deckeln und die Hände ermüden. Fünf häufige Fehler und wie Sie sie beheben.",
+        "Vielleicht üben Sie falsch. Diese 5 häufigen Tippgewohnheiten schränken Ihre Geschwindigkeit und Genauigkeit still ein — und die meisten Schreibkräfte wissen nicht einmal, dass sie sie haben.",
     },
     "30-day-typing-speed-challenge-results": {
       title:
@@ -450,6 +498,30 @@ export const blogPostTranslations: {
       metaDescription:
         "Ich habe 5 der beliebtesten Tipp-Test-Seiten in 2026 getestet. Ehrlicher Vergleich von Funktionen, Genauigkeit und welche Seite wirklich Ihre Zeit wert ist.",
     },
+    "can-ai-make-you-a-better-typist": {
+      title:
+        "Kann KI Sie zu einem besseren Schreibkraft machen? Wir haben es getestet, damit Sie es nicht müssen",
+      metaDescription:
+        "KI-Tools versprechen, alles zu verbessern — aber können sie Sie wirklich schneller tippen lassen? Wir haben KI-gestützte Tipp-Tools getestet und teilen die Ergebnisse.",
+    },
+    "what-100-wpm-feels-like": {
+      title:
+        "Wie sich 100 WPM wirklich anfühlen — und wie Sie dorthin gelangen",
+      metaDescription:
+        "100 WPM zu tippen ist ein Meilenstein, den die meisten nie erreichen — aber er ist erreichbarer als es klingt. So fühlt es sich an und der genaue Weg dorthin.",
+    },
+    "phone-typing-vs-keyboard": {
+      title:
+        "Tippen auf dem Handy vs. Tastatur: Was macht Sie schneller?",
+      metaDescription:
+        "Handy-Tippen vs. Tastatur-Tippen — was ist wirklich schneller? Wir vergleichen durchschnittliche Geschwindigkeiten, Genauigkeit und Produktivität, um herauszufinden, welche Methode 2026 gewinnt.",
+    },
+    "best-keyboards-for-typing-speed-2026": {
+      title:
+        "Die besten Tastaturen für Tippgeschwindigkeit 2026 (getestet und bewertet)",
+      metaDescription:
+        "Beeinflusst Ihre Tastatur Ihre Tippgeschwindigkeit? Ja — erheblich. Hier sind die besten Tastaturen für schnelles Tippen 2026, bewertet nach Leistung und Preis-Leistung.",
+    },
   },
   pt: {
     "average-typing-speed-2026": {
@@ -485,9 +557,9 @@ export const blogPostTranslations: {
         "Aprender ao toque ou continuar a procurar teclas? Comparação honesta e por que o toque quase sempre ganha a longo prazo.",
     },
     "typing-habits-slowing-you-down": {
-      title: "5 hábitos de digitação que o estão a abrandar",
+      title: "5 hábitos de digitação que o estão a abrandar secretamente",
       metaDescription:
-        "Maus hábitos podem limitar o seu PPM e cansar as mãos. Cinco erros comuns e como corrigi-los.",
+        "Pode estar a praticar de forma errada. Estes 5 hábitos comuns de digitação estão a limitar silenciosamente a sua velocidade e precisão — e a maioria dos digitadores nem sequer sabe que os tem.",
     },
     "30-day-typing-speed-challenge-results": {
       title:
@@ -596,6 +668,30 @@ export const blogPostTranslations: {
         "Experimentei 5 sites de teste de digitação e eis o que encontrei (análise honesta)",
       metaDescription:
         "Testei 5 dos sites de teste de digitação mais populares em 2026. Comparação honesta de funcionalidades, precisão e qual deles realmente vale o seu tempo.",
+    },
+    "can-ai-make-you-a-better-typist": {
+      title:
+        "A IA pode torná-lo um melhor digitador? Testámos para que não tenha de o fazer",
+      metaDescription:
+        "As ferramentas de IA prometem melhorar tudo — mas podem realmente fazê-lo digitar mais rápido? Testámos ferramentas de digitação assistidas por IA e partilhamos os resultados.",
+    },
+    "what-100-wpm-feels-like": {
+      title:
+        "Como realmente se sente digitar a 100 PPM — e como lá chegar",
+      metaDescription:
+        "Digitar a 100 PPM é um marco que a maioria nunca alcança — mas é mais alcançável do que parece. Eis como se sente e o caminho exato para lá chegar.",
+    },
+    "phone-typing-vs-keyboard": {
+      title:
+        "Digitar no telemóvel vs. teclado: qual o torna mais rápido?",
+      metaDescription:
+        "Digitação no telemóvel vs teclado — qual é realmente mais rápida? Comparamos velocidades médias, precisão e produtividade para descobrir qual método vence em 2026.",
+    },
+    "best-keyboards-for-typing-speed-2026": {
+      title:
+        "Os melhores teclados para velocidade de digitação em 2026 (testados e classificados)",
+      metaDescription:
+        "O seu teclado afeta a sua velocidade de digitação? Sim — significativamente. Aqui estão os melhores teclados para digitar rápido em 2026, classificados por desempenho e valor.",
     },
   },
 };
