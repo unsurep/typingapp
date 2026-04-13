@@ -1,7 +1,7 @@
 import { createClient } from "@/utils/supabase/server";
 import { redirect } from "@/i18n/navigation";
 import { redirect as redirectExternal } from "next/navigation";
-import Stripe from "stripe";
+import { getStripe } from "@/lib/server/stripe";
 import {
   isStripeTestCheckoutRequest,
   isStripeCheckoutEnabled,
@@ -54,9 +54,7 @@ export default async function CheckoutPage({
     redirect({ href: "/pricing", locale });
   }
 
-  const stripe = new Stripe(process.env.STRIPE_SECRET_KEY!, {
-    apiVersion: "2026-02-25.clover",
-  });
+  const stripe = getStripe();
 
   const base = process.env.NEXT_PUBLIC_APP_URL!.replace(/\/$/, "");
   const pathPrefix =
