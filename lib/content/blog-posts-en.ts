@@ -1719,7 +1719,19 @@ At 100 WPM, typing stops being a conscious activity and becomes something closer
 
 The cognitive load of typing has been almost entirely offloaded to muscle memory, freeing the conscious mind to focus entirely on content — what to say next, how to structure an argument, what word to choose — rather than the mechanical act of saying it.
 
-For writers, developers, and anyone who works primarily in text, this is transformative. The bottleneck between thought and output essentially disappears.
+For writers, developers, and anyone who works primarily in text, this is transformative. The bottleneck between thought and output essentially disappears. You stop losing ideas because you couldn't capture them fast enough. You stop breaking your own train of thought to hunt for a key or correct a recurring error.
+
+At 100 WPM you are also significantly faster than most professionals you will work with. The average office worker types between 38 and 52 WPM. At 100 WPM you produce the same volume of written output in roughly half the time — which, over a full working day, represents an enormous cumulative advantage.
+
+## The Three Phases of Getting to 100 WPM
+
+The journey to 100 WPM isn't linear. It tends to move through three distinct phases, each with its own challenges.
+
+**Phase 1: Building the foundation (0–60 WPM).** This phase is about learning correct technique — touch typing, home row position, using all ten fingers. Speed is almost irrelevant here. The goal is to eliminate bad habits before they calcify. Typists who skip this phase and build speed on top of poor technique almost always plateau in the 60–75 WPM range and struggle to break through without going back and relearning.
+
+**Phase 2: Closing the gap (60–85 WPM).** This is the phase most people spend the most time in. The technique is there, but speed gains start slowing. The issue at this stage is usually a combination of inconsistent accuracy, a handful of weak letter combinations, and the psychological habit of self-limiting. Many people plateau here for months without a structured approach.
+
+**Phase 3: The final push (85–100 WPM).** At this stage, most of the work is refinement. Speed comes in bursts — you'll hit 95 WPM on a good run, then fall back to 88. The goal is to raise your floor, not just your ceiling. Consistency at high speed comes from deliberate drills targeting your specific weak points.
 
 ## The Realistic Timeline to 100 WPM
 
@@ -1733,23 +1745,37 @@ The path to 100 WPM depends heavily on your starting point:
 | 71–85 WPM | 1–3 months |
 | 86–95 WPM | 2–8 weeks |
 
+These estimates assume consistent daily practice of 15–30 minutes. Sporadic practice extends the timeline significantly. The good news is that the higher you start, the faster the final stretch moves — the muscle memory you've already built is a foundation, not a barrier.
+
 ## The Biggest Barriers Between 70 and 100 WPM
 
-Most people plateau somewhere between 65 and 80 WPM. Getting past this range requires addressing specific limitations:
+Most people plateau somewhere between 65 and 80 WPM. Getting past this range requires identifying and addressing specific limitations:
 
-**Inconsistent accuracy.** At higher speeds, small accuracy problems become compounding problems. Any habitual error — a misplaced finger, a repeated transposition — will consistently drag your net WPM below your gross speed.
+**Inconsistent accuracy.** At higher speeds, small accuracy problems become compounding problems. Any habitual error — a misplaced finger, a repeated transposition — will consistently drag your net WPM below your gross speed. Maintain at least 95% accuracy during practice sessions. If you're making more errors than that, slow down until accuracy stabilizes, then build speed back up.
 
-**Speed-accuracy tradeoff anxiety.** Many typists unconsciously self-limit because they have learned that going faster means making more errors. Breaking through 80 WPM requires trusting your accuracy enough to push forward.
+**Speed-accuracy tradeoff anxiety.** Many typists unconsciously self-limit because they have learned that going faster means making more errors. Breaking through 80 WPM requires trusting your accuracy enough to push forward past your comfort zone. This is partly mental — you have to be willing to make mistakes in practice in order to condition your fingers to move faster.
 
-**Specific slow keys and combinations.** Identify the 5–10 key combinations that slow you down disproportionately and drill them specifically. These are usually less common letters and punctuation.
+**Specific slow keys and combinations.** Nearly every typist has a handful of letter combinations that are measurably slower than the rest. Common culprits include less frequent letters like Q, Z, and X, the number row, and punctuation like brackets and semicolons. Identify your personal weak combinations and drill them specifically rather than running full-length tests repeatedly.
+
+**The shift key.** Capitalization is one of the most overlooked speed killers. Many typists have inconsistent or awkward shift key habits — pressing shift with the wrong hand, using the wrong finger, or hesitating before capitals. Proper technique uses the opposite hand's pinky to press shift while the other hand types the capital letter. Drills with dense capitalisation can fix this quickly.
+
+**Not testing at full difficulty.** Practicing only on easy words at high speed will not transfer to real-world writing. If you only ever hit 100 WPM on short common-word tests, you may find your practical speed on mixed content is 15–20 WPM lower. Practice on content that includes punctuation, numbers, and varied vocabulary.
 
 ## Drills That Unlock Speed Above 80 WPM
 
-**Burst training:** Type as fast as possible for 10 seconds, rest 20 seconds, repeat 10 times.
+**Burst training:** Type as fast as possible for 10 seconds, rest 20 seconds, repeat 10 times. The short duration forces your fingers past their usual ceiling. Over multiple sessions, your sustained speed rises to catch up with your burst speed.
 
-**Common phrase drilling:** Practice your 50 most frequently used phrases until they are completely automatic.
+**Common phrase drilling:** Practice your 50 most frequently used phrases until they are completely automatic. Phrases like "I would like to", "please find attached", "let me know if" account for a surprisingly large proportion of professional writing — and having them wired into muscle memory removes micro-hesitations at scale.
 
-**Punctuation integration:** Most high-WPM tests include punctuation and capitals — drill these specifically.
+**Targeted combination drilling:** Identify the 5–10 key combinations that slow you down disproportionately and drill them in isolation. Repeat each weak combination 50–100 times per session until it becomes fluid.
+
+**Punctuation integration:** Most high-WPM tests and real-world writing include punctuation and capitals. Drill these specifically rather than avoiding them. A typist who can hit 100 WPM on lowercase word lists but slows to 75 WPM on punctuated prose hasn't fully arrived at 100 WPM yet.
+
+## What Happens After You Hit 100 WPM
+
+Reaching 100 WPM is a meaningful milestone, but it's not a ceiling. Many consistent typists progress to 110–120 WPM with continued practice. At these higher levels the gains become more incremental, but the compounding benefit of fast, accurate typing continues to grow with every year you use it.
+
+More importantly, once you've built the muscle memory to type at 100 WPM, the skill doesn't disappear. Unlike many technical skills, fast touch typing is retained for decades once it's solidly established. The time you invest in getting there pays off for the rest of your working life.
 
 [Start building toward 100 WPM today →](https://www.typingverified.com/lessons)
     `,
@@ -1762,39 +1788,75 @@ Most people plateau somewhere between 65 and 80 WPM. Getting past this range req
     publishDate: "Apr 3, 2026",
     image: "/blog/t24.png",
     content: `
-In 2026, billions of people type more on their phones than on keyboards. Gen Z in particular grew up thumb-typing — many of them can swipe out a message faster than they can find the right key on a keyboard.
+In 2026, billions of people type more on their phones than on keyboards. Gen Z in particular grew up thumb-typing — many of them can swipe out a message faster than they can find the right key on a keyboard. And yet, for most professional tasks, keyboard typing still wins by a wide margin.
 
-So which is actually faster: phone or keyboard?
+So which is actually faster: phone or keyboard? The honest answer is: it depends entirely on what you're typing and how long it is.
 
 ## The Numbers
 
+Let's start with the raw speed comparison:
+
 **Average phone typing speed (thumbs, tap):** 36–42 WPM
 
-**Average phone typing speed (swipe/gesture):** 40–52 WPM
+**Average phone typing speed (swipe/gesture input):** 40–52 WPM
 
 **Average keyboard typing speed:** 41–52 WPM
 
-For casual messages, the gap is remarkably small. An experienced phone typist using swipe input can match or slightly exceed the average keyboard typist for short texts.
+**Skilled keyboard touch typist:** 70–100+ WPM
 
-But the comparison breaks down completely at higher volumes and longer content.
+**Expert keyboard typist:** 120–150+ WPM
+
+For short, casual messages, the gap between phone and keyboard is surprisingly small. An experienced phone typist using swipe input can match or slightly exceed the average keyboard typist for a quick text or a two-line reply.
+
+But the comparison breaks down completely at higher volumes and longer content — and it breaks down fast.
+
+## Tap vs. Swipe: How Phone Typing Actually Works
+
+Most people don't realize there are two meaningfully different ways to type on a phone, and they perform very differently.
+
+**Tap typing** is the traditional method — pressing each letter individually. Average speeds with tap typing land in the 36–42 WPM range. It's constrained by how quickly your thumbs can physically move between keys, and by the small target size of each key.
+
+**Swipe typing** (also called gesture input or glide typing) lets you drag your finger across letters in sequence instead of tapping each one. Swipe input is significantly faster because it reduces the number of individual finger movements. This is how experienced phone typists reach 50+ WPM. Most modern keyboards (Gboard, SwiftKey) support swipe by default.
+
+The catch: swipe input breaks down badly on uncommon words, technical terms, proper nouns, and anything with apostrophes or mixed case. For quick messages with everyday vocabulary, it's impressive. For professional or technical content, the error rate climbs.
 
 ## Where Keyboards Dominate
 
-**Volume and sustained speed:** The maximum practical ceiling for phone typing is around 60–70 WPM for exceptional thumb typists. The maximum for keyboard touch typing is 120–150+ WPM. For any task requiring sustained output — a detailed email, a report, a document — the keyboard wins decisively.
+**Volume and sustained speed:** The practical ceiling for phone typing is around 60–70 WPM for exceptional thumb typists using swipe. The ceiling for keyboard touch typing is 120–150+ WPM. More importantly, keyboard typists can sustain high speeds for hours. Phone typing fatigues the thumbs quickly, and speed drops noticeably after 15–20 minutes of sustained output.
 
-**Accuracy on complex content:** Autocorrect handles most errors in casual messaging. In professional contexts — legal names, technical terms, product codes — autocorrect becomes a liability. Phone typists producing professional content make significantly more errors than keyboard typists.
+**Accuracy on complex content:** Autocorrect handles most errors in casual messaging remarkably well — it has learned the patterns of everyday language. But in professional contexts, autocorrect becomes a liability. Legal names, technical terms, product codes, email addresses, domain-specific vocabulary — all of these either autocorrect incorrectly or get flagged as errors. A keyboard typist produces professional documents with far fewer involuntary substitutions.
 
-**Punctuation and formatting:** Accessing punctuation on a phone keyboard requires switching character sets, costing time on every occurrence. On a standard keyboard, every punctuation mark is a single keystroke.
+**Punctuation and formatting:** Accessing punctuation on a phone keyboard requires switching character sets, which costs time on every occurrence. A comma requires tapping a mode-switch key, finding the comma, then switching back. On a standard keyboard, every punctuation mark is a single keystroke from your natural typing position. For any writing with significant punctuation — which includes all professional writing — this friction adds up significantly.
 
-**Ergonomics:** Extended phone typing leads to thumb strain and poor posture. Keyboard typing, done correctly, is sustainable for hours.
+**Long-form output:** Composing anything over 200–300 words on a phone is genuinely effortful. You're working against autocorrect, fighting for accuracy on proper nouns, switching character sets for punctuation, and scrolling back to review. The same document on a keyboard flows continuously. This is why essentially no professional writing — articles, reports, emails, code — is produced on phones at scale.
+
+**Ergonomics:** Extended phone typing requires you to hold a device in front of your face while hunching forward, with your thumbs performing rapid, repetitive micro-movements. Even light phone typing sessions of 30+ minutes produce thumb and wrist tension. Keyboard typing, done with correct posture and hand position, is sustainable for hours without the same strain.
+
+## When Phone Typing Wins
+
+To be fair, there are real scenarios where phone typing is the better tool:
+
+**Short messages in context:** If you're already holding your phone and need to reply to a message, pulling out a laptop to respond is wasteful. For anything under 50 words, the phone is faster end-to-end.
+
+**Voice-to-text as a hybrid:** The fastest "phone typing" isn't typing at all — it's dictation. In a quiet environment, voice-to-text can produce 100–150 WPM equivalent output with reasonable accuracy. This closes the gap significantly for spoken-language content, though it fails on technical terms, punctuation control, and any setting where speaking aloud isn't practical.
+
+**On-the-go contexts:** Keyboards require a surface, a seated position, and at minimum a laptop. Phones work standing on a train, waiting in a queue, or lying in bed. For contexts where a keyboard isn't physically practical, the phone wins by default.
 
 ## The Gen Z Keyboard Gap
 
-Research consistently shows that while Gen Z phone typing speed matches or exceeds previous generations, their keyboard typing speed is notably lower. For a generation entering a professional workforce that still runs on keyboards, this is a meaningful productivity disadvantage.
+Research consistently shows that while Gen Z phone typing speed matches or exceeds previous generations, their keyboard typing speed is notably lower — typically landing 8–12 WPM below Millennials of comparable age. For a generation entering a professional workforce that still runs on keyboards for the vast majority of output, this is a real productivity disadvantage.
 
-The good news: keyboard proficiency is learnable at any age, and the muscle memory builds quickly with structured practice.
+It's not permanent. Keyboard proficiency is learnable at any age, and the muscle memory builds faster than most people expect with structured daily practice. But the gap exists, and it widens with every year of phone-first habits.
 
-[Build your keyboard speed with free lessons →](https://www.typingverified.com/lessons)
+## Which Should You Prioritize?
+
+If you use a phone for personal messaging and social media: phone typing is perfectly adequate — you're already good enough at it.
+
+If you work in any professional environment that requires documents, emails, reports, or code: keyboard typing speed is the skill that actually limits your output. The ceiling for phone productivity is real and low. The ceiling for keyboard productivity is much higher, and the investment in improving it pays off every working day.
+
+The phone is a convenient input device for short-burst communication. The keyboard is still the tool for getting real work done fast.
+
+[Start building your keyboard speed with free lessons →](https://www.typingverified.com/lessons)
     `,
   },
   {
@@ -1805,51 +1867,75 @@ The good news: keyboard proficiency is learnable at any age, and the muscle memo
     publishDate: "Apr 10, 2026",
     image: "/blog/t25.png",
     content: `
-Your technique matters more than your keyboard. But once your technique is solid, your keyboard can meaningfully impact your speed, comfort, and accuracy. Here is a practical guide to the best options in 2026.
+Your technique matters more than your keyboard. But once your technique is solid, your keyboard can meaningfully impact your speed, comfort, and accuracy — and the wrong keyboard can quietly hold you back without you realizing it. This guide breaks down exactly what to look for and which keyboards are worth your money in 2026.
 
 ## What Makes a Keyboard Fast?
 
-The key factors that affect typing speed are:
+Not all keyboards are built the same. These four factors are what actually separate a speed-friendly keyboard from one that fights you:
 
-**Actuation force:** How hard you have to press each key. Lighter keys are faster for most typists but can cause more accidental keypresses.
+**Actuation force:** How hard you have to press each key to register a keystroke. Lighter switches (around 45g actuation force) let you type with less effort per keypress, which adds up significantly over thousands of keystrokes in a session. The trade-off: very light switches are easier to misfire accidentally, especially when you're still building finger control.
 
-**Key travel distance:** How far the key moves before registering. Shorter travel = faster typing, but less tactile feedback.
+**Key travel distance:** How far the key physically travels before it registers. Standard mechanical keys have around 4mm of total travel with actuation around 2mm. Low-profile switches cut that roughly in half. Less travel means your fingers spend less time moving up and down — which translates directly to faster burst speed, though some typists find shallow keys less satisfying to use for long sessions.
 
-**Switch type:** Mechanical, membrane, or scissor. Mechanical switches generally provide the best feedback and consistency for touch typists.
+**Switch type:** The biggest variable. Mechanical switches provide consistent, predictable feedback that helps your fingers develop muscle memory. Membrane keyboards (the soft, mushy kind under most cheap office keyboards) offer no tactile feedback, making it harder to build reliable speed. Scissor switches, used in laptop-style keyboards like the Logitech MX Keys, fall in between — quieter than mechanical, more consistent than membrane.
 
-**Layout and key size:** Full-size, tenkeyless (TKL), or compact 60%/65% layouts. Smaller keyboards reduce hand travel distance.
+**Layout and key size:** Full-size keyboards force your right hand to travel further to reach the mouse. Tenkeyless (TKL) layouts drop the number pad and bring everything closer. Compact 60–65% layouts go further still. For pure typing — no spreadsheet work — a TKL or compact layout keeps your hands in a tighter, more efficient zone.
+
+## Switch Types Explained: Linear, Tactile, and Clicky
+
+If you're shopping for a mechanical keyboard, you'll need to choose a switch type. Here's what each one actually feels like to type on:
+
+**Linear switches (e.g., Cherry MX Red, Gateron Red):** Smooth, consistent keystroke with no bump or click. The key goes straight down and back up. Most speed typists prefer linear switches because there's nothing interrupting the motion. They're also quieter than clicky switches.
+
+**Tactile switches (e.g., Cherry MX Brown, Gateron Brown):** A small physical bump when the key actuates, giving you confirmation that the key registered without bottoming out. Good for accuracy-focused typists who want feedback without noise. The bump is subtle — some people find it satisfying, others barely notice it.
+
+**Clicky switches (e.g., Cherry MX Blue, Gateron Blue):** A tactile bump plus an audible click. Gives strong typing feedback and can help you build a rhythmic cadence. Not office-friendly — they're loud. Best for home typists who like the sound and feel of classic mechanical typing.
 
 ## Top Keyboards for Typing Speed in 2026
 
 **Best Overall: Keychron K2 Pro**
 **Switch options:** Brown (tactile), Red (linear), Blue (clicky)
+**Price range:** ~$90–$100
 **Best for:** Office typing, daily use, touch typists
-**Why it wins:** Excellent build quality, wireless capability, hot-swappable switches, and a compact TKL layout that keeps your hands close together. A favorite among serious typists at a reasonable price point.
+**Why it wins:** The K2 Pro hits the best balance of build quality, features, and price. It's a compact 75% layout — smaller than TKL, but still has the function row. Hot-swappable switches mean you can swap out the switches later without soldering. Wireless via Bluetooth and 2.4GHz USB. If you're buying one keyboard to improve your typing speed and keep for years, this is the one.
 
 **Best for Speed: Logitech G Pro X**
 **Switch options:** GX Brown, GX Red, GX Blue
+**Price range:** ~$120–$140
 **Best for:** Speed-focused typists, competitive environments
-**Why it wins:** Low-latency connection, responsive switches, and a compact tenkeyless layout. The GX Red linear switches have particularly light actuation for fast typists.
+**Why it wins:** Originally designed as a gaming keyboard, the G Pro X has near-zero input lag and a solid tenkeyless layout. The GX Red linear switches have light, consistent actuation that suits fast typists well. The build is robust without being heavy. If raw speed is the goal and budget isn't a hard constraint, this is the pick.
 
 **Best Budget Option: Keychron K3**
-**Price:** Under $80
+**Price range:** Under $80
 **Best for:** New touch typists on a budget
-**Why it wins:** Solid mechanical build, low-profile switches, wireless, and compact layout — all at an accessible price.
+**Why it wins:** Low-profile switches, compact 75% layout, and wireless connectivity at a price most people can justify without overthinking it. The low-profile switches have shorter travel than standard mechanical, which some typists find faster once adjusted. A strong first mechanical keyboard.
 
 **Best for Office / Quiet Environments: Logitech MX Keys**
 **Switch type:** Scissor (not mechanical)
+**Price range:** ~$100–$110
 **Best for:** Quiet workplaces, travel, laptop replacements
-**Why it works:** Backlit, ergonomic key shape, near-silent keystrokes, and excellent wireless range. Not the fastest keyboard, but excellent for sustained accuracy in quiet settings.
+**Why it works:** If mechanical switches are too loud for your environment, the MX Keys is the best non-mechanical option. The scissor keys are stable, the key shape is slightly concave to match fingertip curvature, and the typing feel is confident without any noise. It won't give you the same feedback as mechanical, but it's excellent for sustained accuracy in shared spaces.
 
 **Best Ergonomic Option: Microsoft Sculpt Ergonomic**
+**Price range:** ~$80–$100
 **Best for:** Typists with wrist strain or RSI concerns
-**Why it works:** Split layout reduces wrist pronation significantly. Takes 2–3 weeks to adjust but dramatically reduces strain for full-day keyboard workers.
+**Why it works:** The split layout separates the two halves of the keyboard so your wrists sit in a more natural position rather than pronating inward. There's also a slight tent angle built in. It takes 2–3 weeks to fully adjust — your speed will temporarily drop — but many typists report significantly reduced wrist discomfort for full-day sessions. Not for speed records, but essential if long-term comfort is the priority.
+
+## How to Choose the Right Keyboard for Your Situation
+
+The best keyboard depends on where you are in your typing journey and how you work:
+
+- **Under 60 WPM:** Technique is everything at this stage. Any decent mechanical keyboard will do. Don't overthink hardware — focus on structured practice.
+- **60–80 WPM:** You'll start noticing switch feel more. Try a linear switch if you haven't — many typists find them faster once muscle memory is established.
+- **80+ WPM:** Switch quality, key stability, and layout genuinely matter. A compact layout and light linear switches are worth the investment.
+- **Shared office:** Skip clicky switches. MX Keys or a Keychron with Reds are both solid choices that won't bother the person next to you.
+- **Wrist pain or long sessions:** Consider the Sculpt Ergonomic or look at split keyboards like the Kinesis Freestyle. Speed matters less than being able to type comfortably for years.
 
 ## Does Your Keyboard Actually Affect Your WPM?
 
-For beginner and intermediate typists, the honest answer is: not much. Technique is the dominant factor at speeds below 70 WPM. At higher speeds, switch quality and key feel begin to matter more — both for speed and for long-term wrist health.
+For beginner and intermediate typists, the honest answer is: not much. Technique is the dominant factor at speeds below 70 WPM. At higher speeds — particularly above 80–90 WPM — switch quality, key stability, and layout begin to matter more, both for speed and for long-term wrist health.
 
-Regardless of keyboard, your speed will improve faster with structured practice than with a hardware upgrade.
+The most important thing you can do for your typing speed is practice consistently with correct technique. No keyboard upgrade replaces that. But if you're already practicing regularly and want to remove friction from the equation, the keyboards above are all genuinely good choices.
 
 [Test your current speed before upgrading →](https://www.typingverified.com/test)
     `,

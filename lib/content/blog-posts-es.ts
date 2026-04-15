@@ -1689,19 +1689,31 @@ El camino más efectivo hacia una mejor mecanografía en 2026 es el mismo que en
     publishDate: "Mar 20, 2026",
     image: "/blog/t23.png",
     content: `
-Cien palabras por minuto. Para la mayoría de los mecanógrafos, suena como un nivel élite reservado para demonios de la velocidad competitiva y estenógrafos profesionales. Pero para quienes lo han alcanzado, la descripción más común es sorprendentemente simple: "Mis dedos finalmente siguen el ritmo de mis pensamientos."
+Cien palabras por minuto. Para la mayoría de los mecanógrafos, suena como un nivel élite reservado para fanáticos de la velocidad competitiva y estenógrafos profesionales. Pero para las personas que lo han alcanzado, la descripción más común es sorprendentemente simple: "Mis dedos finalmente mantienen el ritmo con mis pensamientos."
 
-Así es como se siente realmente escribir a 100 PPM — y el camino honesto para lograrlo.
+Aquí está lo que realmente se siente escribir a 100 PPM — y el camino honesto para llegar allí.
 
 ## Cómo se siente 100 PPM en la práctica
 
 A 100 PPM, escribir deja de ser una actividad consciente y se convierte en algo más parecido a pensar en voz alta. Los mecanógrafos a este nivel describen consistentemente la misma experiencia: ya no son conscientes de las pulsaciones individuales. Piensan en palabras y frases, y el texto aparece.
 
-La carga cognitiva de escribir ha sido casi totalmente transferida a la memoria muscular, liberando la mente consciente para concentrarse enteramente en el contenido — qué decir después, cómo estructurar un argumento, qué palabra elegir — en lugar del acto mecánico de decirlo.
+La carga cognitiva de escribir se ha descargado casi por completo en la memoria muscular, liberando la mente consciente para enfocarse completamente en el contenido — qué decir a continuación, cómo estructurar un argumento, qué palabra elegir — en lugar del acto mecánico de decirlo.
 
-Para escritores, desarrolladores y cualquiera que trabaje principalmente con texto, esto es transformador. El cuello de botella entre el pensamiento y la producción esencialmente desaparece.
+Para escritores, desarrolladores y cualquiera que trabaje principalmente con texto, esto es transformador. El cuello de botella entre el pensamiento y la producción prácticamente desaparece. Dejas de perder ideas porque no pudiste capturarlas lo suficientemente rápido. Dejas de interrumpir tu propio tren de pensamiento para buscar una tecla o corregir un error recurrente.
 
-## El cronograma realista para alcanzar 100 PPM
+A 100 PPM también eres significativamente más rápido que la mayoría de los profesionales con los que trabajarás. El empleado de oficina promedio escribe entre 38 y 52 PPM. A 100 PPM produces el mismo volumen de salida escrita en aproximadamente la mitad del tiempo — lo que, a lo largo de un día completo de trabajo, representa una ventaja acumulativa enorme.
+
+## Las tres fases para llegar a 100 PPM
+
+El camino a 100 PPM no es lineal. Tiende a moverse a través de tres fases distintas, cada una con sus propios desafíos.
+
+**Fase 1: Construir la base (0–60 PPM).** Esta fase trata sobre aprender la técnica correcta — mecanografía táctil, posición de la fila base, usar los diez dedos. La velocidad es casi irrelevante aquí. El objetivo es eliminar los malos hábitos antes de que se calcifiquen. Los mecanógrafos que se saltan esta fase y construyen velocidad sobre una técnica deficiente casi siempre se estancan en el rango de 60–75 PPM y luchan por avanzar sin volver a aprender.
+
+**Fase 2: Cerrar la brecha (60–85 PPM).** Esta es la fase en la que la mayoría de las personas pasan más tiempo. La técnica está ahí, pero las ganancias de velocidad comienzan a ralentizarse. El problema en esta etapa suele ser una combinación de precisión inconsistente, un puñado de combinaciones de letras débiles y el hábito psicológico de autolimitarse. Muchas personas se estancan aquí durante meses sin un enfoque estructurado.
+
+**Fase 3: El empujón final (85–100 PPM).** En esta etapa, la mayor parte del trabajo es refinamiento. La velocidad llega en ráfagas — alcanzarás 95 PPM en una buena carrera, luego caerás de vuelta a 88. El objetivo es elevar tu piso, no solo tu techo. La consistencia a alta velocidad proviene de ejercicios deliberados que apuntan a tus puntos débiles específicos.
+
+## El cronograma realista para llegar a 100 PPM
 
 El camino a 100 PPM depende en gran medida de tu punto de partida:
 
@@ -1713,25 +1725,39 @@ El camino a 100 PPM depende en gran medida de tu punto de partida:
 | 71–85 PPM | 1–3 meses |
 | 86–95 PPM | 2–8 semanas |
 
-## Las mayores barreras entre 70 y 100 PPM
+Estas estimaciones asumen práctica diaria constante de 15–30 minutos. La práctica esporádica extiende el cronograma significativamente. La buena noticia es que cuanto más alto empieces, más rápido avanza la fase final — la memoria muscular que ya has construido es una base, no una barrera.
 
-La mayoría de las personas se estancan entre 65 y 80 PPM. Superar este rango requiere abordar limitaciones específicas:
+## Los mayores obstáculos entre 70 y 100 PPM
 
-**Precisión inconsistente.** A velocidades más altas, los pequeños problemas de precisión se convierten en problemas acumulativos. Cualquier error habitual — un dedo mal colocado, una transposición repetida — arrastrará consistentemente tu PPM neto por debajo de tu velocidad bruta.
+La mayoría de las personas se estancan en algún lugar entre 65 y 80 PPM. Superar este rango requiere identificar y abordar limitaciones específicas:
 
-**Ansiedad del compromiso velocidad-precisión.** Muchos mecanógrafos se autolimitan inconscientemente porque han aprendido que ir más rápido significa cometer más errores. Superar los 80 PPM requiere confiar lo suficiente en tu precisión para avanzar.
+**Precisión inconsistente.** A velocidades más altas, los pequeños problemas de precisión se convierten en problemas compuestos. Cualquier error habitual — un dedo mal colocado, una transposición repetida — arrastrará constantemente tu PPM neto por debajo de tu velocidad bruta. Mantén al menos 95% de precisión durante las sesiones de práctica. Si cometes más errores que eso, reduce la velocidad hasta que la precisión se estabilice, luego vuelve a aumentar la velocidad.
 
-**Teclas y combinaciones específicamente lentas.** Identifica las 5 a 10 combinaciones de teclas que te ralentizan desproporcionadamente y practica con ellas específicamente. Suelen ser letras menos comunes y signos de puntuación.
+**Ansiedad por el intercambio velocidad-precisión.** Muchos mecanógrafos se autolimitan inconscientemente porque han aprendido que ir más rápido significa cometer más errores. Superar los 80 PPM requiere confiar lo suficiente en tu precisión para avanzar más allá de tu zona de confort. Esto es en parte mental — debes estar dispuesto a cometer errores en la práctica para condicionar tus dedos a moverse más rápido.
 
-## Ejercicios que desbloquean la velocidad por encima de 80 PPM
+**Teclas y combinaciones lentas específicas.** Casi todos los mecanógrafos tienen un puñado de combinaciones de letras que son mediblemente más lentas que el resto. Los culpables comunes incluyen letras menos frecuentes como Q, Z y X, la fila de números y puntuación como corchetes y punto y coma. Identifica tus combinaciones débiles personales y practica específicamente en ellas en lugar de ejecutar repetidamente pruebas de longitud completa.
 
-**Entrenamiento de ráfaga:** Escribe tan rápido como sea posible durante 10 segundos, descansa 20 segundos, repite 10 veces.
+**La tecla Mayúsculas.** La capitalización es uno de los asesinos de velocidad más pasados por alto. Muchos mecanógrafos tienen hábitos inconsistentes o torpes con la tecla Mayúsculas — presionarla con la mano incorrecta, usar el dedo incorrecto o vacilar antes de las letras mayúsculas. La técnica correcta usa el meñique de la mano opuesta para presionar Mayúsculas mientras la otra mano escribe la letra mayúscula. Los ejercicios con capitalización densa pueden corregir esto rápidamente.
 
-**Práctica de frases comunes:** Practica tus 50 frases más usadas hasta que sean completamente automáticas.
+**No practicar con dificultad completa.** Practicar solo en palabras fáciles a alta velocidad no se transferirá a la escritura del mundo real. Si solo alcanzas 100 PPM en pruebas cortas de palabras comunes, es posible que tu velocidad práctica en contenido mixto sea 15–20 PPM más baja. Practica en contenido que incluya puntuación, números y vocabulario variado.
 
-**Integración de puntuación:** La mayoría de los tests de alto PPM incluyen puntuación y mayúsculas — practica específicamente con estos.
+## Ejercicios que desbloquean velocidad por encima de 80 PPM
 
-[Empieza a avanzar hacia 100 PPM hoy →](https://www.typingverified.com/lessons)
+**Entrenamiento en ráfagas:** Escribe tan rápido como sea posible durante 10 segundos, descansa 20 segundos, repite 10 veces. La corta duración fuerza a tus dedos más allá de su techo habitual. A lo largo de múltiples sesiones, tu velocidad sostenida aumenta para alcanzar tu velocidad de ráfaga.
+
+**Práctica de frases comunes:** Practica tus 50 frases más usadas con frecuencia hasta que sean completamente automáticas. Frases como "Me gustaría", "Por favor encuentra adjunto", "Avísame si" representan una proporción sorprendentemente grande de la escritura profesional — y tenerlas integradas en la memoria muscular elimina micro-vacilaciones a escala.
+
+**Ejercicio de combinaciones específicas:** Identifica las 5–10 combinaciones de teclas que te ralentizan desproporcionadamente y practica en ellas de forma aislada. Repite cada combinación débil 50–100 veces por sesión hasta que se vuelva fluida.
+
+**Integración de puntuación:** La mayoría de las pruebas de alta velocidad y la escritura real incluyen puntuación y mayúsculas. Practica específicamente en estas en lugar de evitarlas. Un mecanógrafo que puede alcanzar 100 PPM en listas de palabras en minúsculas pero se ralentiza a 75 PPM en prosa puntuada aún no ha llegado verdaderamente a 100 PPM.
+
+## Qué ocurre después de alcanzar 100 PPM
+
+Llegar a 100 PPM es un hito significativo, pero no es un techo. Muchos mecanógrafos consistentes progresan a 110–120 PPM con práctica continuada. En estos niveles más altos, las ganancias se vuelven más incrementales, pero el beneficio acumulado de escribir rápido y con precisión sigue creciendo con cada año que lo uses.
+
+Más importante aún, una vez que hayas construido la memoria muscular para escribir a 100 PPM, la habilidad no desaparece. A diferencia de muchas habilidades técnicas, la mecanografía táctil rápida se retiene durante décadas una vez que está sólidamente establecida. El tiempo que inviertes en llegar allí se amortiza durante el resto de tu vida laboral.
+
+[Empieza hoy a trabajar hacia los 100 PPM →](https://www.typingverified.com/lessons)
     `,
   },
   {
@@ -1742,39 +1768,75 @@ La mayoría de las personas se estancan entre 65 y 80 PPM. Superar este rango re
     publishDate: "Apr 3, 2026",
     image: "/blog/t24.png",
     content: `
-En 2026, miles de millones de personas escriben más en sus teléfonos que en teclados. La generación Z en particular creció escribiendo con los pulgares — muchos de ellos pueden deslizar un mensaje más rápido de lo que encuentran la tecla correcta en un teclado.
+En 2026, miles de millones de personas escriben más en sus teléfonos que en teclados. La generación Z en particular creció escribiendo con los pulgares — muchos pueden redactar un mensaje con deslizamiento más rápido de lo que encuentran la tecla correcta en un teclado. Y sin embargo, para la mayoría de las tareas profesionales, escribir en teclado sigue ganando por un amplio margen.
 
-Entonces, ¿cuál es realmente más rápido: el teléfono o el teclado?
+Entonces, ¿qué es realmente más rápido: teléfono o teclado? La respuesta honesta es: depende completamente de qué estás escribiendo y cuánto.
 
 ## Los números
 
-**Velocidad media de escritura en teléfono (pulgares, toque):** 36–42 PPM
+Empecemos con la comparación de velocidad en bruto:
 
-**Velocidad media de escritura en teléfono (deslizamiento/gesto):** 40–52 PPM
+**Velocidad promedio de escritura en teléfono (pulgares, toque):** 36–42 PPM
 
-**Velocidad media de escritura en teclado:** 41–52 PPM
+**Velocidad promedio de escritura en teléfono (deslizamiento/gesto):** 40–52 PPM
 
-Para mensajes casuales, la diferencia es notablemente pequeña. Un mecanógrafo experimentado en teléfono usando entrada por deslizamiento puede igualar o superar ligeramente al mecanógrafo promedio en teclado para textos cortos.
+**Velocidad promedio de escritura en teclado:** 41–52 PPM
 
-Pero la comparación se desmorona por completo con volúmenes más altos y contenidos más largos.
+**Mecanógrafo táctil hábil en teclado:** 70–100+ PPM
 
-## Donde el teclado domina
+**Mecanógrafo experto en teclado:** 120–150+ PPM
 
-**Volumen y velocidad sostenida:** El techo práctico máximo para la escritura en teléfono es de alrededor de 60–70 PPM para mecanógrafos de pulgar excepcionales. El máximo para la mecanografía táctil en teclado es de 120–150+ PPM. Para cualquier tarea que requiera producción sostenida — un email detallado, un informe, un documento — el teclado gana de forma decisiva.
+Para mensajes cortos e informales, la diferencia entre teléfono y teclado es sorprendentemente pequeña. Un mecanógrafo de teléfono experimentado usando entrada por deslizamiento puede igualar o superar ligeramente al mecanógrafo de teclado promedio en textos cortos.
 
-**Precisión en contenido complejo:** El autocorrector maneja la mayoría de los errores en mensajes casuales. En contextos profesionales — nombres legales, términos técnicos, códigos de producto — el autocorrector se convierte en un problema. Los mecanógrafos de teléfono que producen contenido profesional cometen significativamente más errores que los mecanógrafos de teclado.
+Pero la comparación se rompe completamente con volúmenes mayores y contenido más largo — y se rompe rápido.
 
-**Puntuación y formato:** Acceder a la puntuación en un teclado de teléfono requiere cambiar conjuntos de caracteres, costando tiempo en cada aparición. En un teclado estándar, cada signo de puntuación es una sola pulsación.
+## Toque vs. Deslizamiento: Cómo funciona realmente la escritura en teléfono
 
-**Ergonomía:** La escritura prolongada en teléfono provoca tensión en los pulgares y mala postura. La mecanografía en teclado, hecha correctamente, es sostenible durante horas.
+La mayoría de la gente no sabe que hay dos formas significativamente diferentes de escribir en un teléfono, y su rendimiento es muy distinto.
 
-## La brecha de teclado de la generación Z
+**Escritura por toque** es el método tradicional — presionando cada letra individualmente. Las velocidades promedio con escritura por toque se sitúan en el rango de 36–42 PPM. Está limitada por la velocidad a la que tus pulgares pueden moverse entre teclas y por el pequeño tamaño objetivo de cada tecla.
 
-La investigación muestra consistentemente que, mientras la velocidad de escritura en teléfono de la generación Z iguala o supera a las generaciones anteriores, su velocidad de escritura en teclado es notablemente inferior. Para una generación que entra en un mercado laboral profesional que aún funciona con teclados, esta es una desventaja de productividad significativa.
+**Escritura por deslizamiento** (también llamada entrada por gesto o escritura deslizante) te permite arrastrar el dedo por las letras en secuencia en lugar de tocar cada una. La entrada por deslizamiento es significativamente más rápida porque reduce el número de movimientos individuales de los dedos. Así es como los mecanógrafos de teléfono experimentados alcanzan más de 50 PPM. La mayoría de los teclados modernos (Gboard, SwiftKey) admiten el deslizamiento de forma predeterminada.
 
-La buena noticia: la competencia con el teclado se puede aprender a cualquier edad, y la memoria muscular se construye rápidamente con práctica estructurada.
+El problema: la entrada por deslizamiento falla con palabras poco comunes, términos técnicos, nombres propios y todo lo que tenga apóstrofes o mayúsculas mezcladas. Para mensajes rápidos con vocabulario cotidiano, es impresionante. Para contenido profesional o técnico, la tasa de errores aumenta.
 
-[Desarrolla tu velocidad de teclado con lecciones gratuitas →](https://www.typingverified.com/lessons)
+## Dónde dominan los teclados
+
+**Volumen y velocidad sostenida:** El límite práctico para escribir en teléfono es de alrededor de 60–70 PPM para mecanógrafos de pulgares excepcionales usando deslizamiento. El límite para la mecanografía táctil en teclado es de 120–150+ PPM. Más importante aún, los mecanógrafos de teclado pueden mantener altas velocidades durante horas. La escritura en teléfono fatiga los pulgares rápidamente y la velocidad cae notablemente después de 15–20 minutos de producción sostenida.
+
+**Precisión en contenido complejo:** La corrección automática maneja la mayoría de los errores en mensajes informales de manera notable — ha aprendido los patrones del lenguaje cotidiano. Pero en contextos profesionales, la corrección automática se convierte en una responsabilidad. Nombres legales, términos técnicos, códigos de productos, direcciones de correo electrónico, vocabulario específico del dominio — todo esto se autocorrige incorrectamente o se marca como error. Un mecanógrafo de teclado produce documentos profesionales con muchas menos sustituciones involuntarias.
+
+**Puntuación y formato:** Acceder a la puntuación en un teclado de teléfono requiere cambiar conjuntos de caracteres, lo que cuesta tiempo en cada ocurrencia. Una coma requiere tocar una tecla de cambio de modo, encontrar la coma y luego volver a cambiar. En un teclado estándar, cada signo de puntuación es una sola pulsación de tecla desde la posición de escritura natural. Para cualquier escritura con puntuación significativa — que incluye toda la escritura profesional — esta fricción se acumula significativamente.
+
+**Producción extensa:** Redactar más de 200–300 palabras en un teléfono es genuinamente laborioso. Estás luchando contra la corrección automática, combatiendo por precisión en nombres propios, cambiando conjuntos de caracteres para puntuación y desplazándote hacia atrás para revisar. El mismo documento en un teclado fluye continuamente. Por eso prácticamente ninguna escritura profesional — artículos, informes, correos electrónicos, código — se produce en teléfonos a escala.
+
+**Ergonomía:** La escritura extensa en el teléfono requiere sostener un dispositivo frente a la cara mientras te inclinas hacia adelante, con los pulgares realizando micro-movimientos rápidos y repetitivos. Incluso sesiones ligeras de escritura en teléfono de más de 30 minutos producen tensión en pulgares y muñecas. La escritura en teclado, con postura y posición de manos correctas, es sostenible durante horas sin el mismo estrés.
+
+## Cuándo gana la escritura en teléfono
+
+Para ser justos, hay escenarios reales donde la escritura en teléfono es la mejor herramienta:
+
+**Mensajes cortos en contexto:** Si ya tienes el teléfono en la mano y necesitas responder un mensaje, sacar un portátil para responder es un desperdicio. Para cualquier cosa de menos de 50 palabras, el teléfono es más rápido de extremo a extremo.
+
+**Voz a texto como híbrido:** La "escritura en teléfono" más rápida no es escritura en absoluto — es dictado. En un entorno tranquilo, la voz a texto puede producir una producción equivalente de 100–150 PPM con precisión razonable. Esto cierra la brecha significativamente para el contenido en lenguaje hablado, aunque falla en términos técnicos, control de puntuación y cualquier entorno donde hablar en voz alta no es práctico.
+
+**Contextos en movimiento:** Los teclados requieren una superficie, una posición sentada y al menos un portátil. Los teléfonos funcionan de pie en el tren, esperando en una cola o tumbado en la cama. Para contextos donde un teclado no es físicamente práctico, el teléfono gana por defecto.
+
+## La brecha de teclado de la Generación Z
+
+Las investigaciones muestran consistentemente que mientras la velocidad de escritura en teléfono de la Generación Z iguala o supera a las generaciones anteriores, su velocidad de escritura en teclado es notablemente más baja — típicamente 8–12 PPM por debajo de los Millennials de edad comparable. Para una generación que ingresa a una fuerza laboral profesional que todavía depende de los teclados para la gran mayoría de la producción, esta es una verdadera desventaja de productividad.
+
+No es permanente. La competencia en teclado es aprendible a cualquier edad, y la memoria muscular se desarrolla más rápido de lo que la mayoría espera con práctica diaria estructurada. Pero la brecha existe y se amplía con cada año de hábitos centrados en el teléfono.
+
+## ¿Qué deberías priorizar?
+
+Si usas el teléfono para mensajes personales y redes sociales: la escritura en teléfono es perfectamente adecuada — ya eres suficientemente bueno en ello.
+
+Si trabajas en cualquier entorno profesional que requiere documentos, correos electrónicos, informes o código: la velocidad de escritura en teclado es la habilidad que realmente limita tu producción. El límite de la productividad en teléfono es real y bajo. El límite de la productividad en teclado es mucho más alto, y la inversión en mejorarlo se amortiza cada día laborable.
+
+El teléfono es un dispositivo de entrada conveniente para comunicación en ráfagas cortas. El teclado sigue siendo la herramienta para hacer trabajo real rápidamente.
+
+[Empieza a mejorar tu velocidad de teclado con lecciones gratuitas →](https://www.typingverified.com/lessons)
     `,
   },
   {
@@ -1785,52 +1847,76 @@ La buena noticia: la competencia con el teclado se puede aprender a cualquier ed
     publishDate: "Apr 10, 2026",
     image: "/blog/t25.png",
     content: `
-Tu técnica importa más que tu teclado. Pero una vez que tu técnica es sólida, tu teclado puede impactar significativamente tu velocidad, comodidad y precisión. Aquí tienes una guía práctica de las mejores opciones en 2026.
+Tu técnica importa más que tu teclado. Pero una vez que tu técnica es sólida, tu teclado puede afectar significativamente tu velocidad, comodidad y precisión — y el teclado equivocado puede frenarte silenciosamente sin que te des cuenta. Esta guía explica exactamente qué buscar y qué teclados valen la pena en 2026.
 
 ## ¿Qué hace que un teclado sea rápido?
 
-Los factores clave que afectan la velocidad de escritura son:
+No todos los teclados están construidos igual. Estos cuatro factores son los que realmente separan un teclado amigable con la velocidad de uno que te frena:
 
-**Fuerza de actuación:** Cuánta fuerza necesitas para presionar cada tecla. Las teclas más ligeras son más rápidas para la mayoría de los mecanógrafos, pero pueden causar más pulsaciones accidentales.
+**Fuerza de activación:** Cuán fuerte tienes que presionar cada tecla para registrar una pulsación. Los switches más ligeros (alrededor de 45g de fuerza de activación) te permiten escribir con menos esfuerzo por pulsación, lo que se suma significativamente a lo largo de miles de pulsaciones en una sesión. La contrapartida: los switches muy ligeros son más fáciles de activar por accidente, especialmente cuando aún estás desarrollando control de dedos.
 
-**Distancia de recorrido de la tecla:** Cuánto se mueve la tecla antes de registrarse. Menor recorrido = escritura más rápida, pero menos retroalimentación táctil.
+**Distancia de recorrido de tecla:** Cuánto viaja físicamente la tecla antes de registrarse. Las teclas mecánicas estándar tienen unos 4mm de recorrido total con activación alrededor de 2mm. Los switches de perfil bajo reducen eso aproximadamente a la mitad. Menos recorrido significa que tus dedos pasan menos tiempo moviéndose arriba y abajo — lo que se traduce directamente en mayor velocidad de ráfaga, aunque algunos mecanógrafos encuentran las teclas poco profundas menos satisfactorias en sesiones largas.
 
-**Tipo de switch:** Mecánico, membrana o tijera. Los switches mecánicos generalmente proporcionan la mejor retroalimentación y consistencia para mecanógrafos táctiles.
+**Tipo de switch:** La variable más grande. Los switches mecánicos proporcionan retroalimentación consistente y predecible que ayuda a tus dedos a desarrollar memoria muscular. Los teclados de membrana (los blandos y esponjosos de la mayoría de teclados de oficina baratos) no ofrecen retroalimentación táctil, lo que dificulta construir velocidad confiable. Los switches scissor, usados en teclados tipo laptop como el Logitech MX Keys, quedan en medio — más silenciosos que los mecánicos, más consistentes que los de membrana.
 
-**Diseño y tamaño de teclas:** Tamaño completo, tenkeyless (TKL) o compacto 60%/65%. Los teclados más pequeños reducen la distancia de desplazamiento de las manos.
+**Diseño y tamaño de tecla:** Los teclados de tamaño completo obligan a tu mano derecha a viajar más lejos para alcanzar el ratón. Los diseños Tenkeyless (TKL) eliminan el teclado numérico y acercan todo. Los diseños compactos 60–65% van aún más lejos. Para escritura pura — sin hojas de cálculo — un diseño TKL o compacto mantiene tus manos en una zona más compacta y eficiente.
+
+## Tipos de switches explicados: Lineal, Táctil y Clicky
+
+Si compras un teclado mecánico, necesitarás elegir un tipo de switch. Aquí está cómo se siente realmente cada uno al escribir:
+
+**Switches lineales (p. ej., Cherry MX Red, Gateron Red):** Pulsación suave y consistente sin protuberancia ni clic. La tecla baja recta y sube. La mayoría de los mecanógrafos rápidos prefieren los switches lineales porque nada interrumpe el movimiento. También son más silenciosos que los clicky.
+
+**Switches táctiles (p. ej., Cherry MX Brown, Gateron Brown):** Una pequeña protuberancia física cuando la tecla se activa, dándote confirmación de que la tecla registró sin llegar hasta el fondo. Bueno para mecanógrafos enfocados en precisión que quieren retroalimentación sin ruido. La protuberancia es sutil — algunos la encuentran satisfactoria, otros apenas la notan.
+
+**Switches clicky (p. ej., Cherry MX Blue, Gateron Blue):** Una protuberancia táctil más un clic audible. Da retroalimentación fuerte de escritura y puede ayudarte a construir una cadencia rítmica. No apto para oficinas — son ruidosos. Mejor para mecanógrafos caseros a quienes les gusta el sonido y la sensación de la escritura mecánica clásica.
 
 ## Los mejores teclados para velocidad de escritura en 2026
 
 **Mejor en general: Keychron K2 Pro**
 **Opciones de switch:** Brown (táctil), Red (lineal), Blue (clicky)
-**Ideal para:** Escritura de oficina, uso diario, mecanógrafos táctiles
-**Por qué gana:** Excelente calidad de construcción, capacidad inalámbrica, switches intercambiables en caliente y un diseño TKL compacto que mantiene las manos juntas. Un favorito entre mecanógrafos serios a un precio razonable.
+**Rango de precio:** ~$90–$100
+**Mejor para:** Escritura de oficina, uso diario, mecanógrafos táctiles
+**Por qué gana:** El K2 Pro logra el mejor equilibrio de calidad de construcción, características y precio. Es un diseño compacto 75% — más pequeño que TKL, pero aún tiene la fila de funciones. Los switches hot-swappable significan que puedes cambiar los switches después sin soldar. Inalámbrico vía Bluetooth y USB 2.4GHz. Si compras un teclado para mejorar tu velocidad de escritura y mantenerlo durante años, este es el indicado.
 
 **Mejor para velocidad: Logitech G Pro X**
 **Opciones de switch:** GX Brown, GX Red, GX Blue
-**Ideal para:** Mecanógrafos enfocados en velocidad, entornos competitivos
-**Por qué gana:** Conexión de baja latencia, switches responsivos y diseño tenkeyless compacto. Los switches lineales GX Red tienen una actuación particularmente ligera para mecanógrafos rápidos.
+**Rango de precio:** ~$120–$140
+**Mejor para:** Mecanógrafos enfocados en velocidad, entornos competitivos
+**Por qué gana:** Originalmente diseñado como teclado gaming, el G Pro X tiene latencia de entrada casi nula y un diseño tenkeyless sólido. Los switches lineales GX Red tienen activación ligera y consistente que se adapta bien a mecanógrafos rápidos. La construcción es robusta sin ser pesada. Si la velocidad pura es el objetivo y el presupuesto no es una restricción dura, esta es la elección.
 
 **Mejor opción económica: Keychron K3**
-**Precio:** Menos de $80
-**Ideal para:** Nuevos mecanógrafos táctiles con presupuesto limitado
-**Por qué gana:** Construcción mecánica sólida, switches de bajo perfil, inalámbrico y diseño compacto — todo a un precio accesible.
+**Rango de precio:** Menos de $80
+**Mejor para:** Nuevos mecanógrafos táctiles con presupuesto limitado
+**Por qué gana:** Switches de perfil bajo, diseño compacto 75% y conectividad inalámbrica a un precio que la mayoría puede justificar sin pensarlo demasiado. Los switches de perfil bajo tienen menos recorrido que los mecánicos estándar, lo que algunos mecanógrafos encuentran más rápido una vez ajustados. Un fuerte primer teclado mecánico.
 
-**Mejor para oficina / ambientes silenciosos: Logitech MX Keys**
-**Tipo de switch:** Tijera (no mecánico)
-**Ideal para:** Lugares de trabajo silenciosos, viaje, reemplazo de portátil
-**Por qué funciona:** Retroiluminado, forma de tecla ergonómica, pulsaciones casi silenciosas y excelente alcance inalámbrico. No es el teclado más rápido, pero excelente para precisión sostenida en entornos silenciosos.
+**Mejor para oficina / entornos silenciosos: Logitech MX Keys**
+**Tipo de switch:** Scissor (no mecánico)
+**Rango de precio:** ~$100–$110
+**Mejor para:** Lugares de trabajo silenciosos, viajes, reemplazos de laptop
+**Por qué funciona:** Si los switches mecánicos son demasiado ruidosos para tu entorno, el MX Keys es la mejor opción no mecánica. Las teclas scissor son estables, la forma de las teclas es ligeramente cóncava para coincidir con la curvatura de la yema del dedo, y la sensación de escritura es segura sin ruido. No te dará la misma retroalimentación que un mecánico, pero es excelente para precisión sostenida en espacios compartidos.
 
 **Mejor opción ergonómica: Microsoft Sculpt Ergonomic**
-**Ideal para:** Mecanógrafos con tensión en las muñecas o preocupaciones de RSI
-**Por qué funciona:** El diseño dividido reduce significativamente la pronación de la muñeca. Necesita 2–3 semanas de adaptación pero reduce drásticamente la tensión para trabajadores de teclado durante todo el día.
+**Rango de precio:** ~$80–$100
+**Mejor para:** Mecanógrafos con tensión de muñeca o preocupaciones de RSI
+**Por qué funciona:** El diseño dividido separa las dos mitades del teclado para que tus muñecas se sienten en una posición más natural en vez de pronarse hacia adentro. También hay un ligero ángulo de tienda incorporado. Toma 2–3 semanas ajustarse por completo — tu velocidad caerá temporalmente — pero muchos mecanógrafos reportan una reducción significativa de molestias en las muñecas durante sesiones de día completo. No para récords de velocidad, pero esencial si la comodidad a largo plazo es la prioridad.
 
-## ¿Tu teclado realmente afecta tus PPM?
+## Cómo elegir el teclado correcto para tu situación
 
-Para mecanógrafos principiantes e intermedios, la respuesta honesta es: no mucho. La técnica es el factor dominante a velocidades por debajo de 70 PPM. A velocidades más altas, la calidad de los switches y la sensación de las teclas comienzan a importar más — tanto para la velocidad como para la salud de las muñecas a largo plazo.
+El mejor teclado depende de dónde estés en tu camino de escritura y cómo trabajes:
 
-Independientemente del teclado, tu velocidad mejorará más rápido con práctica estructurada que con una mejora de hardware.
+- **Menos de 60 WPM:** La técnica lo es todo en esta etapa. Cualquier teclado mecánico decente servirá. No pienses demasiado en el hardware — enfócate en práctica estructurada.
+- **60–80 WPM:** Empezarás a notar más la sensación del switch. Prueba un switch lineal si aún no lo has hecho — muchos mecanógrafos los encuentran más rápidos una vez que la memoria muscular está establecida.
+- **80+ WPM:** La calidad del switch, la estabilidad de las teclas y el diseño realmente importan. Un diseño compacto y switches lineales ligeros valen la inversión.
+- **Oficina compartida:** Evita los switches clicky. MX Keys o un Keychron con Reds son opciones sólidas que no molestarán a la persona de al lado.
+- **Dolor de muñeca o sesiones largas:** Considera el Sculpt Ergonomic o mira teclados divididos como el Kinesis Freestyle. La velocidad importa menos que poder escribir cómodamente durante años.
 
-[Prueba tu velocidad actual antes de cambiar de teclado →](https://www.typingverified.com/test)
+## ¿Tu teclado realmente afecta tu WPM?
+
+Para mecanógrafos principiantes e intermedios, la respuesta honesta es: no mucho. La técnica es el factor dominante a velocidades por debajo de 70 WPM. A velocidades más altas — particularmente por encima de 80–90 WPM — la calidad del switch, la estabilidad de las teclas y el diseño comienzan a importar más, tanto para velocidad como para salud de muñeca a largo plazo.
+
+Lo más importante que puedes hacer por tu velocidad de escritura es practicar consistentemente con técnica correcta. Ninguna mejora de teclado reemplaza eso. Pero si ya practicas regularmente y quieres quitar la fricción de la ecuación, los teclados de arriba son todos opciones genuinamente buenas.
+
+[Prueba tu velocidad actual antes de mejorar →](https://www.typingverified.com/test)
     `,
   }];

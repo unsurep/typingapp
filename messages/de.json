@@ -89,8 +89,7 @@
     "headingBefore": "Typing",
     "headingBrand": "verified",
     "headingHighlight": "Blog",
-    "intro": "Expertenratschläge, Tutorials und Einblicke, damit Sie Tippen meistern und produktiver werden.",
-    "seeMore": "Mehr anzeigen"
+    "intro": "Expertenratschläge, Tutorials und Einblicke, damit Sie Tippen meistern und produktiver werden."
   },
   "BlogPost": {
     "articleBodyLocaleNote": "Der Artikeltext ist auf Englisch, während wir die vollständige Übersetzung fertigstellen.",
@@ -99,7 +98,8 @@
     "minRead": "{count} Min. Lesezeit",
     "enjoyed": "Hat Ihnen der Artikel gefallen?",
     "shareTitle": "Teilen Sie ihn mit Freunden",
-    "authorByline": "Von {name}"
+    "authorByline": "Von {name}",
+    "authorBioHeading": "Über den Autor"
   },
   "BlogCard": {
     "minRead": "{count} Min. Lesezeit",
@@ -166,8 +166,7 @@
     "lessonCompleted": "Lektion abgeschlossen",
     "lessonIncomplete": "Lektion nicht abgeschlossen",
     "taskLabel": "Aufgabe {n}",
-    "passCriteriaBefore": "Du musst "
-    ,
+    "passCriteriaBefore": "Du musst ",
     "passCriteriaHighlight": "90% Genauigkeit",
     "passCriteriaAfter": " und den Kontext der Aufgabe ausfüllen, um diese Aufgabe zu bestehen.",
     "loadingState": "Lektionsstatus wird geladen...",
@@ -247,15 +246,15 @@
     "metaDescription": "Erfahren Sie, wie Typingverified Daten erhebt und nutzt, Cookies und Google AdSense-Werbung handhabt und welche Rechte und Wahlmöglichkeiten Sie haben.",
     "heroTitleBefore": "Datenschutz",
     "heroTitleHighlight": "Richtlinie",
-    "lastUpdated": "Zuletzt aktualisiert: 29. März 2026",
+    "lastUpdated": "Zuletzt aktualisiert: 15. April 2026",
     "intro": "Willkommen bei Typingverified. Diese Datenschutzerklärung erläutert, welche Informationen wir erheben, wie wir sie nutzen und welche Rechte Sie in Bezug auf Ihre Daten haben. Durch die Nutzung unserer Website stimmen Sie den hier beschriebenen Praktiken zu.",
     "s1Title": "1. Welche Informationen wir erheben",
     "s1Account": "Kontoinformationen: Bei der Registrierung erheben wir Ihren Namen und Ihre E-Mail-Adresse.",
     "s1Usage": "Nutzungsdaten: Wir erheben Lektionsfortschritt, WPM-Werte, Genauigkeitswerte und Testergebnisse.",
     "s1Cookies": "Cookies und Tracking: Wir verwenden Cookies, um die Website zu betreiben, Ihre Sitzung zu speichern und relevante Werbung anzuzeigen.",
     "s1Ads": "Werbe-Cookies von Drittanbietern: Wir nutzen Google AdSense zur Anzeige von Werbung. Google und Partner können Cookies einschließlich des DoubleClick-Cookies verwenden, um Anzeigen basierend auf früheren Besuchen dieser und anderer Websites zu schalten.",
-    "s1OptOut": "Personalisierte Werbung deaktivieren: <adsSettings>https://adssettings.google.com</adsSettings>",
-    "s1GoogleData": "Wie Google Daten nutzt: <googlePartner>https://policies.google.com/technologies/partner-sites</googlePartner>",
+    "s1OptOut": "Personalisierte Werbung deaktivieren: <adsSettings>Google Ads-Einstellungen</adsSettings>",
+    "s1GoogleData": "Informationen zur Datennutzung: <googlePartner>Googles Datenschutzrichtlinien</googlePartner>",
     "s2Title": "2. Wie wir Ihre Informationen nutzen",
     "s2Item1": "Konto erstellen und verwalten",
     "s2Item2": "Ihren Lektions- und Testfortschritt verfolgen",
@@ -264,21 +263,22 @@
     "s2Item5": "Die Plattform verbessern und Supportanfragen beantworten",
     "s3Title": "3. Google AdSense und Werbung von Drittanbietern",
     "s3p1": "Wir nehmen an Google AdSense teil, bereitgestellt von Google LLC. Google AdSense verwendet Cookies und Web Beacons, um Anzeigen basierend auf früheren Besuchen unserer Website und anderer Websites zu schalten.",
-    "s3OptOut": "Personalisierte Werbung deaktivieren: <adsSettings>https://adssettings.google.com</adsSettings>",
-    "s3MoreInfo": "Weitere Informationen: <googlePartner>https://policies.google.com/technologies/partner-sites</googlePartner>",
+    "s3OptOut": "Personalisierte Werbung deaktivieren über <adsSettings>Google Ads-Einstellungen</adsSettings>",
+    "s3MoreInfo": "Weitere Informationen: <googlePartner>Googles Datenschutzrichtlinien</googlePartner>",
     "s4Title": "4. Datenweitergabe",
     "s4p1": "Wir verkaufen keine personenbezogenen Daten. Daten geben wir nur an vertrauenswürdige Dienstleister weiter, wenn dies gesetzlich vorgeschrieben ist oder im Rahmen einer Unternehmensübertragung.",
     "s5Title": "5. Ihre Rechte",
     "s5Item1": "Zugriff auf, Berichtigung oder Löschung Ihrer Daten jederzeit",
-    "s5Item2": "Personalisierte Werbung deaktivieren über <adsSettings>https://adssettings.google.com</adsSettings>",
-    "s5Item3": "Kontakt unter <contactPage>https://www.typingverified.com/contact</contactPage>",
+    "s5Item2": "Personalisierte Werbung deaktivieren über <adsSettings>Google Ads-Einstellungen</adsSettings>",
+    "s5Item3": "Kontaktieren Sie uns über unsere <contactPage>Kontaktseite</contactPage>",
     "s6Title": "6. Datenschutz von Kindern",
     "s6p1": "Typingverified richtet sich nicht an Kinder unter 13 Jahren. Wir erheben wissentlich keine Daten von Kindern unter 13 Jahren.",
     "s7Title": "7. Änderungen dieser Richtlinie",
     "s7p1": "Wir aktualisieren das Datum «Zuletzt aktualisiert», wenn sich diese Richtlinie ändert.",
     "s8Title": "8. Kontakt",
     "s8Email": "E-Mail: <email>support@typingverified.com</email>",
-    "s8Website": "Website: <website>https://www.typingverified.com/contact</website>"
+    "s8Website": "Webseite: <website>typingverified.com/contact</website>",
+    "s3OptOut2": "Sie können sich auch unter <aboutads>aboutads.info</aboutads> von interessenbasierter Werbung teilnehmender Unternehmen abmelden."
   },
   "Terms": {
     "metaTitle": "Nutzungsbedingungen | Typingverified",

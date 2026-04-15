@@ -9,4 +9,6 @@ export interface BlogPost {
   content: string;
   /** Override display name; defaults to DEFAULT_BLOG_AUTHOR in blog-data. */
   authorName?: string;
+  /** Localized short author bio shown under article content. */
+  authorBio?: string;
 }

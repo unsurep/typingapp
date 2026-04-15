@@ -43,19 +43,19 @@ export default function Navbar({
             <div className="flex items-center space-x-8">
               <Link
                 href="/practice"
-                className="text-sm text-white hover:text-[#f4bf3c] font-medium   transition-colors"
+                className="text-sm text-foreground hover:text-[#f4bf3c] font-medium transition-colors"
               >
                 {t("practice")}
               </Link>
               <Link
                 href="/test"
-                className="text-sm font-medium text-white hover:text-[#f4bf3c]  transition-colors"
+                className="text-sm font-medium text-foreground hover:text-[#f4bf3c] transition-colors"
               >
                 {t("tests")}
               </Link>
               <Link
                 href="/blog"
-                className="text-sm font-medium text-white hover:text-[#f4bf3c]  transition-colors"
+                className="text-sm font-medium text-foreground hover:text-[#f4bf3c] transition-colors"
               >
                 {t("blog")}
               </Link>
@@ -63,13 +63,13 @@ export default function Navbar({
                 <>
                   <Link
                     href="/lessons"
-                    className="text-sm font-medium text-white hover:text-[#f4bf3c]  transition-colors"
+                    className="text-sm font-medium text-foreground hover:text-[#f4bf3c] transition-colors"
                   >
                     {t("lessons")}
                   </Link>
                   <Link
                     href="/certificate"
-                    className="text-sm font-medium text-white hover:text-[#f4bf3c]  transition-colors"
+                    className="text-sm font-medium text-foreground hover:text-[#f4bf3c] transition-colors"
                   >
                     {t("certificate")}
                   </Link>
@@ -79,7 +79,7 @@ export default function Navbar({
                 <div className="flex items-center space-x-6">
                   <Link
                     href="/dashboard"
-                    className="text-sm font-medium text-white hover:text-[#f4bf3c]  transition-colors"
+                    className="text-sm font-medium text-foreground hover:text-[#f4bf3c] transition-colors"
                   >
                     {t("dashboard")}
                   </Link>

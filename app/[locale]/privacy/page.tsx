@@ -37,6 +37,7 @@ export default async function PrivacyPage({
     const richLinks = {
         adsSettings: ext("https://adssettings.google.com"),
         googlePartner: ext("https://policies.google.com/technologies/partner-sites"),
+        aboutads: ext("https://optout.aboutads.info/"),
         contactPage: (chunks: ReactNode) => (
             <Link href="/contact" className={linkClass}>
                 {chunks}
@@ -112,6 +113,9 @@ export default async function PrivacyPage({
                 <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-4">{t("s3p1")}</p>
                 <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-1">
                     {t.rich("s3OptOut", richLinks)}
+                </p>
+                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-1">
+                    {t.rich("s3OptOut2", richLinks)}
                 </p>
                 <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-4">
                     {t.rich("s3MoreInfo", richLinks)}

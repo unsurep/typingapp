@@ -89,8 +89,7 @@
     "headingBefore": "Typing",
     "headingBrand": "verified",
     "headingHighlight": "Blog",
-    "intro": "Conselhos de especialistas, tutoriais e insights para dominar a digitação e aumentar a produtividade.",
-    "seeMore": "Ver mais"
+    "intro": "Conselhos de especialistas, tutoriais e insights para dominar a digitação e aumentar a produtividade."
   },
   "BlogPost": {
     "articleBodyLocaleNote": "O texto do artigo está em inglês enquanto concluímos a tradução completa.",
@@ -99,7 +98,8 @@
     "minRead": "{count} min de leitura",
     "enjoyed": "Gostou do artigo?",
     "shareTitle": "Compartilhe com amigos",
-    "authorByline": "Por {name}"
+    "authorByline": "Por {name}",
+    "authorBioHeading": "Sobre o autor"
   },
   "BlogCard": {
     "minRead": "{count} min de leitura",
@@ -246,15 +246,15 @@
     "metaDescription": "Saiba como o Typingverified recolhe e usa dados, gere cookies, publicidade Google AdSense e os seus direitos e opções de privacidade.",
     "heroTitleBefore": "Política de",
     "heroTitleHighlight": "privacidade",
-    "lastUpdated": "Última atualização: 29 de março de 2026",
+    "lastUpdated": "Última atualização: 15 de abril de 2026",
     "intro": "Bem-vindo ao Typingverified. Esta política de privacidade explica que informações recolhemos, como as usamos e quais os seus direitos relativamente aos seus dados. Ao usar o nosso site, concorda com as práticas aqui descritas.",
     "s1Title": "1. Informações que recolhemos",
     "s1Account": "Informações da conta: ao registar-se, recolhemos o seu nome e endereço de email.",
     "s1Usage": "Dados de utilização: recolhemos o progresso nas lições, pontuações WPM, taxas de precisão e resultados dos testes.",
     "s1Cookies": "Cookies e rastreio: usamos cookies para operar o site, lembrar a sua sessão e mostrar publicidade relevante.",
     "s1Ads": "Cookies de publicidade de terceiros: usamos o Google AdSense para exibir anúncios. O Google e parceiros podem usar cookies, incluindo o cookie DoubleClick, para veicular anúncios com base em visitas anteriores a este e a outros sites.",
-    "s1OptOut": "Desativar anúncios personalizados: <adsSettings>https://adssettings.google.com</adsSettings>",
-    "s1GoogleData": "Como o Google usa dados: <googlePartner>https://policies.google.com/technologies/partner-sites</googlePartner>",
+    "s1OptOut": "Desativar anúncios personalizados: <adsSettings>Configurações de anúncios do Google</adsSettings>",
+    "s1GoogleData": "Como o Google usa os dados: <googlePartner>Política de privacidade do Google</googlePartner>",
     "s2Title": "2. Como usamos as suas informações",
     "s2Item1": "Criar e gerir a sua conta",
     "s2Item2": "Acompanhar o progresso nas lições e nos testes",
@@ -263,21 +263,22 @@
     "s2Item5": "Melhorar a plataforma e responder a pedidos de apoio",
     "s3Title": "3. Google AdSense e publicidade de terceiros",
     "s3p1": "Participamos no Google AdSense, fornecido pela Google LLC. O Google AdSense usa cookies e web beacons para veicular anúncios com base em visitas anteriores ao nosso site e a outros sites.",
-    "s3OptOut": "Desativar anúncios personalizados: <adsSettings>https://adssettings.google.com</adsSettings>",
-    "s3MoreInfo": "Mais informações: <googlePartner>https://policies.google.com/technologies/partner-sites</googlePartner>",
+    "s3OptOut": "Desativar anúncios personalizados em <adsSettings>Configurações de anúncios do Google</adsSettings>",
+    "s3MoreInfo": "Mais informações: <googlePartner>Política de privacidade do Google</googlePartner>",
     "s4Title": "4. Partilha de dados",
     "s4p1": "Não vendemos os seus dados pessoais. Só podemos partilhar dados com prestadores de confiança, quando exigido por lei ou em caso de transferência de negócio.",
     "s5Title": "5. Os seus direitos",
     "s5Item1": "Aceder, corrigir ou eliminar os seus dados a qualquer momento",
-    "s5Item2": "Desativar anúncios personalizados em <adsSettings>https://adssettings.google.com</adsSettings>",
-    "s5Item3": "Contacte-nos em <contactPage>https://www.typingverified.com/contact</contactPage>",
+    "s5Item2": "Desativar anúncios personalizados em <adsSettings>Configurações de anúncios do Google</adsSettings>",
+    "s5Item3": "Fale conosco pela nossa <contactPage>página de contato</contactPage>",
     "s6Title": "6. Privacidade infantil",
     "s6p1": "O Typingverified não se dirige a crianças com menos de 13 anos. Não recolhemos conscientemente dados de crianças com menos de 13 anos.",
     "s7Title": "7. Alterações a esta política",
     "s7p1": "Atualizaremos a data «Última atualização» quando esta política mudar.",
     "s8Title": "8. Contacto",
     "s8Email": "Email: <email>support@typingverified.com</email>",
-    "s8Website": "Website: <website>https://www.typingverified.com/contact</website>"
+    "s8Website": "Site: <website>typingverified.com/contact</website>",
+    "s3OptOut2": "Você também pode se recusar a receber publicidade baseada em interesses de empresas participantes em <aboutads>aboutads.info</aboutads>."
   },
   "Terms": {
     "metaTitle": "Termos de serviço | Typingverified",

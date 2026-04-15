@@ -11,6 +11,14 @@ export type { BlogPost } from "./blog-types";
 /** Default author shown in blog bylines when `post.authorName` is unset. */
 export const DEFAULT_BLOG_AUTHOR = "Louis";
 
+const DEFAULT_BLOG_AUTHOR_BIO_BY_LOCALE: Record<AppLocale, string> = {
+  en: "Louis is the creator of Typingverified, focused on practical typing training, real-world speed benchmarks, and evidence-based techniques that help learners type faster and more accurately.",
+  fr: "Louis est le créateur de Typingverified. Il se concentre sur un entraînement de dactylographie pratique, des repères de vitesse concrets et des méthodes fondées sur des preuves pour aider à taper plus vite et plus précisément.",
+  es: "Louis es el creador de Typingverified. Se centra en entrenamiento de mecanografía práctico, referencias de velocidad reales y técnicas basadas en evidencia para ayudarte a escribir más rápido y con mayor precisión.",
+  de: "Louis ist der Ersteller von Typingverified. Sein Fokus liegt auf praktischem Tipptraining, realistischen Geschwindigkeits-Benchmarks und evidenzbasierten Methoden, die helfen, schneller und genauer zu tippen.",
+  pt: "Louis é o criador do Typingverified. Seu foco é treinamento prático de digitação, métricas reais de velocidade e técnicas baseadas em evidências para ajudar você a digitar mais rápido e com mais precisão.",
+};
+
 const AVERAGE_READING_WPM = 200;
 
 export function getReadingTimeMinutes(content: string): number {
@@ -39,7 +47,16 @@ function sortPostsByNewestFirst(posts: BlogPost[]): BlogPost[] {
 }
 
 export function getBlogPosts(locale: AppLocale): BlogPost[] {
-  return sortPostsByNewestFirst(byLocale[locale] ?? blogPostsEn);
+  const posts = byLocale[locale] ?? blogPostsEn;
+  const defaultAuthorBio = DEFAULT_BLOG_AUTHOR_BIO_BY_LOCALE[locale];
+
+  const withAuthorDefaults = posts.map((post) => ({
+    ...post,
+    authorName: post.authorName ?? DEFAULT_BLOG_AUTHOR,
+    authorBio: post.authorBio ?? defaultAuthorBio,
+  }));
+
+  return sortPostsByNewestFirst(withAuthorDefaults);
 }
 
 export function getPostBySlug(

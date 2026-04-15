@@ -50,6 +50,7 @@ export default async function BlogPostPage({ params }: Props) {
   const contentSections = post.content.split("\n\n").filter(Boolean);
   const readingTime = getReadingTimeMinutes(post.content);
   const authorName = post.authorName ?? DEFAULT_BLOG_AUTHOR;
+  const authorBio = post.authorBio?.trim();
   const englishPost = getPostBySlug(routing.defaultLocale, slug);
   const isArticleBodyFallbackFromEnglish =
     locale !== routing.defaultLocale &&
@@ -186,6 +187,16 @@ export default async function BlogPostPage({ params }: Props) {
             );
           })}
         </div>
+
+        {authorBio ? (
+          <section className="mt-12 rounded-2xl border border-border bg-muted/20 p-6 sm:p-8">
+            <h2 className="text-sm font-semibold uppercase tracking-wide text-muted-foreground">
+              {t("authorBioHeading")}
+            </h2>
+            <p className="mt-2 text-lg font-semibold text-foreground">{authorName}</p>
+            <p className="mt-3 text-base leading-relaxed text-muted-foreground">{authorBio}</p>
+          </section>
+        ) : null}
 
         <AdSlot
           slot={process.env.NEXT_PUBLIC_ADSENSE_SLOT_BLOG}
