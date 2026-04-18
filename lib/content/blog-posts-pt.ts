@@ -211,48 +211,74 @@ Se você deseja um progresso mensurável, use lições estruturadas, teste regul
       "Is 40 WPM a good typing speed? Here's an honest answer based on industry benchmarks, plus a clear plan for improving quickly.",
     publishDate: "Jan 11, 2026",
     image: "/blog/t1.png",
-    content: `A resposta curta: 40 WPM é a média. É bom o suficiente para o uso diário do computador e para muitas funções gerais de escritório. Mas fica abaixo do limite para a maioria dos trabalhos específicos de digitação. 
+    content: `
 
-Aqui está a imagem completa. 
+A resposta curta: 40 PPM é a média. É suficiente para o uso diário do computador e muitas funções de escritório gerais. Mas fica abaixo do limite para a maioria dos trabalhos específicos de digitação — e a diferença entre onde você está e onde precisa estar é quase certamente menor do que parece.
 
-## O que 40 WPM significa na prática 
+Aqui está o quadro completo.
 
-A 40 WPM, você pode digitar um e-mail padrão de 200 palavras em cerca de 5 minutos. Um relatório de 1.000 palavras leva cerca de 25 minutos de pura digitação. Isso é funcional – mas não rápido. 
+## O que 40 PPM significa na prática
 
-Para comparação: 
+Com 40 PPM, você pode digitar um e-mail padrão de 200 palavras em cerca de 5 minutos. Um relatório de 1.000 palavras leva aproximadamente 25 minutos de tempo puro de digitação. Isso é funcional — mas também é lento o suficiente para se tornar um gargalo ao longo de uma jornada de trabalho.
 
-Um digitador de 60 WPM termina o mesmo relatório em cerca de 17 minutos 
+Para comparar, considere quanto tempo o mesmo documento leva em velocidades mais altas:
 
-Um digitador de 80 WPM termina em cerca de 12 minutos 
+Um digitador a 60 PPM termina esse relatório de 1.000 palavras em cerca de 17 minutos. Um a 80 PPM o termina em cerca de 12 minutos. Ao longo de oito horas de trabalho intensivo em documentos, essas diferenças se acumulam em lacunas de produtividade significativas.
 
-Ao longo de um dia de trabalho, a diferença aumenta significativamente. 
+Mais importante: 40 PPM não é um teto fixo. É um ponto de partida. A maioria das pessoas atinge 60 PPM dentro de quatro a seis semanas de prática diária deliberada — um limiar significativo que abre um leque muito mais amplo de opções de emprego.
 
-## 40 WPM são bons o suficiente para o seu trabalho? 
+## 40 PPM é suficiente para o seu trabalho?
 
-| Função | WPM mínimo | 40 WPM são suficientes? | 
-|---|---|---| 
-| Trabalhos gerais de escritório | 35–40 WPM | ✅ Borderline sim | 
-| Atendimento ao cliente | 45–55WPM | ❌ Abaixo do requisito | 
-| Entrada de dados | 50–65WPM | ❌ Abaixo do requisito | 
-| Assistente virtual | 50–60 WPM | ❌ Abaixo do requisito | 
-| Transcrição | 65–85WPM | ❌ Bem abaixo do requisito | 
-| Médico/jurídico | 65–80 WPM | ❌ Bem abaixo do requisito | 
+A resposta honesta depende completamente do que você precisa da velocidade de digitação.
 
-## Como passar de 40 WPM para 60 WPM 
+| Função | PPM mínimo | 40 PPM é suficiente? |
+|---|---|---|
+| Trabalho de escritório geral | 35–40 PPM | ✅ Borderline sim |
+| Atendimento ao cliente | 45–55 PPM | ❌ Abaixo do requisito |
+| Entrada de dados | 50–65 PPM | ❌ Abaixo do requisito |
+| Assistente virtual | 50–60 PPM | ❌ Abaixo do requisito |
+| Transcrição | 65–85 PPM | ❌ Bem abaixo do requisito |
+| Médico / jurídico | 65–80 PPM | ❌ Bem abaixo do requisito |
 
-O salto de 40 para 60 WPM é facilmente alcançável dentro de 4 a 6 semanas com prática diária consistente. Aqui está um plano simples: 
+Para uso puramente pessoal — e-mails pessoais, documentos ocasionais, navegação casual — 40 PPM é perfeitamente adequado. A maioria das pessoas em funções não intensivas em digitação nunca nota nenhuma limitação.
 
-Semana 1–2: Domínio da linha inicial. Digite apenas ASDF e JKL; exercícios sem olhar para o teclado. Faça isso por 10 minutos por dia. 
+Mas se você está se candidatando a trabalho remoto, funções administrativas, atendimento ao cliente, entrada de dados ou qualquer posição onde a digitação aparece na descrição do cargo, 40 PPM geralmente te colocará abaixo do requisito mínimo. Os empregadores que publicam vagas remotas frequentemente especificam 50–65 PPM como linha de base, e recebem candidatos suficientes que atendem a esse critério para que ficar aquém seja uma desvantagem real.
 
-Semana 3: Expanda para o teclado completo. Concentre-se na precisão e não na velocidade. Fique acima de 95% de precisão, mesmo que isso signifique desacelerar. 
+## Por que a maioria das pessoas está presa em 40 PPM
 
-Semana 4: Pratique palavras comuns em inglês. As 200 palavras mais comuns representam mais da metade de todo o inglês escrito. Perfurá-los aumenta a velocidade rapidamente. 
+A razão mais comum pela qual as pessoas estacionam em torno de 40 PPM não é falta de prática — é o tipo errado de prática. Digitar e-mails e mensagens todos os dias melhora a velocidade até certo ponto, mas essa melhoria para assim que você internalizou seus hábitos existentes. Se esses hábitos incluem olhar para o teclado, usar os dedos errados ou tensionar os pulsos, mais da mesma prática reforça esses limites em vez de quebrá-los.
 
-Semana 5–6: Faça testes cronometrados diariamente. Acompanhe seu WPM líquido. Neste ponto, a velocidade aumentará naturalmente à medida que sua precisão se tornar consistente. 
+O outro culpado comum é perseguir velocidade antes da precisão. Um digitador que tenta ir mais rápido antes de seu posicionamento de dedos ser confiável cometerá mais erros — o que reduz o PPM líquido e treina os padrões motores errados simultaneamente. É assim que as pessoas acabam digitando a 40–45 PPM por anos sem melhoria apesar de usar um teclado todos os dias.
 
-A maioria das pessoas que segue este plano atinge 55–65 WPM em 6 semanas. 
+## Como passar de 40 PPM para 60 PPM
 
-[Comece a melhorar sua velocidade de digitação hoje →](https://www.typingverified.com/practice)`,
+O salto de 40 para 60 PPM é muito alcançável em quatro a seis semanas com prática diária consistente. A palavra-chave é deliberada — a digitação aleatória não produz os mesmos resultados que a melhoria estruturada.
+
+**Semanas 1–2: Domínio da linha base.** Passe 10–15 minutos por dia em exercícios puros de linha base — ASDF e JKL; — sem olhar para o teclado. Isso parece lento e desconfortável. Esse desconforto significa que está funcionando. A linha base é o fundamento de toda a digitação por toque, e até que seus dedos conheçam essas posições pelo tato, qualquer outra melhoria é limitada.
+
+**Semana 3: Expanda para o teclado completo.** Uma vez que a linha base seja automática, adicione as linhas superior e inferior. Concentre-se completamente na precisão durante essa fase — fique acima de 95% mesmo que signifique digitar mais devagar do que parece natural. A precisão é o gargalo, não a velocidade bruta.
+
+**Semana 4: Pratique palavras comuns.** As 200 palavras mais comuns do português constituem mais da metade de todo o texto escrito. Exercitá-las desenvolve os padrões de transição específicos — como seus dedos se movem entre letras em palavras reais — que realmente impulsionam a velocidade na prática.
+
+**Semanas 5–6: Testes cronometrados completos diários.** Faça um teste cronometrado completo no início de cada sessão e registre seu PPM líquido. Neste ponto sua precisão deve ser estável, e a velocidade subirá naturalmente à medida que sua memória muscular se consolida. A maioria das pessoas seguindo essa estrutura atinge 55–65 PPM ao final da semana 6.
+
+## O fator precisão
+
+Um detalhe que surpreende a maioria das pessoas: melhorar sua precisão frequentemente aumentará sua pontuação visível de PPM mesmo antes de seus dedos se moverem mais rápido. O PPM líquido é calculado como velocidade bruta menos uma penalidade por erro. Cada erro não corrigido subtrai da sua pontuação, e o tempo gasto retrocedendo e redigitando reduz ainda mais sua produção efetiva.
+
+Um digitador a 40 PPM bruto com 99% de precisão tem um PPM líquido mais alto — e produz mais texto utilizável — do que um digitador a 45 PPM bruto com 90% de precisão. Melhorar a precisão é frequentemente o caminho mais rápido para uma pontuação melhor.
+
+## O que fazer agora
+
+Comece com um teste de linha de base. Um teste cronometrado real fornecerá seu PPM atual real — não o número que você assume ter, mas onde você está hoje. Esse número é seu ponto de partida.
+
+A partir daí, 15 minutos de prática diária focada são suficientes. Você não precisa de horas de trabalho por dia para passar de 40 PPM para 60 PPM. Você precisa de consistência, da técnica certa e de um ciclo de feedback que te diga honestamente como você está melhorando.
+
+A diferença entre 40 PPM e a faixa de 55–65 PPM que abre a maioria das funções remotas e administrativas é tipicamente de quatro a seis semanas de esforço deliberado. Esse é um investimento muito curto em relação a quão mais rápido seu trabalho diário — e sua busca de emprego — avançará do outro lado.
+
+[Comece a melhorar sua velocidade de digitação hoje →](https://www.typingverified.com/practice)
+
+    `,
   },
   {
     title: "Why Typing Fast Without Accuracy Is Actually Slower (The Math Explained)",

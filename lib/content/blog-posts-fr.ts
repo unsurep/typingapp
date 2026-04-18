@@ -211,48 +211,74 @@ Si vous souhaitez des progrès mesurables, utilisez des leçons structurées, te
       "Is 40 WPM a good typing speed? Here's an honest answer based on industry benchmarks, plus a clear plan for improving quickly.",
     publishDate: "Jan 11, 2026",
     image: "/blog/t1.png",
-    content: `La réponse courte : 40 WPM est la moyenne. Il est suffisant pour une utilisation quotidienne de l'ordinateur et pour de nombreux rôles de bureau généraux. Mais il reste inférieur au seuil pour la plupart des emplois spécifiques à la dactylographie. 
+    content: `
 
-Voici l’image complète. 
+La réponse courte : 40 MPM, c'est dans la moyenne. C'est suffisant pour une utilisation quotidienne de l'ordinateur et de nombreux rôles de bureau généraux. Mais cela tombe en dessous du seuil pour la plupart des emplois spécifiques à la frappe — et l'écart entre où vous en êtes et où vous devez être est presque certainement plus petit qu'il ne le semble.
 
-## Ce que signifie 40 WPM en pratique 
+Voici le tableau complet.
 
-À 40 WPM, vous pouvez taper un e-mail standard de 200 mots en 5 minutes environ. Un rapport de 1 000 mots prend environ 25 minutes de temps de frappe pure. C'est fonctionnel – mais pas rapide. 
+## Ce que 40 MPM signifie en pratique
 
-A titre de comparaison : 
+À 40 MPM, vous pouvez taper un e-mail standard de 200 mots en environ 5 minutes. Un rapport de 1 000 mots prend environ 25 minutes de temps de frappe pur. C'est fonctionnel — mais c'est aussi assez lent pour devenir un goulot d'étranglement au cours d'une journée de travail.
 
-Une dactylo à 60 WPM termine ce même rapport en 17 minutes environ 
+Pour comparaison, voyez combien de temps prend le même document à des vitesses plus élevées :
 
-Une dactylo à 80 WPM le termine en 12 minutes environ 
+Un dactylographe à 60 MPM termine ce rapport de 1 000 mots en environ 17 minutes. L'un à 80 MPM le termine en environ 12 minutes. Sur huit heures de travail intensif en documents, ces différences s'accumulent en écarts de productivité significatifs.
 
-Au cours d’une journée de travail, la différence s’accentue considérablement. 
+Plus important encore : 40 MPM n'est pas un plafond fixe. C'est un point de départ. La plupart des gens atteignent 60 MPM en quatre à six semaines de pratique quotidienne délibérée — un seuil significatif qui ouvre un éventail beaucoup plus large d'opportunités d'emploi.
 
-## 40 WPM sont-ils suffisants pour votre travail ? 
+## Est-ce que 40 MPM est suffisant pour votre emploi ?
 
-| Rôle | WPM minimum | 40 WPM sont-ils suffisants ? | 
-|---|---|---| 
-| Travail de bureau général | 35 à 40 mots par minute | ✅ Limite oui | 
-| Service client | 45 à 55 mots par minute | ❌ Ci-dessous l'exigence | 
-| Saisie de données | 50 à 65 mots par minute | ❌ Ci-dessous l'exigence | 
-| Assistant virtuel | 50 à 60 mots par minute | ❌ Ci-dessous l'exigence | 
-| Transcription | 65 à 85 mots par minute | ❌ Bien en dessous des exigences | 
-| Médical/juridique | 65 à 80 mots par minute | ❌ Bien en dessous des exigences | 
+La réponse honnête dépend entièrement de ce pour quoi vous avez besoin de vitesse de frappe.
 
-## Comment passer de 40 WPM à 60 WPM 
+| Rôle | MPM minimum | Est-ce que 40 MPM suffit ? |
+|---|---|---|
+| Travail de bureau général | 35–40 MPM | ✅ Borderline oui |
+| Service client | 45–55 MPM | ❌ En dessous de l'exigence |
+| Saisie de données | 50–65 MPM | ❌ En dessous de l'exigence |
+| Assistant virtuel | 50–60 MPM | ❌ En dessous de l'exigence |
+| Transcription | 65–85 MPM | ❌ Bien en dessous de l'exigence |
+| Médical / juridique | 65–80 MPM | ❌ Bien en dessous de l'exigence |
 
-Le passage de 40 à 60 WPM est tout à fait réalisable en 4 à 6 semaines avec une pratique quotidienne constante. Voici un plan simple : 
+Pour un usage purement personnel — e-mails personnels, documents occasionnels, navigation décontractée — 40 MPM est parfaitement adéquat. La plupart des gens dans des rôles non intensifs en frappe ne remarquent aucune limitation.
 
-Semaine 1-2 : Maîtrise des lignes à domicile. Tapez uniquement ASDF et JKL ; exercices sans regarder le clavier. Faites cela 10 minutes par jour. 
+Mais si vous postulez à du travail à distance, des rôles administratifs, du service client, de la saisie de données ou tout poste où la frappe apparaît dans la description du poste, 40 MPM vous placera généralement en dessous de l'exigence minimale. Les employeurs qui publient des offres à distance spécifient souvent 50–65 MPM comme référence, et ils reçoivent suffisamment de candidats qui satisfont ce critère pour que ne pas l'atteindre soit un désavantage réel.
 
-Semaine 3 : Développez le clavier complet. Concentrez-vous sur la précision, pas sur la vitesse. Restez au-dessus de 95 % de précision, même si cela signifie ralentir. 
+## Pourquoi la plupart des gens sont bloqués à 40 MPM
 
-Semaine 4 : Pratiquez des mots anglais courants. Les 200 mots les plus courants représentent plus de la moitié de tout l’anglais écrit. Les percer augmente rapidement la vitesse. 
+La raison la plus courante pour laquelle les gens plafonnent autour de 40 MPM n'est pas un manque de pratique — c'est le mauvais type de pratique. Taper des e-mails et des messages tous les jours améliore la vitesse jusqu'à un certain point, mais cette amélioration s'arrête une fois que vous avez intériorisé vos habitudes existantes. Si ces habitudes incluent regarder le clavier, utiliser les mauvais doigts ou tendre les poignets, plus de la même pratique renforce ces limites plutôt que de les briser.
 
-Semaine 5 à 6 : passez quotidiennement des tests à temps plein. Suivez votre WPM net. À ce stade, la vitesse augmentera naturellement à mesure que votre précision deviendra constante. 
+L'autre coupable courant est de poursuivre la vitesse avant la précision. Un dactylographe qui essaie d'aller plus vite avant que son positionnement des doigts ne soit fiable fera plus d'erreurs — ce qui réduit le MPM net et entraîne simultanément les mauvais schémas moteurs. C'est ainsi que les gens finissent par taper à 40–45 MPM pendant des années sans amélioration malgré l'utilisation d'un clavier tous les jours.
 
-La plupart des personnes qui suivent ce plan atteignent 55 à 65 WPM en 6 semaines. 
+## Comment passer de 40 MPM à 60 MPM
 
-[Commencez à améliorer votre vitesse de frappe dès aujourd'hui →](https://www.typingverified.com/practice)`,
+Le saut de 40 à 60 MPM est très réalisable en quatre à six semaines avec une pratique quotidienne régulière. Le mot clé est délibérée — la frappe aléatoire ne produit pas les mêmes résultats qu'une amélioration structurée.
+
+**Semaines 1–2 : Maîtrise de la rangée de base.** Passez 10–15 minutes par jour sur des exercices purs de rangée de base — ASDF et JKL; — sans regarder le clavier du tout. Cela semble lent et inconfortable. Cet inconfort signifie que ça fonctionne. La rangée de base est le fondement de toute la frappe au toucher, et jusqu'à ce que vos doigts connaissent ces positions par le toucher, toute autre amélioration est limitée.
+
+**Semaine 3 : Extension au clavier complet.** Une fois que la rangée de base est automatique, ajoutez les rangées supérieure et inférieure. Concentrez-vous entièrement sur la précision pendant cette phase — restez au-dessus de 95% même si cela signifie taper plus lentement que ce qui semble naturel. La précision est le goulot d'étranglement, pas la vitesse brute.
+
+**Semaine 4 : Entraînez-vous sur des mots courants.** Les 200 mots les plus courants du français constituent plus de la moitié de tout texte écrit. Les exercer développe les schémas de transition spécifiques — comment vos doigts se déplacent entre les lettres dans de vrais mots — qui stimulent réellement la vitesse dans la pratique.
+
+**Semaines 5–6 : Tests chronométrés complets quotidiens.** Faites un test chronométré complet au début de chaque session et notez votre MPM net. À ce stade, votre précision devrait être stable, et la vitesse montera naturellement à mesure que votre mémoire musculaire se consolide. La plupart des gens suivant cette structure atteignent 55–65 MPM à la fin de la semaine 6.
+
+## Le facteur précision
+
+Un détail qui surprend la plupart des gens : améliorer votre précision augmentera souvent votre score MPM visible même avant que vos doigts ne se déplacent réellement plus vite. Le MPM net est calculé comme la vitesse brute moins une pénalité d'erreur. Chaque erreur non corrigée soustrait de votre score, et le temps passé à effacer et retaper réduit encore votre production effective.
+
+Un dactylographe à 40 MPM brut avec 99% de précision a un MPM net plus élevé — et produit plus de texte utilisable — qu'un dactylographe à 45 MPM brut avec 90% de précision. Améliorer la précision est fréquemment le chemin le plus rapide vers un meilleur score.
+
+## Que faire maintenant
+
+Commencez par un test de référence. Un vrai test chronométré vous donnera votre MPM actuel réel — pas le chiffre que vous supposez avoir, mais où vous en êtes vraiment aujourd'hui. Ce chiffre est votre point de départ.
+
+À partir de là, 15 minutes de pratique quotidienne ciblée suffisent. Vous n'avez pas besoin d'heures de travail par jour pour passer de 40 MPM à 60 MPM. Vous avez besoin de régularité, de la bonne technique et d'une boucle de rétroaction qui vous dit honnêtement comment vous progressez.
+
+L'écart entre 40 MPM et la plage de 55–65 MPM qui déverrouille la plupart des rôles à distance et administratifs est typiquement de quatre à six semaines d'effort délibéré. C'est un investissement très court par rapport à la rapidité avec laquelle votre travail quotidien — et votre recherche d'emploi — progressera de l'autre côté.
+
+[Commencez à améliorer votre vitesse de frappe aujourd'hui →](https://www.typingverified.com/practice)
+
+    `,
   },
   {
     title: "Why Typing Fast Without Accuracy Is Actually Slower (The Math Explained)",
