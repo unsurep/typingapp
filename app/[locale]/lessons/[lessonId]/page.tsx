@@ -63,12 +63,6 @@ export default function LessonPage({ params }: { params: Promise<{ locale: strin
                 const authRes = await fetch('/api/auth/me');
                 const authData = await authRes.json();
 
-                // Protect route: only authenticated users can access lessons
-                if (!authData.authenticated) {
-                    router.replace("/login");
-                    return;
-                }
-
                 // Lessons 3+ require premium
                 if (parsedId > 2 && !authData.isPremium) {
                     router.replace("/checkout");

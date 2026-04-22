@@ -159,9 +159,9 @@ export default function Home() {
         if (res.ok) {
           const data = await res.json();
           setStats({
-            testsCompleted: Math.max(data.testsCompleted, 12400),
-            certificatesEarned: Math.max(data.certificatesEarned, 3200),
-            usersRegistered: Math.max(data.usersRegistered, 4800),
+            testsCompleted: Math.max(data.testsCompleted, 3000),
+            certificatesEarned: Math.max(data.certificatesEarned, 2200),
+            usersRegistered: Math.max(data.usersRegistered, 3800),
           });
         }
       } catch {

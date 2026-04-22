@@ -54,26 +54,30 @@ export default function Navbar({
                 {t("tests")}
               </Link>
               <Link
+                href="/lessons"
+                className="text-sm font-medium text-foreground hover:text-[#f4bf3c] transition-colors"
+              >
+                {t("lessons")}
+              </Link>
+              <Link
+                href="/pricing"
+                className="text-sm font-medium text-foreground hover:text-[#f4bf3c] transition-colors"
+              >
+                {t("pricing")}
+              </Link>
+              <Link
                 href="/blog"
                 className="text-sm font-medium text-foreground hover:text-[#f4bf3c] transition-colors"
               >
                 {t("blog")}
               </Link>
               {isLoggedIn && (
-                <>
-                  <Link
-                    href="/lessons"
-                    className="text-sm font-medium text-foreground hover:text-[#f4bf3c] transition-colors"
-                  >
-                    {t("lessons")}
-                  </Link>
-                  <Link
-                    href="/certificate"
-                    className="text-sm font-medium text-foreground hover:text-[#f4bf3c] transition-colors"
-                  >
-                    {t("certificate")}
-                  </Link>
-                </>
+                <Link
+                  href="/certificate"
+                  className="text-sm font-medium text-foreground hover:text-[#f4bf3c] transition-colors"
+                >
+                  {t("certificate")}
+                </Link>
               )}
               {isLoggedIn ? (
                 <div className="flex items-center space-x-6">
@@ -191,6 +195,20 @@ export default function Navbar({
                 {t("tests")}
               </Link>
               <Link
+                href="/lessons"
+                className="block px-3 py-2 rounded-md text-base font-medium text-muted hover:text-foreground hover:bg-black/5 dark:hover:bg-white/5 transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {t("lessons")}
+              </Link>
+              <Link
+                href="/pricing"
+                className="block px-3 py-2 rounded-md text-base font-medium text-muted hover:text-foreground hover:bg-black/5 dark:hover:bg-white/5 transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {t("pricing")}
+              </Link>
+              <Link
                 href="/blog"
                 className="block px-3 py-2 rounded-md text-base font-medium text-muted hover:text-foreground hover:bg-black/5 dark:hover:bg-white/5 transition-colors"
                 onClick={() => setIsMobileMenuOpen(false)}
@@ -198,22 +216,13 @@ export default function Navbar({
                 {t("blog")}
               </Link>
               {isLoggedIn && (
-                <>
-                  <Link
-                    href="/lessons"
-                    className="block px-3 py-2 rounded-md text-base font-medium text-muted hover:text-foreground hover:bg-black/5 dark:hover:bg-white/5 transition-colors"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    {t("lessons")}
-                  </Link>
-                  <Link
-                    href="/certificate"
-                    className="block px-3 py-2 rounded-md text-base font-medium text-muted hover:text-foreground hover:bg-black/5 dark:hover:bg-white/5 transition-colors"
-                    onClick={() => setIsMobileMenuOpen(false)}
-                  >
-                    {t("certificate")}
-                  </Link>
-                </>
+                <Link
+                  href="/certificate"
+                  className="block px-3 py-2 rounded-md text-base font-medium text-muted hover:text-foreground hover:bg-black/5 dark:hover:bg-white/5 transition-colors"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  {t("certificate")}
+                </Link>
               )}
               {isLoggedIn ? (
                 <>
