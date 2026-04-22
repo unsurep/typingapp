@@ -1,5 +1,5 @@
-import { Link, redirect } from "@/i18n/navigation";
-import { createClient } from "@/utils/supabase/server";
+import { Link } from "@/i18n/navigation";
+import { createAdminClient } from "@/utils/supabase/admin";
 import CertificatePreview from "@/components/CertificatePreview";
 import PrintCertificateButton from "@/components/PrintCertificateButton";
 import type { AppLocale } from "@/i18n/routing";
@@ -16,13 +16,13 @@ export async function generateMetadata({
     return {
         title: t("metaTitle"),
         description: t("metaDescription"),
-        robots: { index: false, follow: false },
+        robots: { index: true, follow: true },
     };
 }
 
 async function fetchCertificate(certificateId: string) {
     try {
-        const supabase = await createClient();
+        const supabase = createAdminClient();
         const { data: certificate, error } = await supabase
             .from('certificates')
             .select('*')
@@ -46,15 +46,7 @@ export default async function VerificationPage({
     const { certificateId, locale } = await params;
     const t = await getTranslations({ locale, namespace: "VerifyCertificate" });
 
-    const supabase = await createClient();
-    const { data: { user } } = await supabase.auth.getUser();
-
-    // Protect route: only authenticated users can view certificates
-    if (!user) {
-        redirect({ href: "/login", locale });
-    }
-
-    // Fetch certificate data from the database
+    // Fetch certificate data from the database (no auth required — public page)
     const certificate = await fetchCertificate(certificateId);
     const isValid = certificate !== null;
 

@@ -1,5 +1,6 @@
 import { Link } from "@/i18n/navigation";
 import LessonCard from "@/components/LessonCard";
+import GuestSignupBanner from "@/components/GuestSignupBanner";
 import { createClient } from "@/utils/supabase/server";
 import { getLessons } from "@/lib/lessons";
 import type { AppLocale } from "@/i18n/routing";
@@ -49,6 +50,7 @@ export default async function LessonsPage({
         return {
             ...lesson,
             progress: progressPercentage,
+            totalTasks: lesson.tasks.length,
             locked: !isPremium && lesson.id > 2,
         };
     });
@@ -57,6 +59,9 @@ export default async function LessonsPage({
         <div className="flex flex-col flex-1 w-full max-w-6xl mx-auto py-12 px-4 sm:px-6 lg:px-8 relative">
             {/* Background gradient orb effect */}
             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[500px] bg-brand/5 dark:bg-brand/10 blur-[120px] rounded-full pointer-events-none -z-10" />
+
+            {/* Guest signup banner */}
+            <GuestSignupBanner isGuest={!user} />
 
             {/* Header Info */}
             <div className="text-center mb-12 max-w-3xl mx-auto">

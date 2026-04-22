@@ -13,6 +13,8 @@ import { motion, AnimatePresence } from "framer-motion";
 import { getPerformanceLevel } from "@/utils/performance";
 import { useLocale, useTranslations } from "next-intl";
 import type { AppLocale } from "@/i18n/routing";
+import { useGuestProgress } from "@/hooks/useGuestProgress";
+import GuestSignupBanner from "@/components/GuestSignupBanner";
 
 // In Next.js 15, dynamic route parameters must be awaited or unwrapped via `use()`
 export default function LessonPage({ params }: { params: Promise<{ locale: string; lessonId: string }> }) {
@@ -30,6 +32,7 @@ export default function LessonPage({ params }: { params: Promise<{ locale: strin
     const router = useRouter();
     const t = useTranslations("LessonDetail");
     const tPerf = useTranslations("LessonDetail.performanceLevel");
+    const { getLessonCompletedTasks, saveTaskCompletion } = useGuestProgress();
 
     const lessons = getLessons(locale);
 
@@ -48,6 +51,7 @@ export default function LessonPage({ params }: { params: Promise<{ locale: strin
     const [isTaskPassed, setIsTaskPassed] = useState(false);
     const [attemptId, setAttemptId] = useState(0);
     const [isLoadingInit, setIsLoadingInit] = useState(true);
+    const [isGuest, setIsGuest] = useState(false);
     const [metrics, setMetrics] = useState<TypingResult>({
         grossWpm: 0,
         netWpm: 0,
@@ -66,6 +70,25 @@ export default function LessonPage({ params }: { params: Promise<{ locale: strin
                 // Lessons 3+ require premium
                 if (parsedId > 2 && !authData.isPremium) {
                     router.replace("/checkout");
+                    return;
+                }
+
+                // Guest: load progress from localStorage
+                if (!authData.authenticated) {
+                    setIsGuest(true);
+                    const guestCompleted = getLessonCompletedTasks(parsedId);
+                    setCompletedTasks(guestCompleted);
+                    const allDone = lesson && guestCompleted.length >= lesson.tasks.length;
+                    if (allDone) {
+                        setIsLessonPassed(true);
+                        setIsTaskPassed(true);
+                        setActiveTaskIndex(0);
+                    } else {
+                        const nextIter = lesson?.tasks.findIndex((_, i) => !guestCompleted.includes(i));
+                        const startingIndex = (nextIter !== undefined && nextIter !== -1) ? nextIter : 0;
+                        setActiveTaskIndex(startingIndex);
+                    }
+                    setIsLoadingInit(false);
                     return;
                 }
 
@@ -157,7 +180,12 @@ export default function LessonPage({ params }: { params: Promise<{ locale: strin
 
         setIsTaskPassed(true);
 
-        // Try scaling DB
+        // Persist progress for guests via localStorage
+        if (isGuest) {
+            saveTaskCompletion(parsedId, activeTaskIndex);
+        }
+
+        // Try saving to DB
         const saveResponse = await fetch("/api/lessons/progress", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -329,6 +357,9 @@ export default function LessonPage({ params }: { params: Promise<{ locale: strin
                     </button>
                 ))}
             </div>
+
+            {/* Guest signup nudge */}
+            <GuestSignupBanner isGuest={isGuest} />
 
             {/* Pass Criteria Info Box */}
             <div className="w-full mb-6 p-4 bg-blue-50 dark:bg-blue-900/20 border border-blue-100 dark:border-blue-800 rounded-xl flex items-start gap-3 shadow-sm">

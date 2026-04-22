@@ -11,7 +11,8 @@
     "login": "Login",
     "signup": "Sign up",
     "brand": "TypingVerified",
-    "openMenu": "Open main menu"
+    "openMenu": "Open main menu",
+    "verify": "Verify"
   },
   "Footer": {
     "about": "About",
@@ -20,6 +21,7 @@
     "contact": "Contact",
     "pricing": "Pricing",
     "blog": "Blog",
+    "verify": "Verify Certificate",
     "rights": "Typingverified. All rights reserved."
   },
   "Language": {
@@ -529,5 +531,14 @@
     "labelsCertificateId": "Certificate ID",
     "labelsIssuedPrefix": "Issued",
     "labelsGrade": "Grade"
+  },
+  "VerifyLookup": {
+    "metaTitle": "Verify a Certificate | TypingVerified",
+    "metaDescription": "Enter a certificate code to verify its authenticity on TypingVerified.",
+    "heading": "Verify a Certificate",
+    "subheading": "Enter the certificate code to verify its authenticity.",
+    "placeholder": "e.g., TTJ-A3X9K2",
+    "button": "Verify",
+    "emptyError": "Please enter a certificate code."
   }
 }

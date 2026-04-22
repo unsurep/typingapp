@@ -11,7 +11,8 @@
     "login": "Entrar",
     "signup": "Registar",
     "brand": "TypingVerified",
-    "openMenu": "Abrir menu principal"
+    "openMenu": "Abrir menu principal",
+    "verify": "Verificar"
   },
   "Footer": {
     "about": "Sobre",
@@ -20,6 +21,7 @@
     "contact": "Contato",
     "pricing": "Preços",
     "blog": "Blog",
+    "verify": "Verificar certificado",
     "rights": "Typingverified. Todos os direitos reservados."
   },
   "Language": {
@@ -529,5 +531,14 @@
     "labelsCertificateId": "ID do certificado",
     "labelsIssuedPrefix": "Emitido",
     "labelsGrade": "Nível"
+  },
+  "VerifyLookup": {
+    "metaTitle": "Verificar um certificado | TypingVerified",
+    "metaDescription": "Digite o código do certificado para verificar sua autenticidade no TypingVerified.",
+    "heading": "Verificar um certificado",
+    "subheading": "Digite o código do certificado para verificar sua autenticidade.",
+    "placeholder": "ex. TTJ-A3X9K2",
+    "button": "Verificar",
+    "emptyError": "Por favor, insira um código de certificado."
   }
 }

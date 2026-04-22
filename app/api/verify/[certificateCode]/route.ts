@@ -1,5 +1,5 @@
 import { NextResponse } from 'next/server';
-import { createClient } from '@/utils/supabase/server';
+import { createAdminClient } from '@/utils/supabase/admin';
 
 export async function GET(
     request: Request,
@@ -7,7 +7,7 @@ export async function GET(
 ) {
     try {
         const { certificateCode } = await params;
-        const supabase = await createClient();
+        const supabase = createAdminClient();
 
         const { data: certificate, error } = await supabase
             .from('certificates')

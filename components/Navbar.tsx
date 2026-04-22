@@ -71,6 +71,12 @@ export default function Navbar({
               >
                 {t("blog")}
               </Link>
+              <Link
+                href="/verify"
+                className="text-sm font-medium text-foreground hover:text-[#f4bf3c] transition-colors"
+              >
+                {t("verify")}
+              </Link>
               {isLoggedIn && (
                 <Link
                   href="/certificate"
@@ -214,6 +220,13 @@ export default function Navbar({
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {t("blog")}
+              </Link>
+              <Link
+                href="/verify"
+                className="block px-3 py-2 rounded-md text-base font-medium text-muted hover:text-foreground hover:bg-black/5 dark:hover:bg-white/5 transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {t("verify")}
               </Link>
               {isLoggedIn && (
                 <Link

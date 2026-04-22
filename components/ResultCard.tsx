@@ -1,6 +1,9 @@
+'use client';
+
 import { motion, Variants } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { getPerformanceLevel } from "@/utils/performance";
+import ShareResults from "@/components/ShareResults";
 
 interface ResultCardProps {
     wpm?: number;
@@ -83,7 +86,8 @@ export default function ResultCard({ wpm = 0, accuracy = 100, errors = 0, durati
             </div>
 
             {/* Action Footer */}
-            <div className="bg-muted/10 px-8 py-6 flex justify-center border-t border-border/50">
+            <div className="bg-muted/10 px-8 py-6 flex flex-col items-center gap-5 border-t border-border/50">
+                <ShareResults wpm={wpm} accuracy={accuracy} />
                 <motion.button
                     variants={itemVariants}
                     whileHover={{ scale: 1.05 }}

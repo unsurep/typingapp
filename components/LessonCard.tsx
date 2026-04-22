@@ -1,8 +1,10 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import { useTranslations } from "next-intl";
 import { Link } from "@/i18n/navigation";
 import { motion, Variants } from "framer-motion";
+import { useGuestProgress } from "@/hooks/useGuestProgress";
 
 interface LessonCardProps {
     id: number;
@@ -10,6 +12,7 @@ interface LessonCardProps {
     focus: string;
     shortDesc: string;
     progress: number;
+    totalTasks: number;
     locked?: boolean;
 }
 
@@ -18,8 +21,20 @@ const itemVariants: Variants = {
     visible: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 300, damping: 24 } }
 };
 
-export default function LessonCard({ id, title, focus, shortDesc, progress, locked }: LessonCardProps) {
+export default function LessonCard({ id, title, focus, shortDesc, progress, totalTasks, locked }: LessonCardProps) {
     const t = useTranslations("LessonCard");
+    const { getLessonCompletedTasks } = useGuestProgress();
+    const [displayProgress, setDisplayProgress] = useState(progress);
+
+    useEffect(() => {
+        // If the server gave us 0% (no DB record), check localStorage for guest progress
+        if (progress === 0 && totalTasks > 0) {
+            const guestCompleted = getLessonCompletedTasks(id);
+            if (guestCompleted.length > 0) {
+                setDisplayProgress(Math.round((guestCompleted.length / totalTasks) * 100));
+            }
+        }
+    }, [id, progress, totalTasks, getLessonCompletedTasks]);
 
     return (
         <motion.div
@@ -65,13 +80,13 @@ export default function LessonCard({ id, title, focus, shortDesc, progress, lock
             <div className="mb-6 relative z-10">
                 <div className="flex justify-between items-center mb-2">
                     <span className="text-xs font-medium text-gray-500 dark:text-gray-400">{t("courseProgress")}</span>
-                    <span className="text-xs font-bold text-gray-900 dark:text-white">{locked ? '—' : `${progress}%`}</span>
+                    <span className="text-xs font-bold text-gray-900 dark:text-white">{locked ? '—' : `${displayProgress}%`}</span>
                 </div>
                 <div className="w-full h-2 bg-gray-100 dark:bg-zinc-800 rounded-full overflow-hidden">
                     {!locked && (
                         <div
                             className="h-full bg-brand rounded-full transition-all duration-500 ease-out"
-                            style={{ width: `${progress}%` }}
+                            style={{ width: `${displayProgress}%` }}
                         />
                     )}
                 </div>

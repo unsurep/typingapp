@@ -191,6 +191,9 @@ export default function CertificatePreview({
                                     <span className="mt-1 text-[0.6rem] uppercase tracking-[0.25em] text-[#c49864]">
                                         {text.issuedPrefix} {issuedDate}
                                     </span>
+                                    <span className="mt-1 text-[0.55rem] font-mono text-[#a36b4b]">
+                                        typingverified.com/verify/{certificateId}
+                                    </span>
                                 </div>
 
                                 {/* Badge */}

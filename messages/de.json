@@ -11,7 +11,8 @@
     "login": "Anmelden",
     "signup": "Registrieren",
     "brand": "TypingVerified",
-    "openMenu": "Hauptmenü öffnen"
+    "openMenu": "Hauptmenü öffnen",
+    "verify": "Prüfen"
   },
   "Footer": {
     "about": "Über uns",
@@ -20,6 +21,7 @@
     "contact": "Kontakt",
     "pricing": "Preise",
     "blog": "Blog",
+    "verify": "Zertifikat prüfen",
     "rights": "Typingverified. Alle Rechte vorbehalten."
   },
   "Language": {
@@ -529,5 +531,14 @@
     "labelsCertificateId": "Zertifikats-ID",
     "labelsIssuedPrefix": "Ausgestellt",
     "labelsGrade": "Bewertung"
+  },
+  "VerifyLookup": {
+    "metaTitle": "Zertifikat prüfen | TypingVerified",
+    "metaDescription": "Geben Sie einen Zertifikatscode ein, um dessen Echtheit auf TypingVerified zu prüfen.",
+    "heading": "Zertifikat prüfen",
+    "subheading": "Geben Sie den Zertifikatscode ein, um die Echtheit zu bestätigen.",
+    "placeholder": "z. B. TTJ-A3X9K2",
+    "button": "Prüfen",
+    "emptyError": "Bitte geben Sie einen Zertifikatscode ein."
   }
 }

@@ -190,8 +190,75 @@ export default function Home() {
     }
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What is a good WPM for a job?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most office jobs expect at least 40 WPM. Data entry roles typically require 50 to 65 WPM, while transcription and medical roles need 70 to 85 WPM with 98% or higher accuracy. Take a free timed test to find out your current speed."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How long does it take to improve typing speed?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Most people improve from 40 WPM to 60+ WPM within 4 to 6 weeks of 15 minutes of daily structured practice. Short daily sessions beat long occasional ones every time."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is a typing certificate worth it?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes — especially for roles where typing is a core skill. A verified certificate removes doubt for recruiters, can replace a live typing test in many remote job applications, and shows you take professional skill development seriously."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Should I focus on speed or accuracy first?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Always accuracy first. Speed follows naturally once your muscle memory is solid. Practicing fast while making errors just reinforces bad habits and slows your long-term progress."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Can I practice typing for free on TypingVerified?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The practice page and all lessons are completely free. Create a free account to save your progress across sessions and work toward earning your typing certificate."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How do I unlock the TypingVerified certificate?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Complete all 10 lessons with at least 90% accuracy and a minimum Average WPM on every task. Then, while logged in, pass a 60-second test with at least 35 WPM net speed and 95% accuracy in a single run. Visit the Certificate page to generate and download your certificate."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Is TypingVerified available in other languages?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. The site is available in English, French, Spanish, German, and Portuguese. Use the language menu in the header to switch anytime."
+        }
+      }
+    ]
+  };
+
   return (
     <div className="relative flex min-h-[calc(100vh-8rem)] w-full flex-col items-center">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       {showAuthWarning && (
         <div
           role="alert"

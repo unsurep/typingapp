@@ -100,6 +100,12 @@ CREATE POLICY "Users can view their own certificates"
     ON certificates FOR SELECT
     USING (auth.uid() = user_id);
 
+-- Allow anyone (including unauthenticated) to look up a certificate by its public code.
+-- This powers the public /verify/[code] page without requiring login.
+CREATE POLICY "Anyone can verify a certificate by code"
+    ON certificates FOR SELECT
+    USING (true);
+
 -- 4. contact_messages table
 CREATE TABLE contact_messages (
     id UUID PRIMARY KEY DEFAULT gen_random_uuid(),
