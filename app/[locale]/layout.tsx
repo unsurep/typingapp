@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getTranslations } from "next-intl/server";
-import Script from "next/script";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { Geist, Geist_Mono } from "next/font/google";
 import { notFound } from "next/navigation";
 import { hasLocale, NextIntlClientProvider } from "next-intl";
@@ -101,37 +101,9 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} className="h-full" suppressHydrationWarning>
-      <Script
-        id="gtm"
-        strategy="afterInteractive"
-      >{`(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-M5PW9M8G');`}</Script>
-      <Script
-        src="https://www.googletagmanager.com/gtag/js?id=G-1TYMJZK2S3"
-        strategy="afterInteractive"
-      />
-      <Script id="google-analytics" strategy="afterInteractive">
-        {`
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
-          gtag('config', 'G-1TYMJZK2S3');
-        `}
-      </Script>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col overflow-x-hidden`}
       >
-        <noscript>
-          <iframe
-            src="https://www.googletagmanager.com/ns.html?id=GTM-M5PW9M8G"
-            height="0"
-            width="0"
-            style={{ display: "none", visibility: "hidden" }}
-          />
-        </noscript>
         <NextIntlClientProvider
           key={locale}
           locale={locale}
@@ -156,6 +128,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <CookieBanner />
           </ThemeProvider>
         </NextIntlClientProvider>
+        <GoogleAnalytics gaId="G-1TYMJZK2S3" />
       </body>
     </html>
   );

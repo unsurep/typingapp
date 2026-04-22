@@ -83,7 +83,7 @@ export default async function PricingPage({
 
             {/* Plans */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 md:gap-8">
-                {/* Freemium plan */}
+                {/* Free plan */}
                 <div className="relative bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 rounded-2xl p-6 sm:p-8 shadow-sm flex flex-col">
                     <div className="mb-4">
                         <h2 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">
@@ -104,10 +104,6 @@ export default async function PricingPage({
                     </div>
 
                     <ul className="space-y-2 text-sm sm:text-base text-gray-700 dark:text-gray-300 mb-6">
-                        <li className="flex items-start gap-2">
-                            <span className="mt-1 h-1.5 w-1.5 rounded-full bg-yellow-400" />
-                            <span>{t("freemiumBulletAds")}</span>
-                        </li>
                         <li className="flex items-start gap-2">
                             <span className="mt-1 h-1.5 w-1.5 rounded-full bg-yellow-400" />
                             <span>{t("freemiumBulletLessonsNormal")}</span>
@@ -131,7 +127,7 @@ export default async function PricingPage({
                     </ul>
 
                     <Link
-                        href="/dashboard?upgraded=true"
+                        href="/practice"
                         className="mt-auto inline-flex items-center justify-center px-6 py-2.5 rounded-full border border-gray-300 dark:border-zinc-700 bg-white dark:bg-zinc-900 text-sm font-semibold text-gray-800 dark:text-gray-100 hover:border-brand/70 hover:text-brand dark:hover:text-brand transition-colors"
                     >
                         {t("freemiumCta")}
@@ -181,7 +177,7 @@ export default async function PricingPage({
                     <ul className="space-y-2 text-sm sm:text-base text-gray-800 dark:text-gray-100 mb-6">
                         <li className="flex items-start gap-2">
                             <span className="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-400" />
-                            <span>{t.rich("premiumBullet1", { strong })}</span>
+                            <span>{t("premiumBullet1")}</span>
                         </li>
                         <li className="flex items-start gap-2">
                             <span className="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-400" />
@@ -189,11 +185,15 @@ export default async function PricingPage({
                         </li>
                         <li className="flex items-start gap-2">
                             <span className="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-400" />
-                            <span>{t("premiumBullet3")}</span>
+                            <span>{t.rich("premiumBullet3", { strong })}</span>
                         </li>
                         <li className="flex items-start gap-2">
                             <span className="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-400" />
-                            <span>{t.rich("premiumBullet4", { strong })}</span>
+                            <span>{t("premiumBullet4")}</span>
+                        </li>
+                        <li className="flex items-start gap-2">
+                            <span className="mt-1 h-1.5 w-1.5 rounded-full bg-emerald-400" />
+                            <span>{t("premiumBullet5")}</span>
                         </li>
                     </ul>
 

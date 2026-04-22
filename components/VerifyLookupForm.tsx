@@ -52,7 +52,7 @@ export default function VerifyLookupForm({
                 {subheading}
             </p>
 
-            <div className="flex gap-2">
+            <div className="flex flex-col sm:flex-row gap-3">
                 <input
                     type="text"
                     value={code}
@@ -62,11 +62,11 @@ export default function VerifyLookupForm({
                     }}
                     onKeyDown={handleKeyDown}
                     placeholder={placeholder}
-                    className="flex-1 px-4 py-3 border border-border rounded-xl text-center font-mono text-lg bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/20 transition-all"
+                    className="flex-1 px-4 py-3 border border-border rounded-xl text-center font-mono text-base sm:text-lg bg-background text-foreground placeholder:text-muted-foreground focus:outline-none focus:border-brand focus:ring-2 focus:ring-brand/20 transition-all"
                 />
                 <button
                     onClick={handleVerify}
-                    className="px-6 py-3 bg-brand text-background rounded-xl font-semibold hover:opacity-90 transition-all shadow-sm whitespace-nowrap"
+                    className="w-full sm:w-auto px-6 py-3 bg-brand text-background rounded-xl font-semibold hover:opacity-90 transition-all shadow-sm whitespace-nowrap"
                 >
                     {buttonLabel}
                 </button>

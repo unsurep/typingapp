@@ -102,13 +102,32 @@ export default function Home() {
     },
   ];
 
-  const VISIBLE = 3;
-  // Duplicate first VISIBLE cards at the end so the strip can loop seamlessly
-  const extendedTestimonials = [...testimonials, ...testimonials.slice(0, VISIBLE)];
+  // Always clone 3 cards — enough for the widest visible count (desktop = 3)
+  const CLONE_COUNT = 3;
+  const extendedTestimonials = [...testimonials, ...testimonials.slice(0, CLONE_COUNT)];
 
   const [slideIdx, setSlideIdx] = useState(0);
   const [isAnimating, setIsAnimating] = useState(true);
   const carouselRef = useRef<HTMLDivElement>(null);
+
+  // Responsive: 1 card on mobile, 2 on tablet, 3 on desktop
+  const [visibleCount, setVisibleCount] = useState(3);
+
+  useEffect(() => {
+    const update = () => {
+      const w = window.innerWidth;
+      setVisibleCount(w < 640 ? 1 : w < 1024 ? 2 : 3);
+    };
+    update();
+    window.addEventListener("resize", update);
+    return () => window.removeEventListener("resize", update);
+  }, []);
+
+  // When screen size changes, snap back to the start without animation
+  useEffect(() => {
+    setIsAnimating(false);
+    setSlideIdx(0);
+  }, [visibleCount]);
 
   // Auto-advance one card every 8 seconds
   useEffect(() => {
@@ -466,7 +485,7 @@ export default function Home() {
             <div
               className="flex"
               style={{
-                width: `${(extendedTestimonials.length / VISIBLE) * 100}%`,
+                width: `${(extendedTestimonials.length / visibleCount) * 100}%`,
                 transform: `translateX(-${(slideIdx / extendedTestimonials.length) * 100}%)`,
                 transition: isAnimating ? "transform 700ms ease-in-out" : "none",
               }}
@@ -501,11 +520,10 @@ export default function Home() {
                 key={i}
                 onClick={() => { setIsAnimating(true); setSlideIdx(i); }}
                 aria-label={`Go to testimonial ${i + 1}`}
-                className={`h-2 rounded-full transition-all duration-300 cursor-pointer ${
-                  i === slideIdx % testimonials.length
+                className={`h-2 rounded-full transition-all duration-300 cursor-pointer ${i === slideIdx % testimonials.length
                     ? "w-6 bg-brand"
                     : "w-2 bg-border hover:bg-brand/40"
-                }`}
+                  }`}
               />
             ))}
           </div>

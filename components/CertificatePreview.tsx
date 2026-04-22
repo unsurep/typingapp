@@ -102,14 +102,14 @@ export default function CertificatePreview({
                 </div>
 
                 {/* Main certificate body */}
-                <div className="relative flex-1 px-6 sm:px-10 py-8 sm:py-10 flex flex-col">
+                <div className="relative flex-1 px-4 sm:px-10 py-6 sm:py-10 flex flex-col">
                     {/* Header */}
                     <div className="text-center mb-6 sm:mb-8">
                         <div className="inline-block px-4 py-1 text-xs tracking-[0.35em] uppercase text-[#c26a39]">
                             Typingverified
                         </div>
 
-                        <h1 className="mt-4 text-3xl sm:text-4xl md:text-5xl font-black tracking-[0.18em] text-[#1857b6] drop-shadow-[3px_4px_0px_rgba(0,0,0,0.22)] uppercase">
+                        <h1 className="mt-4 text-2xl sm:text-4xl md:text-5xl font-black tracking-[0.12em] sm:tracking-[0.18em] text-[#1857b6] drop-shadow-[2px_3px_0px_rgba(0,0,0,0.22)] sm:drop-shadow-[3px_4px_0px_rgba(0,0,0,0.22)] uppercase">
                             {text.title}
                         </h1>
 
@@ -124,7 +124,7 @@ export default function CertificatePreview({
                             {text.presentedTo}
                         </p>
 
-                        <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-[0.08em] text-[#5b2e33] pb-2 border-b-4 border-[#e8b26a] inline-block px-4">
+                        <h2 className="text-xl sm:text-4xl md:text-5xl font-extrabold tracking-[0.05em] sm:tracking-[0.08em] text-[#5b2e33] pb-2 border-b-4 border-[#e8b26a] inline-block px-4 max-w-full break-words">
                             {name}
                         </h2>
                     </div>
@@ -166,11 +166,9 @@ export default function CertificatePreview({
                     </div>
 
                     {/* Footer with signature and badge */}
-                    <div className="mt-auto pt-10 flex items-end justify-between gap-6">
-                        <div>
-                            {/* <div className="h-10 mb-2 flex items-center">
-                                <span className="inline-block h-px w-32 bg-[#c79a65]" />
-                            </div> */}
+                    <div className="mt-auto pt-8 sm:pt-10 flex flex-col sm:flex-row sm:items-end sm:justify-between gap-5 sm:gap-6">
+                        {/* Signature / Director */}
+                        <div className="flex-shrink-0">
                             <div className="text-sm font-semibold text-[#5b2e33]">
                                 Louis U
                             </div>
@@ -179,34 +177,33 @@ export default function CertificatePreview({
                             </div>
                         </div>
 
-                        <div className="flex flex-col items-end gap-3">
-                            <div className="flex items-center gap-3">
-                                <div className="flex flex-col items-end text-right">
-                                    <span className="text-[0.6rem] uppercase tracking-[0.25em] text-[#c49864]">
-                                        {text.certificateId}
-                                    </span>
-                                    <span className="text-xs sm:text-sm font-mono font-semibold text-[#5b2e33]">
-                                        {certificateId}
-                                    </span>
-                                    <span className="mt-1 text-[0.6rem] uppercase tracking-[0.25em] text-[#c49864]">
-                                        {text.issuedPrefix} {issuedDate}
-                                    </span>
-                                    <span className="mt-1 text-[0.55rem] font-mono text-[#a36b4b]">
-                                        typingverified.com/verify/{certificateId}
-                                    </span>
-                                </div>
+                        {/* Certificate ID + Badge */}
+                        <div className="flex items-center gap-3 sm:gap-4 min-w-0">
+                            <div className="flex flex-col items-start sm:items-end text-left sm:text-right min-w-0 flex-1">
+                                <span className="text-[0.6rem] uppercase tracking-[0.25em] text-[#c49864]">
+                                    {text.certificateId}
+                                </span>
+                                <span className="text-[0.7rem] sm:text-sm font-mono font-semibold text-[#5b2e33] break-all">
+                                    {certificateId}
+                                </span>
+                                <span className="mt-1 text-[0.6rem] uppercase tracking-[0.25em] text-[#c49864]">
+                                    {text.issuedPrefix} {issuedDate}
+                                </span>
+                                <span className="mt-1 text-[0.5rem] sm:text-[0.55rem] font-mono text-[#a36b4b] break-all max-w-full">
+                                    typingverified.com/verify/{certificateId}
+                                </span>
+                            </div>
 
-                                {/* Badge */}
-                                <div
-                                    className={`w-14 h-14 sm:w-16 sm:h-16 rounded-full flex flex-col items-center justify-center shadow-md ${badgeBgClass} ${badgeTextClass}`}
-                                >
-                                    <span className="text-lg sm:text-xl font-black">
-                                        {gradeLetter}
-                                    </span>
-                                    <span className="text-[0.55rem] uppercase tracking-[0.18em]">
-                                        {text.grade}
-                                    </span>
-                                </div>
+                            {/* Badge */}
+                            <div
+                                className={`flex-shrink-0 w-12 h-12 sm:w-16 sm:h-16 rounded-full flex flex-col items-center justify-center shadow-md ${badgeBgClass} ${badgeTextClass}`}
+                            >
+                                <span className="text-base sm:text-xl font-black">
+                                    {gradeLetter}
+                                </span>
+                                <span className="text-[0.5rem] sm:text-[0.55rem] uppercase tracking-[0.18em]">
+                                    {text.grade}
+                                </span>
                             </div>
                         </div>
                     </div>

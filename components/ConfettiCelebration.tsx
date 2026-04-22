@@ -1,12 +1,14 @@
 'use client'
 
-import { useEffect } from 'react'
+import { Suspense, useEffect } from 'react'
 import { useSearchParams } from 'next/navigation'
 import { useRouter } from '@/i18n/navigation'
 import confetti from 'canvas-confetti'
 import { toast } from 'sonner'
 
-export default function ConfettiCelebration() {
+// Inner component holds the useSearchParams call.
+// Must be wrapped in <Suspense> to satisfy Next.js App Router requirements.
+function ConfettiCelebrationInner() {
     const searchParams = useSearchParams()
     const router = useRouter()
 
@@ -17,9 +19,9 @@ export default function ConfettiCelebration() {
         router.replace('/dashboard', { scroll: false })
 
         // Show purchase confirmation toast
-        toast.success('Welcome to Premium! Your purchase was successful.', {
+        toast.success('Welcome to Certified! Your purchase was successful.', {
             duration: 6000,
-            description: 'All lessons, no ads, and your certificate path are now unlocked.',
+            description: 'All lessons and your certificate path are now unlocked.',
         })
 
         // Fire confetti burst
@@ -50,4 +52,14 @@ export default function ConfettiCelebration() {
     }, [searchParams, router])
 
     return null
+}
+
+// Public export wraps the inner component in Suspense so useSearchParams
+// never blocks rendering or causes a hydration mismatch during navigation.
+export default function ConfettiCelebration() {
+    return (
+        <Suspense fallback={null}>
+            <ConfettiCelebrationInner />
+        </Suspense>
+    )
 }

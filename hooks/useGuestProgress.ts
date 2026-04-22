@@ -1,11 +1,13 @@
 'use client';
 
+import { useCallback } from 'react';
+
+const STORAGE_KEY = 'tv_guest_progress';
+
 type GuestProgress = Record<string, number[]>; // lessonId → completed task indices
 
 export function useGuestProgress() {
-  const STORAGE_KEY = 'tv_guest_progress';
-
-  const getProgress = (): GuestProgress => {
+  const getProgress = useCallback((): GuestProgress => {
     if (typeof window === 'undefined') return {};
     try {
       const data = localStorage.getItem(STORAGE_KEY);
@@ -13,15 +15,24 @@ export function useGuestProgress() {
     } catch {
       return {};
     }
-  };
+  }, []);
 
-  const getLessonCompletedTasks = (lessonId: number): number[] => {
-    return getProgress()[String(lessonId)] ?? [];
-  };
-
-  const saveTaskCompletion = (lessonId: number, taskIndex: number) => {
+  const getLessonCompletedTasks = useCallback((lessonId: number): number[] => {
+    if (typeof window === 'undefined') return [];
     try {
-      const progress = getProgress();
+      const data = localStorage.getItem(STORAGE_KEY);
+      const progress: GuestProgress = data ? JSON.parse(data) : {};
+      return progress[String(lessonId)] ?? [];
+    } catch {
+      return [];
+    }
+  }, []);
+
+  const saveTaskCompletion = useCallback((lessonId: number, taskIndex: number) => {
+    if (typeof window === 'undefined') return;
+    try {
+      const data = localStorage.getItem(STORAGE_KEY);
+      const progress: GuestProgress = data ? JSON.parse(data) : {};
       const key = String(lessonId);
       if (!progress[key]) progress[key] = [];
       if (!progress[key].includes(taskIndex)) {
@@ -31,7 +42,7 @@ export function useGuestProgress() {
     } catch {
       // localStorage unavailable — fail silently
     }
-  };
+  }, []);
 
   return { getProgress, getLessonCompletedTasks, saveTaskCompletion };
 }
