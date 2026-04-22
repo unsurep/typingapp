@@ -23,7 +23,7 @@ export default function GuestSignupBanner({ isGuest }: GuestSignupBannerProps) {
         </div>
       </div>
       <Link
-        href="/register"
+        href="/signup"
         className="shrink-0 px-6 py-2.5 bg-brand text-background rounded-full font-semibold text-sm hover:opacity-90 transition-all shadow-sm whitespace-nowrap"
       >
         Sign Up Free

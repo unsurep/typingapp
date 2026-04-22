@@ -70,10 +70,10 @@ export default async function CheckoutPage({
         price_data: {
           currency: "usd",
           product_data: {
-            name: "TypingTest Premium",
-            description: "One-time purchase — full course, certificate & no ads",
+            name: "TypingVerified",
+            description: "One-time purchase — full course, typing certificate & priority support",
           },
-          unit_amount: 399,
+          unit_amount: 799,
         },
         quantity: 1,
       },

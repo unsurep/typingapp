@@ -178,6 +178,11 @@ export const blogPostTranslations: {
       metaDescription:
         "Votre clavier affecte-t-il votre vitesse de frappe ? Oui — de manière significative. Voici les meilleurs claviers pour taper vite en 2026, classés par performance et rapport qualité-prix.",
     },
+    "typing-practice-sentences": {
+      title: "30 Typing Practice Sentences That Will Improve Your WPM Fast",
+      metaDescription:
+        "Looking for typing practice sentences that actually improve your speed? Here are 30 carefully chosen sentences targeting accuracy, speed, and common word patterns.",
+    },
   },
   es: {
     "average-typing-speed-2026": {
@@ -349,6 +354,11 @@ export const blogPostTranslations: {
         "Los mejores teclados para velocidad de escritura en 2026 (probados y clasificados)",
       metaDescription:
         "¿Tu teclado afecta tu velocidad de escritura? Sí — significativamente. Aquí están los mejores teclados para escribir rápido en 2026, clasificados por rendimiento y valor.",
+    },
+    "typing-practice-sentences": {
+      title: "30 Typing Practice Sentences That Will Improve Your WPM Fast",
+      metaDescription:
+        "Looking for typing practice sentences that actually improve your speed? Here are 30 carefully chosen sentences targeting accuracy, speed, and common word patterns.",
     },
   },
   de: {
@@ -522,6 +532,11 @@ export const blogPostTranslations: {
       metaDescription:
         "Beeinflusst Ihre Tastatur Ihre Tippgeschwindigkeit? Ja — erheblich. Hier sind die besten Tastaturen für schnelles Tippen 2026, bewertet nach Leistung und Preis-Leistung.",
     },
+    "typing-practice-sentences": {
+      title: "30 Typing Practice Sentences That Will Improve Your WPM Fast",
+      metaDescription:
+        "Looking for typing practice sentences that actually improve your speed? Here are 30 carefully chosen sentences targeting accuracy, speed, and common word patterns.",
+    },
   },
   pt: {
     "average-typing-speed-2026": {
@@ -692,6 +707,11 @@ export const blogPostTranslations: {
         "Os melhores teclados para velocidade de digitação em 2026 (testados e classificados)",
       metaDescription:
         "O seu teclado afeta a sua velocidade de digitação? Sim — significativamente. Aqui estão os melhores teclados para digitar rápido em 2026, classificados por desempenho e valor.",
+    },
+    "typing-practice-sentences": {
+      title: "30 Typing Practice Sentences That Will Improve Your WPM Fast",
+      metaDescription:
+        "Looking for typing practice sentences that actually improve your speed? Here are 30 carefully chosen sentences targeting accuracy, speed, and common word patterns.",
     },
   },
 };

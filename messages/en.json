@@ -151,7 +151,7 @@
   "Test": {
     "guestBannerBefore": "You are practicing as a guest. ",
     "guestBannerStrong": "Your results will not be saved.",
-    "signInToSave": "Sign In to Save",
+    "signInToSave": "Login to Save",
     "titleBefore": "Typing",
     "titleHighlight": "Test",
     "secondsLabel": "{duration} Seconds",

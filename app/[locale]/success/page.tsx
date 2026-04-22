@@ -22,10 +22,13 @@ export default async function SuccessPage({
     redirect({ href: "/pricing", locale });
   }
 
+  let paymentConfirmed = false;
+
   try {
     const session = await getStripe().checkout.sessions.retrieve(session_id!);
 
     if (session.payment_status === "paid") {
+      paymentConfirmed = true;
       const userId = session.metadata?.user_id;
       if (userId) {
         const supabase = createClient(
@@ -39,7 +42,11 @@ export default async function SuccessPage({
       }
     }
   } catch {
-    // If Stripe verification fails, the webhook will still handle it
+    // Stripe verification failed — webhook will still handle fulfillment
+  }
+
+  if (!paymentConfirmed) {
+    redirect({ href: "/pricing?cancelled=true", locale });
   }
 
   redirect({ href: "/dashboard?upgraded=true", locale });
