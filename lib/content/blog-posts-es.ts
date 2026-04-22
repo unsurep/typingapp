@@ -2534,71 +2534,105 @@ La brecha entre dónde está la mayoría de las personas y dónde creen que est�
     publishDate: "Apr 17, 2026",
     image: "/blog/t26.png",
     content: `
-Not all practice text is equally useful. Random word generators build basic finger familiarity. But targeted practice sentences - chosen for specific patterns and letter combinations - build speed much more efficiently.
 
-Here are 30 practice sentences, organized by focus area. Use them on the Typingverified practice page or copy them into any text editor for daily drills.
+No todos los textos de práctica son igualmente útiles. Los generadores de palabras aleatorias desarrollan familiaridad básica con los dedos, pero no replican los patrones que te ralentizan en la escritura real. Las oraciones de práctica dirigidas — elegidas por combinaciones específicas de letras, estructuras de palabras comunes y cobertura de filas del teclado — desarrollan la velocidad de manera mucho más eficiente porque ejercen presión exactamente en los puntos donde la mayoría de los mecanógrafos pierden tiempo.
 
-## Home Row Focus
+Las siguientes oraciones están organizadas por área de enfoque. Cada categoría se dirige a un aspecto diferente del rendimiento del teclado. Trabájalas en orden para una sesión completa, o elige una sola categoría para trabajar la debilidad específica que has identificado en tus patrones de error.
+
+## Enfoque en la fila de inicio
+
+La fila de inicio — A, S, D, F, J, K, L, punto y coma — es donde deben descansar tus dedos entre pulsaciones de teclas. Desarrollar fluidez aquí crea la base para todo lo demás. Si tus manos se alejan de la fila de inicio durante la práctica, estas oraciones lo revelarán de inmediato.
 
 1. "Ask a glad lad; a salsa flask falls."
 2. "Dallas flags a glass flask as a half-full hall."
 3. "Shall a lad add a sad fall salad?"
 
-## Top Row Focus
+Practica estas despacio al principio. El objetivo no es la velocidad — es el posicionamiento preciso en la fila de inicio en cada pulsación.
+
+## Enfoque en la fila superior
+
+La fila superior — Q, W, E, R, T, Y, U, I, O, P — contiene muchas de las letras más comunes, incluyendo E, R, T y O. La debilidad aquí ralentiza prácticamente cada oración que escribes.
 
 4. "We require quiet poetry to write true stories."
 5. "Your power over poetry will tower over our prior work."
 6. "Terry wrote out every word with quiet power."
 
-## Full Keyboard Warm-Up
+## Calentamiento completo del teclado
+
+Estos pangramas clásicos — oraciones que usan cada letra del alfabeto — son calentamientos útiles porque obligan a tus dedos a cubrir todo el teclado en una secuencia corta.
 
 7. "The quick brown fox jumps over the lazy dog."
 8. "Pack my box with five dozen liquor jugs."
 9. "How vexingly quick daft zebras jump."
 
-## Common Word Speed Drills
+Úsalos al comienzo de cualquier sesión de práctica para activar todos los dedos antes de pasar a ejercicios más dirigidos.
+
+## Ejercicios de velocidad con palabras comunes
+
+Las palabras de mayor frecuencia — the, be, to, of, and, a, in, that, have, it — representan una proporción desproporcionada de todo lo que escribes. La fluidez con estos patrones por sí sola aumentará tus PPM notablemente, porque estas palabras aparecen constantemente y tus dedos deberían ejecutarlas automáticamente.
 
 10. "They have been there before and will be there again."
 11. "We could not find the time to get the right answer."
 12. "It would be good to know what you think about this."
 
-## Punctuation Integration
+## Integración de puntuación
+
+La mayoría de las pruebas de mecanografía y los documentos del mundo real incluyen puntuación, pero muchos mecanógrafos solo practican secuencias de palabras limpias. Agregar puntuación a tus ejercicios desarrolla el ritmo de pausar, cambiar y continuar — una habilidad motora diferente al flujo puro de palabras.
 
 13. "Wait - are you sure? Yes, I am absolutely certain."
 14. "Send the file (version 3.2) to John by Friday, March 28."
 15. "She said: 'I'll be there at 9:00 AM, without fail.'"
 
-## Accuracy Focus (Longer, More Complex)
+Presta atención a las transiciones de la tecla Shift. La mayoría de los errores de puntuación ocurren en el punto de presionar-mantener-soltar Shift.
+
+## Enfoque en precisión (Oraciones más largas y complejas)
+
+Las oraciones más largas requieren que mantengas la concentración a través de más caracteres sin perder precisión. Esto se asemeja más a la escritura profesional real — no ráfagas de palabras cortas, sino texto extendido con vocabulario variado.
 
 16. "Professionals who type quickly and accurately have a significant advantage in the modern workplace."
 17. "The development of keyboard proficiency is a skill that compounds over time with consistent practice."
 18. "Accurate typing is not simply about speed - it is about producing clean, usable output on the first attempt."
 
-## Speed Burst Sentences (Short, Common Words)
+Para estas, apunta a 97%+ de precisión incluso si significa ir significativamente más despacio. Primero la precisión.
+
+## Oraciones de ráfaga de velocidad (Palabras cortas y comunes)
+
+Las oraciones cortas formadas por palabras frecuentes y cortas son excelentes para intervalos de velocidad — ráfagas breves donde empujas tu ritmo antes de volver a tu ritmo de precisión.
 
 19. "Go to the top and look for the best."
 20. "Take the time to do it right the first time."
 21. "Get the file, send the note, and close the deal."
 
-## Number and Symbol Practice
+## Práctica de números y símbolos
+
+Los números y símbolos son la parte más evitada de la práctica de mecanografía — y la más lenta. Los documentos reales incluyen números de factura, porcentajes, fechas y fórmulas. Si solo practicas texto plano, te ralentizarás enormemente cuando aparezca un número.
 
 22. "Invoice #2047 - Due: April 15, 2026 - Total: $3,482.00"
 23. "The formula is: (A + B) x C / D = E"
 24. "Call us at (800) 555-0192 between 9 AM and 5 PM EST."
 
-## Career-Specific Practice (Professional Tone)
+## Práctica específica para carrera (Tono profesional)
+
+Estas oraciones replican los patrones de lenguaje de la comunicación profesional en el lugar de trabajo — el tipo de texto que realmente produces en correos electrónicos, informes y notas de reuniones.
 
 25. "Please find the attached document for your review and approval."
 26. "I am writing to confirm our meeting scheduled for Thursday at 2:30 PM."
 27. "The report indicates a 12.4% increase in output during the third quarter."
 
-## Sentence Variety for Advanced Typists
+## Variedad de oraciones para mecanógrafos avanzados
+
+Estas oraciones más largas y complejas están diseñadas para mecanógrafos que ya operan por encima de 65 PPM y quieren desarrollar consistencia a velocidades más altas.
 
 28. "Ambiguity in written communication leads to misunderstanding and wasted time - clarity is always worth the extra effort."
 29. "Keyboard fluency is not a natural gift; it is a practiced discipline that anyone can develop with structured effort."
 30. "The difference between a typist who earns a certificate and one who does not is rarely talent - it is preparation."
 
-Practice these sentences on Typingverified ->
+## Cómo usar estas oraciones de manera efectiva
+
+Pega cada oración en un editor de texto y escríbela repetidamente hasta que puedas alcanzar tu velocidad objetivo con 97%+ de precisión. Luego avanza. Rastrea tus errores por categoría: si constantemente fallas en la puntuación, pasa más tiempo en esa sección. El objetivo es eliminar los cuellos de botella, no reforzar lo que ya haces bien.
+
+[Practica estas oraciones en Typingverified y rastrea tu progreso →](https://www.typingverified.com/test)
+
     `,
   }
 ];

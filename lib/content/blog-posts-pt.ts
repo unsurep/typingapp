@@ -2538,71 +2538,105 @@ A diferença entre onde a maioria das pessoas está e onde elas pensam que estã
     publishDate: "Apr 17, 2026",
     image: "/blog/t26.png",
     content: `
-Not all practice text is equally useful. Random word generators build basic finger familiarity. But targeted practice sentences - chosen for specific patterns and letter combinations - build speed much more efficiently.
 
-Here are 30 practice sentences, organized by focus area. Use them on the Typingverified practice page or copy them into any text editor for daily drills.
+Nem todos os textos de prática são igualmente úteis. Geradores de palavras aleatórias desenvolvem familiaridade básica com os dedos, mas não replicam os padrões que te deixam mais lento na digitação real. Frases de prática direcionadas — escolhidas por combinações específicas de letras, estruturas de palavras comuns e cobertura das fileiras do teclado — desenvolvem a velocidade muito mais eficientemente porque exercem pressão exatamente nos pontos onde a maioria dos digitadores perde tempo.
 
-## Home Row Focus
+As frases abaixo estão organizadas por área de foco. Cada categoria tem como alvo um aspecto diferente do desempenho no teclado. Trabalhe-as em ordem para uma sessão completa, ou escolha uma única categoria para trabalhar a fraqueza específica que você identificou em seus padrões de erro.
+
+## Foco na linha de base
+
+A linha de base — A, S, D, F, J, K, L, ponto e vírgula — é onde seus dedos devem descansar entre as teclas. Desenvolver fluência aqui cria a base para tudo o mais. Se suas mãos estão se afastando da linha de base durante a prática, essas frases revelarão isso imediatamente.
 
 1. "Ask a glad lad; a salsa flask falls."
 2. "Dallas flags a glass flask as a half-full hall."
 3. "Shall a lad add a sad fall salad?"
 
-## Top Row Focus
+Pratique estas devagar no início. O objetivo não é a velocidade — é o posicionamento preciso na linha de base em cada tecla.
+
+## Foco na fileira superior
+
+A fileira superior — Q, W, E, R, T, Y, U, I, O, P — contém muitas das letras mais comuns, incluindo E, R, T e O. Fraqueza aqui retarda praticamente cada frase que você digita.
 
 4. "We require quiet poetry to write true stories."
 5. "Your power over poetry will tower over our prior work."
 6. "Terry wrote out every word with quiet power."
 
-## Full Keyboard Warm-Up
+## Aquecimento completo do teclado
+
+Esses pangramas clássicos — frases que usam cada letra do alfabeto — são aquecimentos úteis porque forçam seus dedos a cobrir todo o teclado em uma curta sequência.
 
 7. "The quick brown fox jumps over the lazy dog."
 8. "Pack my box with five dozen liquor jugs."
 9. "How vexingly quick daft zebras jump."
 
-## Common Word Speed Drills
+Use-os no início de qualquer sessão de prática para ativar todos os dedos antes de passar para exercícios mais direcionados.
+
+## Exercícios de velocidade com palavras comuns
+
+As palavras de maior frequência — the, be, to, of, and, a, in, that, have, it — representam uma proporção desproporcional de tudo que você digita. A fluência com esses padrões por si só aumentará seu PPM notavelmente, porque essas palavras aparecem constantemente e seus dedos deveriam executá-las automaticamente.
 
 10. "They have been there before and will be there again."
 11. "We could not find the time to get the right answer."
 12. "It would be good to know what you think about this."
 
-## Punctuation Integration
+## Integração de pontuação
+
+A maioria dos testes de digitação e documentos do mundo real incluem pontuação, mas muitos digitadores praticam apenas sequências de palavras limpas. Adicionar pontuação aos seus exercícios desenvolve o ritmo de pausar, mudar e continuar — uma habilidade motora diferente do fluxo puro de palavras.
 
 13. "Wait - are you sure? Yes, I am absolutely certain."
 14. "Send the file (version 3.2) to John by Friday, March 28."
 15. "She said: 'I'll be there at 9:00 AM, without fail.'"
 
-## Accuracy Focus (Longer, More Complex)
+Preste atenção nas transições da tecla Shift. A maioria dos erros de pontuação ocorre no ponto de pressionar-manter-soltar o Shift.
+
+## Foco na precisão (Frases mais longas e complexas)
+
+Frases mais longas exigem que você mantenha a concentração em mais caracteres sem perder precisão. Isso se aproxima mais da digitação profissional real — não rajadas de palavras curtas, mas texto estendido com vocabulário variado.
 
 16. "Professionals who type quickly and accurately have a significant advantage in the modern workplace."
 17. "The development of keyboard proficiency is a skill that compounds over time with consistent practice."
 18. "Accurate typing is not simply about speed - it is about producing clean, usable output on the first attempt."
 
-## Speed Burst Sentences (Short, Common Words)
+Para estas, mire em 97%+ de precisão mesmo que isso signifique ir significativamente mais devagar. Precisão primeiro.
+
+## Frases de rajada de velocidade (Palavras curtas e comuns)
+
+Frases curtas compostas de palavras frequentes e curtas são excelentes para intervalos de velocidade — rajadas breves onde você empurra seu ritmo antes de voltar ao seu ritmo de precisão.
 
 19. "Go to the top and look for the best."
 20. "Take the time to do it right the first time."
 21. "Get the file, send the note, and close the deal."
 
-## Number and Symbol Practice
+## Prática de números e símbolos
+
+Números e símbolos são a parte mais evitada da prática de digitação — e a mais lenta. Documentos reais incluem números de fatura, porcentagens, datas e fórmulas. Se você só pratica texto simples, vai desacelerar muito quando um número aparecer.
 
 22. "Invoice #2047 - Due: April 15, 2026 - Total: $3,482.00"
 23. "The formula is: (A + B) x C / D = E"
 24. "Call us at (800) 555-0192 between 9 AM and 5 PM EST."
 
-## Career-Specific Practice (Professional Tone)
+## Prática específica de carreira (Tom profissional)
+
+Essas frases replicam os padrões de linguagem da comunicação profissional no local de trabalho — o tipo de texto que você realmente produz em e-mails, relatórios e notas de reunião.
 
 25. "Please find the attached document for your review and approval."
 26. "I am writing to confirm our meeting scheduled for Thursday at 2:30 PM."
 27. "The report indicates a 12.4% increase in output during the third quarter."
 
-## Sentence Variety for Advanced Typists
+## Variedade de frases para digitadores avançados
+
+Essas frases mais longas e complexas são projetadas para digitadores que já operam acima de 65 PPM e querem desenvolver consistência em velocidades mais altas.
 
 28. "Ambiguity in written communication leads to misunderstanding and wasted time - clarity is always worth the extra effort."
 29. "Keyboard fluency is not a natural gift; it is a practiced discipline that anyone can develop with structured effort."
 30. "The difference between a typist who earns a certificate and one who does not is rarely talent - it is preparation."
 
-Practice these sentences on Typingverified ->
+## Como usar essas frases efetivamente
+
+Cole cada frase em um editor de texto e a digite repetidamente até conseguir atingir sua velocidade alvo com 97%+ de precisão. Acompanhe seus erros por categoria: se você erra constantemente na pontuação, passe mais tempo nessa seção. O objetivo é eliminar gargalos, não reforçar o que você já faz bem.
+
+[Pratique essas frases no Typingverified e acompanhe seu progresso →](https://www.typingverified.com/test)
+
     `,
   }
 ];

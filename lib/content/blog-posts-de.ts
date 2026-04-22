@@ -2541,71 +2541,105 @@ Die Lücke zwischen dem, wo die meisten Menschen sind, und wo sie denken, dass s
     publishDate: "Apr 17, 2026",
     image: "/blog/t26.png",
     content: `
-Not all practice text is equally useful. Random word generators build basic finger familiarity. But targeted practice sentences - chosen for specific patterns and letter combinations - build speed much more efficiently.
 
-Here are 30 practice sentences, organized by focus area. Use them on the Typingverified practice page or copy them into any text editor for daily drills.
+Nicht alle Übungstexte sind gleich nützlich. Zufällige Wortgeneratoren bauen grundlegende Fingervertrautheit auf, replizieren jedoch nicht die Muster, die Sie beim echten Tippen verlangsamen. Gezielte Übungssätze — ausgewählt für spezifische Buchstabenkombinationen, häufige Wortstrukturen und Tastaturreihenabdeckung — bauen die Geschwindigkeit weitaus effizienter auf, weil sie genau die Stellen belasten, an denen die meisten Tipper Zeit verlieren.
 
-## Home Row Focus
+Die folgenden Sätze sind nach Schwerpunktbereichen geordnet. Jede Kategorie zielt auf einen anderen Aspekt der Tastaturleistung ab. Arbeiten Sie sie der Reihe nach für eine vollständige Sitzung durch, oder wählen Sie eine einzelne Kategorie, um die spezifische Schwäche zu üben, die Sie in Ihren Fehlermustern identifiziert haben.
+
+## Grundreihen-Fokus
+
+Die Grundreihe — A, S, D, F, J, K, L, Semikolon — ist der Ort, an dem Ihre Finger zwischen den Anschlägen ruhen sollten. Der Aufbau von Flüssigkeit hier schafft das Fundament für alles andere. Wenn Ihre Hände während des Übens von der Grundreihe abdriften, werden diese Sätze das sofort aufdecken.
 
 1. "Ask a glad lad; a salsa flask falls."
 2. "Dallas flags a glass flask as a half-full hall."
 3. "Shall a lad add a sad fall salad?"
 
-## Top Row Focus
+Üben Sie diese zunächst langsam. Das Ziel ist nicht Geschwindigkeit — es ist genaue Grundreihenpositionierung bei jedem Anschlag.
+
+## Obere Reihe Fokus
+
+Die obere Reihe — Q, W, E, R, T, Y, U, I, O, P — enthält viele der häufigsten Buchstaben, einschließlich E, R, T und O. Schwächen hier verlangsamen nahezu jeden Satz, den Sie tippen.
 
 4. "We require quiet poetry to write true stories."
 5. "Your power over poetry will tower over our prior work."
 6. "Terry wrote out every word with quiet power."
 
-## Full Keyboard Warm-Up
+## Aufwärmen für die gesamte Tastatur
+
+Diese klassischen Pangramme — Sätze, die jeden Buchstaben des Alphabets verwenden — sind nützliche Aufwärmübungen, weil sie Ihre Finger zwingen, die gesamte Tastatur in einer kurzen Sequenz abzudecken.
 
 7. "The quick brown fox jumps over the lazy dog."
 8. "Pack my box with five dozen liquor jugs."
 9. "How vexingly quick daft zebras jump."
 
-## Common Word Speed Drills
+Verwenden Sie diese zu Beginn jeder Übungssitzung, um alle Finger zu aktivieren, bevor Sie zu gezielteren Übungen übergehen.
+
+## Häufige Wort-Geschwindigkeitsübungen
+
+Die häufigsten Wörter — the, be, to, of, and, a, in, that, have, it — machen einen unverhältnismäßig großen Anteil von allem aus, was Sie tippen. Flüssigkeit mit diesen Mustern allein wird Ihre WPM spürbar erhöhen, da diese Wörter ständig auftauchen und Ihre Finger sie automatisch ausführen sollten.
 
 10. "They have been there before and will be there again."
 11. "We could not find the time to get the right answer."
 12. "It would be good to know what you think about this."
 
-## Punctuation Integration
+## Interpunktionsintegration
+
+Die meisten Schreibtests und reale Dokumente enthalten Interpunktion, aber viele Tipper üben nur saubere Wortsequenzen. Das Hinzufügen von Interpunktion zu Ihren Übungen baut den Rhythmus des Innehaltens, Umschaltens und Weiterführens auf — eine andere motorische Fähigkeit als reiner Wortfluss.
 
 13. "Wait - are you sure? Yes, I am absolutely certain."
 14. "Send the file (version 3.2) to John by Friday, March 28."
 15. "She said: 'I'll be there at 9:00 AM, without fail.'"
 
-## Accuracy Focus (Longer, More Complex)
+Achten Sie auf die Shift-Übergänge. Die meisten Interpunktionsfehler treten am Punkt des Shift-Halten-Loslassen auf.
+
+## Genauigkeitsfokus (Längere, komplexere Sätze)
+
+Längere Sätze erfordern, dass Sie die Konzentration über mehr Zeichen aufrechterhalten, ohne an Genauigkeit zu verlieren. Das entspricht eher dem echten professionellen Tippen — nicht kurze Wortausbrüche, sondern erweiterter Text mit variiertem Wortschatz.
 
 16. "Professionals who type quickly and accurately have a significant advantage in the modern workplace."
 17. "The development of keyboard proficiency is a skill that compounds over time with consistent practice."
 18. "Accurate typing is not simply about speed - it is about producing clean, usable output on the first attempt."
 
-## Speed Burst Sentences (Short, Common Words)
+Streben Sie bei diesen eine Genauigkeit von 97%+ an, auch wenn es bedeutet, erheblich langsamer zu werden. Genauigkeit zuerst.
+
+## Geschwindigkeitsimpuls-Sätze (Kurze, häufige Wörter)
+
+Kurze Sätze aus häufigen, kurzen Wörtern eignen sich hervorragend für Geschwindigkeitsintervalle — kurze Ausbrüche, bei denen Sie Ihr Tempo erhöhen, bevor Sie zu Ihrem Genauigkeitsrhythmus zurückkehren.
 
 19. "Go to the top and look for the best."
 20. "Take the time to do it right the first time."
 21. "Get the file, send the note, and close the deal."
 
-## Number and Symbol Practice
+## Zahlen- und Symbolübung
+
+Zahlen und Symbole sind der am häufigsten gemiedene Teil der Tippübung — und der am häufigsten langsame. Echte Dokumente enthalten Rechnungsnummern, Prozentsätze, Daten und Formeln. Wenn Sie nur reinen Text üben, werden Sie bei jeder Zahl stark verlangsamt.
 
 22. "Invoice #2047 - Due: April 15, 2026 - Total: $3,482.00"
 23. "The formula is: (A + B) x C / D = E"
 24. "Call us at (800) 555-0192 between 9 AM and 5 PM EST."
 
-## Career-Specific Practice (Professional Tone)
+## Berufsspezifische Übung (Professioneller Ton)
+
+Diese Sätze replizieren die Sprachmuster professioneller Bürokommunikation — die Art von Text, die Sie tatsächlich in E-Mails, Berichten und Besprechungsnotizen produzieren.
 
 25. "Please find the attached document for your review and approval."
 26. "I am writing to confirm our meeting scheduled for Thursday at 2:30 PM."
 27. "The report indicates a 12.4% increase in output during the third quarter."
 
-## Sentence Variety for Advanced Typists
+## Satzvielfalt für fortgeschrittene Tipper
+
+Diese längeren, komplexeren Sätze sind für Tipper gedacht, die bereits über 65 WPM arbeiten und Konsistenz bei höheren Geschwindigkeiten aufbauen möchten.
 
 28. "Ambiguity in written communication leads to misunderstanding and wasted time - clarity is always worth the extra effort."
 29. "Keyboard fluency is not a natural gift; it is a practiced discipline that anyone can develop with structured effort."
 30. "The difference between a typist who earns a certificate and one who does not is rarely talent - it is preparation."
 
-Practice these sentences on Typingverified ->
+## So nutzen Sie diese Sätze effektiv
+
+Fügen Sie jeden Satz in einen Texteditor ein und tippen Sie ihn wiederholt, bis Sie ihn mit Ihrer Zielgeschwindigkeit und 97%+ Genauigkeit treffen. Verfolgen Sie Ihre Fehler nach Kategorie: Wenn Sie bei Interpunktion Probleme haben, verbringen Sie mehr Zeit in der Interpunktionssektion. Das Ziel ist die Beseitigung von Engpässen, nicht die Verstärkung dessen, was Sie bereits gut tun.
+
+[Üben Sie diese Sätze auf Typingverified und verfolgen Sie Ihren Fortschritt →](https://www.typingverified.com/test)
+
     `,
   }
 ];

@@ -2534,71 +2534,105 @@ L'écart entre où se trouvent la plupart des gens et où ils pensent être est 
     publishDate: "Apr 17, 2026",
     image: "/blog/t26.png",
     content: `
-Not all practice text is equally useful. Random word generators build basic finger familiarity. But targeted practice sentences - chosen for specific patterns and letter combinations - build speed much more efficiently.
 
-Here are 30 practice sentences, organized by focus area. Use them on the Typingverified practice page or copy them into any text editor for daily drills.
+Tous les textes de pratique ne sont pas également utiles. Les générateurs de mots aléatoires développent une familiarité de base avec les doigts, mais ils ne reproduisent pas les patterns qui vous ralentissent dans la frappe réelle. Les phrases de pratique ciblées — choisies pour des combinaisons de lettres spécifiques, des structures de mots courants et une couverture des rangées du clavier — développent la vitesse bien plus efficacement car elles exercent une pression exactement là où la plupart des dactylographes perdent du temps.
 
-## Home Row Focus
+Les phrases ci-dessous sont organisées par domaine d'accent. Chaque catégorie cible un aspect différent de la performance au clavier. Travaillez-les dans l'ordre pour une session complète, ou choisissez une seule catégorie pour travailler la faiblesse spécifique que vous avez identifiée dans vos patterns d'erreurs.
+
+## Focus sur la rangée de base
+
+La rangée de base — A, S, D, F, J, K, L, point-virgule — est là où vos doigts doivent reposer entre les frappes. Développer la fluidité ici crée la fondation pour tout le reste. Si vos mains s'éloignent de la rangée de base pendant la pratique, ces phrases le révèleront immédiatement.
 
 1. "Ask a glad lad; a salsa flask falls."
 2. "Dallas flags a glass flask as a half-full hall."
 3. "Shall a lad add a sad fall salad?"
 
-## Top Row Focus
+Pratiquez-les lentement d'abord. L'objectif n'est pas la vitesse — c'est un positionnement précis sur la rangée de base à chaque frappe.
+
+## Focus sur la rangée supérieure
+
+La rangée supérieure — Q, W, E, R, T, Y, U, I, O, P — contient beaucoup des lettres les plus fréquentes, notamment E, R, T et O. Une faiblesse ici ralentit pratiquement chaque phrase que vous tapez.
 
 4. "We require quiet poetry to write true stories."
 5. "Your power over poetry will tower over our prior work."
 6. "Terry wrote out every word with quiet power."
 
-## Full Keyboard Warm-Up
+## Échauffement complet du clavier
+
+Ces pangrammes classiques — des phrases qui utilisent chaque lettre de l'alphabet — sont des échauffements utiles car ils obligent vos doigts à couvrir tout le clavier en une courte séquence.
 
 7. "The quick brown fox jumps over the lazy dog."
 8. "Pack my box with five dozen liquor jugs."
 9. "How vexingly quick daft zebras jump."
 
-## Common Word Speed Drills
+Utilisez-les au début de chaque session de pratique pour activer tous les doigts avant de passer à des exercices plus ciblés.
+
+## Exercices de vitesse avec des mots courants
+
+Les mots les plus fréquents — the, be, to, of, and, a, in, that, have, it — représentent une part disproportionnée de tout ce que vous tapez. La fluidité avec ces patterns seule augmentera votre MPM de manière notable, car ces mots apparaissent constamment et vos doigts devraient les exécuter automatiquement.
 
 10. "They have been there before and will be there again."
 11. "We could not find the time to get the right answer."
 12. "It would be good to know what you think about this."
 
-## Punctuation Integration
+## Intégration de la ponctuation
+
+La plupart des tests de frappe et des documents réels incluent de la ponctuation, mais de nombreux dactylographes ne pratiquent que des séquences de mots purs. Ajouter de la ponctuation à vos exercices développe le rythme de la pause, du changement et de la continuation — une compétence motrice différente du flux de mots pur.
 
 13. "Wait - are you sure? Yes, I am absolutely certain."
 14. "Send the file (version 3.2) to John by Friday, March 28."
 15. "She said: 'I'll be there at 9:00 AM, without fail.'"
 
-## Accuracy Focus (Longer, More Complex)
+Faites attention aux transitions de la touche Maj. La plupart des erreurs de ponctuation se produisent au point d'appui-maintien-relâchement de Maj.
+
+## Focus sur la précision (Phrases plus longues et complexes)
+
+Les phrases plus longues exigent que vous mainteniez la concentration sur plus de caractères sans perdre en précision. Cela ressemble davantage à la frappe professionnelle réelle — pas des rafales de mots courts, mais un texte étendu avec un vocabulaire varié.
 
 16. "Professionals who type quickly and accurately have a significant advantage in the modern workplace."
 17. "The development of keyboard proficiency is a skill that compounds over time with consistent practice."
 18. "Accurate typing is not simply about speed - it is about producing clean, usable output on the first attempt."
 
-## Speed Burst Sentences (Short, Common Words)
+Pour celles-ci, visez une précision de 97%+ même si cela signifie ralentir considérablement. La précision d'abord.
+
+## Phrases de rafale de vitesse (Mots courts et courants)
+
+Les phrases courtes composées de mots fréquents et courts sont excellentes pour les intervalles de vitesse — de courtes rafales où vous poussez votre rythme avant de revenir à votre rythme de précision.
 
 19. "Go to the top and look for the best."
 20. "Take the time to do it right the first time."
 21. "Get the file, send the note, and close the deal."
 
-## Number and Symbol Practice
+## Pratique des chiffres et symboles
+
+Les chiffres et symboles sont la partie la plus évitée de la pratique de frappe — et la plus lente. Les vrais documents incluent des numéros de facture, des pourcentages, des dates et des formules. Si vous ne pratiquez que du texte pur, vous ralentirez considérablement à chaque apparition d'un chiffre.
 
 22. "Invoice #2047 - Due: April 15, 2026 - Total: $3,482.00"
 23. "The formula is: (A + B) x C / D = E"
 24. "Call us at (800) 555-0192 between 9 AM and 5 PM EST."
 
-## Career-Specific Practice (Professional Tone)
+## Pratique spécifique à la carrière (Ton professionnel)
+
+Ces phrases reproduisent les patterns linguistiques de la communication professionnelle en milieu de travail — le type de texte que vous produisez réellement dans les e-mails, les rapports et les notes de réunion.
 
 25. "Please find the attached document for your review and approval."
 26. "I am writing to confirm our meeting scheduled for Thursday at 2:30 PM."
 27. "The report indicates a 12.4% increase in output during the third quarter."
 
-## Sentence Variety for Advanced Typists
+## Variété de phrases pour les dactylographes avancés
+
+Ces phrases plus longues et complexes sont conçues pour les dactylographes opérant déjà au-dessus de 65 MPM qui souhaitent développer la constance à des vitesses plus élevées.
 
 28. "Ambiguity in written communication leads to misunderstanding and wasted time - clarity is always worth the extra effort."
 29. "Keyboard fluency is not a natural gift; it is a practiced discipline that anyone can develop with structured effort."
 30. "The difference between a typist who earns a certificate and one who does not is rarely talent - it is preparation."
 
-Practice these sentences on Typingverified ->
+## Comment utiliser ces phrases efficacement
+
+Collez chaque phrase dans un éditeur de texte et tapez-la à plusieurs reprises jusqu'à ce que vous puissiez l'atteindre à votre vitesse cible avec une précision de 97%+. Suivez vos erreurs par catégorie : si vous ratez constamment la ponctuation, passez plus de temps dans cette section. L'objectif est d'éliminer les goulots d'étranglement, pas de renforcer ce que vous faites déjà bien.
+
+[Pratiquez ces phrases sur Typingverified et suivez vos progrès →](https://www.typingverified.com/test)
+
     `,
   }
 ];
