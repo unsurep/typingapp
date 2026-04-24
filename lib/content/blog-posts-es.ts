@@ -2635,4 +2635,76 @@ Pega cada oración en un editor de texto y escríbela repetidamente hasta que pu
 
     `,
   }
+,
+  {
+    title: "Dolor de muñeca al escribir: causas y cómo escribir sin hacerse daño",
+    slug: "typing-wrist-pain",
+    metaDescription:
+      "El dolor de muñeca por mecanografiar es prevenible. Aprende las causas reales y las soluciones de configuración, técnica y estiramiento que realmente funcionan.",
+    publishDate: "Apr 24, 2026",
+    image: "/blog/t27.png",
+    content: `
+
+El dolor de muñeca por mecanografiar es uno de esos problemas que aparece gradualmente y luego de repente se vuelve imposible de ignorar. Un día notas un dolor sordo después de una sesión larga. Unas semanas después está ahí cada mañana. Unos meses más tarde, está afectando tu trabajo.
+
+La buena noticia es que la mayoría del dolor de muñeca relacionado con la mecanografía es prevenible — y gran parte de él es reversible. Las causas son bien entendidas, las soluciones son prácticas, y ninguna de ellas requiere equipos costosos o intervención médica en las etapas tempranas.
+
+## Qué causa realmente el dolor de muñeca al escribir
+
+La causa más común es la extensión sostenida de la muñeca: mantener las muñecas dobladas hacia arriba mientras los dedos trabajan las teclas. Esta posición pone los tendones y el nervio mediano dentro del túnel carpiano bajo una tensión constante de bajo grado. A lo largo de horas, y de meses, esa tensión se acumula.
+
+La segunda causa común es apoyar las muñecas en el escritorio o en un reposamuñecas mientras se escribe activamente. Esto se siente como apoyo, pero en realidad comprime la parte inferior de la muñeca contra una superficie dura durante los movimientos de tecleo. Los reposamuñecas están diseñados para pausar entre ráfagas de escritura — no para el contacto durante la escritura activa.
+
+Una tercera causa es la altura del teclado. Si el teclado está posicionado demasiado alto — las muñecas tienen que angiularse hacia arriba para alcanzar las teclas — cada sesión trabaja en tu contra. La posición correcta tiene los codos a aproximadamente 90 grados y las muñecas en una línea neutral y plana desde el codo hasta la punta del dedo.
+
+Finalmente, la acumulación de tensión juega un papel significativo. Muchos mecanógrafos, especialmente cuando se concentran mucho o trabajan rápido, contraen inconscientemente sus antebrazos y presionan sus muñecas hacia abajo. Esta tensión se acumula durante una sesión. Al final de un largo día de trabajo, lo que comenzó como una leve tensión puede convertirse en dolor genuino.
+
+## La diferencia entre fatiga y lesión
+
+No todo malestar de muñeca es una lesión. La fatiga muscular después de una sesión de escritura inusualmente larga es normal. Generalmente se resuelve con reposo durante la noche.
+
+Las señales de advertencia que indican algo más allá de la fatiga normal incluyen dolor que persiste después del reposo, entumecimiento u hormigueo en los dedos (especialmente el pulgar, el índice y el medio — la distribución del nervio mediano), una sensación de ardor en la muñeca o el antebrazo, o dolor que te despierta por la noche.
+
+El hormigueo y el entumecimiento persistentes en esos dedos específicos es el síntoma clásico del síndrome del túnel carpiano, que implica compresión del nervio mediano. Si tienes estos síntomas, consulta a un médico antes de intentar continuar con más escritura. La intervención temprana con el túnel carpiano es mucho más efectiva que el tratamiento en etapa tardía.
+
+Para todo lo que esté por debajo de esas señales de advertencia, los ajustes a continuación son el punto de partida correcto.
+
+## Postura y configuración: La base
+
+El cambio más impactante que la mayoría de las personas puede hacer es corregir su configuración física. La buena técnica en una configuración ergonómica deficiente seguirá causando dolor con el tiempo.
+
+**Altura e inclinación del teclado.** Tu teclado debe estar a una altura donde tus codos estén a aproximadamente 90 grados y tus muñecas estén planas — no anguladas hacia arriba o hacia abajo. Una ligera inclinación negativa del teclado (borde frontal más alto que el trasero) fomenta una posición neutral de la muñeca.
+
+**Altura de la silla y postura.** Siéntate con la espalda recta y apoyada, los pies planos en el suelo y el monitor a la altura de los ojos. Encorvarse hacia adelante transfiere tensión por los brazos hasta las muñecas.
+
+**Posición de las muñecas durante la escritura.** Tus muñecas deben flotar ligeramente sobre el teclado — no apoyadas en el escritorio, no apoyadas en un reposamuñecas, no presionando hacia abajo. Las muñecas solo hacen contacto con una superficie durante las pausas. Durante la escritura activa, flotan.
+
+## Ajustes de técnica que reducen la tensión
+
+**Mantener las muñecas neutrales.** Una causa mecánica común de la tensión es la desviación cubital — doblar las muñecas hacia afuera para que las manos se angien hacia el lado del dedo meñique. Esto suele ocurrir cuando el teclado es demasiado ancho o cuando las manos tienen que alcanzar las teclas exteriores.
+
+**Reducir la fuerza de pulsación.** La mayoría de los mecanógrafos presionan con mucha más fuerza de la necesaria. Los teclados modernos requieren muy poca fuerza para activarse. Escribir con toque suave en lugar de golpear las teclas reduce la carga de impacto acumulada en los tendones a lo largo de una sesión completa.
+
+**Tomar microdescansos.** La investigación sobre las lesiones por esfuerzo repetitivo muestra consistentemente que los descansos cortos frecuentes son más efectivos que los largos infrecuentes. Un descanso de 30 segundos cada 20–25 minutos — levantarse, sacudir las manos, girar las muñecas — previene la tensión mejor que un descanso de 15 minutos cada 2 horas.
+
+## Estiramientos y ejercicios que realmente ayudan
+
+**Estiramiento de extensión y flexión de muñeca.** Sostén un brazo frente a ti con la palma hacia abajo. Usa la otra mano para presionar suavemente los dedos hacia abajo, estirando la parte superior de la muñeca. Mantén 15–20 segundos. Luego voltea la mano (palma arriba) y presiona los dedos hacia ti. Repite en ambas muñecas. Haz esto antes y después de sesiones largas.
+
+**Abanico de dedos y puño.** Abre los dedos lo más posible, mantén 5 segundos, luego haz un puño suelto y mantén 5 segundos. Repite 10 veces por mano. Esto activa los pequeños músculos de la mano.
+
+**Rotación de antebrazo.** Con los brazos doblados por el codo, rota los antebrazos lentamente de palma arriba a palma abajo y de vuelta. 10 rotaciones lentas en cada brazo.
+
+**Círculos de muñeca.** Rota cada muñeca lentamente en círculos completos — 10 en cada dirección. Enfócate en movimientos suaves con rango completo de movimiento.
+
+## Cuándo parar y buscar ayuda
+
+Si el dolor de muñeca ha persistido por más de dos semanas a pesar del reposo y las correcciones de configuración, o si tienes cualquiera de los síntomas nerviosos descritos (entumecimiento, hormigueo, ardor), consulta a un médico o fisioterapeuta. El síndrome del túnel carpiano, la tendinitis y la tenosinovitis de De Quervain son los diagnósticos más comunes para los problemas de muñeca relacionados con la escritura, y los tres responden bien al tratamiento temprano.
+
+No intentes escribir a pesar de síntomas nerviosos persistentes. Las lesiones por compresión que se ignoran tienden a escalar, y el tiempo de recuperación se alarga significativamente una vez que el daño está establecido.
+
+[Haz una prueba de escritura gratuita para verificar tu velocidad e identificar problemas de técnica →](https://www.typingverified.com/test)
+
+    `,
+  }
 ];

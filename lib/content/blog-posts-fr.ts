@@ -2635,4 +2635,76 @@ Collez chaque phrase dans un éditeur de texte et tapez-la à plusieurs reprises
 
     `,
   }
+,
+  {
+    title: "Douleur au poignet lors de la frappe : causes et comment taper sans se blesser",
+    slug: "typing-wrist-pain",
+    metaDescription:
+      "La douleur au poignet due à la frappe est évitable. Découvrez les vraies causes et les solutions de configuration, technique et étirements qui fonctionnent vraiment.",
+    publishDate: "Apr 24, 2026",
+    image: "/blog/t27.png",
+    content: `
+
+La douleur au poignet due à la frappe est l'un de ces problèmes qui s'installe lentement puis devient soudainement impossible à ignorer. Un jour vous remarquez une douleur sourde après une longue session. Quelques semaines plus tard, elle est là chaque matin. Quelques mois après, elle affecte votre travail.
+
+La bonne nouvelle est que la plupart des douleurs au poignet liées à la frappe sont évitables — et une grande partie est réversible. Les causes sont bien comprises, les solutions sont pratiques, et aucune d'entre elles ne nécessite d'équipement coûteux ou d'intervention médicale aux premiers stades.
+
+## Ce qui cause réellement la douleur au poignet lors de la frappe
+
+La cause la plus fréquente est l'extension soutenue du poignet : maintenir les poignets pliés vers le haut pendant que les doigts travaillent les touches. Cette position met les tendons et le nerf médian à l'intérieur du canal carpien sous une tension constante de faible intensité. Sur des heures, et sur des mois, cette tension s'accumule.
+
+La deuxième cause fréquente est d'appuyer les poignets sur le bureau ou un repose-poignets pendant la frappe active. Cela semble être un soutien, mais cela comprime en réalité le dessous du poignet contre une surface dure pendant les mouvements de frappe. Les repose-poignets sont conçus pour les pauses entre les rafales de frappe — pas pour le contact pendant la frappe active.
+
+Une troisième cause est la hauteur du clavier. Si le clavier est positionné trop haut — les poignets doivent s'incliner vers le haut pour atteindre les touches — chaque session travaille contre vous. La position correcte a les coudes à environ 90 degrés et les poignets dans une ligne neutre et plate du coude à l'extrémité des doigts.
+
+Enfin, l'accumulation de tension joue un rôle important. De nombreux dactylographes, surtout lorsqu'ils se concentrent intensément ou travaillent rapidement, contractent inconsciemment leurs avant-bras et pressent leurs poignets vers le bas. Cette tension s'accumule pendant une session. À la fin d'une longue journée de travail, ce qui a commencé comme une légère tension peut devenir une vraie douleur.
+
+## La différence entre fatigue et blessure
+
+Tout inconfort au poignet n'est pas une blessure. La fatigue musculaire après une session de frappe inhabituellement longue est normale. Elle se résout généralement avec le repos pendant la nuit.
+
+Les signes d'alerte indiquant quelque chose au-delà de la fatigue normale comprennent : une douleur qui persiste après le repos, un engourdissement ou des picotements dans les doigts (notamment le pouce, l'index et le majeur — le territoire du nerf médian), une sensation de brûlure dans le poignet ou l'avant-bras, ou une douleur qui vous réveille la nuit.
+
+Les picotements et l'engourdissement persistants dans ces doigts spécifiques sont le symptôme classique du syndrome du canal carpien, qui implique une compression du nerf médian. Si vous avez ces symptômes, consultez un médecin avant de continuer à taper davantage. Une intervention précoce pour le canal carpien est bien plus efficace qu'un traitement tardif.
+
+Pour tout ce qui est en dessous de ces signes d'alerte, les ajustements ci-dessous sont le bon point de départ.
+
+## Posture et configuration : La base
+
+Le changement le plus impactant que la plupart des gens peuvent faire est de corriger leur configuration physique. Une bonne technique sur une mauvaise configuration ergonomique causera quand même de la douleur avec le temps.
+
+**Hauteur et angle du clavier.** Votre clavier doit être à une hauteur où vos coudes sont à environ 90 degrés et vos poignets sont plats — pas inclinés vers le haut ou vers le bas. Une légère inclinaison négative du clavier (bord avant plus haut que le bord arrière) favorise une position neutre du poignet.
+
+**Hauteur de la chaise et posture.** Asseyez-vous avec le dos droit et soutenu, les pieds à plat sur le sol et le moniteur à hauteur des yeux. S'affaisser vers l'avant transfère la tension dans les bras jusqu'aux poignets.
+
+**Position des poignets pendant la frappe.** Vos poignets doivent flotter légèrement au-dessus du clavier — pas posés sur le bureau, pas posés sur un repose-poignets, pas appuyés vers le bas. Les poignets ne touchent une surface que lors des pauses. Pendant la frappe active, ils flottent.
+
+## Ajustements de technique qui réduisent la tension
+
+**Garder les poignets neutres.** Une cause mécanique fréquente de tension est la déviation ulnaire — plier les poignets vers l'extérieur de sorte que les mains s'inclinent vers le côté du petit doigt. Cela arrive souvent quand le clavier est trop large ou quand les mains doivent atteindre les touches extérieures.
+
+**Réduire la force de frappe.** La plupart des dactylographes appuient bien plus fort que nécessaire. Les claviers modernes nécessitent très peu de force pour s'actionner. Taper avec légèreté plutôt que de marteler les touches réduit considérablement la charge d'impact cumulée sur vos tendons sur une session complète.
+
+**Prendre des micro-pauses.** La recherche sur les troubles musculo-squelettiques montre constamment que des pauses courtes fréquentes sont plus efficaces que des pauses longues peu fréquentes. Une pause de 30 secondes toutes les 20–25 minutes — se lever, secouer les mains, faire tourner les poignets — prévient mieux la tension qu'une pause de 15 minutes toutes les 2 heures.
+
+## Étirements et exercices qui aident vraiment
+
+**Étirement d'extension et de flexion du poignet.** Tenez un bras devant vous, paume vers le bas. Utilisez l'autre main pour appuyer doucement les doigts vers le bas, en étirant le dessus du poignet. Maintenez 15–20 secondes. Puis retournez la main (paume vers le haut) et appuyez les doigts vers vous. Répétez sur les deux poignets. Faites cela avant et après de longues sessions.
+
+**Éventail de doigts et poing.** Écartez les doigts le plus possible, maintenez 5 secondes, puis faites un poing lâche et maintenez 5 secondes. Répétez 10 fois par main. Cela active les petits muscles de la main.
+
+**Rotation de l'avant-bras.** Avec les bras pliés au coude, faites tourner lentement les avant-bras de paume vers le haut à paume vers le bas et retour. 10 rotations lentes sur chaque bras.
+
+**Cercles de poignet.** Faites tourner lentement chaque poignet en cercles complets — 10 dans chaque direction. Concentrez-vous sur un mouvement fluide avec une pleine amplitude de mouvement.
+
+## Quand s'arrêter et chercher de l'aide
+
+Si la douleur au poignet persiste depuis plus de deux semaines malgré le repos et les corrections de configuration, ou si vous avez l'un des symptômes nerveux décrits (engourdissement, picotements, brûlures), consultez un médecin ou un kinésithérapeute. Le syndrome du canal carpien, la tendinite et la ténosynovite de De Quervain sont les diagnostics les plus courants pour les problèmes de poignet liés à la frappe, et tous trois répondent bien à un traitement précoce.
+
+N'essayez pas de taper malgré des symptômes nerveux persistants. Les blessures par compression ignorées tendent à s'aggraver, et le délai de récupération s'allonge considérablement une fois que les dommages sont établis.
+
+[Faites un test de frappe gratuit pour vérifier votre vitesse et identifier les problèmes de technique →](https://www.typingverified.com/test)
+
+    `,
+  }
 ];

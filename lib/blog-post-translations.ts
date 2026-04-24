@@ -178,6 +178,12 @@ export const blogPostTranslations: {
       metaDescription:
         "Votre clavier affecte-t-il votre vitesse de frappe ? Oui — de manière significative. Voici les meilleurs claviers pour taper vite en 2026, classés par performance et rapport qualité-prix.",
     },
+    "typing-wrist-pain-prevention": {
+      title:
+        "Douleur aux poignets en tapant : causes et comment taper sans vous faire mal",
+      metaDescription:
+        "La douleur aux poignets liée à la frappe est fréquente mais évitable. Voici les causes, comment corriger posture et technique, et comment taper des heures sans vous blesser.",
+    },
     "typing-practice-sentences": {
       title: "30 Typing Practice Sentences That Will Improve Your WPM Fast",
       metaDescription:
@@ -354,6 +360,12 @@ export const blogPostTranslations: {
         "Los mejores teclados para velocidad de escritura en 2026 (probados y clasificados)",
       metaDescription:
         "¿Tu teclado afecta tu velocidad de escritura? Sí — significativamente. Aquí están los mejores teclados para escribir rápido en 2026, clasificados por rendimiento y valor.",
+    },
+    "typing-wrist-pain-prevention": {
+      title:
+        "Dolor de muñeca al escribir: causas y cómo teclear sin hacerte daño",
+      metaDescription:
+        "El dolor de muñeca por escribir es frecuente pero evitable. Aquí tienes las causas, cómo corregir postura y técnica, y cómo escribir durante horas sin lesionarte.",
     },
     "typing-practice-sentences": {
       title: "30 Typing Practice Sentences That Will Improve Your WPM Fast",
@@ -532,6 +544,12 @@ export const blogPostTranslations: {
       metaDescription:
         "Beeinflusst Ihre Tastatur Ihre Tippgeschwindigkeit? Ja — erheblich. Hier sind die besten Tastaturen für schnelles Tippen 2026, bewertet nach Leistung und Preis-Leistung.",
     },
+    "typing-wrist-pain-prevention": {
+      title:
+        "Handgelenkschmerzen beim Tippen: Ursachen und wie Sie schmerzfrei tippen",
+      metaDescription:
+        "Handgelenkschmerzen vom Tippen sind häufig, aber vermeidbar. Hier erfahren Sie die Ursachen, wie Sie Haltung und Technik verbessern und stundenlang ohne Schmerzen tippen.",
+    },
     "typing-practice-sentences": {
       title: "30 Typing Practice Sentences That Will Improve Your WPM Fast",
       metaDescription:
@@ -707,6 +725,12 @@ export const blogPostTranslations: {
         "Os melhores teclados para velocidade de digitação em 2026 (testados e classificados)",
       metaDescription:
         "O seu teclado afeta a sua velocidade de digitação? Sim — significativamente. Aqui estão os melhores teclados para digitar rápido em 2026, classificados por desempenho e valor.",
+    },
+    "typing-wrist-pain-prevention": {
+      title:
+        "Dor no pulso ao digitar: o que causa e como digitar sem se machucar",
+      metaDescription:
+        "Dor no pulso por digitar é comum, mas evitável. Veja as causas, como corrigir postura e técnica, e como digitar por horas sem se machucar.",
     },
     "typing-practice-sentences": {
       title: "30 Typing Practice Sentences That Will Improve Your WPM Fast",

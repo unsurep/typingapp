@@ -2639,4 +2639,76 @@ Cole cada frase em um editor de texto e a digite repetidamente até conseguir at
 
     `,
   }
+,
+  {
+    title: "Dor no pulso ao digitar: causas e como digitar sem se machucar",
+    slug: "typing-wrist-pain",
+    metaDescription:
+      "A dor no pulso por digitar é evitável. Aprenda as causas reais e as soluções de configuração, técnica e alongamento que realmente funcionam.",
+    publishDate: "Apr 24, 2026",
+    image: "/blog/t27.png",
+    content: `
+
+A dor no pulso por digitar é um daqueles problemas que aparece gradualmente e de repente se torna impossível de ignorar. Um dia você nota uma dor surda após uma sessão longa. Algumas semanas depois ela está lá toda manhã. Alguns meses depois, está afetando seu trabalho.
+
+A boa notícia é que a maioria das dores no pulso relacionadas à digitação é evitável — e grande parte é reversível. As causas são bem compreendidas, as soluções são práticas, e nenhuma delas requer equipamentos caros ou intervenção médica nos estágios iniciais.
+
+## O que realmente causa dor no pulso ao digitar
+
+A causa mais comum é a extensão sustentada do pulso: manter os pulsos dobrados para cima enquanto os dedos trabalham as teclas. Essa posição coloca os tendões e o nervo mediano dentro do túnel do carpo sob tensão constante de baixa intensidade. Ao longo de horas, e de meses, essa tensão se acumula.
+
+A segunda causa comum é apoiar os pulsos na mesa ou em um apoio de pulso durante a digitação ativa. Isso parece suporte, mas na verdade comprime a parte inferior do pulso contra uma superfície dura durante os movimentos de teclas. Os apoios de pulso são projetados para pausas entre as rajadas de digitação — não para contato durante a digitação ativa.
+
+Uma terceira causa é a altura do teclado. Se o teclado está posicionado muito alto — os pulsos têm que se inclinar para cima para alcançar as teclas — cada sessão trabalha contra você. A posição correta tem os cotovelos a aproximadamente 90 graus e os pulsos em uma linha neutra e plana do cotovelo até a ponta do dedo.
+
+Por fim, o acúmulo de tensão desempenha um papel significativo. Muitos digitadores, especialmente quando se concentram muito ou trabalham rápido, inconscientemente contraem seus antebraços e pressionam seus pulsos para baixo. Essa tensão se acumula durante uma sessão. Ao final de um longo dia de trabalho, o que começou como uma leve tensão pode se tornar dor genuína.
+
+## A diferença entre fadiga e lesão
+
+Nem todo desconforto no pulso é uma lesão. A fadiga muscular após uma sessão de digitação incomumente longa é normal. Geralmente se resolve com descanso durante a noite.
+
+Sinais de alerta que indicam algo além da fadiga normal incluem: dor que persiste após o descanso, dormência ou formigamento nos dedos (especialmente polegar, indicador e dedo médio — a distribuição do nervo mediano), sensação de queimação no pulso ou antebraço, ou dor que te acorda à noite.
+
+O formigamento e a dormência persistentes nesses dedos específicos são o sintoma clássico da síndrome do túnel do carpo, que envolve compressão do nervo mediano. Se você tiver esses sintomas, consulte um médico antes de tentar continuar digitando. A intervenção precoce na síndrome do túnel do carpo é muito mais eficaz do que o tratamento em estágio tardio.
+
+Para tudo abaixo desses sinais de alerta, os ajustes abaixo são o ponto de partida correto.
+
+## Postura e configuração: A base
+
+A mudança mais impactante que a maioria das pessoas pode fazer é corrigir sua configuração física. Boa técnica em uma configuração ergonômica ruim ainda causará dor com o tempo.
+
+**Altura e ângulo do teclado.** Seu teclado deve estar a uma altura onde seus cotovelos estão a aproximadamente 90 graus e seus pulsos estão planos — não inclinados para cima ou para baixo. Uma leve inclinação negativa do teclado (borda frontal mais alta que a traseira) encoraja uma posição neutra do pulso.
+
+**Altura da cadeira e postura.** Sente-se com as costas retas e apoiadas, pés planos no chão e monitor na altura dos olhos. Curvar-se para frente transfere tensão pelos braços até os pulsos.
+
+**Posição dos pulsos durante a digitação.** Seus pulsos devem flutuar levemente acima do teclado — não apoiados na mesa, não apoiados em um suporte de pulso, não pressionando para baixo. Os pulsos só fazem contato com uma superfície durante as pausas. Durante a digitação ativa, eles flutuam.
+
+## Ajustes de técnica que reduzem a tensão
+
+**Manter os pulsos neutros.** Uma causa mecânica comum de tensão é o desvio ulnar — dobrar os pulsos para fora de modo que as mãos se inclinem para o lado do dedo mínimo. Isso geralmente acontece quando o teclado é muito largo ou quando as mãos precisam alcançar as teclas externas.
+
+**Reduzir a força de pressão.** A maioria dos digitadores pressiona muito mais forte do que o necessário. Os teclados modernos requerem muito pouca força para serem acionados. Digitar com toque suave em vez de martelar as teclas reduz consideravelmente a carga de impacto acumulada nos tendões ao longo de uma sessão completa.
+
+**Fazer micro-pausas.** A pesquisa sobre lesões por esforço repetitivo mostra consistentemente que pausas curtas frequentes são mais eficazes do que pausas longas infrequentes. Uma pausa de 30 segundos a cada 20–25 minutos — levantar, sacudir as mãos, girar os pulsos — previne melhor a tensão do que uma pausa de 15 minutos a cada 2 horas.
+
+## Alongamentos e exercícios que realmente ajudam
+
+**Alongamento de extensão e flexão do pulso.** Segure um braço à sua frente com a palma para baixo. Use a outra mão para pressionar suavemente os dedos para baixo, alongando a parte superior do pulso. Mantenha por 15–20 segundos. Então vire a mão (palma para cima) e pressione os dedos de volta em sua direção. Repita em ambos os pulsos. Faça isso antes e depois de sessões longas.
+
+**Leque de dedos e punho.** Abra os dedos o máximo possível, mantenha por 5 segundos, depois faça um punho solto e mantenha por 5 segundos. Repita 10 vezes por mão. Isso ativa os pequenos músculos da mão.
+
+**Rotação do antebraço.** Com os braços dobrados no cotovelo, gire lentamente os antebraços de palma para cima a palma para baixo e de volta. 10 rotações lentas em cada braço.
+
+**Círculos de pulso.** Gire cada pulso lentamente em círculos completos — 10 em cada direção. Concentre-se em movimento suave com amplitude completa de movimento.
+
+## Quando parar e procurar ajuda
+
+Se a dor no pulso persistir por mais de duas semanas apesar do descanso e das correções de configuração, ou se você tiver qualquer um dos sintomas nervosos descritos (dormência, formigamento, queimação), consulte um médico ou fisioterapeuta. A síndrome do túnel do carpo, a tendinite e a tenossinovite de De Quervain são os diagnósticos mais comuns para problemas de pulso relacionados à digitação, e todos os três respondem bem ao tratamento precoce.
+
+Não tente digitar apesar de sintomas nervosos persistentes. Lesões por compressão ignoradas tendem a escalar, e o prazo de recuperação se prolonga significativamente uma vez que o dano está estabelecido.
+
+[Faça um teste de digitação gratuito para verificar sua velocidade e identificar problemas de técnica →](https://www.typingverified.com/test)
+
+    `,
+  }
 ];
