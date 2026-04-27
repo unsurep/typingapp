@@ -50,13 +50,14 @@ export default async function PricingPage({
         isPremiumDb = profile?.is_premium ?? false
     }
 
-    const premiumCtaAvailable = stripeCheckoutEnabled
     const premiumCardIsActive = isPremiumDb
     const stripeTestToken = process.env.STRIPE_TEST_TRIGGER_TOKEN?.trim()
     const hasTestTriggerToken = isStripeTestTriggerEnabled() && Boolean(stripeTestToken)
     const premiumCheckoutHref = hasTestTriggerToken
         ? `/checkout?test_checkout=1&token=${encodeURIComponent(stripeTestToken!)}`
-        : "/checkout"
+        : stripeCheckoutEnabled
+            ? "/checkout"
+            : "/contact"
 
     return (
         <div className="flex flex-col flex-1 w-full max-w-5xl mx-auto py-12 px-4 sm:px-6 lg:px-8 relative">
@@ -149,11 +150,7 @@ export default async function PricingPage({
                                 : 'bg-brand text-black'
                         }`}
                     >
-                        {premiumCardIsActive
-                            ? t("badgeCurrent")
-                            : premiumCtaAvailable
-                                ? t("badgeBest")
-                                : t("badgeComingSoon")}
+                        {premiumCardIsActive ? t("badgeCurrent") : t("badgeBest")}
                     </div>
 
                     <div className="mb-4">
@@ -208,7 +205,7 @@ export default async function PricingPage({
                             <span aria-hidden className="text-emerald-600 dark:text-emerald-400">✓</span>
                             {t("ctaOnPremium")}
                         </button>
-                    ) : premiumCtaAvailable ? (
+                    ) : (
                         <Link
                             href={premiumCheckoutHref}
                             className="mt-auto inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-brand text-black font-semibold text-sm shadow-sm hover:bg-amber-400 transition-colors"
@@ -216,16 +213,6 @@ export default async function PricingPage({
                         >
                             {t("ctaUpgrade")}
                         </Link>
-                    ) : (
-                        <button
-                            type="button"
-                            disabled
-                            aria-disabled="true"
-                            aria-label={t("ariaCheckoutComingSoon")}
-                            className="mt-auto inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-zinc-200 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300 border border-zinc-300 dark:border-zinc-600 font-semibold text-sm cursor-not-allowed"
-                        >
-                            {t("ctaComingSoon")}
-                        </button>
                     )}
                 </div>
             </div>
