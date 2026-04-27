@@ -80,6 +80,7 @@ export default async function PrivacyPage({
                 <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-4">{t("s1Account")}</p>
                 <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-4">{t("s1Usage")}</p>
                 <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-4">{t("s1Cookies")}</p>
+                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-4">{t("s1Consent")}</p>
                 <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-4">{t("s1Ads")}</p>
                 <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-1">
                     {t.rich("s1OptOut", richLinks)}

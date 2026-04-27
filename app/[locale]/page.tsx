@@ -535,7 +535,10 @@ export default function Home() {
             {t("faqIntro")}
           </p>
           <div className="mt-6 rounded-xl border border-border bg-background/60 px-5">
-            <Accordion type="single" collapsible>
+            <Accordion
+              type="multiple"
+              defaultValue={faqItems.map((_, index) => `faq-item-${index}`)}
+            >
               {faqItems.map((item, index) => (
                 <AccordionItem key={item.question} value={`faq-item-${index}`}>
                   <AccordionTrigger>{item.question}</AccordionTrigger>

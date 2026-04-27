@@ -48,15 +48,6 @@ export default async function AboutPage({
 
             <section className="mb-10 rounded-2xl border border-border bg-muted/5 p-6 sm:p-8">
                 <h2 className="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-white mb-4">
-                    {t("languagesTitle")}
-                </h2>
-                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 leading-relaxed">
-                    {t("languagesBody")}
-                </p>
-            </section>
-
-            <section className="mb-10 rounded-2xl border border-border bg-muted/5 p-6 sm:p-8">
-                <h2 className="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-white mb-4">
                     {t("bioTitle")}
                 </h2>
                 <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
@@ -83,6 +74,27 @@ export default async function AboutPage({
                         </Link>
                     </p>
                 </div>
+            </section>
+
+            <section className="mb-10 rounded-2xl border border-border bg-muted/5 p-6 sm:p-8">
+                <h2 className="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-white mb-4">
+                    {t("trustTitle")}
+                </h2>
+                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
+                    {t("trustP1")}
+                </p>
+                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 leading-relaxed">
+                    {t("trustP2")}
+                </p>
+            </section>
+
+            <section className="mb-10 rounded-2xl border border-border bg-muted/5 p-6 sm:p-8">
+                <h2 className="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-white mb-4">
+                    {t("languagesTitle")}
+                </h2>
+                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 leading-relaxed">
+                    {t("languagesBody")}
+                </p>
             </section>
 
             <section className="mb-10">
