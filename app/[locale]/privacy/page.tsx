@@ -90,6 +90,19 @@ export default async function PrivacyPage({
                 </p>
             </section>
 
+            <section className="mb-8">
+                <h2 className="text-xl sm:text-2xl font-semibold text-gray-900 dark:text-white mb-4">
+                    {t("s1bTitle")}
+                </h2>
+                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-4">{t("s1bP1")}</p>
+                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-4">{t("s1bP2")}</p>
+                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-4">
+                    {t.rich("s1bP3", richLinks)}
+                </p>
+                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-4">{t("s1bP4")}</p>
+                <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400">{t("s1bP5")}</p>
+            </section>
+
             <hr className="border-gray-200 dark:border-gray-700 mb-8" />
 
             <section className="mb-8">
