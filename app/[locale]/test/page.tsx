@@ -320,6 +320,31 @@ function TestContent() {
                 </div>
             )}
 
+            {/* SEO Content Section */}
+            <section className="mt-20 max-w-3xl mx-auto w-full">
+                <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">How the Typing Speed Test Works</h2>
+                <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                    This typing speed test measures how fast you type in words per minute (WPM) and how accurately you hit each key. When you start typing, the timer begins automatically. At the end of the session — either when the time runs out or you finish the passage — you&apos;ll see your gross WPM, net WPM, accuracy percentage, and total error count.
+                </p>
+                <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                    Gross WPM counts every word you typed regardless of errors. Net WPM subtracts your mistakes, giving you a more honest picture of your usable typing speed. Most employers and typing benchmarks refer to net WPM, so that&apos;s the number to focus on improving.
+                </p>
+                <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 mt-8">How to Use the Test</h2>
+                <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                    Choose your test duration — 60 seconds for a standard benchmark, or 120 seconds if you want a more sustained measurement. Click into the typing area and start typing the displayed text. The test ends automatically when the timer reaches zero. You can restart at any time to get a fresh passage and a clean result.
+                </p>
+                <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                    For the most accurate results, sit with good posture, keep your fingers on the home row (ASDF and JKL;), and resist the urge to look at the keyboard. If you&apos;re logged in, your results are saved automatically to your dashboard so you can track your progress over time.
+                </p>
+                <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 mt-8">What Is a Good Typing Speed?</h2>
+                <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                    The average adult types between 38 and 45 WPM. Professional typists typically reach 65–75 WPM. Anything above 80 WPM puts you in the top tier for most job applications and productivity benchmarks. If you&apos;re below 40 WPM, consistent daily practice — even just 10–15 minutes — will produce noticeable improvement within a few weeks.
+                </p>
+                <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                    Accuracy matters as much as speed. A score of 90 WPM at 85% accuracy is less useful than 70 WPM at 98% accuracy, because the errors require going back to correct. Aim for 95%+ accuracy first, then push your speed from there.
+                </p>
+            </section>
+
         </div>
     );
 }

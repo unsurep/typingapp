@@ -166,6 +166,28 @@ export default function PracticePage() {
                 className="mt-10 w-full rounded-xl border border-gray-200 dark:border-zinc-800 bg-white/70 dark:bg-zinc-900/70 p-3"
             />
 
+            {/* SEO Content Section */}
+            <section className="mt-20 max-w-3xl mx-auto w-full">
+                <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Free Typing Practice — No Timer, No Pressure</h2>
+                <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                    Typing practice mode lets you type at your own pace without a countdown. There&apos;s no timer running and no score at the end — just you, the text, and the feedback from your fingers. This makes it the ideal environment for building the kind of relaxed, accurate muscle memory that timed tests can&apos;t develop on their own.
+                </p>
+                <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                    Your WPM, accuracy, and error count are tracked in real time so you can see how you&apos;re doing as you go. When you finish a passage, you can move to the next text or restart the same one. Repeating the same passage several times in a row is one of the most effective ways to lock in problem sequences and smooth out rhythm breaks.
+                </p>
+                <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 mt-8">How to Get the Most from Practice Sessions</h2>
+                <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                    The goal in practice mode isn&apos;t to type as fast as possible — it&apos;s to type as correctly as possible at a speed that feels slightly challenging but sustainable. If your accuracy drops below 95%, slow down until it stabilizes. Speed follows accuracy, not the other way around.
+                </p>
+                <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
+                    Focus on keeping your fingers on the home row (ASDF and JKL;) and reaching for every key without looking down. The first week of correcting your finger placement will feel slow and uncomfortable — that&apos;s normal. By the second week, the new patterns start to feel natural, and speed climbs automatically.
+                </p>
+                <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 mt-8">Practice vs. Test Mode</h2>
+                <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                    Use practice mode to build your technique — correct finger placement, home row positioning, accuracy over speed. Use test mode to benchmark your progress once a week. Most people improve fastest when they spend 80% of their time in practice mode and 20% in test mode. The practice builds the habit; the test measures it.
+                </p>
+            </section>
+
         </div>
     );
 }
