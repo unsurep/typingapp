@@ -6,23 +6,31 @@ const locales = ["en", "fr", "es", "de", "pt"];
 const defaultLocale = "en";
 const localizedLocales = locales.filter((locale) => locale !== defaultLocale);
 
-const publicPages = ["", "/pricing", "/about", "/privacy", "/terms", "/contact", "/blog"];
-
-const privateRoutes = [
+const publicPages = [
+  "",
+  "/pricing",
+  "/about",
+  "/privacy",
+  "/terms",
+  "/contact",
+  "/blog",
   "/test",
   "/practice",
-  "/login",
-  "/signup",
-  "/dashboard",
   "/lessons",
-  "/lessons/*",
-  "/certificate",
   "/verify",
-  "/verify/*",
-  "/checkout",
-  "/success",
+  "/certificate",
+];
+
+const privateRoutes = [
   "/admin",
   "/admin/*",
+  "/api/",
+  "/dashboard",
+  "/dashboard/*",
+  "/login",
+  "/signup",
+  "/checkout",
+  "/success",
 ];
 
 function withLocalePrefix(locale, route) {
@@ -46,8 +54,26 @@ function buildExcludedPaths() {
   return buildDisallowRules();
 }
 
+/**
+ * next-sitemap passes relative paths from the manifest; additionalPaths use `/path`.
+ * If a full URL ever reaches transform, extract pathname so locale splitting stays correct.
+ */
+function normalizePathForAlternates(urlPath) {
+  if (!urlPath || urlPath === "/") return "/";
+  if (/^https?:\/\//i.test(urlPath)) {
+    try {
+      const p = new URL(urlPath).pathname;
+      return p === "" ? "/" : p;
+    } catch {
+      return "/";
+    }
+  }
+  return urlPath.startsWith("/") ? urlPath : `/${urlPath}`;
+}
+
 function splitLocaleFromPath(urlPath) {
-  const normalizedPath = urlPath === "/" ? "/" : urlPath.replace(/\/$/, "");
+  const pathname = normalizePathForAlternates(urlPath);
+  const normalizedPath = pathname === "/" ? "/" : pathname.replace(/\/$/, "");
   const parts = normalizedPath.split("/").filter(Boolean);
   const maybeLocale = parts[0];
 
@@ -69,6 +95,8 @@ function buildAlternateRefsForPath(urlPath) {
   const { basePath } = splitLocaleFromPath(urlPath);
   return locales.map((locale) => ({
     hreflang: locale,
+    /** Required: next-sitemap joins non-flagged href with loc, doubling paths for full URLs. */
+    hrefIsAbsolute: true,
     href:
       locale === defaultLocale
         ? `${siteUrl}${basePath === "/" ? "" : basePath}`
