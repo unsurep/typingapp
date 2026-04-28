@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 Disallow: /admin
 Disallow: /admin/*
-Disallow: /api/
+Disallow: /api/*
 Disallow: /dashboard
 Disallow: /dashboard/*
 Disallow: /login
@@ -12,7 +12,7 @@ Disallow: /checkout
 Disallow: /success
 Disallow: /fr/admin
 Disallow: /fr/admin/*
-Disallow: /fr/api/
+Disallow: /fr/api/*
 Disallow: /fr/dashboard
 Disallow: /fr/dashboard/*
 Disallow: /fr/login
@@ -21,7 +21,7 @@ Disallow: /fr/checkout
 Disallow: /fr/success
 Disallow: /es/admin
 Disallow: /es/admin/*
-Disallow: /es/api/
+Disallow: /es/api/*
 Disallow: /es/dashboard
 Disallow: /es/dashboard/*
 Disallow: /es/login
@@ -30,7 +30,7 @@ Disallow: /es/checkout
 Disallow: /es/success
 Disallow: /de/admin
 Disallow: /de/admin/*
-Disallow: /de/api/
+Disallow: /de/api/*
 Disallow: /de/dashboard
 Disallow: /de/dashboard/*
 Disallow: /de/login
@@ -39,7 +39,7 @@ Disallow: /de/checkout
 Disallow: /de/success
 Disallow: /pt/admin
 Disallow: /pt/admin/*
-Disallow: /pt/api/
+Disallow: /pt/api/*
 Disallow: /pt/dashboard
 Disallow: /pt/dashboard/*
 Disallow: /pt/login

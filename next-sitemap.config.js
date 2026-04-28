@@ -24,7 +24,7 @@ const publicPages = [
 const privateRoutes = [
   "/admin",
   "/admin/*",
-  "/api/",
+  "/api/*",
   "/dashboard",
   "/dashboard/*",
   "/login",
