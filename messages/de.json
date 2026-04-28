@@ -103,7 +103,8 @@
     "enjoyed": "Hat Ihnen der Artikel gefallen?",
     "shareTitle": "Teilen Sie ihn mit Freunden",
     "authorByline": "Von {name}",
-    "authorBioHeading": "Über den Autor"
+    "authorBioHeading": "Über den Autor",
+    "authorEmailLabel": "E-Mail:"
   },
   "BlogCard": {
     "minRead": "{count} Min. Lesezeit",

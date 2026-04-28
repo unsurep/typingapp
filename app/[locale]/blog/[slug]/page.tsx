@@ -2,6 +2,7 @@ export const dynamic = "force-dynamic";
 
 import {
   DEFAULT_BLOG_AUTHOR,
+  DEFAULT_BLOG_AUTHOR_CONTACT_EMAIL,
   getPostBySlug,
   getReadingTimeMinutes,
 } from "@/lib/blog-data";
@@ -217,6 +218,15 @@ export default async function BlogPostPage({ params }: Props) {
             </h2>
             <p className="mt-2 text-lg font-semibold text-foreground">{authorName}</p>
             <p className="mt-3 text-base leading-relaxed text-muted-foreground">{authorBio}</p>
+            <p className="mt-4 text-base text-muted-foreground">
+              <span className="font-medium text-foreground">{t("authorEmailLabel")}</span>{" "}
+              <a
+                href={`mailto:${DEFAULT_BLOG_AUTHOR_CONTACT_EMAIL}`}
+                className="font-medium text-primary underline-offset-4 hover:underline"
+              >
+                {DEFAULT_BLOG_AUTHOR_CONTACT_EMAIL}
+              </a>
+            </p>
           </section>
         ) : null}
 

@@ -102,6 +102,7 @@
     "minRead": "{count} min read",
     "authorByline": "By {name}",
     "authorBioHeading": "About the author",
+    "authorEmailLabel": "Email:",
     "enjoyed": "Enjoyed this article?",
     "shareTitle": "Share it with your friends"
   },
