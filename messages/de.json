@@ -1,5 +1,6 @@
 {
   "Nav": {
+    "mainNav": "Hauptnavigation",
     "practice": "Üben",
     "tests": "Tests",
     "blog": "Blog",
@@ -216,11 +217,14 @@
     "toastFailed": "Kopieren des Links fehlgeschlagen"
   },
   "CookieConsent": {
+    "regionLabel": "Cookie-Einwilligung",
     "defaultHint": "Wir verwenden Cookies, um diese Website zu betreiben und Anzeigen über Google AdSense bereitzustellen.",
     "agreeContinue": "Wenn du fortfährst, stimmst du unseren",
     "privacyPolicy": "Datenschutzerklärung",
     "accept": "Akzeptieren",
-    "decline": "Ablehnen"
+    "decline": "Ablehnen",
+    "acceptAria": "Cookies akzeptieren und Analyse sowie personalisierte Werbung erlauben",
+    "declineAria": "Optionale Cookies und Analyse ablehnen"
   },
   "Metadata": {
     "titleDefault": "Typingverified | Tippgeschwindigkeitstest & Lektionen",

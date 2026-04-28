@@ -1,5 +1,6 @@
 {
   "Nav": {
+    "mainNav": "Navigation principale",
     "practice": "Entraînement",
     "tests": "Tests",
     "blog": "Blog",
@@ -216,11 +217,14 @@
     "toastFailed": "Échec de la copie du lien"
   },
   "CookieConsent": {
+    "regionLabel": "Consentement aux cookies",
     "defaultHint": "Nous utilisons des cookies pour faire fonctionner ce site et diffuser des publicités via Google AdSense.",
     "agreeContinue": "En continuant, vous acceptez nos",
     "privacyPolicy": "Politique de confidentialité",
     "accept": "Accepter",
-    "decline": "Refuser"
+    "decline": "Refuser",
+    "acceptAria": "Accepter les cookies et autoriser les statistiques et annonces personnalisées",
+    "declineAria": "Refuser les cookies facultatifs et les statistiques"
   },
   "Metadata": {
     "titleDefault": "Typingverified | Tests de vitesse de frappe & Leçons",

@@ -1,5 +1,6 @@
 {
   "Nav": {
+    "mainNav": "Navegación principal",
     "practice": "Práctica",
     "tests": "Tests",
     "blog": "Blog",
@@ -216,11 +217,14 @@
     "toastFailed": "No se pudo copiar el enlace"
   },
   "CookieConsent": {
+    "regionLabel": "Consentimiento de cookies",
     "defaultHint": "Usamos cookies para operar este sitio y servir anuncios a través de Google AdSense.",
     "agreeContinue": "Al continuar, aceptas nuestros",
     "privacyPolicy": "Política de privacidad",
     "accept": "Aceptar",
-    "decline": "Rechazar"
+    "decline": "Rechazar",
+    "acceptAria": "Aceptar cookies y permitir analíticas y anuncios personalizados",
+    "declineAria": "Rechazar cookies opcionales y analíticas"
   },
   "Metadata": {
     "titleDefault": "Typingverified | Prueba de velocidad de mecanografía y lecciones",

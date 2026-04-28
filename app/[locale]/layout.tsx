@@ -8,6 +8,7 @@ import { getMessages, setRequestLocale } from "next-intl/server";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import CookieBanner from "@/components/CookieBanner";
+import ConsentModeDefaultScript from "@/components/ConsentModeDefaultScript";
 import { Toaster } from "sonner";
 import { createClient } from "@/utils/supabase/server";
 import { ThemeProvider } from "@/components/theme-provider";
@@ -104,6 +105,7 @@ export default async function LocaleLayout({
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased min-h-screen flex flex-col overflow-x-hidden`}
       >
+        <ConsentModeDefaultScript />
         <NextIntlClientProvider
           key={locale}
           locale={locale}

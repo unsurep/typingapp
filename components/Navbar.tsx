@@ -23,12 +23,12 @@ export default function Navbar({
       className="sticky top-[var(--announcement-height,0px)] z-50 mt-[var(--announcement-height,0px)] backdrop-blur-md bg-white/70 border-b border-gray-100/50 dark:bg-[#111111]/70 dark:border-white/5"
     >
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
+        <div className="flex h-16 min-w-0 items-center justify-between gap-3">
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.1 }}
-            className="flex shrink-0 items-center"
+            className="flex min-w-0 shrink-0 items-center"
           >
             <Link
               href="/"
@@ -39,97 +39,100 @@ export default function Navbar({
               <span className="text-brand">{" }"}</span>
             </Link>
           </motion.div>
-          <nav className="hidden md:flex items-center space-x-6">
-            <div className="flex items-center space-x-8">
-              <Link
-                href="/practice"
-                className="text-sm text-foreground hover:text-[#f4bf3c] font-medium transition-colors"
-              >
-                {t("practice")}
-              </Link>
-              <Link
-                href="/test"
-                className="text-sm font-medium text-foreground hover:text-[#f4bf3c] transition-colors"
-              >
-                {t("tests")}
-              </Link>
-              <Link
-                href="/lessons"
-                className="text-sm font-medium text-foreground hover:text-[#f4bf3c] transition-colors"
-              >
-                {t("lessons")}
-              </Link>
-              <Link
-                href="/pricing"
-                className="text-sm font-medium text-foreground hover:text-[#f4bf3c] transition-colors"
-              >
-                {t("pricing")}
-              </Link>
-              <Link
-                href="/blog"
-                className="text-sm font-medium text-foreground hover:text-[#f4bf3c] transition-colors"
-              >
-                {t("blog")}
-              </Link>
-              <Link
-                href="/verify"
-                className="text-sm font-medium text-foreground hover:text-[#f4bf3c] transition-colors"
-              >
-                {t("verify")}
-              </Link>
-              {isLoggedIn && (
+          <nav
+            className="hidden min-w-0 flex-1 items-center justify-end gap-3 md:flex"
+            aria-label={t("mainNav")}
+          >
+            <div className="min-w-0 flex-1 overflow-x-auto overscroll-x-contain py-2 [-webkit-overflow-scrolling:touch] [scrollbar-width:thin]">
+              <div className="flex flex-nowrap items-center justify-end gap-4 lg:gap-6">
                 <Link
-                  href="/certificate"
-                  className="text-sm font-medium text-foreground hover:text-[#f4bf3c] transition-colors"
+                  href="/practice"
+                  className="shrink-0 text-sm font-medium text-foreground transition-colors hover:text-[#f4bf3c]"
                 >
-                  {t("certificate")}
+                  {t("practice")}
                 </Link>
-              )}
-              {isLoggedIn ? (
-                <div className="flex items-center space-x-6">
+                <Link
+                  href="/test"
+                  className="shrink-0 text-sm font-medium text-foreground transition-colors hover:text-[#f4bf3c]"
+                >
+                  {t("tests")}
+                </Link>
+                <Link
+                  href="/lessons"
+                  className="shrink-0 text-sm font-medium text-foreground transition-colors hover:text-[#f4bf3c]"
+                >
+                  {t("lessons")}
+                </Link>
+                <Link
+                  href="/pricing"
+                  className="shrink-0 text-sm font-medium text-foreground transition-colors hover:text-[#f4bf3c]"
+                >
+                  {t("pricing")}
+                </Link>
+                <Link
+                  href="/blog"
+                  className="shrink-0 text-sm font-medium text-foreground transition-colors hover:text-[#f4bf3c]"
+                >
+                  {t("blog")}
+                </Link>
+                <Link
+                  href="/verify"
+                  className="shrink-0 text-sm font-medium text-foreground transition-colors hover:text-[#f4bf3c]"
+                >
+                  {t("verify")}
+                </Link>
+                {isLoggedIn && (
                   <Link
-                    href="/dashboard"
-                    className="text-sm font-medium text-foreground hover:text-[#f4bf3c] transition-colors"
+                    href="/certificate"
+                    className="shrink-0 text-sm font-medium text-foreground transition-colors hover:text-[#f4bf3c]"
                   >
-                    {t("dashboard")}
+                    {t("certificate")}
                   </Link>
-                  <form action="/api/auth/logout" method="POST" className="inline">
-                    <button
-                      type="submit"
-                      className="inline-flex items-center justify-center cursor-pointer px-4 py-2 text-sm font-medium text-background bg-foreground rounded-md hover:bg-[#f4bf3c] transition-colors"
+                )}
+                {isLoggedIn ? (
+                  <div className="flex shrink-0 items-center gap-4 lg:gap-6">
+                    <Link
+                      href="/dashboard"
+                      className="text-sm font-medium text-foreground transition-colors hover:text-[#f4bf3c]"
                     >
-                      {t("logout")}
-                    </button>
-                  </form>
-                </div>
-              ) : (
-                <div className="flex items-center gap-2">
-                  <Link
-                    href="/login"
-                    className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium rounded-md border border-foreground/25 bg-transparent text-foreground hover:bg-muted dark:border-white/25 dark:hover:bg-white/10 transition-colors"
-                  >
-                    {t("login")}
-                  </Link>
-                  <Link
-                    href="/signup"
-                    className="inline-flex items-center justify-center px-4 py-2 text-sm font-medium text-background bg-foreground rounded-md hover:bg-foreground/90 transition-colors"
-                  >
-                    {t("signup")}
-                  </Link>
-                </div>
-              )}
+                      {t("dashboard")}
+                    </Link>
+                    <form action="/api/auth/logout" method="POST" className="inline shrink-0">
+                      <button
+                        type="submit"
+                        className="inline-flex cursor-pointer items-center justify-center rounded-md bg-foreground px-4 py-2 text-sm font-medium text-background transition-colors hover:bg-[#f4bf3c]"
+                      >
+                        {t("logout")}
+                      </button>
+                    </form>
+                  </div>
+                ) : (
+                  <div className="flex shrink-0 items-center gap-2">
+                    <Link
+                      href="/login"
+                      className="inline-flex items-center justify-center rounded-md border border-foreground/25 bg-transparent px-4 py-2 text-sm font-medium text-foreground transition-colors hover:bg-muted dark:border-white/25 dark:hover:bg-white/10"
+                    >
+                      {t("login")}
+                    </Link>
+                    <Link
+                      href="/signup"
+                      className="inline-flex items-center justify-center rounded-md bg-foreground px-4 py-2 text-sm font-medium text-background transition-colors hover:bg-foreground/90"
+                    >
+                      {t("signup")}
+                    </Link>
+                  </div>
+                )}
+              </div>
             </div>
-            <div className="flex items-center gap-3 pl-2 border-l border-border/50">
-
-            {/* Language Toggle */}
+            <div className="flex shrink-0 items-center gap-3 border-l border-border/50 pl-3">
               <LanguageSwitcher />
               <div>
-                <Image src="/typing.svg" alt="Logo" width={50} height={50} />
+                <Image src="/typing.svg" alt="" width={50} height={50} aria-hidden />
               </div>
             </div>
           </nav>
           {/* Mobile menu button */}
-          <div className="flex items-center space-x-2 md:hidden">
+          <div className="flex shrink-0 items-center space-x-2 md:hidden">
             <LanguageSwitcher />
             <Image src="/typing.svg" alt="Logo" width={40} height={40} />
             <button

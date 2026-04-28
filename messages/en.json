@@ -1,5 +1,6 @@
 {
   "Nav": {
+    "mainNav": "Main navigation",
     "practice": "Practice",
     "tests": "Tests",
     "blog": "Blog",
@@ -216,11 +217,14 @@
     "toastFailed": "Failed to copy link"
   },
   "CookieConsent": {
+    "regionLabel": "Cookie consent",
     "defaultHint": "We use cookies to operate this site and serve ads via Google AdSense.",
     "agreeContinue": "By continuing, you agree to our",
     "privacyPolicy": "Privacy Policy",
     "accept": "Accept",
-    "decline": "Decline"
+    "decline": "Decline",
+    "acceptAria": "Accept cookies and allow analytics and personalized ads",
+    "declineAria": "Decline optional cookies and analytics"
   },
   "Metadata": {
     "titleDefault": "Typingverified | Typing Speed Test & Lessons",
