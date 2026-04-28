@@ -48,6 +48,26 @@ export default async function BlogPostPage({ params }: Props) {
     notFound();
   }
 
+  // Renders inline markdown: **bold** and [text](url)
+  function renderInline(text: string, keyPrefix: string) {
+    const parts = text.split(/(\*\*.*?\*\*|\[.*?\]\(.*?\))/g);
+    return parts.map((part, i) => {
+      const boldMatch = part.match(/^\*\*(.*?)\*\*$/);
+      if (boldMatch) {
+        return <strong key={`${keyPrefix}-${i}`} className="font-semibold text-foreground">{boldMatch[1]}</strong>;
+      }
+      const linkMatch = part.match(/^\[(.*?)\]\((.*?)\)$/);
+      if (linkMatch) {
+        return (
+          <Link key={`${keyPrefix}-${i}`} href={linkMatch[2]} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">
+            {linkMatch[1]}
+          </Link>
+        );
+      }
+      return part;
+    });
+  }
+
   // Simple markdown-to-JSX-like layout for the content
   const contentSections = post.content.split("\n\n").filter(Boolean);
   const readingTime = getReadingTimeMinutes(post.content);
@@ -114,6 +134,13 @@ export default async function BlogPostPage({ params }: Props) {
 
         <div className="prose dark:prose-invert max-w-none prose-headings:text-foreground prose-p:text-muted-foreground prose-a:text-primary prose-strong:text-foreground">
           {contentSections.map((section, idx) => {
+            if (section.startsWith("### ")) {
+              return (
+                <h3 key={idx} className="mt-8 mb-4 text-2xl font-bold text-foreground">
+                  {section.replace("### ", "")}
+                </h3>
+              );
+            }
             if (section.startsWith("## ")) {
               return (
                 <h2 key={idx} className="mt-12 mb-6 text-3xl font-bold text-foreground">
@@ -130,7 +157,7 @@ export default async function BlogPostPage({ params }: Props) {
                             <thead className="bg-muted/50">
                                 <tr>
                                     {rows[0].split("|").filter(Boolean).map((h, i) => (
-                                        <th key={i} className="px-6 py-4 font-bold">{h.trim()}</th>
+                                        <th key={i} className="px-6 py-4 font-bold">{renderInline(h.trim(), `th-${idx}-${i}`)}</th>
                                     ))}
                                 </tr>
                             </thead>
@@ -138,7 +165,7 @@ export default async function BlogPostPage({ params }: Props) {
                                 {rows.slice(1).map((row, i) => (
                                     <tr key={i} className="transition-colors hover:bg-muted/30">
                                         {row.split("|").filter(Boolean).map((cell, j) => (
-                                            <td key={j} className="px-6 py-4 text-muted-foreground">{cell.trim()}</td>
+                                            <td key={j} className="px-6 py-4 text-muted-foreground">{renderInline(cell.trim(), `td-${idx}-${i}-${j}`)}</td>
                                         ))}
                                     </tr>
                                 ))}
@@ -154,7 +181,7 @@ export default async function BlogPostPage({ params }: Props) {
                     <ol key={idx} className="my-6 space-y-4 list-decimal list-inside text-muted-foreground">
                         {items.map((item, i) => (
                             <li key={i} className="pl-2">
-                                <span className="text-muted-foreground">{item.replace(/^\d\.\s+/, "")}</span>
+                                <span className="text-muted-foreground">{renderInline(item.replace(/^\d+\.\s+/, ""), `ol-${idx}-${i}`)}</span>
                             </li>
                         ))}
                     </ol>
@@ -167,24 +194,17 @@ export default async function BlogPostPage({ params }: Props) {
                     <ul key={idx} className="my-6 space-y-4 list-disc list-inside text-muted-foreground">
                         {items.map((item, i) => (
                             <li key={i} className="pl-2">
-                                <span className="text-muted-foreground">{item.replace(/^- \s+/, "")}</span>
+                                <span className="text-muted-foreground">{renderInline(item.replace(/^-\s+/, ""), `ul-${idx}-${i}`)}</span>
                             </li>
                         ))}
                     </ul>
                 );
             }
-            
-            // Handle links in text [Text](URL)
-            const parts = section.split(/(\[.*?\]\(.*?\))/g);
+
+            // Paragraph — handle **bold** and [link](url) inline
             return (
               <p key={idx} className="mb-6 text-lg leading-relaxed text-muted-foreground">
-                {parts.map((part, i) => {
-                    const match = part.match(/\[(.*?)\]\((.*?)\)/);
-                    if (match) {
-                        return <Link key={i} href={match[2]} target="_blank" rel="noopener noreferrer" className="text-primary hover:underline font-medium">{match[1]}</Link>;
-                    }
-                    return part;
-                })}
+                {renderInline(section, `p-${idx}`)}
               </p>
             );
           })}

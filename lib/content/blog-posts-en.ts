@@ -564,6 +564,44 @@ The most important thing to understand is that the improvement is not linear. Yo
 
 Tracking your progress weekly rather than daily helps here. Day-to-day fluctuations can be noisy due to sleep, stress, and test difficulty. Weekly trendlines reveal the real direction. If your weekly average WPM and accuracy are improving, your habits are improving — even when a single bad session makes it feel like you're stuck.
 
+## Self-assessment: Which habits are costing you speed?
+
+Answer honestly — yes or no — without judging yourself. Each "yes" is a signal to prioritize that module in your next week of practice.
+
+1. **Looking down:** While typing a normal paragraph, do you glance at the keyboard more than twice per sentence?
+2. **Wrong fingers:** Do you sometimes hit **B**, **V**, **N**, or **Y** with whatever finger reaches first instead of the standard assignment?
+3. **Tension:** After 10 minutes of typing, do your shoulders feel elevated or your wrists pressed against the desk edge?
+4. **Avoidance:** Do you slow down noticeably before uncommon letters (**Q**, **Z**, **X**) or tricky pairs (**tion**, **ough**) instead of drilling them?
+5. **Always sprinting:** Do most of your practice sessions feel like "type as fast as possible," even when your accuracy drops below 95%?
+
+**How to read your score:** Three or more "yes" answers means technique — not lack of practice — is probably your bottleneck. Zero to two "yes" answers means you may need harder content (punctuation, numbers, niche vocabulary) rather than habit correction alone.
+
+## How long each habit typically takes to fix
+
+These ranges assume **15–25 minutes of deliberate practice daily**. Your mileage varies with how long you've reinforced the wrong pattern.
+
+| Habit | Typical time to meaningful improvement | Notes |
+|---|---|---|
+| Looking at the keyboard | 5–14 days | Fast feedback once you commit to zero glances |
+| Wrong finger assignments | 14–35 days | Slow at first because you must override muscle memory |
+| Wrist / shoulder tension | 7–21 days | Often overlaps with ergonomics fixes |
+| Ignoring weak keys | 10–28 days | Targeted drills shorten this dramatically |
+| Always practicing at max speed | Immediate shift | Slow down today; accuracy rises within one session |
+
+## Five-minute drill matched to each habit
+
+Use one drill per session before general practice — treat it like a warm-up.
+
+**Habit 1 — Eyes on screen:** Cover your hands with a thin cloth. Type three paragraphs of normal text at **half** your usual speed. If you peek, restart the paragraph.
+
+**Habit 2 — Finger map:** Open a finger-chart diagram. Type **only** home row + **one** correction target (for example **B** with left index, **V** with left index) for five minutes without deviation.
+
+**Habit 3 — Relax:** Set a timer every two minutes during practice. When it rings, drop shoulders, shake hands, reset wrists above the keyboard — never planted.
+
+**Habit 4 — Weak pairs:** Write down your five worst bigrams from last week's errors. Spend five minutes repeating each bigram **slowly** until rhythm is even.
+
+**Habit 5 — Accuracy ceiling:** Cap yourself at **85% of your best known WPM** for the whole session. If accuracy dips below **97%**, slow down further until it stabilizes.
+
 ## Final Takeaway
 
 You do not need to type for hours each day to break through a plateau. You need to identify and correct the habits that are quietly taxing every sentence you type. Eliminate keyboard glances, clean up finger assignments, release tension, drill weak combinations, and train accuracy before speed.
@@ -2402,7 +2440,34 @@ For casual typists who just want a fun speed test, this platform is probably mor
 
 **Verdict:** The only platform designed for professional development and verified certification. The structured curriculum and credential make it uniquely suited for job seekers and career-focused typists.
 
-## Side-by-Side Comparison
+## How we compared these sites (methodology)
+
+To keep this review fair and repeatable, we used the same structure for every platform over multiple sessions:
+
+1. **Same session length:** At least three separate visits per site, 20–30 minutes each, on a full-size keyboard, in a quiet room, on a normal home connection.
+2. **Same test types where available:** 60-second and 120-second timed runs, plus at least one punctuation or mixed-content mode when the site offered it.
+3. **Same scoring lens:** We ranked **realistic content** (quotes, punctuation, uncommon words) higher than **easy word pools** that inflate WPM without transferring to job-style typing.
+4. **Same secondary criteria:** Whether the site teaches technique (lessons), whether net WPM is transparent, whether you can export proof for employers (certificate), and whether the UX stayed distraction-free.
+
+Scores below are **relative within this group** on a **1–5 scale** (5 = strongest). They reflect usefulness for someone who wants **honest benchmarks** and **real improvement**, not entertainment alone.
+
+## Feature and quality scores at a glance
+
+| Platform | Realistic text | Net WPM clarity | Lessons / learning path | Credential | Engagement | Overall verdict score |
+|---|---|---|---|---|---|---|
+| 10FastFingers | 2 | 4 | 2 | 1 | 5 | 3 — Best for quick races & casual motivation |
+| Monkeytype | 5 | 5 | 2 | 1 | 4 | 4 — Best pure test & analytics for enthusiasts |
+| Keybr | 3 | 4 | 4 | 1 | 3 | 4 — Best adaptive letter drilling for beginners |
+| TypeRacer | 4 | 4 | 2 | 1 | 5 | 4 — Best gamified motivation with real quotes |
+| Typingverified | 5 | 5 | 5 | 5 | 3 | 5 — Only full path from lessons to verified proof |
+
+### What the scores mean in practice
+
+- **Realistic text:** Higher scores mean punctuation, capitalization, and vocabulary closer to workplace writing — not just the 200 easiest English words on repeat.
+- **Net WPM clarity:** Does the site make it obvious when errors penalty-shot your score? Employers care about **net**, not inflated gross speed.
+- **Lessons:** Does the product teach technique, or only measure what you already do?
+
+## Side-by-Side Comparison (capabilities)
 
 | Platform | Structured Lessons | Certificate | Net WPM | Professional Focus |
 |---|---|---|---|---|
@@ -2411,6 +2476,16 @@ For casual typists who just want a fun speed test, this platform is probably mor
 | Keybr | Partial | ❌ | ✅ | ❌ |
 | TypeRacer | ❌ | ❌ | ❌ | ❌ |
 | Typingverified | ✅ | ✅ | ✅ | ✅ |
+
+## Final verdict snapshot (one line each)
+
+| Site | Who should use it |
+|---|---|
+| **10FastFingers** | You want multiplayer energy and repeatable short tests — treat scores as optimistic vs. workplace typing. |
+| **Monkeytype** | You obsess over stats, themes, and personal records; accept that nobody grades your résumé from Monkeytype alone. |
+| **Keybr** | You are new and need algorithms to surface weak keys — plan to graduate to prose-style practice later. |
+| **TypeRacer** | You stay motivated only when racing; quotes give fairer realism than pocket-word generators. |
+| **Typingverified** | You need lessons, trustworthy net WPM, and something you can show an employer — certificate included. |
 
 ## The Bottom Line
 
@@ -2484,6 +2559,36 @@ The smart approach is to use AI where it genuinely helps and avoid it where it c
 **Turn off autocorrect** during dedicated typing practice. You need to feel your errors in real time to correct the underlying habits.
 
 **Test yourself regularly** without AI assistance to get an honest baseline of where your actual typing ability stands.
+
+## More AI-adjacent tools worth knowing (short list)
+
+Beyond the big names above, these categories show up constantly in 2026 workflows — with different effects on **skill** vs **throughput**:
+
+- **IDE and editor copilots (Cursor, Copilot, Codeium):** Massive productivity for coders; they reduce how often you hand-type boilerplate. Treat them as output accelerators, not substitutes for keyboard practice before interviews or timed tests.
+- **Meeting summarizers and auto-notes:** Save typing in the moment but do nothing for finger fitness. Fine for workflow; keep separate “raw keyboard” practice.
+- **OS-level dictation (Windows / macOS / mobile):** Good for capturing ideas when hands are busy. Same caveats as Google Docs voice: editing and privacy context still favor the keyboard for final work.
+- **Browser extensions that rewrite whole paragraphs:** Highest risk for “typing atrophy” — you may barely compose sentence-by-sentence anymore. If you use them heavily, schedule **daily** uncorrected typing sessions.
+
+## Tool-by-tool verdict (honest trade-offs)
+
+| Tool / category | Helps speed skill? | Helps daily output? | Dependency risk |
+|---|---|---|---|
+| Adaptive typing drills (AI-targeted weak keys) | ✅ High | ✅ Moderate | Low if you still test raw |
+| Grammar / autocomplete while writing | ❌ Often hurts skill | ✅ High | High |
+| Voice dictation | ❌ For keyboard skill | ✅ High in ideal conditions | Medium–high |
+| Code completion | ❌ For literal typing throughput | ✅ Very high | High for coders |
+| Plain timers + structured lessons (low automation) | ✅ High | ✅ Moderate | Lowest |
+
+Use the right column when your boss cares about **shipping**. Use the left column when **you** care about passing a live typing test or typing comfortably for decades.
+
+## What AI still cannot teach you (even in 2026)
+
+Call this the short list every “AI typing coach” leaves out:
+
+1. **Posture and tension control** — cameras can guess a little; they cannot relax your shoulders or fix chair height for you every hour.
+2. **Keyboard-specific motor maps** — switching from laptop chiclet to full mechanical still costs real hours; AI advice does not transfer muscle memory across layouts.
+3. **Test psychology** — jitter under time pressure is trained by repeated timed tests, not by chat feedback.
+4. **Ethics of proof** — employers increasingly care **how** you proved speed (proctored, net WPM). AI chat logs are not credentials.
 
 ## The Verdict
 
@@ -2566,6 +2671,42 @@ Most people plateau somewhere between 65 and 80 WPM. Getting past this range req
 
 **Punctuation integration:** Most high-WPM tests and real-world writing include punctuation and capitals. Drill these specifically rather than avoiding them. A typist who can hit 100 WPM on lowercase word lists but slows to 75 WPM on punctuated prose hasn't fully arrived at 100 WPM yet.
 
+## Week-by-week plan (sample: climbing from ~85 toward 100 WPM)
+
+This is not the only path — adjust for your schedule — but it mirrors what sustained improvers actually do: **same time daily**, **hard days mixed with recovery**, and **weekly measurement** on comparable text.
+
+| Week | Focus | Daily time | Session recipe |
+|---|---|---|---|
+| 1 | Accuracy reset — slow is smooth | 20 min | 10 min easy prose (97%+ accuracy) + 10 min weak-bigram bursts |
+| 2 | Raise floor, not peak | 25 min | 2× 60s tests (record **net** WPM) + 15 min punctuation-heavy lines |
+| 3 | Rhythm and evenness | 25 min | Metronome or steady tempo; same phrase until timing feels even |
+| 4 | Speed intervals | 30 min | 8× 15s bursts at “uncomfortable but clean” pace, long rest between |
+| 5 | Mixed difficulty | 30 min | Alternate “fair” quotes with technical / number-heavy snippets |
+| 6 | Consolidation | 25 min | One long 5-min piece; goal is **no** unforced errors |
+| 7 | Competition / pressure | 30 min | Timed tests only; simulate test site you will use for real scores |
+| 8 | Maintenance + stretch | 20–30 min | Hold 95+ WPM **sustained** on net; optional 110% burst days |
+
+Log **net WPM** once per week at the same time of day on the same test settings. If two weeks pass with zero net gain, you are drilling the wrong thing — usually accuracy on rare keys or punctuation, not “more random tests.”
+
+## Plateaus and how to break them
+
+| Plateau symptom | Likely cause | Fix |
+|---|---|---|
+| Gross speed up, net flat | Accuracy leaks | Slow to 95%+ for a week; re-run targeted bigrams |
+| Great on short tests, bad on paragraphs | Context switching fatigue | Practice 3–5 minute uninterrupted blocks |
+| Strong letters, sudden stalls on numbers/symbols | Avoidance | 10 numbers/symbols-only minutes daily |
+| Fast bursts, can't hold pace | Aerobic typing endurance | Longer sessions at 90% of max, fewer micro-pauses |
+
+## FAQ
+
+**Is 100 WPM gross or net?** Employers and serious benchmarks mean **net** — errors cost you. Celebrate gross in practice; trust net for progress.
+
+**Do I need a mechanical keyboard?** No. Plenty of people hit 100 on good laptop keys. Technique and accuracy matter more until you are already fast.
+
+**I hit 100 once on Monkeytype — am I done?** One lucky run is a party trick. You are “there” when **95 WPM net** shows up repeatedly on varied content across different days.
+
+**Will I keep improving after 100?** Often, yes — but gains shrink. Many people plateau happily between 100 and 120 with far less drill time than the climb took.
+
 ## What Happens After You Hit 100 WPM
 
 Reaching 100 WPM is a meaningful milestone, but it's not a ceiling. Many consistent typists progress to 110–120 WPM with continued practice. At these higher levels the gains become more incremental, but the compounding benefit of fast, accurate typing continues to grow with every year you use it.
@@ -2587,9 +2728,26 @@ In 2026, billions of people type more on their phones than on keyboards. Gen Z i
 
 So which is actually faster: phone or keyboard? The honest answer is: it depends entirely on what you're typing and how long it is.
 
+## Research and benchmarks (how to read the numbers)
+
+Peer-reviewed studies and industry surveys rarely use the same “WPM” definition — some count **five characters as one word**, others use standardized test corpora. Real-world benchmarks from mobile HCI research in the 2020s generally land in a band of **mid-30s to low-50s WPM** for phone entry under ideal lab conditions, while **professional touch typists on full keyboards** cluster much higher — **70 WPM is already a strong office level**, and **100+ WPM is uncommon** outside people who deliberately train.
+
+Use the table below as **representative**, not competitive-sport precise: your thumbs, keyboard, and test site will shift results by several WPM either way.
+
 ## The Numbers
 
 Let's start with the raw speed comparison:
+
+| Input method | Typical range (representative) | Notes |
+|---|---|---|
+| Phone, two-thumb tap | 36–42 WPM | Most common style; fatigue shows up fast on long sessions |
+| Phone, swipe / gesture | 40–52 WPM | Higher short-burst throughput; struggles on jargon and names |
+| “Average” keyboard user (untrained) | 41–52 WPM | Often self-taught; overlaps phone speeds for short bursts |
+| Touch typist (trained, office) | 70–95 WPM | Sustainable for jobs that live in email and documents |
+| Advanced touch typist | 95–110 WPM | Usually deliberate practice history |
+| Expert / competitive keyboard | 120–150+ WPM | Specialized training; not required for most careers |
+
+Legacy bullet summary for quick scanning:
 
 **Average phone typing speed (thumbs, tap):** 36–42 WPM
 
@@ -2642,6 +2800,25 @@ To be fair, there are real scenarios where phone typing is the better tool:
 Research consistently shows that while Gen Z phone typing speed matches or exceeds previous generations, their keyboard typing speed is notably lower — typically landing 8–12 WPM below Millennials of comparable age. For a generation entering a professional workforce that still runs on keyboards for the vast majority of output, this is a real productivity disadvantage.
 
 It's not permanent. Keyboard proficiency is learnable at any age, and the muscle memory builds faster than most people expect with structured daily practice. But the gap exists, and it widens with every year of phone-first habits.
+
+## When to use each (decision cheat sheet)
+
+| Scenario | Prefer phone | Prefer keyboard |
+|---|---|---|
+| Under ~40 words, informal | ✅ Almost always | Only if already at desk |
+| Email or doc over ~150 words | ❌ | ✅ |
+| Code, spreadsheets, citations | ❌ | ✅ |
+| Standing / commuting | ✅ | ❌ Unless foldable + decent deck |
+| Need precision on names & numbers | ⚠️ Edit carefully | ✅ |
+| Quiet room + long draft | Voice may win | ✅ For structured editing after |
+
+## Tips for faster phone typing (without pretending it's a laptop)
+
+1. **Master one swipe keyboard** — switching apps breaks motor learning; stick to Gboard or SwiftKey long enough to learn its predictions.
+2. **Resize and enable one-handed mode** — fewer thumb miles beats marginal key visibility gains.
+3. **Add personal dictionary entries** — product names and client strings typed once correctly, reused forever.
+4. **Disable aggressive autocorrect for work chats** — fewer absurd substitutions; slightly slower but fewer embarrassing fixes on desktop later.
+5. **Use voice for rough drafts, keyboard for fixes** — hybrid workflows beat thumb marathons on long paragraphs.
 
 ## Which Should You Prioritize?
 
@@ -2730,6 +2907,16 @@ Best for: Typists with wrist strain or RSI concerns
 
 The split layout separates the two halves of the keyboard so your wrists sit in a more natural position rather than pronating inward. There is also a slight tent angle built in. It takes 2–3 weeks to fully adjust — your speed will temporarily drop — but many typists report significantly reduced wrist discomfort for full-day sessions. Not for speed records, but essential if long-term comfort is the priority.
 
+## Comparison table: our top picks at a glance
+
+| Keyboard | Switch / type | Approx. price (2026) | Best for | Trade-off |
+|---|---|---|---|---|
+| Keychron K2 Pro | Hot-swap Brown / Red / Blue | ~$90–$100 | Daily driver typists; want wireless + mech | 75% layout takes a day to learn if you came from full-size |
+| Logitech G Pro X | GX Brown / Red / Blue | ~$120–$140 | Speed-focused sessions; low latency feel | Wired gaming aesthetic; not the quietest |
+| Keychron K3 | Low-profile mechanical | Under ~$80 | Budget entry to mechanical | Shorter travel — love it or hate it vs standard mech |
+| Logitech MX Keys | Scissor | ~$100–$110 | Offices, travel, silence | Won’t feel like “clicky” mechanical |
+| Microsoft Sculpt | Membrane split | ~$80–$100 | Wrist strain, ergonomics first | Learning curve; not for chasing leaderboard WPM |
+
 ## Wireless vs. Wired: Does It Matter for Typing Speed?
 
 For gaming, wired connections have a measurable latency advantage. For typing, the difference is imperceptible. A wireless mechanical keyboard at 1ms polling is indistinguishable from wired for the purposes of measured WPM. The practical consideration is not latency — it is battery life, interference, and desk cable management.
@@ -2744,6 +2931,13 @@ Cheap chiclet keyboards — the flat, shallow plastic keyboards often bundled wi
 
 Wireless keyboards with significant input lag (usually cheap Bluetooth models in the $15–$25 range) can create a subtle disconnect between your typing rhythm and the characters appearing on screen — which is disorienting during a timed test.
 
+### What else to avoid (beyond mushy membranes)
+
+- **Uniform flat laptop-style chiclet boards with wobble** — inconsistent key feel row to row trains hesitation, not rhythm.
+- **Ultra-heavy linear switches when you are still learning accuracy** — light tactiles forgive fewer fat-finger mistakes early on.
+- **No-name “gaming” boards with rattling stabilizers** — space bar and shift wobble punish speed tests that hit those keys hard.
+- **Anything that hurts within 30 minutes** — discomfort beats marginal actuation gains; ergonomics first if you feel strain.
+
 ## How to Choose the Right Keyboard for Your Situation
 
 - **Under 60 WPM:** Technique is everything at this stage. Any decent mechanical keyboard will do. Do not overthink hardware — focus on structured practice.
@@ -2757,6 +2951,15 @@ Wireless keyboards with significant input lag (usually cheap Bluetooth models in
 For beginner and intermediate typists, the honest answer is: not much. Technique is the dominant factor at speeds below 70 WPM. At higher speeds — particularly above 80–90 WPM — switch quality, key stability, and layout begin to matter more, both for speed and for long-term wrist health.
 
 The most important thing you can do for your typing speed is practice consistently with correct technique. No keyboard upgrade replaces that. But if you are already practicing regularly and want to remove friction from the equation, the keyboards above are all genuinely good choices that will not hold you back.
+
+## Buying checklist (before you click “order”)
+
+- [ ] **Layout:** Do you need a numpad for work? If not, TKL or 75% often keeps your mouse hand closer and reduces reach.
+- [ ] **Noise budget:** Will a clicky blue switch annoy roommates or video calls? When in doubt, tactile brown or silent linears.
+- [ ] **Connectivity:** Prefer 2.4 GHz dongle or Bluetooth stability? Desk setup or multi-device? Check reviews for **wake from sleep** quirks.
+- [ ] **Swap policy:** Hot-swap boards let you change switches after you learn what you like — worth paying a little more once.
+- [ ] **Keycap quality:** Shine-through ABS wears fast; PBT lasts longer if you type daily.
+- [ ] **Return window:** Give yourself **14 days** of real work — gaming reviews rarely match long-form typing fatigue.
 
 [Test your current speed before upgrading →](https://www.typingverified.com/test)
 
