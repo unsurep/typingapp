@@ -189,6 +189,12 @@ export const blogPostTranslations: {
       metaDescription:
         "Looking for typing practice sentences that actually improve your speed? Here are 30 carefully chosen sentences targeting accuracy, speed, and common word patterns.",
     },
+    "beginners-guide-touch-typing-2026": {
+      title:
+        "Le guide complet du debutant pour la frappe tactile en 2026 (du debut au certificat)",
+      metaDescription:
+        "Tout ce qu'il faut savoir pour apprendre la frappe tactile en 2026, de la position de base jusqu'a l'obtention d'un certificat professionnel.",
+    },
   },
   es: {
     "average-typing-speed-2026": {
@@ -371,6 +377,12 @@ export const blogPostTranslations: {
       title: "30 Typing Practice Sentences That Will Improve Your WPM Fast",
       metaDescription:
         "Looking for typing practice sentences that actually improve your speed? Here are 30 carefully chosen sentences targeting accuracy, speed, and common word patterns.",
+    },
+    "beginners-guide-touch-typing-2026": {
+      title:
+        "La guia completa para principiantes de mecanografia al tacto en 2026 (de inicio a certificado)",
+      metaDescription:
+        "Todo lo que necesitas para aprender mecanografia al tacto en 2026, desde tu primera practica en la fila base hasta conseguir un certificado profesional.",
     },
   },
   de: {
@@ -555,6 +567,12 @@ export const blogPostTranslations: {
       metaDescription:
         "Looking for typing practice sentences that actually improve your speed? Here are 30 carefully chosen sentences targeting accuracy, speed, and common word patterns.",
     },
+    "beginners-guide-touch-typing-2026": {
+      title:
+        "Der komplette Einsteigerleitfaden fuer Touch-Typing in 2026 (vom Start bis zum Zertifikat)",
+      metaDescription:
+        "Alles, was du ueber Touch-Typing in 2026 wissen musst, von der ersten Uebung auf der Grundreihe bis zum professionellen Tippzertifikat.",
+    },
   },
   pt: {
     "average-typing-speed-2026": {
@@ -736,6 +754,12 @@ export const blogPostTranslations: {
       title: "30 Typing Practice Sentences That Will Improve Your WPM Fast",
       metaDescription:
         "Looking for typing practice sentences that actually improve your speed? Here are 30 carefully chosen sentences targeting accuracy, speed, and common word patterns.",
+    },
+    "beginners-guide-touch-typing-2026": {
+      title:
+        "O guia completo para iniciantes em digitacao ao toque em 2026 (do comeco ao certificado)",
+      metaDescription:
+        "Tudo o que voce precisa para aprender digitacao ao toque em 2026, da primeira pratica na linha base ate conquistar um certificado profissional.",
     },
   },
 };

@@ -2800,4 +2800,100 @@ Aucune de ces corrections ne nécessite plus de temps. Elle nécessite un meille
 
     `,
   }
+,
+  {
+    title:
+      "Le guide complet du debutant pour la frappe tactile en 2026 (du debut au certificat)",
+    slug: "beginners-guide-touch-typing-2026",
+    metaDescription:
+      "Tout ce qu'il faut savoir pour apprendre la frappe tactile en 2026, de la position de base jusqu'a l'obtention d'un certificat de frappe professionnel.",
+    publishDate: "Apr 28, 2026",
+    image: "/blog/t28.png",
+    content: `
+
+Si vous n'avez jamais appris a taper correctement, ce guide est pour vous. Si vous tapez depuis des annees avec de mauvaises habitudes, voici la remise a zero que vous reportiez.
+
+La frappe tactile est l'une des competences au meilleur retour sur investissement pour un professionnel. Il faut 2 a 3 mois pour bien l'apprendre, cela ne coute rien, et cela peut vous faire gagner des milliers d'heures au cours d'une carriere.
+
+Voici tout ce qu'il vous faut, de la premiere frappe jusqu'au certificat professionnel.
+
+## Qu'est-ce que la frappe tactile ?
+
+La frappe tactile est une methode de saisie qui utilise les dix doigts, chacun affecte a une zone specifique du clavier, sans regarder les touches. On tape par le toucher, par sensation, plutot que par la vue.
+
+L'objectif est de rendre la frappe inconsciente. Quand vos doigts connaissent chaque touche sans verification visuelle, votre cerveau se libere de la mecanique et se concentre sur l'idee que vous ecrivez.
+
+## Pourquoi c'est encore plus important en 2026
+
+Malgre la saisie vocale et les outils d'IA, le clavier reste le mode d'entree dominant dans le travail professionnel. Emails, documents, rapports, saisie de donnees, code, communication client : l'essentiel de la production passe encore par le clavier.
+
+Le professionnel moyen passe 6 a 8 heures par jour au clavier. A 40 MPM, une annee de travail represente un volume qui pourrait etre saisi bien plus vite a 70 MPM. Sur 40 ans de carriere, cela represente des annees recuperees.
+
+## Etape 1 : installer la position de base
+
+Placez la main gauche sur 'A', 'S', 'D', 'F'. Placez la main droite sur 'J', 'K', 'L', ';'. Les pouces reposent sur la barre espace.
+
+Sentez le petit relief sur les touches 'F' et 'J'. Ce sont des reperes tactiles qui permettent de retrouver la position de base sans regarder. A la fin de chaque mot, vos doigts reviennent a cette position.
+
+Ne sautez pas cette etape. La maitrise de la ligne de base est le socle de tout le reste.
+
+## Etape 2 : apprendre les zones completes du clavier
+
+Chaque doigt est responsable d'une colonne de touches :
+
+- Auriculaire gauche : 'Q', 'A', 'Z' et les touches a gauche
+- Annulaire gauche : 'W', 'S', 'X'
+- Majeur gauche : 'E', 'D', 'C'
+- Index gauche : 'R', 'F', 'V', 'T', 'G', 'B'
+- Index droit : 'Y', 'H', 'N', 'U', 'J', 'M'
+- Majeur droit : 'I', 'K', ','
+- Annulaire droit : 'O', 'L', '.'
+- Auriculaire droit : 'P', ';', '/' et les touches a droite
+- Les deux pouces : barre espace
+
+Passez au moins une semaine a memoriser ces affectations avant de travailler la vitesse.
+
+## Etape 3 : suivre des lecons structurees
+
+La pratique aleatoire aide un peu. Les lecons structurees aident beaucoup plus. Une bonne progression vous fait passer de la ligne de base a tout le clavier, en introduisant les touches progressivement avec des objectifs de precision.
+
+Typingverified propose un cursus en 10 lecons avec des seuils de precision a chaque tache. Chaque lecon est validee uniquement a partir de 90 % de precision.
+
+## Etape 4 : faire des tests chronometres reguliers
+
+A partir de la deuxieme semaine, faites au moins un test complet de 60 secondes par jour et suivez vos resultats. Voir votre vitesse monter de 25 a 35 puis 50 MPM est extremement motivant.
+
+Ces tests revelent aussi vos points faibles. Si votre vitesse chute sur les chiffres, travaillez davantage la rangee numerique. Si la ponctuation fait baisser la precision, pratiquez des textes riches en ponctuation.
+
+## Etape 5 : obtenir votre certificat
+
+Une fois les 10 lecons terminees et un test de 60 secondes reussi a 35 MPM avec 95 % de precision (connecte a votre compte), vous pouvez telecharger votre certificat Typingverified.
+
+Le certificat indique votre nom, votre vitesse, votre precision et la date d'emission. Il est professionnel, partageable et reconnu comme preuve tierce de competence.
+
+## Etape 6 : continuer a progresser
+
+Le certificat n'est pas la fin. C'est le debut d'une frappe de niveau professionnel. Avec une bonne base, la vitesse continue de monter dans l'usage quotidien.
+
+La plupart des certifies atteignent 60 a 75 MPM dans les six mois qui suivent.
+
+Pour aller plus loin, des exercices structures de vitesse vers 80, 90 et 100 MPM sont disponibles.
+
+## Ressources completes
+
+Tous les articles de ce blog soutiennent votre parcours du debutant au typiste certifie :
+
+- Quelle est une bonne vitesse de frappe ?
+- Combien de temps faut-il pour apprendre la frappe tactile ?
+- 40 MPM, est-ce bien ?
+- Le plan de 7 semaines de 40 a 70 MPM
+- Tableau des percentiles de vitesse de frappe
+- Comment obtenir un certificat de frappe
+- Comment ajouter sa vitesse de frappe sur son CV
+- Emplois a distance qui exigent la frappe
+
+[Commencez votre premiere lecon maintenant, c'est gratuit ->](https://www.typingverified.com/lessons)
+
+    `,
+  }
 ];
