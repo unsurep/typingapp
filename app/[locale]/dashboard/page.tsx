@@ -79,17 +79,25 @@ export default async function DashboardPage({
         .order('created_at', { ascending: false })
         .limit(5);
 
-    // 5. Fetch Existing Certificates
-    const { data: existingCerts } = await supabase
-        .from('certificates')
-        .select('certificate_code')
-        .eq('user_id', authUser.id);
+    // 5. Fetch Existing Certificates + profile badge status
+    const [{ data: existingCerts }, { data: profileBadge }] = await Promise.all([
+        supabase
+            .from('certificates')
+            .select('certificate_code')
+            .eq('user_id', authUser.id),
+        supabase
+            .from('profiles')
+            .select('has_badge')
+            .eq('id', authUser.id)
+            .single(),
+    ]);
 
     // 6. Fetch Eligibility
     const eligibility = await checkCertificateEligibility(authUser.id);
 
     const hasCertificate = existingCerts && existingCerts.length > 0 && eligibility.eligible;
     const certificateCode = hasCertificate ? existingCerts[0].certificate_code : null;
+    const hasBadge = profileBadge?.has_badge ?? false;
 
     return (
         <div className="flex flex-col flex-1 w-full max-w-5xl mx-auto py-12 px-4 sm:px-6 relative animate-in fade-in slide-in-from-bottom-8 duration-500">
@@ -191,35 +199,35 @@ export default async function DashboardPage({
                             <ul className="space-y-3">
                                 <li className="flex items-center justify-between p-3 rounded-xl bg-red-50 dark:bg-red-500/10 border border-red-100 dark:border-red-500/20">
                                     <div className="flex items-center gap-3">
-                                        <span className="text-xl" role="img" aria-label={t('ariaTierBeginner')}>🔴</span>
+                                        <span className="text-xl" role="img" aria-label={t('ariaTierBeginner')}>&#x1F534;</span>
                                         <span className="font-bold text-red-700 dark:text-red-500">{t('tierBeginner')}</span>
                                     </div>
                                     <span className="text-sm font-bold text-red-600 dark:text-red-400">{t('tierRangeBeginner')}</span>
                                 </li>
                                 <li className="flex items-center justify-between p-3 rounded-xl bg-yellow-50 dark:bg-yellow-500/10 border border-yellow-100 dark:border-yellow-500/20">
                                     <div className="flex items-center gap-3">
-                                        <span className="text-xl" role="img" aria-label={t('ariaTierAverage')}>🟡</span>
+                                        <span className="text-xl" role="img" aria-label={t('ariaTierAverage')}>&#x1F7E1;</span>
                                         <span className="font-bold text-yellow-700 dark:text-yellow-500">{t('tierAverage')}</span>
                                     </div>
                                     <span className="text-sm font-bold text-yellow-600 dark:text-yellow-400">{t('tierRangeAverage')}</span>
                                 </li>
                                 <li className="flex items-center justify-between p-3 rounded-xl bg-green-50 dark:bg-green-500/10 border border-green-100 dark:border-green-500/20">
                                     <div className="flex items-center gap-3">
-                                        <span className="text-xl" role="img" aria-label={t('ariaTierGood')}>🟢</span>
+                                        <span className="text-xl" role="img" aria-label={t('ariaTierGood')}>&#x1F7E2;</span>
                                         <span className="font-bold text-green-700 dark:text-green-500">{t('tierGood')}</span>
                                     </div>
                                     <span className="text-sm font-bold text-green-600 dark:text-green-400">{t('tierRangeGood')}</span>
                                 </li>
                                 <li className="flex items-center justify-between p-3 rounded-xl bg-blue-50 dark:bg-blue-500/10 border border-blue-100 dark:border-blue-500/20">
                                     <div className="flex items-center gap-3">
-                                        <span className="text-xl" role="img" aria-label={t('ariaTierPro')}>🔵</span>
+                                        <span className="text-xl" role="img" aria-label={t('ariaTierPro')}>&#x1F535;</span>
                                         <span className="font-bold text-blue-700 dark:text-blue-500">{t('tierPro')}</span>
                                     </div>
                                     <span className="text-sm font-bold text-blue-600 dark:text-blue-400">{t('tierRangePro')}</span>
                                 </li>
                                 <li className="flex items-center justify-between p-3 rounded-xl bg-purple-50 dark:bg-purple-500/10 border border-purple-100 dark:border-purple-500/20">
                                     <div className="flex items-center gap-3">
-                                        <span className="text-xl" role="img" aria-label={t('ariaTierElite')}>🟣</span>
+                                        <span className="text-xl" role="img" aria-label={t('ariaTierElite')}>&#x1F7E3;</span>
                                         <span className="font-bold text-purple-700 dark:text-purple-500">{t('tierElite')}</span>
                                     </div>
                                     <span className="text-sm font-bold text-purple-600 dark:text-purple-400">{t('tierRangeElite')}</span>
@@ -248,6 +256,29 @@ export default async function DashboardPage({
                                     >
                                         {t('viewCertificate')}
                                     </Link>
+                                    {/* Badge upsell */}
+                                    <div className="mt-3 flex flex-col items-center gap-1 w-full">
+                                        {hasBadge ? (
+                                            <Link
+                                                href="/badge"
+                                                className="w-full flex justify-center items-center gap-2 py-2.5 px-4 rounded-xl bg-brand text-black font-bold text-sm hover:bg-amber-400 transition-colors shadow-sm"
+                                            >
+                                                <span>&#127885;</span>
+                                                {t('certViewBadge')}
+                                            </Link>
+                                        ) : (
+                                            <>
+                                                <Link
+                                                    href="/badge-checkout"
+                                                    className="w-full flex justify-center items-center gap-2 py-2.5 px-4 rounded-xl bg-brand text-black font-bold text-sm hover:bg-amber-400 transition-colors shadow-sm"
+                                                >
+                                                    <span>&#127885;</span>
+                                                    {t('certGetBadge')}
+                                                </Link>
+                                                <p className="text-xs text-gray-400 dark:text-gray-500">{t('certGetBadgeNote')}</p>
+                                            </>
+                                        )}
+                                    </div>
                                 </>
                             ) : eligibility.eligible ? (
                                 <>

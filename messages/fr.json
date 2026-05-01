@@ -6,6 +6,7 @@
     "blog": "Blog",
     "lessons": "Leçons",
     "pricing": "Tarifs",
+    "products": "Produits",
     "certificate": "Certificat",
     "dashboard": "Tableau de bord",
     "logout": "Déconnexion",
@@ -21,6 +22,7 @@
     "terms": "Conditions",
     "contact": "Contact",
     "pricing": "Tarifs",
+    "products": "Produits",
     "blog": "Blog",
     "verify": "Vérifier un certificat",
     "rights": "Typingverified. Tous droits réservés."
@@ -414,7 +416,14 @@
     "premiumBullet5": "Support prioritaire.",
     "ctaOnPremium": "Vous êtes certifié",
     "ctaUpgrade": "Obtenir le certificat",
-    "ariaOnPremium": "Vous avez déjà l’offre Certified"
+    "ariaOnPremium": "Vous avez déjà l’offre Certified",
+    "badgeAddonSectionLabel": "Extension",
+    "badgeAddonTitle": "Badge LinkedIn et GitHub",
+    "badgeAddonDesc": "Un badge vérifié avec votre VPM, précision et niveau — prêt pour LinkedIn et votre README GitHub.",
+    "badgeAddonCta": "Voir le badge",
+    "badgeAddonNote": "Prévisualisez le rendu sur votre profil.",
+    "badgeAddonBuyCta": "Obtenir le badge — 2,99 $",
+    "badgeAddonLockedNote": "Disponible apres avoir obtenu votre certificat — passez au plan Certifie ci-dessus pour le debloquer."
   },
   "Auth": {
     "passwordLabel": "Mot de passe",
@@ -493,7 +502,10 @@
     "notEligibleTitle": "Pas encore éligible",
     "notEligibleDesc": "Continuez à vous entraîner ! Terminez 5 leçons et atteignez 35 VPM / 95 % de précision sur un test de 60 s.",
     "keepPracticing": "Continuer à pratiquer",
-    "signOut": "Se déconnecter"
+    "signOut": "Se déconnecter",
+    "certViewBadge": "Voir mon badge",
+    "certGetBadge": "Obtenir le badge — 2,99 $",
+    "certGetBadgeNote": "Achat unique. Affichez-le sur LinkedIn et GitHub."
   },
   "Certificate": {
     "metaTitle": "Certificat | Typingverified",
@@ -512,7 +524,10 @@
     "toastNotEligible": "Pas encore éligible. Continuez à vous entraîner pour remplir les conditions !",
     "toastLoginRequired": "Veuillez vous connecter pour vérifier l'éligibilité.",
     "toastError": "Une erreur s'est produite. Veuillez réessayer.",
-    "toastUnexpectedError": "Une erreur inattendue s'est produite."
+    "toastUnexpectedError": "Une erreur inattendue s'est produite.",
+    "viewBadge": "Voir mon badge",
+    "getBadgeCta": "Obtenir le badge — 2,99 $",
+    "getBadgeNote": "Achat unique. Affichez-le sur LinkedIn et GitHub."
   },
   "VerifyCertificate": {
     "metaTitle": "Vérifier le certificat | Typingverified",
@@ -546,5 +561,21 @@
     "placeholder": "ex. TTJ-A3X9K2",
     "button": "Vérifier",
     "emptyError": "Veuillez entrer un code de certificat."
+  },
+  "Products": {
+    "metaTitle": "Produits numériques | TypingVerified",
+    "metaDescription": "Extensions vérifiées pour la dactylographie, dont un badge LinkedIn et GitHub basé sur votre certificat.",
+    "heroTitleBefore": "Produits",
+    "heroTitleHighlight": "numériques",
+    "heroSubtitle": "Achats optionnels qui complètent votre certificat TypingVerified — à commencer par un badge à partager sur vos profils professionnels.",
+    "badgeCardTitle": "Badge LinkedIn et GitHub",
+    "badgeCardDesc": "Une image vérifiée affichant votre VPM, votre précision et votre niveau. Intégrez-la sur LinkedIn et dans le README GitHub.",
+    "badgePrice": "Necessite un certificat — obtenez le votre d'abord.",
+    "badgeReq": "Nécessite un certificat TypingVerified obtenu.",
+    "ctaLessons": "Obtenir votre certificat",
+    "moreSoon": "D'autres produits numériques arrivent.",
+    "badgePriceUnlocked": "2,99 $ — achat unique",
+    "ctaBuyBadge": "Obtenir le badge — 2,99 $",
+    "ctaViewBadge": "Voir mon badge"
   }
 }

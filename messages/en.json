@@ -6,6 +6,7 @@
     "blog": "Blog",
     "lessons": "Lessons",
     "pricing": "Pricing",
+    "products": "Products",
     "certificate": "Certificate",
     "dashboard": "Dashboard",
     "logout": "Logout",
@@ -21,6 +22,7 @@
     "terms": "Terms",
     "contact": "Contact",
     "pricing": "Pricing",
+    "products": "Products",
     "blog": "Blog",
     "verify": "Verify Certificate",
     "rights": "Typingverified. All rights reserved."
@@ -414,11 +416,18 @@
     "premiumBullet5": "Priority support.",
     "ctaOnPremium": "You're Certified",
     "ctaUpgrade": "Get Certified",
-    "ariaOnPremium": "You already have the Certified plan"
+    "ariaOnPremium": "You already have the Certified plan",
+    "badgeAddonSectionLabel": "Add-on",
+    "badgeAddonTitle": "LinkedIn & GitHub badge",
+    "badgeAddonDesc": "A verified badge with your WPM, accuracy, and grade — ready to embed on LinkedIn and in your GitHub README.",
+    "badgeAddonCta": "View badge",
+    "badgeAddonBuyCta": "Get Badge — $2.99",
+    "badgeAddonNote": "Preview how it looks on your profile.",
+    "badgeAddonLockedNote": "Available after you earn your certificate — upgrade to the Certified plan above to unlock it."
   },
   "Auth": {
     "passwordLabel": "Password",
-    "passwordPlaceholder": "••••••••",
+    "passwordPlaceholder": "........",
     "ariaShowPassword": "Show password",
     "ariaHidePassword": "Hide password"
   },
@@ -493,7 +502,10 @@
     "notEligibleTitle": "Not yet eligible",
     "notEligibleDesc": "Keep practicing! Complete 5 lessons and hit 35 WPM / 95% accuracy on a 60s test.",
     "keepPracticing": "Keep practicing",
-    "signOut": "Sign out"
+    "signOut": "Sign out",
+    "certViewBadge": "View My Badge",
+    "certGetBadge": "Get Badge — $2.99",
+    "certGetBadgeNote": "One-time purchase. Display on LinkedIn & GitHub."
   },
   "Certificate": {
     "metaTitle": "Certificate | Typingverified",
@@ -512,7 +524,10 @@
     "toastNotEligible": "Not eligible yet. Keep practicing to meet the requirements!",
     "toastLoginRequired": "Please log in to check eligibility.",
     "toastError": "An error occurred. Please try again.",
-    "toastUnexpectedError": "An unexpected error occurred."
+    "toastUnexpectedError": "An unexpected error occurred.",
+    "viewBadge": "View My Badge",
+    "getBadgeCta": "Get Badge — $2.99",
+    "getBadgeNote": "One-time purchase. Display on LinkedIn & GitHub."
   },
   "VerifyCertificate": {
     "metaTitle": "Verify Certificate | Typingverified",
@@ -546,5 +561,49 @@
     "placeholder": "e.g., TTJ-A3X9K2",
     "button": "Verify",
     "emptyError": "Please enter a certificate code."
+  },
+  "Products": {
+    "metaTitle": "Digital Products | TypingVerified",
+    "metaDescription": "Verified typing add-ons including a LinkedIn and GitHub badge built from your certificate.",
+    "heroTitleBefore": "Digital",
+    "heroTitleHighlight": "products",
+    "heroSubtitle": "Optional purchases that extend your TypingVerified certificate—starting with a shareable badge for your professional profiles.",
+    "badgeCardTitle": "LinkedIn & GitHub badge",
+    "badgeCardDesc": "A verified image that shows your WPM, accuracy, and grade. Embed it on LinkedIn and in your GitHub README.",
+    "badgePrice": "Requires a certificate — earn yours first.",
+    "badgePriceUnlocked": "$2.99 — one-time purchase",
+    "badgeReq": "Requires an earned TypingVerified certificate.",
+    "ctaBuyBadge": "Get Badge — $2.99",
+    "ctaViewBadge": "View My Badge",
+    "ctaLessons": "Earn your certificate",
+    "moreSoon": "More digital products are on the way."
+  },
+  "Badge": {
+    "metaTitle": "Your Badge | Typingverified",
+    "metaDescription": "Download your verified typing badge for LinkedIn and GitHub.",
+    "heroTitleBefore": "Your Typing",
+    "heroTitleHighlight": "Badge",
+    "heroSubtitle": "Download your verified badge and showcase your typing skills on LinkedIn and GitHub.",
+    "noCertTitle": "Certificate Required",
+    "noCertDesc": "You need to earn your typing certificate before you can access your badge.",
+    "getCertCta": "Go to Certificate",
+    "linkedinSectionTitle": "LinkedIn Badge",
+    "linkedinSectionDesc": "Download the PNG image and upload it when adding a new License & Certification to your LinkedIn profile.",
+    "downloadPng": "Download PNG",
+    "githubSectionTitle": "GitHub Badge",
+    "githubSectionDesc": "Copy the Markdown snippet below and paste it into your GitHub README to display your badge.",
+    "copyMarkdown": "Copy Markdown",
+    "copied": "Copied!",
+    "verifySectionTitle": "Certificate verification",
+    "verifySectionDesc": "This public page proves your badge matches an issued certificate. On LinkedIn, paste this URL in the credential link field. The GitHub Markdown snippet already wraps your badge image with this link.",
+    "verifyOpenLink": "Open verification page",
+    "verifyCopyUrl": "Copy verification link",
+    "verifyCopiedUrl": "Link copied!",
+    "badgePreviewLabel": "Badge Preview",
+    "unlockTitle": "Add a Professional Badge",
+    "unlockDesc": "Purchase your LinkedIn & GitHub badge to showcase your verified typing skills publicly -- for just $2.99.",
+    "unlockCta": "Get Your Badge -- $2.99",
+    "unlockNotePrefix": "One-time purchase.",
+    "unlockNoteSuffix": "Yours forever."
   }
 }

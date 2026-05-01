@@ -70,6 +70,12 @@ export default function Navbar({
                   {t("pricing")}
                 </Link>
                 <Link
+                  href="/products"
+                  className="shrink-0 text-sm font-medium text-foreground transition-colors hover:text-[#f4bf3c]"
+                >
+                  {t("products")}
+                </Link>
+                <Link
                   href="/blog"
                   className="shrink-0 text-sm font-medium text-foreground transition-colors hover:text-[#f4bf3c]"
                 >
@@ -216,6 +222,13 @@ export default function Navbar({
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {t("pricing")}
+              </Link>
+              <Link
+                href="/products"
+                className="block px-3 py-2 rounded-md text-base font-medium text-muted hover:text-foreground hover:bg-black/5 dark:hover:bg-white/5 transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {t("products")}
               </Link>
               <Link
                 href="/blog"

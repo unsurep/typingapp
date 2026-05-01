@@ -6,6 +6,7 @@
     "blog": "Blog",
     "lessons": "Lições",
     "pricing": "Preços",
+    "products": "Produtos",
     "certificate": "Certificado",
     "dashboard": "Painel",
     "logout": "Sair",
@@ -21,6 +22,7 @@
     "terms": "Termos",
     "contact": "Contato",
     "pricing": "Preços",
+    "products": "Produtos",
     "blog": "Blog",
     "verify": "Verificar certificado",
     "rights": "Typingverified. Todos os direitos reservados."
@@ -414,7 +416,14 @@
     "premiumBullet5": "Suporte prioritário.",
     "ctaOnPremium": "Está certificado",
     "ctaUpgrade": "Obter certificado",
-    "ariaOnPremium": "Já tem o plano Certified"
+    "ariaOnPremium": "Já tem o plano Certified",
+    "badgeAddonSectionLabel": "Extra",
+    "badgeAddonTitle": "Badge LinkedIn e GitHub",
+    "badgeAddonDesc": "Um badge verificado com PPM, precisão e nota — pronto para o LinkedIn e o README do GitHub.",
+    "badgeAddonCta": "Ver badge",
+    "badgeAddonNote": "Veja como fica no seu perfil.",
+    "badgeAddonBuyCta": "Obter badge — $2,99",
+    "badgeAddonLockedNote": "Disponivel apos obter seu certificado — faca upgrade para o plano Certificado acima para desbloquea-lo."
   },
   "Auth": {
     "passwordLabel": "Palavra-passe",
@@ -493,7 +502,10 @@
     "notEligibleTitle": "Ainda não elegível",
     "notEligibleDesc": "Continue a praticar! Conclua 5 lições e atinja 35 PPM / 95 % de precisão num teste de 60 s.",
     "keepPracticing": "Continuar a praticar",
-    "signOut": "Terminar sessão"
+    "signOut": "Terminar sessão",
+    "certViewBadge": "Ver meu badge",
+    "certGetBadge": "Obter badge — $2,99",
+    "certGetBadgeNote": "Compra única. Exiba no LinkedIn e GitHub."
   },
   "Certificate": {
     "metaTitle": "Certificado | Typingverified",
@@ -512,7 +524,10 @@
     "toastNotEligible": "Ainda não é elegível. Continue a praticar para cumprir os requisitos.",
     "toastLoginRequired": "Inicie sessão para verificar a elegibilidade.",
     "toastError": "Ocorreu um erro. Tente novamente.",
-    "toastUnexpectedError": "Ocorreu um erro inesperado."
+    "toastUnexpectedError": "Ocorreu um erro inesperado.",
+    "viewBadge": "Ver meu badge",
+    "getBadgeCta": "Obter badge — $2,99",
+    "getBadgeNote": "Compra única. Exiba no LinkedIn e GitHub."
   },
   "VerifyCertificate": {
     "metaTitle": "Verificar certificado | Typingverified",
@@ -546,5 +561,21 @@
     "placeholder": "ex. TTJ-A3X9K2",
     "button": "Verificar",
     "emptyError": "Por favor, insira um código de certificado."
+  },
+  "Products": {
+    "metaTitle": "Produtos digitais | TypingVerified",
+    "metaDescription": "Complementos verificados de digitação, incluindo um badge para LinkedIn e GitHub com base no seu certificado.",
+    "heroTitleBefore": "Produtos",
+    "heroTitleHighlight": "digitais",
+    "heroSubtitle": "Compras opcionais que prolongam o seu certificado TypingVerified — a começar por um badge partilhável para os seus perfis.",
+    "badgeCardTitle": "Badge LinkedIn e GitHub",
+    "badgeCardDesc": "Uma imagem verificada com PPM, precisão e nota. Incorpore no LinkedIn e no README do GitHub.",
+    "badgePrice": "Requer um certificado — ganhe o seu primeiro.",
+    "badgeReq": "Requer um certificado TypingVerified obtido.",
+    "ctaLessons": "Obter o certificado",
+    "moreSoon": "Mais produtos digitais em breve.",
+    "badgePriceUnlocked": "$2,99 — compra unica",
+    "ctaBuyBadge": "Obter badge — $2,99",
+    "ctaViewBadge": "Ver meu badge"
   }
 }

@@ -41,13 +41,24 @@ export default async function PricingPage({
     const { data: { user } } = await supabase.auth.getUser()
 
     let isPremiumDb = false
+    let hasCertificate = false
+    let hasBadge = false
     if (user) {
-        const { data: profile } = await supabase
-            .from('profiles')
-            .select('is_premium')
-            .eq('id', user.id)
-            .single()
+        const [{ data: profile }, { data: certificate }] = await Promise.all([
+            supabase
+                .from("profiles")
+                .select("is_premium, has_badge")
+                .eq("id", user.id)
+                .single(),
+            supabase
+                .from("certificates")
+                .select("certificate_code")
+                .eq("user_id", user.id)
+                .single(),
+        ])
         isPremiumDb = profile?.is_premium ?? false
+        hasBadge = profile?.has_badge ?? false
+        hasCertificate = !!certificate
     }
 
     const premiumCardIsActive = isPremiumDb
@@ -139,15 +150,15 @@ export default async function PricingPage({
                 <div
                     className={`relative bg-linear-to-b from-brand/10 via-white/80 to-white dark:from-brand/20 dark:via-zinc-900 dark:to-zinc-900 border rounded-2xl p-6 sm:p-8 shadow-lg flex flex-col ${
                         premiumCardIsActive
-                            ? 'border-emerald-500/70 dark:border-emerald-400/60 ring-2 ring-emerald-500/30 dark:ring-emerald-400/25 shadow-emerald-500/10'
-                            : 'border-brand/60 dark:border-brand/70 shadow-brand/20'
+                            ? "border-emerald-500/70 dark:border-emerald-400/60 ring-2 ring-emerald-500/30 dark:ring-emerald-400/25 shadow-emerald-500/10"
+                            : "border-brand/60 dark:border-brand/70 shadow-brand/20"
                     }`}
                 >
                     <div
                         className={`absolute -top-3 right-4 px-3 py-1 rounded-full text-xs font-semibold tracking-wide shadow-sm ${
                             premiumCardIsActive
-                                ? 'bg-emerald-600 dark:bg-emerald-500 text-white'
-                                : 'bg-brand text-black'
+                                ? "bg-emerald-600 dark:bg-emerald-500 text-white"
+                                : "bg-brand text-black"
                         }`}
                     >
                         {premiumCardIsActive ? t("badgeCurrent") : t("badgeBest")}
@@ -202,7 +213,7 @@ export default async function PricingPage({
                             aria-label={t("ariaOnPremium")}
                             className="mt-auto inline-flex items-center justify-center gap-2 px-6 py-2.5 rounded-full bg-zinc-200 dark:bg-zinc-700 text-zinc-600 dark:text-zinc-300 font-semibold text-sm cursor-not-allowed border border-zinc-300 dark:border-zinc-600"
                         >
-                            <span aria-hidden className="text-emerald-600 dark:text-emerald-400">✓</span>
+                            <span aria-hidden className="text-emerald-600 dark:text-emerald-400">&#10003;</span>
                             {t("ctaOnPremium")}
                         </button>
                     ) : (
@@ -214,6 +225,58 @@ export default async function PricingPage({
                             {t("ctaUpgrade")}
                         </Link>
                     )}
+                </div>
+            </div>
+
+            {/* Badge Add-on -- always visible */}
+            <div className="mt-10 max-w-2xl mx-auto w-full">
+                <div className="flex items-center gap-4 mb-4">
+                    <div className="h-px flex-1 bg-gray-200 dark:bg-zinc-800" />
+                    <span className="text-xs font-medium text-gray-400 dark:text-gray-500 uppercase tracking-widest shrink-0">{t("badgeAddonSectionLabel")}</span>
+                    <div className="h-px flex-1 bg-gray-200 dark:bg-zinc-800" />
+                </div>
+                <div className={`relative bg-white dark:bg-zinc-900 border rounded-2xl p-6 shadow-sm flex flex-col sm:flex-row sm:items-center gap-5 ${!hasCertificate ? "border-gray-200 dark:border-zinc-800 opacity-75" : "border-gray-200 dark:border-zinc-800"}`}>
+                    <div className="shrink-0 w-12 h-12 rounded-full bg-brand/10 dark:bg-brand/20 flex items-center justify-center text-xl">
+                        &#127885;
+                    </div>
+                    <div className="flex-1">
+                        <h3 className="text-base font-bold text-gray-900 dark:text-white mb-1">
+                            {t("badgeAddonTitle")}
+                        </h3>
+                        <p className="text-sm text-gray-500 dark:text-gray-400">
+                            {t("badgeAddonDesc")}
+                        </p>
+                        {!hasCertificate && (
+                            <p className="mt-2 text-xs text-amber-600 dark:text-amber-400 font-medium">
+                                {t("badgeAddonLockedNote")}
+                            </p>
+                        )}
+                    </div>
+                    <div className="shrink-0 flex flex-col items-start sm:items-end gap-1">
+                        {hasBadge ? (
+                            <Link
+                                href="/badge"
+                                className="inline-flex items-center justify-center px-5 py-2 rounded-full bg-brand text-black text-sm font-bold hover:bg-amber-400 transition-colors shadow-sm"
+                            >
+                                {t("badgeAddonCta")}
+                            </Link>
+                        ) : hasCertificate ? (
+                            <Link
+                                href="/badge-checkout"
+                                className="inline-flex items-center justify-center px-5 py-2 rounded-full bg-brand text-black text-sm font-bold hover:bg-amber-400 transition-colors shadow-sm"
+                            >
+                                {t("badgeAddonBuyCta")}
+                            </Link>
+                        ) : (
+                            <button
+                                disabled
+                                className="inline-flex items-center justify-center px-5 py-2 rounded-full bg-gray-200 dark:bg-zinc-700 text-gray-400 dark:text-gray-500 text-sm font-bold cursor-not-allowed"
+                            >
+                                {t("badgeAddonBuyCta")}
+                            </button>
+                        )}
+                        <span className="text-xs text-gray-400 dark:text-gray-500">{t("badgeAddonNote")}</span>
+                    </div>
                 </div>
             </div>
         </div>

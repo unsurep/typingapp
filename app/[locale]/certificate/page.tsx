@@ -1,7 +1,7 @@
 import CertificatePreview from "@/components/CertificatePreview";
 import CheckEligibilityButton from "@/components/CheckEligibilityButton";
 import { createClient } from "@/utils/supabase/server";
-import { redirect } from "@/i18n/navigation";
+import { redirect, Link } from "@/i18n/navigation";
 import type { AppLocale } from "@/i18n/routing";
 import { premiumFreeWindowActive } from "@/lib/server/premiumFree";
 import type { Metadata } from "next";
@@ -42,9 +42,11 @@ export default async function CertificatePage({
     // Only premium users can access the certificate
     const { data: profile } = await supabase
         .from('profiles')
-        .select('is_premium')
+        .select('is_premium, has_badge')
         .eq('id', authUser.id)
         .single();
+
+    const hasBadge = profile?.has_badge ?? false;
 
     if (!profile?.is_premium) {
         // Allow certificate access during the free-mium window.
@@ -152,7 +154,8 @@ export default async function CertificatePage({
             </div>
 
             {/* Action Buttons Below Certificate */}
-            <div className="mt-12 flex justify-center pb-20">
+            <div className="mt-12 flex flex-col items-center gap-4 pb-20">
+                {/* Download PDF (disabled — coming soon) */}
                 <button
                     disabled={!hasCertificate}
                     className="relative px-8 py-3.5 bg-gray-200 dark:bg-zinc-800 text-gray-400 dark:text-gray-500 rounded-full font-bold cursor-not-allowed flex items-center shadow-inner transition-colors overflow-hidden group/btn"
@@ -162,6 +165,34 @@ export default async function CertificatePage({
                     </svg>
                     <span className="relative z-10">{t("downloadPdf")}</span>
                 </button>
+
+                {/* Badge upsell — only show when user has a certificate */}
+                {hasCertificate && (
+                    <div className="flex flex-col items-center gap-2 mt-2">
+                        {hasBadge ? (
+                            <Link
+                                href="/badge"
+                                className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-brand text-black font-bold text-sm hover:bg-amber-400 transition-colors shadow-sm"
+                            >
+                                <span>&#127885;</span>
+                                {t("viewBadge")}
+                            </Link>
+                        ) : (
+                            <>
+                                <Link
+                                    href="/badge-checkout"
+                                    className="inline-flex items-center gap-2 px-7 py-3 rounded-full bg-brand text-black font-bold text-sm hover:bg-amber-400 transition-colors shadow-sm"
+                                >
+                                    <span>&#127885;</span>
+                                    {t("getBadgeCta")}
+                                </Link>
+                                <p className="text-xs text-gray-400 dark:text-gray-500">
+                                    {t("getBadgeNote")}
+                                </p>
+                            </>
+                        )}
+                    </div>
+                )}
             </div>
 
         </div>

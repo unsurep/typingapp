@@ -41,6 +41,12 @@ export default async function Footer({ locale }: { locale: AppLocale }) {
               {t("pricing")}
             </Link>
             <Link
+              href="/products"
+              className="text-sm text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
+            >
+              {t("products")}
+            </Link>
+            <Link
               href="/blog"
               className="text-sm text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
             >

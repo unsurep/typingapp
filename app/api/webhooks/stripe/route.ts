@@ -7,10 +7,10 @@ import {
   isStripeTestTriggerEnabled,
 } from '@/lib/server/premiumFree'
 
-// Use service role key here — this runs server-side only, never exposed to client
+// Use service role key here -- this runs server-side only, never exposed to client
 const supabase = createClient(
   process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.SUPABASE_SERVICE_ROLE_KEY! // add this to your .env.local
+  process.env.SUPABASE_SERVICE_ROLE_KEY!
 )
 
 export async function POST(req: NextRequest) {
@@ -33,9 +33,14 @@ export async function POST(req: NextRequest) {
   if (event.type === 'checkout.session.completed') {
     const session = event.data.object as Stripe.Checkout.Session
     const isTriggerTaggedSession = session.metadata?.stripe_test_trigger === '1'
+    const productType = session.metadata?.product_type ?? 'premium'
 
-    // Only process sessions from the active checkout flow
-    if (!isStripeCheckoutEnabled() && !(isStripeTestTriggerEnabled() && isTriggerTaggedSession)) {
+    // Badge purchases do not need the checkout feature flag -- they are always enabled
+    const isPremiumPurchase = productType === 'premium' || !productType
+    const isBadgePurchase = productType === 'badge'
+
+    // For premium purchases: only process when the checkout flag is on (or test trigger)
+    if (isPremiumPurchase && !isStripeCheckoutEnabled() && !(isStripeTestTriggerEnabled() && isTriggerTaggedSession)) {
       return NextResponse.json({ received: true })
     }
 
@@ -48,14 +53,28 @@ export async function POST(req: NextRequest) {
         return NextResponse.json({ error: 'Missing user_id' }, { status: 400 })
       }
 
-      const { error } = await supabase
-        .from('profiles')
-        .update({ is_premium: true })
-        .eq('id', userId)
+      if (isBadgePurchase) {
+        // Badge add-on purchase -- unlock the badge for this user
+        const { error } = await supabase
+          .from('profiles')
+          .update({ has_badge: true })
+          .eq('id', userId)
 
-      if (error) {
-        console.error('Supabase update error:', error)
-        return NextResponse.json({ error: 'DB update failed' }, { status: 500 })
+        if (error) {
+          console.error('Supabase badge update error:', error)
+          return NextResponse.json({ error: 'DB update failed' }, { status: 500 })
+        }
+      } else {
+        // Premium purchase -- unlock full course + certificate access
+        const { error } = await supabase
+          .from('profiles')
+          .update({ is_premium: true })
+          .eq('id', userId)
+
+        if (error) {
+          console.error('Supabase update error:', error)
+          return NextResponse.json({ error: 'DB update failed' }, { status: 500 })
+        }
       }
     }
   }
