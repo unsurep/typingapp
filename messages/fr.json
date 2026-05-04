@@ -14,7 +14,8 @@
     "signup": "S'inscrire",
     "brand": "TypingVerified",
     "openMenu": "Ouvrir le menu",
-    "verify": "Vérifier"
+    "verify": "Vérifier",
+    "game": "Jeu"
   },
   "Footer": {
     "about": "À propos",
@@ -25,7 +26,8 @@
     "products": "Produits",
     "blog": "Blog",
     "verify": "Vérifier un certificat",
-    "rights": "Typingverified. Tous droits réservés."
+    "rights": "Typingverified. Tous droits réservés.",
+    "game": "Jeu"
   },
   "Language": {
     "label": "Langue"
@@ -87,7 +89,10 @@
     "ctaTitle": "Commencez gratuitement aujourd'hui",
     "ctaBody": "Entraînez-vous gratuitement, pour toujours. Aucune carte bancaire, aucune période d'essai. Passez à une offre supérieure une seule fois pour débloquer toutes les leçons et obtenir votre certificat officiel.",
     "ctaTest": "Démarrer le test de dactylographie gratuit",
-    "ctaLessons": "Commencer les leçons"
+    "ctaLessons": "Commencer les leçons",
+    "gamePromoTitle": "Essayez le jeu de frappe",
+    "gamePromoDesc": "Détruisez les mots avant qu'ils atteignent le bas. Montez dans le classement !",
+    "gamePromoCta": "Jouer →"
   },
   "Blog": {
     "metaTitle": "Blog | Typingverified",
@@ -505,7 +510,10 @@
     "signOut": "Se déconnecter",
     "certViewBadge": "Voir mon badge",
     "certGetBadge": "Obtenir le badge — 2,99 $",
-    "certGetBadgeNote": "Achat unique. Affichez-le sur LinkedIn et GitHub."
+    "certGetBadgeNote": "Achat unique. Affichez-le sur LinkedIn et GitHub.",
+    "gamePromoTitle": "Essayez le jeu de frappe",
+    "gamePromoDesc": "Détruisez les mots avant qu'ils atteignent le bas. Montez dans le classement !",
+    "gamePromoCta": "Jouer →"
   },
   "Certificate": {
     "metaTitle": "Certificat | Typingverified",

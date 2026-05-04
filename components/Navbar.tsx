@@ -244,6 +244,13 @@ export default function Navbar({
               >
                 {t("verify")}
               </Link>
+              <Link
+                href="/game"
+                className="block px-3 py-2 rounded-md text-base font-medium text-muted hover:text-foreground hover:bg-black/5 dark:hover:bg-white/5 transition-colors"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                {t("game")} 🎮
+              </Link>
               {isLoggedIn && (
                 <Link
                   href="/certificate"

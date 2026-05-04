@@ -87,7 +87,7 @@ export default async function DashboardPage({
             .eq('user_id', authUser.id),
         supabase
             .from('profiles')
-            .select('has_badge')
+            .select('has_badge, is_premium')
             .eq('id', authUser.id)
             .single(),
     ]);
@@ -98,6 +98,7 @@ export default async function DashboardPage({
     const hasCertificate = existingCerts && existingCerts.length > 0 && eligibility.eligible;
     const certificateCode = hasCertificate ? existingCerts[0].certificate_code : null;
     const hasBadge = profileBadge?.has_badge ?? false;
+    const isPremiumUser = profileBadge?.is_premium ?? false;
 
     return (
         <div className="flex flex-col flex-1 w-full max-w-5xl mx-auto py-12 px-4 sm:px-6 relative animate-in fade-in slide-in-from-bottom-8 duration-500">
@@ -324,16 +325,65 @@ export default async function DashboardPage({
                 </div>
             </div>
 
-            <div className="flex justify-center border-t border-gray-200 dark:border-zinc-800 pt-8 mt-4">
-                <form action="/api/auth/logout" method="POST">
-                    <button
-                        type="submit"
-                        className="px-8 py-3 bg-white dark:bg-zinc-900 text-red-600 dark:text-red-400 rounded-full font-bold hover:bg-red-50 dark:hover:bg-red-950/30 border border-gray-200 dark:border-zinc-800 shadow-sm transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 hover:border-red-200 dark:hover:border-red-900"
-                    >
-                        {t('signOut')}
-                    </button>
-                </form>
+            {/* Worksheet Pack Download */}
+            <div className="mb-10 w-full">
+                <div className="flex items-center gap-4 mb-4">
+                    <div className="h-px flex-1 bg-gray-200 dark:bg-zinc-800" />
+                    <span className="text-xs font-medium text-gray-400 dark:text-gray-500 uppercase tracking-widest shrink-0">Downloads</span>
+                    <div className="h-px flex-1 bg-gray-200 dark:bg-zinc-800" />
+                </div>
+                {isPremiumUser ? (
+                    <div className="flex items-center gap-5 p-6 bg-white dark:bg-zinc-900 rounded-2xl border border-gray-200 dark:border-zinc-800 shadow-sm">
+                        <div className="shrink-0 w-12 h-12 rounded-full bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center text-xl">
+                            📄
+                        </div>
+                        <div className="flex-1">
+                            <h3 className="text-base font-bold text-gray-900 dark:text-white mb-1">Worksheet Pack</h3>
+                            <p className="text-sm text-gray-500 dark:text-gray-400">50 printable typing worksheets — included with your Premium plan.</p>
+                        </div>
+                        <a
+                            href="/api/downloads/worksheets"
+                            className="shrink-0 inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-blue-600 text-white text-sm font-bold hover:bg-blue-700 transition-colors shadow-sm"
+                        >
+                            ⬇ Download Worksheet Pack (50 sheets)
+                        </a>
+                    </div>
+                ) : (
+                    <div className="flex items-center gap-5 p-6 bg-gray-50 dark:bg-zinc-900/50 rounded-2xl border border-gray-200 dark:border-zinc-800">
+                        <div className="shrink-0 w-12 h-12 rounded-full bg-gray-100 dark:bg-zinc-800 flex items-center justify-center text-xl">
+                            📄
+                        </div>
+                        <div className="flex-1">
+                            <h3 className="text-base font-bold text-gray-500 dark:text-gray-400 mb-1">Worksheet Pack</h3>
+                            <p className="text-sm text-gray-400 dark:text-gray-500">Worksheet Pack included with Premium.</p>
+                        </div>
+                        <Link
+                            href="/pricing"
+                            className="shrink-0 inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-gray-200 dark:bg-zinc-800 text-gray-600 dark:text-gray-300 text-sm font-bold hover:bg-gray-300 dark:hover:bg-zinc-700 transition-colors"
+                        >
+                            Upgrade for $7.99 →
+                        </Link>
+                    </div>
+                )}
             </div>
+
+            {/* Typing Game promo */}
+            <div className="mb-10 flex flex-col sm:flex-row items-center justify-between gap-5 p-6 rounded-2xl border border-yellow-200 dark:border-yellow-400/20 bg-yellow-50 dark:bg-yellow-400/5">
+                <div className="flex items-center gap-4">
+                    <span className="text-4xl" aria-hidden>🎮</span>
+                    <div>
+                        <h3 className="text-base font-bold text-gray-900 dark:text-white mb-0.5">{t('gamePromoTitle')}</h3>
+                        <p className="text-sm text-gray-500 dark:text-gray-400">{t('gamePromoDesc')}</p>
+                    </div>
+                </div>
+                <Link
+                    href="/game"
+                    className="shrink-0 inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-yellow-400 text-black font-bold text-sm hover:bg-yellow-300 transition-colors shadow-sm"
+                >
+                    {t('gamePromoCta')}
+                </Link>
+            </div>
+
         </div>
     );
 }

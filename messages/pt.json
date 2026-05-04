@@ -14,7 +14,8 @@
     "signup": "Registar",
     "brand": "TypingVerified",
     "openMenu": "Abrir menu principal",
-    "verify": "Verificar"
+    "verify": "Verificar",
+    "game": "Jogo"
   },
   "Footer": {
     "about": "Sobre",
@@ -25,7 +26,8 @@
     "products": "Produtos",
     "blog": "Blog",
     "verify": "Verificar certificado",
-    "rights": "Typingverified. Todos os direitos reservados."
+    "rights": "Typingverified. Todos os direitos reservados.",
+    "game": "Jogo"
   },
   "Language": {
     "label": "Idioma"
@@ -87,7 +89,10 @@
     "ctaTitle": "Comece grátis hoje",
     "ctaBody": "Pratique digitação gratuitamente, para sempre. Sem cartão de crédito, sem período de teste. Faça upgrade uma única vez para desbloquear todas as lições e obter o seu certificado oficial.",
     "ctaTest": "Começar o teste gratuito de digitação",
-    "ctaLessons": "Começar as lições"
+    "ctaLessons": "Começar as lições",
+    "gamePromoTitle": "Experimente o jogo de digitação",
+    "gamePromoDesc": "Destrua palavras antes que cheguem ao fundo. Suba no ranking!",
+    "gamePromoCta": "Jogar →"
   },
   "Blog": {
     "metaTitle": "Blog | Typingverified",
@@ -505,7 +510,10 @@
     "signOut": "Terminar sessão",
     "certViewBadge": "Ver meu badge",
     "certGetBadge": "Obter badge — $2,99",
-    "certGetBadgeNote": "Compra única. Exiba no LinkedIn e GitHub."
+    "certGetBadgeNote": "Compra única. Exiba no LinkedIn e GitHub.",
+    "gamePromoTitle": "Experimente o jogo de digitação",
+    "gamePromoDesc": "Destrua palavras antes que cheguem ao fundo. Suba no ranking!",
+    "gamePromoCta": "Jogar →"
   },
   "Certificate": {
     "metaTitle": "Certificado | Typingverified",

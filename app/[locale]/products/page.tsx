@@ -112,6 +112,32 @@ export default async function ProductsPage({
             </div>
           </article>
         </li>
+        <li>
+          <article className="relative bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 rounded-2xl p-6 sm:p-8 shadow-sm flex flex-col sm:flex-row sm:items-stretch gap-6">
+            <div className="shrink-0 w-14 h-14 rounded-full bg-orange-50 dark:bg-orange-900/20 flex items-center justify-center text-2xl">
+              🛍️
+            </div>
+            <div className="flex-1 min-w-0 flex flex-col">
+              <h2 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-2">
+                Typing Worksheet Pack — 50 Sheets
+              </h2>
+              <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
+                50 printable typing worksheets to practise at your own pace — also available as a standalone purchase on Etsy.
+              </p>
+              <p className="text-sm font-medium text-gray-800 dark:text-gray-200 mb-1">$4.99 on Etsy · included free with Premium</p>
+              <div className="mt-auto flex flex-col sm:flex-row flex-wrap gap-3">
+                <a
+                  href="https://etsy.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-orange-500 text-white text-sm font-bold hover:bg-orange-600 transition-colors shadow-sm"
+                >
+                  Get the Worksheet Pack — $4.99 on Etsy →
+                </a>
+              </div>
+            </div>
+          </article>
+        </li>
       </ul>
 
       <p className="mt-10 text-center text-sm text-gray-500 dark:text-gray-400">{t("moreSoon")}</p>

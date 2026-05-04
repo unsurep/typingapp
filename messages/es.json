@@ -14,7 +14,8 @@
     "signup": "Registrarse",
     "brand": "TypingVerified",
     "openMenu": "Abrir menú principal",
-    "verify": "Verificar"
+    "verify": "Verificar",
+    "game": "Juego"
   },
   "Footer": {
     "about": "Acerca de",
@@ -25,7 +26,8 @@
     "products": "Productos",
     "blog": "Blog",
     "verify": "Verificar certificado",
-    "rights": "Typingverified. Todos los derechos reservados."
+    "rights": "Typingverified. Todos los derechos reservados.",
+    "game": "Juego"
   },
   "Language": {
     "label": "Idioma"
@@ -87,7 +89,10 @@
     "ctaTitle": "Empieza gratis hoy",
     "ctaBody": "Practica mecanografía gratis, para siempre. Sin tarjeta de crédito, sin periodo de prueba. Mejora tu plan una sola vez para desbloquear todas las lecciones y obtener tu certificado oficial.",
     "ctaTest": "Comenzar el test de mecanografía gratuito",
-    "ctaLessons": "Empezar lecciones"
+    "ctaLessons": "Empezar lecciones",
+    "gamePromoTitle": "Prueba el juego de escritura",
+    "gamePromoDesc": "Destruye las palabras antes de que lleguen al fondo. ¡Sube en la clasificación!",
+    "gamePromoCta": "Jugar →"
   },
   "Blog": {
     "metaTitle": "Blog | Typingverified",
@@ -505,7 +510,10 @@
     "signOut": "Cerrar sesión",
     "certViewBadge": "Ver mi insignia",
     "certGetBadge": "Obtener insignia — $2.99",
-    "certGetBadgeNote": "Compra única. Muéstrala en LinkedIn y GitHub."
+    "certGetBadgeNote": "Compra única. Muéstrala en LinkedIn y GitHub.",
+    "gamePromoTitle": "Prueba el juego de escritura",
+    "gamePromoDesc": "Destruye las palabras antes de que lleguen al fondo. ¡Sube en la clasificación!",
+    "gamePromoCta": "Jugar →"
   },
   "Certificate": {
     "metaTitle": "Certificado | Typingverified",

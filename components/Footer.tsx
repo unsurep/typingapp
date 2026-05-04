@@ -58,6 +58,12 @@ export default async function Footer({ locale }: { locale: AppLocale }) {
             >
               {t("verify")}
             </Link>
+            <Link
+              href="/game"
+              className="text-sm text-gray-500 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
+            >
+              {t("game")}
+            </Link>
           </nav>
           <p className="text-sm text-gray-500 dark:text-gray-400 text-center">
             &copy;{" "}

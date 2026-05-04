@@ -14,7 +14,8 @@
     "signup": "Sign up",
     "brand": "TypingVerified",
     "openMenu": "Open main menu",
-    "verify": "Verify"
+    "verify": "Verify",
+    "game": "Game"
   },
   "Footer": {
     "about": "About",
@@ -25,7 +26,8 @@
     "products": "Products",
     "blog": "Blog",
     "verify": "Verify Certificate",
-    "rights": "Typingverified. All rights reserved."
+    "rights": "Typingverified. All rights reserved.",
+    "game": "Game"
   },
   "Language": {
     "label": "Language"
@@ -87,7 +89,10 @@
     "ctaTitle": "Start Free Today",
     "ctaBody": "Practice typing for free, forever. No credit card, no trial period. Upgrade once to unlock all lessons and earn your official certificate.",
     "ctaTest": "Start Your Free Typing Test",
-    "ctaLessons": "Begin Lessons"
+    "ctaLessons": "Begin Lessons",
+    "gamePromoTitle": "Try the Typing Game",
+    "gamePromoDesc": "Destroy falling words before they hit the bottom. Climb the leaderboard!",
+    "gamePromoCta": "Play Now →"
   },
   "Blog": {
     "metaTitle": "Blog | Typingverified",
@@ -505,7 +510,10 @@
     "signOut": "Sign out",
     "certViewBadge": "View My Badge",
     "certGetBadge": "Get Badge — $2.99",
-    "certGetBadgeNote": "One-time purchase. Display on LinkedIn & GitHub."
+    "certGetBadgeNote": "One-time purchase. Display on LinkedIn & GitHub.",
+    "gamePromoTitle": "Try the Typing Game",
+    "gamePromoDesc": "Destroy falling words before they hit the bottom. Climb the leaderboard!",
+    "gamePromoCta": "Play Now →"
   },
   "Certificate": {
     "metaTitle": "Certificate | Typingverified",

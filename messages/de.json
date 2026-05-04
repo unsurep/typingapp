@@ -14,7 +14,8 @@
     "signup": "Registrieren",
     "brand": "TypingVerified",
     "openMenu": "Hauptmenü öffnen",
-    "verify": "Prüfen"
+    "verify": "Prüfen",
+    "game": "Spiel"
   },
   "Footer": {
     "about": "Über uns",
@@ -25,7 +26,8 @@
     "products": "Produkte",
     "blog": "Blog",
     "verify": "Zertifikat prüfen",
-    "rights": "Typingverified. Alle Rechte vorbehalten."
+    "rights": "Typingverified. Alle Rechte vorbehalten.",
+    "game": "Spiel"
   },
   "Language": {
     "label": "Sprache"
@@ -87,7 +89,10 @@
     "ctaTitle": "Starte kostenlos heute",
     "ctaBody": "Übe kostenlos, für immer. Keine Kreditkarte, keine Testphase. Upgrade einmalig, um alle Lektionen freizuschalten und dein offizielles Zertifikat zu erhalten.",
     "ctaTest": "Kostenlosen Tipp-Test starten",
-    "ctaLessons": "Lektionen starten"
+    "ctaLessons": "Lektionen starten",
+    "gamePromoTitle": "Tippspiel ausprobieren",
+    "gamePromoDesc": "Zerstöre fallende Wörter, bevor sie den Boden erreichen. Erklimme die Rangliste!",
+    "gamePromoCta": "Spielen →"
   },
   "Blog": {
     "metaTitle": "Blog | Typingverified",
@@ -505,7 +510,10 @@
     "signOut": "Abmelden",
     "certViewBadge": "Mein Badge ansehen",
     "certGetBadge": "Badge erhalten — 2,99 $",
-    "certGetBadgeNote": "Einmaliger Kauf. Auf LinkedIn und GitHub anzeigen."
+    "certGetBadgeNote": "Einmaliger Kauf. Auf LinkedIn und GitHub anzeigen.",
+    "gamePromoTitle": "Tippspiel ausprobieren",
+    "gamePromoDesc": "Zerstöre fallende Wörter, bevor sie den Boden erreichen. Erklimme die Rangliste!",
+    "gamePromoCta": "Spielen →"
   },
   "Certificate": {
     "metaTitle": "Zertifikat | Typingverified",
