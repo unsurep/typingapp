@@ -67,11 +67,7 @@ export default function LessonPage({ params }: { params: Promise<{ locale: strin
                 const authRes = await fetch('/api/auth/me');
                 const authData = await authRes.json();
 
-                // Lessons 3+ require premium
-                if (parsedId > 2 && !authData.isPremium) {
-                    router.replace("/checkout");
-                    return;
-                }
+                // All lessons are open during AdSense review period
 
                 // Guest: load progress from localStorage
                 if (!authData.authenticated) {

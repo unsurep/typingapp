@@ -17,7 +17,7 @@ export async function generateMetadata({
     return {
         title: t("metaTitle"),
         description: t("metaDescription"),
-        robots: { index: false, follow: false },
+        robots: { index: true, follow: true },
     };
 }
 
@@ -48,12 +48,7 @@ export default async function CertificatePage({
 
     const hasBadge = profile?.has_badge ?? false;
 
-    if (!profile?.is_premium) {
-        // Allow certificate access during the free-mium window.
-        if (!premiumFreeWindowActive()) {
-            redirect({ href: "/checkout", locale });
-        }
-    }
+    // Certificate access is open to all logged-in users during open access period.
 
     // Attempt to load an existing certificate for the current user
     const { data: certificate, error: certError } = await supabase

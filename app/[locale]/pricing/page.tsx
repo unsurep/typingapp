@@ -175,10 +175,10 @@ export default async function PricingPage({
 
                     <div className="mt-4 mb-6">
                         <span className="text-3xl sm:text-4xl font-extrabold text-gray-900 dark:text-white">
-                            {t("pricePremium")}
+                            Free
                         </span>
-                        <span className="ml-1 text-sm text-gray-500 dark:text-gray-400">
-                            {t("priceSuffixOnetime")}
+                        <span className="ml-1 text-sm text-emerald-600 dark:text-emerald-400 font-medium">
+                            Open access — no payment needed
                         </span>
                     </div>
 
@@ -218,11 +218,10 @@ export default async function PricingPage({
                         </button>
                     ) : (
                         <Link
-                            href={premiumCheckoutHref}
+                            href="/lessons"
                             className="mt-auto inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-brand text-black font-semibold text-sm shadow-sm hover:bg-amber-400 transition-colors"
-                            aria-label={t("ctaUpgrade")}
                         >
-                            {t("ctaUpgrade")}
+                            Start for free →
                         </Link>
                     )}
                 </div>

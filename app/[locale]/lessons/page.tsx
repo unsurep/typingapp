@@ -51,7 +51,7 @@ export default async function LessonsPage({
             ...lesson,
             progress: progressPercentage,
             totalTasks: lesson.tasks.length,
-            locked: !isPremium && lesson.id > 2,
+            locked: false, // Open access — all lessons free during AdSense review period
         };
     });
 
