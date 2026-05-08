@@ -127,7 +127,7 @@ export default async function ProductsPage({
               <p className="text-sm font-medium text-gray-800 dark:text-gray-200 mb-1">$4.99 on Etsy · included free with Premium</p>
               <div className="mt-auto flex flex-col sm:flex-row flex-wrap gap-3">
                 <a
-                  href="https://etsy.com"
+                  href="https://www.etsy.com/shop/MasebasDigitalNest"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-orange-500 text-white text-sm font-bold hover:bg-orange-600 transition-colors shadow-sm"

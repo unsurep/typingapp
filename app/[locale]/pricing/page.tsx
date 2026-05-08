@@ -295,7 +295,7 @@ export default async function PricingPage({
                         <p className="text-sm text-gray-500 dark:text-gray-400">Prefer to buy a standalone copy? Grab the printable worksheet pack directly on Etsy.</p>
                     </div>
                     <a
-                        href="https://etsy.com"
+                        href="https://www.etsy.com/shop/MasebasDigitalNest"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="shrink-0 inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-orange-500 text-white text-sm font-bold hover:bg-orange-600 transition-colors shadow-sm"
