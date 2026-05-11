@@ -73,6 +73,16 @@ export async function generateMetadata({
     other: {
       "google-adsense-account": "ca-pub-3325996870387748",
     },
+        alternates: {
+                canonical: `https://www.typingverified.com${locale === 'en' ? '' : `/${locale}`}`,
+                languages: {
+                          en: 'https://www.typingverified.com',
+                          fr: 'https://www.typingverified.com/fr',
+                          es: 'https://www.typingverified.com/es',
+                          de: 'https://www.typingverified.com/de',
+                          pt: 'https://www.typingverified.com/pt',
+                },
+        },
   };
 }
 
