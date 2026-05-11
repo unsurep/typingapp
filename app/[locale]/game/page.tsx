@@ -1,49 +1,49 @@
 import type { Metadata } from "next";
-import { getTranslations } from "next-intl/server";
 import type { AppLocale } from "@/i18n/routing";
 import TypingGame from "@/components/TypingGame";
 
 export async function generateMetadata({
-  params,
+    params,
 }: {
-  params: Promise<{ locale: AppLocale }>;
+    params: Promise<{ locale: AppLocale }>;
 }): Promise<Metadata> {
-  const { locale } = await params;
-  // Fallback strings in case the namespace hasn't been added to messages yet
-  let title = "Falling Words — Typing Game";
-  let description =
-    "Test your typing speed in this fast-paced falling-words game. Type words before they hit the bottom, climb the leaderboard!";
-  try {
-    const t = await getTranslations({ locale, namespace: "Game" });
-    title = t("metaTitle");
-    description = t("metaDescription");
-  } catch { /* namespace not yet translated — use defaults above */ }
+    const { locale } = await params;
 
-  return { title, description };
+  const titles: Record<string, string> = {
+        en: "Typing Game — Falling Words Challenge | Typingverified",
+        fr: "Jeu de Frappe — Mots Tombants | Typingverified",
+        es: "Juego de Escritura — Palabras Cayendo | Typingverified",
+        de: "Tipp-Spiel — Fallende Wörter | Typingverified",
+        pt: "Jogo de Digitação — Palavras Caindo | Typingverified",
+  };
+
+  const descriptions: Record<string, string> = {
+        en: "Play the Typingverified typing game. Destroy falling words before they hit the bottom. Speed increases every 10 words — climb the leaderboard!",
+        fr: "Jouez au jeu de frappe Typingverified. Détruisez les mots tombants avant qu'ils n'atteignent le bas. La vitesse augmente toutes les 10 mots !",
+        es: "Juega al juego de escritura de Typingverified. Destruye palabras cayentes antes de que lleguen abajo. ¡La velocidad aumenta cada 10 palabras!",
+        de: "Spiele das Typingverified-Tippspiel. Zerstöre fallende Wörter bevor sie den Boden erreichen. Die Geschwindigkeit steigt alle 10 Wörter!",
+        pt: "Jogue o jogo de digitação Typingverified. Destrua palavras caindo antes de chegarem ao fundo. A velocidade aumenta a cada 10 palavras!",
+  };
+
+  const basePath = locale === "en" ? "" : `/${locale}`;
+
+  return {
+        title: titles[locale] ?? titles.en,
+        description: descriptions[locale] ?? descriptions.en,
+        alternates: {
+                canonical: `https://www.typingverified.com${basePath}/game`,
+                languages: {
+                          en: "https://www.typingverified.com/game",
+                          fr: "https://www.typingverified.com/fr/game",
+                          es: "https://www.typingverified.com/es/game",
+                          de: "https://www.typingverified.com/de/game",
+                          pt: "https://www.typingverified.com/pt/game",
+                },
+        },
+        robots: { index: true, follow: true },
+  };
 }
 
-export default async function GamePage({
-  params,
-}: {
-  params: Promise<{ locale: AppLocale }>;
-}) {
-  // locale resolved but not strictly needed here — game is client-side
-  await params;
-
-  return (
-    <div className="flex flex-col flex-1 w-full max-w-4xl mx-auto py-12 px-4 sm:px-6 relative">
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[400px] bg-brand/5 dark:bg-brand/10 blur-[120px] rounded-full pointer-events-none -z-10" />
-
-      <div className="mb-8 text-center">
-        <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
-          Typing <span className="text-yellow-400">Game</span>
-        </h1>
-        <p className="mt-2 text-sm text-gray-500 dark:text-gray-400">
-          Best played on a keyboard · words get faster every 10 you destroy
-        </p>
-      </div>
-
-      <TypingGame />
-    </div>
-  );
+export default function GamePage() {
+    return <TypingGame />;
 }
