@@ -1,7 +1,7 @@
 import CertificatePreview from "@/components/CertificatePreview";
 import CheckEligibilityButton from "@/components/CheckEligibilityButton";
 import { createClient } from "@/utils/supabase/server";
-import { redirect, Link } from "@/i18n/navigation";
+import { Link } from "@/i18n/navigation";
 import type { AppLocale } from "@/i18n/routing";
 import { premiumFreeWindowActive } from "@/lib/server/premiumFree";
 import type { Metadata } from "next";
@@ -32,10 +32,37 @@ export default async function CertificatePage({
     const supabase = await createClient();
     const { data: { user } } = await supabase.auth.getUser();
 
-    // Protect route: only authenticated users can access certificate page
-    if (!user) {
-        redirect({ href: "/login", locale });
-    }
+        // Public landing page for unauthenticated visitors (including Google crawler)
+            if (!user) {
+                            return (
+                                                <div className="flex flex-col flex-1 w-full max-w-4xl mx-auto py-16 px-4 sm:px-6 lg:px-8 text-center">
+                                                                    <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[500px] bg-brand/5 dark:bg-brand/10 blur-[120px] rounded-full pointer-events-none -z-10" />
+                                                                    <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white mb-4">
+                                                                                            Typing Speed Certificate
+                                                                    </h1>h1>
+                                                                    <p className="text-lg text-gray-600 dark:text-gray-400 mb-4 max-w-2xl mx-auto">
+                                                                                            Earn a verifiable Typingverified certificate by completing the typing speed test with a score of at least 40 WPM and 90% accuracy. Share your certificate with employers, on LinkedIn, or on your CV.
+                                                                    </p>p>
+                                                                    <p className="text-base text-gray-500 dark:text-gray-400 mb-8 max-w-2xl mx-auto">
+                                                                                            Every certificate includes your name, score, accuracy, and a unique verification link. Employers and institutions can verify authenticity at any time via <Link href="/verify" className="text-brand underline">typingverified.com/verify</Link>Link>.
+                                                                    </p>p>
+                                                                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                                                                                            <Link
+                                                                                                                            href="/signup"
+                                                                                                                            className="inline-flex items-center justify-center px-8 py-3 rounded-xl bg-brand text-white font-semibold text-base hover:bg-brand/90 transition-colors"
+                                                                                                                        >
+                                                                                                                        Create a free account
+                                                                                                </Link>Link>
+                                                                                            <Link
+                                                                                                                            href="/login"
+                                                                                                                            className="inline-flex items-center justify-center px-8 py-3 rounded-xl border border-gray-300 dark:border-zinc-700 text-gray-700 dark:text-gray-300 font-semibold text-base hover:bg-gray-50 dark:hover:bg-zinc-800 transition-colors"
+                                                                                                                        >
+                                                                                                                        Sign in
+                                                                                                </Link>Link>
+                                                                    </div>div>
+                                                </div>div>
+                                            );
+            }</div>
 
     const authUser = user!;
 
