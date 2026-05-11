@@ -9,7 +9,9 @@ import type { Metadata } from 'next'
 import { getTranslations } from 'next-intl/server';
 
 export const metadata: Metadata = {
-    robots: { index: true, follow: true },
+        title: "Typing Lessons — 10 Structured Lessons to Build Touch Typing | Typingverified",
+        description: "Work through 10 structured typing lessons that take you from home-row basics to professional touch typing. Requires 90% accuracy to advance. Free to start.",
+        robots: { index: true, follow: true },
 };
 
 export default async function LessonsPage({
