@@ -7,6 +7,7 @@ import { createClient } from "@/utils/supabase/client";
 import { motion, Variants } from "framer-motion";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { X } from "lucide-react";
+import HomeAuthBanner from "@/components/HomeAuthBanner";
 
 const containerVariants: Variants = {
   hidden: { opacity: 0 },
@@ -42,7 +43,6 @@ export default function Home() {
   // })
 
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const [showAuthWarning, setShowAuthWarning] = useState(false);
   const languageBadges = ["English", "Français", "Español", "Deutsch", "Português"];
 
   const [stats, setStats] = useState({
@@ -166,9 +166,7 @@ export default function Home() {
       const loggedIn = !!user;
       setIsLoggedIn(loggedIn);
 
-      if (!loggedIn) {
-        setShowAuthWarning(true);
-      }
+      
     }
     checkAuth();
 
@@ -190,22 +188,12 @@ export default function Home() {
     fetchStats();
   }, []);
 
-  useEffect(() => {
-    const root = document.documentElement;
-    if (showAuthWarning) {
-      root.style.setProperty("--announcement-height", "3.25rem");
-    } else {
-      root.style.setProperty("--announcement-height", "0px");
-    }
-    return () => {
-      root.style.removeProperty("--announcement-height");
-    };
-  }, [showAuthWarning]);
+
 
   const handleTestClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
     if (!isLoggedIn) {
       e.preventDefault();
-      setShowAuthWarning(true);
+      window.location.href = '/login';
     }
   };
 
@@ -278,25 +266,7 @@ export default function Home() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-      {showAuthWarning && (
-        <div
-          role="alert"
-          aria-live="polite"
-          className="fixed left-0 right-0 top-0 z-60 flex min-h-13 items-center justify-center border-b border-black/10 bg-brand px-10 text-neutral-950 shadow-sm sm:px-14"
-        >
-          <p className="mx-auto max-w-4xl text-center text-xs leading-snug sm:text-sm">
-            {t("authWarning")}
-          </p>
-          <button
-            type="button"
-            onClick={() => setShowAuthWarning(false)}
-            className="absolute right-2 top-1/2 flex h-8 w-8 -translate-y-1/2 cursor-pointer items-center justify-center rounded-md text-neutral-950 transition-colors hover:bg-black/15"
-            aria-label={t("close")}
-          >
-            <X className="h-4 w-4 sm:h-5 sm:w-5" strokeWidth={2.25} aria-hidden />
-          </button>
-        </div>
-      )}
+      <HomeAuthBanner />
 
       {/* Background gradient orb effect */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-brand/10 dark:bg-brand/15 blur-[120px] rounded-full pointer-events-none -z-10" />
