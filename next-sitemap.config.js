@@ -19,6 +19,8 @@ const publicPages = [
   "/lessons",
   "/verify",
   "/certificate",
+    "/products",
+    "/game",
 ];
 
 const privateRoutes = [
