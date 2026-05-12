@@ -176,10 +176,10 @@ export default async function PricingPage({
 
                     <div className="mt-4 mb-6">
                         <span className="text-3xl sm:text-4xl font-extrabold text-gray-900 dark:text-white">
-                            Free
+                            {t("pricePremium")}
                         </span>
-                        <span className="ml-1 text-sm text-emerald-600 dark:text-emerald-400 font-medium">
-                            Open access — no payment needed
+                        <span className="ml-1 text-sm text-gray-500 dark:text-gray-400">
+                            {t("priceSuffixOnetime")}
                         </span>
                     </div>
 
@@ -222,13 +222,13 @@ export default async function PricingPage({
                             href="/lessons"
                             className="mt-auto inline-flex items-center justify-center px-6 py-2.5 rounded-full bg-brand text-black font-semibold text-sm shadow-sm hover:bg-amber-400 transition-colors"
                         >
-                            Start for free →
+                            Start for free â
                         </Link>
                     )}
                 </div>
             </div>
 
-            {/* Badge Add-on — always visible */}
+            {/* Badge Add-on â always visible */}
             <div className="mt-10 max-w-2xl mx-auto w-full">
                 <div className="flex items-center gap-4 mb-4">
                     <div className="h-px flex-1 bg-gray-200 dark:bg-zinc-800" />
@@ -288,10 +288,10 @@ export default async function PricingPage({
                 </div>
                 <div className="flex flex-col sm:flex-row sm:items-center gap-5 p-6 bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 rounded-2xl shadow-sm">
                     <div className="shrink-0 w-12 h-12 rounded-full bg-orange-50 dark:bg-orange-900/20 flex items-center justify-center text-xl">
-                        🛍️
+                        ðï¸
                     </div>
                     <div className="flex-1">
-                        <h3 className="text-base font-bold text-gray-900 dark:text-white mb-1">Typing Worksheet Pack — 50 Sheets</h3>
+                        <h3 className="text-base font-bold text-gray-900 dark:text-white mb-1">Typing Worksheet Pack â 50 Sheets</h3>
                         <p className="text-sm text-gray-500 dark:text-gray-400">Prefer to buy a standalone copy? Grab the printable worksheet pack directly on Etsy.</p>
                     </div>
                     <a
@@ -300,7 +300,7 @@ export default async function PricingPage({
                         rel="noopener noreferrer"
                         className="shrink-0 inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-orange-500 text-white text-sm font-bold hover:bg-orange-600 transition-colors shadow-sm"
                     >
-                        Get the Worksheet Pack — $4.99 on Etsy →
+                        Get the Worksheet Pack â $4.99 on Etsy â
                     </a>
                 </div>
             </div>
