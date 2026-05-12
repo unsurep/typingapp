@@ -236,7 +236,7 @@
   },
   "Metadata": {
     "titleDefault": "Typingverified | Prueba de velocidad de mecanografía y lecciones",
-    "titleTemplate": "%s | Typingverified",
+        "titleTemplate": "%s",
     "description": "Prueba tu velocidad de mecanografía, disfruta de lecciones atractivas, controla tu WPM y obtén certificados con Typingverified. Interfaz multilingüe: inglés, francés, español, alemán y portugués.",
     "keywords": "prueba de mecanografía, velocidad de mecanografía, WPM, aprende a escribir, mecanografía al tacto, práctica de mecanografía, certificado de mecanografía, test de mecanografía multilingüe",
     "ogLocale": "es_ES"
