@@ -236,7 +236,7 @@
   },
   "Metadata": {
     "titleDefault": "Typingverified | Typing Speed Test & Lessons",
-    "titleTemplate": "%s | Typingverified",
+        "titleTemplate": "%s",
     "description": "Test your typing speed, take engaging lessons, track your WPM, and earn certificates with Typingverified. Multilingual interface: English, French, Spanish, German, and Portuguese.",
     "keywords": "typing test, typing speed, WPM, learn to type, touch typing, typing practice, typing certificate, multilingual typing test, typing in French Spanish German Portuguese",
     "ogLocale": "en_US"
