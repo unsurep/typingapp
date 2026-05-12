@@ -236,7 +236,7 @@
   },
   "Metadata": {
     "titleDefault": "Typingverified | Tippgeschwindigkeitstest & Lektionen",
-    "titleTemplate": "%s | Typingverified",
+        "titleTemplate": "%s",
     "description": "Teste deine Tippgeschwindigkeit, mache ansprechende Lektionen, verfolge deine WPM und verdiene Zertifikate mit Typingverified. Mehrsprachige Oberfläche: Englisch, Französisch, Spanisch, Deutsch und Portugiesisch.",
     "keywords": "Tipp-Test, Tippgeschwindigkeit, WPM, lernen zu tippen, Touch-Typing, Tipp-Übung, Tipp-Zertifikat, mehrsprachiger Tipp-Test",
     "ogLocale": "de_DE"
