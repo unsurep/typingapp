@@ -13,7 +13,7 @@ import { useTranslations } from "next-intl";
  *
  * Keeping this logic isolated in a client component means the rest of the
  * homepage (hero, features, FAQ, testimonials) can be rendered on the server
- * — or, while page.tsx is still "use client", wrapped in a Suspense boundary
+ * â or, while page.tsx is still "use client", wrapped in a Suspense boundary
  * so that the main content is not blocked waiting for the auth check.
  */
 export default function HomeAuthBanner() {
@@ -55,15 +55,15 @@ export default function HomeAuthBanner() {
                 {t("authWarning")}{" "}
                       <a href="/login" className="underline font-semibold">
                         {t("authWarningLink")}
-                      </a>a>
-              </span>span>
+                      </a>
+              </span>
               <button
                         onClick={() => setShowAuthWarning(false)}
                         aria-label="Dismiss"
                         className="shrink-0 rounded p-0.5 hover:bg-white/20 transition-colors"
                       >
                       <X className="w-4 h-4" />
-              </button>button>
-        </div>div>
+              </button>
+        </div>
       );
 }</div>
