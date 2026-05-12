@@ -236,7 +236,7 @@
   },
   "Metadata": {
     "titleDefault": "Typingverified | Tests de vitesse de frappe & Leçons",
-    "titleTemplate": "%s | Typingverified",
+        "titleTemplate": "%s",
     "description": "Testez votre vitesse de frappe, suivez des leçons captivantes, suivez votre WPM et obtenez des certificats avec Typingverified. Interface multilingue : anglais, français, espagnol, allemand et portugais.",
     "keywords": "test de frappe, vitesse de frappe, WPM, apprendre à taper, dactylographie au toucher, pratique de dactylographie, certificat de dactylographie, test de frappe multilingue, site de dactylo en plusieurs langues",
     "ogLocale": "fr_FR"
@@ -247,7 +247,7 @@
     "subtitle": "Maîtrisez vos compétences de clavier étape par étape. Passez des techniques classiques de la rangée de base à la saisie de vocabulaire professionnel complexe sans regarder."
   },
   "LessonCard": {
-    "premium": "Premium",
+        "titleTemplate": "%s",
     "courseProgress": "Progression du cours",
     "unlockCta": "Débloquer - $3.99",
     "startLesson": "Démarrer la leçon"
