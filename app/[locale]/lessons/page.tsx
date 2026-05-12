@@ -9,8 +9,11 @@ import type { Metadata } from 'next'
 import { getTranslations } from 'next-intl/server';
 
 export const metadata: Metadata = {
-        title: "Typing Lessons — 10 Structured Lessons to Build Touch Typing | Typingverified",
+        title: "Typing Lessons — 10 Structured Lessons to Build Touch Typing",
         description: "Work through 10 structured typing lessons that take you from home-row basics to professional touch typing. Requires 90% accuracy to advance. Free to start.",
+                alternates: {
+                                    canonical: 'https://www.typingverified.com/lessons',
+                },
         robots: { index: true, follow: true },
 };
 
