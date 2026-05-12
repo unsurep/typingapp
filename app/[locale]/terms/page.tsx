@@ -14,9 +14,20 @@ export async function generateMetadata({
 }): Promise<Metadata> {
     const { locale } = await params;
     const t = await getTranslations({ locale, namespace: "Terms" });
+    const basePath = locale === "en" ? "" : `/${locale}`;
     return {
         title: t("metaTitle"),
         description: t("metaDescription"),
+        alternates: {
+            canonical: `https://www.typingverified.com${basePath}/terms`,
+            languages: {
+                en: "https://www.typingverified.com/terms",
+                fr: "https://www.typingverified.com/fr/terms",
+                es: "https://www.typingverified.com/es/terms",
+                de: "https://www.typingverified.com/de/terms",
+                pt: "https://www.typingverified.com/pt/terms",
+            },
+        },
     };
 }
 
