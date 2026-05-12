@@ -236,7 +236,7 @@
   },
   "Metadata": {
     "titleDefault": "Typingverified | Teste de velocidade de digitação e lições",
-    "titleTemplate": "%s | Typingverified",
+        "titleTemplate": "%s",
     "description": "Teste sua velocidade de digitação, faça lições envolventes, acompanhe seu WPM e conquiste certificados com o Typingverified. Interface multilíngue: inglês, francês, espanhol, alemão e português.",
     "keywords": "teste de digitação, velocidade de digitação, WPM, aprender a digitar, digitação de toque, prática de digitação, certificado de digitação, teste de digitação multilíngue",
     "ogLocale": "pt_PT"
