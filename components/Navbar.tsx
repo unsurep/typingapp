@@ -43,8 +43,8 @@ export default function Navbar({
             className="hidden min-w-0 flex-1 items-center justify-end gap-3 md:flex"
             aria-label={t("mainNav")}
           >
-            <div className="min-w-0 flex-1 overflow-x-auto overscroll-x-contain py-2 [-webkit-overflow-scrolling:touch] [scrollbar-width:thin]">
-              <div className="flex flex-nowrap items-center justify-end gap-4 lg:gap-6">
+            <div className="min-w-0 flex-1 overflow-x-auto overscroll-x-contain pl-1 [-webkit-overflow-scrolling:touch] [scrollbar-width:thin]">
+              <div className="flex flex-nowrap items-center justify-end gap-4 lg:gap-6 py-2">
                 <Link
                   href="/practice"
                   className="shrink-0 text-sm font-medium text-foreground transition-colors hover:text-[#f4bf3c]"
