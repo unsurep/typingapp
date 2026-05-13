@@ -56,8 +56,8 @@ export default async function ProductsPage({
               <div className="mb-10 text-center">
                       <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
                         {t("heroTitleBefore")}{" "}
-                                <span className="text-brand">{t("heroTitleHighlight")}</span>span>
-                      </h1>h1>
+                                <span className="text-brand">{t("heroTitleHighlight")}</span>
+                      </h1>
                       <p className="mt-4 text-base sm:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
                         {t("heroSubtitle")}
                       </p>
@@ -90,29 +90,29 @@ export default async function ProductsPage({
                                                   href="/badge"
                                                   className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-brand text-black text-sm font-bold hover:bg-amber-400 transition-colors shadow-sm"
                                                 >
-                                                <span>&#127885;</span>span>
+                                                <span>&#127885;</span>
                               {t("ctaViewBadge")}
-                            </Link>Link>
+                            </Link>
                           ) : hasCertificate ? (
                             <Link
                                                   href="/badge-checkout"
                                                   className="inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-full bg-brand text-black text-sm font-bold hover:bg-amber-400 transition-colors shadow-sm"
                                                 >
-                                                <span>&#127885;</span>span>
+                                                <span>&#127885;</span>
                               {t("ctaBuyBadge")}
-                            </Link>Link>
+                            </Link>
                           ) : (
                             <Link
                                                   href="/lessons"
                                                   className="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-brand text-black text-sm font-bold hover:bg-amber-400 transition-colors shadow-sm"
                                                 >
                               {t("ctaLessons")}
-                            </Link>Link>
+                            </Link>
                                                                           )}
                                                           </div>
                                             </div>
-                                </article>article>
-                      </li>li>
+                                </article>
+                      </li>
                       <li>
                                 <article className="relative bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 rounded-2xl p-6 sm:p-8 shadow-sm flex flex-col sm:flex-row sm:items-stretch gap-6">
                                             <div className="shrink-0 w-14 h-14 rounded-full bg-orange-50 dark:bg-orange-900/20 flex items-center justify-center text-2xl">
@@ -140,8 +140,8 @@ export default async function ProductsPage({
                                                                           </a>a>
                                                           </div>
                                             </div>
-                                </article>article>
-                      </li>li>
+                                </article>
+                      </li>
               </ul>
         
               <p className="mt-10 text-center text-sm text-gray-500 dark:text-gray-400">{t("moreSoon")}</p>
