@@ -66,4 +66,4 @@ export default function HomeAuthBanner() {
               </button>
         </div>
       );
-}</div>
+}
