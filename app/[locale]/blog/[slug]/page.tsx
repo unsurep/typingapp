@@ -5,7 +5,7 @@ import {
   DEFAULT_BLOG_AUTHOR_CONTACT_EMAIL,
   getPostBySlug,
   getReadingTimeMinutes,
-} from "@/lib/blog-data";
+} from "@/lib/blog-data";h
 import { getPostBySlugWithLocaleUi } from "@/lib/blog-i18n";
 import { notFound } from "next/navigation";
 import Image from "next/image";
@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     openGraph: {
       title: post.title,
       description: post.metaDescription,
-      ...(post.image ? { images: [post.image] } : {}),
+      ...(post.image ? { images: [{ url: `https://www.typingverified.com${post.image}`, width: 1200, height: 630 }] } : {}),
     },
   };
 }
