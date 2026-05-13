@@ -62,7 +62,7 @@ export default async function CertificatePage({
                                                                     </div>
                                                 </div>
                                             );
-            }</div>
+            }
 
     const authUser = user!;
 
