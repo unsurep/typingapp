@@ -75,4 +75,4 @@ export default async function VerifyLookupPage({
                                             </p>
                             </div>
                 </div>
-            );</div>
+            );
