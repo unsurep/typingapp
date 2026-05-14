@@ -5,7 +5,7 @@ import {
   DEFAULT_BLOG_AUTHOR_CONTACT_EMAIL,
   getPostBySlug,
   getReadingTimeMinutes,
-} from "@/lib/blog-data";h
+} from "@/lib/blog-data";
 import { getPostBySlugWithLocaleUi } from "@/lib/blog-i18n";
 import { notFound } from "next/navigation";
 import Image from "next/image";
