@@ -33,8 +33,8 @@ export default async function PrivacyPage() {
                     <div className="mb-10 text-center">
                             <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
                                       Privacy{" "}
-                                      <span className="text-brand">Policy</span>span>
-                            </h1>h1>
+                                      <span className="text-brand">Policy</span>
+                            </h1>
                             <p className="mt-4 text-base sm:text-lg text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
                                       Last updated: May 13, 2026
                             </p>
