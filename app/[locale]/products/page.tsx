@@ -146,25 +146,58 @@ export default async function ProductsPage({
         
               <p className="mt-10 text-center text-sm text-gray-500 dark:text-gray-400">{t("moreSoon")}</p>
         
-              <section className="mt-16 prose dark:prose-invert max-w-none">
-                      <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">About Typingverified Digital Products</h2>
-                      <p className="text-gray-600 dark:text-gray-400 mb-4">
-                                Typingverified offers a focused suite of digital products designed to help you build, prove, and showcase your typing skills. Whether you are preparing for a job that requires a minimum WPM, studying for a certification exam, or simply want to track your improvement over time, our products give you the credentials and tools to do it effectively.
-                      </p>
-                      <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">The LinkedIn and GitHub Typing Badge</h2>
-                      <p className="text-gray-600 dark:text-gray-400 mb-4">
-                                The Typingverified badge is a verifiable digital credential you can add to your LinkedIn profile, GitHub bio, or personal portfolio. It signals to recruiters and collaborators that your typing speed has been independently verified — not self-reported. The badge links back to your public certificate so anyone can confirm its authenticity instantly. It is available exclusively to users who have already earned a Typingverified certificate, ensuring every badge represents a genuine, tested result.
-                      </p>
-                      <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Typing Worksheet Pack</h2>
-                      <p className="text-gray-600 dark:text-gray-400 mb-4">
-                                The printable typing worksheet pack includes 50 structured exercises for offline practice. Each worksheet targets a specific skill area: number rows, punctuation, programming symbols, and high-frequency word patterns that rarely appear in standard tests. The pack is sold on Etsy and bundled free with Typingverified Pro membership.
-                      </p>
-                      <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Why Verified Typing Credentials Matter</h2>
-                      <p className="text-gray-600 dark:text-gray-400">
-                                Self-reported typing speeds are common on resumes, but employers have no reliable way to verify them. A Typingverified certificate and badge change that. Your score is measured under controlled conditions, stored server-side, and accessible via a public verification URL. A hiring manager can confirm your claimed WPM in under ten seconds. For roles in data entry, medical transcription, legal support, remote customer service, and executive assistance, a verified typing credential is a meaningful differentiator that can move your application to the top of the shortlist.
-                      </p>
-              </section>
-        
+      <section className="mt-16 space-y-10">
+      
+                <div>
+                            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">About Typingverified Digital Products</h2>
+                            <p className="text-gray-600 dark:text-gray-400 mb-4">
+                                          Typingverified offers a focused suite of digital products designed to extend and enhance the value of your typing certificate. Every product on this page is optional — the core typing tests, lessons, and certificate are always free. What you find here are tools that help you present your verified skill more effectively, practise more efficiently, and stand out in hiring and professional contexts where typing proficiency is a real differentiator.
+                            </p>
+                            <p className="text-gray-600 dark:text-gray-400">
+                                          Each product is built around the same principle as the certificate itself: verifiability. We do not offer generic typing tools. Everything here ties directly to your earned credential or supports the structured practice path that leads to it.
+                            </p>
+                </div>
+      
+                <div>
+                            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">The LinkedIn and GitHub Typing Badge</h2>
+                            <p className="text-gray-600 dark:text-gray-400 mb-4">
+                                          The Typingverified badge is a verifiable digital credential you can embed directly on your LinkedIn profile and in your GitHub README. It displays your net WPM score, accuracy percentage, and grade — all tied to a certificate that anyone can independently verify at typingverified.com/verify.
+                            </p>
+                            <p className="text-gray-600 dark:text-gray-400 mb-4">
+                                          Unlike a self-reported typing speed on a resume, the badge cannot be fabricated. It links back to a real certificate record stored on our servers, issued only after completing all ten structured lessons and passing a timed 60-second test under controlled conditions. Recruiters, hiring managers, and collaborators can confirm its authenticity with a single click.
+                            </p>
+                            <p className="text-gray-600 dark:text-gray-400 mb-4">
+                                          The badge is available as a one-time purchase of $2.99 for users who have already earned a Typingverified certificate. Once purchased, you receive a personalised badge image and embed code optimised for LinkedIn, GitHub, and any Markdown-based profile. There are no subscriptions, no renewals, and no expiry — the badge is yours permanently.
+                            </p>
+                            <p className="text-gray-600 dark:text-gray-400">
+                                          The badge is particularly valuable for software developers, data entry professionals, virtual assistants, transcriptionists, customer service representatives, and anyone applying for roles where typing speed and accuracy are assessed. Adding a verified credential to your profile signals not just the skill, but the discipline to earn a standardised, proctored certificate.
+                            </p>
+                </div>
+      
+                <div>
+                            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Typing Worksheet Pack</h2>
+                            <p className="text-gray-600 dark:text-gray-400 mb-4">
+                                          The printable typing worksheet pack includes 50 structured exercises for offline practice. Each worksheet targets a specific aspect of typing proficiency — home row placement, finger reach patterns, punctuation accuracy, number row fluency, and speed-building drills. The exercises are designed to complement the online lessons rather than duplicate them, giving you a way to reinforce muscle memory away from a screen.
+                            </p>
+                            <p className="text-gray-600 dark:text-gray-400">
+                                          The worksheets are formatted for standard A4 and US Letter paper. They are especially useful for learners who prefer working through structured paper exercises, teachers running typing curriculum in classrooms, and professionals who want targeted drills for specific weaknesses identified during practice sessions.
+                            </p>
+                </div>
+      
+                <div>
+                            <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Why Verified Typing Credentials Matter</h2>
+                            <p className="text-gray-600 dark:text-gray-400 mb-4">
+                                          Self-reported typing speeds are common on resumes, but employers have no reliable way to verify them. A candidate who lists 75 WPM with no supporting evidence is indistinguishable from one who genuinely types at that speed — until they are tested on the job. This creates friction in hiring and uncertainty for both sides.
+                            </p>
+                            <p className="text-gray-600 dark:text-gray-400 mb-4">
+                                          A Typingverified certificate and badge solve this by providing a standardised, independently verifiable record. The test is timed, the scoring uses net WPM (errors count against you), and the result is stored server-side where it cannot be altered. Employers who receive a Typingverified credential can confirm it instantly without contacting the candidate or arranging a separate test.
+                            </p>
+                            <p className="text-gray-600 dark:text-gray-400">
+                                          As remote work continues to expand, written communication speed and accuracy have become more important across a wider range of roles. A verified typing credential is a low-cost, high-signal addition to any professional profile — particularly for roles in administration, legal, medical, customer service, and software development where keyboard fluency directly affects output quality and speed.
+                            </p>
+                </div>
+      
+      </section>        
         </div>
       );
 }
