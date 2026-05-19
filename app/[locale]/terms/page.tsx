@@ -21,6 +21,7 @@ export async function generateMetadata({
         alternates: {
             canonical: `https://www.typingverified.com${basePath}/terms`,
             languages: {
+                'x-default': 'https://www.typingverified.com/terms',
                 en: "https://www.typingverified.com/terms",
                 fr: "https://www.typingverified.com/fr/terms",
                 es: "https://www.typingverified.com/es/terms",
