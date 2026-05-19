@@ -14,7 +14,16 @@ export async function generateMetadata({
     return {
           title: t("metaTitle"),
           description: t("metaDescription"),
-          alternates: { canonical: 'https://www.typingverified.com/products' },
+          alternates: { canonical: 'https://www.typingverified.com/products' 
+        languages: {
+          'x-default': 'https://www.typingverified.com/products',
+          'en': 'https://www.typingverified.com/products',
+          'fr': 'https://www.typingverified.com/fr/products',
+          'es': 'https://www.typingverified.com/es/products',
+          'de': 'https://www.typingverified.com/de/products',
+          'pt': 'https://www.typingverified.com/pt/products',
+        },
+      },
     };
 }
 
@@ -116,7 +125,7 @@ export default async function ProductsPage({
                       <li>
                                 <article className="relative bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 rounded-2xl p-6 sm:p-8 shadow-sm flex flex-col sm:flex-row sm:items-stretch gap-6">
                                             <div className="shrink-0 w-14 h-14 rounded-full bg-orange-50 dark:bg-orange-900/20 flex items-center justify-center text-2xl">
-                                                          🛍️
+                                                          ðï¸
                                             </div>
                                             <div className="flex-1 min-w-0 flex flex-col">
                                                           <h2 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-2">
@@ -126,9 +135,9 @@ export default async function ProductsPage({
                                                             {t("worksheetCardDesc")}
                                                           </p>
                                                           <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
-                                                                          50 printable typing worksheets to practise at your own pace — also available as a standalone purchase on Etsy.
+                                                                          50 printable typing worksheets to practise at your own pace â also available as a standalone purchase on Etsy.
                                                           </p>
-                                                          <p className="text-sm font-medium text-gray-800 dark:text-gray-200 mb-1">$4.99 on Etsy · included free with Premium</p>
+                                                          <p className="text-sm font-medium text-gray-800 dark:text-gray-200 mb-1">$4.99 on Etsy Â· included free with Premium</p>
                                                           <div className="mt-auto flex flex-col sm:flex-row flex-wrap gap-3">
                                                                           <a
                                                                                               href="https://www.etsy.com/shop/MasebasDigitalNest"
@@ -136,7 +145,7 @@ export default async function ProductsPage({
                                                                                               rel="noopener noreferrer"
                                                                                               className="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-orange-500 text-white text-sm font-bold hover:bg-orange-600 transition-colors shadow-sm"
                                                                                             >
-                                                                                            Get the Worksheet Pack — $4.99 on Etsy →
+                                                                                            Get the Worksheet Pack â $4.99 on Etsy â
                                                                           </a>
                                                           </div>
                                             </div>
@@ -151,7 +160,7 @@ export default async function ProductsPage({
                 <div>
                             <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">About Typingverified Digital Products</h2>
                             <p className="text-gray-600 dark:text-gray-400 mb-4">
-                                          Typingverified offers a focused suite of digital products designed to extend and enhance the value of your typing certificate. Every product on this page is optional — the core typing tests, lessons, and certificate are always free. What you find here are tools that help you present your verified skill more effectively, practise more efficiently, and stand out in hiring and professional contexts where typing proficiency is a real differentiator.
+                                          Typingverified offers a focused suite of digital products designed to extend and enhance the value of your typing certificate. Every product on this page is optional â the core typing tests, lessons, and certificate are always free. What you find here are tools that help you present your verified skill more effectively, practise more efficiently, and stand out in hiring and professional contexts where typing proficiency is a real differentiator.
                             </p>
                             <p className="text-gray-600 dark:text-gray-400">
                                           Each product is built around the same principle as the certificate itself: verifiability. We do not offer generic typing tools. Everything here ties directly to your earned credential or supports the structured practice path that leads to it.
@@ -161,13 +170,13 @@ export default async function ProductsPage({
                 <div>
                             <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">The LinkedIn and GitHub Typing Badge</h2>
                             <p className="text-gray-600 dark:text-gray-400 mb-4">
-                                          The Typingverified badge is a verifiable digital credential you can embed directly on your LinkedIn profile and in your GitHub README. It displays your net WPM score, accuracy percentage, and grade — all tied to a certificate that anyone can independently verify at typingverified.com/verify.
+                                          The Typingverified badge is a verifiable digital credential you can embed directly on your LinkedIn profile and in your GitHub README. It displays your net WPM score, accuracy percentage, and grade â all tied to a certificate that anyone can independently verify at typingverified.com/verify.
                             </p>
                             <p className="text-gray-600 dark:text-gray-400 mb-4">
                                           Unlike a self-reported typing speed on a resume, the badge cannot be fabricated. It links back to a real certificate record stored on our servers, issued only after completing all ten structured lessons and passing a timed 60-second test under controlled conditions. Recruiters, hiring managers, and collaborators can confirm its authenticity with a single click.
                             </p>
                             <p className="text-gray-600 dark:text-gray-400 mb-4">
-                                          The badge is available as a one-time purchase of $2.99 for users who have already earned a Typingverified certificate. Once purchased, you receive a personalised badge image and embed code optimised for LinkedIn, GitHub, and any Markdown-based profile. There are no subscriptions, no renewals, and no expiry — the badge is yours permanently.
+                                          The badge is available as a one-time purchase of $2.99 for users who have already earned a Typingverified certificate. Once purchased, you receive a personalised badge image and embed code optimised for LinkedIn, GitHub, and any Markdown-based profile. There are no subscriptions, no renewals, and no expiry â the badge is yours permanently.
                             </p>
                             <p className="text-gray-600 dark:text-gray-400">
                                           The badge is particularly valuable for software developers, data entry professionals, virtual assistants, transcriptionists, customer service representatives, and anyone applying for roles where typing speed and accuracy are assessed. Adding a verified credential to your profile signals not just the skill, but the discipline to earn a standardised, proctored certificate.
@@ -177,7 +186,7 @@ export default async function ProductsPage({
                 <div>
                             <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Typing Worksheet Pack</h2>
                             <p className="text-gray-600 dark:text-gray-400 mb-4">
-                                          The printable typing worksheet pack includes 50 structured exercises for offline practice. Each worksheet targets a specific aspect of typing proficiency — home row placement, finger reach patterns, punctuation accuracy, number row fluency, and speed-building drills. The exercises are designed to complement the online lessons rather than duplicate them, giving you a way to reinforce muscle memory away from a screen.
+                                          The printable typing worksheet pack includes 50 structured exercises for offline practice. Each worksheet targets a specific aspect of typing proficiency â home row placement, finger reach patterns, punctuation accuracy, number row fluency, and speed-building drills. The exercises are designed to complement the online lessons rather than duplicate them, giving you a way to reinforce muscle memory away from a screen.
                             </p>
                             <p className="text-gray-600 dark:text-gray-400">
                                           The worksheets are formatted for standard A4 and US Letter paper. They are especially useful for learners who prefer working through structured paper exercises, teachers running typing curriculum in classrooms, and professionals who want targeted drills for specific weaknesses identified during practice sessions.
@@ -187,13 +196,13 @@ export default async function ProductsPage({
                 <div>
                             <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">Why Verified Typing Credentials Matter</h2>
                             <p className="text-gray-600 dark:text-gray-400 mb-4">
-                                          Self-reported typing speeds are common on resumes, but employers have no reliable way to verify them. A candidate who lists 75 WPM with no supporting evidence is indistinguishable from one who genuinely types at that speed — until they are tested on the job. This creates friction in hiring and uncertainty for both sides.
+                                          Self-reported typing speeds are common on resumes, but employers have no reliable way to verify them. A candidate who lists 75 WPM with no supporting evidence is indistinguishable from one who genuinely types at that speed â until they are tested on the job. This creates friction in hiring and uncertainty for both sides.
                             </p>
                             <p className="text-gray-600 dark:text-gray-400 mb-4">
                                           A Typingverified certificate and badge solve this by providing a standardised, independently verifiable record. The test is timed, the scoring uses net WPM (errors count against you), and the result is stored server-side where it cannot be altered. Employers who receive a Typingverified credential can confirm it instantly without contacting the candidate or arranging a separate test.
                             </p>
                             <p className="text-gray-600 dark:text-gray-400">
-                                          As remote work continues to expand, written communication speed and accuracy have become more important across a wider range of roles. A verified typing credential is a low-cost, high-signal addition to any professional profile — particularly for roles in administration, legal, medical, customer service, and software development where keyboard fluency directly affects output quality and speed.
+                                          As remote work continues to expand, written communication speed and accuracy have become more important across a wider range of roles. A verified typing credential is a low-cost, high-signal addition to any professional profile â particularly for roles in administration, legal, medical, customer service, and software development where keyboard fluency directly affects output quality and speed.
                             </p>
                 </div>
       
