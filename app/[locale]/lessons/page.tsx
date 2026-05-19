@@ -9,11 +9,20 @@ import type { Metadata } from 'next'
 import { getTranslations } from 'next-intl/server';
 
 export const metadata: Metadata = {
-        title: "Typing Lessons — 10 Structured Lessons to Build Touch Typing",
+        title: "Typing Lessons â 10 Structured Lessons to Build Touch Typing",
         description: "Work through 10 structured typing lessons that take you from home-row basics to professional touch typing. Requires 90% accuracy to advance. Free to start.",
                 alternates: {
                                     canonical: 'https://www.typingverified.com/lessons',
-                },
+                
+        languages: {
+          'x-default': 'https://www.typingverified.com/lessons',
+          'en': 'https://www.typingverified.com/lessons',
+          'fr': 'https://www.typingverified.com/fr/lessons',
+          'es': 'https://www.typingverified.com/es/lessons',
+          'de': 'https://www.typingverified.com/de/lessons',
+          'pt': 'https://www.typingverified.com/pt/lessons',
+        },
+      },
         robots: { index: true, follow: true },
 };
 
@@ -27,7 +36,7 @@ export default async function LessonsPage({
     const supabase = await createClient();
     const { data: { user } } = await supabase.auth.getUser();
 
-    // Guests can view lessons — only fetch progress/premium for logged-in users
+    // Guests can view lessons â only fetch progress/premium for logged-in users
     let isPremium = false;
     const progressMap = new Map<number, number>();
 
@@ -56,7 +65,7 @@ export default async function LessonsPage({
             ...lesson,
             progress: progressPercentage,
             totalTasks: lesson.tasks.length,
-            locked: false, // Open access — all lessons free during AdSense review period
+            locked: false, // Open access â all lessons free during AdSense review period
         };
     });
 
@@ -94,14 +103,14 @@ export default async function LessonsPage({
             <section className="max-w-3xl mx-auto w-full mb-20">
                 <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4">Structured Typing Lessons for Every Level</h2>
                 <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-                    These typing lessons are designed to teach touch typing from the ground up — starting with home row fundamentals and progressing through every key on the keyboard. Each lesson builds on the last, introducing new keys only once the previous ones are comfortable. This structured approach is significantly faster than unguided practice, because it targets the specific skills you haven&apos;t developed yet rather than repeating what you already know.
+                    These typing lessons are designed to teach touch typing from the ground up â starting with home row fundamentals and progressing through every key on the keyboard. Each lesson builds on the last, introducing new keys only once the previous ones are comfortable. This structured approach is significantly faster than unguided practice, because it targets the specific skills you haven&apos;t developed yet rather than repeating what you already know.
                 </p>
                 <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-                    Touch typing — the ability to type without looking at the keyboard — is what separates fast typists from average ones. It&apos;s not a natural skill; it&apos;s a learned one. The lessons here teach you which finger is responsible for which key, how to keep your hands anchored to the home row, and how to extend to reach letters without losing your position.
+                    Touch typing â the ability to type without looking at the keyboard â is what separates fast typists from average ones. It&apos;s not a natural skill; it&apos;s a learned one. The lessons here teach you which finger is responsible for which key, how to keep your hands anchored to the home row, and how to extend to reach letters without losing your position.
                 </p>
                 <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 mt-8">How the Lessons Are Structured</h2>
                 <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-4">
-                    Each lesson contains a series of tasks that progressively introduce new key combinations, finger stretches, and common letter patterns. You can track your progress through each lesson and pick up where you left off. The first two lessons are free for all users — they cover the home row and the most common keys in the English language, which alone account for the majority of keystrokes in everyday typing.
+                    Each lesson contains a series of tasks that progressively introduce new key combinations, finger stretches, and common letter patterns. You can track your progress through each lesson and pick up where you left off. The first two lessons are free for all users â they cover the home row and the most common keys in the English language, which alone account for the majority of keystrokes in everyday typing.
                 </p>
                 <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-4 mt-8">Who These Lessons Are For</h2>
                 <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
