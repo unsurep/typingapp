@@ -95,17 +95,26 @@ function splitLocaleFromPath(urlPath) {
 
 function buildAlternateRefsForPath(urlPath) {
   const { basePath } = splitLocaleFromPath(urlPath);
-  return locales.map((locale) => ({
-    hreflang: locale,
-    /** Required: next-sitemap joins non-flagged href with loc, doubling paths for full URLs. */
-    hrefIsAbsolute: true,
-    href:
-      locale === defaultLocale
-        ? `${siteUrl}${basePath === "/" ? "" : basePath}`
-        : `${siteUrl}/${locale}${basePath === "/" ? "" : basePath}`,
-  }));
+  const enHref = `${siteUrl}${basePath === "/" ? "" : basePath}`;
+  const refs = [
+    {
+      hreflang: "x-default",
+      hrefIsAbsolute: true,
+      href: enHref,
+    },
+  ];
+  return refs.concat(
+    locales.map((locale) => ({
+      hreflang: locale,
+      /** Required: next-sitemap joins non-flagged href with loc, doubling paths for full URLs. */
+      hrefIsAbsolute: true,
+      href:
+        locale === defaultLocale
+          ? enHref
+          : `${siteUrl}/${locale}${basePath === "/" ? "" : basePath}`,
+    }))
+  );
 }
-
 function collectBlogEntries() {
   const contentDirectory = path.join(__dirname, "lib", "content");
   const localeSlugMap = new Map();
@@ -189,7 +198,7 @@ module.exports = {
           changefreq: "monthly",
           priority: 0.7,
           lastmod: new Date().toISOString(),
-          alternateRefs: [],
+          alternateRefs: buildAlternateRefsForPath(postPath),
         });
       }
     }
