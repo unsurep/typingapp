@@ -10,19 +10,19 @@ export async function generateMetadata({
     const { locale } = await params;
 
   const titles: Record<string, string> = {
-        en: "Typing Game — Falling Words Challenge | Typingverified",
-        fr: "Jeu de Frappe — Mots Tombants | Typingverified",
-        es: "Juego de Escritura — Palabras Cayendo | Typingverified",
-        de: "Tipp-Spiel — Fallende Wörter | Typingverified",
-        pt: "Jogo de Digitação — Palavras Caindo | Typingverified",
+        en: "Typing Game â Falling Words Challenge | Typingverified",
+        fr: "Jeu de Frappe â Mots Tombants | Typingverified",
+        es: "Juego de Escritura â Palabras Cayendo | Typingverified",
+        de: "Tipp-Spiel â Fallende WÃ¶rter | Typingverified",
+        pt: "Jogo de DigitaÃ§Ã£o â Palavras Caindo | Typingverified",
   };
 
   const descriptions: Record<string, string> = {
-        en: "Play the Typingverified typing game. Destroy falling words before they hit the bottom. Speed increases every 10 words — climb the leaderboard!",
-        fr: "Jouez au jeu de frappe Typingverified. Détruisez les mots tombants avant qu'ils n'atteignent le bas. La vitesse augmente toutes les 10 mots !",
-        es: "Juega al juego de escritura de Typingverified. Destruye palabras cayentes antes de que lleguen abajo. ¡La velocidad aumenta cada 10 palabras!",
-        de: "Spiele das Typingverified-Tippspiel. Zerstöre fallende Wörter bevor sie den Boden erreichen. Die Geschwindigkeit steigt alle 10 Wörter!",
-        pt: "Jogue o jogo de digitação Typingverified. Destrua palavras caindo antes de chegarem ao fundo. A velocidade aumenta a cada 10 palavras!",
+        en: "Play the Typingverified typing game. Destroy falling words before they hit the bottom. Speed increases every 10 words â climb the leaderboard!",
+        fr: "Jouez au jeu de frappe Typingverified. DÃ©truisez les mots tombants avant qu'ils n'atteignent le bas. La vitesse augmente toutes les 10 mots !",
+        es: "Juega al juego de escritura de Typingverified. Destruye palabras cayentes antes de que lleguen abajo. Â¡La velocidad aumenta cada 10 palabras!",
+        de: "Spiele das Typingverified-Tippspiel. ZerstÃ¶re fallende WÃ¶rter bevor sie den Boden erreichen. Die Geschwindigkeit steigt alle 10 WÃ¶rter!",
+        pt: "Jogue o jogo de digitaÃ§Ã£o Typingverified. Destrua palavras caindo antes de chegarem ao fundo. A velocidade aumenta a cada 10 palavras!",
   };
 
   const basePath = locale === "en" ? "" : `/${locale}`;
@@ -33,6 +33,7 @@ export async function generateMetadata({
         alternates: {
                 canonical: `https://www.typingverified.com${basePath}/game`,
                 languages: {
+                          'x-default': 'https://www.typingverified.com/game',
                           en: "https://www.typingverified.com/game",
                           fr: "https://www.typingverified.com/fr/game",
                           es: "https://www.typingverified.com/es/game",
