@@ -14,7 +14,16 @@ export async function generateMetadata({
     return {
         title: t("metaTitle"),
         description: t("metaDescription"),
-                alternates: { canonical: 'https://www.typingverified.com/about' },
+                alternates: { canonical: 'https://www.typingverified.com/about' 
+        languages: {
+          'x-default': 'https://www.typingverified.com/about',
+          'en': 'https://www.typingverified.com/about',
+          'fr': 'https://www.typingverified.com/fr/about',
+          'es': 'https://www.typingverified.com/es/about',
+          'de': 'https://www.typingverified.com/de/about',
+          'pt': 'https://www.typingverified.com/pt/about',
+        },
+      },
     };
 }
 
