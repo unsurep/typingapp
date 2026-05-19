@@ -15,6 +15,7 @@ export async function generateMetadata({
               alternates: {
                         canonical: `https://www.typingverified.com${basePath}/privacy`,
                         languages: {
+                                    'x-default': 'https://www.typingverified.com/privacy',
                                     en: "https://www.typingverified.com/privacy",
                                     fr: "https://www.typingverified.com/fr/privacy",
                                     es: "https://www.typingverified.com/es/privacy",
@@ -119,7 +120,7 @@ export default async function PrivacyPage() {
                             </h2>
                             <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-4">
                                       Typingverified uses Google AdSense, a service provided by Google LLC, to display
-                                      advertisements. Google AdSense uses cookies — including the DoubleClick cookie — and web
+                                      advertisements. Google AdSense uses cookies â including the DoubleClick cookie â and web
                                       beacons to serve ads based on your prior visits to our website and other websites across the
                                       internet. Interest-based advertising allows Google and its partners to show you ads that are
                                       more likely to be relevant to your interests.
@@ -160,7 +161,7 @@ export default async function PrivacyPage() {
                                                     >
                                                   aboutads.info
                                       </a>
-                                      . Opting out does not mean you will no longer see ads — it means the ads you see will not be
+                                      . Opting out does not mean you will no longer see ads â it means the ads you see will not be
                                       based on your browsing history.
                             </p>
                             <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-4">
@@ -237,7 +238,7 @@ export default async function PrivacyPage() {
                             <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-4">
                                       We do not share your email address, typing scores, or certificate records with any
                                       advertising network. Certificate verification (Section 8 below) is publicly accessible by
-                                      design — anyone with your certificate code can confirm its authenticity — but no other
+                                      design â anyone with your certificate code can confirm its authenticity â but no other
                                       personal information is exposed in the verification result beyond what appears on your
                                       certificate.
                             </p>
