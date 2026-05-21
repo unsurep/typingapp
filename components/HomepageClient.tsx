@@ -9,7 +9,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { X } from "lucide-react";
 import HomeAuthBanner from "@/components/HomeAuthBanner";
 
-const containerVariants: Variants = {
+const containerVariants: Variants = {hh
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
@@ -43,7 +43,7 @@ export default function HomepageClient() {
   // })
 
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  const languageBadges = ["English", "FranÃ§ais", "EspaÃ±ol", "Deutsch", "PortuguÃªs"];
+  const languageBadges = ["English", "Français", "Español", "Deutsch", "Português"];
 
   const [stats, setStats] = useState({
     testsCompleted: 12400,
@@ -324,7 +324,7 @@ export default function HomepageClient() {
               whileHover={{ x: "100%" }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
             />
-            {t("startTest")} <span className="ml-2">â</span>
+            {t("startTest")} <span className="ml-2">→</span>
           </Link>
           <Link
             href="/practice"
@@ -547,13 +547,13 @@ export default function HomepageClient() {
               onClick={handleTestClick}
               className="inline-flex items-center justify-center px-7 py-3 text-sm font-bold text-background bg-brand rounded-full hover:bg-brand/90 transition-all shadow-md"
             >
-              {t("ctaTest")} <span className="ml-2">â</span>
+              {t("ctaTest")} <span className="ml-2">→</span>
             </Link>
             <Link
               href="/lessons"
               className="inline-flex items-center justify-center px-7 py-3 text-sm font-bold text-foreground bg-transparent border-2 border-border rounded-full hover:border-brand/60 hover:bg-brand/10 dark:hover:bg-brand/20 transition-all duration-300"
             >
-              {t("ctaLessons")} <span className="ml-2">â</span>
+              {t("ctaLessons")} <span className="ml-2">→</span>
             </Link>
           </div>
         </div>
