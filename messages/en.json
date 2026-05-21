@@ -41,6 +41,7 @@
     "startTest": "Start Test",
     "practiceFree": "Practice Free",
     "authWarning": "You need to login before you can take a test and earn certificate.",
+    "authWarningLink": "Sign in to save your progress.",
     "close": "Close",
     "signIn": "Sign In",
     "featTests": "60s / 120s Tests",
