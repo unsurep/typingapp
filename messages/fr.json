@@ -41,6 +41,7 @@
     "startTest": "Lancer le test",
     "practiceFree": "Pratiquer gratuitement",
     "authWarning": "Vous devez vous connecter avant de pouvoir passer un test et obtenir un certificat.",
+    "authWarningLink": "Connectez-vous pour enregistrer votre progression.",
     "close": "Fermer",
     "signIn": "Se connecter",
     "featTests": "Tests 60 s / 120 s",
