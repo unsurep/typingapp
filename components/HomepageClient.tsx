@@ -9,7 +9,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { X } from "lucide-react";
 import HomeAuthBanner from "@/components/HomeAuthBanner";
 
-const containerVariants: Variants = {hh
+const containerVariants: Variants = {
   hidden: { opacity: 0 },
   visible: {
     opacity: 1,
