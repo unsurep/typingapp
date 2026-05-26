@@ -4,6 +4,7 @@ import { createClient } from '@/utils/supabase/server';
 import { checkCertificateEligibility } from '@/lib/server/certificate';
 import type { AppLocale } from '@/i18n/routing';
 import ConfettiCelebration from '@/components/ConfettiCelebration';
+import { Gamepad2 } from 'lucide-react';
 import type { Metadata } from 'next';
 import { getTranslations } from 'next-intl/server';
 
@@ -370,7 +371,7 @@ export default async function DashboardPage({
             {/* Typing Game promo */}
             <div className="mb-10 flex flex-col sm:flex-row items-center justify-between gap-5 p-6 rounded-2xl border border-yellow-200 dark:border-yellow-400/20 bg-yellow-50 dark:bg-yellow-400/5">
                 <div className="flex items-center gap-4">
-                    <span className="text-4xl" aria-hidden>🎮</span>
+                    <Gamepad2 className="w-9 h-9 text-yellow-500 dark:text-yellow-400 shrink-0" aria-hidden="true" />
                     <div>
                         <h3 className="text-base font-bold text-gray-900 dark:text-white mb-0.5">{t('gamePromoTitle')}</h3>
                         <p className="text-sm text-gray-500 dark:text-gray-400">{t('gamePromoDesc')}</p>

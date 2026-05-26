@@ -6,7 +6,7 @@ import { Link } from "@/i18n/navigation";
 import { createClient } from "@/utils/supabase/client";
 import { motion, Variants } from "framer-motion";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { X } from "lucide-react";
+import { X, Gamepad2 } from "lucide-react";
 import HomeAuthBanner from "@/components/HomeAuthBanner";
 
 const containerVariants: Variants = {
@@ -502,7 +502,7 @@ export default function HomepageClient() {
         {/* Game promo */}
         <div className="flex flex-col sm:flex-row items-center justify-between gap-5 p-6 rounded-2xl border border-yellow-200 dark:border-yellow-400/20 bg-yellow-50 dark:bg-yellow-400/5 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:shadow-yellow-400/10">
           <div className="flex items-center gap-4">
-            <span className="text-4xl" aria-hidden>ð®</span>
+            <Gamepad2 className="w-9 h-9 text-yellow-500 dark:text-yellow-400 shrink-0" aria-hidden="true" />
             <div>
               <h2 className="text-base font-bold text-gray-900 dark:text-white mb-0.5">{t("gamePromoTitle")}</h2>
               <p className="text-sm text-gray-500 dark:text-gray-400">{t("gamePromoDesc")}</p>
