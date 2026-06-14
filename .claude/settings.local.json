@@ -6,7 +6,13 @@
       "Read(//c/Users/Louis/AppData/Local/**)",
       "Bash(xargs grep:*)",
       "Bash(npx:*)",
-      "Bash(curl:*)"
+      "Bash(curl:*)",
+      "Bash(curl.exe -sI https://typingverified.com/)",
+      "Bash(findstr /I \"HTTP location\")",
+      "Bash(curl.exe -sI http://typingverified.com/)",
+      "Bash(curl.exe -sI http://www.typingverified.com/)",
+      "Bash(curl.exe -sI https://www.typingverified.com/)",
+      "Bash(curl.exe -sIL http://typingverified.com/)"
     ]
   }
 }
