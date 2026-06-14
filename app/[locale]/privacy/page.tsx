@@ -1,27 +1,13 @@
 import type { Metadata } from "next";
 import type { AppLocale } from "@/i18n/routing";
 
-export async function generateMetadata({
-      params,
-}: {
-      params: Promise<{ locale: AppLocale }>;
-}): Promise<Metadata> {
-      const { locale } = await params;
-      const basePath = locale === "en" ? "" : `/${locale}`;
+export async function generateMetadata(): Promise<Metadata> {
       return {
               title: "Privacy Policy | Typingverified",
               description:
                         "Read how Typingverified collects and uses data, handles cookies, serves Google AdSense advertising, and protects your privacy rights.",
               alternates: {
-                        canonical: `https://www.typingverified.com${basePath}/privacy`,
-                        languages: {
-                                    'x-default': 'https://www.typingverified.com/privacy',
-                                    en: "https://www.typingverified.com/privacy",
-                                    fr: "https://www.typingverified.com/fr/privacy",
-                                    es: "https://www.typingverified.com/es/privacy",
-                                    de: "https://www.typingverified.com/de/privacy",
-                                    pt: "https://www.typingverified.com/pt/privacy",
-                        },
+                        canonical: 'https://www.typingverified.com/privacy',
               },
       };
 }
