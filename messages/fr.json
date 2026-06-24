@@ -182,9 +182,19 @@
     "lessonCompleted": "Leçon terminée",
     "lessonIncomplete": "Leçon incomplète",
     "taskLabel": "Tâche {n}",
-    "passCriteriaBefore": "Vous devez atteindre ",
+    "stepOf": "Étape {n} sur {total}",
+    "goalLabel": "Objectif",
+    "instructionTitle": "À faire",
+    "stepType": {
+      "place": "Trouver la touche",
+      "key": "Nouvelle touche",
+      "drill": "Exercice",
+      "words": "Mots",
+      "sentence": "Phrase"
+    },
+    "passCriteriaBefore": "Il vous faut ",
     "passCriteriaHighlight": "90 % de précision",
-    "passCriteriaAfter": " et compléter le contexte de la tâche pour réussir cette tâche.",
+    "passCriteriaAfter": " pour terminer cette étape et débloquer la suivante.",
     "loadingState": "Chargement de l'état de la leçon...",
     "performancePrefix": "Niveau de performance :",
     "wpm": "WPM",
@@ -243,9 +253,14 @@
     "ogLocale": "fr_FR"
   },
   "LessonsList": {
-    "titleBefore": "Typing",
-    "titleHighlight": "Leçons",
-    "subtitle": "Maîtrisez vos compétences de clavier étape par étape. Passez des techniques classiques de la rangée de base à la saisie de vocabulaire professionnel complexe sans regarder."
+    "titleBefore": "Apprendre à",
+    "titleHighlight": "Taper",
+    "subtitle": "Un parcours pas à pas pour les vrais débutants. Commencez par poser vos doigts sur la rangée de repos, apprenez le clavier quelques touches à la fois, et progressez jusqu'à taper des phrases entières sans regarder.",
+    "stageLabel": "Étape {n}",
+    "lessonsCount": "{done}/{total} faites",
+    "goalWpm": "Objectif {n} MPM",
+    "startHere": "Commencez ici",
+    "stepsLabel": "{n} étapes"
   },
   "LessonCard": {
         "titleTemplate": "%s",

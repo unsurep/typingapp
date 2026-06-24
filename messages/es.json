@@ -182,9 +182,19 @@
     "lessonCompleted": "Lección completada",
     "lessonIncomplete": "Lección incompleta",
     "taskLabel": "Tarea {n}",
-    "passCriteriaBefore": "Debes alcanzar ",
+    "stepOf": "Paso {n} de {total}",
+    "goalLabel": "Meta",
+    "instructionTitle": "Qué hacer",
+    "stepType": {
+      "place": "Encuentra la tecla",
+      "key": "Tecla nueva",
+      "drill": "Ejercicio",
+      "words": "Palabras",
+      "sentence": "Frase"
+    },
+    "passCriteriaBefore": "Necesitas ",
     "passCriteriaHighlight": "90% de precisión",
-    "passCriteriaAfter": " y completar el contexto de la tarea para superar esta tarea.",
+    "passCriteriaAfter": " para terminar este paso y desbloquear el siguiente.",
     "loadingState": "Cargando estado de la lección...",
     "performancePrefix": "Nivel de rendimiento:",
     "wpm": "WPM",
@@ -243,9 +253,14 @@
     "ogLocale": "es_ES"
   },
   "LessonsList": {
-    "titleBefore": "Typing",
-    "titleHighlight": "Lecciones",
-    "subtitle": "Domina tus habilidades de teclado paso a paso. Pasa de las técnicas estándar de la fila de inicio a escribir vocabulario profesional complejo sin mirar."
+    "titleBefore": "Aprende a",
+    "titleHighlight": "Escribir",
+    "subtitle": "Un recorrido paso a paso para principiantes totales. Empieza colocando los dedos en la fila central, aprende el teclado unas pocas teclas a la vez y avanza hasta escribir frases enteras sin mirar.",
+    "stageLabel": "Etapa {n}",
+    "lessonsCount": "{done}/{total} hechas",
+    "goalWpm": "Meta {n} PPM",
+    "startHere": "Empieza aquí",
+    "stepsLabel": "{n} pasos"
   },
   "LessonCard": {
     "premium": "Premium",

@@ -182,9 +182,19 @@
     "lessonCompleted": "Lição concluída",
     "lessonIncomplete": "Lição incompleta",
     "taskLabel": "Tarefa {n}",
-    "passCriteriaBefore": "Você precisa chegar em ",
+    "stepOf": "Passo {n} de {total}",
+    "goalLabel": "Meta",
+    "instructionTitle": "O que fazer",
+    "stepType": {
+      "place": "Encontre a tecla",
+      "key": "Tecla nova",
+      "drill": "Exercício",
+      "words": "Palavras",
+      "sentence": "Frase"
+    },
+    "passCriteriaBefore": "Você precisa de ",
     "passCriteriaHighlight": "90% de precisão",
-    "passCriteriaAfter": " e concluir o contexto da tarefa para passar nesta tarefa.",
+    "passCriteriaAfter": " para concluir este passo e desbloquear o próximo.",
     "loadingState": "Carregando estado da lição...",
     "performancePrefix": "Nível de desempenho:",
     "wpm": "WPM",
@@ -243,9 +253,14 @@
     "ogLocale": "pt_PT"
   },
   "LessonsList": {
-    "titleBefore": "Typing",
-    "titleHighlight": "Lições",
-    "subtitle": "Domine suas habilidades de teclado passo a passo. Saia das técnicas padrão da linha base e aprenda a digitar vocabulário profissional complexo sem olhar."
+    "titleBefore": "Aprenda a",
+    "titleHighlight": "Digitar",
+    "subtitle": "Uma jornada passo a passo para quem nunca digitou. Comece colocando os dedos na linha de descanso, aprenda o teclado poucas teclas por vez e avance até digitar frases inteiras sem olhar.",
+    "stageLabel": "Etapa {n}",
+    "lessonsCount": "{done}/{total} feitas",
+    "goalWpm": "Meta {n} PPM",
+    "startHere": "Comece aqui",
+    "stepsLabel": "{n} passos"
   },
   "LessonCard": {
     "premium": "Premium",

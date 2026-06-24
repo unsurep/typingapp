@@ -182,9 +182,19 @@
     "lessonCompleted": "Lektion abgeschlossen",
     "lessonIncomplete": "Lektion nicht abgeschlossen",
     "taskLabel": "Aufgabe {n}",
-    "passCriteriaBefore": "Du musst ",
+    "stepOf": "Schritt {n} von {total}",
+    "goalLabel": "Ziel",
+    "instructionTitle": "Zu tun",
+    "stepType": {
+      "place": "Taste finden",
+      "key": "Neue Taste",
+      "drill": "Übung",
+      "words": "Wörter",
+      "sentence": "Satz"
+    },
+    "passCriteriaBefore": "Du brauchst ",
     "passCriteriaHighlight": "90% Genauigkeit",
-    "passCriteriaAfter": " und den Kontext der Aufgabe ausfüllen, um diese Aufgabe zu bestehen.",
+    "passCriteriaAfter": ", um diesen Schritt abzuschließen und den nächsten freizuschalten.",
     "loadingState": "Lektionsstatus wird geladen...",
     "performancePrefix": "Leistungsniveau:",
     "wpm": "WPM",
@@ -243,9 +253,14 @@
     "ogLocale": "de_DE"
   },
   "LessonsList": {
-    "titleBefore": "Typing",
-    "titleHighlight": "Lektion(en)",
-    "subtitle": "Meistere deine Tastaturfähigkeiten Schritt für Schritt. Gehe von Standard-Techniken der Grundreihe zu komplexem professionellem Wortschatz tippen, ohne hinzusehen."
+    "titleBefore": "Tippen",
+    "titleHighlight": "Lernen",
+    "subtitle": "Ein Schritt-für-Schritt-Weg für echte Anfänger. Lege zuerst die Finger auf die Grundreihe, lerne die Tastatur Taste für Taste und arbeite dich bis zu ganzen Sätzen vor, ohne hinzusehen.",
+    "stageLabel": "Stufe {n}",
+    "lessonsCount": "{done}/{total} fertig",
+    "goalWpm": "Ziel {n} WPM",
+    "startHere": "Hier starten",
+    "stepsLabel": "{n} Schritte"
   },
   "LessonCard": {
     "premium": "Premium",

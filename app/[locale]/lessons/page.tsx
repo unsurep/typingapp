@@ -9,8 +9,8 @@ import type { Metadata } from 'next'
 import { getTranslations } from 'next-intl/server';
 
 export const metadata: Metadata = {
-        title: "Typing Lessons â 10 Structured Lessons to Build Touch Typing",
-        description: "Work through 10 structured typing lessons that take you from home-row basics to professional touch typing. Requires 90% accuracy to advance. Free to start.",
+        title: "Learn to Type — A Step-by-Step Touch Typing Course for Beginners",
+        description: "A beginner-friendly typing course that starts with finger placement on the home row and builds key-by-key to full sentences. Interactive keyboard guide, 90% accuracy to advance. Free to start.",
                 alternates: {
                                     canonical: 'https://www.typingverified.com/lessons',
                 
@@ -60,14 +60,24 @@ export default async function LessonsPage({
 
     const lessonsWithProgress = lessons.map(lesson => {
         const completedCount = progressMap.get(lesson.id) || 0;
-        const progressPercentage = Math.round((completedCount / lesson.tasks.length) * 100);
+        const progressPercentage = Math.round((completedCount / lesson.steps.length) * 100);
         return {
             ...lesson,
             progress: progressPercentage,
-            totalTasks: lesson.tasks.length,
+            totalTasks: lesson.steps.length,
             locked: false, // Open access â all lessons free during AdSense review period
         };
     });
+
+    // Group lessons into their stages to render a sequential journey map.
+    const stages = Array.from(
+        lessonsWithProgress.reduce((map, lesson) => {
+            const list = map.get(lesson.stageId) ?? [];
+            list.push(lesson);
+            map.set(lesson.stageId, list);
+            return map;
+        }, new Map<number, typeof lessonsWithProgress>())
+    ).sort((a, b) => a[0] - b[0]);
 
     return (
         <div className="flex flex-col flex-1 w-full max-w-6xl mx-auto py-12 px-4 sm:px-6 lg:px-8 relative">
@@ -87,16 +97,44 @@ export default async function LessonsPage({
                 </p>
             </div>
 
-            {/* Course Grid */}
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-20">
+            {/* Journey map: stage by stage */}
+            <div className="relative mb-20 flex flex-col gap-14">
+                {/* Vertical spine connecting the stages (desktop) */}
+                <div className="hidden md:block absolute left-[19px] top-4 bottom-4 w-0.5 bg-gradient-to-b from-brand/40 via-brand/20 to-transparent -z-0" />
 
-                {lessonsWithProgress.map((lesson) => (
-                    <LessonCard
-                        key={lesson.id}
-                        {...lesson}
-                    />
-                ))}
+                {stages.map(([stageId, stageLessons], si) => {
+                    const doneInStage = stageLessons.filter(l => l.progress >= 100).length;
+                    return (
+                        <section key={stageId} className="relative">
+                            {/* Stage header */}
+                            <div className="flex items-center gap-4 mb-6">
+                                <div className="shrink-0 w-10 h-10 rounded-full bg-brand text-background flex items-center justify-center font-extrabold shadow-md shadow-brand/30 relative z-10">
+                                    {si + 1}
+                                </div>
+                                <div className="flex-1 min-w-0">
+                                    <span className="text-xs font-semibold uppercase tracking-wider text-brand">
+                                        {t("stageLabel", { n: si + 1 })}
+                                    </span>
+                                    <div className="flex items-baseline gap-3 flex-wrap">
+                                        <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+                                            {stageLessons[0].stage}
+                                        </h2>
+                                        <span className="text-sm font-medium text-gray-500 dark:text-gray-400">
+                                            {t("lessonsCount", { done: doneInStage, total: stageLessons.length })}
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>
 
+                            {/* Lessons in this stage */}
+                            <div className="md:pl-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                                {stageLessons.map((lesson) => (
+                                    <LessonCard key={lesson.id} {...lesson} />
+                                ))}
+                            </div>
+                        </section>
+                    );
+                })}
             </div>
 
             {/* SEO Content Section */}

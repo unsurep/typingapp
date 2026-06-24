@@ -4,7 +4,7 @@ import React, { use, useState, useEffect } from "react";
 import { Link, useRouter } from "@/i18n/navigation";
 import { notFound } from "next/navigation";
 import TypingArea, { TypingResult } from "@/components/TypingArea";
-import StatsBar from "@/components/StatsBar";
+import TypingKeyboard from "@/components/TypingKeyboard";
 import { toast } from "sonner";
 import { getLessons } from "@/lib/lessons";
 import { hasLocale } from "next-intl";
@@ -15,6 +15,14 @@ import { useLocale, useTranslations } from "next-intl";
 import type { AppLocale } from "@/i18n/routing";
 import { useGuestProgress } from "@/hooks/useGuestProgress";
 import GuestSignupBanner from "@/components/GuestSignupBanner";
+
+const STEP_ICON: Record<string, string> = {
+    place: "👆",
+    key: "🔑",
+    drill: "🔁",
+    words: "📝",
+    sentence: "📄",
+};
 
 // In Next.js 15, dynamic route parameters must be awaited or unwrapped via `use()`
 export default function LessonPage({ params }: { params: Promise<{ locale: string; lessonId: string }> }) {
@@ -42,7 +50,7 @@ export default function LessonPage({ params }: { params: Promise<{ locale: strin
         notFound();
     }
 
-    const totalTasks = lesson.tasks.length;
+    const totalTasks = lesson.steps.length;
     const [activeTaskIndex, setActiveTaskIndex] = useState(0);
     const [completedTasks, setCompletedTasks] = useState<number[]>([]);
     const [taskScores, setTaskScores] = useState<Record<number, { wpm: number, accuracy: number, userInput?: string }>>({});
@@ -52,6 +60,7 @@ export default function LessonPage({ params }: { params: Promise<{ locale: strin
     const [attemptId, setAttemptId] = useState(0);
     const [isLoadingInit, setIsLoadingInit] = useState(true);
     const [isGuest, setIsGuest] = useState(false);
+    const [activeChar, setActiveChar] = useState<string | null>(null);
     const [metrics, setMetrics] = useState<TypingResult>({
         grossWpm: 0,
         netWpm: 0,
@@ -60,6 +69,32 @@ export default function LessonPage({ params }: { params: Promise<{ locale: strin
         duration: 0,
         userInput: ''
     });
+
+    const activeStep = lesson.steps[activeTaskIndex];
+
+    const resetMetrics = () => setMetrics({ grossWpm: 0, netWpm: 0, accuracy: 100, errors: 0, duration: 0, userInput: '' });
+
+    const applyTaskScore = (index: number) => {
+        if (taskScores[index]) {
+            setMetrics({
+                grossWpm: taskScores[index].wpm,
+                netWpm: taskScores[index].wpm,
+                accuracy: taskScores[index].accuracy,
+                errors: 0,
+                duration: 0,
+                userInput: taskScores[index].userInput || ''
+            });
+        } else {
+            resetMetrics();
+        }
+    };
+
+    const goToStep = (index: number) => {
+        setActiveTaskIndex(index);
+        setIsTaskPassed(completedTasks.includes(index) || isLessonPassed);
+        setAttemptId(prev => prev + 1);
+        applyTaskScore(index);
+    };
 
     useEffect(() => {
         async function fetchInitialProgress() {
@@ -74,13 +109,13 @@ export default function LessonPage({ params }: { params: Promise<{ locale: strin
                     setIsGuest(true);
                     const guestCompleted = getLessonCompletedTasks(parsedId);
                     setCompletedTasks(guestCompleted);
-                    const allDone = lesson && guestCompleted.length >= lesson.tasks.length;
+                    const allDone = lesson && guestCompleted.length >= lesson.steps.length;
                     if (allDone) {
                         setIsLessonPassed(true);
                         setIsTaskPassed(true);
                         setActiveTaskIndex(0);
                     } else {
-                        const nextIter = lesson?.tasks.findIndex((_, i) => !guestCompleted.includes(i));
+                        const nextIter = lesson?.steps.findIndex((_, i) => !guestCompleted.includes(i));
                         const startingIndex = (nextIter !== undefined && nextIter !== -1) ? nextIter : 0;
                         setActiveTaskIndex(startingIndex);
                     }
@@ -105,7 +140,6 @@ export default function LessonPage({ params }: { params: Promise<{ locale: strin
                         setIsTaskPassed(true);
                         setActiveTaskIndex(0);
 
-                        // Set metrics for the first task if they exist
                         if (res.taskScores && res.taskScores[0]) {
                             setMetrics({
                                 grossWpm: res.taskScores[0].wpm,
@@ -117,15 +151,13 @@ export default function LessonPage({ params }: { params: Promise<{ locale: strin
                             });
                         }
                     } else {
-                        // Find first incomplete task
-                        const nextIter = lesson?.tasks.findIndex((_, i) => !fetchedCompletedTasks.includes(i));
+                        const nextIter = lesson?.steps.findIndex((_, i) => !fetchedCompletedTasks.includes(i));
                         let startingIndex = 0;
                         if (nextIter !== undefined && nextIter !== -1) {
                             startingIndex = nextIter;
                         }
                         setActiveTaskIndex(startingIndex);
 
-                        // Set metrics for the starting task if they exist
                         if (res.taskScores && res.taskScores[startingIndex]) {
                             setMetrics({
                                 grossWpm: res.taskScores[startingIndex].wpm,
@@ -155,7 +187,7 @@ export default function LessonPage({ params }: { params: Promise<{ locale: strin
         setMetrics(finalMetrics);
 
         if (finalMetrics.accuracy < 90) {
-            toast.error(`Accuracy too low (${finalMetrics.accuracy}%). You need 90% to pass this task!`);
+            toast.error(`Accuracy too low (${finalMetrics.accuracy}%). You need 90% to pass this step!`);
             return;
         }
 
@@ -171,10 +203,26 @@ export default function LessonPage({ params }: { params: Promise<{ locale: strin
             toast.success("Lesson Fully Completed!");
             setIsLessonPassed(true);
         } else {
-            toast.success(`Task ${activeTaskIndex + 1} Passed!`);
+            toast.success(`Step ${activeTaskIndex + 1} Passed!`);
         }
 
         setIsTaskPassed(true);
+
+        // Auto-advance to the next step shortly after passing, so the learner
+        // sees the success feedback first. The Next button remains as a fallback.
+        if (!isLessonNowCompleted && activeTaskIndex < totalTasks - 1) {
+            const advanceFrom = activeTaskIndex;
+            setTimeout(() => {
+                setActiveTaskIndex(prev => {
+                    if (prev !== advanceFrom) return prev; // user already navigated away
+                    const nextIndex = prev + 1;
+                    setIsTaskPassed(completedTasks.includes(nextIndex));
+                    setAttemptId(a => a + 1);
+                    applyTaskScore(nextIndex);
+                    return nextIndex;
+                });
+            }, 900);
+        }
 
         // Persist progress for guests via localStorage
         if (isGuest) {
@@ -198,7 +246,6 @@ export default function LessonPage({ params }: { params: Promise<{ locale: strin
             toast.error("Warning: Could not save your progress to the database. Have you updated your Supabase Schema?");
             console.error("Save failed:", saveRes.reason);
         } else if (saveRes.success && saveRes.taskScores) {
-            // Update local state with the new task scores returned from the server
             setTaskScores(saveRes.taskScores);
         }
     };
@@ -206,76 +253,22 @@ export default function LessonPage({ params }: { params: Promise<{ locale: strin
     const handleRestartTask = () => {
         setIsTaskPassed(completedTasks.includes(activeTaskIndex));
         setAttemptId(prev => prev + 1);
-        setMetrics({
-            grossWpm: 0,
-            netWpm: 0,
-            accuracy: 100,
-            errors: 0,
-            duration: 0,
-            userInput: ''
-        });
-    }
+        resetMetrics();
+    };
 
     const handleNextTask = () => {
         if (activeTaskIndex < totalTasks - 1) {
-            const nextIndex = activeTaskIndex + 1;
-            setActiveTaskIndex(nextIndex);
-            setIsTaskPassed(completedTasks.includes(nextIndex));
-            setAttemptId(prev => prev + 1);
-
-            if (taskScores[nextIndex]) {
-                setMetrics({
-                    grossWpm: taskScores[nextIndex].wpm,
-                    netWpm: taskScores[nextIndex].wpm,
-                    accuracy: taskScores[nextIndex].accuracy,
-                    errors: 0,
-                    duration: 0,
-                    userInput: taskScores[nextIndex].userInput || ''
-                });
-            } else {
-                setMetrics({
-                    grossWpm: 0,
-                    netWpm: 0,
-                    accuracy: 100,
-                    errors: 0,
-                    duration: 0,
-                    userInput: ''
-                });
-            }
+            goToStep(activeTaskIndex + 1);
         }
-    }
-
-    const selectTask = (index: number) => {
-        setActiveTaskIndex(index);
-        setIsTaskPassed(completedTasks.includes(index) || isLessonPassed);
-        setAttemptId(prev => prev + 1);
-
-        if (taskScores[index]) {
-            setMetrics({
-                grossWpm: taskScores[index].wpm,
-                netWpm: taskScores[index].wpm,
-                accuracy: taskScores[index].accuracy,
-                errors: 0,
-                duration: 0,
-                userInput: taskScores[index].userInput || ''
-            });
-        } else {
-            setMetrics({
-                grossWpm: 0,
-                netWpm: 0,
-                accuracy: 100,
-                errors: 0,
-                duration: 0,
-                userInput: ''
-            });
-        }
-    }
+    };
 
     const formatTime = (seconds: number) => {
         const mins = Math.floor(seconds / 60);
         const secs = Math.floor(seconds % 60);
         return `${mins.toString().padStart(2, '0')}:${secs.toString().padStart(2, '0')}`;
     };
+
+    const completedCount = isLessonPassed ? totalTasks : completedTasks.length;
 
     return (
         <div className="flex flex-col flex-1 w-full max-w-4xl mx-auto py-12 px-4 sm:px-6 relative">
@@ -290,9 +283,10 @@ export default function LessonPage({ params }: { params: Promise<{ locale: strin
                 {t("backToLessons")}
             </Link>
 
-            {/* Main Lesson Header with Locked Badge */}
+            {/* Main Lesson Header */}
             <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4">
                 <div>
+                    <span className="text-xs font-semibold uppercase tracking-wider text-brand">{lesson.stage}</span>
                     <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white">
                         {lesson.title.split(':').map((part, index, array) => (
                             <React.Fragment key={index}>
@@ -300,18 +294,19 @@ export default function LessonPage({ params }: { params: Promise<{ locale: strin
                             </React.Fragment>
                         ))}
                     </h1>
-                    <span className="inline-block mt-3 px-3 py-1 bg-gray-100 dark:bg-zinc-800 text-sm font-semibold text-gray-700 dark:text-gray-300 rounded-md border border-gray-200 dark:border-zinc-700">
-                        {lesson.focus}
-                    </span>
+                    <div className="flex flex-wrap items-center gap-2 mt-3">
+                        <span className="inline-block px-3 py-1 bg-gray-100 dark:bg-zinc-800 text-sm font-semibold text-gray-700 dark:text-gray-300 rounded-md border border-gray-200 dark:border-zinc-700">
+                            {lesson.focus}
+                        </span>
+                        <span className="inline-block px-3 py-1 bg-brand/10 text-sm font-semibold text-brand rounded-md border border-brand/20">
+                            {t("goalLabel")}: {lesson.goalWpm} {t("wpm")}
+                        </span>
+                    </div>
                 </div>
 
-                {/* Locked Completion Badge */}
+                {/* Completion Badge */}
                 {isLoadingInit ? (
                     <div className="flex items-center gap-2 px-4 py-2 bg-gray-50 dark:bg-zinc-800/50 border border-gray-200 dark:border-zinc-700 text-gray-500 dark:text-gray-400 rounded-lg shadow-sm shrink-0 animate-pulse">
-                        <svg className="w-4 h-4 animate-spin -ml-1 mr-1 text-gray-500 dark:text-gray-400" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                            <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
-                            <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
-                        </svg>
                         <span className="text-sm font-semibold">{t("checking")}</span>
                     </div>
                 ) : isLessonPassed ? (
@@ -323,68 +318,89 @@ export default function LessonPage({ params }: { params: Promise<{ locale: strin
                     </div>
                 ) : (
                     <div className="flex items-center gap-2 px-4 py-2 bg-gray-50 dark:bg-zinc-800/50 border border-gray-200 dark:border-zinc-700 text-gray-500 dark:text-gray-400 rounded-lg shadow-sm shrink-0">
-                        <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2">
-                            <path strokeLinecap="round" strokeLinejoin="round" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
-                        </svg>
-                        <span className="text-sm font-semibold">{t("lessonIncomplete")}</span>
+                        <span className="text-sm font-semibold">{t("stepOf", { n: activeTaskIndex + 1, total: totalTasks })}</span>
                     </div>
                 )}
             </div>
 
-            {/* Task Tabs */}
-            <div className="w-full flex flex-wrap gap-2 mb-6">
-                {lesson.tasks.map((_, i) => (
-                    <button
-                        key={i}
-                        onClick={() => selectTask(i)}
-                        className={`px-4 py-2 rounded-lg text-sm font-medium transition-colors border ${activeTaskIndex === i
-                            ? 'bg-brand text-background border-transparent shadow-md shadow-brand/20'
-                            : completedTasks.includes(i) || isLessonPassed
-                                ? 'bg-green-50 text-green-700 border-green-200 dark:bg-green-900/20 dark:text-green-400 dark:border-green-800 hover:bg-green-100 dark:hover:bg-green-900/40'
-                                : 'bg-white text-gray-600 border-gray-200 hover:bg-gray-50 dark:bg-zinc-900 dark:text-gray-400 dark:border-zinc-800 dark:hover:border-brand/30 transition-all'
-                            }`}
-                    >
-                        {t("taskLabel", { n: i + 1 })}
-                        {(completedTasks.includes(i) || isLessonPassed) && (
-                            <svg className="w-4 h-4 inline-block ml-1.5 -mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
-                            </svg>
-                        )}
-                    </button>
-                ))}
+            {/* Step progress dots */}
+            <div className="w-full flex flex-wrap gap-1.5 mb-6">
+                {lesson.steps.map((step, i) => {
+                    const done = completedTasks.includes(i) || isLessonPassed;
+                    const active = activeTaskIndex === i;
+                    return (
+                        <button
+                            key={i}
+                            onClick={() => goToStep(i)}
+                            title={`${t("stepType." + step.type)} - ${t("stepOf", { n: i + 1, total: totalTasks })}`}
+                            className={`group flex items-center justify-center h-9 min-w-9 px-2.5 rounded-lg text-sm font-bold transition-all border ${active
+                                ? 'bg-brand text-background border-transparent shadow-md shadow-brand/20 scale-105'
+                                : done
+                                    ? 'bg-green-50 text-green-600 border-green-200 dark:bg-green-900/20 dark:text-green-400 dark:border-green-800'
+                                    : 'bg-white text-gray-400 border-gray-200 hover:border-brand/40 dark:bg-zinc-900 dark:text-gray-500 dark:border-zinc-800'
+                                }`}
+                        >
+                            {done && !active ? (
+                                <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="3"><path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" /></svg>
+                            ) : (
+                                <span className="text-xs">{i + 1}</span>
+                            )}
+                        </button>
+                    );
+                })}
+                <div className="ml-auto self-center text-xs font-medium text-gray-500 dark:text-gray-400">
+                    {completedCount}/{totalTasks}
+                </div>
             </div>
 
             {/* Guest signup nudge */}
             <GuestSignupBanner isGuest={isGuest} />
 
-            {/* Pass Criteria Info Box */}
-            <div className="w-full mb-6 p-4 bg-blue-50 dark:bg-blue-900/20 border border-blue-100 dark:border-blue-800 rounded-xl flex items-start gap-3 shadow-sm">
-                <svg className="w-5 h-5 text-blue-500 dark:text-blue-400 mt-0.5 shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M18 10a8 8 0 11-16 0 8 8 0 0116 0zm-7-4a1 1 0 11-2 0 1 1 0 012 0zM9 9a1 1 0 000 2v3a1 1 0 001 1h1a1 1 0 100-2v-3a1 1 0 00-1-1H9z" clipRule="evenodd" />
-                </svg>
-                <p className="text-sm font-medium text-blue-800 dark:text-blue-300 leading-relaxed">
-                    {t("passCriteriaBefore")}
-                    <span className="font-bold">{t("passCriteriaHighlight")}</span>
-                    {t("passCriteriaAfter")}
+            {/* Instruction / coaching box */}
+            <div className="w-full mb-5 p-4 sm:p-5 bg-white dark:bg-zinc-900 border border-gray-200 dark:border-zinc-800 rounded-xl shadow-sm">
+                <div className="flex items-center gap-2 mb-2">
+                    <span className="text-lg leading-none">{STEP_ICON[activeStep.type]}</span>
+                    <span className="text-xs font-bold uppercase tracking-wider text-brand">{t("stepType." + activeStep.type)}</span>
+                </div>
+                <p className="text-base sm:text-lg text-gray-800 dark:text-gray-200 leading-relaxed">
+                    {activeStep.instruction}
                 </p>
             </div>
 
             {/* Main Typing Container */}
             {isLoadingInit ? (
-                <div className="w-full h-64 bg-gray-50 dark:bg-zinc-800/50 rounded-xl border border-gray-200 dark:border-zinc-700 animate-pulse flex items-center justify-center">
+                <div className="w-full h-48 bg-gray-50 dark:bg-zinc-800/50 rounded-xl border border-gray-200 dark:border-zinc-700 animate-pulse flex items-center justify-center">
                     <span className="text-gray-500 dark:text-gray-400 font-medium">{t("loadingState")}</span>
                 </div>
             ) : (
                 <div key={attemptId}>
                     <TypingArea
-                        text={lesson.tasks[activeTaskIndex]}
+                        text={activeStep.text}
                         initialUserInput={metrics.userInput}
                         disabled={isTaskPassed}
                         onProgress={handleProgress}
                         onComplete={handleComplete}
+                        onActiveCharChange={setActiveChar}
                     />
                 </div>
             )}
+
+            {/* Interactive keyboard guide */}
+            {!isLoadingInit && (
+                <div className="w-full mt-2 mb-5">
+                    <TypingKeyboard
+                        targetKeys={activeStep.keys}
+                        nextChar={isTaskPassed ? null : activeChar}
+                    />
+                </div>
+            )}
+
+            {/* Pass criteria hint */}
+            <p className="w-full mt-3 text-xs text-center text-gray-500 dark:text-gray-400">
+                {t("passCriteriaBefore")}
+                <span className="font-bold text-gray-700 dark:text-gray-300">{t("passCriteriaHighlight")}</span>
+                {t("passCriteriaAfter")}
+            </p>
 
             {/* Performance Badge & Stats Bar Area */}
             <div className="w-full mt-6">

@@ -25,9 +25,11 @@ interface TypingAreaProps {
     onComplete?: (result: TypingResult) => void;
     onProgress?: (result: TypingResult) => void;
     onStart?: () => void;
+    /** Fires with the next character the learner should press (null when done). */
+    onActiveCharChange?: (char: string | null) => void;
 }
 
-export default function TypingArea({ text, disabled = false, initialUserInput = '', onComplete, onProgress, onStart }: TypingAreaProps) {
+export default function TypingArea({ text, disabled = false, initialUserInput = '', onComplete, onProgress, onStart, onActiveCharChange }: TypingAreaProps) {
     const [userInput, setUserInput] = useState(initialUserInput);
     const [startTime, setStartTime] = useState<number | null>(null);
     const [endTime, setEndTime] = useState<number | null>(null);
@@ -143,6 +145,14 @@ export default function TypingArea({ text, disabled = false, initialUserInput = 
     const handlePaste = (e: React.ClipboardEvent<HTMLTextAreaElement>) => {
         e.preventDefault();
     };
+
+    // Report the next expected character so an external keyboard guide can
+    // highlight it. Fires on every input change and when the text resets.
+    useEffect(() => {
+        if (!onActiveCharChange) return;
+        const nextChar = userInput.length < text.length ? text[userInput.length] : null;
+        onActiveCharChange(nextChar);
+    }, [userInput, text, onActiveCharChange]);
 
     // Keep input synchronized with initial prop updates (e.g. tab switching)
     useEffect(() => {

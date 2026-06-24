@@ -182,9 +182,19 @@
     "lessonCompleted": "Lesson Completed",
     "lessonIncomplete": "Lesson Incomplete",
     "taskLabel": "Task {n}",
-    "passCriteriaBefore": "You must reach ",
+    "stepOf": "Step {n} of {total}",
+    "goalLabel": "Goal",
+    "instructionTitle": "What to do",
+    "stepType": {
+      "place": "Find the key",
+      "key": "New key",
+      "drill": "Drill",
+      "words": "Words",
+      "sentence": "Sentence"
+    },
+    "passCriteriaBefore": "You need ",
     "passCriteriaHighlight": "90% accuracy",
-    "passCriteriaAfter": " and complete the task context to pass this task.",
+    "passCriteriaAfter": " to finish this step and unlock the next one.",
     "loadingState": "Loading lesson state...",
     "performancePrefix": "Performance Level:",
     "wpm": "WPM",
@@ -243,9 +253,14 @@
     "ogLocale": "en_US"
   },
   "LessonsList": {
-    "titleBefore": "Typing",
-    "titleHighlight": "Lessons",
-    "subtitle": "Master your keyboard skills step-by-step. Go from standard home row techniques to typing complex professional vocabulary without looking."
+    "titleBefore": "Learn to",
+    "titleHighlight": "Type",
+    "subtitle": "A step-by-step journey for complete beginners. Start by placing your fingers on the home row, learn the keyboard a few keys at a time, and build up to typing whole sentences without looking.",
+    "stageLabel": "Stage {n}",
+    "lessonsCount": "{done}/{total} done",
+    "goalWpm": "Goal {n} WPM",
+    "startHere": "Start here",
+    "stepsLabel": "{n} steps"
   },
   "LessonCard": {
     "premium": "Premium",
