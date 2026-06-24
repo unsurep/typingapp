@@ -125,12 +125,12 @@ export default async function BlogPostPage({ params }: Props) {
               <Calendar className="h-4 w-4 shrink-0" />
               {formatBlogPublishDate(post.publishDate, locale)}
             </span>
-            <span className="text-border">â¢</span>
+            <span className="text-border">•</span>
             <span className="flex items-center gap-1.5">
               <Clock className="h-4 w-4 shrink-0" />
               {t("minRead", { count: readingTime })}
             </span>
-            <span className="text-border">â¢</span>
+            <span className="text-border">•</span>
             <span className="font-medium text-foreground">
               {t("authorByline", { name: authorName })}
             </span>
@@ -222,7 +222,7 @@ export default async function BlogPostPage({ params }: Props) {
                 );
             }
 
-            // Paragraph â handle **bold** and [link](url) inline
+            // Paragraph — handle **bold** and [link](url) inline
             return (
               <p key={idx} className="mb-6 text-lg leading-relaxed text-muted-foreground">
                 {renderInline(section, `p-${idx}`)}

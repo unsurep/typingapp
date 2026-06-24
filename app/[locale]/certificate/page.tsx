@@ -177,7 +177,7 @@ export default async function CertificatePage({
 
             {/* Action Buttons Below Certificate */}
             <div className="mt-12 flex flex-col items-center gap-4 pb-20">
-                {/* Download PDF (disabled â coming soon) */}
+                {/* Download PDF (disabled — coming soon) */}
                 <button
                     disabled={!hasCertificate}
                     className="relative px-8 py-3.5 bg-gray-200 dark:bg-zinc-800 text-gray-400 dark:text-gray-500 rounded-full font-bold cursor-not-allowed flex items-center shadow-inner transition-colors overflow-hidden group/btn"
@@ -188,7 +188,7 @@ export default async function CertificatePage({
                     <span className="relative z-10">{t("downloadPdf")}</span>
                 </button>
 
-                {/* Badge upsell â only show when user has a certificate */}
+                {/* Badge upsell — only show when user has a certificate */}
                 {hasCertificate && (
                     <div className="flex flex-col items-center gap-2 mt-2">
                         {hasBadge ? (

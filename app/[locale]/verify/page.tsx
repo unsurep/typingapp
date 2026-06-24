@@ -60,18 +60,18 @@ export default async function VerifyLookupPage({
                                             </div>
                                             <div className="p-6 rounded-2xl bg-white dark:bg-zinc-900 border border-gray-100 dark:border-zinc-800 shadow-sm">
                                                                 <div className="text-2xl font-extrabold text-brand mb-1">Free</div>
-                                                                <div className="text-sm text-gray-600 dark:text-gray-400">Certificate verification is always free â no account required</div>
+                                                                <div className="text-sm text-gray-600 dark:text-gray-400">Certificate verification is always free — no account required</div>
                                             </div>
                             </div>
                 
                             <div className="mt-12 prose dark:prose-invert max-w-none">
                                             <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">How Certificate Verification Works</h2>
                                             <p className="text-gray-600 dark:text-gray-400 mb-4">
-                                                                When you earn a Typingverified certificate, it is assigned a unique alphanumeric code. That code is embedded in your certificate PDF and in the verification link you can share with employers. Anyone â including recruiters, HR teams, and academic institutions â can paste the code into the form above to instantly confirm that the certificate is genuine and view the full details: the holder&apos;s name, WPM score, accuracy, and issue date.
+                                                                When you earn a Typingverified certificate, it is assigned a unique alphanumeric code. That code is embedded in your certificate PDF and in the verification link you can share with employers. Anyone — including recruiters, HR teams, and academic institutions — can paste the code into the form above to instantly confirm that the certificate is genuine and view the full details: the holder&apos;s name, WPM score, accuracy, and issue date.
                                             </p>
                                             <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-3">What Gets Verified</h2>
                                             <p className="text-gray-600 dark:text-gray-400">
-                                                                A successful verification confirms the certificate code matches a record in the Typingverified database. It displays the certificate holder&apos;s name, their net WPM score, accuracy percentage, and the date the certificate was issued. If the code is invalid or has been revoked, verification will return an error â so there is no way to submit a fake or modified certificate.
+                                                                A successful verification confirms the certificate code matches a record in the Typingverified database. It displays the certificate holder&apos;s name, their net WPM score, accuracy percentage, and the date the certificate was issued. If the code is invalid or has been revoked, verification will return an error — so there is no way to submit a fake or modified certificate.
                                             </p>
                             </div>
                 </div>

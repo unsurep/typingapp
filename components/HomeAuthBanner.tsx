@@ -13,7 +13,7 @@ import { useTranslations } from "next-intl";
  *
  * Keeping this logic isolated in a client component means the rest of the
  * homepage (hero, features, FAQ, testimonials) can be rendered on the server
- * â or, while page.tsx is still "use client", wrapped in a Suspense boundary
+ * — or, while page.tsx is still "use client", wrapped in a Suspense boundary
  * so that the main content is not blocked waiting for the auth check.
  */
 export default function HomeAuthBanner() {

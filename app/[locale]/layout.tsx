@@ -74,7 +74,7 @@ export async function generateMetadata({
       "google-adsense-account": "ca-pub-3325996870387748",
     },
     alternates: {
-            // canonical is intentionally omitted here â each page sets its own
+            // canonical is intentionally omitted here — each page sets its own
             // canonical via generateMetadata so the correct path is used.
             // Only hreflang is set at the layout level so all pages inherit it.
             languages: {

@@ -102,7 +102,7 @@ export default function HomepageClient() {
     },
   ];
 
-  // Always clone 3 cards â enough for the widest visible count (desktop = 3)
+  // Always clone 3 cards — enough for the widest visible count (desktop = 3)
   const CLONE_COUNT = 3;
   const extendedTestimonials = [...testimonials, ...testimonials.slice(0, CLONE_COUNT)];
 
@@ -222,7 +222,7 @@ export default function HomepageClient() {
         "name": "Is a typing certificate worth it?",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Yes â especially for roles where typing is a core skill. A verified certificate removes doubt for recruiters, can replace a live typing test in many remote job applications, and shows you take professional skill development seriously."
+          "text": "Yes — especially for roles where typing is a core skill. A verified certificate removes doubt for recruiters, can replace a live typing test in many remote job applications, and shows you take professional skill development seriously."
         }
       },
       {
@@ -450,7 +450,7 @@ export default function HomepageClient() {
         <div className="rounded-2xl border border-border bg-muted/5 p-6 sm:p-8 transition-all duration-300 hover:-translate-y-1 hover:border-brand/40 hover:shadow-xl hover:shadow-brand/10">
           <h2 className="text-2xl sm:text-3xl font-bold text-foreground text-center mb-8">What Our Users Say</h2>
 
-          {/* Strip container â hides overflow so only VISIBLE cards show */}
+          {/* Strip container — hides overflow so only VISIBLE cards show */}
           <div ref={carouselRef} className="overflow-hidden">
             <div
               className="flex"

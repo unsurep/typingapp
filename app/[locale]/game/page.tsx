@@ -20,7 +20,7 @@ export async function generateMetadata({
   const descriptions: Record<string, string> = {
         en: "Play the Typingverified typing game. Destroy falling words before they hit the bottom. Speed increases every 10 words — climb the leaderboard!",
         fr: "Jouez au jeu de frappe Typingverified. Détruisez les mots tombants avant qu'ils n'atteignent le bas. La vitesse augmente toutes les 10 mots !",
-        es: "Juega al juego de escritura de Typingverified. Destruye palabras cayentes antes de que lleguen abajo. Â¡La velocidad aumenta cada 10 palabras!",
+        es: "Juega al juego de escritura de Typingverified. Destruye palabras cayentes antes de que lleguen abajo. ¡La velocidad aumenta cada 10 palabras!",
         de: "Spiele das Typingverified-Tippspiel. Zerstöre fallende Wörter bevor sie den Boden erreichen. Die Geschwindigkeit steigt alle 10 Wörter!",
         pt: "Jogue o jogo de digitação Typingverified. Destrua palavras caindo antes de chegarem ao fundo. A velocidade aumenta a cada 10 palavras!",
   };
