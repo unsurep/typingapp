@@ -13,6 +13,8 @@ import { Link } from "@/i18n/navigation";
 import { Calendar, Clock, ArrowLeft } from "lucide-react";
 import type { Metadata } from "next";
 import ShareButton from "@/components/ShareButton";
+import JsonLd from "@/components/JsonLd";
+import { getBlogPostsWithLocaleUi } from "@/lib/blog-i18n";
 import AdSlot from "@/components/AdSlot";
 import { getTranslations } from "next-intl/server";
 import { formatBlogPublishDate } from "@/lib/blog-date";
@@ -94,6 +96,31 @@ export default async function BlogPostPage({ params }: Props) {
   const readingTime = getReadingTimeMinutes(post.content);
   const authorName = post.authorName ?? DEFAULT_BLOG_AUTHOR;
   const authorBio = post.authorBio?.trim();
+
+  // Related posts: 3 other posts from the same locale for internal linking
+  const allPosts = getBlogPostsWithLocaleUi(locale);
+  const relatedPosts = allPosts.filter((p) => p.slug !== slug).slice(0, 3);
+
+  // Article JSON-LD structured data (helps Google index and trust the page)
+  const siteUrl = "https://www.typingverified.com";
+  const basePath = locale === "en" ? "" : "/" + locale;
+  const pageUrl = siteUrl + basePath + "/blog/" + slug;
+  const contentWordCount = post.content.trim().split(" ").filter(Boolean).length;
+  const articleJsonLd: { [key: string]: unknown } = {
+    "@context": "https://schema.org",
+    "@type": "BlogPosting",
+    headline: post.title,
+    description: post.metaDescription,
+    url: pageUrl,
+    datePublished: post.publishDate,
+    dateModified: post.publishDate,
+    author: { "@type": "Person", name: authorName },
+    publisher: { "@type": "Organization", name: "TypingVerified", url: siteUrl },
+    wordCount: contentWordCount,
+    mainEntityOfPage: { "@type": "WebPage", "@id": pageUrl },
+  };
+  if (post.image) { articleJsonLd.image = siteUrl + post.image; }
+
   const englishPost = getPostBySlug(routing.defaultLocale, slug);
   const isArticleBodyFallbackFromEnglish =
     locale !== routing.defaultLocale &&
@@ -101,6 +128,8 @@ export default async function BlogPostPage({ params }: Props) {
     post.content.trim() === englishPost.content.trim();
 
   return (
+    <>
+      <JsonLd data={articleJsonLd} />
     <article className="relative flex flex-col flex-1 w-full max-w-4xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[600px] h-[500px] bg-brand/5 dark:bg-brand/10 blur-[120px] rounded-full pointer-events-none -z-10" />
 
@@ -255,6 +284,30 @@ export default async function BlogPostPage({ params }: Props) {
           className="mt-12 w-full rounded-xl border border-border bg-background/60 p-3"
         />
 
+
+        {/* Related posts — internal linking for SEO and user navigation */}
+        {relatedPosts.length > 0 && (
+          <section className="mt-16 pt-12 border-t border-border">
+            <h2 className="text-xl font-bold text-foreground mb-6">More articles</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+              {relatedPosts.map((related) => (
+                <Link
+                  key={related.slug}
+                  href={"/blog/" + related.slug}
+                  className="group block rounded-xl border border-border bg-muted/20 p-4 hover:bg-muted/40 transition-colors"
+                >
+                  <p className="text-sm font-semibold text-foreground group-hover:text-primary transition-colors leading-snug line-clamp-3">
+                    {related.title}
+                  </p>
+                  <p className="mt-2 text-xs text-muted-foreground line-clamp-2">
+                    {related.metaDescription}
+                  </p>
+                </Link>
+              ))}
+            </div>
+          </section>
+        )}
+
         <footer className="mt-16 border-t border-border pt-12">
           <div className="flex flex-col items-center justify-between gap-6 sm:flex-row">
             <div>
@@ -268,5 +321,6 @@ export default async function BlogPostPage({ params }: Props) {
         </footer>
       </div>
     </article>
+    </>
   );
 }

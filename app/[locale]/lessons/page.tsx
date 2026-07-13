@@ -8,23 +8,29 @@ import { premiumFreeWindowActive } from "@/lib/server/premiumFree";
 import type { Metadata } from 'next'
 import { getTranslations } from 'next-intl/server';
 
-export const metadata: Metadata = {
+export async function generateMetadata({
+    params,
+}: {
+    params: Promise<{ locale: AppLocale }>;
+}): Promise<Metadata> {
+    const { locale } = await params;
+    return {
         title: "Learn to Type — A Step-by-Step Touch Typing Course for Beginners",
         description: "A beginner-friendly typing course that starts with finger placement on the home row and builds key-by-key to full sentences. Interactive keyboard guide, 90% accuracy to advance. Free to start.",
-                alternates: {
-                                    canonical: 'https://www.typingverified.com/lessons',
-                
-        languages: {
-          'x-default': 'https://www.typingverified.com/lessons',
-          'en': 'https://www.typingverified.com/lessons',
-          'fr': 'https://www.typingverified.com/fr/lessons',
-          'es': 'https://www.typingverified.com/es/lessons',
-          'de': 'https://www.typingverified.com/de/lessons',
-          'pt': 'https://www.typingverified.com/pt/lessons',
+        alternates: {
+            canonical: `https://www.typingverified.com${locale === 'en' ? '' : `/${locale}`}/lessons`,
+            languages: {
+                'x-default': 'https://www.typingverified.com/lessons',
+                'en': 'https://www.typingverified.com/lessons',
+                'fr': 'https://www.typingverified.com/fr/lessons',
+                'es': 'https://www.typingverified.com/es/lessons',
+                'de': 'https://www.typingverified.com/de/lessons',
+                'pt': 'https://www.typingverified.com/pt/lessons',
+            },
         },
-      },
         robots: { index: true, follow: true },
-};
+    };
+}
 
 export default async function LessonsPage({
     params,

@@ -14,7 +14,15 @@ export async function generateMetadata({
         title: t('metaTitle'),
         description: t('metaDescription'),
         alternates: {
-                        canonical: 'https://www.typingverified.com/verify',
+            canonical: `https://www.typingverified.com${locale === 'en' ? '' : `/${locale}`}/verify`,
+            languages: {
+                'x-default': 'https://www.typingverified.com/verify',
+                'en': 'https://www.typingverified.com/verify',
+                'fr': 'https://www.typingverified.com/fr/verify',
+                'es': 'https://www.typingverified.com/es/verify',
+                'de': 'https://www.typingverified.com/de/verify',
+                'pt': 'https://www.typingverified.com/pt/verify',
+            },
         },
         robots: { index: true, follow: true },
     };
