@@ -584,7 +584,17 @@
     "subheading": "Geben Sie den Zertifikatscode ein, um die Echtheit zu bestätigen.",
     "placeholder": "z. B. TTJ-A3X9K2",
     "button": "Prüfen",
-    "emptyError": "Bitte geben Sie einen Zertifikatscode ein."
+    "emptyError": "Bitte geben Sie einen Zertifikatscode ein.",
+    "statInstantTitle": "Sofort",
+    "statInstantDesc": "Ergebnisse in unter einer Sekunde",
+    "statTamperTitle": "Fälschungssicher",
+    "statTamperDesc": "Zertifikate werden serverseitig gespeichert und können weder bearbeitet noch gefälscht werden",
+    "statFreeTitle": "Kostenlos",
+    "statFreeDesc": "Die Zertifikatsprüfung ist immer kostenlos — kein Konto erforderlich",
+    "howWorksTitle": "So funktioniert die Zertifikatsprüfung",
+    "howWorksP": "Wenn du ein Typingverified-Zertifikat erhältst, wird ihm ein eindeutiger alphanumerischer Code zugewiesen. Dieser Code ist in dein Zertifikats-PDF und den Verifizierungslink eingebettet, den du teilen kannst. Jeder — einschließlich Personalvermittler, HR-Teams und Bildungseinrichtungen — kann den Code oben in das Formular einfügen, um sofort zu bestätigen, dass das Zertifikat echt ist, und alle Details einzusehen: den Namen des Inhabers, WPM-Wert, Genauigkeit und Ausstellungsdatum.",
+    "whatVerifiedTitle": "Was geprüft wird",
+    "whatVerifiedP": "Eine erfolgreiche Prüfung bestätigt, dass der Zertifikatscode mit einem Eintrag in der Typingverified-Datenbank übereinstimmt. Sie zeigt den Namen des Zertifikatsinhabers, den Netto-WPM-Wert, die Genauigkeit in Prozent und das Ausstellungsdatum des Zertifikats an. Wenn der Code ungültig ist oder widerrufen wurde, liefert die Prüfung eine Fehlermeldung — es gibt also keine Möglichkeit, ein gefälschtes oder verändertes Zertifikat einzureichen."
   },
   "Products": {
     "metaTitle": "Digitale Produkte | TypingVerified",

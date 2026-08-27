@@ -584,7 +584,17 @@
     "subheading": "Entrez le code du certificat pour en vérifier l'authenticité.",
     "placeholder": "ex. TTJ-A3X9K2",
     "button": "Vérifier",
-    "emptyError": "Veuillez entrer un code de certificat."
+    "emptyError": "Veuillez entrer un code de certificat.",
+    "statInstantTitle": "Instantané",
+    "statInstantDesc": "Résultats obtenus en moins d'une seconde",
+    "statTamperTitle": "Infalsifiable",
+    "statTamperDesc": "Les certificats sont stockés côté serveur et ne peuvent être ni modifiés ni falsifiés",
+    "statFreeTitle": "Gratuit",
+    "statFreeDesc": "La vérification des certificats est toujours gratuite — aucun compte requis",
+    "howWorksTitle": "Comment fonctionne la vérification des certificats",
+    "howWorksP": "Lorsque vous obtenez un certificat Typingverified, un code alphanumérique unique lui est attribué. Ce code est intégré dans le PDF de votre certificat ainsi que dans le lien de vérification que vous pouvez partager avec des employeurs. Toute personne — recruteurs, équipes RH, établissements d'enseignement — peut saisir ce code dans le formulaire ci-dessus pour confirmer instantanément l'authenticité du certificat et consulter tous les détails : nom du titulaire, score en MPM, précision et date de délivrance.",
+    "whatVerifiedTitle": "Ce qui est vérifié",
+    "whatVerifiedP": "Une vérification réussie confirme que le code du certificat correspond à un enregistrement dans la base de données Typingverified. Elle affiche le nom du titulaire du certificat, son score MPM net, son pourcentage de précision et la date de délivrance du certificat. Si le code est invalide ou a été révoqué, la vérification renverra une erreur — il est donc impossible de soumettre un certificat falsifié ou modifié."
   },
   "Products": {
     "metaTitle": "Produits numériques | TypingVerified",

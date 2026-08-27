@@ -584,7 +584,17 @@
     "subheading": "Digite o código do certificado para verificar sua autenticidade.",
     "placeholder": "ex. TTJ-A3X9K2",
     "button": "Verificar",
-    "emptyError": "Por favor, insira um código de certificado."
+    "emptyError": "Por favor, insira um código de certificado.",
+    "statInstantTitle": "Instantâneo",
+    "statInstantDesc": "Resultados em menos de um segundo",
+    "statTamperTitle": "À prova de falsificação",
+    "statTamperDesc": "Os certificados são armazenados no servidor e não podem ser editados ou falsificados",
+    "statFreeTitle": "Gratuito",
+    "statFreeDesc": "A verificação de certificados é sempre gratuita — nenhuma conta é necessária",
+    "howWorksTitle": "Como funciona a verificação de certificados",
+    "howWorksP": "Quando você conquista um certificado Typingverified, ele recebe um código alfanumérico único. Esse código está incorporado no PDF do seu certificado e no link de verificação que você pode compartilhar com empregadores. Qualquer pessoa — incluindo recrutadores, equipes de RH e instituições acadêmicas — pode colar o código no formulário acima para confirmar instantaneamente que o certificado é autêntico e ver todos os detalhes: o nome do titular, a pontuação em PPM, a precisão e a data de emissão.",
+    "whatVerifiedTitle": "O que é verificado",
+    "whatVerifiedP": "Uma verificação bem-sucedida confirma que o código do certificado corresponde a um registro no banco de dados da Typingverified. Ela exibe o nome do titular do certificado, sua pontuação líquida em PPM, a porcentagem de precisão e a data de emissão do certificado. Se o código for inválido ou tiver sido revogado, a verificação retornará um erro — portanto, não há como enviar um certificado falso ou alterado."
   },
   "Products": {
     "metaTitle": "Produtos digitais | TypingVerified",
