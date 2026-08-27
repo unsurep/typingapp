@@ -159,7 +159,17 @@
     "time": "Zeit",
     "restart": "Neu starten",
     "changeText": "Text ändern",
-    "nextTest": "Nächster Test"
+    "nextTest": "Nächster Test",
+    "seo": {
+      "freeTitle": "Freies Schreibtraining – ohne Timer, ohne Druck",
+      "freeP1": "Im Übungsmodus tippst du in deinem eigenen Tempo, ganz ohne Countdown. Es läuft kein Timer und es gibt am Ende keine Punktzahl – nur dich, den Text und das Feedback deiner Finger. Das macht ihn zur idealen Umgebung, um jene entspannte, präzise Fingerfertigkeit aufzubauen, die zeitbegrenzte Tests allein nicht entwickeln können.",
+      "freeP2": "Deine WPM, deine Genauigkeit und deine Fehlerzahl werden in Echtzeit erfasst, sodass du sofort siehst, wie du vorankommst. Nach einem Textabschnitt kannst du zum nächsten Text wechseln oder denselben wiederholen. Denselben Textabschnitt mehrmals hintereinander zu wiederholen, ist eine der wirksamsten Methoden, um schwierige Buchstabenfolgen zu festigen und deinen Rhythmus zu glätten.",
+      "mostTitle": "So holst du das Meiste aus deinen Übungseinheiten heraus",
+      "mostP1": "Das Ziel im Übungsmodus ist nicht, so schnell wie möglich zu tippen, sondern so korrekt wie möglich – in einem Tempo, das leicht fordernd, aber tragfähig ist. Fällt deine Genauigkeit unter 95 %, verlangsame dich, bis sie sich stabilisiert. Die Geschwindigkeit folgt der Genauigkeit, nicht umgekehrt.",
+      "mostP2": "Achte darauf, die Finger auf der Grundreihe der Tastatur zu halten und jede Taste zu erreichen, ohne nach unten zu schauen. Die erste Woche der Korrektur deiner Fingerhaltung fühlt sich langsam und ungewohnt an – das ist normal. Ab der zweiten Woche werden die neuen Bewegungsmuster natürlich, und die Geschwindigkeit steigt von selbst.",
+      "vsTitle": "Übungsmodus vs. Testmodus",
+      "vsP1": "Nutze den Übungsmodus, um deine Technik aufzubauen – korrekte Fingerhaltung, Grundreihe, Genauigkeit vor Geschwindigkeit. Nutze den Testmodus, um deinen Fortschritt einmal pro Woche zu messen. Die meisten Menschen verbessern sich am schnellsten, wenn sie 80 % ihrer Zeit im Übungsmodus und 20 % im Testmodus verbringen. Das Üben schafft die Gewohnheit, der Test misst sie."
+    }
   },
   "Test": {
     "guestBannerBefore": "Du übst als Gast. ",
@@ -174,7 +184,18 @@
     "loading": "Test wird geladen...",
     "toastSaved": "Testergebnis gespeichert!",
     "toastSaveFailed": "Fehler beim Speichern des Testergebnisses in der Datenbank.",
-    "toastUnexpected": "Beim Speichern ist ein unerwarteter Fehler aufgetreten."
+    "toastUnexpected": "Beim Speichern ist ein unerwarteter Fehler aufgetreten.",
+    "seo": {
+      "howItWorksTitle": "So funktioniert der Schreibgeschwindigkeitstest",
+      "howItWorksP1": "Dieser Schreibgeschwindigkeitstest misst, wie schnell du in Wörtern pro Minute (WPM) tippst und wie präzise du dabei jede Taste triffst. Sobald du zu tippen beginnst, startet der Timer automatisch. Am Ende der Sitzung – entweder wenn die Zeit abläuft oder du den Text fertig getippt hast – siehst du deine Brutto-WPM, Netto-WPM, deine Genauigkeit in Prozent und die Gesamtzahl der Fehler.",
+      "howItWorksP2": "Die Brutto-WPM zählt jedes getippte Wort, unabhängig von Fehlern. Die Netto-WPM zieht deine Fehler ab und gibt dir so ein ehrlicheres Bild deiner tatsächlich nutzbaren Schreibgeschwindigkeit. Die meisten Arbeitgeber und Tipp-Benchmarks beziehen sich auf die Netto-WPM – das ist also die Zahl, die es zu verbessern gilt.",
+      "howToUseTitle": "So verwendest du den Test",
+      "howToUseP1": "Wähle deine Testdauer – 60 Sekunden für einen Standard-Benchmark oder 120 Sekunden für eine längere Messung. Klicke in das Schreibfeld und beginne, den angezeigten Text zu tippen. Der Test endet automatisch, sobald der Timer null erreicht. Du kannst jederzeit neu starten, um einen neuen Text und ein sauberes Ergebnis zu erhalten.",
+      "howToUseP2": "Für möglichst genaue Ergebnisse solltest du aufrecht sitzen, die Finger auf der Grundreihe der Tastatur (ASDF und JKL;) halten und der Versuchung widerstehen, auf die Tastatur zu schauen. Wenn du angemeldet bist, werden deine Ergebnisse automatisch in deinem Dashboard gespeichert, damit du deinen Fortschritt über die Zeit verfolgen kannst.",
+      "goodSpeedTitle": "Was ist eine gute Schreibgeschwindigkeit?",
+      "goodSpeedP1": "Ein durchschnittlicher Erwachsener tippt zwischen 38 und 45 WPM. Professionelle Schreibkräfte erreichen in der Regel 65–75 WPM. Alles über 80 WPM bringt dich bei den meisten Bewerbungen und Produktivitäts-Benchmarks in die Spitzengruppe. Liegst du unter 40 WPM, führt regelmäßiges tägliches Üben – schon 10–15 Minuten – innerhalb weniger Wochen zu spürbaren Verbesserungen.",
+      "goodSpeedP2": "Genauigkeit zählt genauso viel wie Geschwindigkeit. Ein Ergebnis von 90 WPM bei 85 % Genauigkeit ist weniger nützlich als 70 WPM bei 98 % Genauigkeit, da Fehler ein Zurückgehen zum Korrigieren erfordern. Strebe zunächst eine Genauigkeit von 95 % oder mehr an und steigere danach deine Geschwindigkeit."
+    }
   },
   "LessonDetail": {
     "backToLessons": "Zurück zu den Lektionen",
