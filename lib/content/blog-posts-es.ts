@@ -1,10 +1,10 @@
 import type { BlogPost } from "../blog-types";
 
 export const blogPostsEs: BlogPost[] = [  {
-    title: "The Average Typing Speed in 2026 Is Shockingly Low — Where Do You Rank?",
+    title: "La velocidad de escritura promedio en 2026 es sorprendentemente baja — ¿en qué posición estás?",
     slug: "average-typing-speed-2026",
     metaDescription:
-      "The global average typing speed is lower than most people expect. Here's where you rank by profession, age group, and experience level in 2026.",
+      "La velocidad de escritura promedio a nivel mundial es más baja de lo que la mayoría espera. Aquí tienes tu posición según profesión, grupo de edad y nivel de experiencia en 2026.",
     publishDate: "Jan 5, 2026",
     image: "/blog/what-is-a-good-typing-speed.png",
     content: `
@@ -91,10 +91,10 @@ No es una brecha de talento. Es una brecha de práctica.
     `,
   },
   {
-    title: "Typing Speed by Age: Where Does Your Generation Rank in 2026?",
+    title: "Velocidad de escritura por edad: ¿qué lugar ocupa tu generación en 2026?",
     slug: "typing-speed-by-age-2026",
     metaDescription:
-      "Which generation types the fastest? The answer might surprise you. Here's the complete breakdown of average typing speed by age group in 2026.",
+      "¿Qué generación escribe más rápido? La respuesta podría sorprenderte. Aquí tienes el desglose completo de la velocidad de escritura promedio por grupo de edad en 2026.",
     publishDate: "Jan 7, 2026",
     image: "/blog/t2.png",
     content: `
@@ -158,9 +158,9 @@ Los promedios generacionales te dan un marco de referencia, pero tu puntuación 
     `,
   },
   {
-    title: "What Is a Good Typing Speed? (And How to Improve Yours)",
+    title: "¿Qué es una buena velocidad de escritura? (Y cómo mejorar la tuya)",
     slug: "what-is-a-good-typing-speed",
-    metaDescription: "Wondering what counts as a good WPM? Learn the average typing speeds by profession and how to improve yours with targeted practice.",
+    metaDescription: "¿Te preguntas qué se considera un buen PPM? Conoce las velocidades de escritura promedio por profesión y cómo mejorar la tuya con práctica específica.",
     publishDate: "Jan 9, 2026",
     image: "/blog/t3.png",
     content: `
@@ -244,10 +244,10 @@ Una buena velocidad de escritura es la velocidad que te permite producir trabajo
     `,
   },
   {
-    title: "Is 40 WPM Good? An Honest Answer (Plus How to Improve Fast)",
+    title: "¿40 PPM es bueno? Una respuesta honesta (además de cómo mejorar rápido)",
     slug: "is-40-wpm-good",
     metaDescription:
-      "Is 40 WPM a good typing speed? Here's an honest answer based on industry benchmarks, plus a clear plan for improving quickly.",
+      "¿Es 40 PPM una buena velocidad de escritura? Aquí tienes una respuesta honesta basada en referencias del sector, además de un plan claro para mejorar rápidamente.",
     publishDate: "Jan 11, 2026",
     image: "/blog/t1.png",
     content: `
@@ -320,10 +320,10 @@ La brecha entre 40 PPM y el rango de 55–65 PPM que abre la mayoría de los rol
     `,
   },
   {
-    title: "Why Typing Fast Without Accuracy Is Actually Slower (The Math Explained)",
+    title: "Por qué escribir rápido sin precisión en realidad te hace más lento (las matemáticas explicadas)",
     slug: "typing-speed-vs-accuracy-math",
     metaDescription:
-      "Think typing faster is always better? The math says otherwise. Here's why accuracy beats raw speed — and how net WPM actually works.",
+      "¿Crees que escribir más rápido siempre es mejor? Las matemáticas dicen lo contrario. Aquí explicamos por qué la precisión supera a la velocidad bruta — y cómo funciona realmente el PPM neto.",
     publishDate: "Jan 13, 2026",
     image: "/blog/t4.png",
     content: `
@@ -2544,10 +2544,10 @@ La brecha entre dónde está la mayoría de las personas y dónde creen que est�
     `,
   },
   {
-    title: "30 Typing Practice Sentences That Will Improve Your WPM Fast",
+    title: "30 frases de práctica de mecanografía que mejorarán tu PPM rápidamente",
     slug: "typing-practice-sentences",
     metaDescription:
-      "Looking for typing practice sentences that actually improve your speed? Here are 30 carefully chosen sentences targeting accuracy, speed, and common word patterns.",
+      "¿Buscas frases de práctica de mecanografía que realmente mejoren tu velocidad? Aquí tienes 30 frases cuidadosamente elegidas que se enfocan en precisión, velocidad y patrones de palabras comunes.",
     publishDate: "Apr 17, 2026",
     image: "/blog/t26.png",
     content: `
