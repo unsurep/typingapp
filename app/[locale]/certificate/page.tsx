@@ -44,20 +44,20 @@ export default async function CertificatePage({
                                                                         {t("heroSubtitle")}
                                                                     </p>
                                                                     <p className="text-base text-gray-500 dark:text-gray-400 mb-8 max-w-2xl mx-auto">
-                                                                                            Every certificate includes your name, score, accuracy, and a unique verification link. Employers and institutions can verify authenticity at any time via <Link href="/verify" className="text-brand underline">typingverified.com/verify</Link>.
+                                                                                            {t.rich("publicCtaP", { link: (chunks) => <Link href="/verify" className="text-brand underline">{chunks}</Link> })}
                                                                     </p>
                                                                     <div className="flex flex-col sm:flex-row gap-4 justify-center">
                                                                                             <Link
                                                                                                                             href="/signup"
                                                                                                                             className="inline-flex items-center justify-center px-8 py-3 rounded-xl bg-brand text-white font-semibold text-base hover:bg-brand/90 transition-colors"
                                                                                                                         >
-                                                                                                                        Create a free account
+                                                                                                                        {t("ctaCreateAccount")}
                                                                                                 </Link>
                                                                                             <Link
                                                                                                                             href="/login"
                                                                                                                             className="inline-flex items-center justify-center px-8 py-3 rounded-xl border border-gray-300 dark:border-zinc-700 text-gray-700 dark:text-gray-300 font-semibold text-base hover:bg-gray-50 dark:hover:bg-zinc-800 transition-colors"
                                                                                                                         >
-                                                                                                                        Sign in
+                                                                                                                        {t("ctaSignIn")}
                                                                                                 </Link>
                                                                     </div>
                                                 </div>
