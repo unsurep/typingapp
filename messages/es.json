@@ -551,7 +551,10 @@
     "toastUnexpectedError": "Se produjo un error inesperado.",
     "viewBadge": "Ver mi insignia",
     "getBadgeCta": "Obtener insignia — $2.99",
-    "getBadgeNote": "Compra única. Muéstrala en LinkedIn y GitHub."
+    "getBadgeNote": "Compra única. Muéstrala en LinkedIn y GitHub.",
+    "publicCtaP": "Cada certificado incluye tu nombre, puntuación, precisión y un enlace de verificación único. Los empleadores e instituciones pueden verificar su autenticidad en cualquier momento a través de <link>typingverified.com/verify</link>.",
+    "ctaCreateAccount": "Crear una cuenta gratuita",
+    "ctaSignIn": "Iniciar sesión"
   },
   "VerifyCertificate": {
     "metaTitle": "Verificar certificado | Typingverified",
