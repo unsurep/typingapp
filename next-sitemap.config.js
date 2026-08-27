@@ -162,6 +162,13 @@ module.exports = {
         disallow: buildDisallowRules(),
       },
     ],
+        transformRobotsTxt: async (config, content) => {
+                // next-sitemap's default robots.txt builder always injects a
+                // non-standard "Host:" directive (deprecated, Yandex-only, ignored
+                // by Google/Bing). Strip it so the generated file matches the
+                // standard Robots Exclusion Protocol.
+                return content.replace(/# Host\nHost: [^\n]*\n\n?/, "");
+        },
   },
   transform: async (config, urlPath) => {
     const highPriorityPages = new Set(["/", "/pricing"]);
