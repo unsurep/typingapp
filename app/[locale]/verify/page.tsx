@@ -42,10 +42,10 @@ export default async function VerifyLookupPage({
                 
                             <div className="text-center mb-10">
                                             <h1 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white mb-4">
-                                                                Verify a Certificate
+                                                {t('heading')}
                                             </h1>
                                             <p className="text-lg text-gray-600 dark:text-gray-400 max-w-xl mx-auto">
-                                                                Enter the certificate code to confirm its authenticity. Every Typingverified certificate includes a unique verification URL so employers and institutions can confirm it was legitimately earned.
+                                                {t('subheading')}
                                             </p>
                             </div>
                 
