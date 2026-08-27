@@ -185,9 +185,9 @@ export const blogPostTranslations: {
         "La douleur aux poignets liée à la frappe est fréquente mais évitable. Voici les causes, comment corriger posture et technique, et comment taper des heures sans vous blesser.",
     },
     "typing-practice-sentences": {
-      title: "30 Typing Practice Sentences That Will Improve Your WPM Fast",
+      title: "30 phrases d'entraînement à la frappe pour améliorer rapidement votre MPM",
       metaDescription:
-        "Looking for typing practice sentences that actually improve your speed? Here are 30 carefully chosen sentences targeting accuracy, speed, and common word patterns.",
+        "Vous cherchez des phrases d'entraînement à la frappe qui améliorent vraiment votre vitesse ? Voici 30 phrases soigneusement choisies qui ciblent la précision, la vitesse et les schémas de mots courants.",
     },
     "beginners-guide-touch-typing-2026": {
       title:
@@ -374,9 +374,9 @@ export const blogPostTranslations: {
         "El dolor de muñeca por escribir es frecuente pero evitable. Aquí tienes las causas, cómo corregir postura y técnica, y cómo escribir durante horas sin lesionarte.",
     },
     "typing-practice-sentences": {
-      title: "30 Typing Practice Sentences That Will Improve Your WPM Fast",
+      title: "30 frases de práctica de mecanografía que mejorarán tu PPM rápidamente",
       metaDescription:
-        "Looking for typing practice sentences that actually improve your speed? Here are 30 carefully chosen sentences targeting accuracy, speed, and common word patterns.",
+        "¿Buscas frases de práctica de mecanografía que realmente mejoren tu velocidad? Aquí tienes 30 frases cuidadosamente elegidas que se enfocan en precisión, velocidad y patrones de palabras comunes.",
     },
     "beginners-guide-touch-typing-2026": {
       title:
@@ -563,9 +563,9 @@ export const blogPostTranslations: {
         "Handgelenkschmerzen vom Tippen sind häufig, aber vermeidbar. Hier erfahren Sie die Ursachen, wie Sie Haltung und Technik verbessern und stundenlang ohne Schmerzen tippen.",
     },
     "typing-practice-sentences": {
-      title: "30 Typing Practice Sentences That Will Improve Your WPM Fast",
+      title: "30 Übungssätze zum Tippen, die dein WPM schnell verbessern",
       metaDescription:
-        "Looking for typing practice sentences that actually improve your speed? Here are 30 carefully chosen sentences targeting accuracy, speed, and common word patterns.",
+        "Suchst du Übungssätze zum Tippen, die deine Geschwindigkeit wirklich verbessern? Hier sind 30 sorgfältig ausgewählte Sätze, die auf Genauigkeit, Geschwindigkeit und häufige Wortmuster abzielen.",
     },
     "beginners-guide-touch-typing-2026": {
       title:
@@ -751,9 +751,9 @@ export const blogPostTranslations: {
         "Dor no pulso por digitar é comum, mas evitável. Veja as causas, como corrigir postura e técnica, e como digitar por horas sem se machucar.",
     },
     "typing-practice-sentences": {
-      title: "30 Typing Practice Sentences That Will Improve Your WPM Fast",
+      title: "30 Frases de Prática de Digitação Que Vão Melhorar Seu PPM Rapidamente",
       metaDescription:
-        "Looking for typing practice sentences that actually improve your speed? Here are 30 carefully chosen sentences targeting accuracy, speed, and common word patterns.",
+        "Procurando frases de prática de digitação que realmente melhoram sua velocidade? Aqui estão 30 frases cuidadosamente escolhidas focadas em precisão, velocidade e padrões comuns de palavras.",
     },
     "beginners-guide-touch-typing-2026": {
       title:
