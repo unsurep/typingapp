@@ -159,7 +159,17 @@
     "time": "Temps",
     "restart": "Recommencer",
     "changeText": "Changer le texte",
-    "nextTest": "Prochain test"
+    "nextTest": "Prochain test",
+    "seo": {
+      "freeTitle": "Entraînement de frappe libre — sans chronomètre, sans pression",
+      "freeP1": "Le mode entraînement vous permet de taper à votre propre rythme, sans compte à rebours. Il n'y a ni chronomètre ni score final — juste vous, le texte et le ressenti sous vos doigts. C'est l'environnement idéal pour développer une mémoire musculaire détendue et précise, que les tests chronométrés ne permettent pas de construire à eux seuls.",
+      "freeP2": "Votre MPM, votre précision et votre nombre d'erreurs sont suivis en temps réel afin que vous puissiez voir votre progression au fil de l'exercice. Une fois un texte terminé, vous pouvez passer au suivant ou recommencer le même. Répéter plusieurs fois le même texte est l'un des moyens les plus efficaces pour corriger les séquences difficiles et fluidifier votre rythme.",
+      "mostTitle": "Comment tirer le meilleur parti de vos séances d'entraînement",
+      "mostP1": "L'objectif du mode entraînement n'est pas de taper le plus vite possible, mais de taper le plus correctement possible, à une vitesse légèrement exigeante mais tenable. Si votre précision descend sous 95 %, ralentissez jusqu'à ce qu'elle se stabilise. La vitesse suit la précision, pas l'inverse.",
+      "mostP2": "Concentrez-vous sur le maintien de vos doigts sur la rangée de base du clavier et sur l'atteinte de chaque touche sans regarder vers le bas. La première semaine de correction de la position des doigts paraîtra lente et inconfortable — c'est normal. Dès la deuxième semaine, les nouveaux réflexes deviennent naturels et la vitesse progresse d'elle-même.",
+      "vsTitle": "Entraînement ou test : quel mode choisir ?",
+      "vsP1": "Utilisez le mode entraînement pour construire votre technique — bonne position des doigts, rangée de base, précision avant vitesse. Utilisez le mode test pour évaluer vos progrès une fois par semaine. La plupart des gens progressent plus vite en consacrant 80 % de leur temps à l'entraînement et 20 % aux tests. L'entraînement crée l'habitude ; le test la mesure."
+    }
   },
   "Test": {
     "guestBannerBefore": "Vous pratiquez en tant qu'invité. ",
@@ -174,7 +184,18 @@
     "loading": "Chargement du test...",
     "toastSaved": "Résultat du test enregistré !",
     "toastSaveFailed": "Échec de l'enregistrement du résultat du test dans la base de données.",
-    "toastUnexpected": "Une erreur inattendue est survenue lors de l'enregistrement."
+    "toastUnexpected": "Une erreur inattendue est survenue lors de l'enregistrement.",
+    "seo": {
+      "howItWorksTitle": "Comment fonctionne le test de vitesse de frappe",
+      "howItWorksP1": "Ce test de vitesse de frappe mesure la rapidité à laquelle vous tapez, en mots par minute (MPM), ainsi que la précision de chaque touche. Dès que vous commencez à taper, le chronomètre démarre automatiquement. À la fin de la session — que le temps soit écoulé ou que vous ayez terminé le texte — vous verrez votre MPM brut, votre MPM net, votre pourcentage de précision et votre nombre total d'erreurs.",
+      "howItWorksP2": "Le MPM brut compte tous les mots tapés, erreurs comprises. Le MPM net soustrait vos erreurs, ce qui donne une image plus fidèle de votre vitesse de frappe réellement utilisable. La plupart des employeurs et des barèmes de dactylographie se réfèrent au MPM net : c'est donc ce chiffre qu'il faut chercher à améliorer.",
+      "howToUseTitle": "Comment utiliser le test",
+      "howToUseP1": "Choisissez la durée de votre test — 60 secondes pour une mesure standard, ou 120 secondes pour une évaluation plus soutenue. Cliquez dans la zone de frappe et commencez à taper le texte affiché. Le test se termine automatiquement lorsque le chronomètre atteint zéro. Vous pouvez recommencer à tout moment pour obtenir un nouveau texte et un résultat vierge.",
+      "howToUseP2": "Pour des résultats plus précis, adoptez une bonne posture, gardez vos doigts sur la rangée de base du clavier (ASDF et JKL;) et résistez à l'envie de regarder le clavier. Si vous êtes connecté, vos résultats sont enregistrés automatiquement dans votre tableau de bord afin que vous puissiez suivre vos progrès dans le temps.",
+      "goodSpeedTitle": "Qu'est-ce qu'une bonne vitesse de frappe ?",
+      "goodSpeedP1": "Un adulte moyen tape entre 38 et 45 MPM. Les dactylographes professionnels atteignent généralement 65 à 75 MPM. Au-delà de 80 MPM, vous vous situez parmi les meilleurs pour la plupart des candidatures et des critères de productivité. Si vous êtes en dessous de 40 MPM, une pratique quotidienne régulière — même seulement 10 à 15 minutes — produira une amélioration notable en quelques semaines.",
+      "goodSpeedP2": "La précision compte autant que la vitesse. Un score de 90 MPM à 85 % de précision est moins utile que 70 MPM à 98 % de précision, car les erreurs obligent à revenir en arrière pour les corriger. Visez d'abord une précision de 95 % ou plus, puis augmentez votre vitesse à partir de là."
+    }
   },
   "LessonDetail": {
     "backToLessons": "Retour aux leçons",
