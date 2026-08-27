@@ -1,10 +1,10 @@
 import type { BlogPost } from "../blog-types";
 
 export const blogPostsFr: BlogPost[] = [  {
-    title: "The Average Typing Speed in 2026 Is Shockingly Low — Where Do You Rank?",
+    title: "La vitesse de frappe moyenne en 2026 est étonnamment basse — où vous situez-vous ?",
     slug: "average-typing-speed-2026",
     metaDescription:
-      "The global average typing speed is lower than most people expect. Here's where you rank by profession, age group, and experience level in 2026.",
+      "La vitesse de frappe moyenne dans le monde est plus basse que ce que la plupart des gens pensent. Voici où vous vous situez selon votre profession, votre tranche d'âge et votre niveau d'expérience en 2026.",
     publishDate: "Jan 5, 2026",
     image: "/blog/what-is-a-good-typing-speed.png",
     content: `
@@ -91,10 +91,10 @@ Ce n'est pas un écart de talent. C'est un écart de pratique.
     `,
   },
   {
-    title: "Typing Speed by Age: Where Does Your Generation Rank in 2026?",
+    title: "Vitesse de frappe par âge : où se classe votre génération en 2026 ?",
     slug: "typing-speed-by-age-2026",
     metaDescription:
-      "Which generation types the fastest? The answer might surprise you. Here's the complete breakdown of average typing speed by age group in 2026.",
+      "Quelle génération tape le plus vite ? La réponse pourrait vous surprendre. Voici le classement complet de la vitesse de frappe moyenne par tranche d'âge en 2026.",
     publishDate: "Jan 7, 2026",
     image: "/blog/t2.png",
     content: `
@@ -158,9 +158,9 @@ Les moyennes générationnelles vous donnent un cadre de référence, mais votre
     `,
   },
   {
-    title: "What Is a Good Typing Speed? (And How to Improve Yours)",
+    title: "Qu'est-ce qu'une bonne vitesse de frappe ? (Et comment améliorer la vôtre)",
     slug: "what-is-a-good-typing-speed",
-    metaDescription: "Wondering what counts as a good WPM? Learn the average typing speeds by profession and how to improve yours with targeted practice.",
+    metaDescription: "Vous vous demandez ce qui compte comme un bon MPM ? Découvrez les vitesses de frappe moyennes par profession et comment améliorer la vôtre grâce à une pratique ciblée.",
     publishDate: "Jan 9, 2026",
     image: "/blog/t3.png",
     content: `
@@ -244,10 +244,10 @@ Une bonne vitesse de frappe est la vitesse qui vous permet de produire un travai
     `,
   },
   {
-    title: "Is 40 WPM Good? An Honest Answer (Plus How to Improve Fast)",
+    title: "40 MPM, est-ce bien ? Une réponse honnête (et comment progresser rapidement)",
     slug: "is-40-wpm-good",
     metaDescription:
-      "Is 40 WPM a good typing speed? Here's an honest answer based on industry benchmarks, plus a clear plan for improving quickly.",
+      "40 MPM est-il une bonne vitesse de frappe ? Voici une réponse honnête basée sur les repères du secteur, ainsi qu'un plan clair pour progresser rapidement.",
     publishDate: "Jan 11, 2026",
     image: "/blog/t1.png",
     content: `
@@ -320,10 +320,10 @@ L'écart entre 40 MPM et la plage de 55–65 MPM qui déverrouille la plupart de
     `,
   },
   {
-    title: "Why Typing Fast Without Accuracy Is Actually Slower (The Math Explained)",
+    title: "Pourquoi taper vite sans précision vous ralentit en réalité (le calcul expliqué)",
     slug: "typing-speed-vs-accuracy-math",
     metaDescription:
-      "Think typing faster is always better? The math says otherwise. Here's why accuracy beats raw speed — and how net WPM actually works.",
+      "Vous pensez que taper plus vite est toujours mieux ? Les calculs disent le contraire. Voici pourquoi la précision l'emporte sur la vitesse brute — et comment fonctionne réellement le MPM net.",
     publishDate: "Jan 13, 2026",
     image: "/blog/t4.png",
     content: `
@@ -2544,10 +2544,10 @@ L'écart entre où se trouvent la plupart des gens et où ils pensent être est 
     `,
   },
   {
-    title: "30 Typing Practice Sentences That Will Improve Your WPM Fast",
+    title: "30 phrases d'entraînement à la frappe pour améliorer rapidement votre MPM",
     slug: "typing-practice-sentences",
     metaDescription:
-      "Looking for typing practice sentences that actually improve your speed? Here are 30 carefully chosen sentences targeting accuracy, speed, and common word patterns.",
+      "Vous cherchez des phrases d'entraînement à la frappe qui améliorent vraiment votre vitesse ? Voici 30 phrases soigneusement choisies qui ciblent la précision, la vitesse et les schémas de mots courants.",
     publishDate: "Apr 17, 2026",
     image: "/blog/t26.png",
     content: `
