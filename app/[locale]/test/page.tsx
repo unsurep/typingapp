@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffehct, Suspense, useMemo } from 'react';
+import React, { useState, useEffect, Suspense, useMemo } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { useRouter } from '@/i18n/navigation';
 import { useLocale, useTranslations } from 'next-intl';
