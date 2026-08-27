@@ -47,8 +47,5 @@ Disallow: /pt/signup
 Disallow: /pt/checkout
 Disallow: /pt/success
 
-# Host
-Host: https://www.typingverified.com
-
 # Sitemaps
 Sitemap: https://www.typingverified.com/sitemap.xml
