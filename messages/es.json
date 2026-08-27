@@ -159,7 +159,17 @@
     "time": "Tiempo",
     "restart": "Reiniciar",
     "changeText": "Cambiar texto",
-    "nextTest": "Siguiente prueba"
+    "nextTest": "Siguiente prueba",
+    "seo": {
+      "freeTitle": "Práctica de escritura libre: sin cronómetro, sin presión",
+      "freeP1": "El modo práctica te permite escribir a tu propio ritmo, sin cuenta atrás. No hay cronómetro ni puntuación final: solo tú, el texto y la retroalimentación de tus dedos. Es el entorno ideal para desarrollar ese tipo de memoria muscular relajada y precisa que los tests cronometrados por sí solos no logran construir.",
+      "freeP2": "Tu PPM, tu precisión y tu número de errores se registran en tiempo real para que puedas ver cómo te va sobre la marcha. Al terminar un texto, puedes pasar al siguiente o repetir el mismo. Repetir el mismo texto varias veces seguidas es una de las formas más eficaces de fijar las secuencias problemáticas y suavizar los cortes de ritmo.",
+      "mostTitle": "Cómo aprovechar al máximo tus sesiones de práctica",
+      "mostP1": "El objetivo del modo práctica no es escribir lo más rápido posible, sino escribir con la mayor corrección posible, a una velocidad que resulte algo exigente pero sostenible. Si tu precisión cae por debajo del 95 %, reduce la velocidad hasta que se estabilice. La velocidad sigue a la precisión, no al revés.",
+      "mostP2": "Concéntrate en mantener los dedos sobre la fila base del teclado y en alcanzar cada tecla sin mirar hacia abajo. La primera semana corrigiendo la posición de los dedos resultará lenta e incómoda; es normal. A partir de la segunda semana, los nuevos patrones empiezan a sentirse naturales y la velocidad aumenta por sí sola.",
+      "vsTitle": "Práctica frente a test: qué modo elegir",
+      "vsP1": "Usa el modo práctica para construir tu técnica: posición correcta de los dedos, fila base del teclado, precisión antes que velocidad. Usa el modo test para medir tu progreso una vez por semana. La mayoría de las personas mejora más rápido dedicando el 80 % de su tiempo a la práctica y el 20 % a los tests. La práctica crea el hábito; el test lo mide."
+    }
   },
   "Test": {
     "guestBannerBefore": "Estás practicando como invitado. ",
@@ -174,7 +184,18 @@
     "loading": "Cargando prueba...",
     "toastSaved": "¡Resultado de la prueba guardado!",
     "toastSaveFailed": "Error al guardar el resultado de la prueba en la base de datos.",
-    "toastUnexpected": "Ocurrió un error inesperado al guardar."
+    "toastUnexpected": "Ocurrió un error inesperado al guardar.",
+    "seo": {
+      "howItWorksTitle": "Cómo funciona el test de velocidad de escritura",
+      "howItWorksP1": "Este test de velocidad de escritura mide qué tan rápido escribes en palabras por minuto (PPM) y con qué precisión pulsas cada tecla. En cuanto empiezas a escribir, el cronómetro se pone en marcha automáticamente. Al final de la sesión —ya sea porque se acaba el tiempo o porque terminas el texto— verás tu PPM bruto, tu PPM neto, tu porcentaje de precisión y tu número total de errores.",
+      "howItWorksP2": "El PPM bruto cuenta todas las palabras que escribiste, errores incluidos. El PPM neto resta tus errores, lo que ofrece una imagen más realista de tu velocidad de escritura utilizable. La mayoría de los empleadores y baremos de mecanografía se basan en el PPM neto, así que es la cifra en la que conviene centrarse para mejorar.",
+      "howToUseTitle": "Cómo usar el test",
+      "howToUseP1": "Elige la duración de tu test: 60 segundos para una medición estándar, o 120 segundos si prefieres una evaluación más sostenida. Haz clic en el área de escritura y empieza a teclear el texto mostrado. El test termina automáticamente cuando el cronómetro llega a cero. Puedes reiniciar en cualquier momento para obtener un texto nuevo y un resultado limpio.",
+      "howToUseP2": "Para obtener resultados más precisos, mantén una buena postura, deja los dedos sobre la fila base del teclado (ASDF y JKL;) y evita la tentación de mirar el teclado. Si has iniciado sesión, tus resultados se guardan automáticamente en tu panel para que puedas seguir tu progreso a lo largo del tiempo.",
+      "goodSpeedTitle": "¿Qué es una buena velocidad de escritura?",
+      "goodSpeedP1": "Un adulto promedio escribe entre 38 y 45 PPM. Los mecanógrafos profesionales suelen alcanzar entre 65 y 75 PPM. Superar los 80 PPM te sitúa entre los mejores para la mayoría de las solicitudes de empleo y baremos de productividad. Si estás por debajo de 40 PPM, la práctica diaria constante —aunque sean solo 10 o 15 minutos— producirá una mejora notable en pocas semanas.",
+      "goodSpeedP2": "La precisión importa tanto como la velocidad. Un resultado de 90 PPM con un 85 % de precisión es menos útil que 70 PPM con un 98 % de precisión, porque los errores obligan a volver atrás para corregirlos. Apunta primero a una precisión del 95 % o más, y luego aumenta tu velocidad a partir de ahí."
+    }
   },
   "LessonDetail": {
     "backToLessons": "Volver a las lecciones",

@@ -159,7 +159,17 @@
     "time": "Tempo",
     "restart": "Reiniciar",
     "changeText": "Mudar texto",
-    "nextTest": "Próximo teste"
+    "nextTest": "Próximo teste",
+    "seo": {
+      "freeTitle": "Prática de digitação livre — sem cronômetro, sem pressão",
+      "freeP1": "O modo prática permite que você digite no seu próprio ritmo, sem contagem regressiva. Não há cronômetro rodando nem pontuação final — só você, o texto e o retorno dos seus dedos. Isso torna o modo ideal para desenvolver aquele tipo de memória muscular relaxada e precisa que os testes cronometrados, sozinhos, não conseguem construir.",
+      "freeP2": "Seu PPM, precisão e número de erros são acompanhados em tempo real, para que você veja como está indo ao longo do exercício. Ao terminar um texto, você pode passar para o próximo ou reiniciar o mesmo. Repetir o mesmo texto várias vezes seguidas é uma das formas mais eficazes de fixar sequências difíceis e suavizar quebras de ritmo.",
+      "mostTitle": "Como aproveitar ao máximo suas sessões de prática",
+      "mostP1": "O objetivo do modo prática não é digitar o mais rápido possível — é digitar da forma mais correta possível, em uma velocidade que pareça um pouco desafiadora, mas sustentável. Se sua precisão cair abaixo de 95%, diminua o ritmo até que ela se estabilize. A velocidade acompanha a precisão, e não o contrário.",
+      "mostP2": "Concentre-se em manter os dedos na fileira base do teclado e em alcançar cada tecla sem olhar para baixo. A primeira semana corrigindo o posicionamento dos dedos vai parecer lenta e desconfortável — isso é normal. A partir da segunda semana, os novos padrões passam a parecer naturais, e a velocidade aumenta por conta própria.",
+      "vsTitle": "Prática vs. teste: qual modo escolher",
+      "vsP1": "Use o modo prática para desenvolver sua técnica — posicionamento correto dos dedos, fileira base do teclado, precisão antes da velocidade. Use o modo teste para medir seu progresso uma vez por semana. A maioria das pessoas evolui mais rápido dedicando 80% do tempo à prática e 20% aos testes. A prática cria o hábito; o teste o mede."
+    }
   },
   "Test": {
     "guestBannerBefore": "Você está praticando como visitante. ",
@@ -174,7 +184,18 @@
     "loading": "Carregando teste...",
     "toastSaved": "Resultado do teste salvo!",
     "toastSaveFailed": "Falha ao salvar o resultado do teste no banco de dados.",
-    "toastUnexpected": "Ocorreu um erro inesperado ao salvar."
+    "toastUnexpected": "Ocorreu um erro inesperado ao salvar.",
+    "seo": {
+      "howItWorksTitle": "Como funciona o teste de velocidade de digitação",
+      "howItWorksP1": "Este teste de velocidade de digitação mede a rapidez com que você digita, em palavras por minuto (PPM), e a precisão com que acerta cada tecla. Assim que você começa a digitar, o cronômetro é iniciado automaticamente. Ao final da sessão — seja porque o tempo acabou ou porque você terminou o texto — você verá seu PPM bruto, PPM líquido, porcentagem de precisão e número total de erros.",
+      "howItWorksP2": "O PPM bruto conta todas as palavras digitadas, incluindo os erros. O PPM líquido desconta seus erros, oferecendo uma visão mais realista da sua velocidade de digitação efetivamente utilizável. A maioria dos empregadores e parâmetros de digitação usa o PPM líquido como referência, então esse é o número em que vale a pena focar para melhorar.",
+      "howToUseTitle": "Como usar o teste",
+      "howToUseP1": "Escolha a duração do seu teste — 60 segundos para uma medição padrão, ou 120 segundos para uma avaliação mais prolongada. Clique na área de digitação e comece a digitar o texto exibido. O teste termina automaticamente quando o cronômetro chega a zero. Você pode reiniciar a qualquer momento para obter um novo texto e um resultado limpo.",
+      "howToUseP2": "Para obter resultados mais precisos, mantenha uma boa postura, deixe os dedos na fileira base do teclado (ASDF e JKL;) e resista à vontade de olhar para o teclado. Se você estiver conectado, seus resultados são salvos automaticamente no seu painel para que possa acompanhar seu progresso ao longo do tempo.",
+      "goodSpeedTitle": "O que é uma boa velocidade de digitação?",
+      "goodSpeedP1": "Um adulto médio digita entre 38 e 45 PPM. Digitadores profissionais costumam alcançar de 65 a 75 PPM. Qualquer valor acima de 80 PPM coloca você entre os melhores na maioria das candidaturas a emprego e parâmetros de produtividade. Se você está abaixo de 40 PPM, a prática diária constante — mesmo que sejam apenas 10 a 15 minutos — produzirá uma melhora perceptível em poucas semanas.",
+      "goodSpeedP2": "A precisão importa tanto quanto a velocidade. Um resultado de 90 PPM com 85% de precisão é menos útil do que 70 PPM com 98% de precisão, porque os erros exigem voltar atrás para corrigir. Busque primeiro uma precisão de 95% ou mais e, depois, aumente sua velocidade a partir daí."
+    }
   },
   "LessonDetail": {
     "backToLessons": "Voltar às lições",
