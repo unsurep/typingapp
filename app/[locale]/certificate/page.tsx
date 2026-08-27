@@ -38,10 +38,10 @@ export default async function CertificatePage({
                                                 <div className="flex flex-col flex-1 w-full max-w-4xl mx-auto py-16 px-4 sm:px-6 lg:px-8 text-center">
                                                                     <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[500px] bg-brand/5 dark:bg-brand/10 blur-[120px] rounded-full pointer-events-none -z-10" />
                                                                     <h1 className="text-4xl font-extrabold tracking-tight text-gray-900 dark:text-white mb-4">
-                                                                                            Typing Speed Certificate
+                                                                        {t("heroTitleBefore")} {t("heroTitleHighlight")}
                                                                     </h1>
                                                                     <p className="text-lg text-gray-600 dark:text-gray-400 mb-4 max-w-2xl mx-auto">
-                                                                                            Earn a verifiable Typingverified certificate by completing the typing speed test with a score of at least 40 WPM and 90% accuracy. Share your certificate with employers, on LinkedIn, or on your CV.
+                                                                        {t("heroSubtitle")}
                                                                     </p>
                                                                     <p className="text-base text-gray-500 dark:text-gray-400 mb-8 max-w-2xl mx-auto">
                                                                                             Every certificate includes your name, score, accuracy, and a unique verification link. Employers and institutions can verify authenticity at any time via <Link href="/verify" className="text-brand underline">typingverified.com/verify</Link>.
