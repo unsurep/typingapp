@@ -1,10 +1,10 @@
 import type { BlogPost } from "../blog-types";
 
 export const blogPostsPt: BlogPost[] = [  {
-    title: "The Average Typing Speed in 2026 Is Shockingly Low — Where Do You Rank?",
+    title: "A Velocidade Média de Digitação em 2026 É Chocantemente Baixa — Onde Você Se Classifica?",
     slug: "average-typing-speed-2026",
     metaDescription:
-      "The global average typing speed is lower than most people expect. Here's where you rank by profession, age group, and experience level in 2026.",
+      "A velocidade média global de digitação é menor do que a maioria das pessoas espera. Veja como você se classifica por profissão, faixa etária e nível de experiência em 2026.",
     publishDate: "Jan 5, 2026",
     image: "/blog/what-is-a-good-typing-speed.png",
     content: `
@@ -91,10 +91,10 @@ Não é uma lacuna de talento. É uma lacuna de prática.
     `,
   },
   {
-    title: "Typing Speed by Age: Where Does Your Generation Rank in 2026?",
+    title: "Velocidade de Digitação por Idade: Como Sua Geração Se Classifica em 2026?",
     slug: "typing-speed-by-age-2026",
     metaDescription:
-      "Which generation types the fastest? The answer might surprise you. Here's the complete breakdown of average typing speed by age group in 2026.",
+      "Qual geração digita mais rápido? A resposta pode te surpreender. Veja o detalhamento completo da velocidade média de digitação por faixa etária em 2026.",
     publishDate: "Jan 7, 2026",
     image: "/blog/t2.png",
     content: `
@@ -158,9 +158,9 @@ As médias geracionais fornecem um quadro de referência, mas sua pontuação in
     `,
   },
   {
-    title: "What Is a Good Typing Speed? (And How to Improve Yours)",
+    title: "O Que É Uma Boa Velocidade de Digitação? (E Como Melhorar a Sua)",
     slug: "what-is-a-good-typing-speed",
-    metaDescription: "Wondering what counts as a good WPM? Learn the average typing speeds by profession and how to improve yours with targeted practice.",
+    metaDescription: "Quer saber o que conta como um bom PPM? Conheça as velocidades médias de digitação por profissão e como melhorar a sua com prática direcionada.",
     publishDate: "Jan 9, 2026",
     image: "/blog/t3.png",
     content: `
@@ -244,10 +244,10 @@ Uma boa velocidade de digitação é a velocidade que permite produzir trabalho 
     `,
   },
   {
-    title: "Is 40 WPM Good? An Honest Answer (Plus How to Improve Fast)",
+    title: "40 PPM É Bom? Uma Resposta Honesta (Além de Como Melhorar Rápido)",
     slug: "is-40-wpm-good",
     metaDescription:
-      "Is 40 WPM a good typing speed? Here's an honest answer based on industry benchmarks, plus a clear plan for improving quickly.",
+      "40 PPM é uma boa velocidade de digitação? Aqui está uma resposta honesta baseada em referências do setor, além de um plano claro para melhorar rapidamente.",
     publishDate: "Jan 11, 2026",
     image: "/blog/t1.png",
     content: `
@@ -320,10 +320,10 @@ A diferença entre 40 PPM e a faixa de 55–65 PPM que abre a maioria das funç�
     `,
   },
   {
-    title: "Why Typing Fast Without Accuracy Is Actually Slower (The Math Explained)",
+    title: "Por Que Digitar Rápido Sem Precisão É Na Verdade Mais Lento (A Matemática Explicada)",
     slug: "typing-speed-vs-accuracy-math",
     metaDescription:
-      "Think typing faster is always better? The math says otherwise. Here's why accuracy beats raw speed — and how net WPM actually works.",
+      "Acha que digitar mais rápido é sempre melhor? A matemática diz o contrário. Veja por que a precisão supera a velocidade bruta — e como o PPM líquido realmente funciona.",
     publishDate: "Jan 13, 2026",
     image: "/blog/t4.png",
     content: `
@@ -2548,10 +2548,10 @@ A diferença entre onde a maioria das pessoas está e onde elas pensam que estã
     `,
   },
   {
-    title: "30 Typing Practice Sentences That Will Improve Your WPM Fast",
+    title: "30 Frases de Prática de Digitação Que Vão Melhorar Seu PPM Rapidamente",
     slug: "typing-practice-sentences",
     metaDescription:
-      "Looking for typing practice sentences that actually improve your speed? Here are 30 carefully chosen sentences targeting accuracy, speed, and common word patterns.",
+      "Procurando frases de prática de digitação que realmente melhoram sua velocidade? Aqui estão 30 frases cuidadosamente escolhidas focadas em precisão, velocidade e padrões comuns de palavras.",
     publishDate: "Apr 17, 2026",
     image: "/blog/t26.png",
     content: `

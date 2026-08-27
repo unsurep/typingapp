@@ -1,10 +1,10 @@
 import type { BlogPost } from "../blog-types";
 
 export const blogPostsDe: BlogPost[] = [  {
-    title: "The Average Typing Speed in 2026 Is Shockingly Low — Where Do You Rank?",
+    title: "Die durchschnittliche Schreibgeschwindigkeit 2026 ist schockierend niedrig — wo stehst du?",
     slug: "average-typing-speed-2026",
     metaDescription:
-      "The global average typing speed is lower than most people expect. Here's where you rank by profession, age group, and experience level in 2026.",
+      "Die weltweite durchschnittliche Schreibgeschwindigkeit ist niedriger, als die meisten erwarten. Hier siehst du, wo du nach Beruf, Altersgruppe und Erfahrungsstand im Jahr 2026 stehst.",
     publishDate: "Jan 5, 2026",
     image: "/blog/what-is-a-good-typing-speed.png",
     content: `
@@ -91,10 +91,10 @@ Es ist keine Talentlücke. Es ist eine Übungslücke.
     `,
   },
   {
-    title: "Typing Speed by Age: Where Does Your Generation Rank in 2026?",
+    title: "Schreibgeschwindigkeit nach Alter: Wo steht deine Generation 2026?",
     slug: "typing-speed-by-age-2026",
     metaDescription:
-      "Which generation types the fastest? The answer might surprise you. Here's the complete breakdown of average typing speed by age group in 2026.",
+      "Welche Generation tippt am schnellsten? Die Antwort könnte dich überraschen. Hier ist die vollständige Aufschlüsselung der durchschnittlichen Schreibgeschwindigkeit nach Altersgruppe im Jahr 2026.",
     publishDate: "Jan 7, 2026",
     image: "/blog/t2.png",
     content: `
@@ -158,9 +158,9 @@ Generationsdurchschnittswerte geben Ihnen einen Bezugsrahmen, aber Ihre individu
     `,
   },
   {
-    title: "What Is a Good Typing Speed? (And How to Improve Yours)",
+    title: "Was ist eine gute Schreibgeschwindigkeit? (Und wie du deine verbesserst)",
     slug: "what-is-a-good-typing-speed",
-    metaDescription: "Wondering what counts as a good WPM? Learn the average typing speeds by profession and how to improve yours with targeted practice.",
+    metaDescription: "Du fragst dich, was als gutes WPM gilt? Erfahre die durchschnittlichen Schreibgeschwindigkeiten nach Beruf und wie du deine mit gezieltem Üben verbesserst.",
     publishDate: "Jan 9, 2026",
     image: "/blog/t3.png",
     content: `
@@ -244,10 +244,10 @@ Eine gute Tippgeschwindigkeit ist die Geschwindigkeit, mit der du genaue Arbeit 
     `,
   },
   {
-    title: "Is 40 WPM Good? An Honest Answer (Plus How to Improve Fast)",
+    title: "Sind 40 WPM gut? Eine ehrliche Antwort (plus wie du schnell besser wirst)",
     slug: "is-40-wpm-good",
     metaDescription:
-      "Is 40 WPM a good typing speed? Here's an honest answer based on industry benchmarks, plus a clear plan for improving quickly.",
+      "Sind 40 WPM eine gute Schreibgeschwindigkeit? Hier ist eine ehrliche Antwort basierend auf Branchenvergleichswerten, plus ein klarer Plan, um dich schnell zu verbessern.",
     publishDate: "Jan 11, 2026",
     image: "/blog/t1.png",
     content: `
@@ -320,10 +320,10 @@ Die Lücke zwischen 40 WPM und dem Bereich von 55–65 WPM, der die meisten Remo
     `,
   },
   {
-    title: "Why Typing Fast Without Accuracy Is Actually Slower (The Math Explained)",
+    title: "Warum schnelles Tippen ohne Genauigkeit dich tatsächlich langsamer macht (die Mathematik erklärt)",
     slug: "typing-speed-vs-accuracy-math",
     metaDescription:
-      "Think typing faster is always better? The math says otherwise. Here's why accuracy beats raw speed — and how net WPM actually works.",
+      "Du denkst, schneller tippen ist immer besser? Die Mathematik sagt etwas anderes. Hier erfährst du, warum Genauigkeit die reine Geschwindigkeit schlägt — und wie Netto-WPM wirklich funktioniert.",
     publishDate: "Jan 13, 2026",
     image: "/blog/t4.png",
     content: `
@@ -2551,10 +2551,10 @@ Die Lücke zwischen dem, wo die meisten Menschen sind, und wo sie denken, dass s
     `,
   },
   {
-    title: "30 Typing Practice Sentences That Will Improve Your WPM Fast",
+    title: "30 Übungssätze zum Tippen, die dein WPM schnell verbessern",
     slug: "typing-practice-sentences",
     metaDescription:
-      "Looking for typing practice sentences that actually improve your speed? Here are 30 carefully chosen sentences targeting accuracy, speed, and common word patterns.",
+      "Suchst du Übungssätze zum Tippen, die deine Geschwindigkeit wirklich verbessern? Hier sind 30 sorgfältig ausgewählte Sätze, die auf Genauigkeit, Geschwindigkeit und häufige Wortmuster abzielen.",
     publishDate: "Apr 17, 2026",
     image: "/blog/t26.png",
     content: `
