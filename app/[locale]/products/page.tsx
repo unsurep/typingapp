@@ -136,9 +136,9 @@ export default async function ProductsPage({
                                                             {t("worksheetCardDesc")}
                                                           </p>
                                                           <p className="text-sm sm:text-base text-gray-600 dark:text-gray-400 mb-4 leading-relaxed">
-                                                                          50 printable typing worksheets to practise at your own pace — also available as a standalone purchase on Etsy.
+                                                              {t("worksheetEtsyDesc")}
                                                           </p>
-                                                          <p className="text-sm font-medium text-gray-800 dark:text-gray-200 mb-1">$4.99 on Etsy · included free with Premium</p>
+                                                          <p className="text-sm font-medium text-gray-800 dark:text-gray-200 mb-1">{t("worksheetPriceNote")}</p>
                                                           <div className="mt-auto flex flex-col sm:flex-row flex-wrap gap-3">
                                                                           <a
                                                                                               href="https://www.etsy.com/shop/MasebasDigitalNest"
@@ -146,7 +146,7 @@ export default async function ProductsPage({
                                                                                               rel="noopener noreferrer"
                                                                                               className="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-orange-500 text-white text-sm font-bold hover:bg-orange-600 transition-colors shadow-sm"
                                                                                             >
-                                                                                            Get the Worksheet Pack — $4.99 on Etsy →
+                                                                                            {t("ctaBuyWorksheet")}
                                                                           </a>
                                                           </div>
                                             </div>
